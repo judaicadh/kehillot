@@ -21,4 +21,6 @@ The CC BY license above does **not** cover the following.
 | Subscriber datasets deposited on Zenodo | derived files in `data/readership/`, `subscriptions-by-place.csv` | CC BY 4.0, from the deposits' creators; cite the deposit DOIs listed on the Datasets page |
 | Leaflet 1.9.4 | `assets/vendor/leaflet/` | BSD 2-Clause, © Vladimir Agafonkin |
 | OpenSeadragon 4.1.0 | `assets/vendor/openseadragon/` | BSD 3-Clause, © OpenSeadragon contributors |
+| Leaflet.markercluster 1.5.3 | `assets/vendor/markercluster/` | MIT, © Dave Leaver |
+| d3 7.9.0 | `assets/vendor/d3/` | ISC, © Mike Bostock |
 | Basemap tiles | loaded at runtime | Shaded relief © Esri; street map © OpenStreetMap contributors (ODbL) |

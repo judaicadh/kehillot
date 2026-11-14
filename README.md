@@ -85,6 +85,26 @@ How the media layer works:
 - **Pages and data:** each item gets a page at `/media/{id}/` with credit, rights, and links back to the original, and is published as a `schema:ImageObject` with `schema:about` links. Multi-page IIIF items open in a deep-zoom viewer (OpenSeadragon, vendored).
 - **Offline builds:** the cache is committed, so builds don't need the network. Run `npm run media -- --refresh` to re-read everything.
 
+## Maps and visualizations
+
+**Maps** (`/maps/`):
+
+- a comprehensive map with every feature as a layer you can toggle;
+- one map per feature: congregations, synagogues, cemeteries, clergy, educational institutions, matzah bakeries, hotels and boarding houses, kosher restaurants, Jewish-owned businesses, bookstores, societies, periodicals, events, pictures;
+- the congregations Atlas and the Subscribers map.
+
+All feature maps share `data/features.json`, written by the build, and `assets/js/featuremap.js`. To add a feature, add one entry to `FEATURES` in `scripts/build.mjs`: a symbol from `assets/js/symbols.js`, plus a function returning its items. The clergy map can also draw each clergy member's moves from pulpit to pulpit, based on their congregation roles in date order.
+
+**Visualizations** (`/visualizations/`):
+
+- a network of people, congregations, institutions and periodicals (roles, secessions, shared events), drawn with d3-force from `data/network.json`;
+- a flow from rite at founding to orientation by 1870;
+- congregations founded per decade, by region;
+- clergy tenures;
+- subscriptions per year, by paper.
+
+The charts are SVG generated at build time, each with a table view and keyboard-accessible tooltips. Their colors are validated for colorblind separation and contrast in both light and dark mode.
+
 ## Research datasets and the subscriber layer
 
 `data/media.json` also lists `datasets`, research data deposited elsewhere. Zenodo is supported:
@@ -130,7 +150,7 @@ This is a **seed dataset** drawn from the standard secondary literature (Sarna, 
 
 - **Code:** MIT. See [LICENSE](LICENSE).
 - **Data and text:** CC BY 4.0. See [LICENSE-DATA.md](LICENSE-DATA.md).
-- **Third-party material keeps its own terms**, all listed in LICENSE-DATA.md:
+- **Third-party material keeps its own terms**, all listed in LICENSE-DATA.md (vendored libraries now also include Leaflet.markercluster, MIT, and d3, ISC):
   - linked pictures and documents (each holder's license);
   - the deposited Zenodo datasets;
   - Leaflet (BSD-2-Clause) and OpenSeadragon (BSD-3-Clause);

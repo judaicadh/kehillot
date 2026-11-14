@@ -28,6 +28,13 @@
     'meeting-place': ['Meeting place', 'Other sites', '<rect x="4" y="6" width="16" height="15" class="{c} sym-building"/>'],
     residence: ['Residence', 'Other sites', '<path d="M4 11 L12 4 L20 11 V21 H4Z" class="{c} sym-building"/>'],
     city: ['City', 'Cities', '<circle cx="12" cy="12" r="4.5" class="sym sym-ink"/>'],
+    // City-level features (placed at the city, not an address)
+    congregation: ['Congregation', 'Congregations', '<circle cx="12" cy="12" r="7" class="{c} sym-ashkenazic"/><circle cx="12" cy="12" r="2.2" class="sym sym-ink"/>'],
+    society: ['Society or institution', 'Societies and institutions', '<rect x="5" y="5" width="14" height="14" class="{c} sym-inst"/><path d="M8.5 10h7M8.5 14h7" class="sym-line"/>'],
+    periodical: ['Periodical', 'Periodicals', '<path d="M6 3h12v18H6Z" class="{c} sym-press"/><path d="M9 7h6M9 10h6M9 13h6M9 16h4" class="sym-line"/>'],
+    clergy: ['Clergy', 'Clergy', '<circle cx="12" cy="8" r="3.6" class="{c} sym-clergy"/><path d="M5 21 C5 15 8 13 12 13 C16 13 19 15 19 21Z" class="{c} sym-clergy"/>'],
+    event: ['Event', 'Events', '<path d="M12 3 L21 20 H3Z" class="{c} sym-event"/>'],
+    picture: ['Picture or document', 'Pictures and documents', '<rect x="3" y="6" width="18" height="14" rx="1.5" class="{c} sym-camera"/><circle cx="12" cy="13" r="4" class="sym-line"/><path d="M8 6 L9.5 3.5 H14.5 L16 6" class="sym-line"/>'],
   };
   // Groups used for filters, in display order. Each kind belongs to exactly one group.
   var GROUPS = [

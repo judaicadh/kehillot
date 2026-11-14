@@ -591,7 +591,7 @@ function toTriples(n, out) {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jsonForScript = (o) => JSON.stringify(o, null, 2).replace(/</g, '\\u003c');
 const NAV = [
-  ['', 'Home'], ['atlas/', 'Atlas'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['database/', 'Database'], ['browse/', 'Browse'], ['datasets/', 'Datasets'], ['about/', 'About'],
+  ['', 'Home'], ['maps/', 'Maps'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['visualizations/', 'Visualizations'], ['database/', 'Database'], ['datasets/', 'Datasets'], ['about/', 'About'],
 ];
 function layout({ rel, title, description, canonical, body, jsonld, scripts = [], styles = [], current = '', alternate }) {
   const fullTitle = title ? `${title} · ${cfg.title}` : `${cfg.title}: ${cfg.subtitle}`;
@@ -630,7 +630,7 @@ ${body}
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p><strong>${esc(cfg.title)}</strong> v${esc(cfg.version)} · Data released under <a href="${cfg.license.url}" rel="license">${esc(cfg.license.name)}</a> · Built ${BUILD_DATE}</p>
-    <p><a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
+    <p><a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
   </div>
 </footer>
 ${scripts.map((s) => `<script src="${rel}${s}" defer></script>`).join('\n')}
@@ -1140,7 +1140,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
     </div></section>
   </div>` }));
 
-await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `${BASE}atlas/`, current: 'atlas/',
+await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `${BASE}atlas/`, current: 'maps/',
   description: `Interactive map of Jewish congregations, institutions and events in the United States, ${Y0}–${Y1}, with a year slider.`,
   styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/atlas.js'],
   body: `<div class="atlas wrap">
@@ -1571,6 +1571,283 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     <span class="city-card-body"><strong>${esc(cityConfig[c.id]?.title || `Jewish ${c.p.name}`)}</strong><span class="muted">${esc(c.p.state)}</span>
     <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ')}</span></span></a></li>`).join('')}</ul></div>` }));
 
+
+
+// ───────────────────────── feature maps (one per feature + one comprehensive) ─────────────────────────
+// Every mappable record becomes one item in data/features.json. To add a feature, add a line to
+// FEATURES with a symbol from assets/js/symbols.js and a function that returns its items.
+{
+  const cityPt = (placeId) => { const p = index.place.get(placeId); return { lat: p.lat, lon: p.lon, precision: 'city', place: placeId }; };
+  const sitePt = (s) => ({ lat: s.lat, lon: s.lon, precision: s.precision, place: s.place, address: s.address });
+  const R = '../../';
+  const siteItems = (kinds) => data.site.filter((s) => kinds.includes(s.kind)).map((s) => ({ ...sitePt(s), id: s.id, name: s.name, href: docPath('site', s.id),
+    from: s.built || s.opened || null, to: s.closed || (s.occupants || []).map((o) => o.to).filter(Boolean).sort().at(-1) || null,
+    sub: (s.occupants || []).map((o) => nameOf(typeOfOrg(o.org), o.org)).concat((s.proprietors || s.people || []).map((p) => nameOf('person', p))).join(', ') }));
+  const FEATURES = [
+    { id: 'congregations', symbol: 'congregation', label: 'Congregations', blurb: 'Every congregation, placed at its city, from its founding to its dissolution or 1870.',
+      items: () => data.congregation.map((c) => ({ ...cityPt(c.place), id: c.id, name: c.name, href: docPath('congregation', c.id), from: c.founded, to: c.dissolved || null, sub: `${conceptLabel('rite', c.rite)} rite` })) },
+    { id: 'synagogues', symbol: 'synagogue', label: 'Synagogue buildings', blurb: 'Buildings congregations worshipped in, at their addresses.', items: () => siteItems(['synagogue']) },
+    { id: 'cemeteries', symbol: 'cemetery', label: 'Cemeteries', blurb: 'Jewish burial grounds and the congregations that kept them.',
+      items: () => data.cemetery.map((c) => ({ ...sitePt(c), id: c.id, name: c.name, href: docPath('cemetery', c.id), from: c.established, to: null, sub: (c.owners || []).map((o) => nameOf('congregation', o)).join(', ') })) },
+    { id: 'clergy', symbol: 'clergy', label: 'Clergy', blurb: 'Rabbis, hazanim, ministers and other religious functionaries, placed where they served, with their years of service.',
+      items: () => data.person.filter((p) => clergyTitles(p).length).flatMap((p) => {
+        const served = p.roles.filter((r) => index.congregation.has(r.org));
+        const title = clergyTitles(p).map((t) => conceptLabel('clergyTitle', t)).join(', ');
+        return served.length
+          ? served.map((r, i) => ({ ...cityPt(index.congregation.get(r.org).place), id: `${p.id}-${i}`, name: p.name, href: docPath('person', p.id), from: r.start || null, to: r.end || null, sub: `${r.role}, ${nameOf('congregation', r.org)}` }))
+          : p.places.slice(0, 1).map((pl) => ({ ...cityPt(pl), id: p.id, name: p.name, href: docPath('person', p.id), from: null, to: null, sub: title }));
+      }) },
+    { id: 'education', symbol: 'school', label: 'Educational institutions', blurb: 'Schools, Sunday schools, seminaries and educational societies.',
+      items: () => [...siteItems(['school']), ...data.institution.filter((o) => o.category === 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: o.founded, to: o.dissolved || null, sub: 'Educational institution' }))] },
+    { id: 'matzah-bakeries', symbol: 'matzah-bakery', label: 'Matzah bakeries', blurb: 'Bakeries producing matzah for Passover.', items: () => siteItems(['matzah-bakery']) },
+    { id: 'lodging', symbol: 'lodging', label: 'Hotels and boarding houses', blurb: 'Jewish hotels and kosher boarding houses.', items: () => siteItems(['lodging']) },
+    { id: 'kosher-restaurants', symbol: 'kosher-restaurant', label: 'Kosher restaurants', blurb: 'Eating houses advertised as kosher.', items: () => siteItems(['kosher-restaurant']) },
+    { id: 'businesses', symbol: 'business', label: 'Jewish-owned businesses', blurb: 'Shops, markets and firms owned by Jews.', items: () => siteItems(['business']) },
+    { id: 'bookstores', symbol: 'bookstore', label: 'Bookstores', blurb: 'Sellers of Hebrew and Jewish books and religious goods.', items: () => siteItems(['bookstore']) },
+    { id: 'societies', symbol: 'society', label: 'Societies and institutions', blurb: 'Benevolent societies, fraternal orders, hospitals and communal bodies.',
+      items: () => [...data.institution.filter((o) => o.category !== 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: o.founded, to: o.dissolved || null, sub: conceptLabel('category', o.category) })),
+        ...siteItems(['hospital', 'meeting-place'])] },
+    { id: 'periodicals', symbol: 'periodical', label: 'Periodicals', blurb: 'Jewish newspapers and journals, at their place of publication.',
+      items: () => data.periodical.map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('periodical', o.id), from: o.founded, to: o.ceased || null, sub: `${o.language.map((l) => LANGS[l]).join('/')} ${o.frequency}` })) },
+    { id: 'events', symbol: 'event', label: 'Events', blurb: 'Protests, conferences, dedications and other events, at their site or city.',
+      items: () => data.event.map((e) => { const s = e.site && index.site.get(e.site); return { ...(s ? sitePt(s) : cityPt(e.place)), id: e.id, name: e.name, href: docPath('event', e.id), from: yearOf(e.date), to: yearOf(e.date), sub: formatDate(e.date) }; }) },
+    { id: 'pictures', symbol: 'picture', label: 'Pictures and documents', blurb: 'Photographs and documents from libraries and museums, where their holders placed them.',
+      items: () => MEDIA.filter((m) => m.geo).map((m) => ({ lat: m.geo.lat, lon: m.geo.lon, precision: 'geotag', place: m.places[0] || null, id: m.id, name: m.title, href: `media/${m.id}/`, from: null, to: null, sub: m.holder, thumb: m.image.square || m.image.thumb })) },
+  ];
+  const items = [];
+  const counts = {};
+  for (const F of FEATURES) { const its = F.items(); counts[F.id] = its.length; for (const it of its) items.push({ f: F.id, ...it, placeName: it.place ? placeLabel(it.place) : null }); }
+  const years = items.flatMap((i) => [i.from, i.to]).filter(Boolean);
+  // Slider spans 1820 to the last dated record before 1910; earlier records still show while they stand.
+  const range = [Y0 - 20, Math.max(Y1, ...years.filter((y) => y <= 1910))];
+  // Clergy journeys: each clergy member's pulpits (congregation roles) in date order.
+  const journeys = data.person.filter((p) => clergyTitles(p).length).map((p) => {
+    const stops = p.roles.filter((r) => index.congregation.has(r.org)).sort((a, b) => (a.start || 9999) - (b.start || 9999)).map((r) => {
+      const c = index.congregation.get(r.org), pl = index.place.get(c.place);
+      return { cong: c.name, congHref: docPath('congregation', c.id), place: placeLabel(c.place), lat: pl.lat, lon: pl.lon, start: r.start || null, end: r.end || null, role: r.role };
+    });
+    return { id: p.id, name: p.name, href: docPath('person', p.id), titles: clergyTitles(p).map((t) => conceptLabel('clergyTitle', t)), stops };
+  }).filter((j) => j.stops.length >= 2);
+  await out('data/features.json', JSON.stringify({ range, features: FEATURES.map(({ id, symbol, label, blurb }) => ({ id, symbol, label, blurb, count: counts[id] })), items, journeys }));
+
+  const mapPage = async (slug, title, featureIds, intro, opts = {}) => {
+    const rel = slug === 'all' ? '../../' : '../../';
+    const multi = featureIds.length > 1;
+    const F0 = FEATURES.find((f) => f.id === featureIds[0]);
+    const n = featureIds.reduce((a, id) => a + counts[id], 0);
+    const body = `<div class="atlas wrap fmap">
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}maps/">Maps</a></li><li aria-current="page">${esc(title)}</li></ol></nav>
+  <div class="plate">
+    <div id="fmap" class="atlas-map" role="region" aria-label="Map: ${esc(title)}"></div>
+    <div class="cartouche">
+      <p class="c-small">A Map of</p>
+      <h1>${esc(title)}</h1>
+      <p class="c-small">in the United States, ${Y0}–${Y1}</p>
+      <p id="fm-summary" class="c-sum" aria-live="polite"></p>
+    </div>
+    ${multi ? `<fieldset class="map-key fm-key"><legend>Explanation</legend>${featureIds.map((id) => { const F = FEATURES.find((f) => f.id === id); return `<label${counts[id] ? '' : ' class="fm-empty"'}><input type="checkbox" name="feature" value="${id}"${counts[id] ? ' checked' : ''}><span class="f-sym">${SYM.svg(F.symbol, { size: 14 })}</span>${esc(F.label)} <span class="muted">${counts[id] || 'none yet'}</span></label>`; }).join('')}</fieldset>` : ''}
+    ${!n ? `<div class="fm-none"><p><span class="f-sym">${SYM.svg(F0.symbol, { size: 22 })}</span> No ${esc(F0.label.toLowerCase())} recorded yet.</p><p class="small">This map fills in automatically as records are added. <a href="${rel}about/#collecting">See what we're collecting</a>.</p></div>` : ''}
+  </div>
+  ${opts.journeys ? `<div class="fm-journeys">
+    <label><input type="checkbox" id="fm-jr"> Show journeys between pulpits</label>
+    <label class="fm-jr-who">for <select id="fm-jr-who"><option value="">everyone who moved (${journeys.length})</option>${journeys.map((j) => `<option value="${j.id}">${esc(j.name)} (${j.stops.length} pulpits${new Set(j.stops.map((x) => x.place)).size === 1 ? ', one city' : ''})</option>`).join('')}</select></label>
+    <div id="fm-itinerary" class="fm-itinerary" aria-live="polite"></div></div>` : ''}
+  <div class="timeline readers-time">
+    <label class="r-yr">From <input type="range" id="fm-from" min="${range[0]}" max="${range[1]}" value="${range[0]}"> <output id="fm-from-out">${range[0]}</output></label>
+    <label class="r-yr">to <input type="range" id="fm-to" min="${range[0]}" max="${range[1]}" value="${range[1]}"> <output id="fm-to-out">${range[1]}</output></label>
+  </div>
+  <section class="gazetteer" aria-labelledby="fm-list-h">
+    <h2 id="fm-list-h">${multi ? 'Everything on the Map' : `List of ${esc(F0.label)}`}</h2>
+    <p class="gaz-note">${esc(intro)} City-level records sit at the city's centre; buildings and cemeteries sit at their addresses. Undated records always show.</p>
+    <label class="fm-search">Filter <input type="search" id="fm-q" placeholder="Name, place…" autocomplete="off"></label>
+    <ol id="fm-list" class="fm-list"></ol>
+  </section>
+</div>
+<script type="application/json" id="fm-config">${JSON.stringify({ features: featureIds, journeys: !!opts.journeys, tiles: { relief: cfg.basemap, street: cfg.streetmap } }).replace(/</g, '\\u003c')}</script>
+<noscript><div class="wrap"><p>The map needs JavaScript. Every record is also listed on <a href="${rel}browse/">Browse</a>.</p></div></noscript>`;
+    await out(`maps/${slug}/index.html`, layout({ rel, title, description: `${title}: ${intro}`.slice(0, 300), canonical: `${BASE}maps/${slug}/`, current: 'maps/', body,
+      styles: ['assets/vendor/leaflet/leaflet.css', 'assets/vendor/markercluster/MarkerCluster.css'],
+      scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/vendor/markercluster/leaflet.markercluster.js', 'assets/js/symbols.js', 'assets/js/featuremap.js'] }));
+  };
+  await mapPage('all', 'Jewish America, All Features', FEATURES.map((f) => f.id), 'Every mapped record in Kehillot. Use the Explanation to show or hide each kind of feature.');
+  for (const F of FEATURES) await mapPage(F.id, F.label, [F.id], F.blurb, { journeys: F.id === 'clergy' });
+
+  // Maps index
+  const card = (href, symbol, title, blurb, count) => `<li><a class="map-card${count === 0 ? ' is-empty' : ''}" href="${href}"><span class="map-card-sym">${SYM.svg(symbol, { size: 34 })}</span><span class="map-card-body"><strong>${esc(title)}</strong><span>${esc(blurb)}</span><span class="small muted">${count === null ? '' : count ? `${count.toLocaleString('en-US')} on the map` : 'None recorded yet'}</span></span></a></li>`;
+  await out('maps/index.html', layout({ rel: '../', title: 'Maps', canonical: `${BASE}maps/`, current: 'maps/',
+    description: 'Maps of Jewish America, 1840–1870: a comprehensive map, one map for each kind of feature, the congregations atlas and the map of newspaper subscribers.',
+    body: `<div class="wrap"><h1>Maps</h1>
+  <p class="lede">Start with the comprehensive map, or open a map for a single kind of feature. Each map has a year range and a list beside it, and fills in as new records are added.</p>
+  <h2>Comprehensive</h2>
+  <ul class="map-cards">${card('all/', 'city', 'All features', 'Every mapped record, with each kind of feature as a layer you can switch on and off.', items.length)}
+  ${card('../atlas/', 'congregation', 'Congregations atlas', 'The growth of congregations year by year, tinted by rite, drawn as a period atlas plate.', null)}
+  ${card('../subscribers/', 'periodical', 'Subscribers', 'Where subscribers to the Jewish press lived, from the papers\' own lists.', READ_TOTAL)}</ul>
+  <h2>By feature</h2>
+  <ul class="map-cards">${FEATURES.map((F) => card(`${F.id}/`, F.symbol, F.label, F.blurb, counts[F.id])).join('')}</ul>
+  <p class="small"><a href="../cities/">City guides</a> show the same features street by street for a single city.</p></div>` }));
+}
+
+
+// ───────────────────────── visualizations ─────────────────────────
+// Charts are drawn as SVG at build time (they work without JavaScript and carry a table view);
+// the network is laid out in the browser with d3-force. Colors use the validated --viz-1..4 tokens.
+{
+  const VIZ = ['var(--viz-1)', 'var(--viz-2)', 'var(--viz-3)', 'var(--viz-4)'];
+  const tip = (t) => ` data-tip="${esc(t)}" tabindex="0"`;
+  const tableView = (caption, head, rows) => `<details class="chart-data"><summary>Show the data as a table</summary><table><caption class="visually-hidden">${esc(caption)}</caption><thead><tr>${head.map((h) => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${c}</td>` : `<th scope="row">${c}</th>`)).join('')}</tr>`).join('')}</tbody></table></details>`;
+  const legend = (items) => `<ul class="viz-legend">${items.map(([label, color]) => `<li><span class="viz-swatch" style="background:${color}"></span>${esc(label)}</li>`).join('')}</ul>`;
+
+  // 1. Network: people ↔ congregations / institutions / periodicals (roles), congregation ↔ congregation (secession)
+  const NODE_TYPES = [['person', 'Person'], ['congregation', 'Congregation'], ['institution', 'Institution'], ['periodical', 'Periodical']];
+  const nodes = new Map(), links = [];
+  const addNode = (type, id) => { const k = `${type}/${id}`; if (!nodes.has(k)) { const r = index[type].get(id); nodes.set(k, { id: k, type, name: r.name, href: docPath(type, id), place: r.place ? index.place.get(r.place).name : (r.places || []).map((p) => index.place.get(p).name).join(', ') }); } return k; };
+  for (const p of data.person) for (const r of p.roles) {
+    const t = typeOfOrg(r.org);
+    links.push({ source: addNode('person', p.id), target: addNode(t, r.org), kind: 'role', label: `${r.role}${r.start ? `, ${span(r.start, r.end)}` : ''}` });
+  }
+  for (const c of data.congregation) if (c.splitFrom) links.push({ source: addNode('congregation', c.id), target: addNode('congregation', c.splitFrom), kind: 'split', label: `formed from, ${c.founded}` });
+  for (const e of data.event) {
+    const parts = [...(e.people || []).map((p) => ['person', p]), ...(e.orgs || []).map((o) => [typeOfOrg(o), o])];
+    for (let i = 0; i < parts.length; i++) for (let j = i + 1; j < parts.length; j++)
+      if (parts[i][0] === 'person' && parts[j][0] === 'person') links.push({ source: addNode(...parts[i]), target: addNode(...parts[j]), kind: 'event', label: e.name });
+  }
+  const degree = {};
+  for (const l of links) { degree[l.source] = (degree[l.source] || 0) + 1; degree[l.target] = (degree[l.target] || 0) + 1; }
+  const netData = { types: NODE_TYPES, nodes: [...nodes.values()].map((n) => ({ ...n, degree: degree[n.id] || 0 })), links };
+  await out('data/network.json', JSON.stringify(netData));
+
+  // 2. Rite at founding → orientation by 1870 (two-column flow)
+  const rites = Object.keys(VOCAB.rite.concepts), ors = Object.keys(VOCAB.orientation.concepts);
+  const flow = rites.flatMap((r) => ors.map((o) => ({ r, o, n: data.congregation.filter((c) => c.rite === r && c.orientation === o).length }))).filter((x) => x.n);
+  const total = data.congregation.length;
+  const FW = 640, FH = 300, FT = 26, colW = 14, gap = 10, x0 = 150, x1 = FW - 170;
+  const scale = (FH - gap * 2) / total;
+  const leftY = {}, rightY = {};
+  let y = 0; for (const r of rites) { const n = data.congregation.filter((c) => c.rite === r).length; leftY[r] = { y, n }; y += n * scale + gap; }
+  y = 0; for (const o of ors) { const n = data.congregation.filter((c) => c.orientation === o).length; rightY[o] = { y, n }; y += n * scale + gap; }
+  const lOff = Object.fromEntries(rites.map((r) => [r, 0])), rOff = Object.fromEntries(ors.map((o) => [o, 0]));
+  const ribbons = flow.map((f) => {
+    const h = f.n * scale, ya = leftY[f.r].y + lOff[f.r], yb = rightY[f.o].y + rOff[f.o];
+    lOff[f.r] += h; rOff[f.o] += h;
+    const xa = x0 + colW, xb = x1, mx = (xa + xb) / 2;
+    const d = `M${xa},${ya} C${mx},${ya} ${mx},${yb} ${xb},${yb} L${xb},${yb + h} C${mx},${yb + h} ${mx},${ya + h} ${xa},${ya + h} Z`;
+    return `<path d="${d.replace(/(\d+\.\d{2})\d+/g, '$1')}" class="flow-ribbon" style="fill:${VIZ[rites.indexOf(f.r)]}"${tip(`${f.n} congregation${f.n === 1 ? '' : 's'}: founded ${conceptLabel('rite', f.r)}, ${conceptLabel('orientation', f.o)} by c. 1870`)}/>`;
+  }).join('');
+  const flowSvg = `<svg viewBox="0 -${FT} ${FW} ${FH + FT + 4}" class="viz-svg" role="img" aria-labelledby="flow-t flow-d"><title id="flow-t">Rite at founding and orientation by about 1870</title>
+    <desc id="flow-d">${flow.map((f) => `${f.n} ${conceptLabel('rite', f.r)} to ${conceptLabel('orientation', f.o)}`).join('; ')}.</desc>
+    ${ribbons}
+    ${rites.map((r, i) => `<rect x="${x0}" y="${leftY[r].y}" width="${colW}" height="${leftY[r].n * scale}" style="fill:${VIZ[i]}" class="flow-node"/><text x="${x0 - 8}" y="${leftY[r].y + leftY[r].n * scale / 2 + 4}" text-anchor="end" class="viz-label">${conceptLabel('rite', r)} <tspan class="viz-num">${leftY[r].n}</tspan></text>`).join('')}
+    ${ors.map((o) => `<rect x="${x1}" y="${rightY[o].y}" width="${colW}" height="${rightY[o].n * scale}" class="flow-node flow-node-r"/><text x="${x1 + colW + 8}" y="${rightY[o].y + rightY[o].n * scale / 2 + 4}" class="viz-label">${conceptLabel('orientation', o)} <tspan class="viz-num">${rightY[o].n}</tspan></text>`).join('')}
+    <text x="${x0 + colW / 2}" y="-10" text-anchor="middle" class="viz-axis">At founding</text><text x="${x1 + colW / 2}" y="-10" text-anchor="middle" class="viz-axis">By c. 1870</text></svg>`;
+
+  // 3. Congregations founded per decade, by region (stacked bars)
+  const REG = ['Northeast', 'South', 'Midwest', 'West'];
+  const decades = ['before 1820', ...[1820, 1830, 1840, 1850, 1860].map((d) => `${d}s`)];
+  const decOf = (y) => (y < 1820 ? 'before 1820' : `${Math.floor(y / 10) * 10}s`);
+  const dec = decades.map((d) => ({ d, by: Object.fromEntries(REG.map((r) => [r, data.congregation.filter((c) => decOf(c.founded) === d && index.place.get(c.place).region === r).length])) }));
+  const maxDec = Math.max(...dec.map((x) => REG.reduce((a, r) => a + x.by[r], 0)));
+  const BW = 640, BH = 260, bm = { l: 36, r: 10, t: 10, b: 30 }, bw = (BW - bm.l - bm.r) / decades.length;
+  const yMax = Math.ceil(maxDec / 5) * 5, by = (v) => BH - bm.b - (v / yMax) * (BH - bm.t - bm.b);
+  const bars = dec.map((x, i) => {
+    let acc = 0;
+    return REG.map((r, k) => {
+      const v = x.by[r]; if (!v) return '';
+      const y1 = by(acc + v), y0 = by(acc); acc += v;
+      return `<rect x="${(bm.l + i * bw + bw * 0.22).toFixed(1)}" y="${(y1 + 1).toFixed(1)}" width="${(bw * 0.56).toFixed(1)}" height="${Math.max(0, y0 - y1 - 2).toFixed(1)}" rx="2" style="fill:${VIZ[k]}"${tip(`${x.d}: ${v} in the ${r}`)}/>`;
+    }).join('') + `<text x="${(bm.l + i * bw + bw / 2).toFixed(1)}" y="${BH - 10}" text-anchor="middle" class="viz-axis">${x.d}</text><text x="${(bm.l + i * bw + bw / 2).toFixed(1)}" y="${(by(acc) - 5).toFixed(1)}" text-anchor="middle" class="viz-num">${acc}</text>`;
+  }).join('');
+  const grid = Array.from({ length: yMax / 5 + 1 }, (_, i) => i * 5).map((v) => `<line x1="${bm.l}" x2="${BW - bm.r}" y1="${by(v)}" y2="${by(v)}" class="viz-grid"/><text x="${bm.l - 6}" y="${by(v) + 4}" text-anchor="end" class="viz-axis">${v}</text>`).join('');
+  const decSvg = `<svg viewBox="0 0 ${BW} ${BH}" class="viz-svg" role="img" aria-labelledby="dec-t"><title id="dec-t">Congregations founded per decade, by region</title>${grid}${bars}</svg>`;
+
+  // 4. Clergy tenures (timeline of bars), grouped by congregation
+  const tenures = data.person.filter((p) => clergyTitles(p).length).flatMap((p) => p.roles.filter((r) => index.congregation.has(r.org) && r.start).map((r) => ({ p, r, c: index.congregation.get(r.org) })))
+    .sort((a, b) => a.c.name.localeCompare(b.c.name) || a.r.start - b.r.start);
+  const TX0 = 1820, TX1 = 1900, TW = 700, rowH = 20, tl = 330, TH = tenures.length * rowH + 34;
+  const tx = (y) => tl + ((Math.min(Math.max(y, TX0), TX1) - TX0) / (TX1 - TX0)) * (TW - tl - 10);
+  const tenSvg = `<svg viewBox="0 0 ${TW} ${TH}" class="viz-svg" role="img" aria-labelledby="ten-t"><title id="ten-t">Clergy tenures by congregation, ${TX0}–${TX1}</title>
+    ${[1820, 1840, 1860, 1880, 1900].map((yv) => `<line x1="${tx(yv)}" x2="${tx(yv)}" y1="4" y2="${TH - 24}" class="viz-grid"/><text x="${tx(yv)}" y="${TH - 8}" text-anchor="middle" class="viz-axis">${yv}</text>`).join('')}
+    <rect x="${tx(Y0)}" y="4" width="${tx(Y1) - tx(Y0)}" height="${TH - 28}" class="viz-period"/>
+    ${tenures.map((t, i) => { const yy = 6 + i * rowH, end = t.r.end || Math.min((t.p.died || TX1), TX1); const open = !t.r.end;
+      return `<text x="${tl - 8}" y="${yy + 12}" text-anchor="end" class="viz-label viz-small">${esc(t.p.name)}, <tspan class="viz-muted">${esc(t.c.name.replace(/\s*\(.*\)/, '').replace(/^Kahal Kadosh /, ''))} (${esc(index.place.get(t.c.place).name)})</tspan></text>
+      <rect x="${tx(t.r.start)}" y="${yy + 3}" width="${Math.max(3, tx(end) - tx(t.r.start))}" height="11" rx="2" class="ten-bar${open ? ' ten-open' : ''}"${tip(`${t.p.name}: ${t.r.role}, ${t.c.name}, ${t.r.start}–${t.r.end || (t.p.died ? `until death in ${t.p.died}?` : 'end not recorded')}`)}/>`; }).join('')}</svg>`;
+
+  // 5. Subscriptions recorded per year, by paper (lines, shared axis)
+  const papers = Object.keys(READERS);
+  const sYears = papers.flatMap((p) => READERS[p].subs.map((x) => x[2]).filter(Boolean));
+  const SY0 = Math.min(...sYears), SY1 = Math.max(...sYears);
+  const perYear = Object.fromEntries(papers.map((p) => { const m = {}; for (const x of READERS[p].subs) if (x[2]) m[x[2]] = (m[x[2]] || 0) + 1; return [p, m]; }));
+  const sMax = Math.ceil(Math.max(...papers.flatMap((p) => Object.values(perYear[p]))) / 250) * 250;
+  const LW = 640, LH = 280, lm = { l: 44, r: 120, t: 12, b: 28 };
+  const lx = (yv) => lm.l + ((yv - SY0) / (SY1 - SY0)) * (LW - lm.l - lm.r), ly = (v) => LH - lm.b - (v / sMax) * (LH - lm.t - lm.b);
+  // End labels: place at each line's last point, then push apart so none overlap (min 14px).
+  const ends = papers.map((p) => { const ys = Object.keys(perYear[p]).map(Number).sort((a, b) => a - b); const last = ys.at(-1); return { p, x: lx(last) + 8, y: ly(perYear[p][last]) + 4 }; }).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+  for (let i = ends.length - 1; i >= 0; i--) if (ends[i].y > LH - lm.b + 2) { ends[i].y = LH - lm.b + 2; for (let j = i - 1; j >= 0; j--) if (ends[j + 1].y - ends[j].y < 14) ends[j].y = ends[j + 1].y - 14; }
+  const endAt = Object.fromEntries(ends.map((e) => [e.p, e]));
+  const lines = papers.map((p, k) => {
+    const ys = Object.keys(perYear[p]).map(Number).sort((a, b) => a - b);
+    // break the line across gaps in the record rather than drawing through missing years
+    let d = '', prev = null;
+    for (const yv of ys) { d += `${prev !== null && yv === prev + 1 ? 'L' : 'M'}${lx(yv).toFixed(1)},${ly(perYear[p][yv]).toFixed(1)}`; prev = yv; }
+    const last = ys.at(-1);
+    return `<path d="${d}" class="viz-line" style="stroke:${VIZ[k]}"/>${ys.map((yv) => `<circle cx="${lx(yv).toFixed(1)}" cy="${ly(perYear[p][yv]).toFixed(1)}" r="4" class="viz-dot" style="fill:${VIZ[k]}"${tip(`${nameOf('periodical', p)}, ${yv}: ${perYear[p][yv]} subscriptions`)}/>`).join('')}
+      <text x="${endAt[p].x.toFixed(1)}" y="${endAt[p].y.toFixed(1)}" class="viz-label viz-small">${esc(nameOf('periodical', p).replace(/^The /, '').replace(/ and American Jewish Advocate$/, ''))}</text>`;
+  }).join('');
+  const sGrid = Array.from({ length: sMax / 250 + 1 }, (_, i) => i * 250).map((v) => `<line x1="${lm.l}" x2="${LW - lm.r}" y1="${ly(v)}" y2="${ly(v)}" class="viz-grid"/><text x="${lm.l - 6}" y="${ly(v) + 4}" text-anchor="end" class="viz-axis">${v}</text>`).join('');
+  const sTicks = Array.from({ length: Math.floor((SY1 - SY0) / 5) + 1 }, (_, i) => SY0 + i * 5).map((yv) => `<text x="${lx(yv)}" y="${LH - 8}" text-anchor="middle" class="viz-axis">${yv}</text>`).join('');
+  const subSvg = `<svg viewBox="0 0 ${LW} ${LH}" class="viz-svg" role="img" aria-labelledby="sub-t"><title id="sub-t">Subscriptions recorded per year, by paper, ${SY0}–${SY1}</title>${sGrid}${sTicks}${lines}</svg>`;
+
+  const body = `<div class="wrap viz-page">
+  <h1>Visualizations</h1>
+  <p class="lede">Ways of seeing the whole dataset at once: who was connected to whom, how congregations changed, where and when clergy served, and how the Jewish press spread.</p>
+  <nav class="toc" aria-label="On this page"><ul><li><a href="#network">Network</a></li><li><a href="#rites">Rites and reform</a></li><li><a href="#decades">Foundings by decade</a></li><li><a href="#tenures">Clergy tenures</a></li><li><a href="#subs">Subscriptions</a></li></ul></nav>
+
+  <section id="network" class="viz-block" aria-labelledby="net-h">
+    <h2 id="net-h">Network of people and institutions</h2>
+    <p class="section-note">Lines join people to the congregations, institutions and periodicals they served (roles), congregations to the congregations they broke away from, and people who took part in the same event. Larger circles have more connections. Drag to rearrange, scroll or pinch to zoom, and select a circle to see its connections.</p>
+    <div class="net-controls">${legend(NODE_TYPES.map(([, label], i) => [label, VIZ[i]]))}
+      <label class="net-search">Find <input type="search" id="net-q" list="net-names" placeholder="A name…" autocomplete="off"><datalist id="net-names">${netData.nodes.map((n) => `<option value="${esc(n.name)}${n.place ? ` (${esc(n.place)})` : ''}"></option>`).join('')}</datalist></label>
+      <label><input type="checkbox" id="net-labels"> Show all names</label></div>
+    <div class="plate net-plate"><svg id="net" class="net-svg" role="img" aria-labelledby="net-h"></svg><div id="net-info" class="net-info" aria-live="polite"><p class="gaz-note">Select a circle.</p></div></div>
+    ${tableView('Network connections', ['From', 'Connection', 'To'], links.map((l) => [esc(nodes.get(l.source).name), esc(l.kind === 'role' ? l.label : l.kind === 'split' ? `formed from (${l.label.replace('formed from, ', '')})` : `both in: ${l.label}`), esc(nodes.get(l.target).name)]))}
+  </section>
+
+  <section id="rites" class="viz-block" aria-labelledby="rites-h">
+    <h2 id="rites-h">From rite at founding to orientation by about 1870</h2>
+    <p class="section-note">Each band is a group of congregations, from the rite they were founded in (left) to where they stood by about 1870 (right). ${(() => { const ash = data.congregation.filter((c) => c.rite === 'ashkenazic'); const ashR = ash.filter((c) => c.orientation !== 'traditional').length; const seph = data.congregation.filter((c) => c.rite === 'sephardic'); const sephR = seph.filter((c) => c.orientation !== 'traditional').length; return `${ashR} of ${ash.length} congregations founded in an Ashkenazic rite, and ${sephR} of ${seph.length} founded in the Sephardic rite, had adopted Reform or moderate reform.`; })()}</p>
+    ${legend(rites.map((r, i) => [conceptLabel('rite', r), VIZ[i]]))}
+    <figure class="viz-fig">${flowSvg}</figure>
+    ${tableView('Rite at founding by orientation by 1870', ['Rite at founding', ...ors.map((o) => conceptLabel('orientation', o)), 'Total'], rites.map((r) => [conceptLabel('rite', r), ...ors.map((o) => String(data.congregation.filter((c) => c.rite === r && c.orientation === o).length)), String(data.congregation.filter((c) => c.rite === r).length)]))}
+  </section>
+
+  <section id="decades" class="viz-block" aria-labelledby="dec-h">
+    <h2 id="dec-h">Congregations founded per decade</h2>
+    <p class="section-note">Foundings recorded in Kehillot, by region. ${(() => { const n4050 = dec.filter((x) => x.d === '1840s' || x.d === '1850s').reduce((a, x) => a + REG.reduce((b, r) => b + x.by[r], 0), 0); return `${n4050} of the ${data.congregation.length} congregations were founded in the 1840s and 1850s, the decades of heaviest Central European immigration.`; })()}</p>
+    ${legend(REG.map((r, i) => [r, VIZ[i]]))}
+    <figure class="viz-fig">${decSvg}</figure>
+    ${tableView('Congregations founded per decade by region', ['Decade', ...REG, 'Total'], dec.map((x) => [x.d, ...REG.map((r) => String(x.by[r])), String(REG.reduce((a, r) => a + x.by[r], 0))]))}
+  </section>
+
+  <section id="tenures" class="viz-block" aria-labelledby="ten-h">
+    <h2 id="ten-h">Clergy tenures</h2>
+    <p class="section-note">Each bar is one clergyman's service at one congregation, grouped by congregation. Pale dashed bars have no recorded end date and run to the person's death or to 1900. The shaded band marks ${Y0}–${Y1}. <a href="../maps/clergy/">Map their journeys between pulpits →</a></p>
+    <figure class="viz-fig">${tenSvg}</figure>
+    ${tableView('Clergy tenures', ['Person', 'Role', 'Congregation', 'Years'], tenures.map((t) => [esc(t.p.name), esc(t.r.role), esc(`${t.c.name}, ${index.place.get(t.c.place).name}`), `${t.r.start}–${t.r.end || ''}`]))}
+  </section>
+
+  <section id="subs" class="viz-block" aria-labelledby="subs-h">
+    <h2 id="subs-h">Subscriptions recorded per year</h2>
+    <p class="section-note">Counts of subscriptions in each paper's printed lists, from the deposited datasets. They show how often lists were printed and transcribed as much as how many people subscribed; gaps are years with no list. <a href="../subscribers/">Map the subscribers →</a></p>
+    ${legend(papers.map((p, i) => [nameOf('periodical', p), VIZ[i]]))}
+    <figure class="viz-fig">${subSvg}</figure>
+    ${tableView('Subscriptions per year', ['Year', ...papers.map((p) => nameOf('periodical', p))], Array.from({ length: SY1 - SY0 + 1 }, (_, i) => SY0 + i).map((yv) => [String(yv), ...papers.map((p) => String(perYear[p][yv] || ''))]))}
+  </section>
+  <div id="viz-tip" class="viz-tip" role="tooltip" hidden></div>
+</div>`;
+  await out('visualizations/index.html', layout({ rel: '../', title: 'Visualizations', canonical: `${BASE}visualizations/`, current: 'visualizations/',
+    description: 'Network diagram of people and institutions, and charts of congregational change, clergy tenures and newspaper subscriptions in Jewish America, 1840–1870.',
+    body, scripts: ['assets/vendor/d3/d3.min.js', 'assets/js/viz.js'] }));
+}
 
 await out('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`);
 const htmlPages = written.filter((f) => f.endsWith('index.html'));
