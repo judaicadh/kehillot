@@ -1,0 +1,282 @@
+[
+  {
+    "id": "new-york",
+    "name": "New York",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  {
+    "id": "philadelphia",
+    "name": "Philadelphia",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 39.9526,
+    "lon": -75.1652
+  },
+  {
+    "id": "pittsburgh",
+    "name": "Pittsburgh",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 40.4406,
+    "lon": -79.9959
+  },
+  {
+    "id": "easton",
+    "name": "Easton",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 40.6884,
+    "lon": -75.2207
+  },
+  {
+    "id": "boston",
+    "name": "Boston",
+    "state": "Massachusetts",
+    "region": "Northeast",
+    "lat": 42.3601,
+    "lon": -71.0589
+  },
+  {
+    "id": "newport",
+    "name": "Newport",
+    "state": "Rhode Island",
+    "region": "Northeast",
+    "lat": 41.4901,
+    "lon": -71.3128
+  },
+  {
+    "id": "new-haven",
+    "name": "New Haven",
+    "state": "Connecticut",
+    "region": "Northeast",
+    "lat": 41.3083,
+    "lon": -72.9279
+  },
+  {
+    "id": "hartford",
+    "name": "Hartford",
+    "state": "Connecticut",
+    "region": "Northeast",
+    "lat": 41.7658,
+    "lon": -72.6734
+  },
+  {
+    "id": "albany",
+    "name": "Albany",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 42.6526,
+    "lon": -73.7562
+  },
+  {
+    "id": "syracuse",
+    "name": "Syracuse",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 43.0481,
+    "lon": -76.1474
+  },
+  {
+    "id": "rochester",
+    "name": "Rochester",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 43.1566,
+    "lon": -77.6088
+  },
+  {
+    "id": "buffalo",
+    "name": "Buffalo",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 42.8864,
+    "lon": -78.8784
+  },
+  {
+    "id": "baltimore",
+    "name": "Baltimore",
+    "state": "Maryland",
+    "region": "South",
+    "lat": 39.2904,
+    "lon": -76.6122
+  },
+  {
+    "id": "washington",
+    "name": "Washington",
+    "state": "District of Columbia",
+    "region": "South",
+    "lat": 38.8951,
+    "lon": -77.0364
+  },
+  {
+    "id": "richmond",
+    "name": "Richmond",
+    "state": "Virginia",
+    "region": "South",
+    "lat": 37.5407,
+    "lon": -77.436
+  },
+  {
+    "id": "charleston",
+    "name": "Charleston",
+    "state": "South Carolina",
+    "region": "South",
+    "lat": 32.7765,
+    "lon": -79.9311
+  },
+  {
+    "id": "savannah",
+    "name": "Savannah",
+    "state": "Georgia",
+    "region": "South",
+    "lat": 32.0809,
+    "lon": -81.0912
+  },
+  {
+    "id": "mobile",
+    "name": "Mobile",
+    "state": "Alabama",
+    "region": "South",
+    "lat": 30.6954,
+    "lon": -88.0399
+  },
+  {
+    "id": "montgomery",
+    "name": "Montgomery",
+    "state": "Alabama",
+    "region": "South",
+    "lat": 32.3792,
+    "lon": -86.3077
+  },
+  {
+    "id": "natchez",
+    "name": "Natchez",
+    "state": "Mississippi",
+    "region": "South",
+    "lat": 31.5604,
+    "lon": -91.4032
+  },
+  {
+    "id": "new-orleans",
+    "name": "New Orleans",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 29.9511,
+    "lon": -90.0715
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "state": "Tennessee",
+    "region": "South",
+    "lat": 35.1495,
+    "lon": -90.049
+  },
+  {
+    "id": "louisville",
+    "name": "Louisville",
+    "state": "Kentucky",
+    "region": "South",
+    "lat": 38.2527,
+    "lon": -85.7585
+  },
+  {
+    "id": "paducah",
+    "name": "Paducah",
+    "state": "Kentucky",
+    "region": "South",
+    "lat": 37.0834,
+    "lon": -88.6001
+  },
+  {
+    "id": "houston",
+    "name": "Houston",
+    "state": "Texas",
+    "region": "South",
+    "lat": 29.7604,
+    "lon": -95.3698
+  },
+  {
+    "id": "cincinnati",
+    "name": "Cincinnati",
+    "state": "Ohio",
+    "region": "Midwest",
+    "lat": 39.1031,
+    "lon": -84.512
+  },
+  {
+    "id": "cleveland",
+    "name": "Cleveland",
+    "state": "Ohio",
+    "region": "Midwest",
+    "lat": 41.4993,
+    "lon": -81.6944
+  },
+  {
+    "id": "detroit",
+    "name": "Detroit",
+    "state": "Michigan",
+    "region": "Midwest",
+    "lat": 42.3314,
+    "lon": -83.0458
+  },
+  {
+    "id": "chicago",
+    "name": "Chicago",
+    "state": "Illinois",
+    "region": "Midwest",
+    "lat": 41.8781,
+    "lon": -87.6298
+  },
+  {
+    "id": "st-louis",
+    "name": "St. Louis",
+    "state": "Missouri",
+    "region": "Midwest",
+    "lat": 38.627,
+    "lon": -90.1994
+  },
+  {
+    "id": "indianapolis",
+    "name": "Indianapolis",
+    "state": "Indiana",
+    "region": "Midwest",
+    "lat": 39.7684,
+    "lon": -86.1581
+  },
+  {
+    "id": "san-francisco",
+    "name": "San Francisco",
+    "state": "California",
+    "region": "West",
+    "lat": 37.7749,
+    "lon": -122.4194
+  },
+  {
+    "id": "sacramento",
+    "name": "Sacramento",
+    "state": "California",
+    "region": "West",
+    "lat": 38.5816,
+    "lon": -121.4944
+  },
+  {
+    "id": "portland-or",
+    "name": "Portland",
+    "state": "Oregon",
+    "region": "West",
+    "lat": 45.5152,
+    "lon": -122.6784
+  },
+  {
+    "id": "sonora",
+    "name": "Sonora",
+    "state": "California",
+    "region": "West",
+    "lat": 37.9841,
+    "lon": -120.3822
+  }
+]

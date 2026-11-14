@@ -1,0 +1,200 @@
+[
+  {
+    "id": "sarna-2004",
+    "type": "Book",
+    "author": "Jonathan D. Sarna",
+    "title": "American Judaism: A History",
+    "publisher": "Yale University Press",
+    "place": "New Haven",
+    "year": 2004
+  },
+  {
+    "id": "diner-1992",
+    "type": "Book",
+    "author": "Hasia R. Diner",
+    "title": "A Time for Gathering: The Second Migration, 1820–1880",
+    "publisher": "Johns Hopkins University Press",
+    "place": "Baltimore",
+    "year": 1992,
+    "note": "Volume 2 of The Jewish People in America."
+  },
+  {
+    "id": "jick-1976",
+    "type": "Book",
+    "author": "Leon A. Jick",
+    "title": "The Americanization of the Synagogue, 1820–1870",
+    "publisher": "Brandeis University Press / University Press of New England",
+    "place": "Hanover, NH",
+    "year": 1976
+  },
+  {
+    "id": "marcus-1991",
+    "type": "Book",
+    "author": "Jacob Rader Marcus",
+    "title": "United States Jewry, 1776–1985, vol. 2: The Germanic Period",
+    "publisher": "Wayne State University Press",
+    "place": "Detroit",
+    "year": 1991
+  },
+  {
+    "id": "sussman-1995",
+    "type": "Book",
+    "author": "Lance J. Sussman",
+    "title": "Isaac Leeser and the Making of American Judaism",
+    "publisher": "Wayne State University Press",
+    "place": "Detroit",
+    "year": 1995
+  },
+  {
+    "id": "sarna-2012",
+    "type": "Book",
+    "author": "Jonathan D. Sarna",
+    "title": "When General Grant Expelled the Jews",
+    "publisher": "Nextbook / Schocken",
+    "place": "New York",
+    "year": 2012
+  },
+  {
+    "id": "korn-1951",
+    "type": "Book",
+    "author": "Bertram W. Korn",
+    "title": "American Jewry and the Civil War",
+    "publisher": "Jewish Publication Society of America",
+    "place": "Philadelphia",
+    "year": 1951
+  },
+  {
+    "id": "isjl-encyclopedia",
+    "type": "WebSite",
+    "author": "Goldring/Woldenberg Institute of Southern Jewish Life",
+    "title": "Encyclopedia of Southern Jewish Communities",
+    "publisher": "ISJL",
+    "place": "Jackson, MS",
+    "year": null,
+    "url": "https://www.isjl.org/encyclopedia-of-southern-jewish-communities.html"
+  },
+  {
+    "id": "occident",
+    "type": "Periodical",
+    "author": "Isaac Leeser (ed.)",
+    "title": "The Occident and American Jewish Advocate",
+    "publisher": "Philadelphia",
+    "place": "Philadelphia",
+    "year": 1843,
+    "note": "Primary source; monthly, 1843–1869. Congregational reports throughout."
+  },
+  {
+    "id": "census-1850-1860",
+    "type": "Dataset",
+    "author": "United States Census Office",
+    "title": "Seventh and Eighth Censuses of the United States: Social Statistics (Churches)",
+    "publisher": "Government Printing Office",
+    "place": "Washington",
+    "year": 1853,
+    "note": "Enumerates 'Jewish' churches by county. Counts are incomplete and should be checked against the published tables."
+  },
+  {
+    "id": "rosenwaike-1985",
+    "type": "Book",
+    "author": "Ira Rosenwaike",
+    "title": "On the Edge of Greatness: A Portrait of American Jewry in the Early National Period",
+    "publisher": "American Jewish Archives",
+    "place": "Cincinnati",
+    "year": 1985
+  },
+  {
+    "id": "kahn-2002",
+    "type": "Book",
+    "author": "Ava F. Kahn (ed.)",
+    "title": "Jewish Voices of the California Gold Rush: A Documentary History, 1849–1880",
+    "publisher": "Wayne State University Press",
+    "place": "Detroit",
+    "year": 2002
+  },
+  {
+    "id": "grinstein-1945",
+    "type": "Book",
+    "author": "Hyman B. Grinstein",
+    "title": "The Rise of the Jewish Community of New York, 1654–1860",
+    "publisher": "Jewish Publication Society of America",
+    "place": "Philadelphia",
+    "year": 1945
+  },
+  {
+    "id": "wolf-whiteman-1957",
+    "type": "Book",
+    "author": "Edwin Wolf 2nd and Maxwell Whiteman",
+    "title": "The History of the Jews of Philadelphia from Colonial Times to the Age of Jackson",
+    "publisher": "Jewish Publication Society of America",
+    "place": "Philadelphia",
+    "year": 1957
+  },
+  {
+    "id": "pool-1952",
+    "type": "Book",
+    "author": "David de Sola Pool",
+    "title": "Portraits Etched in Stone: Early Jewish Settlers, 1682–1831",
+    "publisher": "Columbia University Press",
+    "place": "New York",
+    "year": 1952
+  },
+  {
+    "id": "elzas-1905",
+    "type": "Book",
+    "author": "Barnett A. Elzas",
+    "title": "The Jews of South Carolina, from the Earliest Times to the Present Day",
+    "publisher": "J. B. Lippincott",
+    "place": "Philadelphia",
+    "year": 1905
+  },
+  {
+    "id": "fein-1971",
+    "type": "Book",
+    "author": "Isaac M. Fein",
+    "title": "The Making of an American Jewish Community: The History of Baltimore Jewry from 1773 to 1920",
+    "publisher": "Jewish Publication Society of America",
+    "place": "Philadelphia",
+    "year": 1971
+  },
+  {
+    "id": "nrhp",
+    "type": "Dataset",
+    "author": "National Park Service",
+    "title": "National Register of Historic Places and National Historic Landmark nomination files",
+    "publisher": "U.S. Department of the Interior",
+    "place": "Washington",
+    "year": null,
+    "url": "https://www.nps.gov/subjects/nationalregister/database-research.htm",
+    "note": "Nomination files give building histories, addresses and boundaries."
+  },
+  {
+    "id": "magnes-sonora-album",
+    "type": "Collection",
+    "author": "The Magnes Collection of Jewish Art and Life, UC Berkeley",
+    "title": "Jews of the Gold Rush: Sonora Hebrew Cemetery (WJHC 1968.36), online presentation",
+    "publisher": "The Magnes, Jewish Digital Narratives",
+    "place": "Berkeley",
+    "year": 2009,
+    "url": "https://www.flickr.com/photos/magnesmuseum/albums/72157614161755742/"
+  },
+  {
+    "id": "magnes-pioneer-album",
+    "type": "Collection",
+    "author": "Benjamin Clifford, Lara Michels and Francesco Spagnolo",
+    "title": "Pioneer High Society: Jewish Family Networks in San Francisco (1855–1923), online presentation",
+    "publisher": "The Magnes Collection of Jewish Art and Life, UC Berkeley",
+    "place": "Berkeley",
+    "year": 2009,
+    "url": "https://www.flickr.com/photos/magnesmuseum/albums/72157618496011964/"
+  },
+  {
+    "id": "penn-appel-portrait",
+    "type": "Collection",
+    "author": "University of Pennsylvania Libraries",
+    "title": "Portrait crayon drawing of Samuel Appel, Arnold and Deanne Kaplan Collection of Early American Judaica",
+    "publisher": "University of Pennsylvania Libraries",
+    "place": "Philadelphia",
+    "year": null,
+    "url": "https://digitalcollections.library.upenn.edu/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa"
+  }
+]

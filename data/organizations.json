@@ -1,0 +1,149 @@
+[
+  {
+    "id": "female-hebrew-benevolent",
+    "name": "Female Hebrew Benevolent Society",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "founded": 1819,
+    "certainty": "high",
+    "description": "Women's relief society organized by Rebecca Gratz and others; among the earliest Jewish charities independent of a synagogue.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "hebrew-sunday-school",
+    "name": "Hebrew Sunday School",
+    "category": "education",
+    "place": "philadelphia",
+    "founded": 1838,
+    "certainty": "high",
+    "description": "Rebecca Gratz's coeducational Sunday school, taught largely by women; replicated in Charleston, Savannah, New York and elsewhere.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "bnai-brith",
+    "name": "B'nai B'rith (Independent Order)",
+    "category": "fraternal",
+    "place": "new-york",
+    "founded": 1843,
+    "certainty": "high",
+    "description": "Fraternal order founded in a Lower Manhattan café by German Jewish immigrants; spread to lodges nationwide.",
+    "sources": [
+      "sarna-2004",
+      "diner-1992"
+    ]
+  },
+  {
+    "id": "hebrew-education-society",
+    "name": "Hebrew Education Society",
+    "category": "education",
+    "place": "philadelphia",
+    "founded": 1848,
+    "certainty": "high",
+    "description": "Day school and educational society initiated by Isaac Leeser.",
+    "sources": [
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "free-sons-of-israel",
+    "name": "Independent Order Free Sons of Israel",
+    "category": "fraternal",
+    "place": "new-york",
+    "founded": 1849,
+    "certainty": "medium",
+    "description": "Fraternal and mutual-aid order.",
+    "sources": [
+      "diner-1992"
+    ]
+  },
+  {
+    "id": "eureka-benevolent",
+    "name": "Eureka Benevolent Society",
+    "category": "philanthropy",
+    "place": "san-francisco",
+    "founded": 1850,
+    "certainty": "medium",
+    "description": "Relief society of San Francisco's German Jews.",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "jews-hospital",
+    "name": "Jews' Hospital in the City of New York",
+    "category": "hospital",
+    "place": "new-york",
+    "founded": 1852,
+    "certainty": "high",
+    "description": "Opened its doors in 1855; renamed Mount Sinai Hospital in 1866.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "touro-infirmary",
+    "name": "Touro Infirmary",
+    "category": "hospital",
+    "place": "new-orleans",
+    "founded": 1852,
+    "certainty": "medium",
+    "description": "Hospital established with funds from Judah Touro.",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "jewish-foster-home",
+    "name": "Jewish Foster Home",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "founded": 1855,
+    "certainty": "high",
+    "description": "Orphanage founded on Rebecca Gratz's initiative.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "board-of-delegates",
+    "name": "Board of Delegates of American Israelites",
+    "category": "communal",
+    "place": "new-york",
+    "founded": 1859,
+    "dissolved": 1878,
+    "certainty": "high",
+    "description": "First national Jewish representative body, organized in the wake of the Mortara affair; later merged into the Union of American Hebrew Congregations.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "maimonides-college",
+    "name": "Maimonides College",
+    "category": "education",
+    "place": "philadelphia",
+    "founded": 1867,
+    "dissolved": 1873,
+    "certainty": "high",
+    "description": "First rabbinical seminary in the United States, organized by Isaac Leeser.",
+    "sources": [
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "jewish-orphan-asylum-cle",
+    "name": "Jewish Orphan Asylum",
+    "category": "philanthropy",
+    "place": "cleveland",
+    "founded": 1868,
+    "certainty": "high",
+    "description": "Regional orphanage established by B'nai B'rith after the Civil War.",
+    "sources": [
+      "sarna-2004"
+    ]
+  }
+]

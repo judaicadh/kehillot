@@ -1,0 +1,665 @@
+{
+  "person": {
+    "leo-merzbacher": {
+      "query": "Leo Merzbacher",
+      "hint": "1810",
+      "candidates": [
+        {
+          "qid": "Q124608794",
+          "label": "Leo Merzbacher",
+          "description": "German-American rabbi"
+        }
+      ]
+    },
+    "samuel-adler": {
+      "query": "Samuel Adler",
+      "hint": "1809",
+      "candidates": [
+        {
+          "qid": "Q2079069",
+          "label": "Samuel Adler",
+          "description": "American composer and conductor"
+        },
+        {
+          "qid": "Q7410733",
+          "label": "Samuel Adler",
+          "description": "artist (1898-1979)"
+        },
+        {
+          "qid": "Q104208244",
+          "label": "Samuel Adler",
+          "description": "Holocaust victim (born 1857)"
+        },
+        {
+          "qid": "Q95297",
+          "label": "Samuel Adler",
+          "description": "German-American Reform rabbi"
+        },
+        {
+          "qid": "Q95258383",
+          "label": "Samuel Adler",
+          "description": ""
+        }
+      ]
+    },
+    "julius-eckman": {
+      "query": "Julius Eckman",
+      "hint": "1805",
+      "candidates": [
+        {
+          "qid": "Q15437492",
+          "label": "Julius Eckman",
+          "description": "American Rabbi"
+        },
+        {
+          "qid": "Q131771183",
+          "label": "Julius Eckmann",
+          "description": ""
+        }
+      ]
+    },
+    "robert-lyon": {
+      "query": "Robert Lyon",
+      "hint": "1810",
+      "candidates": [
+        {
+          "qid": "Q18527320",
+          "label": "Robert Lyon",
+          "description": "English artist (1894–1978)"
+        },
+        {
+          "qid": "Q111938551",
+          "label": "Robert Lyon",
+          "description": "American journalist"
+        },
+        {
+          "qid": "Q60736635",
+          "label": "Robert Lyon",
+          "description": "British Army officer"
+        },
+        {
+          "qid": "Q7347077",
+          "label": "Robert Lyon",
+          "description": "Canadian judge and politician"
+        },
+        {
+          "qid": "Q3435789",
+          "label": "Robert Lyon",
+          "description": "French spy"
+        }
+      ]
+    },
+    "benjamin-szold": {
+      "query": "Benjamin Szold",
+      "hint": "1829",
+      "candidates": [
+        {
+          "qid": "Q15456306",
+          "label": "Benjamin Szold",
+          "description": "Hungarian-American rabbi (1829–1902)"
+        }
+      ]
+    },
+    "samuel-hirsch": {
+      "query": "Samuel Hirsch",
+      "hint": "1815",
+      "candidates": [
+        {
+          "qid": "Q97334",
+          "label": "Samuel Hirsch",
+          "description": "German rabbi (1815-1889)"
+        },
+        {
+          "qid": "Q107584261",
+          "label": "Samuel Hirsch",
+          "description": "entrepreneur, son of entrepreneurs"
+        },
+        {
+          "qid": "Q116191187",
+          "label": "Samuel Hirsch",
+          "description": ""
+        },
+        {
+          "qid": "Q127925274",
+          "label": "Samuel Hirsch",
+          "description": ""
+        },
+        {
+          "qid": "Q106820556",
+          "label": "Samuel Hirsch",
+          "description": "Holocaust victim (born 1887)"
+        }
+      ]
+    },
+    "james-gutheim": {
+      "query": "James K. Gutheim",
+      "hint": "1817",
+      "candidates": []
+    },
+    "cesar-kaskel": {
+      "query": "Cesar Kaskel",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q125096148",
+          "label": "Cesar Kaskel",
+          "description": "southern Unionist and Victim of General Order No. 11"
+        }
+      ]
+    },
+    "myer-s-isaacs": {
+      "query": "Myer S. Isaacs",
+      "hint": "1841",
+      "candidates": [
+        {
+          "qid": "Q109120882",
+          "label": "Myer S. Isaacs",
+          "description": "American judge (1841–1904)"
+        }
+      ]
+    },
+    "simon-wolf": {
+      "query": "Simon Wolf",
+      "hint": "1836",
+      "candidates": [
+        {
+          "qid": "Q2287907",
+          "label": "Simon Wolf",
+          "description": "American businessman and diplomat (1836–1923)"
+        },
+        {
+          "qid": "Q131427405",
+          "label": "Simon Wolf",
+          "description": ""
+        },
+        {
+          "qid": "Q130770851",
+          "label": "Simon Wolf",
+          "description": ""
+        },
+        {
+          "qid": "Q105462044",
+          "label": "Simon Wolf",
+          "description": "Holocaust victim (born 1875)"
+        },
+        {
+          "qid": "Q56961551",
+          "label": "Simon Wolf",
+          "description": "researcher"
+        }
+      ]
+    },
+    "abraham-kohn": {
+      "query": "Abraham Kohn",
+      "hint": "1819",
+      "candidates": [
+        {
+          "qid": "Q105465484",
+          "label": "Abraham Kohn",
+          "description": "Holocaust victim (born 1869)"
+        },
+        {
+          "qid": "Q2898173",
+          "label": "Abraham Kohn",
+          "description": "Czech rabbi (1807–1848)"
+        },
+        {
+          "qid": "Q122549518",
+          "label": "Abraham Simon Kohn",
+          "description": ""
+        },
+        {
+          "qid": "Q137796298",
+          "label": "Abraham Kohn Selz",
+          "description": "Heir, businessman"
+        }
+      ]
+    },
+    "gershom-kursheedt": {
+      "query": "Gershom Kursheedt",
+      "hint": "1817",
+      "candidates": [
+        {
+          "qid": "Q119220443",
+          "label": "Gershom Kursheedt",
+          "description": "American rabbi"
+        }
+      ]
+    }
+  },
+  "periodical": {
+    "occident": {
+      "query": "Occident and American Jewish Advocate",
+      "hint": "",
+      "candidates": []
+    },
+    "asmonean": {
+      "query": "Asmonean",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q496922",
+          "label": "Hasmonean dynasty",
+          "description": "dynasty of the Judean region (140–37 BCE)"
+        }
+      ]
+    },
+    "israelite": {
+      "query": "Israelite",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q51669",
+          "label": "Israelites",
+          "description": "Iron Age Hebrew tribal people in Canaan"
+        },
+        {
+          "qid": "Q398134",
+          "label": "Union of Israel",
+          "description": "Religious, conservative political party in Israel"
+        },
+        {
+          "qid": "Q193748",
+          "label": "ancient Israel and Judah",
+          "description": "ancient civilization of the Levant"
+        },
+        {
+          "qid": "Q65250032",
+          "label": "Israelites",
+          "description": "religious identity"
+        },
+        {
+          "qid": "Q3510784",
+          "label": "Israelite Seminary of France",
+          "description": "rabbinical school in Paris, France"
+        }
+      ]
+    },
+    "die-deborah": {
+      "query": "Die Deborah",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q23818678",
+          "label": "Die Deborah von Nagy Nemethy",
+          "description": "short story by Leopold von Sacher-Masoch"
+        }
+      ]
+    },
+    "sinai-journal": {
+      "query": "Sinai",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q36755",
+          "label": "Sinai Peninsula",
+          "description": "peninsula in the Red Sea"
+        },
+        {
+          "qid": "Q107254092",
+          "label": "Sinai",
+          "description": "male given name"
+        },
+        {
+          "qid": "Q213296",
+          "label": "Sinaia",
+          "description": "town in Prahova County, Romania"
+        },
+        {
+          "qid": "Q125167085",
+          "label": "HMS Lucia",
+          "description": "1907 cargo ship converted to depot ship"
+        },
+        {
+          "qid": "Q727536",
+          "label": "Sinai and Palestine Campaign",
+          "description": "campaign of the Middle Eastern theatre of World War I"
+        }
+      ]
+    },
+    "weekly-gleaner": {
+      "query": "Weekly Gleaner",
+      "hint": "",
+      "candidates": [
+        {
+          "qid": "Q100286563",
+          "label": "The Weekly Gleaner",
+          "description": "newspaper published in Winston-Salem, North Carolina"
+        }
+      ]
+    }
+  },
+  "cemetery": {
+    "chatham-square-cemetery": {
+      "query": "First Cemetery of Congregation Shearith Israel",
+      "hint": "cemetery",
+      "candidates": []
+    },
+    "eleventh-street-cemetery": {
+      "query": "Second Cemetery of Congregation Shearith Israel",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q117545399",
+          "label": "Second Cemetery of Congregation Shearith Israel",
+          "description": "cemetery in New York City, United States"
+        }
+      ]
+    },
+    "twenty-first-street-cemetery": {
+      "query": "Third Cemetery of Congregation Shearith Israel",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q117506111",
+          "label": "Third Cemetery of Congregation Shearith Israel in use 1829-1851",
+          "description": "cemetery in New York County, New York, United States"
+        }
+      ]
+    },
+    "beth-olam-cemetery": {
+      "query": "Beth Olam Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q1624932",
+          "label": "Hollywood Forever Cemetery",
+          "description": "cemetery in Los Angeles, California"
+        },
+        {
+          "qid": "Q55605270",
+          "label": "Beth Olam Cemetery",
+          "description": "cemetery in Brooklyn, New York"
+        },
+        {
+          "qid": "Q117549498",
+          "label": "Beth Olem Cemetery",
+          "description": "cemetery in Wayne County, Michigan, United States"
+        },
+        {
+          "qid": "Q117517713",
+          "label": "Beth Olam Cemetery",
+          "description": "cemetery in Newport County, Rhode Island, United States"
+        },
+        {
+          "qid": "Q117684354",
+          "label": "Congregation B'nai Israel Cemetery",
+          "description": "cemetery in Hartford County, Connecticut, United States"
+        }
+      ]
+    },
+    "salem-fields-cemetery": {
+      "query": "Salem Fields Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q7404097",
+          "label": "Salem Fields Cemetery",
+          "description": "cemetery in Brooklyn, New York City"
+        }
+      ]
+    },
+    "mikveh-israel-cemetery": {
+      "query": "Mikveh Israel Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q85785471",
+          "label": "Mikveh Israel Cemetery",
+          "description": "Jewish cemetery in Philadelphia, United States"
+        },
+        {
+          "qid": "Q111181660",
+          "label": "Mikveh Israel Cemetery",
+          "description": "Jewish cemetery in West Philadelphia, Pennsylvania, United States"
+        },
+        {
+          "qid": "Q2893494",
+          "label": "Mikveh Israel Cemetery",
+          "description": "Philadelphia, United States"
+        }
+      ]
+    },
+    "coming-street-cemetery": {
+      "query": "Coming Street Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q5151952",
+          "label": "Coming Street Cemetery",
+          "description": "cemetery in Charleston, South Carolina, United States"
+        }
+      ]
+    },
+    "newport-jewish-cemetery": {
+      "query": "Jewish Cemetery at Newport",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q17026937",
+          "label": "Touro Cemetery",
+          "description": "cemetery in Newport, United States"
+        }
+      ]
+    },
+    "chestnut-street-cemetery": {
+      "query": "Chestnut Street Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q100701193",
+          "label": "Harmony Vale Cemetery",
+          "description": "cemetery in North Reading, Massachusetts"
+        },
+        {
+          "qid": "Q7084294",
+          "label": "Old Jewish Cemetery",
+          "description": "Jewish cemetery in Hamilton County, Ohio"
+        },
+        {
+          "qid": "Q117602628",
+          "label": "Chestnut Street Cemetery",
+          "description": "cemetery in Jones County, Iowa, United States"
+        },
+        {
+          "qid": "Q111454337",
+          "label": "Chestnut Street Cemetery of Early Apalachicola (old City Graveyard)",
+          "description": "Florida historic marker F-192"
+        }
+      ]
+    },
+    "franklin-street-burial-ground": {
+      "query": "Franklin Street Burial Ground",
+      "hint": "cemetery",
+      "candidates": []
+    },
+    "hebrew-cemetery-richmond": {
+      "query": "Hebrew Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q106705957",
+          "label": "Hebrew Cemetery",
+          "description": "cemetery in Reno, Nevada, United States"
+        },
+        {
+          "qid": "Q5695834",
+          "label": "Hebrew Cemetery",
+          "description": "historic cemetery in Richmond City, Virginia"
+        },
+        {
+          "qid": "Q105979792",
+          "label": "Hebrew Orthodox Memorial Cemetery",
+          "description": "cemetery in Baltimore, Maryland"
+        },
+        {
+          "qid": "Q115622721",
+          "label": "Hebrew Cemetery",
+          "description": "cemetery in Brownsville, Texas"
+        },
+        {
+          "qid": "Q5058717",
+          "label": "Cemetery for Hebrew Confederate Soldiers",
+          "description": ""
+        }
+      ]
+    },
+    "sheftall-cemetery": {
+      "query": "Mordecai Sheftall Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q96393898",
+          "label": "Mordecai Sheftall Cemetery",
+          "description": "Old Jewish cemetery in Savannah, Georgia"
+        }
+      ]
+    },
+    "gates-of-mercy-cemetery": {
+      "query": "Gates of Mercy Cemetery",
+      "hint": "cemetery",
+      "candidates": []
+    },
+    "dispersed-of-judah-cemetery": {
+      "query": "Dispersed of Judah Cemetery",
+      "hint": "cemetery",
+      "candidates": [
+        {
+          "qid": "Q117587349",
+          "label": "Dispersed of Judah Cemetery",
+          "description": "cemetery in Orleans Parish, Louisiana, United States"
+        },
+        {
+          "qid": "Q136732858",
+          "label": "Dispersed of Judah Cemetery",
+          "description": ""
+        }
+      ]
+    },
+    "ohabei-shalom-cemetery": {
+      "query": "Ohabei Shalom Cemetery",
+      "hint": "cemetery",
+      "candidates": []
+    }
+  },
+  "site": {
+    "crosby-street-synagogue": {
+      "query": "Crosby Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "nineteenth-street-synagogue": {
+      "query": "Nineteenth Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "elm-street-synagogue": {
+      "query": "Elm Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "norfolk-street-synagogue": {
+      "query": "Norfolk Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "temple-emanu-el-1868": {
+      "query": "Temple Emanu-El, Fifth Avenue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "jews-hospital-28th-street": {
+      "query": "Jews' Hospital building",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "sinsheimer-cafe": {
+      "query": "Sinsheimer's Café",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "cherry-street-synagogue": {
+      "query": "Cherry Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "seventh-street-synagogue": {
+      "query": "Seventh Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "lloyd-street-synagogue": {
+      "query": "Lloyd Street Synagogue",
+      "hint": "synagogue",
+      "candidates": [
+        {
+          "qid": "Q6662759",
+          "label": "Lloyd Street Synagogue",
+          "description": "historical former Reform synagogue in Baltimore, Maryland, United States"
+        }
+      ]
+    },
+    "beth-elohim-hasell-street": {
+      "query": "Beth Elohim Synagogue, Hasell Street",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "touro-synagogue-building": {
+      "query": "Touro Synagogue",
+      "hint": "synagogue",
+      "candidates": [
+        {
+          "qid": "Q12071313",
+          "label": "Touro Synagogue (New Orleans)",
+          "description": "reform synagogue in New Orleans, Louisiana, United States"
+        },
+        {
+          "qid": "Q1355822",
+          "label": "Touro Synagogue",
+          "description": "historic site in Rhode Island, United States"
+        },
+        {
+          "qid": "Q17026937",
+          "label": "Touro Cemetery",
+          "description": "cemetery in Newport, United States"
+        }
+      ]
+    },
+    "mayo-street-synagogue": {
+      "query": "Mayo Street Synagogue",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "bene-israel-broadway": {
+      "query": "Bene Israel Synagogue, Broadway",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "plum-street-temple": {
+      "query": "Plum Street Temple",
+      "hint": "synagogue",
+      "candidates": [
+        {
+          "qid": "Q1100476",
+          "label": "Isaac M. Wise Temple",
+          "description": "synagogue in Cincinnati, Ohio, U.S."
+        }
+      ]
+    },
+    "canal-street-synagogue": {
+      "query": "Nefutzot Yehudah Synagogue, Canal Street",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "broadway-synagogue-sf": {
+      "query": "Emanu-El Synagogue, Broadway",
+      "hint": "synagogue",
+      "candidates": []
+    },
+    "sutter-street-temple": {
+      "query": "Temple Emanu-El, Sutter Street",
+      "hint": "synagogue",
+      "candidates": []
+    }
+  }
+}

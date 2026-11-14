@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "isaac-leeser",
+    "name": "Isaac Leeser",
+    "born": 1806,
+    "died": 1868,
+    "birthPlace": "Neuenkirchen, Westphalia",
+    "occupation": [
+      "hazan",
+      "editor",
+      "translator"
+    ],
+    "description": "Traditionalist religious leader and the most prolific Jewish publisher of antebellum America: editor of The Occident, translator of the Hebrew Bible into English (1853), and founder of much of Philadelphia's Jewish educational infrastructure.",
+    "roles": [
+      {
+        "org": "mikveh-israel-phl",
+        "role": "Hazan",
+        "start": 1829,
+        "end": 1850
+      },
+      {
+        "org": "occident",
+        "role": "Founder and editor",
+        "start": 1843,
+        "end": 1868
+      },
+      {
+        "org": "hebrew-education-society",
+        "role": "Founder",
+        "start": 1848
+      },
+      {
+        "org": "maimonides-college",
+        "role": "Founding provost",
+        "start": 1867,
+        "end": 1868
+      }
+    ],
+    "places": [
+      "richmond",
+      "philadelphia"
+    ],
+    "sources": [
+      "sussman-1995",
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "isaac-mayer-wise",
+    "name": "Isaac Mayer Wise",
+    "born": 1819,
+    "died": 1900,
+    "birthPlace": "Steingrub, Bohemia",
+    "occupation": [
+      "rabbi",
+      "editor",
+      "institution builder"
+    ],
+    "description": "Architect of American Reform Judaism. Arrived in New York in 1846, served in Albany, and from 1854 in Cincinnati, where he founded The Israelite and compiled the prayer book Minhag America (1857).",
+    "roles": [
+      {
+        "org": "beth-el-alb",
+        "role": "Rabbi",
+        "start": 1846,
+        "end": 1850
+      },
+      {
+        "org": "anshe-emeth-alb",
+        "role": "Rabbi",
+        "start": 1850,
+        "end": 1854
+      },
+      {
+        "org": "bnai-yeshurun-cin",
+        "role": "Rabbi",
+        "start": 1854,
+        "end": 1900
+      },
+      {
+        "org": "israelite",
+        "role": "Founder and editor",
+        "start": 1854,
+        "end": 1900
+      },
+      {
+        "org": "die-deborah",
+        "role": "Founder and editor",
+        "start": 1855,
+        "end": 1900
+      }
+    ],
+    "places": [
+      "new-york",
+      "albany",
+      "cincinnati"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "rebecca-gratz",
+    "name": "Rebecca Gratz",
+    "born": 1781,
+    "died": 1869,
+    "birthPlace": "Philadelphia",
+    "occupation": [
+      "philanthropist",
+      "educator"
+    ],
+    "description": "Philadelphia philanthropist who organized the Female Hebrew Benevolent Society (1819), the Hebrew Sunday School (1838) and the Jewish Foster Home (1855), models copied across the country.",
+    "roles": [
+      {
+        "org": "female-hebrew-benevolent",
+        "role": "Founder and secretary",
+        "start": 1819
+      },
+      {
+        "org": "hebrew-sunday-school",
+        "role": "Founder and superintendent",
+        "start": 1838
+      },
+      {
+        "org": "jewish-foster-home",
+        "role": "Founder",
+        "start": 1855
+      }
+    ],
+    "places": [
+      "philadelphia"
+    ],
+    "sources": [
+      "sarna-2004",
+      "diner-1992"
+    ]
+  },
+  {
+    "id": "judah-touro",
+    "name": "Judah Touro",
+    "born": 1775,
+    "died": 1854,
+    "birthPlace": "Newport, Rhode Island",
+    "occupation": [
+      "merchant",
+      "philanthropist"
+    ],
+    "description": "New Orleans merchant whose 1854 will left bequests to Jewish congregations and charities across the United States and abroad, as well as to non-Jewish causes.",
+    "roles": [
+      {
+        "org": "nefutzot-yehudah-nol",
+        "role": "Benefactor",
+        "start": 1846
+      },
+      {
+        "org": "touro-infirmary",
+        "role": "Founder",
+        "start": 1852
+      }
+    ],
+    "places": [
+      "newport",
+      "new-orleans"
+    ],
+    "sources": [
+      "sarna-2004",
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "mordecai-noah",
+    "name": "Mordecai Manuel Noah",
+    "born": 1785,
+    "died": 1851,
+    "birthPlace": "Philadelphia",
+    "occupation": [
+      "journalist",
+      "playwright",
+      "diplomat"
+    ],
+    "description": "The best-known American Jew of his generation; editor and politician in New York, proponent of the 1825 Ararat colony on Grand Island, New York.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Member"
+      }
+    ],
+    "places": [
+      "new-york",
+      "buffalo"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "penina-moise",
+    "name": "Penina Moïse",
+    "born": 1797,
+    "died": 1880,
+    "birthPlace": "Charleston, South Carolina",
+    "occupation": [
+      "poet",
+      "educator"
+    ],
+    "description": "Charleston poet whose hymns filled Beth Elohim's hymnal; superintendent of its Sunday school.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Hymnist; Sunday school superintendent"
+      }
+    ],
+    "places": [
+      "charleston"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "gustavus-poznanski",
+    "name": "Gustavus Poznanski",
+    "born": 1804,
+    "died": 1879,
+    "birthPlace": "Storchnest, Prussian Poland",
+    "occupation": [
+      "hazan"
+    ],
+    "description": "Hazan of Beth Elohim whose support for the 1841 organ and other reforms precipitated a split in the Charleston community.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Hazan",
+        "start": 1836,
+        "end": 1847
+      }
+    ],
+    "places": [
+      "charleston"
+    ],
+    "sources": [
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "david-einhorn",
+    "name": "David Einhorn",
+    "born": 1809,
+    "died": 1879,
+    "birthPlace": "Diespeck, Bavaria",
+    "occupation": [
+      "rabbi",
+      "editor"
+    ],
+    "description": "Radical Reform theologian and outspoken opponent of slavery. Forced to flee Baltimore in April 1861 after preaching against slavery; edited the German-language monthly Sinai.",
+    "roles": [
+      {
+        "org": "har-sinai-bal",
+        "role": "Rabbi",
+        "start": 1855,
+        "end": 1861
+      },
+      {
+        "org": "sinai-journal",
+        "role": "Editor",
+        "start": 1856,
+        "end": 1862
+      },
+      {
+        "org": "keneseth-israel-phl",
+        "role": "Rabbi",
+        "start": 1861,
+        "end": 1866
+      }
+    ],
+    "places": [
+      "baltimore",
+      "philadelphia",
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004",
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "max-lilienthal",
+    "name": "Max Lilienthal",
+    "born": 1815,
+    "died": 1882,
+    "birthPlace": "Munich, Bavaria",
+    "occupation": [
+      "rabbi",
+      "educator"
+    ],
+    "description": "Came to New York in 1845 after work in Russian Jewish education; served German congregations in New York and from 1855 Bene Israel in Cincinnati.",
+    "roles": [
+      {
+        "org": "bene-israel-cin",
+        "role": "Rabbi",
+        "start": 1855,
+        "end": 1882
+      }
+    ],
+    "places": [
+      "new-york",
+      "cincinnati"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "samuel-myer-isaacs",
+    "name": "Samuel Myer Isaacs",
+    "born": 1804,
+    "died": 1878,
+    "birthPlace": "Leeuwarden, Netherlands",
+    "occupation": [
+      "hazan",
+      "editor"
+    ],
+    "description": "Traditionalist New York minister; founder of the Jewish Messenger (1857) and a leader of the Board of Delegates of American Israelites.",
+    "roles": [
+      {
+        "org": "bnai-jeshurun-ny",
+        "role": "Hazan",
+        "start": 1839,
+        "end": 1845
+      },
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Minister",
+        "start": 1845,
+        "end": 1878
+      },
+      {
+        "org": "jewish-messenger",
+        "role": "Founder and editor",
+        "start": 1857
+      },
+      {
+        "org": "board-of-delegates",
+        "role": "Founder",
+        "start": 1859
+      },
+      {
+        "org": "jewish-messenger",
+        "role": "Editor"
+      }
+    ],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "morris-raphall",
+    "name": "Morris Jacob Raphall",
+    "born": 1798,
+    "died": 1868,
+    "birthPlace": "Stockholm, Sweden",
+    "occupation": [
+      "rabbi"
+    ],
+    "description": "Rabbi of B'nai Jeshurun; in February 1860 the first rabbi to offer an opening prayer in the U.S. House of Representatives. His 1861 sermon defending the biblical legitimacy of slavery drew sharp rebuttals.",
+    "roles": [
+      {
+        "org": "bnai-jeshurun-ny",
+        "role": "Rabbi",
+        "start": 1849,
+        "end": 1868
+      }
+    ],
+    "places": [
+      "new-york",
+      "washington"
+    ],
+    "sources": [
+      "korn-1951",
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "sabato-morais",
+    "name": "Sabato Morais",
+    "born": 1823,
+    "died": 1897,
+    "birthPlace": "Livorno, Tuscany",
+    "occupation": [
+      "hazan",
+      "rabbi"
+    ],
+    "description": "Succeeded Leeser at Mikveh Israel in 1851; a Unionist and opponent of slavery during the Civil War.",
+    "roles": [
+      {
+        "org": "mikveh-israel-phl",
+        "role": "Hazan",
+        "start": 1851,
+        "end": 1897
+      },
+      {
+        "org": "maimonides-college",
+        "role": "Faculty",
+        "start": 1867
+      }
+    ],
+    "places": [
+      "philadelphia"
+    ],
+    "sources": [
+      "sarna-2004",
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "judah-benjamin",
+    "name": "Judah P. Benjamin",
+    "born": 1811,
+    "died": 1884,
+    "birthPlace": "St. Croix, Danish West Indies",
+    "occupation": [
+      "lawyer",
+      "politician"
+    ],
+    "description": "New Orleans lawyer and slaveholder; U.S. senator from Louisiana (1853–1861) and Confederate attorney general, secretary of war and secretary of state.",
+    "roles": [],
+    "places": [
+      "charleston",
+      "new-orleans",
+      "washington"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "uriah-levy",
+    "name": "Uriah P. Levy",
+    "born": 1792,
+    "died": 1862,
+    "birthPlace": "Philadelphia",
+    "occupation": [
+      "naval officer"
+    ],
+    "description": "U.S. Navy officer who campaigned against flogging; purchased and preserved Monticello (1834).",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Member"
+      }
+    ],
+    "places": [
+      "philadelphia",
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "ernestine-rose",
+    "name": "Ernestine Rose",
+    "born": 1810,
+    "died": 1892,
+    "birthPlace": "Piotrków, Poland",
+    "occupation": [
+      "reformer",
+      "orator"
+    ],
+    "description": "Freethinking advocate of women's rights, married women's property law and abolition, active in New York from 1836.",
+    "roles": [],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "diner-1992"
+    ]
+  },
+  {
+    "id": "solomon-carvalho",
+    "name": "Solomon Nunes Carvalho",
+    "born": 1815,
+    "died": 1897,
+    "birthPlace": "Charleston, South Carolina",
+    "occupation": [
+      "painter",
+      "photographer"
+    ],
+    "description": "Artist and daguerreotypist on John C. Frémont's 1853–54 western expedition; active in Baltimore, Philadelphia and New York congregational life.",
+    "roles": [],
+    "places": [
+      "charleston",
+      "baltimore",
+      "philadelphia",
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "bernhard-felsenthal",
+    "name": "Bernhard Felsenthal",
+    "born": 1822,
+    "died": 1908,
+    "birthPlace": "Münchweiler, Palatinate",
+    "occupation": [
+      "rabbi",
+      "scholar"
+    ],
+    "description": "Leader of Chicago's Jüdischer Reformverein (1858), which became Sinai Congregation in 1861.",
+    "roles": [
+      {
+        "org": "sinai-chi",
+        "role": "Rabbi",
+        "start": 1861,
+        "end": 1864
+      }
+    ],
+    "places": [
+      "chicago"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "jacob-frankel",
+    "name": "Jacob Frankel",
+    "born": 1808,
+    "died": 1887,
+    "birthPlace": "Grünstadt, Bavaria",
+    "occupation": [
+      "hazan",
+      "chaplain"
+    ],
+    "description": "Hazan of Rodeph Shalom; commissioned in September 1862 as the first Jewish chaplain in the U.S. armed forces, serving military hospitals around Philadelphia.",
+    "roles": [
+      {
+        "org": "rodeph-shalom-phl",
+        "role": "Hazan",
+        "start": 1848
+      }
+    ],
+    "places": [
+      "philadelphia"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "levi-strauss",
+    "name": "Levi Strauss",
+    "born": 1829,
+    "died": 1902,
+    "birthPlace": "Buttenheim, Bavaria",
+    "occupation": [
+      "merchant"
+    ],
+    "description": "Dry-goods merchant who arrived in San Francisco in 1853; an early member of Congregation Emanu-El.",
+    "roles": [
+      {
+        "org": "emanu-el-sf",
+        "role": "Member"
+      }
+    ],
+    "places": [
+      "new-york",
+      "san-francisco"
+    ],
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "abraham-rice",
+    "name": "Abraham Rice",
+    "born": 1800,
+    "died": 1862,
+    "birthPlace": "Gochsheim, Bavaria",
+    "occupation": [
+      "rabbi"
+    ],
+    "description": "The first ordained rabbi to hold a pulpit in the United States (Baltimore, 1840); a strict traditionalist.",
+    "roles": [
+      {
+        "org": "baltimore-hebrew",
+        "role": "Rabbi",
+        "start": 1840,
+        "end": 1849
+      }
+    ],
+    "places": [
+      "baltimore"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "leo-merzbacher",
+    "name": "Leo Merzbacher",
+    "born": 1810,
+    "died": 1856,
+    "birthPlace": "Fürth, Bavaria",
+    "occupation": [
+      "rabbi"
+    ],
+    "description": "Served the German congregations Anshe Chesed and Rodeph Sholom before becoming the first rabbi of Temple Emanu-El; compiled its early Reform prayer book.",
+    "roles": [
+      {
+        "org": "anshe-chesed-ny",
+        "role": "Rabbi",
+        "start": 1843,
+        "end": 1845
+      },
+      {
+        "org": "emanu-el-ny",
+        "role": "Rabbi",
+        "start": 1845,
+        "end": 1856
+      }
+    ],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "grinstein-1945",
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "samuel-adler",
+    "name": "Samuel Adler",
+    "born": 1809,
+    "died": 1891,
+    "birthPlace": "Worms, Hesse",
+    "occupation": [
+      "rabbi",
+      "scholar"
+    ],
+    "description": "German Reform rabbi who succeeded Merzbacher at Emanu-El and led it into its Fifth Avenue temple.",
+    "roles": [
+      {
+        "org": "emanu-el-ny",
+        "role": "Rabbi",
+        "start": 1857,
+        "end": 1874
+      }
+    ],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "julius-eckman",
+    "name": "Julius Eckman",
+    "born": 1805,
+    "died": 1874,
+    "birthPlace": "Rawicz, Posen",
+    "occupation": [
+      "rabbi",
+      "editor"
+    ],
+    "description": "First rabbi of Emanu-El in San Francisco and founder of The Weekly Gleaner, the first Jewish periodical on the Pacific coast.",
+    "roles": [
+      {
+        "org": "emanu-el-sf",
+        "role": "Rabbi",
+        "start": 1854,
+        "end": 1855
+      },
+      {
+        "org": "weekly-gleaner",
+        "role": "Founder and editor",
+        "start": 1857
+      }
+    ],
+    "places": [
+      "richmond",
+      "new-orleans",
+      "san-francisco"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "robert-lyon",
+    "name": "Robert Lyon",
+    "born": 1810,
+    "died": 1858,
+    "birthPlace": "London",
+    "occupation": [
+      "editor",
+      "merchant"
+    ],
+    "description": "English-born founder and editor of The Asmonean, the first Jewish weekly in America.",
+    "roles": [
+      {
+        "org": "asmonean",
+        "role": "Founder and editor",
+        "start": 1849,
+        "end": 1858
+      }
+    ],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "benjamin-szold",
+    "name": "Benjamin Szold",
+    "born": 1829,
+    "died": 1902,
+    "birthPlace": "Németlőc, Hungary",
+    "occupation": [
+      "rabbi",
+      "scholar"
+    ],
+    "description": "Moderate reformer at Oheb Shalom, author of a widely used prayer book, and father of Henrietta Szold.",
+    "roles": [
+      {
+        "org": "oheb-shalom-bal",
+        "role": "Rabbi",
+        "start": 1859,
+        "end": 1892
+      }
+    ],
+    "places": [
+      "baltimore"
+    ],
+    "sources": [
+      "sarna-2004",
+      "fein-1971"
+    ]
+  },
+  {
+    "id": "samuel-hirsch",
+    "name": "Samuel Hirsch",
+    "born": 1815,
+    "died": 1889,
+    "birthPlace": "Thalfang, Prussia",
+    "occupation": [
+      "rabbi",
+      "philosopher"
+    ],
+    "description": "Former chief rabbi of Luxembourg and radical Reform philosopher; led Keneseth Israel and co-led the 1869 Philadelphia Conference.",
+    "roles": [
+      {
+        "org": "keneseth-israel-phl",
+        "role": "Rabbi",
+        "start": 1866,
+        "end": 1888
+      }
+    ],
+    "places": [
+      "philadelphia"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "james-gutheim",
+    "name": "James K. Gutheim",
+    "born": 1817,
+    "died": 1886,
+    "birthPlace": "Menne, Westphalia",
+    "occupation": [
+      "rabbi"
+    ],
+    "description": "Rabbi in Cincinnati and New Orleans; left New Orleans in 1863 rather than swear allegiance to the Union, later served Emanu-El in New York before returning south.",
+    "roles": [
+      {
+        "org": "nefutzot-yehudah-nol",
+        "role": "Rabbi"
+      }
+    ],
+    "places": [
+      "cincinnati",
+      "new-orleans",
+      "new-york"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "korn-1951",
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "cesar-kaskel",
+    "name": "Cesar Kaskel",
+    "born": null,
+    "died": null,
+    "birthPlace": "Prussia",
+    "occupation": [
+      "merchant"
+    ],
+    "description": "Paducah merchant who, expelled under General Orders No. 11, travelled to Washington and secured a meeting with Lincoln that led to the order being revoked.",
+    "roles": [],
+    "places": [
+      "paducah",
+      "washington"
+    ],
+    "sources": [
+      "sarna-2012"
+    ]
+  },
+  {
+    "id": "myer-s-isaacs",
+    "name": "Myer S. Isaacs",
+    "born": 1841,
+    "died": 1904,
+    "birthPlace": "New York",
+    "occupation": [
+      "lawyer",
+      "editor"
+    ],
+    "description": "Son of Samuel Myer Isaacs; co-editor of the Jewish Messenger and secretary of the Board of Delegates of American Israelites.",
+    "roles": [
+      {
+        "org": "jewish-messenger",
+        "role": "Co-editor"
+      },
+      {
+        "org": "board-of-delegates",
+        "role": "Secretary"
+      }
+    ],
+    "places": [
+      "new-york"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "simon-wolf",
+    "name": "Simon Wolf",
+    "born": 1836,
+    "died": 1923,
+    "birthPlace": "Hinzweiler, Bavaria",
+    "occupation": [
+      "lawyer",
+      "advocate"
+    ],
+    "description": "Washington lawyer who became the leading Jewish advocate in the capital, defending Jewish soldiers' record during and after the Civil War.",
+    "roles": [
+      {
+        "org": "bnai-brith",
+        "role": "Member"
+      }
+    ],
+    "places": [
+      "washington"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "abraham-kohn",
+    "name": "Abraham Kohn",
+    "born": 1819,
+    "died": 1871,
+    "birthPlace": "Mönchsroth, Bavaria",
+    "occupation": [
+      "merchant",
+      "politician"
+    ],
+    "description": "Peddler turned merchant, a founder of Kehilath Anshe Maariv and Chicago city clerk; his 1861 gift of a flag to Lincoln became celebrated.",
+    "roles": [
+      {
+        "org": "kam-chi",
+        "role": "Founder; president"
+      }
+    ],
+    "places": [
+      "chicago"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "gershom-kursheedt",
+    "name": "Gershom Kursheedt",
+    "born": 1817,
+    "died": 1863,
+    "birthPlace": "Richmond, Virginia",
+    "occupation": [
+      "merchant",
+      "communal leader"
+    ],
+    "description": "New Orleans communal leader, Judah Touro's adviser and an executor of his will.",
+    "roles": [
+      {
+        "org": "nefutzot-yehudah-nol",
+        "role": "Lay leader"
+      }
+    ],
+    "places": [
+      "richmond",
+      "new-orleans"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "samuel-appel",
+    "name": "Samuel Appel",
+    "born": null,
+    "died": null,
+    "birthPlace": "",
+    "occupation": [
+      "merchant",
+      "firefighter"
+    ],
+    "description": "Gold Rush–era San Francisco pioneer, decorated member of the city fire department and participant in the Committee of Vigilance; ran the Appel & Dietrich Market on California Street and helped found early Jewish communal and cultural institutions.",
+    "roles": [],
+    "places": [
+      "san-francisco"
+    ],
+    "sources": [
+      "penn-appel-portrait"
+    ]
+  },
+  {
+    "id": "louis-sloss",
+    "name": "Louis Sloss",
+    "born": 1823,
+    "died": 1902,
+    "birthPlace": "Bavaria",
+    "occupation": [
+      "merchant"
+    ],
+    "description": "Bavarian-born merchant, business partner of Lewis Gerstle in Sacramento and San Francisco; his 1855 marriage to Sarah Greenebaum in Philadelphia began the Sloss-Gerstle family network, later enriched by the Alaska seal-skin trade.",
+    "roles": [],
+    "places": [
+      "philadelphia",
+      "sacramento",
+      "san-francisco"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "magnes-pioneer-album"
+    ]
+  },
+  {
+    "id": "lewis-gerstle",
+    "name": "Lewis Gerstle",
+    "born": 1824,
+    "died": 1902,
+    "birthPlace": "Bavaria",
+    "occupation": [
+      "merchant"
+    ],
+    "description": "Bavarian-born merchant and Louis Sloss's partner; he married Hannah Greenebaum, sister of Sloss's wife Sarah, uniting the two families.",
+    "roles": [],
+    "places": [
+      "sacramento",
+      "san-francisco"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "magnes-pioneer-album"
+    ]
+  },
+  {
+    "id": "william-haas",
+    "name": "William Haas",
+    "born": 1849,
+    "died": 1916,
+    "birthPlace": "Reckendorf, Bavaria",
+    "occupation": [
+      "merchant"
+    ],
+    "description": "Bavarian-born San Francisco merchant of a younger generation than Sloss and Gerstle; his 1880 marriage to Bertha Greenebaum joined the Haas family to the Sloss-Gerstle network. He built the house at 2007 Franklin Street.",
+    "roles": [],
+    "places": [
+      "san-francisco"
+    ],
+    "certainty": "medium",
+    "sources": [
+      "magnes-pioneer-album"
+    ]
+  }
+]

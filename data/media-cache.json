@@ -1,0 +1,1417 @@
+{
+  "items": {
+    "flickr-3295090177": {
+      "key": "flickr-3295090177",
+      "source": "flickr",
+      "sourceId": "3295090177",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295090177/",
+      "title": "Moses Reeb (1835-1891)",
+      "description": "A native of Germany, Moses Reeb owned a shoe store with his brother. A footstone with \"M. R.\" is at the base of the stone. [1968-036-so-005_001]",
+      "date": "1891-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3444/3295090177_daf8d3b6d8_b.jpg",
+        "medium": "https://live.staticflickr.com/3444/3295090177_daf8d3b6d8_z.jpg",
+        "thumb": "https://live.staticflickr.com/3444/3295090177_daf8d3b6d8_n.jpg",
+        "square": "https://live.staticflickr.com/3444/3295090177_daf8d3b6d8_q.jpg",
+        "width": 819,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295090177/"
+    },
+    "iiif-a3a9b450": {
+      "key": "iiif-a3a9b450",
+      "source": "iiif",
+      "manifest": "https://digitalrepository.library.upenn.edu/iiif/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa/manifest",
+      "page": "https://digitalcollections.library.upenn.edu/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa",
+      "title": "Portrait Crayon drawing of Samuel Appel",
+      "description": "A period crayon enlargement portrait of Samuel Appel, a prominent Gold Rush-era Jewish pioneer, decorated San Francisco Fire Department member, and participant in the Committee of Vigilance. Appel engaged in early commercial ventures, including the historic Appel & Dietrich Market on California Street, and helped establish early Jewish communal and cultural foundations in the city. Members of his pioneering family circle are interred at the historic Hills of Eternity Memorial Park in Colma, California.",
+      "date": "1880~",
+      "creator": null,
+      "collection": "Arnold and Deanne Kaplan Collection of Early American Judaica (University of Pennsylvania)",
+      "subjects": [
+        "Appel, Samuel",
+        "Frontier and pioneer life--California",
+        "Portrait drawing"
+      ],
+      "locationText": "United States -- California -- San Francisco",
+      "identifier": "2026.06.09.00002; {1982851C-ADFC-474E-819A-5B3EA8C61C0C}; 1.419",
+      "license": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "licenseUrl": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "attribution": "Provided by the University of Pennsylvania Libraries.",
+      "image": {
+        "full": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4/full/!1600,1600/0/default.jpg",
+        "medium": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4/full/!800,800/0/default.jpg",
+        "thumb": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4/full/!400,400/0/default.jpg",
+        "service": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4",
+        "width": 9290,
+        "height": 10854
+      },
+      "pages": [
+        {
+          "label": "p. 1",
+          "width": 9290,
+          "height": 10854,
+          "service": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4",
+          "image": "https://iiif-images.library.upenn.edu/iiif/3/6e48a9ea-64cc-42e3-bafc-bd8ed60ef2c4/full/!1600,1600/0/default.jpg"
+        },
+        {
+          "label": "p. 2",
+          "width": 9290,
+          "height": 10854,
+          "service": "https://iiif-images.library.upenn.edu/iiif/3/a22aa315-a3fb-4c13-828c-b730b01659bb",
+          "image": "https://iiif-images.library.upenn.edu/iiif/3/a22aa315-a3fb-4c13-828c-b730b01659bb/full/!1600,1600/0/default.jpg"
+        }
+      ],
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://digitalrepository.library.upenn.edu/iiif/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa/manifest"
+    },
+    "flickr-3295907388": {
+      "key": "flickr-3295907388",
+      "source": "flickr",
+      "sourceId": "3295907388",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295907388/",
+      "title": "Sonora Hebrew Cemetery",
+      "description": "Founded in 1853, the Sonora Hebrew Cemetery was the first cemetery in the Gold Rush Region. The first burial dates from 1853, and the last was in 1977. On January 13, 1974, it was rededicated as a historic site. The cemetery includes 43 visible gravestones, and two possible burial mounts. Records indicate that a mortuary building may have existed on the cemetery grounds, although no evidence of such a structure exists. The cemetery is enclosed by a stone wall built in the 1850's, and is surrounded by Italian cypress trees. The gate is kept locked. For information and access arrangements, visit http:www.magnes.org The photographs of the gravestones presented here are part of Collection WJHC 1968.36 of the Magnes. ––– This online presentation is part of the \"Jewish Digital Narratives\" curated by Francesco Spagnolo, PhD, Head of Research at the Magnes in Berkeley, California. For more information go to magnes.org/narratives.htm The \"Jewish Digital Narratives\" are part of the Jews in the Golden State program, which is supported by the Walter & Elise Haas Fund and by an Anonymous gift. The Magnes is a beneficiary of the Esther and Jacques Reutlinger Foundation, the Jewish Community Federation of San Francisco, the Peninsula, Marin and Sonoma Counties and the Jewish Community Federation of the Greater East Bay. [WJHC 1968-036-so-002_001]",
+      "date": "1858-03-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3364/3295907388_f3e1142e79_b.jpg",
+        "medium": "https://live.staticflickr.com/3364/3295907388_f3e1142e79_z.jpg",
+        "thumb": "https://live.staticflickr.com/3364/3295907388_f3e1142e79_n.jpg",
+        "square": "https://live.staticflickr.com/3364/3295907388_f3e1142e79_q.jpg",
+        "width": 811,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295907388/"
+    },
+    "flickr-3295083643": {
+      "key": "flickr-3295083643",
+      "source": "flickr",
+      "sourceId": "3295083643",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295083643/",
+      "title": "1968-036-so-002_002.tif",
+      "description": "",
+      "date": "1858-03-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3558/3295083643_f29d211e1d_b.jpg",
+        "medium": "https://live.staticflickr.com/3558/3295083643_f29d211e1d_z.jpg",
+        "thumb": "https://live.staticflickr.com/3558/3295083643_f29d211e1d_n.jpg",
+        "square": "https://live.staticflickr.com/3558/3295083643_f29d211e1d_q.jpg",
+        "width": 693,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295083643/"
+    },
+    "flickr-3295909940": {
+      "key": "flickr-3295909940",
+      "source": "flickr",
+      "sourceId": "3295909940",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295909940/",
+      "title": "1968-036-so-001_002.tif",
+      "description": "",
+      "date": "1968-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3391/3295909940_1ebcd3568a_b.jpg",
+        "medium": "https://live.staticflickr.com/3391/3295909940_1ebcd3568a_z.jpg",
+        "thumb": "https://live.staticflickr.com/3391/3295909940_1ebcd3568a_n.jpg",
+        "square": "https://live.staticflickr.com/3391/3295909940_1ebcd3568a_q.jpg",
+        "width": 1024,
+        "height": 814
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295909940/"
+    },
+    "flickr-3295086157": {
+      "key": "flickr-3295086157",
+      "source": "flickr",
+      "sourceId": "3295086157",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295086157/",
+      "title": "1968-036-so-001_001.tif",
+      "description": "",
+      "date": "1968-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3482/3295086157_0a7c1ab48e_b.jpg",
+        "medium": "https://live.staticflickr.com/3482/3295086157_0a7c1ab48e_z.jpg",
+        "thumb": "https://live.staticflickr.com/3482/3295086157_0a7c1ab48e_n.jpg",
+        "square": "https://live.staticflickr.com/3482/3295086157_0a7c1ab48e_q.jpg",
+        "width": 1024,
+        "height": 811
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295086157/"
+    },
+    "flickr-3295087219": {
+      "key": "flickr-3295087219",
+      "source": "flickr",
+      "sourceId": "3295087219",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295087219/",
+      "title": "1968-036-so-003_003.tif",
+      "description": "",
+      "date": "1968-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3633/3295087219_3a8d061446_b.jpg",
+        "medium": "https://live.staticflickr.com/3633/3295087219_3a8d061446_z.jpg",
+        "thumb": "https://live.staticflickr.com/3633/3295087219_3a8d061446_n.jpg",
+        "square": "https://live.staticflickr.com/3633/3295087219_3a8d061446_q.jpg",
+        "width": 816,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295087219/"
+    },
+    "flickr-3295088631": {
+      "key": "flickr-3295088631",
+      "source": "flickr",
+      "sourceId": "3295088631",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295088631/",
+      "title": "1968-036-so-004.tif",
+      "description": "",
+      "date": "1864-12-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3114/3295088631_51427012c5_b.jpg",
+        "medium": "https://live.staticflickr.com/3114/3295088631_51427012c5_z.jpg",
+        "thumb": "https://live.staticflickr.com/3114/3295088631_51427012c5_n.jpg",
+        "square": "https://live.staticflickr.com/3114/3295088631_51427012c5_q.jpg",
+        "width": 768,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295088631/"
+    },
+    "flickr-3295091441": {
+      "key": "flickr-3295091441",
+      "source": "flickr",
+      "sourceId": "3295091441",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295091441/",
+      "title": "1968-036-so-006_002.tif",
+      "description": "",
+      "date": "1885-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3348/3295091441_7fab1b7d00_b.jpg",
+        "medium": "https://live.staticflickr.com/3348/3295091441_7fab1b7d00_z.jpg",
+        "thumb": "https://live.staticflickr.com/3348/3295091441_7fab1b7d00_n.jpg",
+        "square": "https://live.staticflickr.com/3348/3295091441_7fab1b7d00_q.jpg",
+        "width": 1024,
+        "height": 816
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295091441/"
+    },
+    "flickr-3295092597": {
+      "key": "flickr-3295092597",
+      "source": "flickr",
+      "sourceId": "3295092597",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295092597/",
+      "title": "1968-036-so-006_004.tif",
+      "description": "",
+      "date": "1885-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3529/3295092597_5db4b4d7ea_b.jpg",
+        "medium": "https://live.staticflickr.com/3529/3295092597_5db4b4d7ea_z.jpg",
+        "thumb": "https://live.staticflickr.com/3529/3295092597_5db4b4d7ea_n.jpg",
+        "square": "https://live.staticflickr.com/3529/3295092597_5db4b4d7ea_q.jpg",
+        "width": 811,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295092597/"
+    },
+    "flickr-3295094567": {
+      "key": "flickr-3295094567",
+      "source": "flickr",
+      "sourceId": "3295094567",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295094567/",
+      "title": "1968-036-so-007_002.tif",
+      "description": "",
+      "date": "1884-09-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3564/3295094567_157556ff35_b.jpg",
+        "medium": "https://live.staticflickr.com/3564/3295094567_157556ff35_z.jpg",
+        "thumb": "https://live.staticflickr.com/3564/3295094567_157556ff35_n.jpg",
+        "square": "https://live.staticflickr.com/3564/3295094567_157556ff35_q.jpg",
+        "width": 1024,
+        "height": 689
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295094567/"
+    },
+    "flickr-3295095829": {
+      "key": "flickr-3295095829",
+      "source": "flickr",
+      "sourceId": "3295095829",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295095829/",
+      "title": "1968-036-so-007_005.tif",
+      "description": "",
+      "date": "1884-09-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3441/3295095829_ab89e9b4d9_b.jpg",
+        "medium": "https://live.staticflickr.com/3441/3295095829_ab89e9b4d9_z.jpg",
+        "thumb": "https://live.staticflickr.com/3441/3295095829_ab89e9b4d9_n.jpg",
+        "square": "https://live.staticflickr.com/3441/3295095829_ab89e9b4d9_q.jpg",
+        "width": 1024,
+        "height": 698
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295095829/"
+    },
+    "flickr-3295921700": {
+      "key": "flickr-3295921700",
+      "source": "flickr",
+      "sourceId": "3295921700",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295921700/",
+      "title": "1968-036-so-008_003.tif",
+      "description": "",
+      "date": "1898-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3303/3295921700_49aa3d799e_b.jpg",
+        "medium": "https://live.staticflickr.com/3303/3295921700_49aa3d799e_z.jpg",
+        "thumb": "https://live.staticflickr.com/3303/3295921700_49aa3d799e_n.jpg",
+        "square": "https://live.staticflickr.com/3303/3295921700_49aa3d799e_q.jpg",
+        "width": 808,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295921700/"
+    },
+    "flickr-3295097777": {
+      "key": "flickr-3295097777",
+      "source": "flickr",
+      "sourceId": "3295097777",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295097777/",
+      "title": "1968-036-so-010_001.tif",
+      "description": "",
+      "date": "1885-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3522/3295097777_69f0ea760a_b.jpg",
+        "medium": "https://live.staticflickr.com/3522/3295097777_69f0ea760a_z.jpg",
+        "thumb": "https://live.staticflickr.com/3522/3295097777_69f0ea760a_n.jpg",
+        "square": "https://live.staticflickr.com/3522/3295097777_69f0ea760a_q.jpg",
+        "width": 794,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295097777/"
+    },
+    "flickr-3295924252": {
+      "key": "flickr-3295924252",
+      "source": "flickr",
+      "sourceId": "3295924252",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295924252/",
+      "title": "1968-036-so-011_001.tif",
+      "description": "",
+      "date": "1968-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3418/3295924252_1c110235e8_b.jpg",
+        "medium": "https://live.staticflickr.com/3418/3295924252_1c110235e8_z.jpg",
+        "thumb": "https://live.staticflickr.com/3418/3295924252_1c110235e8_n.jpg",
+        "square": "https://live.staticflickr.com/3418/3295924252_1c110235e8_q.jpg",
+        "width": 707,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295924252/"
+    },
+    "flickr-3295100821": {
+      "key": "flickr-3295100821",
+      "source": "flickr",
+      "sourceId": "3295100821",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295100821/",
+      "title": "1968-036-so-012_001.tif",
+      "description": "",
+      "date": "1865-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3396/3295100821_67a228ed62_b.jpg",
+        "medium": "https://live.staticflickr.com/3396/3295100821_67a228ed62_z.jpg",
+        "thumb": "https://live.staticflickr.com/3396/3295100821_67a228ed62_n.jpg",
+        "square": "https://live.staticflickr.com/3396/3295100821_67a228ed62_q.jpg",
+        "width": 793,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295100821/"
+    },
+    "flickr-3295927184": {
+      "key": "flickr-3295927184",
+      "source": "flickr",
+      "sourceId": "3295927184",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295927184/",
+      "title": "1968-036-so-013_003.tif",
+      "description": "",
+      "date": "1905-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3431/3295927184_d8bd19ea50_b.jpg",
+        "medium": "https://live.staticflickr.com/3431/3295927184_d8bd19ea50_z.jpg",
+        "thumb": "https://live.staticflickr.com/3431/3295927184_d8bd19ea50_n.jpg",
+        "square": "https://live.staticflickr.com/3431/3295927184_d8bd19ea50_q.jpg",
+        "width": 1024,
+        "height": 690
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295927184/"
+    },
+    "flickr-3295928118": {
+      "key": "flickr-3295928118",
+      "source": "flickr",
+      "sourceId": "3295928118",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295928118/",
+      "title": "1968-036-so-010_005.tif",
+      "description": "",
+      "date": "1885-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3630/3295928118_986af747e0_b.jpg",
+        "medium": "https://live.staticflickr.com/3630/3295928118_986af747e0_z.jpg",
+        "thumb": "https://live.staticflickr.com/3630/3295928118_986af747e0_n.jpg",
+        "square": "https://live.staticflickr.com/3630/3295928118_986af747e0_q.jpg",
+        "width": 820,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295928118/"
+    },
+    "flickr-3295929554": {
+      "key": "flickr-3295929554",
+      "source": "flickr",
+      "sourceId": "3295929554",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295929554/",
+      "title": "Morris and Harris Family Plot (19-23)",
+      "description": "19. Henry Morris (1858-1911) son of James and Pauline Morris 20. Pauline Morris (1904-1905) daughter of Saul and Minnie Morris 21. Ida (Morris) Harris (1863-1916) and Charles Harris (1840-1924) 22. George Morris (1872-1895), son of James and Pauline Morris 23. Pauline Morris (1830-1904) and James Morris (1825-1885) [1968-036-so-017_002]",
+      "date": "1895-11-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3580/3295929554_eb838641ec_b.jpg",
+        "medium": "https://live.staticflickr.com/3580/3295929554_eb838641ec_z.jpg",
+        "thumb": "https://live.staticflickr.com/3580/3295929554_eb838641ec_n.jpg",
+        "square": "https://live.staticflickr.com/3580/3295929554_eb838641ec_q.jpg",
+        "width": 1024,
+        "height": 816
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295929554/"
+    },
+    "flickr-3295930678": {
+      "key": "flickr-3295930678",
+      "source": "flickr",
+      "sourceId": "3295930678",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295930678/",
+      "title": "1968-036-so-017_003.tif",
+      "description": "",
+      "date": "1916-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3544/3295930678_5ea1caa530_b.jpg",
+        "medium": "https://live.staticflickr.com/3544/3295930678_5ea1caa530_z.jpg",
+        "thumb": "https://live.staticflickr.com/3544/3295930678_5ea1caa530_n.jpg",
+        "square": "https://live.staticflickr.com/3544/3295930678_5ea1caa530_q.jpg",
+        "width": 722,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295930678/"
+    },
+    "flickr-3295931560": {
+      "key": "flickr-3295931560",
+      "source": "flickr",
+      "sourceId": "3295931560",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3295931560/",
+      "title": "1968-036-so-019.tif",
+      "description": "",
+      "date": "1968-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3307/3295931560_68756dd98d_b.jpg",
+        "medium": "https://live.staticflickr.com/3307/3295931560_68756dd98d_z.jpg",
+        "thumb": "https://live.staticflickr.com/3307/3295931560_68756dd98d_n.jpg",
+        "square": "https://live.staticflickr.com/3307/3295931560_68756dd98d_q.jpg",
+        "width": 690,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.982943,
+        "lon": -120.382117,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3295931560/"
+    },
+    "flickr-3546512147": {
+      "key": "flickr-3546512147",
+      "source": "flickr",
+      "sourceId": "3546512147",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3546512147/",
+      "title": "Wedding Invitation: San Francisco, 1880",
+      "description": "Image: Wedding Invitation (Insert): William Haas and Bertha Greenebaum, 1880 [wjhc1972-011-023]",
+      "date": "1880-05-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3569/3546512147_ca022301c3_b.jpg",
+        "medium": "https://live.staticflickr.com/3569/3546512147_ca022301c3_z.jpg",
+        "thumb": "https://live.staticflickr.com/3569/3546512147_ca022301c3_n.jpg",
+        "square": "https://live.staticflickr.com/3569/3546512147_ca022301c3_q.jpg",
+        "width": 1024,
+        "height": 726
+      },
+      "geo": {
+        "lat": 37.792208,
+        "lon": -122.424409,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3546512147/"
+    },
+    "flickr-3547320454": {
+      "key": "flickr-3547320454",
+      "source": "flickr",
+      "sourceId": "3547320454",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547320454/",
+      "title": "From the \"Parents\" of the Bride",
+      "description": "Louis Sloss and Lewis Gerstle, both Jewish immigrants from Bavaria, Germany, were business partners and friends in Sacramento and later San Francisco. They moved West in the wake of the discovery of gold, arriving to the California in 1849 and 1850, respectively. They initially operated a grocery business in partnership with Simon Greenewald, but upon relocateing to San Francisco they became leading stock brokers. In 1855, Louis Sloss married Sarah Greenebaum, the sister of a business associate. Sarah, her brothers and her sister, Hannah, were also Jewish immigrants from Germany, although the sisters had been adopted by a wealthy Philadelphia family, the Cauffmans, when it became apparent that their widowed father was unable to support them. Image: Wedding Announcement: Louis Sloss and Sarah Greenebaum, 1855 [wjhc1972-011-002_1]",
+      "date": "1855-07-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3327/3547320454_8d54269d60_b.jpg",
+        "medium": "https://live.staticflickr.com/3327/3547320454_8d54269d60_z.jpg",
+        "thumb": "https://live.staticflickr.com/3327/3547320454_8d54269d60_n.jpg",
+        "square": "https://live.staticflickr.com/3327/3547320454_8d54269d60_q.jpg",
+        "width": 778,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 39.943962,
+        "lon": -75.151902,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547320454/"
+    },
+    "flickr-3547325430": {
+      "key": "flickr-3547325430",
+      "source": "flickr",
+      "sourceId": "3547325430",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547325430/",
+      "title": "In The News: The Sloss Family",
+      "description": "The marriage of Louis Sloss to Sarah Greenebaum in Philadelphia was the crucial first step in forging the ties which would unite the sprawling Sloss-Gerstle family clan. Sarah Greenebaum was a very strong and outgoing woman, one who made an immediate and powerful impression on those who met her. This was made obvious by Lewis Gerstle's reaction to his partner's marriage: impressed by his friend's wife, Gerstle declared that if her sister were anything like her, he would marry her. Upon meeting Sarah's sister Hannah in Philadelphia, Gerstle found that she was almost nothing like her sister, as she was delicate and timid where Sarah was robust and sociable. Nonetheless, Gerstle found himself \"enchanted\" by her, and they were also married in Philadelphia in 1858. Image: Newspaper Clipping: Wedding of Louis Sloss & Sarah Greenebaum, 1855 [wjhc1972-011-ar1-002_1]",
+      "date": "1855-07-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3412/3547325430_3ce3933a09_b.jpg",
+        "medium": "https://live.staticflickr.com/3412/3547325430_3ce3933a09_z.jpg",
+        "thumb": "https://live.staticflickr.com/3412/3547325430_3ce3933a09_n.jpg",
+        "square": "https://live.staticflickr.com/3412/3547325430_3ce3933a09_q.jpg",
+        "width": 817,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 39.943962,
+        "lon": -75.151902,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547325430/"
+    },
+    "flickr-3546519357": {
+      "key": "flickr-3546519357",
+      "source": "flickr",
+      "sourceId": "3546519357",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3546519357/",
+      "title": "The Haases Join the Family",
+      "description": "William Haas was of a younger generation than Lewis Gerstle and Louis Sloss, but was also a Jewish immigrant of Bavarian origin. He emigrated from Reckendorf, Bavaria to the United states in 1864, within four years made his way to San Francisco, and became well-known as a successful wholesale grocer. Like the patriarchs of the California Slosses and Gerstles, William Haas married a Greenebaum, the niece of Sarah and Hannah (daughter of their Brother Herman, one of Gerstle and Sloss's initial business contacts in Sacramento). Thus, William Haas and his brother Abraham joined the Sloss-Gerstle family. As can be seen, the Greenebaum family formed the \"mortar\", so to speak, of the extended family, as three of the main branches, the Slosses, Gerstles and Haases, were all initially linked by marriage to Greenebaums. Many of their descendants would go on to create new ties by marrying into other branches of the family, such as the Sterns and Lilienthals. Image: Wedding Invitation: William Haas & Bertha Greenebaum, 1880 [wjhc1972-011-024]",
+      "date": "1880-08-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3583/3546519357_ded7d7737a_b.jpg",
+        "medium": "https://live.staticflickr.com/3583/3546519357_ded7d7737a_z.jpg",
+        "thumb": "https://live.staticflickr.com/3583/3546519357_ded7d7737a_n.jpg",
+        "square": "https://live.staticflickr.com/3583/3546519357_ded7d7737a_q.jpg",
+        "width": 675,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.792208,
+        "lon": -122.424409,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3546519357/"
+    },
+    "flickr-3546520517": {
+      "key": "flickr-3546520517",
+      "source": "flickr",
+      "sourceId": "3546520517",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3546520517/",
+      "title": "At the Beginning of the Haas-Lilienthal Family Union",
+      "description": "In 1909, Alice Haas, daughter of William Haas and Bertha Greenebaum, married Samuel Lilienthal. Alice and Samuel would live at 2007 Franklin Street, in San Francisco. To see a \"Jewish Digital Narrative\" entirely devoted to Haas-Lilienthal family life in their San Francisco home, visit the following links: magnes.org/narratives/haasxmas/ Jewish Digital Narrative [wjhc1995-001-048]",
+      "date": "1909-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3355/3546520517_8679a929d8_b.jpg",
+        "medium": "https://live.staticflickr.com/3355/3546520517_8679a929d8_z.jpg",
+        "thumb": "https://live.staticflickr.com/3355/3546520517_8679a929d8_n.jpg",
+        "square": "https://live.staticflickr.com/3355/3546520517_8679a929d8_q.jpg",
+        "width": 1024,
+        "height": 817
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3546520517/"
+    },
+    "flickr-3546524909": {
+      "key": "flickr-3546524909",
+      "source": "flickr",
+      "sourceId": "3546524909",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3546524909/",
+      "title": "Strengthening Familial Bonds",
+      "description": "Abraham Haas was the brother of William Haas; they came to the United States from Reckendorf, Bavaria, together, but their paths soon diverged. While William went to California overland by way of Idaho, Abraham traversed the Isthmus of Panama and spent some time in Portland, Oregon, and then San Francisco, before settling in Los Angeles, then not much more than a small outpost. Like his brother, he established himself in the wholesale grocery business, forming a partnership with his older brother Jacob and Herman Hellman, called Hellman, Haas & Co. He married Fanny Koshland, the daughter of yet another prominent San Francisco Jewish family, and had three children, Walter, Ruth and Eleanor Haas. Abraham, Walter and Ruth Haas are portrayed here at Ruth's wedding to Philip Lilienthal (1914). The unidentified women are likely Fanny Koshland and Eleanor Haas, the mother and sister of the bride, but this cannot be sufficiently substantiated. Image: Group Portrait: Wedding of Philip Lilienthal and Ruth Haas, 1914 [wjhc1995-001-050]",
+      "date": "1914-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3404/3546524909_855e0b7e7c_b.jpg",
+        "medium": "https://live.staticflickr.com/3404/3546524909_855e0b7e7c_z.jpg",
+        "thumb": "https://live.staticflickr.com/3404/3546524909_855e0b7e7c_n.jpg",
+        "square": "https://live.staticflickr.com/3404/3546524909_855e0b7e7c_q.jpg",
+        "width": 1024,
+        "height": 797
+      },
+      "geo": {
+        "lat": 37.79408,
+        "lon": -122.423539,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3546524909/"
+    },
+    "flickr-3547337126": {
+      "key": "flickr-3547337126",
+      "source": "flickr",
+      "sourceId": "3547337126",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547337126/",
+      "title": "Haas and Lilienthal Families United",
+      "description": "The Lilienthal family had already been linked to the Sloss-Gerstles for a generation through Ernest and Theodore Lilienthal's marriages to daughters of Louis Sloss and Lewis Gerstle, respectively (Hannah Isabelle Sloss and Sophie Gerstle). The wedding of a Lilienthal to a Haas in 1914 firmly cemented the connection among these familes. With Ruth Haas and Philip Lilienthal's marriage, the Lilienthals became directly tied to every major branch of the extensive family network. Image: Portrait: Philip Lilienthal & Ruth Haas, 1914 [wjhc1995-001-049]",
+      "date": "1914-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3542/3547337126_024d589170_b.jpg",
+        "medium": "https://live.staticflickr.com/3542/3547337126_024d589170_z.jpg",
+        "thumb": "https://live.staticflickr.com/3542/3547337126_024d589170_n.jpg",
+        "square": "https://live.staticflickr.com/3542/3547337126_024d589170_q.jpg",
+        "width": 800,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.79408,
+        "lon": -122.423539,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547337126/"
+    },
+    "flickr-3547340636": {
+      "key": "flickr-3547340636",
+      "source": "flickr",
+      "sourceId": "3547340636",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547340636/",
+      "title": "Marrying into the Family Business",
+      "description": "Walter Haas, the son of Abraham Haas and Fanny Koshland, married Elise Stern soon after his sister Ruth's (also pictured) wedding in 1914. The Sterns were only tenuously connected to the main branches of the Sloss-Gerstle family, but as a pioneer family and inheritors of the Levi-Strauss clothing business, were without doubt part of the same social scene. Walter's marriage into the Stern family and employment at Levi-Strauss by his father-in-law Sigmund Stern was to have profound consequences, as it was he who made the decision to focus on manufacturing Levi's blue jeans; then known as \"Koveralls\". It was this decision, coupled with Walter's sure hand and business instincts which kept Levi-Strauss afloat during the Great Depression and built it into the commercial giant it is today. Image: Group Portrait: Wedding of Walter Haas and Elise Stern, 1914 [wjhc1995-001-003]",
+      "date": "1914-10-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3376/3547340636_e2b7925fec_b.jpg",
+        "medium": "https://live.staticflickr.com/3376/3547340636_e2b7925fec_z.jpg",
+        "thumb": "https://live.staticflickr.com/3376/3547340636_e2b7925fec_n.jpg",
+        "square": "https://live.staticflickr.com/3376/3547340636_e2b7925fec_q.jpg",
+        "width": 1024,
+        "height": 763
+      },
+      "geo": {
+        "lat": 37.455439,
+        "lon": -122.204816,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547340636/"
+    },
+    "flickr-3547345754": {
+      "key": "flickr-3547345754",
+      "source": "flickr",
+      "sourceId": "3547345754",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547345754/",
+      "title": "Always the Center of Attention",
+      "description": "Although it was largely frowned upon, and often beset with difficulties, some children of the Sloss-Gerstle family clan decided that reinforcing existing ties within their extensive but insular family was not to their taste. Some, like Louise Sloss, a granddaughter of Louis Sloss and Sarah Greenebaum, married outside not only the family group, but outside their social and economic milieu of wealthy and powerful San Francisco families. Her husband, Lloyd Ackerman, was a native San Franciscan, but his father was a restauranteur and his family was neither as prosperous nor as \"aristocratic\" as the sometimes stiff-necked Slosses. Further exacerbating the problem were the protestations of Louise's mother, Bertha Greenewald Sloss, an extremely strong-willed and dominant figure in the family at that time. Image: Newspaper Clipping: Engagement of Lloyd Ackerman and Louise Sloss, 1908 [wjhc1972-011-021]",
+      "date": "1908-11-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3627/3547345754_1f14af845d_b.jpg",
+        "medium": "https://live.staticflickr.com/3627/3547345754_1f14af845d_z.jpg",
+        "thumb": "https://live.staticflickr.com/3627/3547345754_1f14af845d_n.jpg",
+        "square": "https://live.staticflickr.com/3627/3547345754_1f14af845d_q.jpg",
+        "width": 1024,
+        "height": 941
+      },
+      "geo": {
+        "lat": 37.988395,
+        "lon": -122.526934,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547345754/"
+    },
+    "flickr-3547349136": {
+      "key": "flickr-3547349136",
+      "source": "flickr",
+      "sourceId": "3547349136",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547349136/",
+      "title": "Louise Sloss in 1909",
+      "description": "In this photograph, Louise Sloss in 1909. [wjhc1992-005-002]",
+      "date": "1909-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/2467/3547349136_11f3953473_b.jpg",
+        "medium": "https://live.staticflickr.com/2467/3547349136_11f3953473_z.jpg",
+        "thumb": "https://live.staticflickr.com/2467/3547349136_11f3953473_n.jpg",
+        "square": "https://live.staticflickr.com/2467/3547349136_11f3953473_q.jpg",
+        "width": 744,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.988395,
+        "lon": -122.526934,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547349136/"
+    },
+    "flickr-3547350964": {
+      "key": "flickr-3547350964",
+      "source": "flickr",
+      "sourceId": "3547350964",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547350964/",
+      "title": "Summer Weddings at Summer Homes",
+      "description": "Bride Louise Sloss walks down the steps at the Sloss family estate in San Rafael, California, on the occasion of her 1909 wedding to Lloyd Ackerman. [wjhc1992-005-004]",
+      "date": "1909-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3597/3547350964_f911b2d856_b.jpg",
+        "medium": "https://live.staticflickr.com/3597/3547350964_f911b2d856_z.jpg",
+        "thumb": "https://live.staticflickr.com/3597/3547350964_f911b2d856_n.jpg",
+        "square": "https://live.staticflickr.com/3597/3547350964_f911b2d856_q.jpg",
+        "width": 1024,
+        "height": 747
+      },
+      "geo": {
+        "lat": 37.988395,
+        "lon": -122.526934,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547350964/"
+    },
+    "flickr-3547356006": {
+      "key": "flickr-3547356006",
+      "source": "flickr",
+      "sourceId": "3547356006",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547356006/",
+      "title": "Photograph [WJHC 1992.5.1]: Marriage of Louise and Lloyd Ackerman (San Rafael, CA, 1909)",
+      "description": "Happily, Louise Sloss overcame the wishes of her heavy-handed and domineering mother, and married Lloyd Ackerman in 1909. Despite the earlier opposition to the match, a lavish ceremony and reception were held on the Sloss family estate in San Rafael. Although Lloyd was accepted into the family, eventually handling their wills and estates in his capacity as family lawyer, the tension between him and his mother-in-law Bertha Sloss was never ultimately banished. Louise often found herself playing the role of mediator between her mother and equally strong-willed and formidable husband, Lloyd. Magnes database record Image: Group Portrait: Wedding of Lloyd Ackerman and Louise Sloss, 1909 [wjhc1992-005-001.jpg]",
+      "date": "1909-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/2481/3547356006_a17c6bc04a_b.jpg",
+        "medium": "https://live.staticflickr.com/2481/3547356006_a17c6bc04a_z.jpg",
+        "thumb": "https://live.staticflickr.com/2481/3547356006_a17c6bc04a_n.jpg",
+        "square": "https://live.staticflickr.com/2481/3547356006_a17c6bc04a_q.jpg",
+        "width": 1024,
+        "height": 757
+      },
+      "geo": {
+        "lat": 37.988395,
+        "lon": -122.526934,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547356006/"
+    },
+    "flickr-3547357308": {
+      "key": "flickr-3547357308",
+      "source": "flickr",
+      "sourceId": "3547357308",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547357308/",
+      "title": "Ephemera [WJHC 1992.002]: Wedding Reception Menu (San Francisco, California, 1879)",
+      "description": "Menu for the wedding reception of Sophie Gerstle and Theodore Lilienthal San Francisco, E. Bosqui & Co., 1879 Sophie and Theodore Lilienthal letters and photographs, BANC MSS 2010/732 Sophie Gerstle Lilienthal was the daughter of Lewis (Loeb) Gerstle and Hannah (Johannah) Greenebaum of San Francisco. On 27 Aug. 1879, she married Theodore Max Lilienthal, the director of Lilienthal Brothers' hops and grain of New York. Magnes Database Record [wjhc1992-002-038.tif]",
+      "date": "1889-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3315/3547357308_75a8a2fb20_b.jpg",
+        "medium": "https://live.staticflickr.com/3315/3547357308_75a8a2fb20_z.jpg",
+        "thumb": "https://live.staticflickr.com/3315/3547357308_75a8a2fb20_n.jpg",
+        "square": "https://live.staticflickr.com/3315/3547357308_75a8a2fb20_q.jpg",
+        "width": 709,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547357308/"
+    },
+    "flickr-3547358974": {
+      "key": "flickr-3547358974",
+      "source": "flickr",
+      "sourceId": "3547358974",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547358974/",
+      "title": "A Failed Match",
+      "description": "Miriam Gerstle was a granddaughter of Lewis Gerstle and Hannah Greenebaum, and daughter of Lewis' son William and his wife Sara Hecht. Like Louise Sloss, her inclinations brought her far outside the normal social circles of her family. In 1922 she was briefly engaged to Godfrey Pope, an Englishman and owner of a tea growing enterprise in Sri Lanka. Unlike Louise, Miriam's parents were apparently nonplussed by her impending marriage to an \"outsider\", and in fact encouraged her. The engagement, however, did not last, and while visiting in England, Miriam broke off the engagment. Image: Newspaper Clipping: Engagement of Godfrey Pope & Miriam Gerstle, 1922 [wjhc2005-004-134]",
+      "date": "1922-12-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3570/3547358974_0e82ccb542_b.jpg",
+        "medium": "https://live.staticflickr.com/3570/3547358974_0e82ccb542_z.jpg",
+        "thumb": "https://live.staticflickr.com/3570/3547358974_0e82ccb542_n.jpg",
+        "square": "https://live.staticflickr.com/3570/3547358974_0e82ccb542_q.jpg",
+        "width": 1024,
+        "height": 822
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547358974/"
+    },
+    "flickr-3546552725": {
+      "key": "flickr-3546552725",
+      "source": "flickr",
+      "sourceId": "3546552725",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3546552725/",
+      "title": "An Overseas Wedding",
+      "description": "While still in England after breaking her engagement with Godfrey Pope, Miriam Gerstle was reminded of an aquaintance she had made while travelling, an architect named George Wornum. Apparently their romance was quick, as within a year of the announcement of her previous engagement, they were married. Breaking from her California roots, Miriam was maried in London's St. James Church, was presented at the royal court, and lived for decades in England with her husband. Image: Portrait: George Wornum and Miriam Gerstle, 1923 [wjhc2005-004-137]",
+      "date": "1923-06-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3339/3546552725_2680644b35_b.jpg",
+        "medium": "https://live.staticflickr.com/3339/3546552725_2680644b35_z.jpg",
+        "thumb": "https://live.staticflickr.com/3339/3546552725_2680644b35_n.jpg",
+        "square": "https://live.staticflickr.com/3339/3546552725_2680644b35_q.jpg",
+        "width": 833,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 51.50905,
+        "lon": -0.136873,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3546552725/"
+    },
+    "flickr-3547362146": {
+      "key": "flickr-3547362146",
+      "source": "flickr",
+      "sourceId": "3547362146",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547362146/",
+      "title": "Weddings as Family Gatherings",
+      "description": "The wedding of Frances Baruch and Ted Lilienthal (1923) reunited many family members. [wjhc1995-001-001]",
+      "date": "1923-04-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3562/3547362146_96d16deb35_b.jpg",
+        "medium": "https://live.staticflickr.com/3562/3547362146_96d16deb35_z.jpg",
+        "thumb": "https://live.staticflickr.com/3562/3547362146_96d16deb35_n.jpg",
+        "square": "https://live.staticflickr.com/3562/3547362146_96d16deb35_q.jpg",
+        "width": 1024,
+        "height": 792
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547362146/"
+    },
+    "flickr-3547364038": {
+      "key": "flickr-3547364038",
+      "source": "flickr",
+      "sourceId": "3547364038",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547364038/",
+      "title": "\"Florence's Wedding\"",
+      "description": "Image: Undated group Portrait, identified only as \"Florence's wedding.\" Perhaps Florence Isabelle (Bella) Gerstle to Mortimer Fleishhacker in 1904. [wjhc2005-004-124]",
+      "date": "2008-08-04",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/2438/3547364038_eb83c39a2e_b.jpg",
+        "medium": "https://live.staticflickr.com/2438/3547364038_eb83c39a2e_z.jpg",
+        "thumb": "https://live.staticflickr.com/2438/3547364038_eb83c39a2e_n.jpg",
+        "square": "https://live.staticflickr.com/2438/3547364038_eb83c39a2e_q.jpg",
+        "width": 1024,
+        "height": 819
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547364038/"
+    },
+    "flickr-3547365334": {
+      "key": "flickr-3547365334",
+      "source": "flickr",
+      "sourceId": "3547365334",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547365334/",
+      "title": "Flower Girl",
+      "description": "A young Isabel Wiel (daughter of Sarah Sloss and Henry Wiel) was the flower girl in the 1923 wedding of John Lilienthal and Nina Herzog. [wjhc1999-015-014]",
+      "date": "1923-01-01",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3320/3547365334_7d4531a972_b.jpg",
+        "medium": "https://live.staticflickr.com/3320/3547365334_7d4531a972_z.jpg",
+        "thumb": "https://live.staticflickr.com/3320/3547365334_7d4531a972_n.jpg",
+        "square": "https://live.staticflickr.com/3320/3547365334_7d4531a972_q.jpg",
+        "width": 676,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547365334/"
+    },
+    "flickr-3547367226": {
+      "key": "flickr-3547367226",
+      "source": "flickr",
+      "sourceId": "3547367226",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547367226/",
+      "title": "Bridesmaids",
+      "description": "The wedding of Edith Mack to Edward Bransten. [wjhc1967-019-006]",
+      "date": "2009-05-19",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3415/3547367226_2e26a2b050_b.jpg",
+        "medium": "https://live.staticflickr.com/3415/3547367226_2e26a2b050_z.jpg",
+        "thumb": "https://live.staticflickr.com/3415/3547367226_2e26a2b050_n.jpg",
+        "square": "https://live.staticflickr.com/3415/3547367226_2e26a2b050_q.jpg",
+        "width": 1024,
+        "height": 673
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547367226/"
+    },
+    "flickr-3547368736": {
+      "key": "flickr-3547368736",
+      "source": "flickr",
+      "sourceId": "3547368736",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547368736/",
+      "title": "Eleanor Haas",
+      "description": "Eleanor Haas at her wedding with Daniel E. Koshland. [wjhc1995-001-055]",
+      "date": "2009-05-19",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/2466/3547368736_cbeb45cce0_b.jpg",
+        "medium": "https://live.staticflickr.com/2466/3547368736_cbeb45cce0_z.jpg",
+        "thumb": "https://live.staticflickr.com/2466/3547368736_cbeb45cce0_n.jpg",
+        "square": "https://live.staticflickr.com/2466/3547368736_cbeb45cce0_q.jpg",
+        "width": 820,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547368736/"
+    },
+    "flickr-3547370270": {
+      "key": "flickr-3547370270",
+      "source": "flickr",
+      "sourceId": "3547370270",
+      "page": "https://www.flickr.com/photos/magnesmuseum/3547370270/",
+      "title": "Ruth Haas and Philip Lilienthal",
+      "description": "Ruth Haas Lilienthal and Philip Lilienthal at the wedding of Ruth's brother Walter A. Haas to Elise Stern. [wjhc1995-001-047]",
+      "date": "2009-05-19",
+      "dateApproximate": false,
+      "creator": "MagnesMuseum",
+      "creatorUrl": "https://www.flickr.com/photos/magnesmuseum/",
+      "license": "CC BY-NC-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "image": {
+        "full": "https://live.staticflickr.com/3609/3547370270_4a0e3ed9bc_b.jpg",
+        "medium": "https://live.staticflickr.com/3609/3547370270_4a0e3ed9bc_z.jpg",
+        "thumb": "https://live.staticflickr.com/3609/3547370270_4a0e3ed9bc_n.jpg",
+        "square": "https://live.staticflickr.com/3609/3547370270_4a0e3ed9bc_q.jpg",
+        "width": 830,
+        "height": 1024
+      },
+      "geo": {
+        "lat": 37.775196,
+        "lon": -122.419204,
+        "accuracy": 16
+      },
+      "fetched": "2026-11-14",
+      "requestedUrl": "https://www.flickr.com/photos/magnesmuseum/3547370270/"
+    }
+  },
+  "collections": {
+    "magnes-sonora-hebrew-cemetery": {
+      "title": "Jews of the Gold Rush: Sonora Hebrew Cemetery",
+      "description": "Founded in 1853, the Sonora Hebrew Cemetery was the first cemetery in the Gold Rush Region. The first burial dates from 1853, and the last was in 1977. On January 13, 1974, it was rededicated as a historic site. The cemetery includes 43 visible gravestones, and two possible burial mounts. Records indicate that a mortuary building may have existed on the cemetery grounds, although no evidence of such a structure exists. The cemetery is enclosed by a stone wall built in the 1850&#x27;s, and is surrounded by Italian cypress trees. The gate is kept locked. For information and access arrangements, visit magnes.berkeley.edu/ The photographs of the gravestones presented here are part of Collection WJHC 1968.36 of the Magnes. ––– This online presentation is part of the &quot;Jewish Digital Narratives&quot; curated by Francesco Spagnolo, PhD, Head of Research at the Magnes in Berkeley, California. For more information go to magnes.berkeley.edu/digital-projects/jewish-digital-narra... The &quot;Jewish Digital Narratives&quot; are part of the Jews in the Golden State program, which is supported by the Walter &amp; Elise Haas Fund and by an Anonymous gift. The Magnes is a beneficiary of the Esther and Jacques Reutlinger Foundation, the Jewish Community Federation of San Francisco, the Peninsula, Marin and Sonoma Counties and the Jewish Community Federation of the Greater East Bay. [WJHC 1968-036-so-002_001]",
+      "page": "https://www.flickr.com/photos/magnesmuseum/albums/72157614161755742/",
+      "photos": [
+        "https://www.flickr.com/photos/magnesmuseum/3295907388/",
+        "https://www.flickr.com/photos/magnesmuseum/3295083643/",
+        "https://www.flickr.com/photos/magnesmuseum/3295909940/",
+        "https://www.flickr.com/photos/magnesmuseum/3295086157/",
+        "https://www.flickr.com/photos/magnesmuseum/3295087219/",
+        "https://www.flickr.com/photos/magnesmuseum/3295088631/",
+        "https://www.flickr.com/photos/magnesmuseum/3295090177/",
+        "https://www.flickr.com/photos/magnesmuseum/3295091441/",
+        "https://www.flickr.com/photos/magnesmuseum/3295092597/",
+        "https://www.flickr.com/photos/magnesmuseum/3295094567/",
+        "https://www.flickr.com/photos/magnesmuseum/3295095829/",
+        "https://www.flickr.com/photos/magnesmuseum/3295921700/",
+        "https://www.flickr.com/photos/magnesmuseum/3295097777/",
+        "https://www.flickr.com/photos/magnesmuseum/3295924252/",
+        "https://www.flickr.com/photos/magnesmuseum/3295100821/",
+        "https://www.flickr.com/photos/magnesmuseum/3295927184/",
+        "https://www.flickr.com/photos/magnesmuseum/3295928118/",
+        "https://www.flickr.com/photos/magnesmuseum/3295929554/",
+        "https://www.flickr.com/photos/magnesmuseum/3295930678/",
+        "https://www.flickr.com/photos/magnesmuseum/3295931560/"
+      ],
+      "fetched": "2026-11-14"
+    },
+    "magnes-pioneer-high-society": {
+      "title": "Pioneer High Society: Jewish Family Networks in San Francisco (1855-1923)",
+      "description": "The Western Jewish History collections of the Magnes include a host of information on marriage and family ties since the early days of Jewish life in San Francisco, California. Invitations, newspaper clippings and photographs related to the weddings of members of the Sloss-Gerstle family between 1850 and 1925 in San Francisco allow a closer look at the family and social life of the local “aristocracy” of the period. The images potraying these celebrations, whether posed or impromptu, carry the experiences of the Jewish community in 19th-century California, and provide an invaluable insight into the emotions and expectations of its earliest Jewish immigrants. Much like many other immigrants newly arrived in the United States, Jews originating from Europe were naturally intrigued by the promise of new beginnings and opportunities provided by the 1848 discovery of gold in the rugged and individualistic territory of California. Many traveled West, and set themselves up in business. Not all found success. The Sloss-Gerstle family clan represents an astounding Californian-Jewish success story; their control of the supply of seal skins from Alaska during the second half of the 19th century made them very wealthy. An extensive family network, which eventually boasted connections to nearly every other important family or individual in the region, the Sloss-Gerstles made the transition from humble pioneers to aristocrats in less than a single generation. Perhaps the most valuable tool available to them in forging their network of influence was marriage. Even before they became wealthy, marriage was crucially important to them. The patriarchs of the Sloss and Gerstle families initially united their lineage by marrying two sisters, Sarah and Hannah Greenebaum, and thus laid the foundations for their future prosperity. Later, other successful or prominent local Jewish immigrant families, such as the Haas, Lilienthal and Stern families were connected to the family clan through numerous ties of marriage. Marriages within the extended family were extremely common and were encouraged, even to the point of regarding as “outlaws” those who chose to marry outside its accepted boundaries. Nonetheless, by the first decades of the 20th century the family had become so sprawling and extensive that the cohesiveness and insularity of earlier years could hardly be maintained, and marriages to outside families became more and more common. --- This online presentation was created by Benjamin Clifford, Lara Michels, PhD, Archivist and Librarian, and Francesco Spagnolo as part of the &quot;Jewish Digital Narratives&quot; curated by Francesco Spagnolo, PhD, Director of Research at the Magnes in Berkeley, California. For more information go to magnes.berkeley.edu/digital-projects/jewish-digital-narra... The &quot;Jewish Digital Narratives&quot; are part of the Jews in the Golden State program, which is supported by the Walter &amp; Elise Haas Fund and by an Anonymous gift. The Magnes is a beneficiary of the Esther and Jacques Reutlinger Foundation, the Jewish Community Federation of San Francisco, the Peninsula, Marin and Sonoma Counties and the Jewish Community Federation of the Greater East Bay. Image: Wedding Invitation (Insert): William Haas and Bertha Greenebaum, 1880 [wjhc1972-011-023]",
+      "page": "https://www.flickr.com/photos/magnesmuseum/albums/72157618496011964/",
+      "photos": [
+        "https://www.flickr.com/photos/magnesmuseum/3546512147/",
+        "https://www.flickr.com/photos/magnesmuseum/3547320454/",
+        "https://www.flickr.com/photos/magnesmuseum/3547325430/",
+        "https://www.flickr.com/photos/magnesmuseum/3546519357/",
+        "https://www.flickr.com/photos/magnesmuseum/3546520517/",
+        "https://www.flickr.com/photos/magnesmuseum/3546524909/",
+        "https://www.flickr.com/photos/magnesmuseum/3547337126/",
+        "https://www.flickr.com/photos/magnesmuseum/3547340636/",
+        "https://www.flickr.com/photos/magnesmuseum/3547345754/",
+        "https://www.flickr.com/photos/magnesmuseum/3547349136/",
+        "https://www.flickr.com/photos/magnesmuseum/3547350964/",
+        "https://www.flickr.com/photos/magnesmuseum/3547356006/",
+        "https://www.flickr.com/photos/magnesmuseum/3547357308/",
+        "https://www.flickr.com/photos/magnesmuseum/3547358974/",
+        "https://www.flickr.com/photos/magnesmuseum/3546552725/",
+        "https://www.flickr.com/photos/magnesmuseum/3547362146/",
+        "https://www.flickr.com/photos/magnesmuseum/3547364038/",
+        "https://www.flickr.com/photos/magnesmuseum/3547365334/",
+        "https://www.flickr.com/photos/magnesmuseum/3547367226/",
+        "https://www.flickr.com/photos/magnesmuseum/3547368736/",
+        "https://www.flickr.com/photos/magnesmuseum/3547370270/"
+      ],
+      "fetched": "2026-11-14"
+    }
+  },
+  "datasets": {
+    "zenodo-24149057": {
+      "key": "zenodo-24149057",
+      "source": "zenodo",
+      "recordId": "24149057",
+      "page": "https://zenodo.org/records/24149057",
+      "doi": "10.5281/zenodo.24149057",
+      "doiUrl": "https://doi.org/10.5281/zenodo.24149057",
+      "title": "Subscriptions to The Occident and American Jewish Advocate",
+      "creators": [
+        {
+          "name": "Eckstein, Laura",
+          "orcid": "0009-0007-8422-8019"
+        }
+      ],
+      "published": "2026-11-12",
+      "version": "1.0",
+      "license": "cc-by-4.0",
+      "description": "",
+      "files": [
+        {
+          "key": "OccidentSubscribers.csv",
+          "size": 1921265,
+          "checksum": "md5:04e2d6ba11f740244bba3df682e88246",
+          "url": "https://zenodo.org/api/records/24149057/files/OccidentSubscribers.csv/content"
+        }
+      ],
+      "requestedUrl": "https://zenodo.org/records/24149057",
+      "fetched": "2026-11-14"
+    },
+    "zenodo-24148958": {
+      "key": "zenodo-24148958",
+      "source": "zenodo",
+      "recordId": "24148958",
+      "page": "https://zenodo.org/records/24148958",
+      "doi": "10.5281/zenodo.24148958",
+      "doiUrl": "https://doi.org/10.5281/zenodo.24148958",
+      "title": "Subscriptions to The Israelite",
+      "creators": [
+        {
+          "name": "Eckstein, Laura",
+          "orcid": "0009-0007-8422-8019"
+        }
+      ],
+      "published": "2026-11-12",
+      "version": "1.0",
+      "license": "cc-by-4.0",
+      "description": "",
+      "files": [
+        {
+          "key": "IsraeliteSubscribers.csv",
+          "size": 4857707,
+          "checksum": "md5:756eedf938856906c8283a05fc9e20c8",
+          "url": "https://zenodo.org/api/records/24148958/files/IsraeliteSubscribers.csv/content"
+        }
+      ],
+      "requestedUrl": "https://zenodo.org/records/24148958",
+      "fetched": "2026-11-14"
+    },
+    "zenodo-24149083": {
+      "key": "zenodo-24149083",
+      "source": "zenodo",
+      "recordId": "24149083",
+      "page": "https://zenodo.org/records/24149083",
+      "doi": "10.5281/zenodo.24149083",
+      "doiUrl": "https://doi.org/10.5281/zenodo.24149083",
+      "title": "Subscriptions to The Jewish Messenger",
+      "creators": [
+        {
+          "name": "Eckstein, Laura",
+          "orcid": "0009-0007-8422-8019"
+        }
+      ],
+      "published": "2026-11-12",
+      "version": "1.0",
+      "license": "cc-by-4.0",
+      "description": "",
+      "files": [
+        {
+          "key": "MessengerSubscribers.csv",
+          "size": 1375858,
+          "checksum": "md5:62028fff5bc9a64655c569e5e7b8877e",
+          "url": "https://zenodo.org/api/records/24149083/files/MessengerSubscribers.csv/content"
+        }
+      ],
+      "requestedUrl": "https://zenodo.org/records/24149083",
+      "fetched": "2026-11-14"
+    },
+    "zenodo-24149065": {
+      "key": "zenodo-24149065",
+      "source": "zenodo",
+      "recordId": "24149065",
+      "page": "https://zenodo.org/records/24149065",
+      "doi": "10.5281/zenodo.24149065",
+      "doiUrl": "https://doi.org/10.5281/zenodo.24149065",
+      "title": "Subscriptions to The Weekly Gleaner",
+      "creators": [
+        {
+          "name": "Eckstein, Laura",
+          "orcid": "0009-0007-8422-8019"
+        }
+      ],
+      "published": "2026-11-12",
+      "version": "1.0",
+      "license": "cc-by-4.0",
+      "description": "",
+      "files": [
+        {
+          "key": "GleanerSubscribers.csv",
+          "size": 223329,
+          "checksum": "md5:8f7eccb470cb9fd77491c8ef007c80cd",
+          "url": "https://zenodo.org/api/records/24149065/files/GleanerSubscribers.csv/content"
+        }
+      ],
+      "requestedUrl": "https://zenodo.org/records/24149065",
+      "fetched": "2026-11-14"
+    }
+  }
+}

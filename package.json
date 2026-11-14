@@ -1,0 +1,18 @@
+{
+  "name": "kehillot-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static digital atlas and linked-data database of Jewish America, 1840–1870",
+  "type": "module",
+  "license": "CC-BY-4.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "BASE_URL=http://localhost:8765/ node scripts/build.mjs && node scripts/serve.mjs 8765",
+    "reconcile": "node scripts/reconcile.mjs",
+    "media": "node scripts/fetch-media.mjs"
+  }
+}

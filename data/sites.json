@@ -1,0 +1,535 @@
+[
+  {
+    "id": "crosby-street-synagogue",
+    "name": "Crosby Street Synagogue",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "Crosby Street, between Broome and Spring Streets",
+    "lat": 40.7224,
+    "lon": -73.998,
+    "precision": "approximate",
+    "built": 1834,
+    "certainty": "high",
+    "occupants": [
+      {
+        "org": "shearith-israel-ny",
+        "from": 1834,
+        "to": 1860
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "nineteenth-street-synagogue",
+    "name": "Nineteenth Street Synagogue",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "West 19th Street near Fifth Avenue",
+    "lat": 40.7397,
+    "lon": -73.9929,
+    "precision": "approximate",
+    "built": 1860,
+    "certainty": "high",
+    "occupants": [
+      {
+        "org": "shearith-israel-ny",
+        "from": 1860,
+        "to": 1897
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "elm-street-synagogue",
+    "name": "Elm Street Synagogue",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "Elm Street (now Lafayette Street area)",
+    "lat": 40.717,
+    "lon": -74.0018,
+    "precision": "approximate",
+    "built": 1827,
+    "certainty": "medium",
+    "note": "A former church refitted by B'nai Jeshurun.",
+    "occupants": [
+      {
+        "org": "bnai-jeshurun-ny",
+        "from": 1827,
+        "to": 1851
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "norfolk-street-synagogue",
+    "name": "Norfolk Street Synagogue",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "172 Norfolk Street, Lower East Side",
+    "lat": 40.7209,
+    "lon": -73.9857,
+    "precision": "exact",
+    "built": 1850,
+    "certainty": "high",
+    "note": "The oldest surviving synagogue building in New York, Gothic Revival; now the Angel Orensanz Center.",
+    "occupants": [
+      {
+        "org": "anshe-chesed-ny",
+        "from": 1850,
+        "to": 1874
+      }
+    ],
+    "sources": [
+      "nrhp"
+    ]
+  },
+  {
+    "id": "temple-emanu-el-1868",
+    "name": "Temple Emanu-El, Fifth Avenue",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "Fifth Avenue at 43rd Street (demolished 1927)",
+    "lat": 40.7541,
+    "lon": -73.9801,
+    "precision": "exact",
+    "built": 1868,
+    "certainty": "high",
+    "note": "Moorish Revival temple by Leopold Eidlitz and Henry Fernbach.",
+    "occupants": [
+      {
+        "org": "emanu-el-ny",
+        "from": 1868,
+        "to": 1927
+      }
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "jews-hospital-28th-street",
+    "name": "Jews' Hospital building",
+    "kind": "hospital",
+    "place": "new-york",
+    "address": "West 28th Street between Seventh and Eighth Avenues",
+    "lat": 40.7487,
+    "lon": -73.9951,
+    "precision": "approximate",
+    "built": 1855,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "jews-hospital",
+        "from": 1855,
+        "to": 1872
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "sinsheimer-cafe",
+    "name": "Sinsheimer's Café",
+    "kind": "meeting-place",
+    "place": "new-york",
+    "address": "Essex Street, Lower East Side",
+    "lat": 40.718,
+    "lon": -73.9883,
+    "precision": "approximate",
+    "certainty": "medium",
+    "note": "Where twelve men founded B'nai B'rith in October 1843.",
+    "occupants": [
+      {
+        "org": "bnai-brith",
+        "from": 1843,
+        "to": 1843
+      }
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "cherry-street-synagogue",
+    "name": "Cherry Street Synagogue",
+    "kind": "synagogue",
+    "place": "philadelphia",
+    "address": "Cherry Street above Third Street",
+    "lat": 39.9535,
+    "lon": -75.1462,
+    "precision": "approximate",
+    "built": 1825,
+    "certainty": "high",
+    "note": "Egyptian Revival building designed by William Strickland.",
+    "occupants": [
+      {
+        "org": "mikveh-israel-phl",
+        "from": 1825,
+        "to": 1860
+      }
+    ],
+    "sources": [
+      "wolf-whiteman-1957"
+    ]
+  },
+  {
+    "id": "seventh-street-synagogue",
+    "name": "Seventh Street Synagogue",
+    "kind": "synagogue",
+    "place": "philadelphia",
+    "address": "Seventh Street above Arch Street",
+    "lat": 39.9535,
+    "lon": -75.1522,
+    "precision": "approximate",
+    "built": 1860,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "mikveh-israel-phl",
+        "from": 1860,
+        "to": 1909
+      }
+    ],
+    "sources": [
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "lloyd-street-synagogue",
+    "name": "Lloyd Street Synagogue",
+    "kind": "synagogue",
+    "place": "baltimore",
+    "address": "11 Lloyd Street",
+    "lat": 39.2912,
+    "lon": -76.6008,
+    "precision": "exact",
+    "built": 1845,
+    "certainty": "high",
+    "note": "The first synagogue built in Maryland and one of the oldest standing in the country.",
+    "occupants": [
+      {
+        "org": "baltimore-hebrew",
+        "from": 1845,
+        "to": 1889
+      }
+    ],
+    "sources": [
+      "fein-1971",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "beth-elohim-hasell-street",
+    "name": "Beth Elohim Synagogue, Hasell Street",
+    "kind": "synagogue",
+    "place": "charleston",
+    "address": "90 Hasell Street",
+    "lat": 32.7811,
+    "lon": -79.9317,
+    "precision": "exact",
+    "built": 1840,
+    "certainty": "high",
+    "note": "Greek Revival temple built after the 1838 fire destroyed its predecessor; the organ installed here in 1841 split the congregation.",
+    "occupants": [
+      {
+        "org": "beth-elohim-chs",
+        "from": 1840
+      }
+    ],
+    "sources": [
+      "elzas-1905",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "touro-synagogue-building",
+    "name": "Touro Synagogue",
+    "kind": "synagogue",
+    "place": "newport",
+    "address": "85 Touro Street",
+    "lat": 41.4893,
+    "lon": -71.3127,
+    "precision": "exact",
+    "built": 1763,
+    "certainty": "high",
+    "note": "The oldest synagogue building in the United States, designed by Peter Harrison.",
+    "occupants": [
+      {
+        "org": "jeshuat-israel-npt",
+        "from": 1763
+      }
+    ],
+    "sources": [
+      "sarna-2004",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "mayo-street-synagogue",
+    "name": "Mayo Street Synagogue",
+    "kind": "synagogue",
+    "place": "richmond",
+    "address": "Mayo Street",
+    "lat": 37.534,
+    "lon": -77.43,
+    "precision": "approximate",
+    "built": 1822,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "beth-shalome-ric",
+        "from": 1822
+      }
+    ],
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "bene-israel-broadway",
+    "name": "Bene Israel Synagogue, Broadway",
+    "kind": "synagogue",
+    "place": "cincinnati",
+    "address": "Broadway near Sixth Street",
+    "lat": 39.1022,
+    "lon": -84.5071,
+    "precision": "approximate",
+    "built": 1836,
+    "certainty": "medium",
+    "note": "The first synagogue building west of the Alleghenies.",
+    "occupants": [
+      {
+        "org": "bene-israel-cin",
+        "from": 1836
+      }
+    ],
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "plum-street-temple",
+    "name": "Plum Street Temple",
+    "kind": "synagogue",
+    "place": "cincinnati",
+    "address": "720 Plum Street",
+    "lat": 39.1047,
+    "lon": -84.517,
+    "precision": "exact",
+    "built": 1866,
+    "certainty": "high",
+    "note": "Moorish Revival temple by James Keys Wilson, dedicated August 1866.",
+    "occupants": [
+      {
+        "org": "bnai-yeshurun-cin",
+        "from": 1866
+      }
+    ],
+    "sources": [
+      "sarna-2004",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "canal-street-synagogue",
+    "name": "Nefutzot Yehudah Synagogue, Canal Street",
+    "kind": "synagogue",
+    "place": "new-orleans",
+    "address": "Canal Street at Bourbon Street",
+    "lat": 29.955,
+    "lon": -90.07,
+    "precision": "approximate",
+    "built": 1847,
+    "certainty": "medium",
+    "note": "A former Episcopal church bought and refitted by Judah Touro.",
+    "occupants": [
+      {
+        "org": "nefutzot-yehudah-nol",
+        "from": 1847
+      }
+    ],
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "broadway-synagogue-sf",
+    "name": "Emanu-El Synagogue, Broadway",
+    "kind": "synagogue",
+    "place": "san-francisco",
+    "address": "Broadway Street",
+    "lat": 37.7978,
+    "lon": -122.4085,
+    "precision": "approximate",
+    "built": 1854,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "emanu-el-sf",
+        "from": 1854,
+        "to": 1866
+      }
+    ],
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "sutter-street-temple",
+    "name": "Temple Emanu-El, Sutter Street",
+    "kind": "synagogue",
+    "place": "san-francisco",
+    "address": "450 Sutter Street",
+    "lat": 37.7893,
+    "lon": -122.4084,
+    "precision": "approximate",
+    "built": 1866,
+    "certainty": "high",
+    "note": "Its twin towers were a landmark of the city's skyline until 1906.",
+    "occupants": [
+      {
+        "org": "emanu-el-sf",
+        "from": 1866,
+        "to": 1906
+      }
+    ],
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "sherith-israel-stockton-street",
+    "name": "Sherith Israel Synagogue, Stockton Street",
+    "kind": "synagogue",
+    "place": "san-francisco",
+    "address": "Stockton Street between Broadway and Vallejo",
+    "lat": 37.7983,
+    "lon": -122.4087,
+    "precision": "approximate",
+    "built": 1854,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "sherith-israel-sf",
+        "from": 1854
+      }
+    ],
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "appel-dietrich-market",
+    "name": "Appel & Dietrich Market",
+    "kind": "business",
+    "place": "san-francisco",
+    "address": "California Street",
+    "lat": 37.7929,
+    "lon": -122.4035,
+    "precision": "approximate",
+    "certainty": "medium",
+    "people": [
+      "samuel-appel"
+    ],
+    "note": "Market run by Samuel Appel; only the street is recorded, so the point marks California Street downtown.",
+    "occupants": [],
+    "sources": [
+      "penn-appel-portrait"
+    ]
+  },
+  {
+    "id": "haas-lilienthal-house",
+    "name": "Haas-Lilienthal House",
+    "kind": "residence",
+    "place": "san-francisco",
+    "address": "2007 Franklin Street",
+    "lat": 37.7934,
+    "lon": -122.4245,
+    "precision": "exact",
+    "built": 1886,
+    "certainty": "high",
+    "people": [
+      "william-haas"
+    ],
+    "note": "Queen Anne house built for William Haas; later home of Alice Haas and Samuel Lilienthal. Outside the 1840–1870 core period, included for the family networks traced in the Magnes collection.",
+    "occupants": [],
+    "sources": [
+      "magnes-pioneer-album",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "twelfth-street-temple",
+    "name": "Emanu-El Temple, Twelfth Street",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "East 12th Street",
+    "lat": 40.7329,
+    "lon": -73.9893,
+    "precision": "approximate",
+    "built": 1854,
+    "certainty": "medium",
+    "note": "A former church bought by Emanu-El; its home until the Fifth Avenue temple opened.",
+    "occupants": [
+      {
+        "org": "emanu-el-ny",
+        "from": 1854,
+        "to": 1868
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "greene-street-synagogue",
+    "name": "B'nai Jeshurun Synagogue, Greene Street",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "Greene Street, SoHo",
+    "lat": 40.7253,
+    "lon": -73.9998,
+    "precision": "approximate",
+    "built": 1851,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "bnai-jeshurun-ny",
+        "from": 1851,
+        "to": 1865
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "wooster-street-synagogue",
+    "name": "Shaaray Tefila Synagogue, Wooster Street",
+    "kind": "synagogue",
+    "place": "new-york",
+    "address": "Wooster Street, SoHo",
+    "lat": 40.7238,
+    "lon": -74.0012,
+    "precision": "approximate",
+    "built": 1847,
+    "certainty": "medium",
+    "occupants": [
+      {
+        "org": "shaaray-tefila-ny",
+        "from": 1847,
+        "to": 1864
+      }
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  }
+]

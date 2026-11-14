@@ -1,0 +1,10 @@
+{
+  "note": "Estimates of the U.S. Jewish population before 1880 are rough and vary between sources. These figures are the round numbers most often repeated in the secondary literature; treat them as orders of magnitude, not counts.",
+  "sources": ["sarna-2004", "diner-1992"],
+  "series": [
+    { "year": 1840, "estimate": 15000 },
+    { "year": 1850, "estimate": 50000 },
+    { "year": 1860, "estimate": 150000 },
+    { "year": 1870, "estimate": 200000 }
+  ]
+}

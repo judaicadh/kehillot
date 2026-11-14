@@ -1,0 +1,25 @@
+{
+  "title": "Kehillot",
+  "subtitle": "A Digital Atlas of Jewish America, 1840–1870",
+  "baseUrl": "https://judaicadh.github.io/kehillot/",
+  "version": "0.1.0",
+  "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+  "publisher": "Kehillot Project",
+  "language": "en",
+  "temporalCoverage": "1840/1870",
+  "spatialCoverage": "United States",
+  "yearRange": [1840, 1870],
+  "basemap": {
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}",
+    "attribution": "Relief &copy; Esri",
+    "maxZoom": 13,
+    "note": "Swap in georeferenced historical map tiles (e.g. an 1850s map from the David Rumsey collection) by changing this URL."
+  },
+  "streetmap": {
+    "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "attribution": "Streets &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+    "minZoom": 11,
+    "maxZoom": 18,
+    "note": "Used when zoomed into a city, to show synagogues, cemeteries and other sites. A georeferenced historical city plan (e.g. a Perris or Sanborn atlas sheet) can replace it."
+  }
+}

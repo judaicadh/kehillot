@@ -1,0 +1,389 @@
+[
+  {
+    "id": "damascus-protests-1840",
+    "name": "Protests against the Damascus blood libel",
+    "date": "1840-08",
+    "place": "new-york",
+    "alsoAt": [
+      "philadelphia",
+      "richmond",
+      "charleston",
+      "savannah",
+      "cincinnati"
+    ],
+    "category": "civic",
+    "certainty": "high",
+    "description": "American Jews held their first coordinated public protests on behalf of Jews abroad, after the arrest and torture of Damascus Jews accused of ritual murder.",
+    "people": [
+      "isaac-leeser"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "rice-arrives-1840",
+    "name": "Abraham Rice takes the Baltimore pulpit",
+    "date": "1840",
+    "place": "baltimore",
+    "category": "religious",
+    "certainty": "high",
+    "description": "The first ordained rabbi to serve an American congregation.",
+    "people": [
+      "abraham-rice"
+    ],
+    "orgs": [
+      "baltimore-hebrew"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "charleston-organ-1841",
+    "name": "Organ installed at Beth Elohim",
+    "date": "1841",
+    "place": "charleston",
+    "category": "religious",
+    "certainty": "high",
+    "description": "Installation of an organ in the new Beth Elohim synagogue, and Poznanski's reforms, led traditionalists to secede and form Shearit Israel.",
+    "people": [
+      "gustavus-poznanski"
+    ],
+    "orgs": [
+      "beth-elohim-chs",
+      "shearit-israel-chs"
+    ],
+    "sources": [
+      "jick-1976",
+      "sarna-2004"
+    ],
+    "site": "beth-elohim-hasell-street"
+  },
+  {
+    "id": "bnai-brith-founding-1843",
+    "name": "B'nai B'rith founded",
+    "date": "1843-10-13",
+    "place": "new-york",
+    "category": "institutional",
+    "certainty": "high",
+    "description": "Twelve German Jewish immigrants founded the Independent Order of B'nai B'rith.",
+    "orgs": [
+      "bnai-brith"
+    ],
+    "sources": [
+      "sarna-2004"
+    ],
+    "site": "sinsheimer-cafe"
+  },
+  {
+    "id": "wise-arrives-1846",
+    "name": "Isaac Mayer Wise arrives in America",
+    "date": "1846-07",
+    "place": "new-york",
+    "category": "migration",
+    "certainty": "high",
+    "description": "Wise arrived in New York and soon took the pulpit of Beth El in Albany.",
+    "people": [
+      "isaac-mayer-wise"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "sf-high-holidays-1849",
+    "name": "First High Holy Day services in San Francisco",
+    "date": "1849-09",
+    "place": "san-francisco",
+    "category": "religious",
+    "certainty": "medium",
+    "description": "Gold Rush migrants gathered for Rosh Hashanah and Yom Kippur services, the beginnings of organized Jewish life on the Pacific coast.",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "wise-albany-split-1850",
+    "name": "Rosh Hashanah confrontation at Beth El, Albany",
+    "date": "1850-09",
+    "place": "albany",
+    "category": "religious",
+    "certainty": "high",
+    "description": "After Wise's dismissal, a scuffle broke out on Rosh Hashanah; his supporters formed Anshe Emeth.",
+    "people": [
+      "isaac-mayer-wise"
+    ],
+    "orgs": [
+      "beth-el-alb",
+      "anshe-emeth-alb"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "leeser-bible-1853",
+    "name": "Leeser's English Bible published",
+    "date": "1853",
+    "place": "philadelphia",
+    "category": "publication",
+    "certainty": "high",
+    "description": "The first complete Jewish translation of the Hebrew Bible into English published in America.",
+    "people": [
+      "isaac-leeser"
+    ],
+    "sources": [
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "touro-will-1854",
+    "name": "Judah Touro's bequests",
+    "date": "1854-01",
+    "place": "new-orleans",
+    "category": "philanthropy",
+    "certainty": "high",
+    "description": "Touro's will distributed his fortune among congregations, hospitals and charities in many cities, Jewish and Christian.",
+    "people": [
+      "judah-touro"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "cleveland-conference-1855",
+    "name": "Cleveland Conference",
+    "date": "1855-10",
+    "place": "cleveland",
+    "category": "religious",
+    "certainty": "high",
+    "description": "Rabbinical conference convened by Wise in search of a union of American congregations; its platform was attacked from both the traditionalist and radical Reform sides.",
+    "people": [
+      "isaac-mayer-wise",
+      "david-einhorn",
+      "isaac-leeser"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "minhag-america-1857",
+    "name": "Minhag America published",
+    "date": "1857",
+    "place": "cincinnati",
+    "category": "publication",
+    "certainty": "high",
+    "description": "Wise's prayer book for American congregations.",
+    "people": [
+      "isaac-mayer-wise"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "mortara-protests-1858",
+    "name": "Protests over the Mortara affair",
+    "date": "1858-12",
+    "place": "new-york",
+    "alsoAt": [
+      "philadelphia",
+      "san-francisco",
+      "cincinnati"
+    ],
+    "category": "civic",
+    "certainty": "high",
+    "description": "Mass meetings protested the abduction of Edgardo Mortara in Bologna and led directly to the founding of the Board of Delegates of American Israelites (1859).",
+    "orgs": [
+      "board-of-delegates"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "raphall-prayer-1860",
+    "name": "First rabbi opens the House of Representatives",
+    "date": "1860-02-01",
+    "place": "washington",
+    "category": "civic",
+    "certainty": "high",
+    "description": "Morris J. Raphall delivered the opening prayer in the U.S. House.",
+    "people": [
+      "morris-raphall"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "einhorn-flees-1861",
+    "name": "Einhorn flees Baltimore",
+    "date": "1861-04",
+    "place": "baltimore",
+    "category": "civil-war",
+    "certainty": "high",
+    "description": "Threatened by pro-secession mobs for his antislavery preaching, David Einhorn left Baltimore for Philadelphia.",
+    "people": [
+      "david-einhorn"
+    ],
+    "orgs": [
+      "har-sinai-bal"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "chaplaincy-1862",
+    "name": "First Jewish military chaplain commissioned",
+    "date": "1862-09",
+    "place": "philadelphia",
+    "category": "civil-war",
+    "certainty": "high",
+    "description": "After lobbying by the Board of Delegates, Congress amended the chaplaincy law in July 1862; Jacob Frankel was commissioned as a hospital chaplain that September.",
+    "people": [
+      "jacob-frankel"
+    ],
+    "orgs": [
+      "board-of-delegates"
+    ],
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "general-orders-11",
+    "name": "General Orders No. 11",
+    "date": "1862-12-17",
+    "place": "paducah",
+    "category": "civil-war",
+    "certainty": "high",
+    "description": "Ulysses S. Grant expelled 'Jews as a class' from his military department. Paducah's Jews were driven out; after Cesar Kaskel's appeal, Lincoln had the order revoked in January 1863.",
+    "sources": [
+      "sarna-2012",
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "maimonides-opens-1867",
+    "name": "Maimonides College opens",
+    "date": "1867-10",
+    "place": "philadelphia",
+    "category": "institutional",
+    "certainty": "high",
+    "description": "First American rabbinical seminary.",
+    "people": [
+      "isaac-leeser",
+      "sabato-morais"
+    ],
+    "orgs": [
+      "maimonides-college"
+    ],
+    "sources": [
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "philadelphia-conference-1869",
+    "name": "Philadelphia Rabbinical Conference",
+    "date": "1869-11",
+    "place": "philadelphia",
+    "category": "religious",
+    "certainty": "high",
+    "description": "Conference of Reform rabbis, led by Einhorn and Samuel Hirsch, that adopted a set of radical Reform principles.",
+    "people": [
+      "david-einhorn",
+      "isaac-mayer-wise"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "plum-street-dedication-1866",
+    "name": "Plum Street Temple dedicated",
+    "date": "1866-08",
+    "place": "cincinnati",
+    "site": "plum-street-temple",
+    "category": "religious",
+    "certainty": "high",
+    "description": "B'nai Yeshurun dedicated its Moorish Revival temple, a statement of the confidence of Cincinnati Jewry and of Wise's Reform movement.",
+    "people": [
+      "isaac-mayer-wise"
+    ],
+    "orgs": [
+      "bnai-yeshurun-cin"
+    ],
+    "sources": [
+      "sarna-2004",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "emanu-el-fifth-avenue-1868",
+    "name": "Temple Emanu-El consecrated on Fifth Avenue",
+    "date": "1868-09",
+    "place": "new-york",
+    "site": "temple-emanu-el-1868",
+    "category": "religious",
+    "certainty": "high",
+    "description": "Emanu-El moved uptown to a Moorish Revival temple at Fifth Avenue and 43rd Street, following its members' move north.",
+    "people": [
+      "samuel-adler"
+    ],
+    "orgs": [
+      "emanu-el-ny"
+    ],
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "burial-ban-1851",
+    "name": "Burials banned in lower Manhattan",
+    "date": "1851",
+    "place": "new-york",
+    "category": "civic",
+    "certainty": "high",
+    "description": "A city ordinance forbidding burials below 86th Street closed the 21st Street cemetery and pushed congregations to new grounds in Cypress Hills.",
+    "orgs": [
+      "shearith-israel-ny",
+      "bnai-jeshurun-ny",
+      "emanu-el-ny"
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "sloss-greenebaum-wedding-1855",
+    "name": "Louis Sloss marries Sarah Greenebaum",
+    "date": "1855-07",
+    "place": "philadelphia",
+    "category": "family",
+    "certainty": "medium",
+    "description": "The first marriage in the Sloss-Gerstle family network, celebrated in Philadelphia before the couple settled in California.",
+    "people": [
+      "louis-sloss"
+    ],
+    "sources": [
+      "magnes-pioneer-album"
+    ]
+  },
+  {
+    "id": "sonora-cemetery-founded-1853",
+    "name": "Sonora Hebrew Cemetery founded",
+    "date": "1853",
+    "place": "sonora",
+    "category": "institutional",
+    "certainty": "high",
+    "description": "The first Jewish burial ground in the Gold Rush mining region.",
+    "sources": [
+      "magnes-sonora-album"
+    ]
+  }
+]

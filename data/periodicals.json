@@ -1,0 +1,16 @@
+[
+  { "id": "occident", "name": "The Occident and American Jewish Advocate", "place": "philadelphia", "founded": 1843, "ceased": 1869, "language": ["en"], "frequency": "monthly", "orientation": "traditional", "certainty": "high",
+    "description": "Isaac Leeser's monthly, the first successful Jewish periodical in the United States, and a national clearing-house for congregational news.", "sources": ["sussman-1995"] },
+  { "id": "asmonean", "name": "The Asmonean", "place": "new-york", "founded": 1849, "ceased": 1858, "language": ["en"], "frequency": "weekly", "orientation": "moderate", "certainty": "high",
+    "description": "Edited by Robert Lyon; the first Jewish weekly in the United States. Isaac Mayer Wise wrote for it before founding his own paper.", "sources": ["sarna-2004"] },
+  { "id": "israelite", "name": "The Israelite", "place": "cincinnati", "founded": 1854, "language": ["en"], "frequency": "weekly", "orientation": "reform", "certainty": "high",
+    "description": "Isaac Mayer Wise's English-language weekly, renamed The American Israelite in 1874; the principal organ of moderate Reform in the West.", "sources": ["sarna-2004"] },
+  { "id": "die-deborah", "name": "Die Deborah", "place": "cincinnati", "founded": 1855, "ceased": 1902, "language": ["de"], "frequency": "weekly", "orientation": "reform", "certainty": "high",
+    "description": "German-language companion to The Israelite, edited by Wise and aimed at immigrant readers and women.", "sources": ["sarna-2004"] },
+  { "id": "sinai-journal", "name": "Sinai", "place": "baltimore", "founded": 1856, "ceased": 1862, "language": ["de"], "frequency": "monthly", "orientation": "reform", "certainty": "high",
+    "description": "David Einhorn's German-language monthly of radical Reform, which also carried his attacks on slavery.", "sources": ["sarna-2004", "korn-1951"] },
+  { "id": "jewish-messenger", "name": "The Jewish Messenger", "place": "new-york", "founded": 1857, "ceased": 1902, "language": ["en"], "frequency": "weekly", "orientation": "traditional", "certainty": "high",
+    "description": "Traditionalist weekly edited by Samuel Myer Isaacs and later his sons; staunchly Unionist in the Civil War.", "sources": ["sarna-2004", "korn-1951"] },
+  { "id": "weekly-gleaner", "name": "The Weekly Gleaner", "place": "san-francisco", "founded": 1857, "language": ["en"], "frequency": "weekly", "orientation": "traditional", "certainty": "medium",
+    "description": "First Jewish periodical on the Pacific coast, edited by Julius Eckman.", "sources": ["kahn-2002"] }
+]

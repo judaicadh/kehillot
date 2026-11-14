@@ -1,0 +1,312 @@
+[
+  {
+    "id": "chatham-square-cemetery",
+    "name": "First Cemetery of Congregation Shearith Israel (Chatham Square)",
+    "place": "new-york",
+    "address": "55 St. James Place, Manhattan",
+    "lat": 40.7123,
+    "lon": -73.998,
+    "precision": "exact",
+    "established": 1683,
+    "certainty": "high",
+    "owners": [
+      "shearith-israel-ny"
+    ],
+    "note": "The oldest surviving Jewish burial ground in North America; a fragment of the original plot survives beside the Bowery.",
+    "sources": [
+      "pool-1952",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "eleventh-street-cemetery",
+    "name": "Second Cemetery of Congregation Shearith Israel (11th Street)",
+    "place": "new-york",
+    "address": "72–76 West 11th Street, Manhattan",
+    "lat": 40.7351,
+    "lon": -73.9978,
+    "precision": "exact",
+    "established": 1805,
+    "closed": 1829,
+    "certainty": "high",
+    "owners": [
+      "shearith-israel-ny"
+    ],
+    "note": "A small triangle survives after the street grid cut through the original plot.",
+    "sources": [
+      "pool-1952"
+    ]
+  },
+  {
+    "id": "twenty-first-street-cemetery",
+    "name": "Third Cemetery of Congregation Shearith Israel (21st Street)",
+    "place": "new-york",
+    "address": "98–110 West 21st Street, Manhattan",
+    "lat": 40.7423,
+    "lon": -73.9943,
+    "precision": "exact",
+    "established": 1829,
+    "closed": 1851,
+    "certainty": "high",
+    "owners": [
+      "shearith-israel-ny"
+    ],
+    "note": "Closed when the city banned burials below 86th Street in 1851.",
+    "sources": [
+      "pool-1952",
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "beth-olam-cemetery",
+    "name": "Beth Olam Cemetery",
+    "place": "new-york",
+    "address": "Cypress Hills (Queens–Brooklyn line)",
+    "lat": 40.6894,
+    "lon": -73.8818,
+    "precision": "approximate",
+    "established": 1851,
+    "certainty": "high",
+    "owners": [
+      "shearith-israel-ny",
+      "bnai-jeshurun-ny",
+      "shaaray-tefila-ny"
+    ],
+    "note": "Shared by three congregations after burials were banned in lower Manhattan; then outside the city limits.",
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "salem-fields-cemetery",
+    "name": "Salem Fields Cemetery",
+    "place": "new-york",
+    "address": "Jamaica Avenue, Cypress Hills, Brooklyn",
+    "lat": 40.6836,
+    "lon": -73.8796,
+    "precision": "approximate",
+    "established": 1852,
+    "certainty": "high",
+    "owners": [
+      "emanu-el-ny"
+    ],
+    "sources": [
+      "grinstein-1945"
+    ]
+  },
+  {
+    "id": "mikveh-israel-cemetery",
+    "name": "Mikveh Israel Cemetery",
+    "place": "philadelphia",
+    "address": "Spruce Street between 8th and 9th Streets",
+    "lat": 39.9457,
+    "lon": -75.156,
+    "precision": "exact",
+    "established": 1740,
+    "certainty": "high",
+    "owners": [
+      "mikveh-israel-phl"
+    ],
+    "note": "Burial place of Rebecca Gratz and Haym Salomon (unmarked); predates the congregation's formal organization.",
+    "sources": [
+      "wolf-whiteman-1957",
+      "nrhp"
+    ]
+  },
+  {
+    "id": "coming-street-cemetery",
+    "name": "Coming Street Cemetery",
+    "place": "charleston",
+    "address": "189 Coming Street",
+    "lat": 32.788,
+    "lon": -79.9405,
+    "precision": "approximate",
+    "established": 1764,
+    "certainty": "high",
+    "owners": [
+      "beth-elohim-chs"
+    ],
+    "note": "Oldest surviving Jewish cemetery in the South.",
+    "sources": [
+      "elzas-1905",
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "newport-jewish-cemetery",
+    "name": "Jewish Cemetery at Newport",
+    "place": "newport",
+    "address": "Touro Street at Bellevue Avenue",
+    "lat": 41.4897,
+    "lon": -71.3101,
+    "precision": "approximate",
+    "established": 1677,
+    "certainty": "high",
+    "owners": [
+      "jeshuat-israel-npt"
+    ],
+    "note": "Its wall and gates were maintained under Judah Touro's bequest; the subject of Longfellow's 1852 poem.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "chestnut-street-cemetery",
+    "name": "Chestnut Street Cemetery",
+    "place": "cincinnati",
+    "address": "Chestnut Street near Central Avenue",
+    "lat": 39.1083,
+    "lon": -84.5243,
+    "precision": "approximate",
+    "established": 1821,
+    "certainty": "high",
+    "owners": [
+      "bene-israel-cin"
+    ],
+    "note": "The oldest Jewish cemetery west of the Alleghenies; acquired before the congregation was formally organized.",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "franklin-street-burial-ground",
+    "name": "Franklin Street Burial Ground",
+    "place": "richmond",
+    "address": "Franklin Street at 21st Street",
+    "lat": 37.532,
+    "lon": -77.4248,
+    "precision": "approximate",
+    "established": 1791,
+    "certainty": "medium",
+    "owners": [
+      "beth-shalome-ric"
+    ],
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "hebrew-cemetery-richmond",
+    "name": "Hebrew Cemetery",
+    "place": "richmond",
+    "address": "Shockoe Hill, 4th and Hospital Streets",
+    "lat": 37.5528,
+    "lon": -77.4288,
+    "precision": "approximate",
+    "established": 1816,
+    "certainty": "medium",
+    "owners": [
+      "beth-shalome-ric"
+    ],
+    "note": "Includes a section for Jewish Confederate soldiers.",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "sheftall-cemetery",
+    "name": "Mordecai Sheftall Cemetery",
+    "place": "savannah",
+    "address": "Cohen Street",
+    "lat": 32.0745,
+    "lon": -81.105,
+    "precision": "approximate",
+    "established": 1773,
+    "certainty": "medium",
+    "owners": [
+      "mickve-israel-sav"
+    ],
+    "note": "Deeded by Mordecai Sheftall for Jewish burials.",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "gates-of-mercy-cemetery",
+    "name": "Gates of Mercy Cemetery",
+    "place": "new-orleans",
+    "address": "Jackson Avenue (removed 1957)",
+    "lat": 29.937,
+    "lon": -90.079,
+    "precision": "approximate",
+    "established": 1828,
+    "closed": 1957,
+    "certainty": "medium",
+    "owners": [
+      "shangarai-chasset-nol"
+    ],
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "dispersed-of-judah-cemetery",
+    "name": "Dispersed of Judah Cemetery",
+    "place": "new-orleans",
+    "address": "Canal Street, Cemeteries district",
+    "lat": 29.983,
+    "lon": -90.108,
+    "precision": "approximate",
+    "established": 1846,
+    "certainty": "medium",
+    "owners": [
+      "nefutzot-yehudah-nol"
+    ],
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "ohabei-shalom-cemetery",
+    "name": "Ohabei Shalom Cemetery",
+    "place": "boston",
+    "address": "Wordsworth Street, East Boston",
+    "lat": 42.379,
+    "lon": -71.0253,
+    "precision": "approximate",
+    "established": 1844,
+    "certainty": "medium",
+    "owners": [
+      "ohabei-shalom-bos"
+    ],
+    "note": "First Jewish cemetery in Massachusetts.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "sonora-hebrew-cemetery",
+    "name": "Sonora Hebrew Cemetery",
+    "place": "sonora",
+    "address": "Sonora, Tuolumne County",
+    "lat": 37.982943,
+    "lon": -120.382117,
+    "precision": "approximate",
+    "established": 1853,
+    "certainty": "high",
+    "owners": [],
+    "note": "The first Jewish cemetery in the Gold Rush region, with burials from 1853 to 1977 and some 43 visible gravestones, enclosed by an 1850s stone wall. The point is the Magnes geotag for its photographs.",
+    "sources": [
+      "magnes-sonora-album"
+    ]
+  },
+  {
+    "id": "dolores-street-cemeteries",
+    "name": "Home of Peace and Hills of Eternity Cemeteries (Dolores Street)",
+    "place": "san-francisco",
+    "address": "Dolores and 18th Streets (now Mission Dolores Park)",
+    "lat": 37.7596,
+    "lon": -122.4269,
+    "precision": "approximate",
+    "established": 1860,
+    "certainty": "medium",
+    "owners": [
+      "emanu-el-sf",
+      "sherith-israel-sf"
+    ],
+    "note": "Adjoining burial grounds of Emanu-El and Sherith Israel; the remains were later moved to Colma and the land became Mission Dolores Park.",
+    "sources": [
+      "kahn-2002"
+    ]
+  }
+]

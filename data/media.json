@@ -1,0 +1,119 @@
+{
+  "_comment": "Linked pictures and documents. Add a Flickr photo, a Flickr album, or any IIIF manifest here, say which records it is 'about', then run `npm run media` to fetch titles, captions, rights and image links into media-cache.json. Media keep their holders' licenses; they are linked, not copied.",
+  "collections": [
+    {
+      "id": "magnes-sonora-hebrew-cemetery",
+      "source": "flickr-album",
+      "url": "https://www.flickr.com/photos/magnesmuseum/albums/72157614161755742/",
+      "holder": "The Magnes Collection of Jewish Art and Life, UC Berkeley",
+      "holderUrl": "https://magnes.berkeley.edu/",
+      "identifier": "WJHC 1968.36",
+      "about": [
+        {
+          "type": "cemetery",
+          "id": "sonora-hebrew-cemetery"
+        }
+      ],
+      "untitled": "Gravestone, Sonora Hebrew Cemetery",
+      "dateNote": "Dates are those recorded by the Magnes for each item; for gravestones this may be the date of death or of the 1968 survey."
+    },
+    {
+      "id": "magnes-pioneer-high-society",
+      "source": "flickr-album",
+      "url": "https://www.flickr.com/photos/magnesmuseum/albums/72157618496011964/",
+      "holder": "The Magnes Collection of Jewish Art and Life, UC Berkeley",
+      "holderUrl": "https://magnes.berkeley.edu/",
+      "about": [
+        {
+          "type": "place",
+          "id": "san-francisco"
+        },
+        {
+          "type": "person",
+          "id": "louis-sloss"
+        },
+        {
+          "type": "person",
+          "id": "lewis-gerstle"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "source": "flickr",
+      "url": "https://www.flickr.com/photos/magnesmuseum/3295090177/",
+      "about": [
+        {
+          "type": "cemetery",
+          "id": "sonora-hebrew-cemetery"
+        }
+      ],
+      "feature": true
+    },
+    {
+      "source": "iiif",
+      "url": "https://digitalrepository.library.upenn.edu/iiif/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa/manifest",
+      "holder": "University of Pennsylvania Libraries",
+      "holderUrl": "https://www.library.upenn.edu/",
+      "about": [
+        {
+          "type": "person",
+          "id": "samuel-appel"
+        },
+        {
+          "type": "site",
+          "id": "appel-dietrich-market"
+        }
+      ],
+      "feature": true
+    }
+  ],
+  "_comment_datasets": "Research datasets deposited elsewhere (e.g. Zenodo). use: \"subscriptions\" turns a subscriber list into the readership layer for the periodical it is about.",
+  "datasets": [
+    {
+      "source": "zenodo",
+      "url": "https://zenodo.org/records/24149057",
+      "use": "subscriptions",
+      "about": [
+        {
+          "type": "periodical",
+          "id": "occident"
+        }
+      ]
+    },
+    {
+      "source": "zenodo",
+      "url": "https://zenodo.org/records/24148958",
+      "use": "subscriptions",
+      "about": [
+        {
+          "type": "periodical",
+          "id": "israelite"
+        }
+      ]
+    },
+    {
+      "source": "zenodo",
+      "url": "https://zenodo.org/records/24149083",
+      "use": "subscriptions",
+      "about": [
+        {
+          "type": "periodical",
+          "id": "jewish-messenger"
+        }
+      ]
+    },
+    {
+      "source": "zenodo",
+      "url": "https://zenodo.org/records/24149065",
+      "use": "subscriptions",
+      "about": [
+        {
+          "type": "periodical",
+          "id": "weekly-gleaner"
+        }
+      ]
+    }
+  ]
+}
