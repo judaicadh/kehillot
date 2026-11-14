@@ -128,4 +128,10 @@ This is a **seed dataset** drawn from the standard secondary literature (Sarna, 
 
 ## License
 
-Data and text: CC BY 4.0. Leaflet (vendored in `assets/vendor/leaflet`) is BSD-2-Clause. Basemap tiles © OpenStreetMap contributors, © CARTO.
+- **Code:** MIT. See [LICENSE](LICENSE).
+- **Data and text:** CC BY 4.0. See [LICENSE-DATA.md](LICENSE-DATA.md).
+- **Third-party material keeps its own terms**, all listed in LICENSE-DATA.md:
+  - linked pictures and documents (each holder's license);
+  - the deposited Zenodo datasets;
+  - Leaflet (BSD-2-Clause) and OpenSeadragon (BSD-3-Clause);
+  - basemap tiles (© Esri; © OpenStreetMap contributors).

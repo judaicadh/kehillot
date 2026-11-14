@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static digital atlas and linked-data database of Jewish America, 1840–1870",
   "type": "module",
-  "license": "CC-BY-4.0",
+  "license": "(MIT AND CC-BY-4.0)",
   "engines": {
     "node": ">=18"
   },
