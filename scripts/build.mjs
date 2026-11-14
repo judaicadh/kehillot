@@ -1301,7 +1301,7 @@ await out('vocab/index.html', layout({ rel: '../', title: 'Vocabulary', canonica
   ${Object.entries(VOCAB).map(([scheme, v]) => `<h2 id="${scheme}">Concept scheme: ${esc(v.label)}</h2><dl class="vocab-props">${Object.entries(v.concepts).map(([k, [l, d]]) => `<div id="${scheme}-${k}"><dt><code>kh:${scheme}-${k}</code> — ${esc(l)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>`).join('')}
   </div>` }));
 
-await out('404.html', layout({ rel: '/', title: 'Not found', canonical: `${BASE}404.html`, description: 'Page not found.',
+await out('404.html', layout({ rel: BASE, title: 'Not found', canonical: `${BASE}404.html`, description: 'Page not found.',
   body: `<div class="wrap prose-wide"><h1>Page not found</h1><p>Try the <a href="${BASE}browse/">list of all records</a> or the <a href="${BASE}database/">database search</a>.</p></div>` }));
 
 
