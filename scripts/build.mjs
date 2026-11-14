@@ -115,6 +115,7 @@ const VOCAB = {
     concepts: {
       exact: ['Exact', 'The building or grounds survive or the address is documented; the point is on the site.'],
       approximate: ['Approximate', 'Placed on the right street or block from a documented description; may be off by up to a few hundred metres.'],
+      city: ['City only', 'Placed at the city centre because the address has not yet been located.'],
     },
   },
   clergyTitle: {
@@ -162,6 +163,8 @@ for (const [type, rows] of Object.entries(data)) {
     for (const role of r.roles || []) if (!orgLike(role.org)) errors.push(`${at}: role points to unknown organization "${role.org}"`);
     if (r.splitFrom && !index.congregation.has(r.splitFrom)) errors.push(`${at}: unknown splitFrom "${r.splitFrom}"`);
     if (r.rite && !VOCAB.rite.concepts[r.rite]) errors.push(`${at}: rite "${r.rite}" not in vocabulary`);
+    if (type === 'congregation' && (!r.rite || !r.orientation)) errors.push(`${at}: congregations need a rite and an orientation`);
+    for (const c of r.contributors || []) { if (!c.name && !c.github) errors.push(`${at}: contributor needs a name or GitHub username`); if (c.orcid && !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(c.orcid)) errors.push(`${at}: ORCID "${c.orcid}" is not in 0000-0000-0000-0000 form`); }
     if (r.orientation && !VOCAB.orientation.concepts[r.orientation]) errors.push(`${at}: orientation "${r.orientation}" not in vocabulary`);
     if (r.certainty && !VOCAB.certainty.concepts[r.certainty]) errors.push(`${at}: certainty "${r.certainty}" not in vocabulary`);
     if (r.category && !VOCAB.category.concepts[r.category]) errors.push(`${at}: category "${r.category}" not in vocabulary`);
@@ -451,6 +454,7 @@ const CONTEXT = {
   precision: { '@id': 'kh:locationPrecision', '@type': '@id' },
   atSite: { '@id': 'kh:atSite', '@type': '@id' },
   subjectOf: { '@id': 'schema:subjectOf', '@type': '@id', '@container': '@set' },
+  contributor: { '@id': 'schema:contributor', '@container': '@set' },
   proprietor: { '@id': 'kh:proprietor', '@type': '@id', '@container': '@set' },
   supervisedBy: { '@id': 'kh:supervisedBy', '@type': '@id', '@container': '@set' },
   advertisedIn: { '@id': 'kh:advertisedIn', '@type': '@id', '@container': '@set' },
@@ -478,7 +482,15 @@ const strip = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !=
 const SITE_TYPES = { synagogue: 'schema:Synagogue', hospital: 'schema:Hospital', school: 'schema:School', 'matzah-bakery': 'schema:Bakery', lodging: 'schema:LodgingBusiness', 'kosher-restaurant': 'schema:Restaurant', business: 'schema:LocalBusiness', bookstore: 'schema:BookStore', residence: 'schema:House', 'meeting-place': 'schema:Place' };
 const INST_TYPES = { periodical: 'schema:Periodical', education: 'schema:EducationalOrganization', hospital: 'schema:Hospital' };
 
+// Contributors (from accepted suggestions) are credited as schema:contributor on every record.
+const contributorNodes = (r) => (r.contributors || []).map((c) => strip({ '@type': 'schema:Person', name: c.name || `@${c.github}`,
+  sameAs: c.orcid ? `https://orcid.org/${c.orcid}` : undefined, url: c.github ? `https://github.com/${c.github}` : undefined }));
 function node(type, r) {
+  const n = nodeBase(type, r);
+  if (r.contributors?.length) n.contributor = contributorNodes(r);
+  return n;
+}
+function nodeBase(type, r) {
   const base = { '@id': uri(type, r.id), mainEntityOfPage: docUri(type, r.id), sameAs: wd(type, r.id) || undefined };
   switch (type) {
     case 'place':
@@ -540,7 +552,7 @@ function node(type, r) {
         involves: [...(r.people || []).map((p) => uri('person', p)), ...(r.orgs || []).map((o) => uri(typeOfOrg(o), o))],
         citation: r.sources.map((s) => uri('source', s)) });
     case 'source':
-      return strip({ ...base, '@type': `schema:${r.type === 'WebSite' ? 'WebSite' : r.type === 'Periodical' ? 'Periodical' : r.type === 'Dataset' ? 'Dataset' : r.type === 'Collection' ? 'Collection' : 'Book'}`,
+      return strip({ ...base, '@type': `schema:${r.type === 'WebSite' ? 'WebSite' : r.type === 'Periodical' ? 'Periodical' : r.type === 'Dataset' ? 'Dataset' : r.type === 'Collection' ? 'Collection' : r.type === 'CreativeWork' ? 'CreativeWork' : 'Book'}`,
         name: r.title, author: r.author, publisher: r.publisher, datePublished: r.year ? String(r.year) : undefined,
         url: r.url, description: r.note });
   }
@@ -630,7 +642,7 @@ ${body}
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p><strong>${esc(cfg.title)}</strong> v${esc(cfg.version)} · Data released under <a href="${cfg.license.url}" rel="license">${esc(cfg.license.name)}</a> · Built ${BUILD_DATE}</p>
-    <p><a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
+    <p><a href="${rel}about/#contribute">Contribute</a> · <a href="${rel}contributors/">Contributors</a> · <a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
   </div>
 </footer>
 ${scripts.map((s) => `<script src="${rel}${s}" defer></script>`).join('\n')}
@@ -647,16 +659,26 @@ const formatDate = (d) => {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   return day ? `${Number(day)} ${months[m - 1]} ${y}` : m ? `${months[m - 1]} ${y}` : y;
 };
-const citationText = (s) => `${s.author}, <cite>${esc(s.title)}</cite>${s.place || s.publisher ? ` (${[s.place, s.publisher].filter(Boolean).map(esc).join(': ')}${s.year ? `, ${s.year}` : ''})` : ''}`;
+const citationText = (s) => `${s.author ? `${esc(s.author)}, ` : ''}<cite>${esc(s.title)}</cite>${s.place || s.publisher ? ` (${[s.place, s.publisher].filter(Boolean).map(esc).join(': ')}${s.year ? `, ${s.year}` : ''})` : ''}`;
 function sourcesSection(rel, ids) {
   return `<section aria-labelledby="h-sources"><h2 id="h-sources">Sources</h2><ol class="sources">${ids
     .map((id) => `<li>${citationText(index.source.get(id))} — <a href="${rel}${docPath('source', id)}">record</a></li>`).join('')}</ol></section>`;
 }
+// Links that open a pre-filled suggestion form on GitHub.
+const suggestUrl = (template, params = {}) => {
+  const u = new URL(`https://github.com/${cfg.contribute.repo}/issues/new`);
+  u.searchParams.set('template', `${template}.yml`);
+  for (const [k, v] of Object.entries(params)) if (v) u.searchParams.set(k, v);
+  return u.toString();
+};
+const SITE_FORM = { synagogue: 'add-site', school: 'add-site', 'matzah-bakery': 'add-site', lodging: 'add-site', 'kosher-restaurant': 'add-site', business: 'add-site', bookstore: 'add-site', cemetery: 'add-cemetery' };
+const contributedBy = (r) => (r.contributors?.length ? `<p class="contributed">Contributed by ${r.contributors.map((c) => `${c.github ? `<a href="https://github.com/${esc(c.github)}">` : ''}${esc(c.name || '@' + c.github)}${c.github ? '</a>' : ''}${c.orcid ? ` <a class="orcid" href="https://orcid.org/${esc(c.orcid)}" title="ORCID iD">iD</a>` : ''}`).join(', ')}.</p>` : '');
 function citeBox(type, r) {
   const label = TYPE_INFO[type].label;
   return `<section class="cite" aria-labelledby="h-cite"><h2 id="h-cite">Cite this record</h2>
   <p class="cite-text">“${esc(type === 'source' ? r.title : r.name).replace(/&amp;/g, '&amp;')}.” ${label} record in <cite>${esc(cfg.title)}: ${esc(cfg.subtitle)}</cite>, version ${cfg.version}. <span class="uri">${esc(uri(type, r.id))}</span> (accessed ${BUILD_DATE}).</p>
-  <p class="data-links">Machine-readable: <a href="index.jsonld" type="application/ld+json">JSON-LD</a>${wd(type, r.id) ? ` · Same as <a href="https://www.wikidata.org/wiki/${wikidata[type][r.id]}">Wikidata ${wikidata[type][r.id]}</a>` : ''}</p></section>`;
+  ${contributedBy(r)}
+  <p class="data-links"><a class="suggest" href="${esc(suggestUrl('correction', { record: docUri(type, r.id), title: `[Correction] ${type === 'source' ? r.title : r.name}` }))}">Suggest a correction</a> · Machine-readable: <a href="index.jsonld" type="application/ld+json">JSON-LD</a>${wd(type, r.id) ? ` · Same as <a href="https://www.wikidata.org/wiki/${wikidata[type][r.id]}">Wikidata ${wikidata[type][r.id]}</a>` : ''}</p></section>`;
 }
 const dl = (rows) => `<dl class="facts">${rows.filter(([, v]) => v !== undefined && v !== null && v !== '').map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
 const ul = (items, empty = '') => (items.length ? `<ul class="related">${items.map((i) => `<li>${i}</li>`).join('')}</ul>` : empty);
@@ -1269,6 +1291,24 @@ await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `$
   body: `<div class="wrap prose-wide">
   <h1>About the project</h1>
   <p class="lede">${esc(cfg.title)} is a static, open digital atlas and database of Jewish communal life in the United States between ${Y0} and ${Y1}, the era of mass Central European immigration, westward expansion, the first American Reform congregations, and the Civil War.</p>
+  <h2 id="contribute">Contribute</h2>
+  <p>Anyone can suggest additions and corrections. Each suggestion is a short form on GitHub (a free account is needed). An editor checks it against its source; once accepted, it becomes a record that the site validates automatically, and it is published when an editor approves it. Contributors are credited on the record and on the <a href="../contributors/">Contributors</a> page, with an ORCID iD if you give one.</p>
+  <ul class="suggest-buttons">
+    <li><a class="btn btn-small" href="${esc(suggestUrl('add-site'))}">Suggest a place</a> <span class="small muted">synagogue, school, bakery, hotel, restaurant, business, bookstore</span></li>
+    <li><a class="btn btn-small" href="${esc(suggestUrl('add-cemetery'))}">Suggest a cemetery</a></li>
+    <li><a class="btn btn-small" href="${esc(suggestUrl('add-person'))}">Suggest a person or clergy member</a></li>
+    <li><a class="btn btn-small" href="${esc(suggestUrl('add-congregation'))}">Suggest a congregation</a></li>
+    <li><a class="btn btn-small btn-ghost" href="${esc(suggestUrl('correction'))}">Suggest a correction</a> <span class="small muted">or use the link at the foot of any record</span></li>
+  </ul>
+  <h3>What makes a good suggestion</h3>
+  <ul>
+    <li><strong>Cite a source</strong> that someone else could check: a book, newspaper, directory, census, synagogue record or archive, with date and page. Family memory is welcome as a lead but needs a documentary source to be published.</li>
+    <li><strong>Say how sure you are.</strong> Use “medium” certainty when sources disagree or a date is approximate, and give an approximate location rather than none.</li>
+    <li><strong>Stay in the period.</strong> Kehillot covers about 1840 to 1870; earlier or later places are welcome when they explain something in that period.</li>
+    <li><strong>No private information about living people.</strong> Suggestions and GitHub usernames are public.</li>
+    <li><strong>Licensing.</strong> Contributions are published under CC BY 4.0, like the rest of the data. Don't paste long passages from copyrighted works; summarise and cite.</li>
+  </ul>
+  <p class="small">Working with a large list, such as a city directory or a run of advertisements? Get in touch through a <a href="${esc(suggestUrl('correction', { title: '[Bulk contribution] ' }))}">suggestion</a>: a spreadsheet can be imported in one go.</p>
   <h2 id="collecting">What we're collecting</h2>
   <p>Kehillot is built to grow. Each category below has a place in the data model, a map symbol and a filter, even where nothing has been recorded yet. Copy a template from <code>data/templates/</code> in the source repository, fill it in from a cited source, and add it to the matching data file.</p>
   <div class="table-wrap"><table class="files collecting"><thead><tr><th scope="col"></th><th scope="col">Category</th><th scope="col">Recorded</th><th scope="col">Where it goes</th><th scope="col">Useful fields</th></tr></thead><tbody>
@@ -1300,8 +1340,8 @@ await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `$
   <h2 id="cite">How to cite</h2>
   <p class="cite-text">${esc(cfg.title)}: ${esc(cfg.subtitle)}. Version ${cfg.version}. ${esc(cfg.publisher)}, ${BUILD_DATE.slice(0, 4)}. ${esc(BASE)}</p>
   <p>Each record page has its own citation with a permanent URI.</p>
-  <h2 id="contribute">Contributing corrections</h2>
-  <p>The data lives in plain JSON files in the <code>data/</code> folder of the source repository. Edit a record, add a source, run <code>node scripts/build.mjs</code>; the build validates every reference before publishing.</p>
+  <h2 id="editing">Editing the data directly</h2>
+  <p>The data lives in plain JSON files in the <code>data/</code> folder of the <a href="https://github.com/${cfg.contribute.repo}">source repository</a>, with templates in <code>data/templates/</code>. Edit a record, add a source, and run <code>npm run build</code>: the build validates every reference before publishing. To suggest changes without editing files, use the <a href="#contribute">suggestion forms</a>.</p>
   <h2 id="principles">Principles</h2>
   <ul>
     <li><a href="https://www.go-fair.org/fair-principles/">FAIR</a>: findable (stable URIs, DCAT, sitemap), accessible (static files, no login), interoperable (RDF, CSVW, GeoJSON, LPF), reusable (CC BY, provenance on every record).</li>
@@ -1527,7 +1567,7 @@ for (const placeId of CITY_IDS) {
           ${geoPics.length ? `<label><input type="checkbox" name="group" value="Pictures" checked> Pictures <span class="muted">${geoPics.length}</span></label>` : ''}
         </fieldset>
         <p id="city-count" class="city-count" aria-live="polite"></p>
-        ${groups.some((g) => !counts[g]) ? `<p class="not-yet-recorded">Not yet recorded here: ${groups.filter((g) => !counts[g]).map((g) => `<span class="nyr"><span class="f-sym">${groupIcon(g)}</span>${g.toLowerCase()}</span>`).join(', ')}. <a href="${rel}about/#collecting">Help add them</a>.</p>` : ''}
+        ${groups.some((g) => !counts[g]) ? `<p class="not-yet-recorded">Not yet recorded here: ${groups.filter((g) => !counts[g]).map((g) => `<span class="nyr"><span class="f-sym">${groupIcon(g)}</span>${g.toLowerCase()}</span>`).join(', ')}. <a href="${esc(suggestUrl('add-site', { title: `[Place] … in ${p.name}` }))}">Suggest one</a> · <a href="${rel}about/#contribute">how to contribute</a>.</p>` : ''}
       </div>
       <ol class="entries" id="city-list">${entries.map((e) => e.html).join('')}</ol>
       ${!entries.length ? '<p class="muted">No buildings or cemeteries mapped yet; the pictures below are placed where their holders geotagged them.</p>' : ''}
@@ -1646,7 +1686,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
       <p id="fm-summary" class="c-sum" aria-live="polite"></p>
     </div>
     ${multi ? `<fieldset class="map-key fm-key"><legend>Explanation</legend>${featureIds.map((id) => { const F = FEATURES.find((f) => f.id === id); return `<label${counts[id] ? '' : ' class="fm-empty"'}><input type="checkbox" name="feature" value="${id}"${counts[id] ? ' checked' : ''}><span class="f-sym">${SYM.svg(F.symbol, { size: 14 })}</span>${esc(F.label)} <span class="muted">${counts[id] || 'none yet'}</span></label>`; }).join('')}</fieldset>` : ''}
-    ${!n ? `<div class="fm-none"><p><span class="f-sym">${SYM.svg(F0.symbol, { size: 22 })}</span> No ${esc(F0.label.toLowerCase())} recorded yet.</p><p class="small">This map fills in automatically as records are added. <a href="${rel}about/#collecting">See what we're collecting</a>.</p></div>` : ''}
+    ${!n ? `<div class="fm-none"><p><span class="f-sym">${SYM.svg(F0.symbol, { size: 22 })}</span> No ${esc(F0.label.toLowerCase())} recorded yet.</p><p class="small">This map fills in automatically as records are added. <a href="${esc(suggestUrl(F0.id === 'cemeteries' ? 'add-cemetery' : F0.id === 'clergy' ? 'add-person' : F0.id === 'congregations' ? 'add-congregation' : 'add-site', { title: `${F0.id === 'cemeteries' ? '[Cemetery]' : F0.id === 'clergy' ? '[Person]' : F0.id === 'congregations' ? '[Congregation]' : '[Place]'} ` }))}">Suggest the first one</a> · <a href="${rel}about/#collecting">what we're collecting</a>.</p></div>` : ''}
   </div>
   ${opts.journeys ? `<div class="fm-journeys">
     <label><input type="checkbox" id="fm-jr"> Show journeys between pulpits</label>
@@ -1847,6 +1887,30 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
   await out('visualizations/index.html', layout({ rel: '../', title: 'Visualizations', canonical: `${BASE}visualizations/`, current: 'visualizations/',
     description: 'Network diagram of people and institutions, and charts of congregational change, clergy tenures and newspaper subscriptions in Jewish America, 1840–1870.',
     body, scripts: ['assets/vendor/d3/d3.min.js', 'assets/js/viz.js'] }));
+}
+
+
+// ───────────────────────── contributors ─────────────────────────
+{
+  const people = new Map();
+  for (const [type, rows] of Object.entries(data)) for (const r of rows) for (const c of r.contributors || []) {
+    const k = c.github || c.name;
+    if (!people.has(k)) people.set(k, { ...c, records: [] });
+    const p = people.get(k);
+    if (!p.name && c.name) p.name = c.name;
+    if (!p.orcid && c.orcid) p.orcid = c.orcid;
+    p.records.push({ type, r });
+  }
+  const list = [...people.values()].sort((a, b) => b.records.length - a.records.length || String(a.name || a.github).localeCompare(String(b.name || b.github)));
+  await out('contributors/index.html', layout({ rel: '../', title: 'Contributors', canonical: `${BASE}contributors/`, current: '',
+    description: 'People who have contributed records to Kehillot.',
+    jsonld: list.length ? { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Kehillot contributors', itemListElement: list.map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: strip({ '@type': 'Person', name: c.name || `@${c.github}`, sameAs: c.orcid ? `https://orcid.org/${c.orcid}` : undefined, url: c.github ? `https://github.com/${c.github}` : undefined }) })) } : undefined,
+    body: `<div class="wrap prose-wide"><h1>Contributors</h1>
+  <p class="lede">Kehillot grows through suggestions from researchers, librarians, genealogists, students and descendants. Everyone whose suggestion becomes a record is credited here and on the record itself.</p>
+  ${list.length ? `<ul class="contributors">${list.map((c) => `<li><h2>${c.github ? `<a href="https://github.com/${esc(c.github)}">` : ''}${esc(c.name || '@' + c.github)}${c.github ? '</a>' : ''}${c.orcid ? ` <a class="orcid" href="https://orcid.org/${esc(c.orcid)}" title="ORCID iD">iD</a>` : ''} <span class="muted">${c.records.length} record${c.records.length === 1 ? '' : 's'}</span></h2>
+    ${ul(c.records.map(({ type, r }) => `${link('../', type, r.id, type === 'source' ? r.title : r.name)} <span class="muted">${TYPE_INFO[type].label}</span>`))}</li>`).join('')}</ul>`
+    : '<p>No contributed records yet. The first could be yours.</p>'}
+  <p><a class="btn" href="../about/#contribute">How to contribute</a></p></div>` }));
 }
 
 await out('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`);

@@ -129,6 +129,24 @@ The build then produces:
 - `data/subscriptions-by-place.csv`;
 - a `schema:Dataset` node for each deposit, with its DOI as identifier, linked from its periodical by `schema:subjectOf`.
 
+## Contributions from others
+
+Anyone can suggest additions and corrections through GitHub issue forms. The site links to them from every record ("Suggest a correction"), from the city guides and empty maps, and from the About page. Editors review each suggestion; adding the `accepted` label runs `.github/workflows/suggestions.yml`, which:
+
+1. converts the form into a record (`scripts/issue-to-record.mjs`);
+2. validates it with the full build;
+3. opens a pull request for approval.
+
+Contributors are credited on records (`contributors`, published as `schema:contributor`) and on `/contributors/`.
+
+The forms in `.github/ISSUE_TEMPLATE/` are generated from `scripts/forms-spec.mjs` and the site's own data. Regenerate them after adding cities or categories:
+
+```bash
+npm run build && npm run forms
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the editorial policy and review steps.
+
 ## Linked data design
 
 - **URIs**: `{BASE}congregation/emanu-el-ny/#this` identifies the congregation; `{BASE}congregation/emanu-el-ny/` is the page about it (the hash-URI pattern from *Cool URIs for the Semantic Web*, which needs no server-side 303 redirects).

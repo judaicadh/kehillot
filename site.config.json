@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
   "publisher": "Kehillot Project",
+  "contribute": { "repo": "judaicadh/kehillot" },
   "language": "en",
   "temporalCoverage": "1840/1870",
   "spatialCoverage": "United States",

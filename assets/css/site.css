@@ -569,3 +569,13 @@ rect[data-tip].is-hot, rect[data-tip]:focus { stroke: var(--ink); stroke-width: 
 .net-label { font: 11px var(--serif); fill: var(--ink); paint-order: stroke; stroke: var(--plate-paper); stroke-width: 3px; pointer-events: none; display: none; }
 .net-label.always, .all-labels .net-label, .net-node:hover .net-label, .net-node.sel .net-label, .net-node:focus .net-label { display: block; }
 .net-node.dim .net-label { display: none; }
+
+/* ── contributions ── */
+.contributed { font: italic .9rem var(--serif); color: var(--ink-2); margin: .3rem 0; }
+.orcid { display: inline-grid; place-items: center; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: #a6ce39; color: #fff; font: 700 .6rem/1 var(--sans); text-decoration: none; vertical-align: .1em; }
+.suggest { font-weight: 600; }
+.suggest-buttons { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.suggest-buttons li { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; }
+.contributors { list-style: none; padding: 0; }
+.contributors > li { border-bottom: 1px solid var(--rule); padding: .6rem 0; }
+.contributors h2 { font-size: 1.15rem; margin: 0 0 .2rem; }

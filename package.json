@@ -13,6 +13,7 @@
     "serve": "node scripts/serve.mjs",
     "dev": "BASE_URL=http://localhost:8765/ node scripts/build.mjs && node scripts/serve.mjs 8765",
     "reconcile": "node scripts/reconcile.mjs",
-    "media": "node scripts/fetch-media.mjs"
+    "media": "node scripts/fetch-media.mjs",
+    "forms": "node scripts/forms.mjs"
   }
 }

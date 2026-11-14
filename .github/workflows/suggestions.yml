@@ -1,0 +1,53 @@
+# Turn an accepted suggestion into a pull request.
+#
+# Flow: someone submits a suggestion form (an issue) → an editor reviews it and adds the
+# "accepted" label → this workflow converts the form into a record, runs the full build
+# (which validates every reference), and opens a pull request. Nothing reaches the site
+# until an editor merges that pull request.
+#
+# Only people with triage access or above can add labels, so only editors can trigger this.
+# The issue text is untrusted: it is read from the event file by a Node script, never
+# interpolated into shell commands.
+name: Suggestion to pull request
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: suggestion-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Build current site (provides vocabulary and places)
+        run: node scripts/build.mjs
+
+      - name: Convert the suggestion into a record
+        run: node scripts/issue-to-record.mjs
+
+      - name: Validate with the full build
+        id: validate
+        run: |
+          if node scripts/build.mjs > .cache/build.log 2>&1; then echo "valid=true" >> "$GITHUB_OUTPUT"; else echo "valid=false" >> "$GITHUB_OUTPUT"; fi
+          cat .cache/build.log
+
+      - name: Open a pull request, or report why not
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          VALID: ${{ steps.validate.outputs.valid }}
+        run: node scripts/suggestion-pr.mjs
