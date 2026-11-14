@@ -531,5 +531,40 @@
     "sources": [
       "grinstein-1945"
     ]
+  },
+  {
+    "id": "test-workflow-check-do-not-merge-new-york",
+    "name": "TEST: workflow check (do not merge)",
+    "place": "new-york",
+    "address": "Essex Street",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "precision": "city",
+    "certainty": "low",
+    "kind": "matzah-bakery",
+    "opened": 1855,
+    "occupants": [],
+    "supervisedBy": [
+      {
+        "type": "person",
+        "id": "samuel-myer-isaacs"
+      }
+    ],
+    "advertisedIn": [
+      {
+        "periodical": "occident",
+        "date": "1855-03"
+      }
+    ],
+    "note": "This is a test of the suggestion workflow. It is not a real record and will be closed without merging.",
+    "sources": [
+      "contrib-1"
+    ],
+    "contributors": [
+      {
+        "github": "judaicadhpenn",
+        "issue": 1
+      }
+    ]
   }
 ]

@@ -196,5 +196,15 @@
     "place": "Philadelphia",
     "year": null,
     "url": "https://digitalcollections.library.upenn.edu/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa"
+  },
+  {
+    "id": "contrib-1",
+    "type": "CreativeWork",
+    "author": "",
+    "title": "TEST ONLY: no real source.",
+    "publisher": "",
+    "place": "",
+    "year": null,
+    "note": "Cited in a suggestion by @judaicadhpenn (issue #1)."
   }
 ]
