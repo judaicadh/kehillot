@@ -85,7 +85,7 @@ How the media layer works:
 - **Pages and data:** each item gets a page at `/media/{id}/` with credit, rights, and links back to the original, and is published as a `schema:ImageObject` with `schema:about` links. Multi-page IIIF items open in a deep-zoom viewer (OpenSeadragon, vendored).
 - **Offline builds:** the cache is committed, so builds don't need the network. Run `npm run media -- --refresh` to re-read everything.
 
-## Research datasets and the readership layer
+## Research datasets and the subscriber layer
 
 `data/media.json` also lists `datasets`, research data deposited elsewhere. Zenodo is supported:
 
@@ -104,9 +104,9 @@ Places are keyed by their Wikidata ID, so they join to Kehillot places through `
 
 The build then produces:
 
-- the **Readers** map (`/readers/`);
-- readership sections on periodical, place and city-guide pages;
-- `data/readership-places.csv`;
+- the **Subscribers** map (`/subscribers/`);
+- subscriber sections on periodical, place and city-guide pages;
+- `data/subscriptions-by-place.csv`;
 - a `schema:Dataset` node for each deposit, with its DOI as identifier, linked from its periodical by `schema:subjectOf`.
 
 ## Linked data design

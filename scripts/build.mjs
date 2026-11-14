@@ -313,12 +313,12 @@ function readersSection(rel, placeId, { names = false } = {}) {
   const rs = readersFor(placeId);
   if (!rs.length) return '';
   const p = index.place.get(placeId);
-  return `<section class="readers" aria-labelledby="h-readers"><h2 id="h-readers">Readers in ${esc(p.name)}</h2>
+  return `<section class="readers" aria-labelledby="h-readers"><h2 id="h-readers">Subscribers in ${esc(p.name)}</h2>
   <p class="section-note">Subscriptions recorded in the papers' own subscriber lists, joined to ${esc(p.name)} by its Wikidata identifier (${esc(qidOfPlace(placeId))}).</p>
   <ul class="readers-list">${rs.map((x) => `<li><span class="paper-swatch" style="background:${PAPER_TINT[x.paper]}" aria-hidden="true"></span>
     <i>${link(rel, 'periodical', x.paper, nameOf('periodical', x.paper))}</i>: <strong>${x.n.toLocaleString('en-US')}</strong> subscription${x.n === 1 ? '' : 's'}${x.from ? ` <span class="muted">${x.from === x.to ? x.from : `${x.from}–${x.to}`}</span>` : ''}
     ${names ? `<details class="subs"><summary>List the subscribers</summary><ol class="subs-list">${x.subs.slice().sort((a, b) => (a[2] || 0) - (b[2] || 0) || String(a[0]).localeCompare(String(b[0]))).map((s) => `<li>${esc(s[0] || 'Unnamed')} <span class="muted">${s[2] || ''}${s[3] && s[3] !== 'I' ? ` · ${TYPE_LABEL[s[3]]}` : ''}</span></li>`).join('')}</ol></details>` : ''}</li>`).join('')}</ul>
-  <p class="small"><a href="${rel}readers/#place=${encodeURIComponent(qidOfPlace(placeId))}">See ${esc(p.name)} on the readership map →</a></p></section>`;
+  <p class="small"><a href="${rel}subscribers/#place=${encodeURIComponent(qidOfPlace(placeId))}">See ${esc(p.name)} on the subscriber map →</a></p></section>`;
 }
 function periodicalReadership(rel, paper) {
   const R = READERS[paper];
@@ -333,14 +333,14 @@ function periodicalReadership(rel, paper) {
   const maxY = Math.max(...Object.values(byYear));
   const bars = ys.length ? `<figure class="spark"><svg viewBox="0 0 ${ys.length * 14} 60" role="img" aria-labelledby="sp-t-${paper}"><title id="sp-t-${paper}">Subscriptions recorded per year, ${ys[0]}–${ys.at(-1)}</title>${ys.map((y, i) => `<rect x="${i * 14 + 2}" y="${60 - (byYear[y] / maxY) * 56}" width="10" height="${(byYear[y] / maxY) * 56}" class="spark-bar" style="fill:${PAPER_TINT[paper]}"><title>${y}: ${byYear[y]}</title></rect>`).join('')}</svg>
     <figcaption><span>${ys[0]}</span><span>Subscriptions recorded per year</span><span>${ys.at(-1)}</span></figcaption></figure>` : '';
-  return `<section class="readers" aria-labelledby="h-read-${paper}"><h2 id="h-read-${paper}">Readership</h2>
+  return `<section class="readers" aria-labelledby="h-read-${paper}"><h2 id="h-read-${paper}">Subscribers</h2>
   <p class="lede">${R.total.toLocaleString('en-US')} subscriptions recorded between ${R.years[0]} and ${R.years[1]}, in ${R.places.length.toLocaleString('en-US')} places across ${states.size} states and territories${abroad.length ? ` and ${abroad.length} places abroad` : ''}.</p>
   ${bars}
-  <table class="mini readers-top"><caption>Where readers lived (top 12)</caption><thead><tr><th scope="col">Place</th><th scope="col">Subscriptions</th></tr></thead><tbody>${R.places.slice(0, 12).map((x) => {
+  <table class="mini readers-top"><caption>Where subscribers lived (top 12)</caption><thead><tr><th scope="col">Place</th><th scope="col">Subscriptions</th></tr></thead><tbody>${R.places.slice(0, 12).map((x) => {
     const own = x.qid && placeIdByQid.get(x.qid);
     return `<tr><th scope="row">${own ? link(rel, 'place', own, `${x.name}${x.state ? `, ${x.state}` : ''}`) : esc(`${x.name}${x.state ? `, ${x.state}` : ''}`)}</th><td>${x.n.toLocaleString('en-US')}</td></tr>`;
   }).join('')}</tbody></table>
-  <p><a class="btn btn-small" href="${rel}readers/#papers=${paper}">Map this paper's readers →</a></p>
+  <p><a class="btn btn-small" href="${rel}subscribers/#papers=${paper}">Map this paper's subscribers →</a></p>
   ${d ? `<p class="small">Source: ${dsCitation(d)}. ${R.unlocated ? `${R.unlocated.toLocaleString('en-US')} subscriptions have no recorded place and are not mapped.` : ''}</p>` : ''}</section>`;
 }
 
@@ -557,7 +557,7 @@ function toTriples(n, out) {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jsonForScript = (o) => JSON.stringify(o, null, 2).replace(/</g, '\\u003c');
 const NAV = [
-  ['', 'Home'], ['atlas/', 'Atlas'], ['cities/', 'Cities'], ['readers/', 'Readers'], ['database/', 'Database'], ['browse/', 'Browse'], ['datasets/', 'Datasets'], ['about/', 'About'],
+  ['', 'Home'], ['atlas/', 'Atlas'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['database/', 'Database'], ['browse/', 'Browse'], ['datasets/', 'Datasets'], ['about/', 'About'],
 ];
 function layout({ rel, title, description, canonical, body, jsonld, scripts = [], styles = [], current = '', alternate }) {
   const fullTitle = title ? `${title} · ${cfg.title}` : `${cfg.title}: ${cfg.subtitle}`;
@@ -885,11 +885,11 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
     const lines = [cols.join(',')];
     for (const p of papers) for (const x of READERS[p].places) for (const [y, n] of Object.entries(x.y).concat(x.n - Object.values(x.y).reduce((a, b) => a + b, 0) > 0 ? [['', x.n - Object.values(x.y).reduce((a, b) => a + b, 0)]] : []))
       lines.push([p, x.k, x.name, x.state, x.country, x.qid, x.geonames, x.lcnaf, x.qid ? placeIdByQid.get(x.qid) : '', x.lat, x.lon, y, n].map(csvCell).join(','));
-    await out('data/readership-places.csv', lines.join('\r\n') + '\r\n');
+    await out('data/subscriptions-by-place.csv', lines.join('\r\n') + '\r\n');
   }
 
-  await out('readers/index.html', layout({ rel: '../', title: 'Readers', canonical: `${BASE}readers/`, current: 'readers/',
-    description: `Where the readers of the American Jewish press lived: ${READ_TOTAL.toLocaleString('en-US')} subscriptions to ${papers.length} periodicals, ${yMin}–${yMax}, mapped from their subscriber lists.`,
+  await out('subscribers/index.html', layout({ rel: '../', title: 'Subscribers', canonical: `${BASE}subscribers/`, current: 'subscribers/',
+    description: `Where the subscribers to the American Jewish press lived: ${READ_TOTAL.toLocaleString('en-US')} subscriptions to ${papers.length} periodicals, ${yMin}–${yMax}, mapped from their subscriber lists.`,
     jsonld: { '@context': CONTEXT, '@graph': DATASETS.map(datasetNode) },
     styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/readers.js'],
     body: `<div class="atlas wrap readers-page">
@@ -897,7 +897,7 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
     <div id="readers-map" class="atlas-map" role="region" aria-label="Map of subscribers to the Jewish press"></div>
     <div class="cartouche">
       <p class="c-small">A Map of the</p>
-      <h1>Readers of the Jewish Press</h1>
+      <h1>Subscribers to the Jewish Press</h1>
       <p class="c-small">in the United States and abroad</p>
       <p class="c-year"><span>subscriptions,</span> <output id="r-range">${yMin}–${yMax}</output></p>
       <p id="r-summary" class="c-sum" aria-live="polite"></p>
@@ -914,7 +914,7 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
   </div>
   <div class="readers-cols">
     <section class="gazetteer" aria-labelledby="r-top-h">
-      <h2 id="r-top-h">Where the Readers Lived</h2>
+      <h2 id="r-top-h">Where the Subscribers Lived</h2>
       <p class="gaz-note">The places with the most subscriptions for the papers and years chosen. Select one to see it on the map and list its subscribers.</p>
       <ol id="r-top" class="place-list"></ol>
     </section>
@@ -927,10 +927,10 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
     <h2>About these data</h2>
     <p>Each 19th-century Jewish periodical printed lists of subscribers and agents who had paid. These lists were transcribed, with subscribers' names, the date of the issue, and the place, reconciled to Wikidata, GeoNames and the Library of Congress. Kehillot maps them by place and links them to its own places through their Wikidata identifiers. Subscriptions without a recorded place are counted but not mapped.</p>
     <ul class="sources">${DATASETS.filter((d) => d.use === 'subscriptions').map((d) => `<li>${dsCitation(d)}. License: ${esc(d.license?.toUpperCase().replace(/-/g, ' ') || 'see record')}.</li>`).join('')}</ul>
-    <p class="small">Download the mapped counts: <a href="../data/readership-places.csv">readership-places.csv</a> (one row per periodical, place and year). Full subscriber lists are in the Zenodo deposits above.</p>
+    <p class="small">Download the mapped counts: <a href="../data/subscriptions-by-place.csv">subscriptions-by-place.csv</a> (one row per periodical, place and year). Full subscriber lists are in the Zenodo deposits above.</p>
   </section>
 </div>
-<noscript><div class="wrap"><p>The readership map needs JavaScript. Each periodical's page lists where its readers lived, and the data can be downloaded from the Datasets page.</p></div></noscript>` }));
+<noscript><div class="wrap"><p>The subscriber map needs JavaScript. Each periodical's page lists where its subscribers lived, and the data can be downloaded from the Datasets page.</p></div></noscript>` }));
 }
 
 
@@ -994,7 +994,7 @@ await out('vocab/index.jsonld', JSON.stringify(vocabDoc, null, 2));
 
 // DCAT + VoID catalog
 const DISTS = [
-  ['readership-places.csv', 'text/csv', 'Periodical subscriptions by place and year, derived from the deposited subscriber lists (CSV)'],
+  ['subscriptions-by-place.csv', 'text/csv', 'Periodical subscriptions by place and year, derived from the deposited subscriber lists (CSV)'],
   ['media.csv', 'text/csv', 'Linked pictures and documents, with holders, rights and the records they depict (CSV)'],
   ['kehillot.jsonld', 'application/ld+json', 'Full knowledge graph (JSON-LD)'],
   ['kehillot.nt', 'application/n-triples', 'Full knowledge graph (N-Triples)'],
@@ -1083,7 +1083,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
       <li><a href="browse/#cemetery"><strong>${counts.cemetery}</strong> cemeteries</a></li>
       <li><a href="browse/#site"><strong>${counts.site}</strong> sites in cities</a></li>
       <li><a href="browse/#periodical"><strong>${counts.periodical}</strong> periodicals</a></li>
-      <li><a href="readers/"><strong>${READ_TOTAL.toLocaleString('en-US')}</strong> subscriptions mapped</a></li>
+      <li><a href="subscribers/"><strong>${READ_TOTAL.toLocaleString('en-US')}</strong> subscriptions mapped</a></li>
       <li><a href="browse/#institution"><strong>${counts.institution}</strong> institutions</a></li>
       <li><a href="browse/#event"><strong>${counts.event}</strong> events</a></li>
       <li><a href="datasets/"><strong>${triples.length.toLocaleString('en-US')}</strong> RDF triples</a></li>
@@ -1206,7 +1206,7 @@ await out('datasets/index.html', layout({ rel: '../', title: 'Datasets', canonic
     <li><strong>Per-record data.</strong> Every page embeds its JSON-LD and links to an <code>index.jsonld</code> file with <code>&lt;link rel="alternate"&gt;</code>.</li>
     <li><strong>Vocabularies.</strong> <a href="https://schema.org/">schema.org</a> for core description, <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> for the controlled vocabularies, and a small <a href="../vocab/">project vocabulary</a> for concepts schema.org lacks (rite, orientation, certainty, secessions). The JSON-LD context is published at <a href="../context.jsonld"><code>context.jsonld</code></a>.</li>
     <li><strong>Links out.</strong> <code>schema:sameAs</code> to Wikidata where a match has been reviewed by hand (see <code>data/wikidata.json</code> in the source).</li>
-    <li><strong>Related datasets.</strong> The readership layer is derived from subscriber lists deposited on Zenodo, each cited by DOI and linked as a <code>schema:Dataset</code> that is <code>about</code> its periodical:<ul>${DATASETS.map((d) => `<li>${dsCitation(d)}</li>`).join('')}</ul></li>
+    <li><strong>Related datasets.</strong> The subscriber layer is derived from subscriber lists deposited on Zenodo, each cited by DOI and linked as a <code>schema:Dataset</code> that is <code>about</code> its periodical:<ul>${DATASETS.map((d) => `<li>${dsCitation(d)}</li>`).join('')}</ul></li>
     <li><strong>Catalog.</strong> This page embeds a <a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT</a> / <a href="https://www.w3.org/TR/void/">VoID</a> / schema.org <code>Dataset</code> description (also at <a href="../data/catalog.jsonld">catalog.jsonld</a>), so the dataset can be found by Google Dataset Search and data portals.</li>
     <li><strong>Tabular data.</strong> CSV files are described by <a href="https://www.w3.org/TR/tabular-data-primer/">CSV on the Web</a> metadata; multi-valued cells use <code>|</code> as the separator.</li>
     <li><strong>Gazetteer.</strong> Places are also published in <a href="https://github.com/LinkedPasts/linked-places-format">Linked Places Format</a> for contribution to the World Historical Gazetteer.</li>
