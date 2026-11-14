@@ -3,12 +3,7 @@
 (function () {
   if (!window.L) return;
   function symbol(p) {
-    var cls = 'sym ' + (p.precision === 'approximate' ? 'approx ' : '');
-    var shape = p.kind === 'cemetery' ? '<path d="M6 17 V9 a5 5 0 0 1 10 0 V17Z" class="' + cls + 'sym-cemetery"/><path d="M11 9.5v4 M9.3 11.2h3.4" class="sym-glyph"/>'
-      : p.kind === 'synagogue' ? '<path d="M3 10 L11 3 L19 10 V18 H3Z" class="' + cls + 'sym-synagogue"/>'
-      : p.kind === 'city' ? '<circle cx="11" cy="11" r="4" class="sym sym-ink"/>'
-      : '<rect x="4" y="5" width="13" height="12" class="' + cls + 'sym-building"/>';
-    return L.divIcon({ className: 'kh-mark', html: '<svg width="22" height="22">' + shape + '</svg>', iconSize: [22, 22], iconAnchor: [11, 11] });
+    return L.divIcon({ className: 'kh-mark', html: KhSymbols.svg(p.kind, { approx: p.precision === 'approximate', size: 22 }), iconSize: [22, 22], iconAnchor: [11, 11] });
   }
   document.querySelectorAll('.minimap[data-points]').forEach(function (el) {
     var pts = JSON.parse(el.dataset.points || '[]');

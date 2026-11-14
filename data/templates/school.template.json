@@ -1,0 +1,13 @@
+{
+  "_file": "A school building or classroom location goes in data/sites.json with kind \"school\". A school as an organization (with founders, teachers and dates but no fixed address) goes in data/organizations.json with category \"education\". Both are listed as educational institutions in the city guides.",
+  "as_site": {
+    "id": "REPLACE-kebab-case-id", "name": "REPLACE", "kind": "school", "place": "philadelphia", "address": "REPLACE",
+    "lat": 0, "lon": 0, "precision": "approximate", "built": 1850, "certainty": "medium",
+    "occupants": [{ "org": "REPLACE-organization-id", "from": 1850, "to": 1860 }],
+    "note": "REPLACE", "sources": ["REPLACE-source-id"]
+  },
+  "as_organization": {
+    "id": "REPLACE-kebab-case-id", "name": "REPLACE", "category": "education", "place": "philadelphia",
+    "founded": 1850, "dissolved": 1860, "certainty": "medium", "description": "REPLACE", "sources": ["REPLACE-source-id"]
+  }
+}

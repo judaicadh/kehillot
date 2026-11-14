@@ -13,6 +13,9 @@ import { readFile, writeFile, mkdir, rm, cp } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import vm from 'node:vm';
+// assets/js/symbols.js is a browser script; evaluate it in a sandbox so the build draws the same symbols as the maps.
+const SYM = await (async () => { const sb = { module: { exports: {} } }; vm.runInNewContext(await readFile(new URL('../assets/js/symbols.js', import.meta.url), 'utf8'), sb); return sb.module.exports; })();
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -96,10 +99,14 @@ const VOCAB = {
     label: 'Kind of site',
     concepts: {
       synagogue: ['Synagogue building', 'A building used for worship by a congregation.'],
+      'matzah-bakery': ['Matzah bakery', 'A bakery producing matzah for Passover, often under rabbinic supervision.'],
+      lodging: ['Hotel or boarding house', 'Lodging kept by or advertised to Jews, including kosher boarding houses.'],
+      'kosher-restaurant': ['Kosher restaurant', 'An eating house advertised as kosher.'],
+      bookstore: ['Bookstore', 'A seller of Hebrew and Jewish books, prayer books and religious goods.'],
       hospital: ['Hospital building', 'A building used by a Jewish hospital.'],
-      school: ['School building', 'A building used by a school or educational society.'],
+      school: ['School or educational institution', 'A day school, Sunday school, seminary or educational society, or the building it used.'],
       'meeting-place': ['Meeting place', 'A café, hall or house where an organization met or was founded.'],
-      business: ['Business', 'A shop, market or firm.'],
+      business: ['Jewish-owned business', 'A shop, market or firm owned by Jews.'],
       residence: ['Residence', 'A family home.'],
     },
   },
@@ -108,6 +115,19 @@ const VOCAB = {
     concepts: {
       exact: ['Exact', 'The building or grounds survive or the address is documented; the point is on the site.'],
       approximate: ['Approximate', 'Placed on the right street or block from a documented description; may be off by up to a few hundred metres.'],
+    },
+  },
+  clergyTitle: {
+    label: 'Clergy and religious functionaries',
+    concepts: {
+      rabbi: ['Rabbi', 'Ordained or so-styled rabbi.'],
+      hazan: ['Hazan', 'Cantor and reader; often the congregation\'s chief religious officer in this period.'],
+      minister: ['Minister', 'Title used by many American congregations for their hazan or preacher (often "Reverend").'],
+      preacher: ['Preacher', 'Engaged to deliver sermons.'],
+      chaplain: ['Chaplain', 'Military or hospital chaplain.'],
+      shochet: ['Shochet', 'Ritual slaughterer.'],
+      mohel: ['Mohel', 'Performs circumcisions.'],
+      shammash: ['Shammash', 'Sexton.'],
     },
   },
   frequency: {
@@ -157,6 +177,11 @@ for (const [type, rows] of Object.entries(data)) {
     for (const occ of r.occupants || []) if (!orgLike(occ.org)) errors.push(`${at}: unknown occupant "${occ.org}"`);
     if (r.site && !index.site.has(r.site)) errors.push(`${at}: unknown site "${r.site}"`);
     if (r.kind && !VOCAB.siteKind.concepts[r.kind]) errors.push(`${at}: kind "${r.kind}" not in vocabulary`);
+    for (const k of ['opened', 'closed', 'built']) if (r[k] != null && type === 'site' && !Number.isInteger(r[k])) errors.push(`${at}: ${k} must be a year`);
+    for (const p of r.proprietors || []) if (!index.person.has(p)) errors.push(`${at}: unknown proprietor "${p}"`);
+    for (const x of r.supervisedBy || []) if (!(x.type === 'person' ? index.person.has(x.id) : index.congregation.has(x.id))) errors.push(`${at}: unknown supervisor ${x.type}/${x.id}`);
+    for (const x of r.advertisedIn || []) { if (!index.periodical.has(x.periodical)) errors.push(`${at}: unknown periodical "${x.periodical}" in advertisedIn`); if (x.date && !/^\d{4}(-\d{2}(-\d{2})?)?$/.test(x.date)) errors.push(`${at}: advertisedIn date must be YYYY, YYYY-MM or YYYY-MM-DD`); }
+    if (type === 'person') for (const t of r.clergyTitles || []) if (!VOCAB.clergyTitle.concepts[t]) errors.push(`${at}: clergy title "${t}" not in vocabulary`);
     if (r.frequency && !VOCAB.frequency.concepts[r.frequency]) errors.push(`${at}: frequency "${r.frequency}" not in vocabulary`);
     for (const l of r.language || []) if (!LANGS[l]) errors.push(`${at}: language "${l}" unknown`);
     if (type === 'person' && r.born && r.died && r.born > r.died) errors.push(`${at}: born after died`);
@@ -202,6 +227,7 @@ for (const t of ['congregation', 'institution', 'periodical', 'cemetery', 'site'
   for (const r of data[t]) for (const s of r.sources) citedBy.set(s, [...(citedBy.get(s) || []), { type: t, r }]);
 
 const yearOf = (d) => Number(String(d).slice(0, 4));
+const clergyTitles = (p) => [...new Set([...(p.clergyTitles || []), ...(p.occupation || []).filter((o) => VOCAB.clergyTitle.concepts[o])])];
 const activeIn = (c, y) => c.founded <= y && !(c.dissolved && c.dissolved <= y);
 const dormantIn = (c, y) => !!c.dormant && y >= c.dormant[0] && y < c.dormant[1];
 
@@ -425,6 +451,10 @@ const CONTEXT = {
   precision: { '@id': 'kh:locationPrecision', '@type': '@id' },
   atSite: { '@id': 'kh:atSite', '@type': '@id' },
   subjectOf: { '@id': 'schema:subjectOf', '@type': '@id', '@container': '@set' },
+  proprietor: { '@id': 'kh:proprietor', '@type': '@id', '@container': '@set' },
+  supervisedBy: { '@id': 'kh:supervisedBy', '@type': '@id', '@container': '@set' },
+  advertisedIn: { '@id': 'kh:advertisedIn', '@type': '@id', '@container': '@set' },
+  clergyTitle: { '@id': 'kh:clergyTitle', '@type': '@id', '@container': '@set' },
   published: { '@id': 'schema:datePublished' },
   contentUrl: { '@id': 'schema:contentUrl', '@type': '@id' },
   thumbnailUrl: { '@id': 'schema:thumbnailUrl', '@type': '@id' },
@@ -445,6 +475,7 @@ const dateValue = (d) => {
 };
 const strip = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined && v !== null && !(Array.isArray(v) && !v.length)));
 
+const SITE_TYPES = { synagogue: 'schema:Synagogue', hospital: 'schema:Hospital', school: 'schema:School', 'matzah-bakery': 'schema:Bakery', lodging: 'schema:LodgingBusiness', 'kosher-restaurant': 'schema:Restaurant', business: 'schema:LocalBusiness', bookstore: 'schema:BookStore', residence: 'schema:House', 'meeting-place': 'schema:Place' };
 const INST_TYPES = { periodical: 'schema:Periodical', education: 'schema:EducationalOrganization', hospital: 'schema:Hospital' };
 
 function node(type, r) {
@@ -483,7 +514,10 @@ function node(type, r) {
         maintainedBy: (r.owners || []).map((o) => uri('congregation', o)),
         certainty: conceptUri('certainty', r.certainty), citation: r.sources.map((s) => uri('source', s)) });
     case 'site':
-      return strip({ ...base, '@type': r.kind === 'synagogue' ? 'schema:Synagogue' : r.kind === 'hospital' ? 'schema:Hospital' : 'schema:Place', name: r.name, description: r.note,
+      return strip({ ...base, '@type': SITE_TYPES[r.kind] || 'schema:Place', name: r.name, description: r.note,
+        foundingDate: r.opened ? String(r.opened) : undefined, dissolutionDate: r.closed ? String(r.closed) : undefined,
+        proprietor: (r.proprietors || r.people || []).length && !['synagogue', 'school', 'hospital'].includes(r.kind) ? (r.proprietors || r.people).map((p) => uri('person', p)) : undefined,
+        supervisedBy: (r.supervisedBy || []).map((x) => uri(x.type, x.id)), advertisedIn: [...new Set((r.advertisedIn || []).map((x) => uri('periodical', x.periodical)))],
         additionalType: conceptUri('siteKind', r.kind), containedInPlace: uri('place', r.place),
         address: { '@type': 'schema:PostalAddress', streetAddress: r.address, addressLocality: index.place.get(r.place).name, addressRegion: index.place.get(r.place).state, addressCountry: 'US' },
         geo: { '@type': 'schema:GeoCoordinates', latitude: String(r.lat), longitude: String(r.lon) }, precision: conceptUri('precision', r.precision),
@@ -493,7 +527,7 @@ function node(type, r) {
         certainty: conceptUri('certainty', r.certainty), citation: r.sources.map((s) => uri('source', s)) });
     case 'person':
       return strip({ ...base, '@type': 'schema:Person', name: r.name, description: r.description,
-        birthDate: r.born ? String(r.born) : undefined, deathDate: r.died ? String(r.died) : undefined, birthPlaceLabel: r.birthPlace, occupation: r.occupation,
+        birthDate: r.born ? String(r.born) : undefined, deathDate: r.died ? String(r.died) : undefined, clergyTitle: clergyTitles(r).map((t) => conceptUri('clergyTitle', t)), birthPlaceLabel: r.birthPlace, occupation: r.occupation,
         homeLocation: r.places.map((p) => uri('place', p)),
         memberOf: r.roles.map((role) => strip({ '@type': 'schema:Role', roleName: role.role,
           startDate: role.start ? dateValue(role.start) : undefined, endDate: role.end ? dateValue(role.end) : undefined,
@@ -627,13 +661,9 @@ function citeBox(type, r) {
 const dl = (rows) => `<dl class="facts">${rows.filter(([, v]) => v !== undefined && v !== null && v !== '').map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
 const ul = (items, empty = '') => (items.length ? `<ul class="related">${items.map((i) => `<li>${i}</li>`).join('')}</ul>` : empty);
 const mapKey = (pts) => {
-  const kinds = new Set(pts.map((p) => p.kind));
-  const bits = [];
-  if (kinds.has('synagogue')) bits.push('<span class="mk mk-synagogue" aria-hidden="true"></span> synagogue');
-  if ([...kinds].some((k) => ['hospital', 'school', 'meeting-place'].includes(k))) bits.push('<span class="mk mk-building" aria-hidden="true"></span> other site');
-  if (kinds.has('cemetery')) bits.push('<span class="mk mk-cemetery" aria-hidden="true"></span> cemetery');
-  if (pts.some((p) => p.precision === 'approximate')) bits.push('<span class="mk mk-approx" aria-hidden="true"></span> approximate location');
-  return bits.length ? `<p class="map-caption">${bits.join(' · ')}</p>` : '';
+  const kinds = [...new Set(pts.map((p) => p.kind).filter((k) => k !== 'city'))];
+  if (kinds.length) return `<p class="map-caption">${kinds.map((k) => `<span class="mk-sym">${SYM.svg(k, { size: 14 })}</span> ${esc(SYM.label(k).toLowerCase())}`).join(' · ')}${pts.some((p) => p.precision === 'approximate') ? ` · <span class="mk-sym">${SYM.svg('meeting-place', { size: 14, approx: true })}</span> dashed: approximate location` : ''}</p>`;
+  return '';
 };
 const minimap = (pts) => `<figure class="minimap-fig"><div class="minimap" role="img" aria-label="Map showing ${esc(pts.map((p) => p.name).join(', '))}" data-points="${esc(JSON.stringify(pts))}" data-tiles="${esc(TILES)}"></div>${mapKey(pts)}</figure>`;
 const ptFor = (placeId) => { const p = index.place.get(placeId); return { name: placeLabel(placeId), lat: p.lat, lon: p.lon, kind: 'city' }; };
@@ -723,7 +753,12 @@ function entityBody(type, r, rel) {
     const evs = eventsBySite.get(r.id) || [];
     main = `${r.note ? `<p class="lede">${esc(r.note)}</p>` : ''}
     ${dl([['Kind', badge('siteKind', r.kind)], ['City', link(rel, 'place', r.place, placeLabel(r.place))], ['Address', esc(r.address)],
-      ['Built or acquired', r.built ? `${r.built} ${badge('certainty', r.certainty)}` : ''], ['Location', coords(r)]])}
+      ['Built or acquired', r.built ? `${r.built} ${badge('certainty', r.certainty)}` : ''],
+      ['In business', r.opened || r.closed ? span(r.opened || '?', r.closed) : ''],
+      ['Proprietors', (r.proprietors || (!['synagogue', 'school', 'hospital'].includes(r.kind) ? r.people : null) || []).map((p) => link(rel, 'person', p, nameOf('person', p))).join(', ')],
+      ['Kosher supervision', (r.supervisedBy || []).map((x) => link(rel, x.type, x.id, nameOf(x.type, x.id))).join(', ')],
+      ['Advertised in', (r.advertisedIn || []).map((x) => `<i>${link(rel, 'periodical', x.periodical, nameOf('periodical', x.periodical))}</i>${x.date ? ` <span class="muted">${esc(x.date)}</span>` : ''}`).join('; ')],
+      ['Location', coords(r)]])}
     <section><h2>Used by</h2>${ul((r.occupants || []).map((o) => `${link(rel, typeOfOrg(o.org), o.org, nameOf(typeOfOrg(o.org), o.org))}${o.from ? ` <span class="muted">${span(o.from, o.to)}</span>` : ''}`), '<p class="muted">None recorded.</p>')}</section>
     ${eventList(rel, evs)}
     ${sourcesSection(rel, r.sources)}`;
@@ -731,7 +766,7 @@ function entityBody(type, r, rel) {
   } else if (type === 'person') {
     const evs = eventsByPerson.get(r.id) || [];
     main = `<p class="lede">${esc(r.description)}</p>
-    ${dl([['Lived', lifespan(r)], ['Born', esc(r.birthPlace)], ['Occupation', esc(r.occupation.join(', '))],
+    ${dl([['Lived', lifespan(r)], ['Clergy', clergyTitles(r).map((t) => badge('clergyTitle', t)).join(' ')], ['Born', esc(r.birthPlace)], ['Occupation', esc(r.occupation.join(', '))],
       ['Places', r.places.map((p) => link(rel, 'place', p, placeLabel(p))).join(' · ')], ['Certainty', r.certainty ? badge('certainty', r.certainty) : '']])}
     <section><h2>Affiliations</h2>${ul(r.roles.map((x) => `${esc(x.role)}, ${link(rel, typeOfOrg(x.org), x.org, nameOf(typeOfOrg(x.org), x.org))}${x.start ? ` <span class="muted">${span(x.start, x.end)}</span>` : ''}`), '<p class="muted">None recorded.</p>')}</section>
     ${eventList(rel, evs)}
@@ -799,7 +834,7 @@ for (const [type, rows] of Object.entries(data)) {
     await out(`${docPath(type, r.id)}index.html`, layout({
       rel, title: type === 'source' ? r.title : r.name, description: SUMMARY[type](r).slice(0, 300), canonical: docUri(type, r.id),
       alternate: 'index.jsonld', jsonld: inline, body: entityBody(type, r, rel),
-      scripts: type === 'source' ? [] : ['assets/vendor/leaflet/leaflet.js', 'assets/js/minimap.js'],
+      scripts: type === 'source' ? [] : ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/minimap.js'],
       styles: type === 'source' ? [] : ['assets/vendor/leaflet/leaflet.css'], current: 'browse/',
     }));
   }
@@ -982,7 +1017,7 @@ const vocabGraph = [
   { '@id': `${BASE}vocab/`, '@type': 'http://www.w3.org/2002/07/owl#Ontology', 'dcterms:title': `${cfg.title} vocabulary`, 'dcterms:license': { '@id': cfg.license.url } },
   { '@id': 'kh:Occupancy', '@type': 'rdfs:Class', 'rdfs:label': 'Occupancy', 'rdfs:comment': 'The use of a site by an organization over a period, with schema:startDate and schema:endDate.' },
   { '@id': 'kh:Congregation', '@type': 'rdfs:Class', 'rdfs:label': 'Congregation', 'rdfs:subClassOf': { '@id': 'schema:Organization' }, 'rdfs:comment': 'A Jewish religious congregation (kahal), distinct from the building in which it worshipped.' },
-  ...[['rite', 'Rite at founding'], ['orientation', 'Orientation by c. 1870'], ['certainty', 'Certainty of dating'], ['splitFrom', 'Formed by secession from'], ['dormantFrom', 'Without resident congregation from'], ['dormantUntil', 'Without resident congregation until'], ['nameTranslation', 'English translation of the Hebrew name'], ['birthPlaceLabel', 'Birthplace as recorded (text)'], ['occupation', 'Occupation (text)'], ['involves', 'Person or organization involved in an event'], ['alsoAt', 'Additional place where the event occurred'], ['frequency', 'Publication frequency'], ['established', 'Year a cemetery was established'], ['closed', 'Year a cemetery closed to burials'], ['built', 'Year a building was built or acquired'], ['maintainedBy', 'Congregation that owned or maintained a cemetery'], ['occupancy', 'A period during which an organization used a site'], ['occupant', 'The organization in an occupancy'], ['locationPrecision', 'How precisely the coordinates locate the site'], ['atSite', 'Site within a city where an event took place']]
+  ...[['rite', 'Rite at founding'], ['orientation', 'Orientation by c. 1870'], ['certainty', 'Certainty of dating'], ['splitFrom', 'Formed by secession from'], ['dormantFrom', 'Without resident congregation from'], ['dormantUntil', 'Without resident congregation until'], ['nameTranslation', 'English translation of the Hebrew name'], ['birthPlaceLabel', 'Birthplace as recorded (text)'], ['occupation', 'Occupation (text)'], ['involves', 'Person or organization involved in an event'], ['alsoAt', 'Additional place where the event occurred'], ['frequency', 'Publication frequency'], ['established', 'Year a cemetery was established'], ['closed', 'Year a cemetery closed to burials'], ['built', 'Year a building was built or acquired'], ['maintainedBy', 'Congregation that owned or maintained a cemetery'], ['occupancy', 'A period during which an organization used a site'], ['occupant', 'The organization in an occupancy'], ['locationPrecision', 'How precisely the coordinates locate the site'], ['atSite', 'Site within a city where an event took place'], ['proprietor', 'Person who owned or kept a business, hotel or boarding house'], ['supervisedBy', 'Person or congregation that certified a bakery or restaurant as kosher'], ['advertisedIn', 'Periodical in which a business advertised'], ['clergyTitle', 'Religious office a person held']]
     .map(([t, l]) => ({ '@id': `kh:${t}`, '@type': 'rdf:Property', 'rdfs:label': l })),
   ...Object.entries(VOCAB).flatMap(([scheme, v]) => [
     { '@id': `${BASE}vocab/#${scheme}`, '@type': 'skos:ConceptScheme', 'skos:prefLabel': v.label },
@@ -1107,7 +1142,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
 
 await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `${BASE}atlas/`, current: 'atlas/',
   description: `Interactive map of Jewish congregations, institutions and events in the United States, ${Y0}–${Y1}, with a year slider.`,
-  styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/atlas.js'],
+  styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/atlas.js'],
   body: `<div class="atlas wrap">
   <div class="plate">
     <div id="map" class="atlas-map" role="region" aria-label="Map of Jewish congregations in the United States" data-tiles="${esc(TILES)}"></div>
@@ -1125,8 +1160,9 @@ await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `$
       <label><input type="checkbox" name="layer" value="periodical" checked><svg width="14" height="14" aria-hidden="true"><path d="M3.5 3h7v8h-7z M5 5.5h4 M5 7.5h4" class="sym sym-press"/></svg>Periodical</label>
       <label><input type="checkbox" name="layer" value="event" checked><svg width="14" height="14" aria-hidden="true"><path d="M7 2.5 L12 11.5 L2 11.5Z" class="sym sym-event"/></svg>Event, to the year shown</label>
       <p class="key-street">When zoomed into a city:</p>
-      <label><input type="checkbox" name="layer" value="site" checked><svg width="14" height="14" aria-hidden="true"><path d="M2.5 7 L7 3 L11.5 7 V11.5 H2.5Z" class="sym sym-synagogue"/></svg>Synagogue or other site</label>
-      <label><input type="checkbox" name="layer" value="cemetery" checked><svg width="14" height="14" aria-hidden="true"><path d="M4 12 V6 a3 3 0 0 1 6 0 V12Z" class="sym sym-cemetery"/></svg>Cemetery</label>
+      <label><input type="checkbox" name="layer" value="site" checked><span class="f-sym">${SYM.svg('synagogue', { size: 14 })}</span>Synagogues, shops, schools and other sites</label>
+      <label><input type="checkbox" name="layer" value="cemetery" checked><span class="f-sym">${SYM.svg('cemetery', { size: 14 })}</span>Cemetery</label>
+      <p class="key-kinds">${SYM.GROUPS.filter((g) => !['Synagogues', 'Cemeteries', 'Other sites'].includes(g[0])).map((g) => `<span title="${esc(g[0])}">${SYM.svg(g[1][0], { size: 13 })} ${esc(g[0].toLowerCase())}</span>`).join(' ')}</p>
       <input type="checkbox" name="layer" value="congregation" checked hidden>
     </fieldset>
   </div>
@@ -1155,7 +1191,7 @@ await out('database/index.html', layout({ rel: '../', title: 'Database', canonic
   <p class="lede">Search and filter all records. Your query is kept in the address bar, so you can bookmark or share it.</p>
   <div class="db" id="db">
     <div class="tabs" role="tablist" aria-label="Record type">
-      ${[['congregations', 'Congregations'], ['people', 'People'], ['cemeteries', 'Cemeteries'], ['sites', 'Sites'], ['periodicals', 'Periodicals'], ['events', 'Events'], ['institutions', 'Institutions'], ['places', 'Places']].map(([t, l], i) => `<button role="tab" type="button" id="tab-${t}" aria-controls="db-panel" aria-selected="${i === 0}" data-type="${t}" tabindex="${i === 0 ? 0 : -1}">${l}</button>`).join('')}
+      ${[['congregations', 'Congregations'], ['people', 'People'], ['clergy', 'Clergy'], ['cemeteries', 'Cemeteries'], ['sites', 'Sites'], ['periodicals', 'Periodicals'], ['events', 'Events'], ['institutions', 'Institutions'], ['places', 'Places']].map(([t, l], i) => `<button role="tab" type="button" id="tab-${t}" aria-controls="db-panel" aria-selected="${i === 0}" data-type="${t}" tabindex="${i === 0 ? 0 : -1}">${l}</button>`).join('')}
     </div>
     <div id="db-panel" role="tabpanel" aria-labelledby="tab-congregations">
       <form class="db-controls" role="search" onsubmit="return false">
@@ -1233,6 +1269,21 @@ await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `$
   body: `<div class="wrap prose-wide">
   <h1>About the project</h1>
   <p class="lede">${esc(cfg.title)} is a static, open digital atlas and database of Jewish communal life in the United States between ${Y0} and ${Y1}, the era of mass Central European immigration, westward expansion, the first American Reform congregations, and the Civil War.</p>
+  <h2 id="collecting">What we're collecting</h2>
+  <p>Kehillot is built to grow. Each category below has a place in the data model, a map symbol and a filter, even where nothing has been recorded yet. Copy a template from <code>data/templates/</code> in the source repository, fill it in from a cited source, and add it to the matching data file.</p>
+  <div class="table-wrap"><table class="files collecting"><thead><tr><th scope="col"></th><th scope="col">Category</th><th scope="col">Recorded</th><th scope="col">Where it goes</th><th scope="col">Useful fields</th></tr></thead><tbody>
+  ${[
+    ['synagogue', 'Synagogues', data.site.filter((x) => x.kind === 'synagogue').length, 'sites.json', 'address, built, occupants (congregations, with years)'],
+    ['cemetery', 'Cemeteries', data.cemetery.length, 'cemeteries.json', 'address, established, closed, owners (congregations)'],
+    ['school', 'Educational institutions', data.site.filter((x) => x.kind === 'school').length + data.institution.filter((x) => x.category === 'education').length, 'sites.json (kind "school") or organizations.json (category "education")', 'founded, address, teachers and founders (people roles)'],
+    ['matzah-bakery', 'Matzah bakeries', data.site.filter((x) => x.kind === 'matzah-bakery').length, 'sites.json (kind "matzah-bakery")', 'opened, closed, proprietors, supervisedBy, advertisedIn'],
+    ['lodging', 'Jewish hotels and boarding houses', data.site.filter((x) => x.kind === 'lodging').length, 'sites.json (kind "lodging")', 'opened, closed, proprietors, supervisedBy, advertisedIn'],
+    ['kosher-restaurant', 'Kosher restaurants', data.site.filter((x) => x.kind === 'kosher-restaurant').length, 'sites.json (kind "kosher-restaurant")', 'opened, closed, proprietors, supervisedBy, advertisedIn'],
+    ['business', 'Jewish-owned businesses', data.site.filter((x) => x.kind === 'business').length, 'sites.json (kind "business")', 'opened, closed, proprietors, advertisedIn'],
+    ['bookstore', 'Bookstores', data.site.filter((x) => x.kind === 'bookstore').length, 'sites.json (kind "bookstore")', 'opened, closed, proprietors, advertisedIn'],
+    ['city', 'Clergy', data.person.filter((x) => clergyTitles(x).length).length, 'people.json', 'clergyTitles (rabbi, hazan, minister, preacher, chaplain, shochet, mohel, shammash), roles with congregations and years'],
+  ].map(([k, label, n, where, fields]) => `<tr><td>${k === 'city' ? '' : SYM.svg(k, { size: 18 })}</td><th scope="row">${label}</th><td>${n || '<span class="muted">none yet</span>'}</td><td><code>${esc(where)}</code></td><td class="small">${esc(fields)}</td></tr>`).join('')}
+  </tbody></table></div>
   <h2 id="scope">Scope</h2>
   <p>The dataset records congregations active at any point in ${Y0}–${Y1} (including colonial-era congregations still active), their synagogue buildings and cemeteries, the periodicals that connected them, the institutions that grew up beside them (benevolent societies, schools, fraternal orders, hospitals), people with documented communal roles, and events that shaped communal life.</p>
   <p>Places are recorded at two scales. Congregations, periodicals, institutions and events are placed at the <strong>city</strong>. Synagogue buildings, other sites and cemeteries are placed at their own <strong>address within the city</strong>, each with a stated precision: <em>exact</em> where the building or grounds survive or the address is documented, <em>approximate</em> where only the street or block is known. Buildings are linked to the congregations that used them, with dates, so a congregation's moves across a city can be traced.</p>
@@ -1362,30 +1413,50 @@ for (const m of MEDIA) {
 }
 
 // ───────────────────────── city guides ─────────────────────────
-const KIND_ORDER = { synagogue: 0, cemetery: 1, hospital: 2, school: 2, 'meeting-place': 3, business: 4, residence: 5 };
-const KIND_GROUP = { synagogue: 'Synagogues', cemetery: 'Cemeteries', hospital: 'Other sites', school: 'Other sites', 'meeting-place': 'Other sites', business: 'Other sites', residence: 'Other sites' };
+const GROUP_NAMES = SYM.GROUPS.map((g) => g[0]);
+const KIND_GROUP = (k) => SYM.groupOf(k);
+const KIND_ORDER = (k) => GROUP_NAMES.indexOf(SYM.groupOf(k));
+const PROPRIETOR_KINDS = ['matzah-bakery', 'lodging', 'kosher-restaurant', 'business', 'bookstore'];
 function cityEntries(placeId, rel) {
-  const sites = (siteByPlace.get(placeId) || []).map((s) => ({ type: 'site', r: s, kind: s.kind, from: s.built || (s.occupants || []).map((o) => o.from).filter(Boolean).sort()[0] || null, to: null }));
+  const sites = (siteByPlace.get(placeId) || []).map((s) => ({ type: 'site', r: s, kind: s.kind, from: s.built || s.opened || (s.occupants || []).map((o) => o.from).filter(Boolean).sort()[0] || null, to: s.closed || null }));
   const cems = (cemByPlace.get(placeId) || []).map((c) => ({ type: 'cemetery', r: c, kind: 'cemetery', from: c.established, to: c.closed || null }));
-  return [...sites, ...cems].sort((a, b) => (KIND_ORDER[a.kind] - KIND_ORDER[b.kind]) || ((a.from || 9999) - (b.from || 9999))).map((e) => {
+  return [...sites, ...cems].sort((a, b) => (KIND_ORDER(a.kind) - KIND_ORDER(b.kind)) || ((a.from || 9999) - (b.from || 9999))).map((e) => {
     const s = e.r;
     const pics = mediaByRecord.get(`${e.type}/${s.id}`) || [];
     const users = e.type === 'site'
       ? (s.occupants || []).map((o) => `${link(rel, typeOfOrg(o.org), o.org, nameOf(typeOfOrg(o.org), o.org))}${o.from ? ` <span class="muted">${span(o.from, o.to)}</span>` : ''}`)
-        .concat((s.people || []).map((p) => link(rel, 'person', p, nameOf('person', p))))
+        .concat((s.proprietors || s.people || []).map((p) => link(rel, 'person', p, nameOf('person', p))))
       : (s.owners || []).map((o) => link(rel, 'congregation', o, nameOf('congregation', o)));
     const evs = e.type === 'site' ? eventsBySite.get(s.id) || [] : [];
-    return { ...e, pics, html: `<li class="entry" id="e-${s.id}" data-id="${s.id}" data-kind="${e.kind}" data-group="${KIND_GROUP[e.kind]}" data-lat="${s.lat}" data-lon="${s.lon}" data-from="${e.from || ''}" data-to="${e.type === 'cemetery' ? '' : e.to || ''}" data-precision="${s.precision}" data-pics="${pics.length}">
-      <button type="button" class="entry-head" aria-expanded="false"><span class="entry-sym sym-${e.kind === 'cemetery' ? 'cemetery' : e.kind === 'synagogue' ? 'synagogue' : 'building'}${s.precision === 'approximate' ? ' approx' : ''}" aria-hidden="true"></span><span class="entry-name">${esc(s.name)}</span><span class="entry-years">${e.from ? span(e.from, e.to) : ''}</span></button>
+    return { ...e, pics, html: `<li class="entry" id="e-${s.id}" data-id="${s.id}" data-kind="${e.kind}" data-group="${KIND_GROUP(e.kind)}" data-lat="${s.lat}" data-lon="${s.lon}" data-from="${e.from || ''}" data-to="${e.type === 'cemetery' ? '' : e.to || ''}" data-precision="${s.precision}" data-pics="${pics.length}">
+      <button type="button" class="entry-head" aria-expanded="false"><span class="entry-sym" title="${esc(SYM.label(e.kind))}">${SYM.svg(e.kind, { size: 18, approx: s.precision === 'approximate' })}</span><span class="entry-name">${esc(s.name)}</span><span class="entry-years">${e.from ? span(e.from, e.to) : ''}</span></button>
       <div class="entry-body">
         <p class="entry-addr">${esc(s.address)}${s.precision === 'approximate' ? ' <span class="muted">(location approximate)</span>' : ''}</p>
         ${s.note ? `<p>${esc(s.note)}</p>` : ''}
-        ${users.length ? `<p><span class="entry-label">${e.type === 'site' ? 'Used by' : 'Maintained by'}</span> ${users.join(', ')}</p>` : ''}
+        ${users.length ? `<p><span class="entry-label">${e.type === 'cemetery' ? 'Maintained by' : PROPRIETOR_KINDS.includes(e.kind) ? 'Proprietors' : 'Used by'}</span> ${users.join(', ')}</p>` : ''}
+        ${(s.advertisedIn || []).length ? `<p><span class="entry-label">Advertised in</span> ${s.advertisedIn.map((x) => `<i>${link(rel, 'periodical', x.periodical, nameOf('periodical', x.periodical))}</i>${x.date ? ` ${esc(x.date)}` : ''}`).join('; ')}</p>` : ''}
         ${evs.length ? `<p><span class="entry-label">Here</span> ${evs.map((x) => `${link(rel, 'event', x.id, x.name)} <span class="muted">${formatDate(x.date)}</span>`).join('; ')}</p>` : ''}
         ${pics.length ? `<ul class="entry-thumbs">${pics.slice(0, 6).map((m) => `<li><a href="${rel}media/${m.id}/"><img src="${esc(m.image.square || m.image.thumb)}" alt="${esc(m.title)}" loading="lazy" width="64" height="64"></a></li>`).join('')}${pics.length > 6 ? `<li class="entry-more"><a href="${rel}${docPath(e.type, s.id)}#h-gal-${pics[0].id}">+${pics.length - 6}</a></li>` : ''}</ul>` : ''}
         <p><a href="${rel}${docPath(e.type, s.id)}">Full record →</a></p>
       </div></li>` };
   });
+}
+function clergySection(placeId, rel) {
+  const p = index.place.get(placeId);
+  const local = new Set([...(congByPlace.get(placeId) || [])].map((c) => c.id));
+  const rows = data.person.filter((x) => clergyTitles(x).length && (x.roles.some((r) => local.has(r.org)) || x.places.includes(placeId)));
+  return `<section class="clergy" aria-labelledby="h-clergy"><h2 id="h-clergy">Clergy</h2>
+  ${rows.length ? `<ul class="related">${rows.sort((a, b) => (a.roles.find((r) => local.has(r.org))?.start || 9999) - (b.roles.find((r) => local.has(r.org))?.start || 9999)).map((x) => `<li>${link(rel, 'person', x.id, x.name)} ${clergyTitles(x).map((t) => badge('clergyTitle', t)).join(' ')}
+    ${x.roles.filter((r) => local.has(r.org)).map((r) => `<br><span class="muted small">${esc(r.role)}, ${nameOf('congregation', r.org)}${r.start ? ` ${span(r.start, r.end)}` : ''}</span>`).join('')}</li>`).join('')}</ul>` : ''}
+  <p class="section-note">${rows.length ? 'Recorded so far. ' : `No clergy recorded yet for ${esc(p.name)}. `}Rabbis, hazanim, ministers, shochtim, mohalim and shamashim can be added; see <a href="${rel}about/#collecting">what we're collecting</a>.</p></section>`;
+}
+function educationSection(placeId, rel) {
+  const insts = (instByPlace.get(placeId) || []).filter((o) => o.category === 'education');
+  const schools = (siteByPlace.get(placeId) || []).filter((s) => s.kind === 'school');
+  const p = index.place.get(placeId);
+  return `<section class="education" aria-labelledby="h-edu"><h2 id="h-edu">Educational institutions</h2>
+  ${insts.length || schools.length ? ul([...insts.map((o) => `${link(rel, 'institution', o.id, o.name)} <span class="muted">${span(o.founded, o.dissolved)}</span>`), ...schools.map((s) => `<a href="#e-${s.id}" data-goto="${s.id}">${esc(s.name)}</a> <span class="muted">${esc(s.address)}</span>`)]) : ''}
+  <p class="section-note">${insts.length || schools.length ? 'Recorded so far. ' : `No schools recorded yet for ${esc(p.name)}. `}Day schools, Sunday schools, Hebrew classes, seminaries and educational societies can be added; see <a href="${rel}about/#collecting">what we're collecting</a>.</p></section>`;
 }
 function congregationMoves(placeId, rel) {
   const cs = (congByPlace.get(placeId) || []).sort((a, b) => a.founded - b.founded);
@@ -1423,8 +1494,9 @@ for (const placeId of CITY_IDS) {
   const geoPics = pics.filter((m) => m.geo && nearestPlace(m.geo.lat, m.geo.lon) === placeId && Math.hypot(m.geo.lat - p.lat, m.geo.lon - p.lon) < 0.12);
   const years = entries.map((e) => e.from).filter(Boolean);
   const yMin = Math.min(Y0, ...years), yMax = Math.max(Y1, ...years);
-  const groups = ['Synagogues', 'Cemeteries', 'Other sites'];
-  const counts = Object.fromEntries(groups.map((g) => [g, entries.filter((e) => KIND_GROUP[e.kind] === g).length]));
+  const groups = GROUP_NAMES;
+  const counts = Object.fromEntries(groups.map((g) => [g, entries.filter((e) => KIND_GROUP(e.kind) === g).length]));
+  const groupIcon = (g) => SYM.svg(SYM.GROUPS.find((x) => x[0] === g)[1][0], { size: 16 });
   const cityData = {
     tiles: { relief: cfg.basemap, street: cfg.streetmap }, center: [p.lat, p.lon], range: [yMin, yMax],
     photos: geoPics.map((m) => ({ id: m.id, title: m.title, lat: m.geo.lat, lon: m.geo.lon, thumb: m.image.square || m.image.thumb, href: `${rel}media/${m.id}/`, date: m.date ? String(m.date).slice(0, 4) : null })),
@@ -1440,7 +1512,7 @@ for (const placeId of CITY_IDS) {
   <header class="city-head">
     <p class="kicker">City guide · ${esc(p.state)}</p>
     <h1>${esc(title)}</h1>
-    <p class="city-counts">${[counts.Synagogues && `${counts.Synagogues} synagogue${counts.Synagogues === 1 ? '' : 's'}`, counts.Cemeteries && `${counts.Cemeteries} cemeter${counts.Cemeteries === 1 ? 'y' : 'ies'}`, counts['Other sites'] && `${counts['Other sites']} other site${counts['Other sites'] === 1 ? '' : 's'}`, pics.length && `${pics.length} picture${pics.length === 1 ? '' : 's'} and documents`].filter(Boolean).join(' · ')}</p>
+    <p class="city-counts">${[...groups.filter((g) => counts[g]).map((g) => `${counts[g]} ${counts[g] === 1 ? SYM.label(SYM.GROUPS.find((x) => x[0] === g)[1][0]).toLowerCase() : g.toLowerCase()}`), pics.length && `${pics.length} picture${pics.length === 1 ? '' : 's'} and documents`].filter(Boolean).join(' · ')}</p>
     ${(C.intro || []).map((t) => `<p class="city-intro">${esc(t)}</p>`).join('')}
     ${C.sources?.length ? `<p class="small muted">Sources: ${C.sources.map((s) => `<i>${link(rel, 'source', s, index.source.get(s).title.split(/[:(]/)[0].trim())}</i>`).join('; ')}. Full records: <a href="${rel}place/${placeId}/">${esc(p.name)}</a>.</p>` : `<p class="small"><a href="${rel}place/${placeId}/">All records for ${esc(p.name)} →</a></p>`}
   </header>
@@ -1451,10 +1523,11 @@ for (const placeId of CITY_IDS) {
       <div class="explorer-controls">
         ${yMin < yMax ? `<label class="yr"><span>Standing in</span> <output id="city-year-out" for="city-year">${yMax}</output><input type="range" id="city-year" min="${yMin}" max="${yMax}" value="${yMax}" step="1"></label>` : ''}
         <fieldset class="filters"><legend class="visually-hidden">Show</legend>
-          ${groups.filter((g) => counts[g]).map((g) => `<label><input type="checkbox" name="group" value="${g}" checked> ${g} <span class="muted">${counts[g]}</span></label>`).join('')}
+          ${groups.filter((g) => counts[g]).map((g) => `<label><input type="checkbox" name="group" value="${g}" checked> <span class="f-sym">${groupIcon(g)}</span>${g} <span class="muted">${counts[g]}</span></label>`).join('')}
           ${geoPics.length ? `<label><input type="checkbox" name="group" value="Pictures" checked> Pictures <span class="muted">${geoPics.length}</span></label>` : ''}
         </fieldset>
         <p id="city-count" class="city-count" aria-live="polite"></p>
+        ${groups.some((g) => !counts[g]) ? `<p class="not-yet-recorded">Not yet recorded here: ${groups.filter((g) => !counts[g]).map((g) => `<span class="nyr"><span class="f-sym">${groupIcon(g)}</span>${g.toLowerCase()}</span>`).join(', ')}. <a href="${rel}about/#collecting">Help add them</a>.</p>` : ''}
       </div>
       <ol class="entries" id="city-list">${entries.map((e) => e.html).join('')}</ol>
       ${!entries.length ? '<p class="muted">No buildings or cemeteries mapped yet; the pictures below are placed where their holders geotagged them.</p>' : ''}
@@ -1462,6 +1535,8 @@ for (const placeId of CITY_IDS) {
   </div>
   <script type="application/json" id="city-data">${JSON.stringify(cityData).replace(/</g, '\\u003c')}</script>
   ${congregationMoves(placeId, rel)}
+  ${clergySection(placeId, rel)}
+  ${educationSection(placeId, rel)}
   ${readersSection(rel, placeId, { names: true })}
   ${gallery(rel, pics, { heading: 'Pictures and documents', limit: 48 })}
   <div class="city-cols">
@@ -1476,7 +1551,7 @@ for (const placeId of CITY_IDS) {
     includesAttraction: entries.map((e) => ({ '@id': uri(e.type, e.r.id), name: e.r.name })) };
   await out(`city/${placeId}/index.html`, layout({ rel, title, description: `${title}: synagogues, cemeteries, pictures and documents on a map${C.intro ? '. ' + C.intro[0] : ''}`.slice(0, 300),
     canonical: `${BASE}city/${placeId}/`, jsonld: ld, body, current: 'cities/',
-    styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/city.js'] }));
+    styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/city.js'] }));
 }
 
 // Cities index

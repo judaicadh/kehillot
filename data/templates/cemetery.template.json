@@ -1,0 +1,16 @@
+{
+  "_file": "Add to data/cemeteries.json.",
+  "id": "REPLACE-kebab-case-id",
+  "name": "REPLACE",
+  "place": "REPLACE-place-id",
+  "address": "REPLACE",
+  "lat": 0,
+  "lon": 0,
+  "precision": "approximate",
+  "established": 1850,
+  "closed": null,
+  "certainty": "medium",
+  "owners": ["REPLACE-congregation-id"],
+  "note": "REPLACE",
+  "sources": ["REPLACE-source-id"]
+}

@@ -17,12 +17,7 @@
   L.tileLayer(C.tiles.street.url, { maxZoom: C.tiles.street.maxZoom || 18, attribution: C.tiles.street.attribution, className: 'street-tiles' }).addTo(map);
 
   function symbol(kind, approx, active) {
-    var cls = 'sym ' + (approx ? 'approx ' : '');
-    var shape = kind === 'cemetery'
-      ? '<path d="M7 21 V11 a6 6 0 0 1 12 0 V21Z" class="' + cls + 'sym-cemetery"/><path d="M13 11.5v5 M11 13.6h4" class="sym-glyph"/>'
-      : kind === 'synagogue' ? '<path d="M3 12 L13 3 L23 12 V22 H3Z" class="' + cls + 'sym-synagogue"/>'
-        : '<rect x="5" y="6" width="16" height="15" class="' + cls + 'sym-building"/>';
-    return L.divIcon({ className: 'kh-mark' + (active ? ' is-active' : ''), html: '<svg width="26" height="26">' + shape + '</svg>', iconSize: [26, 26], iconAnchor: [13, 13] });
+    return L.divIcon({ className: 'kh-mark' + (active ? ' is-active' : ''), html: KhSymbols.svg(kind, { approx: approx, size: 26 }), iconSize: [26, 26], iconAnchor: [13, 13] });
   }
   function photoIcon(n) {
     return L.divIcon({ className: 'kh-mark kh-photo', html: '<span class="photo-pin" aria-hidden="true"><svg width="22" height="18" viewBox="0 0 22 18"><rect x="1" y="3" width="20" height="14" rx="1.5" class="sym sym-camera"/><circle cx="11" cy="10" r="4" class="sym-lens"/><rect x="7" y="1" width="8" height="3" class="sym sym-camera"/></svg>' + (n > 1 ? '<b>' + n + '</b>' : '') + '</span>', iconSize: [26, 22], iconAnchor: [13, 11] });

@@ -451,3 +451,26 @@ thead th { font-weight: 600; color: var(--muted); font-size: .8rem; text-transfo
 .spark figcaption { display: flex; justify-content: space-between; font: italic .8rem var(--serif); color: var(--muted); }
 .readers-top caption { text-align: left; font: italic .9rem var(--serif); color: var(--muted); padding-bottom: .3rem; }
 .readers-top th[scope=row] { font-weight: normal; }
+
+/* ── shared symbol set (assets/js/symbols.js) ── */
+:root { --tint-matzah: #e3cf9a; --tint-lodging: #b8916a; --tint-restaurant: #c7a27a; --tint-business: #9fb3a0; --tint-book: #a98aa6; --tint-school: #8fa6bf; }
+.sym-line { fill: none; stroke: var(--plate-ink); stroke-width: 1.2; stroke-linecap: round; }
+.sym-dots { fill: none; stroke: var(--plate-ink); stroke-width: 2.2; stroke-linecap: round; }
+.sym-matzah { fill: var(--tint-matzah); stroke-width: 1.2; }
+.sym-lodging { fill: var(--tint-lodging); stroke-width: 1.2; }
+.sym-restaurant { fill: var(--tint-restaurant); stroke-width: 1.2; }
+.sym-business { fill: var(--tint-business); stroke-width: 1.2; }
+.sym-business-awning { fill: var(--plate-paper); stroke-width: 1.2; }
+.sym-book { fill: var(--tint-book); stroke-width: 1.2; }
+.sym-school { fill: var(--tint-school); stroke-width: 1.2; }
+svg .sym { vector-effect: non-scaling-stroke; }
+.entry-sym { width: auto; height: auto; border: none; background: none; clip-path: none; border-radius: 0; display: inline-flex; align-self: center; }
+.entry-sym svg { display: block; }
+.f-sym { display: inline-flex; vertical-align: -3px; margin-right: .2rem; }
+.mk-sym { display: inline-flex; vertical-align: -2px; }
+.not-yet-recorded { font: italic .8rem/1.5 var(--serif); color: var(--muted); margin: .4rem 0 0; }
+.not-yet-recorded .nyr { white-space: nowrap; opacity: .75; }
+.key-kinds { margin: .3rem 0 0; display: flex; flex-wrap: wrap; gap: .15rem .6rem; max-width: 15rem; font: italic .74rem/1.3 var(--serif); color: var(--plate-ink); }
+.key-kinds span { display: inline-flex; align-items: center; gap: .2rem; }
+.collecting td:first-child { width: 2rem; }
+.collecting th[scope=row] { font-weight: 600; }

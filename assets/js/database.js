@@ -10,6 +10,7 @@
   var O = {};
   var orgLabel = function (id) { return O[id] ? O[id].name : id; };
   var orgType = function (id) { return O[id] ? O[id].type : 'institution'; };
+  var titles = function (p) { var t = (p.clergyTitles || []).slice(); (p.occupation || []).forEach(function (o) { if (V.clergyTitle[o] && t.indexOf(o) < 0) t.push(o); }); return t; };
   var editors = function (id) { return D.people.filter(function (p) { return p.roles.some(function (x) { return x.org === id; }); }).map(function (p) { return p.name; }).join(', '); };
   var fold = function (s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); };
 
@@ -53,6 +54,23 @@
       ],
       sort: 'born'
     },
+    clergy: {
+      rows: function () { return D.people.filter(function (p) { return titles(p).length; }); },
+      text: function (r) { return [r.name, titles(r).join(' '), r.description, r.roles.map(function (x) { return orgLabel(x.org); }).join(' ')].join(' '); },
+      facets: {
+        title: { label: 'Title', get: function (r) { return titles(r); }, show: function (v) { return V.clergyTitle[v]; }, all: function () { return Object.keys(V.clergyTitle); } },
+        place: { label: 'Place', get: function (r) { return r.places.map(placeName); } }
+      },
+      cols: [
+        { key: 'name', label: 'Name', html: function (r) { return a('person', r.id, r.name); }, val: function (r) { return r.name.split(' ').slice(-1)[0] + ' ' + r.name; }, out: function (r) { return r.name; } },
+        { key: 'titles', label: 'Title', val: function (r) { return titles(r).map(function (t) { return V.clergyTitle[t]; }).join(', '); } },
+        { key: 'served', label: 'Served', html: function (r) { return r.roles.filter(function (x) { return orgType(x.org) === 'congregation'; }).map(function (x) { return esc(x.role) + ', ' + a('congregation', x.org, orgLabel(x.org)) + (x.start ? ' <span class="muted">' + x.start + '–' + (x.end || '') + '</span>' : ''); }).join('<br>'); },
+          val: function (r) { return r.roles.filter(function (x) { return orgType(x.org) === 'congregation'; }).map(function (x) { return x.role + ', ' + orgLabel(x.org) + (x.start ? ' (' + x.start + '–' + (x.end || '') + ')' : ''); }).join('; '); }, cls: 'desc' },
+        { key: 'born', label: 'Born', val: function (r) { return r.born || ''; }, num: true },
+        { key: 'died', label: 'Died', val: function (r) { return r.died || ''; }, num: true }
+      ],
+      sort: 'born'
+    },
     cemeteries: {
       rows: function () { return D.cemeteries; },
       text: function (r) { return [r.name, r.address, r.note, placeName(r.place), (r.owners || []).map(orgLabel).join(' ')].join(' '); },
@@ -76,7 +94,7 @@
       rows: function () { return D.sites; },
       text: function (r) { return [r.name, r.address, r.note, placeName(r.place), (r.occupants || []).map(function (o) { return orgLabel(o.org); }).join(' ')].join(' '); },
       facets: {
-        kind: { label: 'Kind', get: function (r) { return r.kind; }, show: function (v) { return V.siteKind[v]; } },
+        kind: { label: 'Kind', get: function (r) { return r.kind; }, show: function (v) { return V.siteKind[v]; }, all: function () { return Object.keys(V.siteKind); } },
         state: { label: 'State', get: function (r) { return P[r.place].state; } },
         precision: { label: 'Location', get: function (r) { return r.precision; }, show: function (v) { return V.precision[v]; } }
       },
@@ -195,9 +213,10 @@
     $('#facets').innerHTML = Object.keys(T.facets).map(function (k) {
       var F = T.facets[k], vals = {};
       T.rows().forEach(function (r) { [].concat(F.get(r)).forEach(function (v) { vals[v] = (vals[v] || 0) + 1; }); });
+      if (F.all) F.all().forEach(function (v) { if (!(v in vals)) vals[v] = 0; });
       var opts = Object.keys(vals).sort(function (x, y) { return String(F.show ? F.show(x) : x).localeCompare(String(F.show ? F.show(y) : y)); });
       return '<label>' + esc(F.label) + '<select data-facet="' + k + '"><option value="">All</option>' + opts.map(function (v) {
-        return '<option value="' + esc(v) + '"' + (S.f[k] === v ? ' selected' : '') + '>' + esc(F.show ? F.show(v) : v) + ' (' + vals[v] + ')</option>';
+        return '<option value="' + esc(v) + '"' + (S.f[k] === v ? ' selected' : '') + '>' + esc(F.show ? F.show(v) : v) + (vals[v] ? ' (' + vals[v] + ')' : ' (none yet)') + '</option>';
       }).join('') + '</select></label>';
     }).join('');
   }
@@ -228,7 +247,7 @@
     var T = TYPES[S.type], rows = filtered();
     var cell = function (v) { v = v == null ? '' : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
     var lines = [['uri'].concat(T.cols.map(function (c) { return c.label; })).join(',')];
-    var typePath = { congregations: 'congregation', people: 'person', institutions: 'institution', events: 'event', places: 'place', cemeteries: 'cemetery', sites: 'site', periodicals: 'periodical' }[S.type];
+    var typePath = { congregations: 'congregation', people: 'person', clergy: 'person', institutions: 'institution', events: 'event', places: 'place', cemeteries: 'cemetery', sites: 'site', periodicals: 'periodical' }[S.type];
     rows.forEach(function (r) {
       lines.push([new URL(root + typePath + '/' + r.id + '/', location.href).href].concat(T.cols.map(function (c) { return c.out ? c.out(r) : c.val(r); })).map(cell).join(','));
     });

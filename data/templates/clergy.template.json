@@ -1,0 +1,15 @@
+{
+  "_file": "Add to data/people.json. clergyTitles uses: rabbi, hazan, minister, preacher, chaplain, shochet, mohel, shammash. Link service to congregations through roles.",
+  "id": "REPLACE-kebab-case-id",
+  "name": "REPLACE",
+  "born": null,
+  "died": null,
+  "birthPlace": "REPLACE or empty",
+  "occupation": ["shochet"],
+  "clergyTitles": ["shochet"],
+  "description": "REPLACE one or two sentences from the source",
+  "roles": [{ "org": "REPLACE-congregation-id", "role": "Shochet", "start": 1850, "end": 1855 }],
+  "places": ["REPLACE-place-id"],
+  "certainty": "medium",
+  "sources": ["REPLACE-source-id"]
+}

@@ -1,0 +1,20 @@
+{
+  "_file": "Add to data/sites.json. Covers synagogues, schools, matzah bakeries, hotels and boarding houses, kosher restaurants, Jewish-owned businesses and bookstores.",
+  "id": "REPLACE-kebab-case-id",
+  "name": "REPLACE name as it appears in the source",
+  "kind": "matzah-bakery",
+  "place": "new-york",
+  "address": "REPLACE street address as recorded",
+  "lat": 0,
+  "lon": 0,
+  "precision": "approximate",
+  "opened": 1850,
+  "closed": 1860,
+  "certainty": "medium",
+  "proprietors": ["REPLACE-person-id-from-people.json"],
+  "supervisedBy": [{ "type": "person", "id": "REPLACE-person-id" }, { "type": "congregation", "id": "REPLACE-congregation-id" }],
+  "advertisedIn": [{ "periodical": "occident", "date": "1855-03" }],
+  "occupants": [],
+  "note": "REPLACE one or two sentences from the source",
+  "sources": ["REPLACE-source-id"]
+}
