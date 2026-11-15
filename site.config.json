@@ -1,26 +1,35 @@
 {
   "title": "Kehillot",
-  "subtitle": "A Digital Atlas of Jewish America, 1840–1870",
+  "subtitle": "A Digital Atlas of Jewish America, 1840\u20131870",
   "baseUrl": "https://judaicadh.github.io/kehillot/",
   "version": "0.1.0",
-  "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
   "publisher": "Kehillot Project",
-  "contribute": { "repo": "judaicadh/kehillot" },
+  "contribute": {
+    "repo": "judaicadh/kehillot"
+  },
   "language": "en",
   "temporalCoverage": "1840/1870",
   "spatialCoverage": "United States",
-  "yearRange": [1840, 1870],
+  "yearRange": [
+    1840,
+    1870
+  ],
   "basemap": {
-    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}",
-    "attribution": "Relief &copy; Esri",
-    "maxZoom": 13,
-    "note": "Swap in georeferenced historical map tiles (e.g. an 1850s map from the David Rumsey collection) by changing this URL."
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    "attribution": "Basemap &copy; Esri, HERE, Garmin, OpenStreetMap contributors",
+    "maxZoom": 16,
+    "note": "Neutral light-gray canvas with sparse labels, to keep historical records in the foreground."
   },
   "streetmap": {
-    "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    "attribution": "Streets &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    "attribution": "Basemap &copy; Esri, HERE, Garmin, OpenStreetMap contributors",
     "minZoom": 11,
     "maxZoom": 18,
-    "note": "Used when zoomed into a city, to show synagogues, cemeteries and other sites. A georeferenced historical city plan (e.g. a Perris or Sanborn atlas sheet) can replace it."
+    "note": "Quiet street context; the last native level is enlarged at closer zooms. Historical layers are configured separately on city guides.",
+    "maxNativeZoom": 16
   }
 }

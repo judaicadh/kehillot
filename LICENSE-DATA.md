@@ -24,3 +24,6 @@ The CC BY license above does **not** cover the following.
 | Leaflet.markercluster 1.5.3 | `assets/vendor/markercluster/` | MIT, © Dave Leaver |
 | d3 7.9.0 | `assets/vendor/d3/` | ISC, © Mike Bostock |
 | Basemap tiles | loaded at runtime | Shaded relief © Esri; street map © OpenStreetMap contributors (ODbL) |
+
+
+The default neutral basemap is Esri World Light Gray Canvas Base, served by Esri's ArcGIS Online tile service. Esri and its data contributors retain their rights; the project data license does not cover these tiles. Attribution is displayed on each map. Historical maps linked for research retain the holding institution's terms; any future configured historical overlay must include its own source and attribution.

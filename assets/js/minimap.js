@@ -12,7 +12,7 @@
     var local = pts.every(function (p) { return p.kind !== 'city'; });
     var base = local && T.street ? T.street : T.relief;
     var map = L.map(el, { scrollWheelZoom: false, attributionControl: true, zoomControl: true, maxZoom: base.maxZoom || 13 });
-    L.tileLayer(base.url, { maxZoom: base.maxZoom || 13, attribution: base.attribution, className: local ? 'street-tiles' : '' }).addTo(map);
+    L.tileLayer(base.url, { maxZoom: base.maxZoom || 13, maxNativeZoom:base.maxNativeZoom || base.maxZoom || 13, attribution: base.attribution, className: local ? 'street-tiles' : '' }).addTo(map);
     map.attributionControl.setPrefix(false);
     var group = L.featureGroup(pts.map(function (p) {
       var m = L.marker([p.lat, p.lon], { icon: symbol(p), title: p.name, keyboard: !!p.href });

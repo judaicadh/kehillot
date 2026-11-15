@@ -174,10 +174,30 @@
     }
   };
 
-  var S = { type: 'congregations', q: '', f: {}, sort: null, dir: 1 };
+  var PATHS = {congregations:'congregation',people:'person',clergy:'person',institutions:'institution',events:'event',places:'place',cemeteries:'cemetery',sites:'site',periodicals:'periodical',sources:'source',media:'media'};
+  var LABELS = {congregations:'Congregation',people:'Person',institutions:'Institution',events:'Event',places:'Place',cemeteries:'Cemetery',sites:'Site',periodicals:'Periodical',sources:'Source',media:'Picture / document'};
+  function recordPlace(r) {return r._kind==='places' ? r.name+', '+r.state : r.place ? placeName(r.place) : (r.places||[]).map(placeName).join('; ');}
+  function recordDate(r) {return r.date || r.founded || r.established || r.built || r.opened || r.year || (r.born || r.died ? (r.born||'?')+'–'+(r.died||'?') : '');}
+  TYPES.sources = {
+    rows:function(){return D.sources.map(function(r){return Object.assign({name:r.title},r);});},text:function(r){return [r.title,r.author,r.year,r.note].join(' ');},
+    facets:{author:{label:'Author',get:function(r){return r.author;}}},
+    cols:[{key:'name',label:'Title',val:function(r){return r.title;},html:function(r){return a('source',r.id,r.title);}},{key:'author',label:'Author',val:function(r){return r.author;}},{key:'year',label:'Year',val:function(r){return r.year||'';},num:true}],sort:'name'
+  };
+  TYPES.media = {
+    rows:function(){return D.media || [];},text:function(r){return [r.name,r.holder,r.description,r.date,(r.places||[]).map(placeName).join(' ')].join(' ');},
+    facets:{holder:{label:'Collection / holder',get:function(r){return r.holder;}}},
+    cols:[{key:'name',label:'Title',val:function(r){return r.name;},html:function(r){return a('media',r.id,r.name);}},{key:'holder',label:'Holder',val:function(r){return r.holder||'';}},{key:'date',label:'Date',val:function(r){return r.date||'';}}],sort:'name'
+  };
+  TYPES.all = {
+    rows:function(){return Object.keys(LABELS).flatMap(function(kind){return TYPES[kind].rows().map(function(r){return Object.assign({},r,{_kind:kind});});});},
+    text:function(r){return TYPES[r._kind].text(r);},facets:{place:{label:'Place',get:recordPlace}},
+    cols:[{key:'name',label:'Record',val:function(r){return r.name||r.title;},html:function(r){return a(PATHS[r._kind],r.id,r.name||r.title);}},{key:'kind',label:'Type',val:function(r){return LABELS[r._kind];}},{key:'place',label:'Place',val:recordPlace},{key:'date',label:'Date',val:recordDate}],sort:'name'
+  };
+
+  var S = { type: 'all', q: '', f: {}, sort: null, dir: 1 };
   function readHash() {
     var h = new URLSearchParams(location.hash.slice(1));
-    S.type = TYPES[h.get('type')] ? h.get('type') : 'congregations';
+    S.type = TYPES[h.get('type')] ? h.get('type') : 'all';
     S.q = h.get('q') || '';
     S.sort = h.get('sort'); S.dir = h.get('dir') === 'desc' ? -1 : 1;
     S.f = {};
@@ -212,7 +232,7 @@
     var T = TYPES[S.type];
     $('#facets').innerHTML = Object.keys(T.facets).map(function (k) {
       var F = T.facets[k], vals = {};
-      T.rows().forEach(function (r) { [].concat(F.get(r)).forEach(function (v) { vals[v] = (vals[v] || 0) + 1; }); });
+      T.rows().forEach(function (r) { [].concat(F.get(r)).forEach(function (v) { if(v != null && v !== '') vals[v] = (vals[v] || 0) + 1; }); });
       if (F.all) F.all().forEach(function (v) { if (!(v in vals)) vals[v] = 0; });
       var opts = Object.keys(vals).sort(function (x, y) { return String(F.show ? F.show(x) : x).localeCompare(String(F.show ? F.show(y) : y)); });
       return '<label>' + esc(F.label) + '<select data-facet="' + k + '"><option value="">All</option>' + opts.map(function (v) {
@@ -231,25 +251,19 @@
       return '<tr>' + T.cols.map(function (c) { return '<td' + (c.cls ? ' class="' + c.cls + '"' : '') + '>' + (c.html ? c.html(r) : esc(c.val(r))) + '</td>'; }).join('') + '</tr>';
     }).join('') + '</tbody>';
     $('#db-table').innerHTML = '<caption class="visually-hidden">' + esc(S.type) + ' matching the current filters</caption>' + head + body;
-    $('#db-count').textContent = rows.length + ' of ' + T.rows().length + ' ' + S.type + (S.q || Object.keys(S.f).some(function (k) { return S.f[k]; }) ? ' match' : '');
+    $('#db-count').textContent = rows.length + ' of ' + T.rows().length + ' ' + (S.type==='all' ? 'records' : S.type) + (S.q || Object.keys(S.f).some(function (k) { return S.f[k]; }) ? ' match' : '');
   }
 
-  function renderTabs() {
-    document.querySelectorAll('[role=tab]').forEach(function (t) {
-      var on = t.dataset.type === S.type;
-      t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
-      if (on) $('#db-panel').setAttribute('aria-labelledby', t.id);
-    });
-  }
+  function renderTabs() {$('#record-type').value=S.type;}
   function renderAll() { renderTabs(); $('#q').value = S.q; renderFacets(); renderTable(); writeHash(); }
 
   function exportCsv() {
     var T = TYPES[S.type], rows = filtered();
     var cell = function (v) { v = v == null ? '' : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
     var lines = [['uri'].concat(T.cols.map(function (c) { return c.label; })).join(',')];
-    var typePath = { congregations: 'congregation', people: 'person', clergy: 'person', institutions: 'institution', events: 'event', places: 'place', cemeteries: 'cemetery', sites: 'site', periodicals: 'periodical' }[S.type];
+    var typePath=PATHS[S.type];
     rows.forEach(function (r) {
-      lines.push([new URL(root + typePath + '/' + r.id + '/', location.href).href].concat(T.cols.map(function (c) { return c.out ? c.out(r) : c.val(r); })).map(cell).join(','));
+      lines.push([(D.baseUrl || new URL(root,location.href).href)+(S.type==='all' ? PATHS[r._kind] : typePath)+'/'+r.id+'/#this'].concat(T.cols.map(function (c) { return c.out ? c.out(r) : c.val(r); })).map(cell).join(','));
     });
     var blob = new Blob([lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
     var link = document.createElement('a');
@@ -269,18 +283,8 @@
     var again = document.querySelector('button[data-sort="' + b.dataset.sort + '"]'); if (again) again.focus();
   });
   $('#export').addEventListener('click', exportCsv);
-  var tablist = document.querySelector('[role=tablist]');
-  tablist.addEventListener('click', function (e) {
-    var t = e.target.closest('[role=tab]'); if (!t) return;
-    S = { type: t.dataset.type, q: '', f: {}, sort: null, dir: 1 }; renderAll();
-  });
-  tablist.addEventListener('keydown', function (e) {
-    var tabs = Array.from(tablist.querySelectorAll('[role=tab]')), i = tabs.indexOf(document.activeElement);
-    if (i < 0) return;
-    var n = e.key === 'ArrowRight' ? (i + 1) % tabs.length : e.key === 'ArrowLeft' ? (i - 1 + tabs.length) % tabs.length : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : -1;
-    if (n < 0) return;
-    e.preventDefault(); tabs[n].focus(); tabs[n].click();
-  });
+  $('#db-reset').addEventListener('click',function(){S.f={};renderFacets();renderTable();writeHash();});
+  $('#record-type').addEventListener('change',function(event){clearTimeout(debounce);S={type:event.target.value,q:$('#q').value,f:{},sort:null,dir:1};renderAll();});
   window.addEventListener('hashchange', function () { readHash(); renderAll(); });
 
   fetch(root + 'data/site.json').then(function (r) { return r.json(); }).then(function (d) {
@@ -288,6 +292,6 @@
     [['congregations', 'congregation'], ['institutions', 'institution'], ['periodicals', 'periodical']].forEach(function (t) {
       d[t[0]].forEach(function (o) { O[o.id] = { name: o.name, type: t[1], place: o.place }; });
     });
-    readHash(); renderAll();
-  }).catch(function () { $('#db-count').textContent = 'Could not load the data. Serve the site over HTTP (see README).'; });
+    readHash(); renderAll();$('#record-type').disabled=false;$('#q').disabled=false;$('#export').disabled=false;
+  }).catch(function () { $('#db-count').textContent = 'The records could not be loaded. Reload this page or use Browse every record.'; });
 })();

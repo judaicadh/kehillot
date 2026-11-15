@@ -21,12 +21,12 @@ window.KhCityNavigation = function (map, options) {
     try { history.replaceState(null, '', '#' + params.toString()); } catch (e) { /* file preview */ }
   }
   function overview() {
-    current = null;
+    current = null;reset.hidden=true;
     input.value = '';
-    guide.hidden = true;
+    guide.hidden = false;guide.href=guide.dataset.directory;guide.textContent='Open city guide ↗';
     mapEl.setAttribute('aria-label', nationalLabel);
     mapEl.parentElement.classList.remove('plate-street');
-    status.textContent = 'Choose a city to see its streets and recorded sites.';
+    status.textContent = '';
     saveCity();
     options.onChange(null);
     options.national();
@@ -34,14 +34,14 @@ window.KhCityNavigation = function (map, options) {
   function goTo(id) {
     var city = cities.find(function (p) { return p.id === id; });
     if (!city) return false;
-    current = city;
+    current = city;reset.hidden=false;
     input.value = label(city);
     input.removeAttribute('aria-invalid');
     status.textContent = label(city) + (city.subscriptions ? ' — ' + city.subscriptions.toLocaleString('en-US') + ' subscriptions recorded' : '') + ' — ' + (city.points.length
       ? city.points.length + ' address-level locations recorded across all years. Date and layer filters still apply.'
       : 'No address-level locations recorded yet. Showing the city’s streets; city-level records are placed at its center.');
-    guide.hidden = !city.guide;
-    if (city.guide) { guide.href = city.guide; guide.textContent = 'Open the ' + city.name + ' city guide →'; }
+    guide.hidden = false;
+    guide.href=city.guide || guide.dataset.directory;guide.textContent=city.guide ? 'Open ' + city.name + ' guide ↗' : 'Open city guides ↗';
     mapEl.setAttribute('aria-label', 'Street map of ' + label(city));
     map.stop();
     map.closePopup();
@@ -54,11 +54,26 @@ window.KhCityNavigation = function (map, options) {
     options.onChange(city.id);
     return true;
   }
+  function guideURL(city) {
+    var target=new URL(city.guide,location.href), params=new URLSearchParams(location.hash.slice(1));
+    var year=params.get('year') || params.get('to');
+    if(year && /^\d{4}$/.test(year) && !city.id.startsWith('subscriber-'))target.searchParams.set('year',year);
+    return target.href;
+  }
+  guide.addEventListener('click',function(event){
+    var query=normalize(input.value);
+    if(!query)return;
+    var exact=cities.filter(function(city){return normalize(label(city))===query || city.id===query;});
+    var names=cities.filter(function(city){return normalize(city.name)===query || (city.aliases||[]).some(function(name){return normalize(name)===query;});});
+    var matches=exact.length ? exact : names;
+    if(matches.length===1 && matches[0].guide){event.preventDefault();location.assign(guideURL(matches[0]));}
+    else {event.preventDefault();status.textContent='Choose a full city name from the suggestions, or use City guides in the navigation.';input.focus();}
+  });
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     var query = normalize(input.value);
     var exact = cities.filter(function (p) { return normalize(label(p)) === query || p.id === query; });
-    var names = cities.filter(function (p) { return normalize(p.name) === query; });
+    var names = cities.filter(function (p) { return normalize(p.name) === query || (p.aliases||[]).some(function(name){return normalize(name)===query;}); });
     var matches = exact.length ? exact : names.length ? names : cities.filter(function (p) { return normalize(label(p)).indexOf(query) > -1; });
     if (query && matches.length === 1) { input.removeAttribute('aria-invalid'); goTo(matches[0].id); }
     else { input.setAttribute('aria-invalid', 'true'); status.textContent = matches.length > 1 ? 'Several cities match. Choose a full city name from the suggestions.' : 'Choose a city from the suggestions. Only cities in the collection are listed.'; input.focus(); }
@@ -71,8 +86,9 @@ window.KhCityNavigation = function (map, options) {
   });
   input.disabled = false;
   form.querySelector('[type=submit]').disabled = false;
-  reset.disabled = false;
-  status.textContent = 'Choose a city to see its streets and recorded sites.';
+  reset.disabled = false;reset.hidden=true;
+  var nationalZoom=map.getZoom();map.on('zoomend',function(){reset.hidden=!current && map.getZoom()<=nationalZoom+0.25;});
+  status.textContent = '';
   // Delay restoration until the caller has received this controller.
   return { goTo: goTo, selected: function () { return current && current.id; }, restore: function () { if (initial) goTo(initial); } };
 };

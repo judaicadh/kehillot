@@ -6,7 +6,17 @@
       "In 1825 New York had a single synagogue, the Sephardic Shearith Israel. By 1870 it was the largest Jewish city in the Americas, with dozens of congregations founded by Dutch, English, German, Bohemian and Polish immigrants.",
       "Follow the congregations as they moved uptown, from lower Manhattan to the Lower East Side, SoHo and then Fifth Avenue. After an 1851 ordinance banned burials below 86th Street, they opened new grounds in Cypress Hills, on the Brooklyn–Queens line."
     ],
-    "sources": ["grinstein-1945", "sarna-2004"]
+    "sources": [
+      "grinstein-1945",
+      "sarna-2004"
+    ],
+    "mapSources": [
+      {
+        "title": "Matthew Dripps, Topographical Map of New York City, County and Vicinity",
+        "date": "1855",
+        "url": "https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~229143~5507978:New-York-City,-County-And-Vicinit"
+      }
+    ]
   },
   "san-francisco": {
     "title": "Jewish San Francisco",
@@ -14,13 +24,18 @@
       "Jews came with the Gold Rush. Gold Rush migrants gathered for High Holy Day services in 1849, and by 1851 two congregations had formed: Emanu-El, largely Bavarian and German, and Sherith Israel, largely Polish and English.",
       "Within a generation, merchant families such as the Slosses, Gerstles and Haases were among the city's elite, bound together by marriage. Pictures from the Magnes Collection trace those ties across the city's streets."
     ],
-    "sources": ["kahn-2002", "magnes-pioneer-album"]
+    "sources": [
+      "kahn-2002",
+      "magnes-pioneer-album"
+    ]
   },
   "sonora": {
     "title": "Jewish Sonora",
     "intro": [
       "Sonora was one of the Gold Rush towns of the Sierra foothills where Jewish merchants supplied the mines. Its Hebrew cemetery, founded in 1853, was the first in the region; the Magnes documented its gravestones in 1968."
     ],
-    "sources": ["magnes-sonora-album"]
+    "sources": [
+      "magnes-sonora-album"
+    ]
   }
 }

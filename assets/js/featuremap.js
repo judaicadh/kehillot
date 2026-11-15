@@ -16,7 +16,7 @@
   var map = L.map(mapEl, { center: [38.5, -92], zoom: 4, minZoom: 3, maxZoom: CFG.tiles.street.maxZoom || 18, zoomSnap: 0.25, scrollWheelZoom: false });
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   var relief = L.tileLayer(CFG.tiles.relief.url, { maxZoom: 18, maxNativeZoom: CFG.tiles.relief.maxZoom || 13, attribution: CFG.tiles.relief.attribution });
-  var street = L.tileLayer(CFG.tiles.street.url, { maxZoom: CFG.tiles.street.maxZoom || 18, attribution: CFG.tiles.street.attribution, className: 'street-tiles' });
+  var street = L.tileLayer(CFG.tiles.street.url, { maxZoom: CFG.tiles.street.maxZoom || 18, maxNativeZoom:CFG.tiles.street.maxNativeZoom || CFG.tiles.street.maxZoom || 18, attribution: CFG.tiles.street.attribution, className: 'street-tiles' });
   var grat = L.layerGroup();
   for (var lat = 25; lat <= 50; lat += 5) L.polyline([[lat, -130], [lat, -60]], { className: 'graticule', interactive: false }).addTo(grat);
   for (var lon = -125; lon <= -65; lon += 5) L.polyline([[20, lon], [55, lon]], { className: 'graticule', interactive: false }).addTo(grat);
@@ -59,7 +59,7 @@
       '<p class="pop-addr">' + esc(F.label) + (years(it) ? ' · ' + years(it) : '') + '</p>' +
       (it.sub ? '<p class="pop-addr">' + esc(it.sub) + '</p>' : '') +
       (it.thumb ? '<p><a href="' + root + it.href + '"><img src="' + esc(it.thumb) + '" alt="" width="96" height="96" style="object-fit:cover;border:1px solid var(--plate-ink)"></a></p>' : '') +
-      '<p class="pop-addr">' + esc(it.address || it.placeName || '') + (it.precision === 'city' ? ' <span class="muted">(placed at the city)</span>' : it.precision === 'approximate' ? ' <span class="muted">(approximate)</span>' : it.precision === 'geotag' ? ' <span class="muted">(holder’s geotag)</span>' : '') + '</p>';
+      '<p class="pop-addr">' + esc(it.address || it.placeName || '') + (it.precision === 'city' ? ' <span class="muted">(placed at the city)</span>' : it.precision === 'approximate' ? ' <span class="muted">(approximate)</span>' : it.precision === 'geotag' ? ' <span class="muted">(holder’s geotag)</span>' : '') + '</p>' + (it.place && (D.cityGuides||[]).indexOf(it.place)>-1 ? '<p><a href="' + root + 'city/' + it.place + '/">Open city guide →</a></p>' : '');
   }
 
   function render() {
@@ -70,7 +70,8 @@
     cluster.addLayers(shown.map(function (it) { return markers[it.f + '/' + it.id]; }));
     var perF = {};
     shown.forEach(function (it) { perF[it.f] = (perF[it.f] || 0) + 1; });
-    $('#fm-summary').textContent = shown.length.toLocaleString('en-US') + (shown.length === 1 ? ' record' : ' records') + ' shown, ' + s.from + '–' + s.to + '.';
+    $('#fm-summary').textContent = shown.length ? shown.length.toLocaleString('en-US') + ' matching record' + (shown.length===1?'':'s') + ' · ' + s.from + '–' + s.to : 'No records match these filters. Open the filters to widen the dates or clear the search.';
+    document.querySelector('.fmap .map-filter-panel>summary').textContent='Layers & filters · '+s.from+'–'+s.to;
     // list, grouped by place
     var byPlace = {};
     shown.forEach(function (it) { var k = it.placeName || 'Elsewhere'; (byPlace[k] = byPlace[k] || []).push(it); });
@@ -84,6 +85,7 @@
     try {
       var params = new URLSearchParams(location.hash.slice(1));
       params.set('from', s.from); params.set('to', s.to);
+      if(qIn.value.trim())params.set('q',qIn.value.trim());else params.delete('q');
       if (CFG.features.length > 1) params.set('f', s.feats.join(',')); else params.delete('f');
       history.replaceState(null, '', '#' + params.toString());
     } catch (e) { /* file preview */ }
@@ -158,7 +160,8 @@
     mapEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
     cluster.zoomToShowLayer(m, function () { m.openPopup(); });
   });
-  [fromIn, toIn].forEach(function (i) { i.addEventListener('input', render); });
+  [fromIn, toIn].forEach(function (i) { i.addEventListener('input',function(){if(+fromIn.value>+toIn.value){if(i===fromIn)toIn.value=fromIn.value;else fromIn.value=toIn.value;}render();}); });
+  $('#fm-reset').addEventListener('click',function(){fromIn.value=fromIn.defaultValue;toIn.value=toIn.defaultValue;qIn.value='';$$('input[name=feature]').forEach(function(i){i.checked=i.defaultChecked;});render();});
   var t; qIn.addEventListener('input', function () { clearTimeout(t); t = setTimeout(render, 150); });
   $$('input[name=feature]').forEach(function (i) { i.addEventListener('change', render); });
 
@@ -174,6 +177,7 @@
       }).bindPopup(function () { return popup(it); }, { maxWidth: 300, className: 'kh-popup' });
     });
     var h = new URLSearchParams(location.hash.slice(1));
+    if(h.get('q'))qIn.value=h.get('q');
     if (h.get('from')) fromIn.value = h.get('from');
     if (h.get('to')) toIn.value = h.get('to');
     if (h.get('f')) { var want = h.get('f').split(','); $$('input[name=feature]').forEach(function (i) { i.checked = want.indexOf(i.value) > -1; }); }

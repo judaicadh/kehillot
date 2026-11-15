@@ -66,6 +66,13 @@ The Cities directory also includes every locality recorded in the deposited subs
 
 The atlas, feature maps, and Subscribers map all have a city finder with quick jumps, city-guide links, and a National view reset. City and date filters survive in shared map URLs. Place records link directly to street views; city guides provide City center and Fit all recorded sites controls. The directory has a text filter and remains fully readable without JavaScript.
 
+City guides also have a **city journey**: visible address-level records become numbered stops in date order. The selected year and categories determine the stops; Previous/Next moves the map and presents the original note, images when available, and source links. A tour's year, filters, and selected stop are kept in query parameters; Share this stop copies that URL. For example: `city/new-york/?year=1855&tour=1&stop=crosby-street-synagogue#journey`. Earlier fragment-parameter links are still accepted. It is a virtual history tour, not walking directions. Subscriber-only localities do not acquire invented street addresses or tour stops.
+
+**Help locate this place** links on place, site, cemetery, and city-entry pages open the contribution desk with the original record and a reference point. Choosing **Locate a historical place** enables a clickable map and draggable proposed pin. Contributors must supply coordinates, building/block/street/city precision, the source date, a research explanation, and the main source citation. Reference and proposal points remain separate. The downloaded review packet (or configured form POST) includes all these fields; neither changes the curated data automatically.
+
+`data/cities.json` accepts `mapSources: [{ "title": "…", "date": "1855", "url": "https://…" }]` to link to period maps. The default street layer is a neutral Esri Light Gray Canvas with sparse labels; tiles are overzoomed beyond native zoom 16. An optional `historicalMap` with `url` (HTTPS XYZ template containing `{z}`, `{x}`, `{y}`), a dated `label`, `attribution`, `sourceUrl`, and optional `maxZoom` exposes a translucent historical overlay on the guide. No historical tile layer is configured by default; linking a map image alone does not georeference it. Verify alignment and reuse terms before configuring a layer.
+
+
 
 ## Pictures and documents (linked media)
 
@@ -178,3 +185,17 @@ This is a **seed dataset** drawn from the standard secondary literature (Sarna, 
   - the deposited Zenodo datasets;
   - Leaflet (BSD-2-Clause) and OpenSeadragon (BSD-3-Clause);
   - basemap tiles (© Esri; © OpenStreetMap contributors).
+
+### City and journey identifiers
+
+Record entity URIs retain the existing `/{type}/{id}/#this` pattern, distinct from their HTML documents and `index.jsonld` representations. City-guide documents use their canonical `/city/{id}/` URL. Each publishes an embedded graph plus an alternate `/city/{id}/index.jsonld` representation. Its `#journey` identifies the complete ordered `schema:ItemList`; each `#stop-{type}-{id}` identifies a `schema:ListItem` linked to the original record's entity URI. Stop IDs use record IDs, never mutable stop numbers. A shared filtered journey URL is a view of this data and does not replace its canonical identifiers.
+
+Subscriber-only city pages likewise publish a canonical WebPage and a `#locality` Place with source-dataset citations. Their source locality key is recorded as an identifier; unreviewed source QIDs are not promoted to `sameAs` assertions. These city-document graphs supplement the curated historical entity graph and are available from each guide's alternate link.
+
+### Interface and research flow
+
+The primary navigation is Map → City guides → Find a record → Data, with About and Contribute alongside. Map opens the comprehensive map directly; a secondary navigation links congregation time maps, newspaper subscribers, charts, and the map directory. Per-feature map URLs remain available through the map-view selector, which retains city and date context. Layers, date ranges, and specialized filters live in disclosures outside the map.
+
+City guides have direct search/open controls and explicit guide links on map finders and point records. City journeys show one record at a time; background history, subscriber lists, complete site lists, and linked-data tools remain available behind disclosures. The default maps use a quiet gray canvas, with green accents on white page backgrounds. The mobile menu and controls share the same navigation structure.
+
+Record search starts across all supported record types, including sources and media. Narrowing the type retains the typed query; refinements and CSV export remain available. Exported CSV URIs use the canonical publisher base URL and `#this`, even in a local preview. Data downloads are presented first by intended use, with the complete formats table retained. Chart navigation shows one visualization at a time when JavaScript is enabled; all charts and tables remain available without it.

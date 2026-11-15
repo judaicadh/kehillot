@@ -18,7 +18,7 @@
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   var tiles = JSON.parse(mapEl.dataset.tiles);
   var relief = L.tileLayer(tiles.relief.url, {maxZoom:18,maxNativeZoom:tiles.relief.maxZoom || 13,attribution:tiles.relief.attribution});
-  var street = L.tileLayer(tiles.street.url, {maxZoom:18,attribution:tiles.street.attribution,className:'street-tiles'});
+  var street = L.tileLayer(tiles.street.url, {maxZoom:18,maxNativeZoom:tiles.street.maxNativeZoom || 18,attribution:tiles.street.attribution,className:'street-tiles'});
   function syncBase() {
     var local = map.getZoom() >= 11 || !!(cityNav && cityNav.selected() && map.getZoom() >= 9);
     var wanted = local ? street : relief, other = local ? relief : street;
@@ -60,6 +60,7 @@
     var s = state();
     $('#r-from-out').textContent = s.from; $('#r-to-out').textContent = s.to;
     $('#r-range').textContent = s.from === s.to ? s.from : s.from + '–' + s.to;
+    document.querySelector('.readers-page .map-filter-panel>summary').textContent='Newspapers & years · '+s.from+'–'+s.to;
     layer.clearLayers();
     var marks = [], totals = {}, placesN = 0, abroad = 0;
     D.places.forEach(function (pl) {
@@ -127,8 +128,8 @@
     });
   }
 
-  fromIn.addEventListener('input', render);
-  toIn.addEventListener('input', render);
+  fromIn.addEventListener('input',function(){if(+fromIn.value>+toIn.value)toIn.value=fromIn.value;render();});
+  toIn.addEventListener('input',function(){if(+toIn.value<+fromIn.value)fromIn.value=toIn.value;render();});
   $$('input[name=paper]').forEach(function (i) { i.addEventListener('change', render); });
   document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-subs]');

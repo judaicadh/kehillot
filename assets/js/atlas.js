@@ -14,7 +14,7 @@
   var map = L.map(mapEl, { center: [38.5, -92], zoom: 4, minZoom: 3, maxZoom: (T.street && T.street.maxZoom) || 18, zoomSnap: 0.25, scrollWheelZoom: false });
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   var relief = L.tileLayer(T.relief.url, { maxZoom: T.relief.maxZoom || 13, maxNativeZoom: T.relief.maxZoom || 13, attribution: T.relief.attribution });
-  var street = T.street ? L.tileLayer(T.street.url, { maxZoom: T.street.maxZoom || 18, attribution: T.street.attribution, className: 'street-tiles' }) : null;
+  var street = T.street ? L.tileLayer(T.street.url, { maxZoom: T.street.maxZoom || 18, maxNativeZoom:T.street.maxNativeZoom || T.street.maxZoom || 18, attribution: T.street.attribution, className: 'street-tiles' }) : null;
 
   // Graticule every 5°, as on an engraved plate (national scale only).
   var grat = L.layerGroup();

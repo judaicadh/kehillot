@@ -621,7 +621,7 @@ function toTriples(n, out) {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jsonForScript = (o) => JSON.stringify(o, null, 2).replace(/</g, '\\u003c');
 const NAV = [
-  ['', 'Home'], ['maps/', 'Maps'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['visualizations/', 'Visualizations'], ['database/', 'Database'], ['datasets/', 'Datasets'], ['about/', 'About'], ['contribute/', 'Contribute ↗'],
+  ['maps/all/', 'Map'], ['cities/', 'City guides'], ['database/', 'Find a record'], ['datasets/', 'Data'], ['about/', 'About'], ['contribute/', 'Contribute'],
 ];
 function layout({ rel, title, description, canonical, body, jsonld, scripts = [], styles = [], current = '', alternate }) {
   const fullTitle = title ? `${title} · ${cfg.title}` : `${cfg.title}: ${cfg.subtitle}`;
@@ -644,16 +644,17 @@ ${alternate ? `<link rel="alternate" type="application/ld+json" href="${esc(alte
 ${styles.map((s) => `<link rel="stylesheet" href="${rel}${s}">`).join('\n')}
 ${jsonld ? `<script type="application/ld+json">\n${jsonForScript(jsonld)}\n</script>` : ''}
 </head>
-<body data-root="${rel}">
+<body data-root="${rel}" data-section="${esc(current)}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="${rel}"><span><strong>${esc(cfg.title)}</strong><small>${esc(cfg.subtitle)}</small></span></a>
-    <nav aria-label="Primary"><ul>
-      ${NAV.map(([href, label]) => `<li><a href="${rel}${href}"${current === href ? ' aria-current="page"' : ''}>${label}</a></li>`).join('')}
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu</button><nav id="primary-nav" aria-label="Primary"><ul>
+      ${NAV.map(([href, label]) => `<li><a href="${rel}${href}"${(current === href || (href === 'maps/all/' && ['maps/','subscribers/','visualizations/'].includes(current))) ? ' aria-current="page"' : ''}>${label}</a></li>`).join('')}
     </ul></nav>
   </div>
 </header>
+${['maps/','subscribers/','visualizations/'].includes(current) ? `<nav class="section-nav wrap" aria-label="Explore"><a href="${rel}maps/all/"${canonical.endsWith('/maps/all/')?' aria-current="page"':''}>All features</a><a href="${rel}atlas/"${canonical.endsWith('/atlas/')?' aria-current="page"':''}>Congregations over time</a><a href="${rel}subscribers/"${current==='subscribers/'?' aria-current="page"':''}>Newspaper subscribers</a><a href="${rel}visualizations/"${current==='visualizations/'?' aria-current="page"':''}>Connections &amp; charts</a><a href="${rel}maps/">Map directory</a></nav>` : ''}
 <main id="main" tabindex="-1">
 ${body}
 </main>
@@ -663,7 +664,7 @@ ${body}
     <p><a href="${rel}contribute/">Contribute</a> · <a href="${rel}contributors/">Contributors</a> · <a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
   </div>
 </footer>
-${scripts.map((s) => `<script src="${rel}${s}" defer></script>`).join('\n')}
+${['assets/js/site.js',...scripts].map((s) => `<script src="${rel}${s}" defer></script>`).join('\n')}
 </body>
 </html>
 `;
@@ -689,6 +690,14 @@ const suggestUrl = (template, params = {}) => {
   for (const [k, v] of Object.entries(params)) if (v) u.searchParams.set(k, v);
   return u.toString();
 };
+// Location proposals stay in the public review workflow; coordinates are never applied directly.
+function locateUrl(rel, type, record) {
+  const place = type === 'place' ? record : index.place.get(record.place);
+  const params = new URLSearchParams({ type: 'location', record: docUri(type, record.id), title: record.name,
+    place: place ? `${place.name}, ${place.state}` : '' });
+  if (Number.isFinite(record.lat) && Number.isFinite(record.lon)) { params.set('lat', record.lat); params.set('lon', record.lon); }
+  return `${rel}contribute/?${esc(params.toString())}`;
+}
 const SITE_FORM = { synagogue: 'add-site', school: 'add-site', 'matzah-bakery': 'add-site', lodging: 'add-site', 'kosher-restaurant': 'add-site', business: 'add-site', bookstore: 'add-site', cemetery: 'add-cemetery' };
 const contributedBy = (r) => (r.contributors?.length ? `<p class="contributed">Contributed by ${r.contributors.map((c) => `${c.github ? `<a href="https://github.com/${esc(c.github)}">` : ''}${esc(c.name || '@' + c.github)}${c.github ? '</a>' : ''}${c.orcid ? ` <a class="orcid" href="https://orcid.org/${esc(c.orcid)}" title="ORCID iD">iD</a>` : ''}`).join(', ')}.</p>` : '');
 function citeBox(type, r) {
@@ -696,6 +705,7 @@ function citeBox(type, r) {
   return `<section class="cite" aria-labelledby="h-cite"><h2 id="h-cite">Cite this record</h2>
   <p class="cite-text">“${esc(type === 'source' ? r.title : r.name).replace(/&amp;/g, '&amp;')}.” ${label} record in <cite>${esc(cfg.title)}: ${esc(cfg.subtitle)}</cite>, version ${cfg.version}. <span class="uri">${esc(uri(type, r.id))}</span> (accessed ${BUILD_DATE}).</p>
   ${contributedBy(r)}
+  ${['site', 'cemetery', 'place'].includes(type) ? `<p><a class="suggest" href="${locateUrl('../'.repeat(docPath(type,r.id).split('/').filter(Boolean).length), type, r)}">Help locate this place ↗</a> <span class="small muted">Propose a point with a source and location precision.</span></p>` : ''}
   <p class="data-links"><a class="suggest" href="${esc(suggestUrl('correction', { record: docUri(type, r.id), title: `[Correction] ${type === 'source' ? r.title : r.name}` }))}">Suggest a correction</a> · Machine-readable: <a href="index.jsonld" type="application/ld+json">JSON-LD</a>${wd(type, r.id) ? ` · Same as <a href="https://www.wikidata.org/wiki/${wikidata[type][r.id]}">Wikidata ${wikidata[type][r.id]}</a>` : ''}</p></section>`;
 }
 const dl = (rows) => `<dl class="facts">${rows.filter(([, v]) => v !== undefined && v !== null && v !== '').map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
@@ -827,10 +837,11 @@ function entityBody(type, r, rel) {
     main = `<p class="lede">${citationText(r)}</p>${r.note ? `<p>${esc(r.note)}</p>` : ''}${r.url ? `<p><a href="${esc(r.url)}">${esc(r.url)}</a></p>` : ''}
     <section><h2>Cited by ${cites.length} record${cites.length === 1 ? '' : 's'}</h2>${ul(cites.map(({ type: t, r: x }) => `${link(rel, t, x.id, x.name)} <span class="muted">${TYPE_INFO[t].label}</span>`))}</section>`;
   }
+  const guidePlace = type === 'place' ? r.id : r.place;
   const heading = esc(type === 'source' ? r.title : r.name);
   return `<div class="wrap">${crumbs}
   <article class="record record-${type}">
-    <header class="record-head"><p class="kicker">${TYPE_INFO[type].label}</p><h1>${heading}</h1></header>
+    <header class="record-head"><p class="kicker">${TYPE_INFO[type].label}</p><h1>${heading}</h1>${guidePlace && CITY_IDS.includes(guidePlace) ? `<p class="record-actions"><a class="btn btn-small" href="${rel}city/${guidePlace}/">Open ${esc(index.place.get(guidePlace).name)} city guide ↗</a><a href="${rel}database/">Find another record →</a></p>` : `<p class="record-actions"><a href="${rel}database/">Find another record →</a></p>`}</header>
     <div class="record-grid"><div class="record-main">${main}${gallery(rel, type === 'place' ? (mediaByPlace.get(r.id) || []) : (mediaByRecord.get(`${type}/${r.id}`) || []))}${citeBox(type, r)}</div>${aside ? `<aside class="record-aside">${aside}</aside>` : ''}</div>
   </article></div>`;
 }
@@ -959,44 +970,36 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
     description: `Where the subscribers to the American Jewish press lived: ${READ_TOTAL.toLocaleString('en-US')} subscriptions to ${papers.length} periodicals, ${yMin}–${yMax}, mapped from their subscriber lists.`,
     jsonld: { '@context': CONTEXT, '@graph': DATASETS.map(datasetNode) },
     styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/city-navigation.js', 'assets/js/readers.js'],
-    body: `<div class="atlas wrap readers-page">
-  ${cityNavigator('../')}
-  <div class="plate">
-    <div id="readers-map" class="atlas-map" role="region" aria-label="Map of subscribers to the Jewish press" data-tiles="${esc(TILES)}"></div>
-    <div class="cartouche">
-      <p class="c-small">A Map of the</p>
-      <h1>Subscribers to the Jewish Press</h1>
-      <p class="c-small">in the United States and abroad</p>
-      <p class="c-year"><span>subscriptions,</span> <output id="r-range">${yMin}–${yMax}</output></p>
-      <p id="r-summary" class="c-sum" aria-live="polite"></p>
-    </div>
-    <fieldset class="map-key">
+    body: `<div class="atlas wrap readers-page"><header class="page-head"><h1>Newspaper subscribers</h1><p>Choose a city to see its recorded subscribers, or compare the papers and years on the map.</p></header>
+  ${cityNavigator('../','Show subscribers')}
+  <details class="map-filter-panel"><summary>Newspapers &amp; years</summary>    <fieldset class="map-key">
       <legend>Explanation</legend>
       ${papers.map((p) => `<label><input type="checkbox" name="paper" value="${p}" checked><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" class="sym" style="fill:${PAPER_TINT[p]};fill-opacity:.75"/></svg><i>${esc(nameOf('periodical', p).replace(/ and American Jewish Advocate$/, ''))}</i> <span class="muted key-n" data-n="${p}"></span></label>`).join('')}
       <p class="key-street">Circle area shows the number of subscriptions.</p>
     </fieldset>
-  </div>
   <div class="timeline readers-time">
     <label class="r-yr">From <input type="range" id="r-from" min="${yMin}" max="${yMax}" value="${yMin}"> <output id="r-from-out">${yMin}</output></label>
     <label class="r-yr">to <input type="range" id="r-to" min="${yMin}" max="${yMax}" value="${yMax}"> <output id="r-to-out">${yMax}</output></label>
   </div>
+</details>
+  <div class="plate"><div id="readers-map" class="atlas-map" role="region" aria-label="Map of subscribers to the Jewish press" data-tiles="${esc(TILES)}"></div></div>
+  <p class="map-summary"><output id="r-range">${yMin}–${yMax}</output> · <span id="r-summary" aria-live="polite"></span></p>
   <div class="readers-cols">
-    <section class="gazetteer" aria-labelledby="r-top-h">
-      <h2 id="r-top-h">Where the Subscribers Lived</h2>
+    <details class="gazetteer ranked-places"><summary id="r-top-h">Browse places by subscription count</summary>
+
       <p class="gaz-note">The places with the most subscriptions for the papers and years chosen. Select one to see it on the map and list its subscribers.</p>
       <ol id="r-top" class="place-list"></ol>
-    </section>
+    </details>
     <section class="r-detail" aria-live="polite" aria-labelledby="r-detail-h">
       <h2 id="r-detail-h">Subscribers</h2>
       <div id="r-detail"><p class="gaz-note">Choose a place on the map or in the list.</p></div>
     </section>
   </div>
-  <section class="prose-wide r-about">
-    <h2>About these data</h2>
+  <details class="prose-wide r-about"><summary>Sources and methods</summary>
     <p>Each 19th-century Jewish periodical printed lists of subscribers and agents who had paid. These lists were transcribed, with subscribers' names, the date of the issue, and the place, reconciled to Wikidata, GeoNames and the Library of Congress. Kehillot maps them by place and links them to its own places through their Wikidata identifiers. Subscriptions without a recorded place are counted but not mapped.</p>
     <ul class="sources">${DATASETS.filter((d) => d.use === 'subscriptions').map((d) => `<li>${dsCitation(d)}. License: ${esc(d.license?.toUpperCase().replace(/-/g, ' ') || 'see record')}.</li>`).join('')}</ul>
     <p class="small">Download the mapped counts: <a href="../data/subscriptions-by-place.csv">subscriptions-by-place.csv</a> (one row per periodical, place and year). Full subscriber lists are in the Zenodo deposits above.</p>
-  </section>
+  </details>
 </div>
 <noscript><div class="wrap"><p>The subscriber map needs JavaScript. Each periodical's page lists where its subscribers lived, and the data can be downloaded from the Datasets page.</p></div></noscript>` }));
 }
@@ -1029,6 +1032,8 @@ await out('data/places.lpf.json', JSON.stringify({
 
 // Compact JSON for the browser apps
 const compact = {
+  baseUrl: BASE,
+  media: MEDIA.map(m=>({id:m.id,name:m.title,title:m.title,holder:m.holder,description:m.description,date:m.date,places:m.places})),
   yearRange: cfg.yearRange,
   places: data.place.map((p) => ({ ...p, wikidata: wikidata.place?.[p.id] })),
   congregations: data.congregation.map((c) => ({ ...c, wikidata: wikidata.congregation?.[c.id] })),
@@ -1139,50 +1144,50 @@ function homeMap() {
   const x = lon => 30 + (lon + 126) / 60 * 520;
   const y = lat => 300 - (lat - 24) / 26 * 230;
   const labels = new Map([['New York', [9, -13]], ['Cincinnati', [-15, -20]], ['Charleston', [-65, 24]], ['New Orleans', [-30, 27]], ['San Francisco', [12, 25]]]);
-  return `<svg viewBox="0 0 600 380" class="home-map" role="img" aria-labelledby="home-map-title home-map-desc"><title id="home-map-title">A constellation of Jewish communities</title><desc id="home-map-desc">Cities positioned by their recorded coordinates. This schematic shows places in the collection in the contiguous United States; open the atlas for the full interactive map.</desc>
+  return `<svg viewBox="0 0 600 380" class="home-map" role="img" aria-labelledby="home-map-title home-map-desc"><title id="home-map-title">Cities in the collection</title><desc id="home-map-desc">Cities positioned by their recorded coordinates. This schematic shows places in the collection in the contiguous United States; open the atlas for the full interactive map.</desc>
   <defs><pattern id="atlas-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/></pattern></defs><rect width="600" height="380" fill="url(#atlas-grid)"/>
-  <text x="28" y="32" class="map-overline">PLACES, PEOPLE &amp; THE TIES BETWEEN THEM</text>
-  <path d="M70 214 Q270 90 505 154 M70 214 Q290 340 444 252 M355 188 Q420 105 505 154" class="map-thread"/>
+  <text x="28" y="32" class="map-overline">RECORDED CITIES / CONTIGUOUS UNITED STATES</text>
+
   ${points.map(p => { const n=data.congregation.filter(c=>c.place===p.id).length; return `<circle cx="${x(p.lon)}" cy="${y(p.lat)}" r="${3+Math.sqrt(n)*1.6}" class="map-place"/>`; }).join('')}
   ${points.filter(p=>labels.has(p.name)).map(p=>{const [dx,dy]=labels.get(p.name);return `<text x="${x(p.lon)+dx}" y="${y(p.lat)+dy}" class="map-city">${esc(p.name)}</text>`;}).join('')}
   <g transform="translate(545 300)" aria-hidden="true"><path d="M0 -22L5 0 0 -4 -5 0Z" fill="currentColor"/><path d="M0 0V17M-12 0H12" stroke="currentColor"/><text x="0" y="-29" text-anchor="middle" class="map-overline">N</text></g>
-  <text x="28" y="351" class="map-overline">1840 — 1870</text><text x="28" y="368" class="map-overline">A GEOGRAPHY OF COMMUNAL LIFE</text></svg>`;
+  <text x="28" y="351" class="map-overline">1840 — 1870</text><text x="28" y="368" class="map-overline">CITY POSITIONS FROM THE PROJECT GAZETTEER</text></svg>`;
 }
 
 await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '',
   description: `${cfg.subtitle}. An open, source-cited atlas and linked-data database of Jewish congregations, institutions, people and events.`,
   jsonld: websiteLD,
   body: `<section class="hero"><div class="wrap hero-inner">
-    <div class="hero-copy"><p class="kicker"><span class="kicker-line"></span> An open atlas of belonging · ${Y0}–${Y1}</p>
-    <h1>A world of stories.<br>A map of <em>community.</em></h1>
-    <p class="hero-subtitle">Jewish America, ${Y0}–${Y1}</p>
-    <p class="lede">Between 1840 and 1870, the American Jewish population grew roughly tenfold, from perhaps 15,000 to some 200,000 people, and congregations spread from a handful of Atlantic ports to the Mississippi valley and the Pacific coast. ${esc(cfg.title)} maps that growth and links it, record by record, to its sources.</p>
-    <p class="cta"><a class="btn" href="atlas/">Open the atlas</a> <a class="btn btn-ghost" href="database/">Search the database</a></p>
-    <p class="hero-footnote">Follow a place. Meet its people. Go back to the source.</p></div>
-    <figure class="hero-plate"><div class="plate-heading"><span>KEHILLOT / FIELD ATLAS</span><span>PLATE 01</span></div>${homeMap()}<figcaption><span>Communities in the collection</span><a href="atlas/">Explore the interactive atlas ↗</a></figcaption></figure>
+    <div class="hero-copy"><p class="kicker"><span class="kicker-line"></span> Jewish communal life · ${Y0}–${Y1}</p>
+    <h1>Jewish America.<br><em>1840–1870.</em></h1>
+    <p class="hero-subtitle">A research atlas of people, places, and institutions.</p>
+    <p class="lede">Explore congregations, people, institutions, businesses, and newspapers across the United States. Each record links back to its historical sources.</p>
+    <p class="cta"><a class="btn" href="cities/">Explore city guides</a> <a class="btn btn-ghost" href="maps/all/">Explore the map</a> <a class="hero-data-link" href="database/">Search records →</a></p>
+    <p class="hero-footnote">Source-cited records · Maps · Open research data</p></div>
+    <figure class="hero-plate"><div class="plate-heading"><span>KEHILLOT / LOCATIONS</span><span>FIG. 01</span></div>${homeMap()}<figcaption><span>Recorded cities</span><a href="atlas/">Explore the interactive atlas ↗</a></figcaption></figure>
   </div></section>
-  <div class="wrap discovery"><p class="kicker">Many ways into the story</p><div class="discovery-grid">
-    <a href="maps/"><span class="discovery-number">01 / GEOGRAPHY</span><strong>Start with a place <span>↗</span></strong><span>Explore maps, streets, and the spaces of communal life.</span></a>
-    <a href="visualizations/"><span class="discovery-number">02 / CONNECTIONS</span><strong>Follow the threads <span>↗</span></strong><span>Trace the people, journeys, and ideas connecting communities.</span></a>
-    <a href="contribute/"><span class="discovery-number">03 / COLLECTIVE HISTORY</span><strong>Add your discovery <span>↗</span></strong><span>Help fill in the picture with a source or a correction.</span></a>
+  <div class="wrap discovery"><p class="kicker">Explore the collection</p><div class="discovery-grid">
+    <a href="cities/"><span class="discovery-number">01 / GEOGRAPHY</span><strong>Maps &amp; city guides <span>↗</span></strong><span>Explore maps, streets, and the spaces of communal life.</span></a>
+    <a href="visualizations/"><span class="discovery-number">02 / CONNECTIONS</span><strong>People &amp; networks <span>↗</span></strong><span>Trace the people, journeys, and ideas connecting communities.</span></a>
+    <a href="contribute/"><span class="discovery-number">03 / COLLECTIVE HISTORY</span><strong>Contribute research <span>↗</span></strong><span>Help fill in the picture with a source or a correction.</span></a>
   </div></div>
   <div class="wrap">
-    <ul class="stats" aria-label="Dataset contents">
+    <details class="collection-totals"><summary>${counts.congregation} congregations · ${counts.person} people · ${READ_TOTAL.toLocaleString('en-US')} subscriptions. View collection totals</summary><ul class="stats" aria-label="Dataset contents">
       <li><a href="browse/#congregation"><strong>${counts.congregation}</strong> congregations</a></li>
       <li><a href="browse/#place"><strong>${counts.place}</strong> places</a></li>
       <li><a href="browse/#person"><strong>${counts.person}</strong> people</a></li>
       <li><a href="browse/#cemetery"><strong>${counts.cemetery}</strong> cemeteries</a></li>
       <li><a href="browse/#site"><strong>${counts.site}</strong> sites in cities</a></li>
       <li><a href="browse/#periodical"><strong>${counts.periodical}</strong> periodicals</a></li>
-      <li><a href="subscribers/"><strong>${READ_TOTAL.toLocaleString('en-US')}</strong> subscriptions mapped</a></li>
+      <li><a href="subscribers/"><strong>${READ_TOTAL.toLocaleString('en-US')}</strong> subscriptions recorded</a></li>
       <li><a href="browse/#institution"><strong>${counts.institution}</strong> institutions</a></li>
       <li><a href="browse/#event"><strong>${counts.event}</strong> events</a></li>
       <li><a href="datasets/"><strong>${triples.length.toLocaleString('en-US')}</strong> RDF triples</a></li>
-    </ul>
+    </ul></details>
     <section class="split">
       <figure class="chart-fig">${growthChart()}<figcaption>Congregations active in each year, by region. Counts reflect the records in this dataset, not a complete census. Newport's Touro Synagogue, without a resident congregation for most of the period, is excluded while dormant.</figcaption>${chartTable}</figure>
       <div class="prose">
-        <p class="kicker">A growing, connected collection</p><h2>Small records.<br>A bigger picture.</h2>
+        <p class="kicker">A growing, connected collection</p><h2>The collection in numbers</h2>
         <p>Every record has a stable URI, a human-readable page and a machine-readable JSON-LD description using <a href="https://schema.org/">schema.org</a> and a small <a href="vocab/">project vocabulary</a>. People, places and organizations are reconciled to <a href="https://www.wikidata.org/">Wikidata</a> where a match has been checked.</p>
         <p>Each claim is cited. Dates whose sources disagree are flagged as <em>medium</em> certainty so you know what to verify before citing.</p>
         <h3>National population estimates</h3>
@@ -1190,24 +1195,24 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
         <p class="muted small">${esc(population.note)}</p>
       </div>
     </section>
-    <section class="explore"><p class="kicker">From the collection</p><h2>Every community has a story.</h2><div class="cards">
+    <section class="explore"><p class="kicker">From the collection</p><h2>Selected records</h2><div class="cards">
       ${['emanu-el-ny', 'beth-elohim-chs', 'bnai-yeshurun-cin', 'emanu-el-sf'].map((id) => { const c = index.congregation.get(id); return `<a class="card" href="${docPath('congregation', id)}"><span class="kicker">${esc(index.place.get(c.place).name)} · ${c.founded}</span><strong>${esc(c.name)}</strong><span>${esc(c.note || '')}</span></a>`; }).join('')}
       ${['general-orders-11', 'cleveland-conference-1855'].map((id) => { const e = index.event.get(id); return `<a class="card" href="${docPath('event', id)}"><span class="kicker">${formatDate(e.date)}</span><strong>${esc(e.name)}</strong><span>${esc(e.description)}</span></a>`; }).join('')}
     </div></section>
   </div>` }));
 
 // Shared city finder: built from curated places and address-level records, never geocoded guesses.
-function cityNavigator(rel) {
+function cityNavigator(rel, action = 'Zoom to streets') {
   const cities = data.place.map(p => {
     const sites = [...data.site, ...data.cemetery].filter(x => x.place === p.id && x.precision !== 'city');
     const readership = READ_PLACES.find(x => x.own === p.id);
-    return { id: p.id, name: p.name, state: p.state, lat: p.lat, lon: p.lon, subscriptions: readership ? subscriptionCount(readership) : 0, points: sites.map(x => [x.lat, x.lon]), guide: CITY_IDS.includes(p.id) ? `${rel}city/${p.id}/` : null };
+    return { id: p.id, name: p.name, state: p.state, lat: p.lat, lon: p.lon, aliases: readership && readership.name !== p.name ? [readership.name] : [], subscriptions: readership ? subscriptionCount(readership) : 0, points: sites.map(x => [x.lat, x.lon]), guide: CITY_IDS.includes(p.id) ? `${rel}city/${p.id}/` : null };
   }).concat(READ_PLACES.filter(p => !p.own).map(p => ({ id: p.cityId, name: p.name, state: p.state || p.country || '', lat: p.lat, lon: p.lon, subscriptions: subscriptionCount(p), points: [], guide: `${rel}city/${p.cityId}/` }))).sort((a,b)=>a.name.localeCompare(b.name));
-  return `<section class="city-navigator" aria-labelledby="city-nav-title"><div><p class="kicker">From the country to the corner</p><h2 id="city-nav-title">Explore a city, street by street.</h2></div>
-  <form id="city-jump-form" class="city-jump-form"><label for="city-jump">Find a city</label><div class="city-jump-fields"><input id="city-jump" type="search" list="city-choices" placeholder="Try New York or Cincinnati" autocomplete="off" required disabled aria-describedby="city-jump-status"><datalist id="city-choices">${cities.map(p=>`<option value="${esc(p.name)}, ${esc(p.state)}"></option>`).join('')}</datalist><button class="btn" type="submit" disabled>Explore city streets ↗</button><button class="btn btn-ghost" id="city-reset" type="button" disabled>National view</button></div></form>
-  <div class="city-shortcuts"><span>Jump to</span>${['new-york','philadelphia','cincinnati','san-francisco'].filter(id=>index.place.has(id)).map(id=>`<button type="button" data-city-jump="${id}" disabled>${esc(index.place.get(id).name)}</button>`).join('')}</div>
-  <p id="city-jump-status" class="city-jump-status" role="status" aria-live="polite">Loading city navigation…</p><a id="city-guide-link" class="city-guide-link" hidden>Open the city guide →</a>
-  <p class="city-map-note">Modern streets provide geographic context for historical sites. Dashed symbols mark approximate locations; city-level records do not identify an exact address.</p>
+  return `<section class="city-navigator" aria-labelledby="city-nav-title"><h2 id="city-nav-title" class="visually-hidden">Find a city or open its guide</h2>
+  <form id="city-jump-form" class="city-jump-form"><label for="city-jump">Find a city</label><div class="city-jump-fields"><input id="city-jump" type="search" list="city-choices" placeholder="Try New York or Cincinnati" autocomplete="off" required disabled aria-describedby="city-jump-status"><datalist id="city-choices">${cities.map(p=>`<option value="${esc(p.name)}, ${esc(p.state)}"></option>`).join('')}</datalist><a class="btn city-guide-link" id="city-guide-link" href="${rel}cities/" data-directory="${rel}cities/">Open city guide ↗</a><button class="btn btn-ghost" type="submit" disabled>${esc(action)}</button><button class="btn btn-ghost" id="city-reset" type="button" disabled>National view</button></div></form>
+  <details class="city-shortcuts"><summary>Map help &amp; quick cities</summary>${['new-york','philadelphia','cincinnati','san-francisco'].filter(id=>index.place.has(id)).map(id=>`<button type="button" data-city-jump="${id}" disabled>${esc(index.place.get(id).name)}</button>`).join('')}<p>Modern streets provide context. Dashed symbols are approximate; city-level records are not street addresses.</p></details>
+  <p id="city-jump-status" class="city-jump-status" role="status" aria-live="polite">Loading city navigation…</p>
+
   <script type="application/json" id="city-navigation-data">${jsonForScript(cities)}</script></section>`;
 }
 
@@ -1215,17 +1220,20 @@ await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `$
   description: `Interactive map of Jewish congregations, institutions and events in the United States, ${Y0}–${Y1}, with a year slider.`,
   styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/city-navigation.js', 'assets/js/atlas.js'],
   body: `<div class="atlas wrap">
+<header class="page-head"><h1>Congregations over time</h1><p>Choose a year to compare congregations, or enter a city to explore its streets.</p></header>
   ${cityNavigator('../')}
+  <p class="map-summary"><output id="year-out" for="year" aria-live="polite">1850</output> · <span id="atlas-summary" aria-live="polite"></span></p>
+  <div class="timeline">
+    <button type="button" id="play" aria-pressed="false">Play</button>
+    <div class="timeline-track">
+      <label for="year" class="visually-hidden">Year</label>
+      <input type="range" id="year" min="${Y0}" max="${Y1}" step="1" value="1850">
+      <ol class="ticks" aria-hidden="true">${[1840, 1845, 1850, 1855, 1860, 1865, 1870].map((y) => `<li class="${y % 10 ? 'minor' : 'major'}" style="left:${((y - Y0) / (Y1 - Y0)) * 100}%"><span>${y % 10 ? '' : y}</span></li>`).join('')}</ol>
+    </div>
+  </div>
   <div class="plate">
     <div id="map" class="atlas-map" role="region" aria-label="Map of Jewish congregations in the United States" data-tiles="${esc(TILES)}"></div>
-    <div class="cartouche">
-      <p class="c-small">A Map of the</p>
-      <h1 id="atlas-h">Jewish Congregations</h1>
-      <p class="c-small">of the United States</p>
-      <p class="c-year"><span>in the year</span> <output id="year-out" for="year" aria-live="polite">1850</output></p>
-      <p id="atlas-summary" class="c-sum" aria-live="polite"></p>
-    </div>
-    <fieldset class="map-key">
+    <details class="map-filter-panel atlas-layers"><summary>Rites &amp; layers</summary><fieldset class="map-key">
       <legend>Explanation</legend>
       ${Object.entries(VOCAB.rite.concepts).map(([k, [l]]) => `<label><input type="checkbox" name="rite" value="${k}" checked><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="4.5" class="sym sym-${k}"/></svg>${l} congregation</label>`).join('')}
       <label><input type="checkbox" name="layer" value="institution" checked><svg width="14" height="14" aria-hidden="true"><rect x="3" y="3" width="8" height="8" class="sym sym-inst"/></svg>Society or school</label>
@@ -1236,42 +1244,31 @@ await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `$
       <label><input type="checkbox" name="layer" value="cemetery" checked><span class="f-sym">${SYM.svg('cemetery', { size: 14 })}</span>Cemetery</label>
       <p class="key-kinds">${SYM.GROUPS.filter((g) => !['Synagogues', 'Cemeteries', 'Other sites'].includes(g[0])).map((g) => `<span title="${esc(g[0])}">${SYM.svg(g[1][0], { size: 13 })} ${esc(g[0].toLowerCase())}</span>`).join(' ')}</p>
       <input type="checkbox" name="layer" value="congregation" checked hidden>
-    </fieldset>
+    </fieldset></details>
   </div>
-  <div class="timeline">
-    <button type="button" id="play" aria-pressed="false">Play</button>
-    <div class="timeline-track">
-      <label for="year" class="visually-hidden">Year</label>
-      <input type="range" id="year" min="${Y0}" max="${Y1}" step="1" value="1850">
-      <ol class="ticks" aria-hidden="true">${[1840, 1845, 1850, 1855, 1860, 1865, 1870].map((y) => `<li class="${y % 10 ? 'minor' : 'major'}" style="left:${((y - Y0) / (Y1 - Y0)) * 100}%"><span>${y % 10 ? '' : y}</span></li>`).join('')}</ol>
-    </div>
-  </div>
-  <section class="gazetteer" aria-labelledby="gaz-h">
-    <h2 id="gaz-h">Index of Places</h2>
+  <details class="gazetteer map-record-list"><summary id="gaz-h">Browse cities on this map</summary>
     <p class="gaz-note">With the number of congregations active in the year shown. Select a city name to zoom directly to its streets and recorded sites.</p>
     <ol id="place-list" class="place-list"></ol>
     <p class="gaz-note">Congregations are marked at the city; each small circle is one congregation, tinted by its rite at founding, and a dashed ring marks a synagogue without a resident congregation. Zoom into a city, or use the city finder above, to see synagogue buildings and cemeteries at their own addresses; dashed outlines there mean the location is approximate.</p>
-  </section>
+  </details>
 </div>
 <noscript><div class="wrap"><p>The interactive atlas needs JavaScript. Every record is also available as a plain page from <a href="../browse/">Browse</a>.</p></div></noscript>` }));
 
-await out('database/index.html', layout({ rel: '../', title: 'Database', canonical: `${BASE}database/`, current: 'database/',
+await out('database/index.html', layout({ rel: '../', title: 'Find a record', canonical: `${BASE}database/`, current: 'database/',
   description: 'Search and filter every congregation, person, cemetery, synagogue site, periodical, institution, event and place in the Kehillot dataset.',
   scripts: ['assets/js/database.js'],
   body: `<div class="wrap">
-  <h1>Database</h1>
-  <p class="lede">Search and filter all records. Your query is kept in the address bar, so you can bookmark or share it.</p>
+  <h1>Find a record</h1>
+  <p class="lede">Search across record types, or narrow to a specific kind. Open a result for its sources and related places.</p>
   <div class="db" id="db">
-    <div class="tabs" role="tablist" aria-label="Record type">
-      ${[['congregations', 'Congregations'], ['people', 'People'], ['clergy', 'Clergy'], ['cemeteries', 'Cemeteries'], ['sites', 'Sites'], ['periodicals', 'Periodicals'], ['events', 'Events'], ['institutions', 'Institutions'], ['places', 'Places']].map(([t, l], i) => `<button role="tab" type="button" id="tab-${t}" aria-controls="db-panel" aria-selected="${i === 0}" data-type="${t}" tabindex="${i === 0 ? 0 : -1}">${l}</button>`).join('')}
-    </div>
-    <div id="db-panel" role="tabpanel" aria-labelledby="tab-congregations">
+    <div class="record-type-control"><label for="record-type">Record type</label><select id="record-type" disabled><option value="all">All record types</option><option value="congregations">Congregations</option><option value="people">People</option><option value="clergy">Clergy</option><option value="cemeteries">Cemeteries</option><option value="sites">Sites and buildings</option><option value="periodicals">Periodicals</option><option value="events">Events</option><option value="institutions">Institutions</option><option value="places">Places</option><option value="sources">Sources</option><option value="media">Pictures and documents</option></select></div>
+    <div id="db-panel" role="region" aria-label="Search results">
       <form class="db-controls" role="search" onsubmit="return false">
-        <label class="db-search">Search <input type="search" id="q" autocomplete="off" placeholder="Name, place, note…"></label>
-        <div id="facets" class="facets"></div>
-        <button type="button" id="export" class="btn btn-small btn-ghost">Download these results (CSV)</button>
+        <label class="db-search">Search <input type="search" id="q" disabled autocomplete="off" placeholder="Name, place, note…"></label>
+        <details class="search-filters"><summary>Refine results</summary><div id="facets" class="facets"></div><button class="btn btn-small btn-ghost" id="db-reset" type="button">Reset refinements</button></details>
+        <button type="button" id="export" disabled class="btn btn-small btn-ghost">Download these results (CSV)</button>
       </form>
-      <p id="db-count" class="db-count" aria-live="polite"></p>
+      <p id="db-count" class="db-count" aria-live="polite">Loading records…</p><p class="search-help small">For subscriber names and towns, open <a href="../cities/">City guides</a> or the <a href="../subscribers/">subscriber map</a>. You can also <a href="../browse/">browse every record</a>.</p>
       <div class="table-wrap"><table id="db-table" class="db-table"></table></div>
     </div>
   </div>
@@ -1305,9 +1302,10 @@ await out('datasets/index.html', layout({ rel: '../', title: 'Datasets', canonic
   description: 'Download the Kehillot data as JSON-LD, N-Triples, CSV with CSVW metadata, GeoJSON and Linked Places Format.',
   jsonld: catalog,
   body: `<div class="wrap prose-wide">
-  <h1>Datasets</h1>
+  <h1>Download data</h1>
   <p class="lede">All data is free to reuse under <a href="${cfg.license.url}" rel="license">${esc(cfg.license.name)}</a>. Version ${cfg.version}, built ${BUILD_DATE}: ${graph.length} entities, ${triples.length.toLocaleString('en-US')} triples.</p>
-  <div class="table-wrap"><table class="files"><thead><tr><th scope="col">File</th><th scope="col">Contents</th><th scope="col">Media type</th><th scope="col">Size</th></tr></thead><tbody>${distRows.join('')}</tbody></table></div>
+  <dl class="download-choices"><div><dt>Work in a spreadsheet</dt><dd><a href="#download-files">Choose a CSV table →</a><span>Separate tables for people, places, congregations, and other record types.</span></dd></div><div><dt>Use the map data</dt><dd><a href="../data/atlas.geojson" download>Download GeoJSON ↓</a><span>Geographic features for GIS and web maps.</span></dd></div><div><dt>Use linked data</dt><dd><a href="../data/kehillot.jsonld" download>Download JSON-LD ↓</a><span>Permanent identifiers and relationships between records.</span></dd></div></dl>
+  <h2 id="download-files">All files and formats</h2><div class="table-wrap"><table class="files"><thead><tr><th scope="col">File</th><th scope="col">Contents</th><th scope="col">Media type</th><th scope="col">Size</th></tr></thead><tbody>${distRows.join('')}</tbody></table></div>
   <h2>Linked data</h2>
   <ul>
     <li><strong>URIs.</strong> Each entity has a hash URI, e.g. <code>${esc(uri('congregation', 'emanu-el-ny'))}</code>. The part before <code>#this</code> is the page that describes it; <code>#this</code> names the congregation itself, following the <a href="https://www.w3.org/TR/cooluris/">Cool URIs for the Semantic Web</a> hash pattern, which works on any static host.</li>
@@ -1339,14 +1337,27 @@ SELECT ?name ?founded ?city WHERE {
 const contributionEndpoint = cfg.contribute.endpoint || '';
 if (contributionEndpoint && !/^https:\/\//.test(contributionEndpoint)) throw new Error('contribute.endpoint must be an HTTPS form submission endpoint');
 await out('contribute/index.html', layout({ rel: '../', title: 'Contribution desk', canonical: `${BASE}contribute/`, current: 'contribute/',
-  description: 'Help document Jewish America with a sourced discovery or correction. Prepare a contribution without a GitHub account.', scripts: ['assets/js/contribute.js'],
-  body: `<div class="wrap contribution-page"><header class="contribution-intro"><p class="kicker">History is a collective work</p><h1>Pull up a chair.<br><em>Add to the atlas.</em></h1><p class="lede">A name in a newspaper. An address in a directory. A detail we missed. Your discoveries help bring this world into focus.</p></header>
+  description: 'Help document Jewish America with a sourced discovery or correction. Prepare a contribution without a GitHub account.', styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/location-picker.js', 'assets/js/contribute.js'],
+  body: `<div class="wrap contribution-page"><header class="contribution-intro"><p class="kicker">Research contributions</p><h1>Contribute to<br><em>Kehillot.</em></h1><p class="lede">Suggest an addition, correct a record, or help locate a historical address. Include a source so an editor can check the evidence.</p></header>
   <div class="contribution-grid"><form id="contribution-form" class="contribution-form" ${contributionEndpoint ? `action="${esc(contributionEndpoint)}" method="POST"` : ''} data-delivery="${contributionEndpoint ? 'online' : 'download'}">
+        <p class="delivery-note">${contributionEndpoint ? 'Your suggestion will be sent to the project’s configured form inbox for editorial review. It will not be published automatically.' : 'Online delivery is not connected yet. You can download your suggestion as a text file to share with an editor. Downloading does not send it to the project.'}</p>
     <p class="kicker">The contribution desk · No GitHub account needed</p><h2>What have you found?</h2>
-    <label for="contribution-type">I would like to</label><select id="contribution-type" name="type" required><option value="add-site">Add another place or building</option><option value="synagogue">Add a synagogue building</option><option value="education">Add a school or educational institution</option><option value="matzah-bakery">Add a matzah bakery</option><option value="lodging">Add a hotel or boarding house</option><option value="kosher-restaurant">Add a kosher restaurant</option><option value="business">Add a Jewish-owned business</option><option value="bookstore">Add a bookstore</option><option value="add-institution">Add another institution or society</option><option value="add-periodical">Add a periodical</option><option value="add-event">Add an event</option><option value="add-cemetery">Add a cemetery</option><option value="add-person">Add a person</option><option value="add-congregation">Add a congregation</option><option value="correction">Correct a record</option></select>
+    <label for="contribution-type">I would like to</label><select id="contribution-type" name="type" required><option value="add-site">Add another place or building</option><option value="synagogue">Add a synagogue building</option><option value="education">Add a school or educational institution</option><option value="matzah-bakery">Add a matzah bakery</option><option value="lodging">Add a hotel or boarding house</option><option value="kosher-restaurant">Add a kosher restaurant</option><option value="business">Add a Jewish-owned business</option><option value="bookstore">Add a bookstore</option><option value="add-institution">Add another institution or society</option><option value="add-periodical">Add a periodical</option><option value="add-event">Add an event</option><option value="add-cemetery">Add a cemetery</option><option value="add-person">Add a person</option><option value="add-congregation">Add a congregation</option><option value="correction">Correct a record</option><option value="location">Locate a historical place</option></select>
     <label for="record">Page or record <span class="muted">(for a correction)</span></label><input id="record" name="record" type="url" placeholder="https://…">
     <label for="subject">Name or subject</label><input id="subject" name="subject" maxlength="250" required>
     <label for="place">City, state, and dates <span class="muted">(if known)</span></label><input id="place" name="place" maxlength="500" placeholder="Philadelphia, Pennsylvania · about 1855">
+    <fieldset id="location-fields" class="location-fields" hidden disabled><legend>Propose a historical location</legend>
+      <p>Use a period map or directory to identify the place, then click the map or enter coordinates. A pin is a proposal for review; the source and precision explain what it means.</p>
+      <div id="location-map" class="location-map" role="region" aria-label="Map for proposing a historical location" data-tiles="${esc(JSON.stringify(cfg.streetmap))}"></div>
+      <p id="location-map-status" class="small" role="status" aria-live="polite">Choose a point to propose a location.</p>
+      <div class="coordinate-fields"><div><label for="proposed-lat">Proposed latitude</label><input id="proposed-lat" name="proposed_latitude" type="number" step="any" min="-90" max="90" required></div><div><label for="proposed-lon">Proposed longitude</label><input id="proposed-lon" name="proposed_longitude" type="number" step="any" min="-180" max="180" required></div></div><button class="btn btn-small btn-ghost" id="location-recenter" type="button">Show entered coordinates</button>
+      <label for="location-precision">What does the evidence locate?</label><select id="location-precision" name="location_precision" required><option value="">Choose the supported precision</option><option value="building">A building or parcel</option><option value="block">A block or intersection</option><option value="street">A street, without a known building</option><option value="city">The city or town only</option></select>
+      <label for="historical-address">Address as written in the source</label><input id="historical-address" name="historical_address" maxlength="1000" placeholder="Keep the historical street name and numbering">
+      <label for="map-date">Date of the map, directory, or other location source</label><input id="map-date" name="location_source_date" maxlength="100" required placeholder="e.g. 1855, or undated">
+      <label for="location-reason">How did you identify this location?</label><textarea id="location-reason" name="location_reason" rows="3" maxlength="5000" required placeholder="Describe the matching streets, landmarks, address changes, or other evidence."></textarea>
+      <p class="small muted">The map shows modern streets. Six decimal places describe the selected point, not the certainty of the historical location. Cite the map or directory in Source citation below.</p>
+      <details><summary>Find historical map evidence</summary><ul><li><a href="https://www.davidrumsey.com/view/georeferencer" target="_blank" rel="noopener">David Rumsey: compare historical and modern maps</a></li><li><a href="https://atlascope.leventhalmap.org/" target="_blank" rel="noopener">Atlascope: Boston and Massachusetts</a></li><li><a href="https://www.loc.gov/collections/sanborn-maps/" target="_blank" rel="noopener">Library of Congress: Sanborn maps (1867 onward)</a></li></ul></details>
+    </fieldset>
     <label for="details">Your discovery or proposed correction</label><textarea id="details" name="details" rows="5" maxlength="10000" required></textarea>
     <label for="source">Source citation</label><textarea id="source" name="source" rows="3" maxlength="5000" required placeholder="Author, title, date, page, archive, or a link someone else can check"></textarea>
     <label for="source-url">Source link <span class="muted">(if online)</span></label><input id="source-url" name="source_url" type="url" placeholder="https://…">
@@ -1355,9 +1366,9 @@ await out('contribute/index.html', layout({ rel: '../', title: 'Contribution des
     <label for="orcid">ORCID iD <span class="muted">(optional)</span></label><input id="orcid" name="orcid" maxlength="19" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]" placeholder="0000-0000-0000-0000">
     <div class="form-trap" aria-hidden="true"><label>Leave this blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
     <label class="consent"><input type="checkbox" name="consent" value="CC BY 4.0; no private information about living people" required><span>I agree that my contribution may be published under CC BY 4.0, and it contains no private information about living people.</span></label>
-    <p class="delivery-note">${contributionEndpoint ? 'Your suggestion will be sent to the project’s configured form inbox for editorial review. It will not be published automatically.' : 'Online delivery is not connected yet. You can download your suggestion as a text file to share with an editor. Downloading does not send it to the project.'}</p>
-    <button class="btn" type="submit">${contributionEndpoint ? 'Send for review ↗' : 'Download your suggestion ↓'}</button><p id="contribution-status" role="status" aria-live="polite"></p><noscript><p>${contributionEndpoint ? 'This form works without JavaScript.' : 'Downloading requires JavaScript. You can instead use one of the GitHub forms listed here.'}</p></noscript>
-  </form><aside class="contribution-aside"><p class="kicker">From discovery to record</p><ol class="review-steps"><li><strong>You share a lead.</strong><p>Tell us what you found and where you found it. You do not need to know the data format.</p></li><li><strong>An editor checks the source.</strong><p>We review the evidence, dates, location, and any existing records.</p></li><li><strong>The atlas grows.</strong><p>Accepted discoveries become cited records, with your chosen credit.</p></li></ol><div class="desk-note"><h2>Bring a source, not certainty.</h2><p>Conflicting dates and incomplete information are part of historical research. Tell us what is uncertain; we can work from there.</p></div><details><summary>Prefer contributing on GitHub?</summary><ul>${[['add-site','Place, school, bakery, hotel, restaurant, business or bookstore'],['add-cemetery','Cemetery'],['add-person','Person'],['add-congregation','Congregation'],['correction','Correction']].map(([id,label])=>`<li><a href="https://github.com/${esc(cfg.contribute.repo)}/issues/new?template=${id}.yml">${label} issue form</a></li>`).join('')}</ul><p class="small">GitHub forms require a GitHub account and are public.</p></details></aside></div></div>` }));
+
+    <button class="btn" type="submit"${contributionEndpoint ? '' : ' disabled'}>${contributionEndpoint ? 'Send for review ↗' : 'Download your suggestion ↓'}</button><p id="contribution-status" role="status" aria-live="polite"></p><noscript><p>${contributionEndpoint ? 'This form works without JavaScript.' : 'Downloading requires JavaScript. You can instead use one of the GitHub forms listed here.'}</p></noscript>
+  </form><aside class="contribution-aside"><p class="kicker">From discovery to record</p><ol class="review-steps"><li><strong>You share a lead.</strong><p>Tell us what you found and where you found it. You do not need to know the data format.</p></li><li><strong>An editor checks the source.</strong><p>We review the evidence, dates, location, and any existing records.</p></li><li><strong>The atlas grows.</strong><p>Accepted discoveries become cited records, with your chosen credit.</p></li></ol><div class="desk-note"><h2>Document the uncertainty</h2><p>Conflicting dates and incomplete information are part of historical research. Tell us what is uncertain; we can work from there.</p></div><details><summary>Prefer contributing on GitHub?</summary><ul>${[['add-site','Place, school, bakery, hotel, restaurant, business or bookstore'],['add-cemetery','Cemetery'],['add-person','Person'],['add-congregation','Congregation'],['correction','Correction']].map(([id,label])=>`<li><a href="https://github.com/${esc(cfg.contribute.repo)}/issues/new?template=${id}.yml">${label} issue form</a></li>`).join('')}</ul><p class="small">GitHub forms require a GitHub account and are public.</p></details></aside></div></div>` }));
 
 await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `${BASE}about/`, current: 'about/',
   description: 'Scope, methods, data model, sources and how to cite or contribute to Kehillot.',
@@ -1424,7 +1435,7 @@ await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `$
   <h2 id="sources">Principal sources</h2>
   <ol class="sources">${[...data.source].sort((a, b) => a.author.localeCompare(b.author)).map((s) => `<li>${citationText(s)}</li>`).join('')}</ol>
   <h2>Credits</h2>
-  <p>Basemap © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/attributions">CARTO</a>. Mapping with <a href="https://leafletjs.com/">Leaflet</a>.</p>
+  <p>Basemap © <a href="https://www.esri.com/">Esri</a> and contributors. Mapping with <a href="https://leafletjs.com/">Leaflet</a>.</p>
 </div>` }));
 
 function modelDiagram() {
@@ -1462,7 +1473,7 @@ await out('vocab/index.html', layout({ rel: '../', title: 'Vocabulary', canonica
   <p class="lede">Namespace <code>${esc(BASE)}vocab/#</code> (prefix <code>kh:</code>). Machine-readable: <a href="index.jsonld">index.jsonld</a>.</p>
   <h2 id="Congregation">Class: kh:Congregation</h2><p>A Jewish religious congregation (<i>kahal</i>), distinct from the building in which it worshipped. Subclass of <code>schema:Organization</code>.</p>
   <h2>Properties</h2><dl class="vocab-props">${vocabGraph.filter((n) => n['@type'] === 'rdf:Property').map((n) => `<div id="${n['@id'].slice(3)}"><dt><code>${n['@id']}</code></dt><dd>${esc(n['rdfs:label'])}</dd></div>`).join('')}</dl>
-  ${Object.entries(VOCAB).map(([scheme, v]) => `<h2 id="${scheme}">Concept scheme: ${esc(v.label)}</h2><dl class="vocab-props">${Object.entries(v.concepts).map(([k, [l, d]]) => `<div id="${scheme}-${k}"><dt><code>kh:${scheme}-${k}</code> — ${esc(l)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>`).join('')}
+  ${Object.entries(VOCAB).map(([scheme, v]) => `<h2 id="scheme-${scheme}">Concept scheme: ${esc(v.label)}</h2><dl class="vocab-props">${Object.entries(v.concepts).map(([k, [l, d]]) => `<div id="${scheme}-${k}"><dt><code>kh:${scheme}-${k}</code> — ${esc(l)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>`).join('')}
   </div>` }));
 
 await out('404.html', layout({ rel: BASE, title: 'Not found', canonical: `${BASE}404.html`, description: 'Page not found.',
@@ -1541,8 +1552,8 @@ function cityEntries(placeId, rel) {
         .concat((s.proprietors || s.people || []).map((p) => link(rel, 'person', p, nameOf('person', p))))
       : (s.owners || []).map((o) => link(rel, 'congregation', o, nameOf('congregation', o)));
     const evs = e.type === 'site' ? eventsBySite.get(s.id) || [] : [];
-    return { ...e, pics, html: `<li class="entry" id="e-${s.id}" data-id="${s.id}" data-kind="${e.kind}" data-group="${KIND_GROUP(e.kind)}" data-lat="${s.lat}" data-lon="${s.lon}" data-from="${e.from || ''}" data-to="${e.type === 'cemetery' ? '' : e.to || ''}" data-precision="${s.precision}" data-pics="${pics.length}">
-      <button type="button" class="entry-head" aria-expanded="false"><span class="entry-sym" title="${esc(SYM.label(e.kind))}">${SYM.svg(e.kind, { size: 18, approx: s.precision === 'approximate' })}</span><span class="entry-name">${esc(s.name)}</span><span class="entry-years">${e.from ? span(e.from, e.to) : ''}</span></button>
+    return { ...e, pics, html: `<li class="entry" id="e-${s.id}" data-id="${s.id}" data-type="${e.type}" data-entity-uri="${esc(uri(e.type,s.id))}" data-record-url="${esc(docUri(e.type,s.id))}" data-kind="${e.kind}" data-group="${KIND_GROUP(e.kind)}" data-lat="${s.lat}" data-lon="${s.lon}" data-from="${e.from || ''}" data-to="${e.type === 'cemetery' ? '' : e.to || ''}" data-precision="${s.precision}" data-pics="${pics.length}">
+      <span id="stop-${e.type}-${s.id}" class="stop-anchor" aria-hidden="true"></span><button type="button" class="entry-head" aria-expanded="false"><span class="entry-sym" title="${esc(SYM.label(e.kind))}">${SYM.svg(e.kind, { size: 18, approx: s.precision === 'approximate' })}</span><span class="entry-name">${esc(s.name)}</span><span class="entry-years">${e.from ? span(e.from, e.to) : ''}</span></button>
       <div class="entry-body">
         <p class="entry-addr">${esc(s.address)}${s.precision === 'approximate' ? ' <span class="muted">(location approximate)</span>' : ''}</p>
         ${s.note ? `<p>${esc(s.note)}</p>` : ''}
@@ -1550,7 +1561,8 @@ function cityEntries(placeId, rel) {
         ${(s.advertisedIn || []).length ? `<p><span class="entry-label">Advertised in</span> ${s.advertisedIn.map((x) => `<i>${link(rel, 'periodical', x.periodical, nameOf('periodical', x.periodical))}</i>${x.date ? ` ${esc(x.date)}` : ''}`).join('; ')}</p>` : ''}
         ${evs.length ? `<p><span class="entry-label">Here</span> ${evs.map((x) => `${link(rel, 'event', x.id, x.name)} <span class="muted">${formatDate(x.date)}</span>`).join('; ')}</p>` : ''}
         ${pics.length ? `<ul class="entry-thumbs">${pics.slice(0, 6).map((m) => `<li><a href="${rel}media/${m.id}/"><img src="${esc(m.image.square || m.image.thumb)}" alt="${esc(m.title)}" loading="lazy" width="64" height="64"></a></li>`).join('')}${pics.length > 6 ? `<li class="entry-more"><a href="${rel}${docPath(e.type, s.id)}#h-gal-${pics[0].id}">+${pics.length - 6}</a></li>` : ''}</ul>` : ''}
-        <p><a href="${rel}${docPath(e.type, s.id)}">Full record →</a></p>
+        <p class="entry-sources"><span class="entry-label">Sources</span> ${s.sources.map(id => link(rel, 'source', id, index.source.get(id).title.split(':')[0])).join('; ')}</p>
+        <p><a href="${rel}${docPath(e.type, s.id)}">Full record →</a> · <a href="${locateUrl(rel,e.type,s)}">Help locate this place ↗</a></p>
       </div></li>` };
   });
 }
@@ -1610,8 +1622,10 @@ for (const placeId of CITY_IDS) {
   const groups = GROUP_NAMES;
   const counts = Object.fromEntries(groups.map((g) => [g, entries.filter((e) => KIND_GROUP(e.kind) === g).length]));
   const groupIcon = (g) => SYM.svg(SYM.GROUPS.find((x) => x[0] === g)[1][0], { size: 16 });
+  if (C.historicalMap && (!/^https:\/\//.test(C.historicalMap.url || '') || !['{z}','{x}','{y}'].every(token=>C.historicalMap.url.includes(token)) || !C.historicalMap.label || !C.historicalMap.attribution || !/^https:\/\//.test(C.historicalMap.sourceUrl || ''))) throw new Error(`City ${placeId}: historicalMap needs an HTTPS XYZ tile URL, dated label, attribution and HTTPS sourceUrl`);
   const cityData = {
-    tiles: { relief: cfg.basemap, street: cfg.streetmap }, center: [p.lat, p.lon], range: [yMin, yMax],
+    name: p.name, tiles: { relief: cfg.basemap, street: cfg.streetmap }, center: [p.lat, p.lon], range: [yMin, yMax],
+    historicalMap: C.historicalMap || null,
     photos: geoPics.map((m) => ({ id: m.id, title: m.title, lat: m.geo.lat, lon: m.geo.lon, thumb: m.image.square || m.image.thumb, href: `${rel}media/${m.id}/`, date: m.date ? String(m.date).slice(0, 4) : null })),
   };
   const others = [
@@ -1624,30 +1638,49 @@ for (const placeId of CITY_IDS) {
   <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}cities/">City guides</a></li><li aria-current="page">${esc(p.name)}</li></ol></nav>
   <header class="city-head">
     <p class="kicker">City guide · ${esc(p.state)}</p>
-    <h1>${esc(title)}</h1>
+    <h1>${esc(p.name)}</h1>
     <p class="city-counts">${[...groups.filter((g) => counts[g]).map((g) => `${counts[g]} ${counts[g] === 1 ? SYM.label(SYM.GROUPS.find((x) => x[0] === g)[1][0]).toLowerCase() : g.toLowerCase()}`), pics.length && `${pics.length} picture${pics.length === 1 ? '' : 's'} and documents`].filter(Boolean).join(' · ')}</p>
+    <details class="city-background"><summary>About this city &amp; sources</summary>
     ${(C.intro || []).map((t) => `<p class="city-intro">${esc(t)}</p>`).join('')}
     ${C.sources?.length ? `<p class="small muted">Sources: ${C.sources.map((s) => `<i>${link(rel, 'source', s, index.source.get(s).title.split(/[:(]/)[0].trim())}</i>`).join('; ')}. Full records: <a href="${rel}place/${placeId}/">${esc(p.name)}</a>.</p>` : `<p class="small"><a href="${rel}place/${placeId}/">All records for ${esc(p.name)} →</a></p>`}
+  <div class="historical-research"><h3>Historical maps</h3><p>Compare period maps and directories before placing a historical address. Street names, numbering, and shorelines may have changed.</p><ul>${(C.historicalMap ? [{title:C.historicalMap.label,url:C.historicalMap.sourceUrl}] : []).concat(C.mapSources || []).map(m=>`<li><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title)}</a>${m.date ? ` · ${esc(m.date)}` : ''}</li>`).join('')}<li><a href="https://www.davidrumsey.com/view/georeferencer" target="_blank" rel="noopener">Find and compare georeferenced maps at David Rumsey</a></li><li><a href="https://atlascope.leventhalmap.org/" target="_blank" rel="noopener">Atlascope: Boston and Massachusetts city atlases</a></li></ul></div>
+    </details>
   </header>
-  <div class="city-map-actions"><button class="btn btn-small" type="button" id="city-center">City center</button> <button class="btn btn-small btn-ghost" type="button" id="city-fit">Fit all recorded sites</button><span class="small muted"> Modern streets · historical locations; dashed symbols are approximate.</span></div>
+  <div class="city-map-actions"><button class="btn btn-small" type="button" id="tour-launch" disabled>Take a city journey</button><button class="btn btn-small btn-ghost" type="button" id="city-fit">See the whole city</button></div>
   <div class="explorer">
-    <div class="plate explorer-map"><div id="city-map" class="city-map" role="region" aria-label="Map of Jewish sites in ${esc(p.name)}"></div></div>
+    <div class="plate explorer-map"><div id="tour-map-controls" class="tour-map-controls" hidden><button type="button" data-tour-action="prev" aria-label="Previous stop on map">←</button><span id="tour-map-progress"></span><button type="button" data-tour-action="next" aria-label="Next stop on map">→</button><button type="button" data-tour-action="end" aria-label="End city journey on map">×</button></div><div id="tour-map-caption" class="tour-map-caption" hidden></div><div id="city-map" class="city-map" role="region" aria-label="Map of Jewish sites in ${esc(p.name)}"></div></div>
     <section class="explorer-panel" aria-labelledby="h-places">
       <h2 id="h-places" class="visually-hidden">Places on the map</h2>
-      <div class="explorer-controls">
-        ${yMin < yMax ? `<label class="yr"><span>Standing in</span> <output id="city-year-out" for="city-year">${yMax}</output><input type="range" id="city-year" min="${yMin}" max="${yMax}" value="${yMax}" step="1"></label>` : ''}
+      <details class="explorer-controls"><summary>Year &amp; map filters</summary>
+        ${yMin < yMax ? `<label class="yr"><span>Map year</span> <output id="city-year-out" for="city-year">${yMax}</output><input type="range" id="city-year" min="${yMin}" max="${yMax}" value="${yMax}" step="1"></label>` : ''}
         <fieldset class="filters"><legend class="visually-hidden">Show</legend>
           ${groups.filter((g) => counts[g]).map((g) => `<label><input type="checkbox" name="group" value="${g}" checked> <span class="f-sym">${groupIcon(g)}</span>${g} <span class="muted">${counts[g]}</span></label>`).join('')}
           ${geoPics.length ? `<label><input type="checkbox" name="group" value="Pictures" checked> Pictures <span class="muted">${geoPics.length}</span></label>` : ''}
         </fieldset>
         <p id="city-count" class="city-count" aria-live="polite"></p>
         ${groups.some((g) => !counts[g]) ? `<p class="not-yet-recorded">Not yet recorded here: ${groups.filter((g) => !counts[g]).map((g) => `<span class="nyr"><span class="f-sym">${groupIcon(g)}</span>${g.toLowerCase()}</span>`).join(', ')}. <a href="${esc(suggestUrl('add-site', { title: `[Place] … in ${p.name}` }))}">Suggest one</a> · <a href="${rel}about/#contribute">how to contribute</a>.</p>` : ''}
-      </div>
+        <button class="btn btn-small btn-ghost" id="city-center" type="button">City center</button>
+      </details>
+      <section class="city-tour" id="journey" aria-labelledby="tour-heading">
+        <p class="kicker">City journey</p><h2 id="tour-heading">${esc(p.name)} · selected stops</h2>
+        <p class="tour-intro">Explore the recorded places in date order. Adjust the year and categories under Map filters.</p>
+        <div class="tour-controls"><button class="btn btn-small" id="tour-start" type="button" disabled>Start city journey</button></div>
+        <p class="tour-progress" id="tour-progress" role="status" aria-live="polite">${entries.length ? 'Loading the city journey…' : 'No address-level stops recorded yet. Explore the subscribers below or help locate a site.'}</p>
+        <div id="tour-active" hidden><h3 id="tour-title"></h3><div class="tour-story" id="tour-story" aria-labelledby="tour-title"></div>
+          <div class="tour-controls"><button class="btn btn-small btn-ghost" id="tour-prev" type="button">← Previous</button><button class="btn btn-small" id="tour-next" type="button">Next stop →</button></div>
+          <div class="tour-share"><button type="button" id="tour-share">Share this stop ↗</button><button id="tour-show-map" type="button">View on map ↑</button><button id="tour-end" type="button" hidden>Exit journey</button><label class="visually-hidden" for="tour-share-url">Link to this stop</label><input id="tour-share-url" type="url" readonly hidden><p id="tour-share-status" class="small" role="status" aria-live="polite"></p></div>
+          <details><summary>All stops</summary><ol class="tour-stop-list" id="tour-stops"></ol></details><details class="tour-data"><summary>Linked data</summary><p><a id="tour-entity-link">Permanent place identifier</a> · <a id="tour-jsonld-link">JSON-LD record</a> · <a href="index.jsonld">Journey metadata</a></p></details>
+        </div>
+      </section>
+      <details class="city-records" id="city-records"><summary>Browse all ${entries.length} mapped places</summary>
       <ol class="entries" id="city-list">${entries.map((e) => e.html).join('')}</ol>
       ${!entries.length ? '<p class="muted">No buildings or cemeteries mapped yet; the pictures below are placed where their holders geotagged them.</p>' : ''}
+      </details>
     </section>
   </div>
+  <p class="map-context">Modern streets · historical locations. Hover over a marker for its name.</p>
   <script type="application/json" id="city-data">${JSON.stringify(cityData).replace(/</g, '\\u003c')}</script>
+  <details class="city-research-sections"><summary>People, subscribers &amp; city history</summary>
   ${congregationMoves(placeId, rel)}
   ${clergySection(placeId, rel)}
   ${educationSection(placeId, rel)}
@@ -1660,11 +1693,23 @@ for (const placeId of CITY_IDS) {
       ${ps.length ? `<section><h2>People</h2>${ul(ps.map((x) => `${link(rel, 'person', x.id, x.name)} <span class="muted">${lifespan(x)}</span>`))}</section>` : ''}
     </div>
   </div>
+</details>
 </div>`;
-  const ld = { '@context': 'https://schema.org', '@type': 'TouristDestination', name: title, url: `${BASE}city/${placeId}/`, about: { '@id': uri('place', placeId) },
-    includesAttraction: entries.map((e) => ({ '@id': uri(e.type, e.r.id), name: e.r.name })) };
+  const cityPage = `${BASE}city/${placeId}/`;
+  const journeyId = `${cityPage}#journey`;
+  const journeyEntries = entries.filter(e => e.r.precision !== 'city').sort((a,b)=>(a.from || Infinity)-(b.from || Infinity)||a.r.name.localeCompare(b.r.name));
+  const ld = { '@context':'https://schema.org', '@graph': [
+    { '@id':cityPage, '@type':'WebPage', name:title, url:cityPage, about:{'@id':uri('place',placeId)}, mainEntity:{'@id':journeyId} },
+    { '@id':journeyId, '@type':'ItemList', name:`Recorded places in ${p.name}, in date order`, mainEntityOfPage:{'@id':cityPage},
+      description:'Address-level records in date order. The interactive journey can filter these records by year and category.',
+      itemListOrder:'https://schema.org/ItemListOrderAscending', numberOfItems:journeyEntries.length,
+      itemListElement:journeyEntries.map((e,i)=>({ '@id':`${cityPage}#stop-${e.type}-${e.r.id}`, '@type':'ListItem', position:i+1,
+        item:{'@id':uri(e.type,e.r.id)}, name:e.r.name,
+        url:`${cityPage}?${new URLSearchParams({year:String(Math.max(Y1,e.from || Y1)),tour:'1',stop:e.r.id})}#journey` })) }
+  ] };
+  await out(`city/${placeId}/index.jsonld`,JSON.stringify(ld,null,2));
   await out(`city/${placeId}/index.html`, layout({ rel, title, description: `${title}: synagogues, cemeteries, pictures and documents on a map${C.intro ? '. ' + C.intro[0] : ''}`.slice(0, 300),
-    canonical: `${BASE}city/${placeId}/`, jsonld: ld, body, current: 'cities/',
+    canonical: cityPage, alternate:`${cityPage}index.jsonld`, jsonld: ld, body, current: 'cities/',
     styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/city.js'] }));
 }
 
@@ -1678,12 +1723,20 @@ for (const place of READ_PLACES.filter(p => !p.own)) {
     const subs = R.subs.filter(s => s[1] === key).sort((a,b)=>(a[2]||0)-(b[2]||0) || String(a[0]).localeCompare(String(b[0])));
     return `<section><h2>${link(rel, 'periodical', paper, nameOf('periodical',paper))}</h2><p>${sourcePlace.n.toLocaleString('en-US')} subscriptions recorded in this locality. Counts represent entries in the source lists, not necessarily distinct people.</p><details class="subs"><summary>List the subscribers (${subs.length})</summary><ol class="subs-list">${subs.map(s=>`<li>${esc(s[0] || 'Unnamed')} <span class="muted">${s[2] || 'undated'}${s[3] && s[3] !== 'I' ? ` · ${esc(TYPE_LABEL[s[3]] || s[3])}` : ''}</span></li>`).join('')}</ol></details>${datasetFor(paper) ? `<p class="small">Source: ${dsCitation(datasetFor(paper))}</p>` : ''}</section>`;
   }).join('');
-  await out(`city/${place.cityId}/index.html`, layout({ rel, title: label, canonical: `${BASE}city/${place.cityId}/`, current: 'cities/',
+  const cityPage = `${BASE}city/${place.cityId}/`;
+  const localityLD = { '@context':'https://schema.org', '@graph': [
+    {'@id':cityPage,'@type':'WebPage',name:label,url:cityPage,about:{'@id':`${cityPage}#locality`},citation:papers.map(p=>datasetFor(p)?.doiUrl).filter(Boolean)},
+    {'@id':`${cityPage}#locality`,'@type':'Place',name:place.name,description:'Locality identified in the source subscriber lists; coordinates identify the locality, not subscriber addresses.',
+      address:[place.state,place.country].filter(Boolean).join(', '),geo:{'@type':'GeoCoordinates',latitude:place.lat,longitude:place.lon},
+      identifier:{'@type':'PropertyValue',propertyID:'Locality key in the source datasets',value:place.k} }
+  ] };
+  await out(`city/${place.cityId}/index.jsonld`,JSON.stringify(localityLD,null,2));
+  await out(`city/${place.cityId}/index.html`, layout({ rel, title: label, alternate:`${cityPage}index.jsonld`, jsonld:localityLD, canonical: `${BASE}city/${place.cityId}/`, current: 'cities/',
     description: `Jewish newspaper subscribers recorded in ${label}, with names, dates and source datasets.`,
     styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/subscriber-city.js'],
-    body: `<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}cities/">Cities and towns</a></li><li aria-current="page">${esc(place.name)}</li></ol></nav><header class="city-head"><p class="kicker">A place in the subscriber lists</p><h1>${esc(place.name)}</h1><p class="lede">${esc(place.state || '')}${place.state && place.country ? ' · ' : ''}${esc(place.country || '')}</p><p>${subscriptionCount(place).toLocaleString('en-US')} subscriptions across ${papers.length} newspaper${papers.length === 1 ? '' : 's'}.</p></header>
+    body: `<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}cities/">Cities and towns</a></li><li aria-current="page">${esc(place.name)}</li></ol></nav><header class="city-head" id="locality"><p class="kicker">Subscriber locality</p><h1>${esc(place.name)}</h1><p class="lede">${esc(place.state || '')}${place.state && place.country ? ' · ' : ''}${esc(place.country || '')}</p><p>${subscriptionCount(place).toLocaleString('en-US')} subscriptions across ${papers.length} newspaper${papers.length === 1 ? '' : 's'}.</p></header>
     <div class="plate"><div id="subscriber-city-map" class="city-map subscriber-city-map" role="region" aria-label="Street map of ${esc(label)}"></div></div><p class="section-note">The marker identifies the locality recorded in the source, not a subscriber’s home or business address. Modern streets provide context. No congregation or institution is inferred from a subscription.</p>
-    <p class="cta"><a class="btn btn-small" href="${rel}subscribers/#place=${encodeURIComponent(place.k)}">See this place on the subscriber map ↗</a><a class="btn btn-small btn-ghost" href="${esc(suggestUrl('add-site',{title:`[Place] ${place.name}`}))}">Add a sourced local site</a></p>
+    <p class="cta"><a class="btn btn-small btn-ghost" href="${rel}contribute/?type=location&amp;record=${encodeURIComponent(`${BASE}city/${place.cityId}/`)}&amp;title=${encodeURIComponent(place.name)}&amp;place=${encodeURIComponent(label)}&amp;lat=${place.lat}&amp;lon=${place.lon}">Help locate a historical address ↗</a><a class="btn btn-small" href="${rel}subscribers/#place=${encodeURIComponent(place.k)}">See this place on the subscriber map ↗</a><a class="btn btn-small btn-ghost" href="${esc(suggestUrl('add-site',{title:`[Place] ${place.name}`}))}">Add a sourced local site</a></p>
     ${rows}${place.qid ? `<p class="small">Source locality identifier: <a href="https://www.wikidata.org/wiki/${esc(place.qid)}">${esc(place.qid)}</a>.</p>` : ''}</div>
     <script type="application/json" id="subscriber-city-data">${jsonForScript({lat:place.lat,lon:place.lon,tiles:cfg.streetmap})}</script>` }));
 }
@@ -1696,22 +1749,24 @@ const cityCards = CITY_IDS.map((id) => {
   const cover = pics.find((m) => m.feature) || pics[0];
   return { id, p, n, pics, cover, score: n * 3 + pics.length };
 }).filter(c => c.n || c.pics.length).sort((a, b) => b.score - a.score);
-await out('cities/index.html', layout({ rel: '../', title: 'Cities and towns', canonical: `${BASE}cities/`, current: 'cities/',
+await out('cities/index.html', layout({ rel: '../', title: 'City guides', canonical: `${BASE}cities/`, current: 'cities/',
   description: 'Explore Jewish sites city by city: synagogues, cemeteries and other places on street maps, with pictures and documents from libraries and museums.',
   scripts: ['assets/js/city-directory.js'],
-  body: `<div class="wrap"><h1>Cities and towns</h1>
-  <p class="lede">Find a place through its buildings, communal life, or newspaper subscribers. Every locality in the subscriber datasets is included, even where no congregation has yet been recorded.</p>
-  <p class="section-note">Subscriber places come from the deposited lists, including towns and places outside the United States. A subscription is evidence of readership, not proof of a congregation or an exact street address.</p>
+  body: `<div class="wrap"><h1>City guides</h1>
+  <p class="lede">Search for a city to open its guide, or choose a mapped city below.</p>
+  <form id="guide-open-form" class="guide-open-form"><label for="guide-city">Which city?</label><div><input id="guide-city" type="search" list="guide-city-choices" placeholder="New York, Cincinnati, San Francisco…" required autocomplete="off" disabled><datalist id="guide-city-choices"></datalist><button class="btn" type="submit" disabled>Open city guide ↗</button></div><p id="guide-open-status" class="small" role="status" aria-live="polite">Choose from all recorded cities and subscriber localities.</p><ul id="guide-matches" class="guide-matches" hidden></ul></form>
 
-  <section class="locality-directory"><h2>All recorded places</h2><label for="locality-search">Find a city, town, state, or country</label><input id="locality-search" type="search" placeholder="Search all recorded places…" autocomplete="off"><p id="locality-count" role="status">${data.place.length + READ_PLACES.filter(p=>!p.own).length} places</p>
-  <div class="table-wrap"><table id="locality-table"><thead><tr><th scope="col">Place</th><th scope="col">State or country</th><th scope="col">Evidence recorded</th></tr></thead><tbody>
-  ${[...data.place.map(p=>({id:p.id,name:p.name,region:p.state,sites:(siteByPlace.get(p.id)||[]).length+(cemByPlace.get(p.id)||[]).length, subscriptions:readersFor(p.id).reduce((n,x)=>n+x.n,0),guide:CITY_IDS.includes(p.id)})),...READ_PLACES.filter(p=>!p.own).map(p=>({id:p.cityId,name:p.name,region:[p.state,p.country].filter(Boolean).join(' · '),sites:0,subscriptions:subscriptionCount(p),guide:true}))].sort((a,b)=>a.name.localeCompare(b.name)||a.region.localeCompare(b.region)).map(p=>`<tr><th scope="row"><a href="../${p.guide?'city':'place'}/${p.id}/">${esc(p.name)}</a></th><td>${esc(p.region)}</td><td>${[p.sites ? `${p.sites} mapped sites` : '',p.subscriptions ? `${p.subscriptions.toLocaleString('en-US')} subscriptions` : ''].filter(Boolean).join(' · ') || 'Curated place record'}</td></tr>`).join('')}
-  </tbody></table></div><button class="btn btn-small btn-ghost" id="locality-more" type="button" hidden>Show more places</button></section>
+
   <h2>Explore the city guides</h2>
   <ul class="city-cards">${cityCards.map((c) => `<li><a class="city-card" href="../city/${c.id}/">
-    ${c.cover ? `<img src="${esc(c.cover.image.thumb)}" alt="" loading="lazy">` : '<span class="city-card-blank" aria-hidden="true"></span>'}
-    <span class="city-card-body"><strong>${esc(cityConfig[c.id]?.title || `Jewish ${c.p.name}`)}</strong><span class="muted">${esc(c.p.state)}</span>
-    <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ') || `${readersFor(c.id).reduce((n,x)=>n+x.n,0)} subscriptions recorded`}</span></span></a></li>`).join('')}</ul></div>` }));
+    ${c.cover ? `<img src="${esc(c.cover.image.thumb)}" alt="" loading="lazy">` : '<span class="city-card-blank" aria-hidden="true">'+c.n+'<small>mapped places</small></span>'}
+    <span class="city-card-body"><strong>${esc(c.p.name)}</strong><span class="muted">${esc(c.p.state)}</span>
+    <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ') || `${readersFor(c.id).reduce((n,x)=>n+x.n,0)} subscriptions recorded`}</span><span class="guide-open-label">Open city guide ↗</span></span></a></li>`).join('')}</ul>
+  <details class="locality-directory"><summary>Browse all recorded cities and subscriber localities</summary><h2>All recorded places</h2><label for="locality-search">Find a city, town, state, or country</label><input id="locality-search" type="search" placeholder="Search all recorded places…" autocomplete="off"><p id="locality-count" role="status">${data.place.length + READ_PLACES.filter(p=>!p.own).length} places</p>
+  <div class="table-wrap"><table id="locality-table"><thead><tr><th scope="col">Place</th><th scope="col">State or country</th><th scope="col">Evidence recorded</th></tr></thead><tbody>
+  ${[...data.place.map(p=>({id:p.id,name:p.name,region:p.state,sites:(siteByPlace.get(p.id)||[]).length+(cemByPlace.get(p.id)||[]).length, subscriptions:readersFor(p.id).reduce((n,x)=>n+x.n,0),guide:CITY_IDS.includes(p.id)})),...READ_PLACES.filter(p=>!p.own).map(p=>({id:p.cityId,name:p.name,region:[p.state,p.country].filter(Boolean).join(' · '),sites:0,subscriptions:subscriptionCount(p),guide:true}))].sort((a,b)=>a.name.localeCompare(b.name)||a.region.localeCompare(b.region)).map(p=>`<tr><th scope="row"><a href="../${p.guide?'city':'place'}/${p.id}/">${esc(p.name)}</a></th><td>${esc(p.region)}</td><td>${[p.sites ? `${p.sites} mapped sites` : '',p.subscriptions ? `${p.subscriptions.toLocaleString('en-US')} subscriptions` : ''].filter(Boolean).join(' · ') || 'Curated place record'}</td></tr>`).join('')}
+  </tbody></table></div><button class="btn btn-small btn-ghost" id="locality-more" type="button" hidden>Show more places</button></details>
+</div>` }));
 
 
 
@@ -1770,7 +1825,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'Cities and towns', c
     });
     return { id: p.id, name: p.name, href: docPath('person', p.id), titles: clergyTitles(p).map((t) => conceptLabel('clergyTitle', t)), stops };
   }).filter((j) => j.stops.length >= 2);
-  await out('data/features.json', JSON.stringify({ range, features: FEATURES.map(({ id, symbol, label, blurb }) => ({ id, symbol, label, blurb, count: counts[id] })), items, journeys }));
+  await out('data/features.json', JSON.stringify({ range, cityGuides: CITY_IDS, features: FEATURES.map(({ id, symbol, label, blurb }) => ({ id, symbol, label, blurb, count: counts[id] })), items, journeys }));
 
   const mapPage = async (slug, title, featureIds, intro, opts = {}) => {
     const rel = slug === 'all' ? '../../' : '../../';
@@ -1778,41 +1833,27 @@ await out('cities/index.html', layout({ rel: '../', title: 'Cities and towns', c
     const F0 = FEATURES.find((f) => f.id === featureIds[0]);
     const n = featureIds.reduce((a, id) => a + counts[id], 0);
     const body = `<div class="atlas wrap fmap">
-  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}maps/">Maps</a></li><li aria-current="page">${esc(title)}</li></ol></nav>
+  <header class="page-head"><h1>${esc(multi ? 'Explore the map' : F0.label)}</h1><p>${esc(intro)}</p></header>
+  <div class="map-switcher"><label for="map-view">Show</label> <select id="map-view" data-map-switch><option value="${rel}maps/all/"${multi?' selected':''}>All features</option>${FEATURES.map(F=>`<option value="${rel}maps/${F.id}/"${!multi&&F.id===F0.id?' selected':''}>${esc(F.label)}${counts[F.id] ? '' : ' (none recorded yet)'}</option>`).join('')}</select></div>
   ${cityNavigator(rel)}
-  <div class="plate">
-    <div id="fmap" class="atlas-map" role="region" aria-label="Map: ${esc(title)}"></div>
-    <div class="cartouche">
-      <p class="c-small">A Map of</p>
-      <h1>${esc(title)}</h1>
-      <p class="c-small">in the United States, ${Y0}–${Y1}</p>
-      <p id="fm-summary" class="c-sum" aria-live="polite"></p>
-    </div>
-    ${multi ? `<fieldset class="map-key fm-key"><legend>Explanation</legend>${featureIds.map((id) => { const F = FEATURES.find((f) => f.id === id); return `<label${counts[id] ? '' : ' class="fm-empty"'}><input type="checkbox" name="feature" value="${id}"${counts[id] ? ' checked' : ''}><span class="f-sym">${SYM.svg(F.symbol, { size: 14 })}</span>${esc(F.label)} <span class="muted">${counts[id] || 'none yet'}</span></label>`; }).join('')}</fieldset>` : ''}
-    ${!n ? `<div class="fm-none"><p><span class="f-sym">${SYM.svg(F0.symbol, { size: 22 })}</span> No ${esc(F0.label.toLowerCase())} recorded yet.</p><p class="small">This map fills in automatically as records are added. <a href="${esc(suggestUrl(({ education: 'education', 'matzah-bakeries': 'matzah-bakery', lodging: 'lodging', 'kosher-restaurants': 'kosher-restaurant', businesses: 'business', bookstores: 'bookstore', synagogues: 'synagogue', cemeteries: 'add-cemetery', clergy: 'add-person', congregations: 'add-congregation', societies: 'add-institution', periodicals: 'add-periodical', events: 'add-event' }[F0.id] || 'add-site'), { title: `${F0.id === 'cemeteries' ? '[Cemetery]' : F0.id === 'clergy' ? '[Person]' : F0.id === 'congregations' ? '[Congregation]' : '[Place]'} ` }))}">Suggest the first one</a> · <a href="${rel}about/#collecting">what we're collecting</a>.</p></div>` : ''}
-  </div>
-  ${opts.journeys ? `<div class="fm-journeys">
-    <label><input type="checkbox" id="fm-jr"> Show journeys between pulpits</label>
-    <label class="fm-jr-who">for <select id="fm-jr-who"><option value="">everyone who moved (${journeys.length})</option>${journeys.map((j) => `<option value="${j.id}">${esc(j.name)} (${j.stops.length} pulpits${new Set(j.stops.map((x) => x.place)).size === 1 ? ', one city' : ''})</option>`).join('')}</select></label>
-    <div id="fm-itinerary" class="fm-itinerary" aria-live="polite"></div></div>` : ''}
-  <div class="timeline readers-time">
-    <label class="r-yr">From <input type="range" id="fm-from" min="${range[0]}" max="${range[1]}" value="${range[0]}"> <output id="fm-from-out">${range[0]}</output></label>
-    <label class="r-yr">to <input type="range" id="fm-to" min="${range[0]}" max="${range[1]}" value="${range[1]}"> <output id="fm-to-out">${range[1]}</output></label>
-  </div>
-  <section class="gazetteer" aria-labelledby="fm-list-h">
-    <h2 id="fm-list-h">${multi ? 'Everything on the Map' : `List of ${esc(F0.label)}`}</h2>
-    <p class="gaz-note">${esc(intro)} City-level records sit at the city's centre; buildings and cemeteries sit at their addresses. Undated records always show.</p>
-    <label class="fm-search">Filter <input type="search" id="fm-q" placeholder="Name, place…" autocomplete="off"></label>
-    <ol id="fm-list" class="fm-list"></ol>
-  </section>
+  <details class="map-filter-panel"><summary>Layers, dates &amp; filters</summary>
+    ${multi ? `<fieldset class="map-key fm-key"><legend>Show on the map</legend>${featureIds.map(id=>{const F=FEATURES.find(f=>f.id===id);return `<label${counts[id]?'':' class="fm-empty"'}><input type="checkbox" name="feature" value="${id}"${counts[id]?' checked':''}><span class="f-sym">${SYM.svg(F.symbol,{size:14})}</span>${esc(F.label)} <span class="muted">${counts[id]||'none yet'}</span></label>`;}).join('')}</fieldset>` : ''}
+    <div class="timeline readers-time"><label class="r-yr">From <input type="range" id="fm-from" min="${range[0]}" max="${range[1]}" value="${Y0}"> <output id="fm-from-out">${Y0}</output></label><label class="r-yr">to <input type="range" id="fm-to" min="${range[0]}" max="${range[1]}" value="${Y1}"> <output id="fm-to-out">${Y1}</output></label></div>
+    <label class="fm-search">Find a record on this map <input type="search" id="fm-q" placeholder="Name or place…" autocomplete="off"></label><button class="btn btn-small btn-ghost" id="fm-reset" type="button">Reset map filters</button>
+  </details>
+  ${opts.journeys ? `<details class="map-filter-panel"><summary>Follow clergy journeys</summary><div class="fm-journeys"><label><input type="checkbox" id="fm-jr"> Show journeys between pulpits</label><label class="fm-jr-who">for <select id="fm-jr-who"><option value="">everyone who moved (${journeys.length})</option>${journeys.map(j=>`<option value="${j.id}">${esc(j.name)} (${j.stops.length} pulpits)</option>`).join('')}</select></label><div id="fm-itinerary" class="fm-itinerary" aria-live="polite"></div></div></details>` : ''}
+  ${!n?`<p class="empty-state">No ${esc(F0.label.toLowerCase())} recorded yet. <a href="${esc(suggestUrl(({education:'education','matzah-bakeries':'matzah-bakery',lodging:'lodging','kosher-restaurants':'kosher-restaurant',businesses:'business',bookstores:'bookstore',synagogues:'synagogue',cemeteries:'add-cemetery',clergy:'add-person',congregations:'add-congregation',societies:'add-institution',periodicals:'add-periodical',events:'add-event'}[F0.id]||'add-site'),{title:F0.label}))}">Suggest a sourced addition →</a></p>`:''}
+  <div class="plate"><div id="fmap" class="atlas-map" role="region" aria-label="Map: ${esc(title)}"></div></div>
+  <p id="fm-summary" class="map-summary" aria-live="polite"></p><p class="map-context">Modern street context. Records without an address are placed at the city center; approximate locations are marked with dashed symbols.</p>
+  <details class="map-record-list"><summary id="fm-list-h">Browse the records on this map</summary><ol id="fm-list" class="fm-list"></ol></details>
 </div>
-<script type="application/json" id="fm-config">${JSON.stringify({ features: featureIds, journeys: !!opts.journeys, tiles: { relief: cfg.basemap, street: cfg.streetmap } }).replace(/</g, '\\u003c')}</script>
-<noscript><div class="wrap"><p>The map needs JavaScript. Every record is also listed on <a href="${rel}browse/">Browse</a>.</p></div></noscript>`;
+<script type="application/json" id="fm-config">${JSON.stringify({features:featureIds,journeys:!!opts.journeys,tiles:{relief:cfg.basemap,street:cfg.streetmap}}).replace(/</g,'\\u003c')}</script>
+<noscript><div class="wrap"><p>The map needs JavaScript. Every record is also listed in <a href="${rel}browse/">Browse</a>.</p></div></noscript>`;
     await out(`maps/${slug}/index.html`, layout({ rel, title, description: `${title}: ${intro}`.slice(0, 300), canonical: `${BASE}maps/${slug}/`, current: 'maps/', body,
       styles: ['assets/vendor/leaflet/leaflet.css', 'assets/vendor/markercluster/MarkerCluster.css'],
       scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/vendor/markercluster/leaflet.markercluster.js', 'assets/js/symbols.js', 'assets/js/city-navigation.js', 'assets/js/featuremap.js'] }));
   };
-  await mapPage('all', 'Jewish America, All Features', FEATURES.map((f) => f.id), 'Every mapped record in Kehillot. Use the Explanation to show or hide each kind of feature.');
+  await mapPage('all', 'Jewish America, All Features', FEATURES.map((f) => f.id), 'Explore recorded places and people. Choose a map view or open the filters to narrow the results.');
   for (const F of FEATURES) await mapPage(F.id, F.label, [F.id], F.blurb, { journeys: F.id === 'clergy' });
 
   // Maps index
@@ -1820,13 +1861,13 @@ await out('cities/index.html', layout({ rel: '../', title: 'Cities and towns', c
   await out('maps/index.html', layout({ rel: '../', title: 'Maps', canonical: `${BASE}maps/`, current: 'maps/',
     description: 'Maps of Jewish America, 1840–1870: a comprehensive map, one map for each kind of feature, the congregations atlas and the map of newspaper subscribers.',
     body: `<div class="wrap"><h1>Maps</h1>
-  <p class="lede">Start with the comprehensive map, or open a map for a single kind of feature. Each map has a year range and a list beside it, and fills in as new records are added.</p>
-  <h2>Comprehensive</h2>
+  <p class="lede">Start with the comprehensive map, or open a map for a single kind of feature. Use City guides to explore one place; use the map controls to compare locations and dates.</p>
+  <h2>Choose a starting point</h2>
   <ul class="map-cards">${card('all/', 'city', 'All features', 'Every mapped record, with each kind of feature as a layer you can switch on and off.', items.length)}
-  ${card('../atlas/', 'congregation', 'Congregations atlas', 'The growth of congregations year by year, tinted by rite, drawn as a period atlas plate.', null)}
+  ${card('../atlas/', 'congregation', 'Congregations over time', 'See congregations year by year and compare their founding rites.', null)}
   ${card('../subscribers/', 'periodical', 'Subscribers', 'Where subscribers to the Jewish press lived, from the papers\' own lists.', READ_TOTAL)}</ul>
-  <h2>By feature</h2>
-  <ul class="map-cards">${FEATURES.map((F) => card(`${F.id}/`, F.symbol, F.label, F.blurb, counts[F.id])).join('')}</ul>
+  <details class="map-directory-more"><summary>Browse maps by record type</summary>
+  <ul class="map-cards">${FEATURES.map((F) => card(`${F.id}/`, F.symbol, F.label, F.blurb, counts[F.id])).join('')}</ul></details>
   <p class="small"><a href="../cities/">City guides</a> show the same features street by street for a single city.</p></div>` }));
 }
 
@@ -1941,9 +1982,9 @@ await out('cities/index.html', layout({ rel: '../', title: 'Cities and towns', c
   const subSvg = `<svg viewBox="0 0 ${LW} ${LH}" class="viz-svg" role="img" aria-labelledby="sub-t"><title id="sub-t">Subscriptions recorded per year, by paper, ${SY0}–${SY1}</title>${sGrid}${sTicks}${lines}</svg>`;
 
   const body = `<div class="wrap viz-page">
-  <h1>Visualizations</h1>
-  <p class="lede">Ways of seeing the whole dataset at once: who was connected to whom, how congregations changed, where and when clergy served, and how the Jewish press spread.</p>
-  <nav class="toc" aria-label="On this page"><ul><li><a href="#network">Network</a></li><li><a href="#rites">Rites and reform</a></li><li><a href="#decades">Foundings by decade</a></li><li><a href="#tenures">Clergy tenures</a></li><li><a href="#subs">Subscriptions</a></li></ul></nav>
+  <h1>Connections &amp; charts</h1>
+  <p class="lede">Choose a view of the collection. Each chart includes a table of its underlying data.</p>
+  <nav class="toc viz-view-tabs" aria-label="Chart view"><ul><li><a href="#network">Network</a></li><li><a href="#rites">Rites and reform</a></li><li><a href="#decades">Foundings by decade</a></li><li><a href="#tenures">Clergy tenures</a></li><li><a href="#subs">Subscriptions</a></li></ul></nav>
 
   <section id="network" class="viz-block" aria-labelledby="net-h">
     <h2 id="net-h">Network of people and institutions</h2>
