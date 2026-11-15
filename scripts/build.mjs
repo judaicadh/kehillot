@@ -302,12 +302,15 @@ const MEDIA = [];
     const colMeta = col ? mediaCache.collections[col.id] : null;
     MEDIA.push({
       ...m, id: key,
-      title: untitled ? col?.untitled || 'Untitled item' : m.title,
+      title: untitled ? (col?.captionPrefix ? `${col.captionPrefix} ${(m.title.match(/[-_](\d+(?:_\d+)?)\.\w+$/)||[])[1] || ''}`.trim() : col?.untitled || 'Untitled item') : m.title,
+      displayDate: col?.displayDate || null,
+      photographer: col?.photographer || null,
+      contextLabel: col?.contextLabel || null,
       identifier: untitled ? m.title.replace(/\.\w+$/, '') : (m.description.match(/\[([^\]]+)\]\s*$/) || [])[1] || m.identifier || null,
       description: (m.description || '').replace(/\s*\[[^\]]+\]\s*$/, ''),
       about, places, feature: !!own?.feature,
       holder: own?.holder || col?.holder || m.creator, holderUrl: own?.holderUrl || col?.holderUrl || m.creatorUrl,
-      collection: col ? { id: col.id, title: colMeta.title, url: col.url, description: colMeta.description, identifier: col.identifier } : null,
+      collection: col ? { id: col.id, title: colMeta.title, url: col.url, description: colMeta.description, identifier: col.identifier, cityGuides:col.cityGuides || [] } : null,
       dateNote: col?.dateNote || null,
       licenseLabel: /rightsstatements\.org\/vocab\/NoC-US/.test(m.license) ? 'No Copyright – United States' : /rightsstatements\.org\/vocab\/InC/.test(m.license) ? 'In Copyright' : m.license,
     });
@@ -409,9 +412,17 @@ function periodicalReadership(rel, paper) {
 
 const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || readersFor(p.id).length).map((p) => p.id);
 
+const ALL_GUIDES = new Map([...data.place.map(p=>[p.id,p.name]),...READ_PLACES.filter(p=>!p.own).map(p=>[p.cityId,p.name])]);
+for (const col of mediaConfig.collections || []) for(const id of col.cityGuides || []) if(!ALL_GUIDES.has(id)) throw new Error(`Unknown collection city guide: ${col.id}/${id}`);
+const collectionUri = id => `${BASE}collections/${id}/#this`;
+function cityCollections(id,rel) {
+  const cols=(mediaConfig.collections || []).filter(c=>(c.cityGuides || []).includes(id));
+  if(!cols.length)return '';
+  return `<section class="city-collections"><h2>Pictures &amp; archival collections</h2><p class="small muted">Related source collections may contain later documentation. Collection dates do not establish dates for every item.</p><ul class="related">${cols.map(c=>`<li><a href="${rel}collections/${c.id}/">${esc(mediaCache.collections[c.id].title)}</a><br><span class="small muted">${esc(c.contextLabel || '')}</span></li>`).join('')}</ul></section>`;
+}
 const sourceName = (m) => (m.source === 'iiif' ? (m.holder || 'the holder') : 'Flickr');
 const rightsLink = (m) => (m.licenseUrl ? `<a href="${esc(m.licenseUrl)}" rel="license">${esc(m.licenseLabel)}</a>` : esc(m.licenseLabel));
-const thumbFig = (m, rel, cls = '') => `<li class="thumb ${cls}"><a href="${rel}media/${m.id}/"><img src="${esc(m.image.thumb)}" alt="${esc(m.title)}" loading="lazy" decoding="async"${m.image.width && m.image.height ? ` width="${Math.min(320, m.image.width)}" height="${Math.round(Math.min(320, m.image.width) * m.image.height / m.image.width)}"` : ''}><span class="thumb-cap">${esc(m.title)}${m.date ? ` <span class="muted">${esc(String(m.date).slice(0, 4))}</span>` : ''}</span></a></li>`;
+const thumbFig = (m, rel, cls = '') => `<li class="thumb ${cls}"><a href="${rel}media/${m.id}/"><img src="${esc(m.image.thumb)}" alt="${esc(m.title)}" loading="lazy" decoding="async"${m.image.width && m.image.height ? ` width="${Math.min(320, m.image.width)}" height="${Math.round(Math.min(320, m.image.width) * m.image.height / m.image.width)}"` : ''}><span class="thumb-cap">${esc(m.title)}${m.date || m.displayDate ? ` <span class="muted">${m.displayDate ? `Photographed ${esc(m.displayDate)}` : `Holder date: ${esc(String(m.date).slice(0, 4))}`}</span>` : ''}</span></a></li>`;
 function gallery(rel, items, { heading = 'Pictures and documents', limit = 24, more = '' } = {}) {
   if (!items.length) return '';
   const holders = [...new Set(items.map((m) => m.holder))];
@@ -503,6 +514,8 @@ const CONTEXT = {
   isPartOf: { '@id': 'schema:isPartOf', '@type': '@id' },
   contentLocation: 'schema:contentLocation',
   holderDate: 'kh:holderDate',
+  photographDate: {'@id':'schema:dateCreated','@type':'xsd:gYear'},
+  photographer: 'schema:creator',
   iiifManifest: { '@id': 'kh:iiifManifest', '@type': '@id' },
   iiifService: { '@id': 'kh:iiifImageService', '@type': '@id' },
 };
@@ -1293,6 +1306,7 @@ await out('database/index.html', layout({ rel: '../', title: 'Find a record', ca
   body: `<div class="wrap">
   <h1>Find a record</h1>
   <p class="lede">Search across record types, or narrow to a specific kind. Open a result for its sources and related places.</p>
+  <p class="small"><a href="../collections/">Browse pictures &amp; archival collections →</a> · <a href="../sources/occident/">Read the Occident →</a></p>
   <div class="db" id="db">
     <div class="record-type-control"><label for="record-type">Record type</label><select id="record-type" disabled><option value="all">All record types</option><option value="congregations">Congregations</option><option value="people">People</option><option value="clergy">Clergy</option><option value="cemeteries">Cemeteries</option><option value="sites">Sites and buildings</option><option value="periodicals">Periodicals</option><option value="events">Events</option><option value="institutions">Institutions</option><option value="places">Places</option><option value="sources">Sources</option><option value="media">Pictures and documents</option></select></div>
     <div id="db-panel" role="region" aria-label="Search results">
@@ -1322,7 +1336,7 @@ await out('browse/index.html', layout({ rel: '../', title: 'Browse', canonical: 
   ${browseSection('site', [...data.site].sort(sortName), (r) => `${index.place.get(r.place).name} · ${r.address}`)}
   ${browseSection('periodical', [...data.periodical].sort(sortName), (r) => `${index.place.get(r.place).name} · ${span(r.founded, r.ceased)}`)}
   ${browseSection('event', [...data.event].sort((a, b) => String(a.date).localeCompare(String(b.date))), (r) => formatDate(r.date))}
-  <section id="media" aria-labelledby="h-media"><h2 id="h-media">Pictures and documents <span class="muted">(${MEDIA.length})</span></h2><ul class="browse-list">${MEDIA.map((m) => `<li><a href="../media/${m.id}/">${esc(m.title)}</a> <span class="muted">${esc(m.holder)}${m.identifier ? ` · ${esc(m.identifier)}` : ''}</span></li>`).join('')}</ul></section>
+  <section id="media" aria-labelledby="h-media"><h2 id="h-media"><a href="../collections/">Pictures and documents</a> <span class="muted">(${MEDIA.length})</span></h2><ul class="browse-list">${MEDIA.map((m) => `<li><a href="../media/${m.id}/">${esc(m.title)}</a> <span class="muted">${esc(m.holder)}${m.identifier ? ` · ${esc(m.identifier)}` : ''}</span></li>`).join('')}</ul></section>
   ${browseSection('source', [...data.source].sort((a, b) => (a.author || a.title).localeCompare(b.author || b.title)), (r) => r.author || 'Unsigned / institutional')}
   </div>` }));
 
@@ -1523,12 +1537,29 @@ function mediaNode(m) {
     url: m.page, contentUrl: m.image.full, thumbnailUrl: m.image.thumb,
     license: m.licenseUrl || undefined, creditText: [m.holder, m.attribution].filter(Boolean).join('. '),
     holderDate: m.date ? String(m.date) : undefined,
+    photographDate: m.displayDate || undefined,
+    photographer: m.photographer ? {'@type':'schema:Person',name:m.photographer} : undefined,
     about: m.about.map((a) => uri(a.type, a.id)),
-    isPartOf: m.collection ? m.collection.url : undefined,
+    isPartOf: m.collection ? collectionUri(m.collection.id) : undefined,
     iiifManifest: m.manifest || undefined, iiifService: m.image.service || undefined,
     contentLocation: m.geo ? { '@type': 'schema:Place', geo: { '@type': 'schema:GeoCoordinates', latitude: String(m.geo.lat), longitude: String(m.geo.lon) } } : undefined,
   });
 }
+
+const collections=(mediaConfig.collections || []).filter(c=>mediaCache.collections[c.id]).map(c=>({...c,metadata:mediaCache.collections[c.id],items:MEDIA.filter(m=>(mediaCache.collections[c.id].photos || []).includes(m.requestedUrl))}));
+for (const c of collections) {
+  const rel='../../', page=`${BASE}collections/${c.id}/`;
+  if(c.expectedPhotoCount && c.items.length !== c.expectedPhotoCount) throw new Error(`Incomplete collection ${c.id}: ${c.items.length} of ${c.expectedPhotoCount} photos cached`);
+  const ld={'@context':'https://schema.org','@graph':[
+    {'@id':page,'@type':'CollectionPage',name:c.metadata.title,url:page,mainEntity:{'@id':collectionUri(c.id)}},
+    {'@id':collectionUri(c.id),'@type':'Collection',name:c.metadata.title,url:c.url,description:c.summary || c.dateNote || 'Linked photographs and documents from the source collection.',provider:{'@type':'Organization',name:c.holder,url:c.holderUrl},hasPart:c.items.map(m=>({'@id':uri('media',m.id)})),about:(c.about||[]).map(a=>({'@id':uri(a.type,a.id)}))}
+  ]};
+  await out(`collections/${c.id}/index.jsonld`,JSON.stringify(ld,null,2));
+  await out(`collections/${c.id}/index.html`,layout({rel,title:c.metadata.title,description:c.summary || c.metadata.title,canonical:page,alternate:'index.jsonld',jsonld:ld,current:'database/',body:`<div class="wrap"><nav class="crumbs"><a href="../">Pictures &amp; archives</a> / Collection</nav><header class="record-head"><p class="kicker">${esc(c.holder)}</p><h1>${esc(c.metadata.title)}</h1>${c.contextLabel ? `<p class="collection-context">${esc(c.contextLabel)}</p>` : ''}<p class="lede">${esc(c.summary || c.dateNote || '')}</p><p>${c.items.length} linked ${c.items.length === 1 ? 'item' : 'items'} · <a href="${esc(c.url)}">View original album on Flickr ↗</a></p>${c.dateNote ? `<details><summary>How to read these dates</summary><p class="small">${esc(c.dateNote)}</p></details>` : ''}<p class="small">Each item retains its source caption and rights statement. Images are shown from the source image service.</p>${(c.cityGuides||[]).length ? `<p>${c.cityGuides.map(id=>`<a class="btn btn-small btn-ghost" href="${rel}city/${id}/">Open ${esc(ALL_GUIDES.get(id))} guide →</a>`).join(' ')}</p>` : ''}</header>${gallery(rel,c.items,{heading:'Items in this collection',limit:c.items.length})}<p class="data-links"><a href="index.jsonld">Collection linked data (JSON-LD)</a></p></div>`}));
+}
+const collectionListLD={'@context':'https://schema.org','@type':'CollectionPage','@id':`${BASE}collections/`,name:'Pictures & archives',hasPart:collections.map(c=>({'@id':collectionUri(c.id)}))};
+await out('collections/index.jsonld',JSON.stringify(collectionListLD,null,2));
+await out('collections/index.html',layout({rel:'../',title:'Pictures & archives',description:'Browse photographs, family papers, synagogue records and business documents, with original captions and rights information.',canonical:`${BASE}collections/`,alternate:'index.jsonld',jsonld:collectionListLD,current:'database/',scripts:['assets/js/collections.js'],body:`<div class="wrap"><header class="page-head"><p class="kicker">Source collections</p><h1>Pictures &amp; archives</h1><p class="lede">Photographs, synagogue records, family papers and business documents from the Magnes Collection.</p><p>Some objects date from 1840–1870; others are later records or photographs that help document these communities. Check the date and rights on each item.</p></header><label for="collection-search">Find a collection, city or subject</label><input id="collection-search" type="search" placeholder="Try Nevada City, invoices, or synagogue"><p id="collection-count" class="small" role="status">${collections.length} collections</p><ul class="collection-grid">${collections.map(c=>`<li class="collection-card" data-collection-search="${esc([c.metadata.title,c.summary,c.contextLabel,...(c.cityGuides||[]).map(id=>ALL_GUIDES.get(id))].join(' ').toLowerCase())}">${c.items[0] ? `<a href="${c.id}/" tabindex="-1" aria-hidden="true"><img src="${esc(c.items[0].image.thumb)}" alt="" loading="lazy" width="110" height="100"></a>` : ''}<div><h2><a href="${c.id}/">${esc(c.metadata.title)}</a></h2><p class="small">${esc(c.contextLabel || 'Source photographs and documents')} · ${c.items.length} ${c.items.length === 1 ? 'item' : 'items'}</p></div></li>`).join('')}</ul><p class="small"><a href="../database/?type=media">Search individual pictures and documents →</a></p></div>`}));
 
 for (const m of MEDIA) {
   const rel = '../../';
@@ -1540,9 +1571,9 @@ for (const m of MEDIA) {
     : `<a class="viewer-img" href="${esc(m.page)}"><img src="${esc(m.image.full)}" alt="${esc(m.title)}"${m.image.width ? ` width="${m.image.width}" height="${m.image.height}"` : ''}></a>`;
   const others = m.collection ? MEDIA.filter((x) => x.collection?.id === m.collection.id && x.id !== m.id) : [];
   const body = `<div class="wrap">
-  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}browse/#media">Pictures and documents</a></li><li aria-current="page">${esc(m.title)}</li></ol></nav>
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}collections/">Pictures &amp; archives</a></li><li aria-current="page">${esc(m.title)}</li></ol></nav>
   <article class="record record-media">
-    <header class="record-head"><p class="kicker">${m.source === 'iiif' ? 'Document or artwork' : 'Photograph'}</p><h1>${esc(m.title)}</h1></header>
+    <header class="record-head"><p class="kicker">${m.source === 'iiif' ? 'Document or artwork' : 'Picture or document'}</p><h1>${esc(m.title)}</h1></header>
     <div class="media-grid">
       <figure class="media-figure">${viewer}
         <figcaption>${m.description ? `${esc(m.description)} ` : ''}<span class="credit">${esc(m.holder)}${m.attribution && !m.attribution.includes(m.holder) ? `. ${esc(m.attribution)}` : ''}. ${rightsLink(m)}.</span></figcaption>
@@ -1550,17 +1581,21 @@ for (const m of MEDIA) {
       <div class="media-meta">
         ${dl([
           ['Depicts / about', depicted.join('<br>')],
-          ['Date', m.date ? `${esc(m.date)}${m.dateNote ? `<br><span class="muted small">${esc(m.dateNote)}</span>` : '<br><span class="muted small">As given by the holder.</span>'}` : ''],
+          ['Photographer', esc(m.photographer || '')],
+          ['Photograph date', m.displayDate ? `${esc(m.displayDate)}<br><span class="small muted">As dated in the Magnes collection description.</span>` : ''],
+          ['Holder’s item date', m.date ? `${esc(m.date)}${m.dateNote ? `<br><span class="muted small">${esc(m.dateNote)}</span>` : '<br><span class="muted small">As given by the holder.</span>'}` : ''],
           ['Holder', m.holderUrl ? `<a href="${esc(m.holderUrl)}">${esc(m.holder)}</a>` : esc(m.holder)],
-          ['Collection', m.collection ? `<a href="${esc(m.collection.url)}">${esc(m.collection.title)}</a>${m.collection.identifier ? ` <span class="muted">(${esc(m.collection.identifier)})</span>` : ''}` : esc(m.collection || '')],
+          ['Collection', m.collection ? `<a href="${rel}collections/${m.collection.id}/">${esc(m.collection.title)}</a>${m.collection.identifier ? ` <span class="muted">(${esc(m.collection.identifier)})</span>` : ''}` : esc(m.collection || '')],
           ['Identifier', esc(m.identifier || '')],
           ['Rights', rightsLink(m)],
           ['Where', m.geo ? `${m.places.map((p) => link(rel, 'place', p, placeLabel(p))).join(', ')} <span class="muted small">(${m.geo.lat.toFixed(5)}, ${m.geo.lon.toFixed(5)}, geotag by holder)</span>` : m.places.map((p) => link(rel, 'place', p, placeLabel(p))).join(', ')],
           ['Original', `<a href="${esc(m.page)}">View at ${esc(sourceName(m))}</a>${m.manifest ? ` · <a href="${esc(m.manifest)}" type="application/ld+json">IIIF manifest</a>` : ''}`],
         ])}
+        ${(m.collection?.cityGuides || []).filter(id=>!m.places.includes(id)).map(id=>`<p><a class="btn btn-small btn-ghost" href="${rel}city/${id}/">Open ${esc(ALL_GUIDES.get(id))} city guide →</a></p>`).join('')}
         ${m.places.filter((p) => CITY_IDS.includes(p)).map((p) => `<p><a class="btn btn-small btn-ghost" href="${rel}city/${p}/">Explore ${esc(index.place.get(p).name)} →</a></p>`).join('')}
       </div>
     </div>
+    ${m.collection ? `<p><a href="${rel}collections/${m.collection.id}/">Browse the full collection in Kehillot →</a></p>` : ''}
     ${others.length ? gallery(rel, others, { heading: `More from “${esc(m.collection.title)}”`, limit: 12, more: `in <a href="${esc(m.collection.url)}">the album</a>` }) : ''}
     <section class="cite"><h2>Cite this item</h2><p class="cite-text">“${esc(m.title)}.” ${esc(m.holder)}${m.identifier ? `, ${esc(m.identifier)}` : ''}. ${esc(m.page)}. Linked in <cite>${esc(cfg.title)}</cite>, <span class="uri">${esc(uri('media', m.id))}</span>.</p>
     <p class="data-links">Machine-readable: <a href="index.jsonld">JSON-LD</a></p></section>
@@ -1729,11 +1764,12 @@ for (const placeId of CITY_IDS) {
   </div>
   <p class="map-context">Modern streets · historical locations. Hover over a marker for its name.</p>
   <script type="application/json" id="city-data">${JSON.stringify(cityData).replace(/</g, '\\u003c')}</script>
-  <details class="city-research-sections"><summary>People, subscribers &amp; city history</summary>
+  <details class="city-research-sections"><summary>People, subscribers, pictures &amp; city history</summary>
   ${congregationMoves(placeId, rel)}
   ${clergySection(placeId, rel)}
   ${educationSection(placeId, rel)}
   ${readersSection(rel, placeId, { names: true })}
+  ${cityCollections(placeId,rel)}
   ${gallery(rel, pics, { heading: 'Pictures and documents', limit: 48 })}
   <div class="city-cols">
     ${cityTimeline(placeId, rel)}
@@ -1786,7 +1822,7 @@ for (const place of READ_PLACES.filter(p => !p.own)) {
     body: `<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}cities/">Cities and towns</a></li><li aria-current="page">${esc(place.name)}</li></ol></nav><header class="city-head" id="locality"><p class="kicker">Subscriber locality</p><h1>${esc(place.name)}</h1><p class="lede">${esc(place.state || '')}${place.state && place.country ? ' · ' : ''}${esc(place.country || '')}</p><p>${subscriptionCount(place).toLocaleString('en-US')} subscriptions across ${papers.length} newspaper${papers.length === 1 ? '' : 's'}.</p></header>
     <div class="plate"><div id="subscriber-city-map" class="city-map subscriber-city-map" role="region" aria-label="Street map of ${esc(label)}"></div></div><p class="section-note">The marker identifies the locality recorded in the source, not a subscriber’s home or business address. Modern streets and optional terrain relief show today’s geography. No congregation or institution is inferred from a subscription.</p>
     <p class="cta"><a class="btn btn-small btn-ghost" href="${rel}contribute/?type=location&amp;record=${encodeURIComponent(`${BASE}city/${place.cityId}/`)}&amp;title=${encodeURIComponent(place.name)}&amp;place=${encodeURIComponent(label)}&amp;lat=${place.lat}&amp;lon=${place.lon}">Help locate a historical address ↗</a><a class="btn btn-small" href="${rel}subscribers/#place=${encodeURIComponent(place.k)}">See this place on the subscriber map ↗</a><a class="btn btn-small btn-ghost" href="${esc(suggestUrl('add-site',{title:`[Place] ${place.name}`}))}">Add a sourced local site</a></p>
-    <details class="research-profile"><summary>Research profile · evidence &amp; gaps</summary><div class="profile-content"><p>This locality is documented by the subscriber lists cited below. Subscription years identify entries in those lists, not a person’s complete residence history.</p><p>Congregations, institutions and specific subscriber addresses are not yet linked to this locality in Kehillot. The map point identifies a locality center; it is not evidence for a home or business location.</p><a href="${rel}sources/occident/?q=${encodeURIComponent(place.name)}">Find reading leads in the Occident archive →</a></div></details>${rows}${place.qid ? `<p class="small">Source locality identifier: <a href="https://www.wikidata.org/wiki/${esc(place.qid)}">${esc(place.qid)}</a>.</p>` : ''}</div>
+    <details class="research-profile"><summary>Research profile · evidence &amp; gaps</summary><div class="profile-content"><p>This locality is documented by the subscriber lists cited below. Subscription years identify entries in those lists, not a person’s complete residence history.</p><p>Congregations, institutions and specific subscriber addresses are not yet linked to this locality in Kehillot. The map point identifies a locality center; it is not evidence for a home or business location.</p><a href="${rel}sources/occident/?q=${encodeURIComponent(place.name)}">Find reading leads in the Occident archive →</a></div></details>${cityCollections(place.cityId,rel)}${rows}${place.qid ? `<p class="small">Source locality identifier: <a href="https://www.wikidata.org/wiki/${esc(place.qid)}">${esc(place.qid)}</a>.</p>` : ''}</div>
     <script type="application/json" id="subscriber-city-data">${jsonForScript({lat:place.lat,lon:place.lon,tiles:cfg.streetmap,terrain:cfg.terrain})}</script>` }));
 }
 

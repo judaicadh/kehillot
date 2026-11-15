@@ -1074,3 +1074,12 @@ main>.wrap>h1, .page-head h1 { font-size:clamp(2rem,3vw,2.7rem); font-weight:500
 .archive-volume li { padding:.4rem 0; scroll-margin-top:6rem; }
 
 .fact-evidence-link { font-size:.75rem; margin-left:.5rem; font-weight:400; white-space:nowrap; }
+
+.collection-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 2rem; padding:0; list-style:none; }
+.collection-card { display:grid; grid-template-columns:110px 1fr; gap:1rem; padding:1.4rem 0; border-top:1px solid var(--rule); }
+.collection-card h2 { font-size:1.15rem; line-height:1.35; margin:0 0 .5rem; }
+.collection-card img { width:110px; height:100px; object-fit:cover; }
+.collection-card p { margin:0; color:var(--muted); }
+.collection-context { color:var(--accent); font-size:.9rem; }
+#collection-search { width:100%; max-width:36rem; }
+@media(max-width:700px){ .collection-grid {grid-template-columns:1fr;} .collection-card{grid-template-columns:85px 1fr;gap:.8rem;} .collection-card img{width:85px;height:85px;} }

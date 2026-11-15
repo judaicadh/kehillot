@@ -15,6 +15,9 @@ import { existsSync } from 'node:fs';
 
 const DATA = new URL('../data/', import.meta.url);
 const UA = 'kehillot-atlas-media/1.0 (static digital humanities site)';
+const albumsOnly = process.argv.includes('--albums-only');
+const skipDatasets = process.argv.includes('--skip-datasets');
+const concurrency = Math.min(3, Math.max(1, Number(process.argv.find(x=>x.startsWith('--concurrency='))?.split('=')[1]) || 1));
 const refresh = process.argv.includes('--refresh');
 const config = JSON.parse(await readFile(new URL('media.json', DATA), 'utf8'));
 const cachePath = new URL('media-cache.json', DATA);
@@ -30,7 +33,7 @@ async function get(url, as = 'text') {
   }
   throw new Error(`Failed to fetch ${url}`);
 }
-const decode = (s) => String(s ?? '').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'").replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim();
+const decode = (s) => String(s ?? '').replace(/&#(?:x([0-9a-f]+)|([0-9]+));/gi, (_, hex, dec) => { const n=parseInt(hex || dec,hex ? 16 : 10); return n>0 && n<=0x10ffff ? String.fromCodePoint(n) : ''; }).replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'").replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim();
 const meta = (html, prop) => decode((html.match(new RegExp(`<meta (?:property|name)="${prop}" content="([^"]*)"`)) || [])[1]);
 
 // ── Flickr ──
@@ -46,7 +49,7 @@ async function flickrPhoto(url) {
   const lon = Number((html.match(/"longitude":(-?[0-9.]+)/) || [])[1]);
   const acc = Number((html.match(/"accuracy":(\d+)/) || [])[1]);
   const taken = (html.match(/"dateTaken":"([0-9-]{10})/) || [])[1];
-  const takenGranularity = Number((html.match(/"dateTakenGranularity":"?(\d+)/) || [])[1] || 0); // 0 exact, 4 month, 6 year, 8 circa
+  const takenGranularity = Number((html.match(/"(?:dateTakenGranularity|takenGranularity)":"?(\d+)/) || [])[1] || 0); // 0 exact, 4 month, 6 year, 8 circa
   const description = meta(html, 'og:description');
   const img = o.url; // _b = 1024px
   return {
@@ -109,22 +112,45 @@ for (const col of config.collections || []) {
   cache.collections[col.id] = { ...(await flickrAlbum(col.url)), fetched: new Date().toISOString().slice(0, 10) };
   await sleep(800);
 }
+for (const col of config.collections || []) {
+  const album=cache.collections[col.id];
+  if (col.photoUrls) {
+    if (col.photoUrls.some(url=>!/^https:\/\/www\.flickr\.com\/photos\/[^/]+\/\d+\/$/.test(url))) throw new Error(`Invalid photo URL in ${col.id}`);
+    album.photos=[...new Set([...album.photos,...col.photoUrls])];
+  }
+  if (col.expectedPhotoCount && album.photos.length !== col.expectedPhotoCount) throw new Error(`Incomplete photo list for ${col.id}: expected ${col.expectedPhotoCount}, found ${album.photos.length}`);
+  album.expectedPhotoCount=col.expectedPhotoCount || album.expectedPhotoCount;
+}
+if (albumsOnly) {
+  await writeFile(cachePath, JSON.stringify(cache, null, 2) + '\n');
+  console.log('Album metadata cached.');
+  process.exit(0);
+}
 const wanted = [
   ...(config.items || []).map((i) => ({ source: i.source, url: i.url })),
   ...Object.values(cache.collections).flatMap((c) => c.photos.map((url) => ({ source: 'flickr', url }))),
 ];
-for (const w of wanted) {
-  if (!refresh && Object.values(cache.items).some((x) => x.requestedUrl === w.url)) continue;
-  process.stdout.write(`  ${w.source} ${w.url} … `);
-  const rec = w.source === 'iiif' ? await iiif(w.url) : await flickrPhoto(w.url);
-  cache.items[rec.key] = { ...rec, requestedUrl: w.url };
-  console.log(rec.title);
-  fetched++;
-  await sleep(800);
+let nextItem = 0, checkpoint = Promise.resolve();
+const uniqueWanted=[...new Map(wanted.map(w=>[w.url,w])).values()];
+async function worker() {
+  while(nextItem < uniqueWanted.length) {
+    const w=uniqueWanted[nextItem++];
+    if (!refresh && Object.values(cache.items).some(x=>x.requestedUrl===w.url)) continue;
+    const rec=w.source==='iiif' ? await iiif(w.url) : await flickrPhoto(w.url);
+    cache.items[rec.key]={...rec,requestedUrl:w.url};
+    console.log(`${++fetched}: ${rec.title}`);
+    checkpoint=checkpoint.then(()=>writeFile(cachePath,JSON.stringify(cache,null,2)+'\n'));
+    await checkpoint;
+    await sleep(800);
+  }
 }
+const workers=await Promise.allSettled(Array.from({length:concurrency},()=>worker()));
+await checkpoint;
+const failure=workers.find(result=>result.status==='rejected');
+if(failure) throw failure.reason;
 // ── Zenodo datasets (subscriber lists → readership) ──
 cache.datasets = cache.datasets || {};
-for (const ds of config.datasets || []) {
+for (const ds of skipDatasets ? [] : config.datasets || []) {
   if (ds.source !== 'zenodo') throw new Error(`Unknown dataset source ${ds.source}`);
   const recId = (ds.url.match(/records\/(\d+)/) || [])[1];
   if (!recId) throw new Error(`Not a Zenodo record URL: ${ds.url}`);
