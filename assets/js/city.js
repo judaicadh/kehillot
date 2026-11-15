@@ -25,6 +25,7 @@
   var map = L.map(mapEl, { scrollWheelZoom: false, zoomSnap: 0.5, maxZoom: C.tiles.street.maxZoom || 18 });
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   var modernLayer = L.tileLayer(C.tiles.street.url, { maxZoom: C.tiles.street.maxZoom || 18, maxNativeZoom:C.tiles.street.maxNativeZoom || C.tiles.street.maxZoom || 18, attribution: C.tiles.street.attribution, className: 'street-tiles' }).addTo(map);
+  KhTerrain(map, C.tiles.terrain, saveView);
   // A historical layer is offered only when an editor has supplied its source and tiles.
   if (C.historicalMap) {
     var historicalLayer = L.tileLayer(C.historicalMap.url, {maxZoom: C.historicalMap.maxZoom || 18, attribution: C.historicalMap.attribution, opacity: 0.75});
@@ -158,6 +159,7 @@
   // Journeys are generated from the visible, dated records, never invented narrative.
   function saveView() {
     var params = new URLSearchParams();
+    if (new URLSearchParams(location.search).get('terrain') === '1') params.set('terrain','1');
     if (yearInput) params.set('year',yearInput.value);
     var chosen=$$('input[name=group]:checked').map(function(input){return input.value;});
     if(chosen.length !== $$('input[name=group]').length) params.set('groups',chosen.join(','));

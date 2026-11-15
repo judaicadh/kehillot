@@ -26,6 +26,7 @@
     const reference = provided && valid(a,b);
     map = L.map(element,{scrollWheelZoom:false}).setView(reference ? [a,b] : [38.5,-92],reference ? 15 : 4);
     const tiles=JSON.parse(element.dataset.tiles);
+    KhTerrain(map, tiles.terrain);
     L.tileLayer(tiles.url,{maxZoom:tiles.maxZoom||18,maxNativeZoom:tiles.maxNativeZoom||18,attribution:tiles.attribution,className:'street-tiles'}).addTo(map);
     L.control.scale({imperial:true,metric:false}).addTo(map);
     if (reference) {

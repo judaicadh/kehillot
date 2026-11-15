@@ -1,6 +1,6 @@
 {
   "title": "Kehillot",
-  "subtitle": "A Digital Atlas of Jewish America, 1840\u20131870",
+  "subtitle": "A Digital Atlas of Jewish America, 1840–1870",
   "baseUrl": "https://judaicadh.github.io/kehillot/",
   "version": "0.1.0",
   "license": {
@@ -31,5 +31,13 @@
     "maxZoom": 18,
     "note": "Quiet street context; the last native level is enlarged at closer zooms. Historical layers are configured separately on city guides.",
     "maxNativeZoom": 16
+  },
+  "terrain": {
+    "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/tile/{z}/{y}/{x}",
+    "attribution": "Terrain: USGS The National Map, 3DEP & GMTED2010",
+    "maxNativeZoom": 16,
+    "maxZoom": 18,
+    "sourceUrl": "https://www.usgs.gov/faqs/what-are-base-map-services-or-urls-used-national-map",
+    "note": "Modern elevation relief; not a reconstruction of nineteenth-century terrain."
   }
 }

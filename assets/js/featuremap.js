@@ -17,6 +17,7 @@
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   var relief = L.tileLayer(CFG.tiles.relief.url, { maxZoom: 18, maxNativeZoom: CFG.tiles.relief.maxZoom || 13, attribution: CFG.tiles.relief.attribution });
   var street = L.tileLayer(CFG.tiles.street.url, { maxZoom: CFG.tiles.street.maxZoom || 18, maxNativeZoom:CFG.tiles.street.maxNativeZoom || CFG.tiles.street.maxZoom || 18, attribution: CFG.tiles.street.attribution, className: 'street-tiles' });
+  KhTerrain(map, CFG.tiles.terrain);
   var grat = L.layerGroup();
   for (var lat = 25; lat <= 50; lat += 5) L.polyline([[lat, -130], [lat, -60]], { className: 'graticule', interactive: false }).addTo(grat);
   for (var lon = -125; lon <= -65; lon += 5) L.polyline([[20, lon], [55, lon]], { className: 'graticule', interactive: false }).addTo(grat);

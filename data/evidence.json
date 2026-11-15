@@ -1,0 +1,29 @@
+{
+  "event/beth-el-buffalo-dedication-1850": {
+    "date": [
+      {
+        "source": "occident-1850-buffalo",
+        "locator": "Vol. VIII, no. 6, September 1850, p. 312, opening paragraph and closing dateline",
+        "note": "Opening paragraph states Friday, July 26. The closing dateline reads July 19; retain the conflict rather than treating this as a settled exact date."
+      }
+    ]
+  },
+  "event/hebrew-education-meeting-1850": {
+    "date": [
+      {
+        "source": "occident-1850-hebrew-education",
+        "locator": "Vol. VIII, no. 4, July 1850, p. 202, opening paragraph",
+        "note": "The annual meeting is explicitly dated Sunday, May 12, 1850. The issue month is July, not the event date."
+      }
+    ]
+  },
+  "event/wise-albany-split-1850": {
+    "date": [
+      {
+        "source": "occident-1850-albany",
+        "locator": "Vol. VIII, no. 8, November 1850, pp. 423–424",
+        "note": "The editorial describes the Rosh Hashanah dispute after Wise’s dismissal on September 5. This supports September 1850, without specifying a day for the confrontation."
+      }
+    ]
+  }
+}

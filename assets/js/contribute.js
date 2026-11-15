@@ -8,8 +8,12 @@
   form.elements.namedItem('record').value = params.get('record') || '';
   form.elements.namedItem('place').value = (params.get('place') || '').slice(0,500);
   form.elements.namedItem('subject').value = (params.get('title') || '').replace(/^\[[^\]]+\]\s*/, '').slice(0, 250);
+  form.elements.namedItem('claim').value = (params.get('claim') || '').slice(0,100);
+  form.elements.namedItem('claim_value').value = (params.get('value') || '').slice(0,500);
   const update = () => {
-    form.elements.namedItem('record').required = type.value === 'correction';
+    const evidence = document.querySelector('#evidence-fields');
+    evidence.hidden = evidence.disabled = type.value !== 'evidence';
+    form.elements.namedItem('record').required = ['correction','evidence'].includes(type.value);
     window.KhLocationPicker?.setEnabled(type.value === 'location');
   };
   type.addEventListener('change', update);
@@ -22,7 +26,7 @@
     const text = [
       'KEHILLOT — CONTRIBUTION FOR EDITORIAL REVIEW',
       'Prepared locally. This file has not been sent to the project.', '',
-      ...['type', 'record', 'subject', 'place', 'details', ...(type.value === 'location' ? ['proposed_latitude','proposed_longitude','location_precision','historical_address','location_source_date','location_reason'] : []), 'source', 'source_url', 'certainty', 'credit', 'orcid', 'consent']
+      ...['type', 'record', 'subject', 'place', 'details', ...(type.value === 'evidence' ? ['claim','claim_value','locator'] : []), ...(type.value === 'location' ? ['proposed_latitude','proposed_longitude','location_precision','historical_address','location_source_date','location_reason'] : []), 'source', 'source_url', 'certainty', 'credit', 'orcid', 'consent']
         .map(key => `${key.toUpperCase()}\n${values.get(key) || '(not provided)'}\n`),
     ].join('\n');
     const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));

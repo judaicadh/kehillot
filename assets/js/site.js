@@ -10,8 +10,16 @@
   document.querySelectorAll('[data-map-switch]').forEach(select=>select.addEventListener('change',()=>{
     const target=new URL(select.value,location.href), current=new URLSearchParams(location.hash.slice(1)), next=new URLSearchParams();
     ['city','from','to'].forEach(key=>{if(current.has(key))next.set(key,current.get(key));});
-    target.hash=next.toString();location.assign(target.href);
+    target.hash=next.toString();if(new URLSearchParams(location.search).get('terrain')==='1')target.searchParams.set('terrain','1');location.assign(target.href);
   }));
+  // A shared claim or subscriber fragment opens its surrounding disclosures.
+  function revealFragment() {
+    let id; try { id=decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const target=document.getElementById(id); if(!target)return;
+    let parent=target; while(parent){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}
+    if(id.startsWith('claim-') || id==='h-readers')target.scrollIntoView();
+  }
+  window.addEventListener('hashchange',revealFragment);revealFragment();
   const views=[...document.querySelectorAll('.viz-block')];
   const tabs=[...document.querySelectorAll('.viz-view-tabs a')];
   if(views.length && tabs.length){

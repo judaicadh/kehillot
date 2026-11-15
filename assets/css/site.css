@@ -1054,3 +1054,23 @@ main>.wrap>h1, .page-head h1 { font-size:clamp(2rem,3vw,2.7rem); font-weight:500
 :root[data-theme="dark"] .city-map .leaflet-tile-pane, :root[data-theme="dark"] .location-map .leaflet-tile-pane{filter:grayscale(1) invert(1) hue-rotate(180deg) brightness(.75);}
 .search-filters #db-reset{margin-top:.8rem;}
 @media(min-width:900px){#tour-show-map{display:none;}}
+
+/* Research stays available without crowding the map or journey. */
+.research-profile { border-block:1px solid var(--rule); margin:1rem 0 1.4rem; padding:.8rem 0; }
+.research-profile > summary { color:var(--accent); cursor:pointer; font-weight:600; }
+.profile-content { max-width:52rem; padding:.5rem 0; }
+.profile-content h2,.claim-evidence h2 { font-size:1.2rem; }
+.profile-content h3 { font-size:1rem; margin-top:1.3rem; }
+.claim-evidence { margin-block:2rem; }
+.claim-evidence details { padding:.65rem 0; border-bottom:1px solid var(--rule); scroll-margin-top:6rem; }
+.claim-evidence summary { cursor:pointer; }
+.terrain-control { background:var(--paper,#fff); color:var(--ink,#1e2d26); padding:.45rem .65rem; font:13px/1.4 system-ui,sans-serif; box-shadow:0 1px 5px #0002; }
+.terrain-control label { display:flex; align-items:center; gap:.35rem; margin:0; cursor:pointer; }
+.terrain-control input { width:auto; margin:0; accent-color:var(--accent); }
+.archive-page { max-width:60rem; }
+.archive-page input[type=search] { width:100%; max-width:40rem; }
+.archive-volume { border-bottom:1px solid var(--rule); padding:.8rem 0; }
+.archive-volume summary { cursor:pointer; color:var(--accent); }
+.archive-volume li { padding:.4rem 0; scroll-margin-top:6rem; }
+
+.fact-evidence-link { font-size:.75rem; margin-left:.5rem; font-weight:400; white-space:nowrap; }

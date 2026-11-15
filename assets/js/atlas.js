@@ -16,6 +16,7 @@
   var relief = L.tileLayer(T.relief.url, { maxZoom: T.relief.maxZoom || 13, maxNativeZoom: T.relief.maxZoom || 13, attribution: T.relief.attribution });
   var street = T.street ? L.tileLayer(T.street.url, { maxZoom: T.street.maxZoom || 18, maxNativeZoom:T.street.maxNativeZoom || T.street.maxZoom || 18, attribution: T.street.attribution, className: 'street-tiles' }) : null;
 
+  KhTerrain(map, T.terrain);
   // Graticule every 5°, as on an engraved plate (national scale only).
   var grat = L.layerGroup();
   for (var lat = 25; lat <= 50; lat += 5) L.polyline([[lat, -130], [lat, -60]], { className: 'graticule', interactive: false }).addTo(grat);

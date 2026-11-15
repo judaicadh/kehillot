@@ -196,5 +196,32 @@
     "place": "Philadelphia",
     "year": null,
     "url": "https://digitalcollections.library.upenn.edu/items/a3a9b450-298c-4fc5-84e4-b21bcf4696aa"
+  },
+  {
+    "id": "occident-1850-buffalo",
+    "type": "Article",
+    "title": "Consecration at Buffalo",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1850,
+    "url": "http://www.theoccident.com/Occident/volume8/sep1850/buffalo.html",
+    "note": "The Occident, vol. VIII, no. 6 (September 1850), p. 312. Opening report gives July 26; the printed closing dateline reads July 19. Date conflict retained in the event evidence."
+  },
+  {
+    "id": "occident-1850-hebrew-education",
+    "type": "Article",
+    "title": "Hebrew Education Society of Philadelphia",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1850,
+    "url": "http://www.theoccident.com/Occident/volume8/jul1850/hebrewed.html",
+    "note": "The Occident, vol. VIII, no. 4 (July 1850), pp. 202–203."
+  },
+  {
+    "id": "occident-1850-albany",
+    "type": "Article",
+    "title": "The Beth-El Congregation of Albany",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1850,
+    "url": "http://www.theoccident.com/Occident/volume8/nov1850/albany.html",
+    "note": "The Occident, vol. VIII, no. 8 (November 1850), pp. 422–424. An editorial report of the dispute; read alongside other accounts."
   }
 ]

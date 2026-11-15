@@ -119,7 +119,8 @@
       "anshe-emeth-alb"
     ],
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "occident-1850-albany"
     ]
   },
   {
@@ -384,6 +385,36 @@
     "description": "The first Jewish burial ground in the Gold Rush mining region.",
     "sources": [
       "magnes-sonora-album"
+    ]
+  },
+  {
+    "id": "beth-el-buffalo-dedication-1850",
+    "name": "Dedication of the Beth El synagogue at Buffalo",
+    "date": "1850-07-26",
+    "place": "buffalo",
+    "category": "religious",
+    "certainty": "medium",
+    "description": "The Occident reports that Samuel M. Isaacs conducted the dedication of the new Buffalo synagogue on July 26, 1850, and identifies the congregation as Beth El. The report’s closing dateline reads July 19, earlier than the dedication and meeting described; the precise date therefore needs corroboration. No street address is established by this article.",
+    "orgs": [
+      "beth-el-buf"
+    ],
+    "sources": [
+      "occident-1850-buffalo"
+    ]
+  },
+  {
+    "id": "hebrew-education-meeting-1850",
+    "name": "Hebrew Education Society annual meeting",
+    "date": "1850-05-12",
+    "place": "philadelphia",
+    "category": "education",
+    "certainty": "high",
+    "description": "The Hebrew Education Society of Philadelphia held its annual meeting, elected officers, and resolved to publish its treasurer’s report in the Occident and Asmonean. The July 1850 report records the meeting date; it does not establish a meeting address.",
+    "orgs": [
+      "hebrew-education-society"
+    ],
+    "sources": [
+      "occident-1850-hebrew-education"
     ]
   }
 ]

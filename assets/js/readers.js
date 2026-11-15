@@ -19,6 +19,7 @@
   var tiles = JSON.parse(mapEl.dataset.tiles);
   var relief = L.tileLayer(tiles.relief.url, {maxZoom:18,maxNativeZoom:tiles.relief.maxZoom || 13,attribution:tiles.relief.attribution});
   var street = L.tileLayer(tiles.street.url, {maxZoom:18,maxNativeZoom:tiles.street.maxNativeZoom || 18,attribution:tiles.street.attribution,className:'street-tiles'});
+  KhTerrain(map, tiles.terrain);
   function syncBase() {
     var local = map.getZoom() >= 11 || !!(cityNav && cityNav.selected() && map.getZoom() >= 9);
     var wanted = local ? street : relief, other = local ? relief : street;

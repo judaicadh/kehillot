@@ -27,3 +27,5 @@ The CC BY license above does **not** cover the following.
 
 
 The default neutral basemap is Esri World Light Gray Canvas Base, served by Esri's ArcGIS Online tile service. Esri and its data contributors retain their rights; the project data license does not cover these tiles. Attribution is displayed on each map. Historical maps linked for research retain the holding institution's terms; any future configured historical overlay must include its own source and attribution.
+
+The Occident article catalogue imports link metadata from TheOccident.com, with per-entry source-index URLs and links to the original transcriptions. It does not import or relicense those transcriptions; consult the Jewish-American History Documentation Foundation’s own terms for the material on its website.
