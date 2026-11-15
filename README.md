@@ -62,6 +62,11 @@ Every place with mapped sites, cemeteries or geotagged pictures gets a guide at 
 
 Add an introduction and title for a city in `data/cities.json`. The list is plain HTML, so a guide still works without JavaScript.
 
+The Cities directory also includes every locality recorded in the deposited subscriber lists, including places without a congregation or an address-level site. Subscriber-only pages are generated at stable `/city/subscriber-…/` URLs and show the recorded names, years, source citations, and a street map centered on the source locality. They do not assert a subscriber's street address or the existence of a congregation. Matches to existing curated places use reviewed Wikidata IDs; the source data is not changed.
+
+The atlas, feature maps, and Subscribers map all have a city finder with quick jumps, city-guide links, and a National view reset. City and date filters survive in shared map URLs. Place records link directly to street views; city guides provide City center and Fit all recorded sites controls. The directory has a text filter and remains fully readable without JavaScript.
+
+
 ## Pictures and documents (linked media)
 
 Add items to `data/media.json`, then fetch their metadata:

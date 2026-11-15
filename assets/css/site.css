@@ -686,3 +686,33 @@ main > .wrap.prose-wide { padding-top: 2rem; }
   .contribution-page { padding-top: 2rem; }
 }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+
+/* A visible route from the national maps to address-level geography. */
+.city-navigator { margin: 0 0 1.5rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--ink); }
+.city-navigator h2 { margin: .4rem 0 1.2rem; font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 400; }
+.city-jump-form label { display: block; margin-bottom: .4rem; font: 600 .8rem var(--sans); }
+.city-jump-fields { display: flex; flex-wrap: wrap; gap: .6rem; }
+.city-jump-fields input { flex: 1 1 16rem; min-width: 0; padding: .75rem; border: 1px solid var(--rule); border-radius: 2px; font: 1rem var(--sans); background: var(--paper); color: var(--ink); }
+.city-shortcuts { display: flex; flex-wrap: wrap; gap: .5rem .9rem; align-items: center; margin-top: 1rem; font: .8rem var(--sans); color: var(--muted); }
+.city-shortcuts button { padding: .3rem 0; border: 0; border-bottom: 1px dotted currentColor; background: none; color: var(--accent); font: inherit; cursor: pointer; }
+.city-jump-status { margin: 1rem 0 .4rem; font: .85rem/1.6 var(--sans); }
+.city-guide-link { font: 600 .85rem var(--sans); }
+.city-map-note { margin: .8rem 0 0; color: var(--muted); font: .75rem/1.6 var(--sans); }
+.city-map-actions { margin: 1.5rem 0 .8rem; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.plate-street .cartouche { position: static; max-width: none; text-align: left; margin: 6px; padding: .8rem 1rem; outline: none; border: 0; box-shadow: none; }
+.plate-street .cartouche .c-small { display: none; }
+.plate-street .cartouche h1 { font-size: 1.1rem; }
+.plate-street .cartouche .c-year { display: inline-block; border: 0; margin: .4rem 0; padding: 0; }
+.plate-street .map-key { position: static; max-width: none; display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin: 6px; padding: .8rem 1rem; outline: none; }
+.plate-street .map-key .key-street, .plate-street .map-key .key-kinds { flex-basis: 100%; }
+.atlas-map.z-street .leaflet-tile-pane { filter: none; opacity: 1; }
+@media (max-width: 600px) {
+  .city-navigator { padding: 1rem; }
+  .city-jump-fields input { flex-basis: 100%; }
+  .city-jump-fields .btn { flex: 1; }
+}
+.locality-directory { margin-top: 3rem; }
+.locality-directory label { display: block; font: 600 .85rem var(--sans); margin-bottom: .5rem; }
+.locality-directory input { width: min(100%, 36rem); padding: .8rem; font: 1rem var(--sans); color: var(--ink); background: var(--card); border: 1px solid var(--rule); }
+.locality-directory table { width: 100%; }
+.subscriber-city-map { height: 28rem; min-height: 20rem; }

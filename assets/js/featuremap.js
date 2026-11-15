@@ -10,6 +10,7 @@
   var CFG = JSON.parse($('#fm-config').textContent);
   var mapEl = $('#fmap'), fromIn = $('#fm-from'), toIn = $('#fm-to'), qIn = $('#fm-q');
   var STREET_Z = (CFG.tiles.street && CFG.tiles.street.minZoom) || 11;
+  var cityNav;
   var D, FEAT = {}, markers = {};
 
   var map = L.map(mapEl, { center: [38.5, -92], zoom: 4, minZoom: 3, maxZoom: CFG.tiles.street.maxZoom || 18, zoomSnap: 0.25, scrollWheelZoom: false });
@@ -20,7 +21,9 @@
   for (var lat = 25; lat <= 50; lat += 5) L.polyline([[lat, -130], [lat, -60]], { className: 'graticule', interactive: false }).addTo(grat);
   for (var lon = -125; lon <= -65; lon += 5) L.polyline([[20, lon], [55, lon]], { className: 'graticule', interactive: false }).addTo(grat);
   function syncBase() {
-    var st = map.getZoom() >= STREET_Z;
+    var st = map.getZoom() >= STREET_Z || !!(cityNav && cityNav.selected() && map.getZoom() >= 9);
+    mapEl.parentElement.classList.toggle('plate-street', st);
+    mapEl.classList.toggle('z-street', st);
     var want = st ? street : relief, other = st ? relief : street;
     if (map.hasLayer(other)) map.removeLayer(other);
     if (!map.hasLayer(want)) want.addTo(map);
@@ -78,7 +81,12 @@
         return '<li><button type="button" class="fm-item" data-k="' + esc(it.f + '/' + it.id) + '"><span class="f-sym">' + KhSymbols.svg(FEAT[it.f].symbol, { size: 14 }) + '</span>' + esc(it.name) + ' <span class="muted">' + esc(years(it)) + (it.sub && CFG.features.length === 1 && it.f === 'clergy' ? ' · ' + esc(it.sub) : '') + '</span></button></li>';
       }).join('') + '</ul></li>';
     }).join('') : '<li class="muted">Nothing to show for these choices.</li>';
-    try { history.replaceState(null, '', '#from=' + s.from + '&to=' + s.to + (CFG.features.length > 1 ? '&f=' + s.feats.join(',') : '')); } catch (e) { /* ignore */ }
+    try {
+      var params = new URLSearchParams(location.hash.slice(1));
+      params.set('from', s.from); params.set('to', s.to);
+      if (CFG.features.length > 1) params.set('f', s.feats.join(',')); else params.delete('f');
+      history.replaceState(null, '', '#' + params.toString());
+    } catch (e) { /* file preview */ }
   }
 
   // ── clergy journeys: curved arrows from pulpit to pulpit, in date order ──
@@ -170,10 +178,18 @@
     if (h.get('to')) toIn.value = h.get('to');
     if (h.get('f')) { var want = h.get('f').split(','); $$('input[name=feature]').forEach(function (i) { i.checked = want.indexOf(i.value) > -1; }); }
     var pts = d.items.filter(function (it) { return it.lon > -130 && it.lon < -60; }).map(function (it) { return [it.lat, it.lon]; });
-    if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { paddingTopLeft: [30, 30], paddingBottomRight: [CFG.features.length > 1 ? 230 : 30, 30], maxZoom: 13 });
+    if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { animate: false, paddingTopLeft: [30, 30], paddingBottomRight: [CFG.features.length > 1 ? 230 : 30, 30], maxZoom: 13 });
     else if (pts.length === 1) map.setView(pts[0], 13);
     else map.setView([38.5, -92], 4);
     syncBase();
     render();
+    cityNav = KhCityNavigation(map, {
+      onChange: function () { syncBase(); render(); },
+      national: function () {
+        if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { padding: [30, 30], maxZoom: 8, animate: false });
+        else map.setView([38.5, -92], 4, { animate: false });
+      }
+    });
+    cityNav.restore();
   }).catch(function () { $('#fm-summary').textContent = 'The data could not be loaded. Serve the site over HTTP (see README).'; });
 })();

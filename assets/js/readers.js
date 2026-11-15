@@ -11,11 +11,24 @@
   var TYPE = { I: '', B: 'business', S: 'synagogue', O: 'organization' };
   var mapEl = $('#readers-map');
   var fromIn = $('#r-from'), toIn = $('#r-to');
+  var cityNav;
   var D, names = {}, layer, selectedKey = null;
 
-  var map = L.map(mapEl, { preferCanvas: true, center: [38.5, -92], zoom: 4, minZoom: 2, maxZoom: 12, zoomSnap: 0.25, scrollWheelZoom: false, worldCopyJump: true });
+  var map = L.map(mapEl, { preferCanvas: true, center: [38.5, -92], zoom: 4, minZoom: 2, maxZoom: 18, zoomSnap: 0.25, scrollWheelZoom: false, worldCopyJump: true });
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Relief &copy; Esri' }).addTo(map);
+  var tiles = JSON.parse(mapEl.dataset.tiles);
+  var relief = L.tileLayer(tiles.relief.url, {maxZoom:18,maxNativeZoom:tiles.relief.maxZoom || 13,attribution:tiles.relief.attribution});
+  var street = L.tileLayer(tiles.street.url, {maxZoom:18,attribution:tiles.street.attribution,className:'street-tiles'});
+  function syncBase() {
+    var local = map.getZoom() >= 11 || !!(cityNav && cityNav.selected() && map.getZoom() >= 9);
+    var wanted = local ? street : relief, other = local ? relief : street;
+    if (map.hasLayer(other)) map.removeLayer(other);
+    if (!map.hasLayer(wanted)) wanted.addTo(map);
+    mapEl.classList.toggle('z-street',local);
+    mapEl.parentElement.classList.toggle('plate-street',local);
+  }
+  map.on('zoomend',syncBase);
+
   // Graticule: styled inline, because this map draws to canvas (CSS classes don't apply there).
   var gratStyle = { color: css('--plate-ink') || '#2a2118', weight: 0.6, opacity: 0.28, dashArray: '1 3', interactive: false };
   for (var lat = 25; lat <= 50; lat += 5) L.polyline([[lat, -130], [lat, -60]], gratStyle).addTo(map);
@@ -40,7 +53,7 @@
     var rows = s.papers.map(function (p) { var n = count(pl, p, s); return n ? '<li><span class="paper-swatch" style="background:' + css(TINT[p]) + '"></span><i>' + esc(paperName(p)) + '</i>: ' + n + '</li>' : ''; }).join('');
     return '<h3>' + (pl.own ? '<a href="' + root + 'place/' + pl.own + '/">' + esc(pl.name) + '</a>' : esc(pl.name)) + ' <span class="pop-state">' + esc(pl.state || pl.country || '') + '</span></h3>' +
       '<p class="pop-sub">Subscriptions, ' + s.from + '–' + s.to + '</p><ul>' + rows + '</ul>' +
-      '<p class="pop-more"><button type="button" class="linkish" data-subs="' + esc(pl.k) + '">List the subscribers</button>' + (pl.own ? ' · <a href="' + root + 'place/' + pl.own + '/">Kehillot record</a>' : '') + '</p>';
+      '<p class="pop-more"><button type="button" class="linkish" data-subs="' + esc(pl.k) + '">List the subscribers</button>' + ' · <a href="' + root + 'city/' + pl.cityId + '/">City guide →</a>' + '</p>';
   }
 
   function render() {
@@ -80,7 +93,7 @@
     $('#r-top').innerHTML = ranked.map(function (r) {
       return '<li><button type="button" data-k="' + esc(r.pl.k) + '"><span class="gaz-name">' + esc(r.pl.name) + '<span class="gaz-state">, ' + esc(r.pl.state || r.pl.country || '') + '</span></span><span class="gaz-lead" aria-hidden="true"></span><span class="gaz-n">' + r.n.toLocaleString('en-US') + '</span></button></li>';
     }).join('');
-    try { history.replaceState(null, '', '#papers=' + s.papers.join(',') + '&from=' + s.from + '&to=' + s.to); } catch (e) { /* ignore */ }
+    try { history.replaceState(null, '', '#papers=' + s.papers.join(',') + '&from=' + s.from + '&to=' + s.to + (selectedKey ? '&place=' + encodeURIComponent(selectedKey) : '') + (cityNav && cityNav.selected() ? '&city=' + encodeURIComponent(cityNav.selected()) : '')); } catch (e) { /* ignore */ }
     if (selectedKey) showSubscribers(selectedKey, true);
   }
 
@@ -92,6 +105,7 @@
   function showSubscribers(k, quiet) {
     var pl = byKey(k); if (!pl) return;
     selectedKey = pl.k;
+    try { var params = new URLSearchParams(location.hash.slice(1)); params.set('place', pl.k); history.replaceState(null, '', '#' + params.toString()); } catch (e) { /* file preview */ }
     var s = state();
     var box = $('#r-detail');
     if (!quiet) box.innerHTML = '<p class="gaz-note">Loading…</p>';
@@ -105,7 +119,7 @@
     })).then(function (groups) {
       groups = groups.filter(function (g) { return g.rows.length; });
       box.innerHTML = '<h3 class="r-place">' + (pl.own ? '<a href="' + root + 'place/' + pl.own + '/">' + esc(placeLabel(pl)) + '</a>' : esc(placeLabel(pl))) + '</h3>' +
-        (pl.qid ? '<p class="gaz-note"><a href="https://www.wikidata.org/wiki/' + esc(pl.qid) + '">Wikidata ' + esc(pl.qid) + '</a>' + (pl.own ? ' · <a href="' + root + 'city/' + pl.own + '/">City guide</a>' : '') + '</p>' : '') +
+        (pl.qid ? '<p class="gaz-note"><a href="https://www.wikidata.org/wiki/' + esc(pl.qid) + '">Wikidata ' + esc(pl.qid) + '</a>' + ' · <a href="' + root + 'city/' + pl.cityId + '/">City guide</a>' + '</p>' : '') +
         (groups.length ? groups.map(function (g) {
           return '<h4><span class="paper-swatch" style="background:' + css(TINT[g.p]) + '"></span><i>' + esc(paperName(g.p)) + '</i> <span class="muted">' + g.rows.length + '</span></h4><ol class="subs-list">' +
             g.rows.map(function (x) { return '<li>' + esc(x[0] || 'Unnamed') + ' <span class="muted">' + (x[2] || 'undated') + (TYPE[x[3]] ? ' · ' + TYPE[x[3]] : '') + '</span></li>'; }).join('') + '</ol>';
@@ -122,7 +136,8 @@
     var li = e.target.closest('#r-top button[data-k]');
     if (li) {
       var pl = byKey(li.dataset.k);
-      map.setView([pl.lat, pl.lon], Math.max(map.getZoom(), 6));
+      if (cityNav) cityNav.goTo(pl.cityId);
+      mapEl.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
       L.popup({ maxWidth: 300, className: 'kh-popup' }).setLatLng([pl.lat, pl.lon]).setContent(popupHtml(pl, state())).openOn(map);
       showSubscribers(pl.k);
     }
@@ -135,8 +150,18 @@
     if (h.get('from')) fromIn.value = h.get('from');
     if (h.get('to')) toIn.value = h.get('to');
     var us = D.places.filter(function (p) { return /United States/.test(p.country || '') && p.lon < -60 && p.lon > -130; });
-    map.fitBounds(L.latLngBounds(us.map(function (p) { return [p.lat, p.lon]; })), { paddingTopLeft: [30, 30], paddingBottomRight: [110, 30] });
+    map.fitBounds(L.latLngBounds(us.map(function (p) { return [p.lat, p.lon]; })), { animate:false, paddingTopLeft: [30, 30], paddingBottomRight: [110, 30] });
+    syncBase();
+    cityNav = KhCityNavigation(map, {
+      onChange: function (id) {
+        syncBase();
+        if (id) { var pl = D.places.find(function (p) {return p.cityId === id;}); if (pl) showSubscribers(pl.k); }
+        else { selectedKey = null; try {var params = new URLSearchParams(location.hash.slice(1));params.delete('place');history.replaceState(null,'','#'+params.toString());} catch(e) {} $('#r-detail').textContent = 'Select a place to see its subscribers.'; }
+      },
+      national: function () { map.fitBounds(L.latLngBounds(us.map(function(p){return [p.lat,p.lon];})), {padding:[30,30],animate:false}); }
+    });
     render();
-    if (h.get('place')) { var pl = byKey(h.get('place')); if (pl) { map.setView([pl.lat, pl.lon], 8); showSubscribers(pl.k); } }
+    if (h.get('place')) {var pl = byKey(h.get('place')); if (pl) cityNav.goTo(pl.cityId);}
+    else cityNav.restore();
   }).catch(function () { $('#r-summary').textContent = 'The data could not be loaded. Serve the site over HTTP (see README).'; });
 })();

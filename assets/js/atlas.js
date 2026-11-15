@@ -23,9 +23,10 @@
 
   var layers = { town: L.layerGroup().addTo(map), local: L.layerGroup().addTo(map) };
   var yearInput = $('#year'), yearOut = $('#year-out'), playBtn = $('#play');
+  var cityNav;
   var D, placeIndex = {}, markersByPlace = {}, timer = null, orgName = {};
 
-  function isStreet() { return map.getZoom() >= STREET_Z; }
+  function isStreet() { return map.getZoom() >= STREET_Z || !!(cityNav && cityNav.selected() && map.getZoom() >= 9); }
   function syncBase() {
     var want = isStreet() && street ? street : relief;
     [relief, street].forEach(function (l) { if (l && l !== want && map.hasLayer(l)) map.removeLayer(l); });
@@ -164,25 +165,18 @@
     rows.sort(function (a, b) { return a.p.name.localeCompare(b.p.name); });
     $('#place-list').innerHTML = rows.map(function (r) {
       return '<li><button type="button" data-place="' + r.p.id + '"><span class="gaz-name">' + esc(r.p.name) + '<span class="gaz-state">, ' + esc(r.p.state) + '</span></span><span class="gaz-lead" aria-hidden="true"></span><span class="gaz-n">' + (r.c || (r.d ? '○' : '–')) + '</span></button>' +
-        (r.local ? '<button type="button" class="gaz-inside" data-inside="' + r.p.id + '">inside the city: ' + plural(r.local, 'site') + '</button>' : '') + '</li>';
+        (r.local ? '<button type="button" class="gaz-inside" data-inside="' + r.p.id + '">Zoom to city streets · ' + plural(r.local, 'site') + '</button>' : '') + '</li>';
     }).join('');
     var sum = word(totalC).replace(/^./, function (ch) { return ch.toUpperCase(); }) + ' congregation' + (totalC === 1 ? '' : 's') + ' in ' + word(places) + ' town' + (places === 1 ? '' : 's') + (places === 1 ? '' : ' and cities') + '.';
     if (isStreet()) sum += ' Synagogues and cemeteries are shown at their addresses.';
     $('#atlas-summary').textContent = sum;
-    try { history.replaceState(null, '', '#year=' + y); } catch (e) { /* ignore */ }
+    try { var params = new URLSearchParams(location.hash.slice(1)); params.set('year', y); history.replaceState(null, '', '#' + params.toString()); } catch (e) { /* ignore */ }
   }
 
   function goInside(placeId) {
-    var pts = D.sites.filter(function (x) { return x.place === placeId; }).concat(D.cemeteries.filter(function (x) { return x.place === placeId; }))
-      .map(function (x) { return [x.lat, x.lon]; });
-    if (!pts.length) return;
-    mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-    map.closePopup();
-    // Keep the city's sites clear of the cartouche (lower left) and key (lower right) on wide screens.
-    var wide = mapEl.clientWidth > 760;
-    var pad = wide ? { paddingTopLeft: [60, 40], paddingBottomRight: [280, 180] } : { padding: [30, 30] };
-    if (pts.length === 1) map.setView(pts[0], 15);
-    else map.fitBounds(L.latLngBounds(pts), Object.assign({ maxZoom: 16 }, pad));
+    if (cityNav && cityNav.goTo(placeId)) {
+      document.querySelector('.city-navigator').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    }
   }
 
   map.on('zoomend', function () { syncBase(); render(); });
@@ -204,10 +198,7 @@
     var inside = e.target.closest('[data-inside]');
     if (inside) { goInside(inside.dataset.inside); return; }
     var b = e.target.closest('#place-list button[data-place]'); if (!b) return;
-    var p = placeIndex[b.dataset.place], m = markersByPlace[b.dataset.place];
-    mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-    map.setView([p.lat, p.lon], Math.min(Math.max(map.getZoom(), 6), 8));
-    if (m) setTimeout(function () { m.openPopup(); }, 50);
+    goInside(b.dataset.place);
   });
 
   fetch(root + 'data/site.json').then(function (r) { return r.json(); }).then(function (d) {
@@ -218,9 +209,14 @@
     D.periodicals.forEach(function (c) { orgName[c.id] = { name: c.name, type: 'periodical' }; });
     var m = /year=(\d{4})/.exec(location.hash);
     if (m) yearInput.value = Math.min(Math.max(Number(m[1]), Number(yearInput.min)), Number(yearInput.max));
-    map.fitBounds(L.latLngBounds(D.places.map(function (p) { return [p.lat, p.lon]; })), { paddingTopLeft: [30, 30], paddingBottomRight: [110, 30] });
+    map.fitBounds(L.latLngBounds(D.places.map(function (p) { return [p.lat, p.lon]; })), { animate: false, paddingTopLeft: [30, 30], paddingBottomRight: [110, 30] });
     syncBase();
     render();
+    cityNav = KhCityNavigation(map, {
+      onChange: function () { syncBase(); render(); },
+      national: function () { map.fitBounds(L.latLngBounds(D.places.map(function (p) { return [p.lat, p.lon]; })), { padding: [30, 30], animate: false }); }
+    });
+    cityNav.restore();
   }).catch(function () {
     $('#atlas-summary').textContent = 'The data could not be loaded. Serve the site over HTTP (see README).';
   });

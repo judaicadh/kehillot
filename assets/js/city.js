@@ -57,8 +57,14 @@
 
   // ── fit to everything ──
   var pts = entries.map(function (li) { return [+li.dataset.lat, +li.dataset.lon]; }).concat((C.photos || []).map(function (p) { return [p.lat, p.lon]; }));
-  if (pts.length > 1) map.fitBounds(L.latLngBounds(pts).pad(0.12), { maxZoom: 16 });
-  else map.setView(pts[0] || C.center, 15);
+  function fitCity() {
+    if (pts.length > 1) map.fitBounds(L.latLngBounds(pts).pad(0.12), { maxZoom: 16 });
+    else map.setView(pts[0] || C.center, 15);
+  }
+  fitCity();
+  $('#city-fit').addEventListener('click', fitCity);
+  $('#city-center').addEventListener('click', function () { map.setView(C.center, 14); });
+  L.control.scale({ imperial: true, metric: false }).addTo(map);
 
   // ── selection: list ⇄ map ──
   var selected = null;
