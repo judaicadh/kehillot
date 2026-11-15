@@ -603,7 +603,7 @@ function toTriples(n, out) {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jsonForScript = (o) => JSON.stringify(o, null, 2).replace(/</g, '\\u003c');
 const NAV = [
-  ['', 'Home'], ['maps/', 'Maps'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['visualizations/', 'Visualizations'], ['database/', 'Database'], ['datasets/', 'Datasets'], ['about/', 'About'],
+  ['', 'Home'], ['maps/', 'Maps'], ['cities/', 'Cities'], ['subscribers/', 'Subscribers'], ['visualizations/', 'Visualizations'], ['database/', 'Database'], ['datasets/', 'Datasets'], ['about/', 'About'], ['contribute/', 'Contribute ↗'],
 ];
 function layout({ rel, title, description, canonical, body, jsonld, scripts = [], styles = [], current = '', alternate }) {
   const fullTitle = title ? `${title} · ${cfg.title}` : `${cfg.title}: ${cfg.subtitle}`;
@@ -630,7 +630,7 @@ ${jsonld ? `<script type="application/ld+json">\n${jsonForScript(jsonld)}\n</scr
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="${rel}"><span class="brand-mark" aria-hidden="true">ק</span><span><strong>${esc(cfg.title)}</strong><small>${esc(cfg.subtitle)}</small></span></a>
+    <a class="brand" href="${rel}"><span><strong>${esc(cfg.title)}</strong><small>${esc(cfg.subtitle)}</small></span></a>
     <nav aria-label="Primary"><ul>
       ${NAV.map(([href, label]) => `<li><a href="${rel}${href}"${current === href ? ' aria-current="page"' : ''}>${label}</a></li>`).join('')}
     </ul></nav>
@@ -642,7 +642,7 @@ ${body}
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p><strong>${esc(cfg.title)}</strong> v${esc(cfg.version)} · Data released under <a href="${cfg.license.url}" rel="license">${esc(cfg.license.name)}</a> · Built ${BUILD_DATE}</p>
-    <p><a href="${rel}about/#contribute">Contribute</a> · <a href="${rel}contributors/">Contributors</a> · <a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
+    <p><a href="${rel}contribute/">Contribute</a> · <a href="${rel}contributors/">Contributors</a> · <a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
   </div>
 </footer>
 ${scripts.map((s) => `<script src="${rel}${s}" defer></script>`).join('\n')}
@@ -664,10 +664,10 @@ function sourcesSection(rel, ids) {
   return `<section aria-labelledby="h-sources"><h2 id="h-sources">Sources</h2><ol class="sources">${ids
     .map((id) => `<li>${citationText(index.source.get(id))} — <a href="${rel}${docPath('source', id)}">record</a></li>`).join('')}</ol></section>`;
 }
-// Links that open a pre-filled suggestion form on GitHub.
+// All suggestion links lead to the public contribution desk, preserving record context.
 const suggestUrl = (template, params = {}) => {
-  const u = new URL(`https://github.com/${cfg.contribute.repo}/issues/new`);
-  u.searchParams.set('template', `${template}.yml`);
+  const u = new URL('contribute/', BASE);
+  u.searchParams.set('type', template);
   for (const [k, v] of Object.entries(params)) if (v) u.searchParams.set(k, v);
   return u.toString();
 };
@@ -1123,15 +1123,38 @@ const websiteLD = { '@context': 'https://schema.org', '@type': 'WebSite', name: 
   potentialAction: { '@type': 'SearchAction', target: `${BASE}database/#q={search_term_string}`, 'query-input': 'required name=search_term_string' } };
 const counts = Object.fromEntries(Object.entries(data).map(([t, r]) => [t, r.length]));
 
+function homeMap() {
+  const points = data.place.filter(p => p.lon >= -126 && p.lon <= -66 && p.lat >= 24 && p.lat <= 50);
+  const x = lon => 30 + (lon + 126) / 60 * 520;
+  const y = lat => 300 - (lat - 24) / 26 * 230;
+  const labels = new Map([['New York', [9, -13]], ['Cincinnati', [-15, -20]], ['Charleston', [-65, 24]], ['New Orleans', [-30, 27]], ['San Francisco', [12, 25]]]);
+  return `<svg viewBox="0 0 600 380" class="home-map" role="img" aria-labelledby="home-map-title home-map-desc"><title id="home-map-title">A constellation of Jewish communities</title><desc id="home-map-desc">Cities positioned by their recorded coordinates. This schematic shows places in the collection in the contiguous United States; open the atlas for the full interactive map.</desc>
+  <defs><pattern id="atlas-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/></pattern></defs><rect width="600" height="380" fill="url(#atlas-grid)"/>
+  <text x="28" y="32" class="map-overline">PLACES, PEOPLE &amp; THE TIES BETWEEN THEM</text>
+  <path d="M70 214 Q270 90 505 154 M70 214 Q290 340 444 252 M355 188 Q420 105 505 154" class="map-thread"/>
+  ${points.map(p => { const n=data.congregation.filter(c=>c.place===p.id).length; return `<circle cx="${x(p.lon)}" cy="${y(p.lat)}" r="${3+Math.sqrt(n)*1.6}" class="map-place"/>`; }).join('')}
+  ${points.filter(p=>labels.has(p.name)).map(p=>{const [dx,dy]=labels.get(p.name);return `<text x="${x(p.lon)+dx}" y="${y(p.lat)+dy}" class="map-city">${esc(p.name)}</text>`;}).join('')}
+  <g transform="translate(545 300)" aria-hidden="true"><path d="M0 -22L5 0 0 -4 -5 0Z" fill="currentColor"/><path d="M0 0V17M-12 0H12" stroke="currentColor"/><text x="0" y="-29" text-anchor="middle" class="map-overline">N</text></g>
+  <text x="28" y="351" class="map-overline">1840 — 1870</text><text x="28" y="368" class="map-overline">A GEOGRAPHY OF COMMUNAL LIFE</text></svg>`;
+}
+
 await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '',
   description: `${cfg.subtitle}. An open, source-cited atlas and linked-data database of Jewish congregations, institutions, people and events.`,
   jsonld: websiteLD,
   body: `<section class="hero"><div class="wrap hero-inner">
-    <p class="kicker">Digital atlas &amp; linked open database</p>
-    <h1>Jewish America at mid-century, ${Y0}–${Y1}</h1>
+    <div class="hero-copy"><p class="kicker"><span class="kicker-line"></span> An open atlas of belonging · ${Y0}–${Y1}</p>
+    <h1>A world of stories.<br>A map of <em>community.</em></h1>
+    <p class="hero-subtitle">Jewish America, ${Y0}–${Y1}</p>
     <p class="lede">Between 1840 and 1870, the American Jewish population grew roughly tenfold, from perhaps 15,000 to some 200,000 people, and congregations spread from a handful of Atlantic ports to the Mississippi valley and the Pacific coast. ${esc(cfg.title)} maps that growth and links it, record by record, to its sources.</p>
     <p class="cta"><a class="btn" href="atlas/">Open the atlas</a> <a class="btn btn-ghost" href="database/">Search the database</a></p>
+    <p class="hero-footnote">Follow a place. Meet its people. Go back to the source.</p></div>
+    <figure class="hero-plate"><div class="plate-heading"><span>KEHILLOT / FIELD ATLAS</span><span>PLATE 01</span></div>${homeMap()}<figcaption><span>Communities in the collection</span><a href="atlas/">Explore the interactive atlas ↗</a></figcaption></figure>
   </div></section>
+  <div class="wrap discovery"><p class="kicker">Many ways into the story</p><div class="discovery-grid">
+    <a href="maps/"><span class="discovery-number">01 / GEOGRAPHY</span><strong>Start with a place <span>↗</span></strong><span>Explore maps, streets, and the spaces of communal life.</span></a>
+    <a href="visualizations/"><span class="discovery-number">02 / CONNECTIONS</span><strong>Follow the threads <span>↗</span></strong><span>Trace the people, journeys, and ideas connecting communities.</span></a>
+    <a href="contribute/"><span class="discovery-number">03 / COLLECTIVE HISTORY</span><strong>Add your discovery <span>↗</span></strong><span>Help fill in the picture with a source or a correction.</span></a>
+  </div></div>
   <div class="wrap">
     <ul class="stats" aria-label="Dataset contents">
       <li><a href="browse/#congregation"><strong>${counts.congregation}</strong> congregations</a></li>
@@ -1148,7 +1171,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
     <section class="split">
       <figure class="chart-fig">${growthChart()}<figcaption>Congregations active in each year, by region. Counts reflect the records in this dataset, not a complete census. Newport's Touro Synagogue, without a resident congregation for most of the period, is excluded while dormant.</figcaption>${chartTable}</figure>
       <div class="prose">
-        <h2>What's here</h2>
+        <p class="kicker">A growing, connected collection</p><h2>Small records.<br>A bigger picture.</h2>
         <p>Every record has a stable URI, a human-readable page and a machine-readable JSON-LD description using <a href="https://schema.org/">schema.org</a> and a small <a href="vocab/">project vocabulary</a>. People, places and organizations are reconciled to <a href="https://www.wikidata.org/">Wikidata</a> where a match has been checked.</p>
         <p>Each claim is cited. Dates whose sources disagree are flagged as <em>medium</em> certainty so you know what to verify before citing.</p>
         <h3>National population estimates</h3>
@@ -1156,7 +1179,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
         <p class="muted small">${esc(population.note)}</p>
       </div>
     </section>
-    <section class="explore"><h2>Start exploring</h2><div class="cards">
+    <section class="explore"><p class="kicker">From the collection</p><h2>Every community has a story.</h2><div class="cards">
       ${['emanu-el-ny', 'beth-elohim-chs', 'bnai-yeshurun-cin', 'emanu-el-sf'].map((id) => { const c = index.congregation.get(id); return `<a class="card" href="${docPath('congregation', id)}"><span class="kicker">${esc(index.place.get(c.place).name)} · ${c.founded}</span><strong>${esc(c.name)}</strong><span>${esc(c.note || '')}</span></a>`; }).join('')}
       ${['general-orders-11', 'cleveland-conference-1855'].map((id) => { const e = index.event.get(id); return `<a class="card" href="${docPath('event', id)}"><span class="kicker">${formatDate(e.date)}</span><strong>${esc(e.name)}</strong><span>${esc(e.description)}</span></a>`; }).join('')}
     </div></section>
@@ -1286,13 +1309,36 @@ SELECT ?name ?founded ?city WHERE {
 } ORDER BY ?founded</code></pre>
 </div>` }));
 
+const contributionEndpoint = cfg.contribute.endpoint || '';
+if (contributionEndpoint && !/^https:\/\//.test(contributionEndpoint)) throw new Error('contribute.endpoint must be an HTTPS form submission endpoint');
+await out('contribute/index.html', layout({ rel: '../', title: 'Contribution desk', canonical: `${BASE}contribute/`, current: 'contribute/',
+  description: 'Help document Jewish America with a sourced discovery or correction. Prepare a contribution without a GitHub account.', scripts: ['assets/js/contribute.js'],
+  body: `<div class="wrap contribution-page"><header class="contribution-intro"><p class="kicker">History is a collective work</p><h1>Pull up a chair.<br><em>Add to the atlas.</em></h1><p class="lede">A name in a newspaper. An address in a directory. A detail we missed. Your discoveries help bring this world into focus.</p></header>
+  <div class="contribution-grid"><form id="contribution-form" class="contribution-form" ${contributionEndpoint ? `action="${esc(contributionEndpoint)}" method="POST"` : ''} data-delivery="${contributionEndpoint ? 'online' : 'download'}">
+    <p class="kicker">The contribution desk · No GitHub account needed</p><h2>What have you found?</h2>
+    <label for="contribution-type">I would like to</label><select id="contribution-type" name="type" required><option value="add-site">Add a place or building</option><option value="add-cemetery">Add a cemetery</option><option value="add-person">Add a person</option><option value="add-congregation">Add a congregation</option><option value="correction">Correct a record</option></select>
+    <label for="record">Page or record <span class="muted">(for a correction)</span></label><input id="record" name="record" type="url" placeholder="https://…">
+    <label for="subject">Name or subject</label><input id="subject" name="subject" maxlength="250" required>
+    <label for="place">City, state, and dates <span class="muted">(if known)</span></label><input id="place" name="place" maxlength="500" placeholder="Philadelphia, Pennsylvania · about 1855">
+    <label for="details">Your discovery or proposed correction</label><textarea id="details" name="details" rows="5" maxlength="10000" required></textarea>
+    <label for="source">Source citation</label><textarea id="source" name="source" rows="3" maxlength="5000" required placeholder="Author, title, date, page, archive, or a link someone else can check"></textarea>
+    <label for="source-url">Source link <span class="muted">(if online)</span></label><input id="source-url" name="source_url" type="url" placeholder="https://…">
+    <label for="certainty">How certain is the information?</label><select id="certainty" name="certainty" required><option value="">Choose one</option><option>High — clearly stated in the source</option><option>Medium — approximate or conflicting sources</option><option>Low — a lead that needs checking</option></select>
+    <label for="credit">Your name for the credit line <span class="muted">(optional)</span></label><input id="credit" name="credit" autocomplete="name" maxlength="200"><p class="small muted">Leave blank to contribute anonymously.</p>
+    <label for="orcid">ORCID iD <span class="muted">(optional)</span></label><input id="orcid" name="orcid" maxlength="19" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]" placeholder="0000-0000-0000-0000">
+    <div class="form-trap" aria-hidden="true"><label>Leave this blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <label class="consent"><input type="checkbox" name="consent" value="CC BY 4.0; no private information about living people" required><span>I agree that my contribution may be published under CC BY 4.0, and it contains no private information about living people.</span></label>
+    <p class="delivery-note">${contributionEndpoint ? 'Your suggestion will be sent to the project’s configured form inbox for editorial review. It will not be published automatically.' : 'Online delivery is not connected yet. You can download your suggestion as a text file to share with an editor. Downloading does not send it to the project.'}</p>
+    <button class="btn" type="submit">${contributionEndpoint ? 'Send for review ↗' : 'Download your suggestion ↓'}</button><p id="contribution-status" role="status" aria-live="polite"></p><noscript><p>${contributionEndpoint ? 'This form works without JavaScript.' : 'Downloading requires JavaScript. You can instead use one of the GitHub forms listed here.'}</p></noscript>
+  </form><aside class="contribution-aside"><p class="kicker">From discovery to record</p><ol class="review-steps"><li><strong>You share a lead.</strong><p>Tell us what you found and where you found it. You do not need to know the data format.</p></li><li><strong>An editor checks the source.</strong><p>We review the evidence, dates, location, and any existing records.</p></li><li><strong>The atlas grows.</strong><p>Accepted discoveries become cited records, with your chosen credit.</p></li></ol><div class="desk-note"><h2>Bring a source, not certainty.</h2><p>Conflicting dates and incomplete information are part of historical research. Tell us what is uncertain; we can work from there.</p></div><details><summary>Prefer contributing on GitHub?</summary><ul>${[['add-site','Place'],['add-cemetery','Cemetery'],['add-person','Person'],['add-congregation','Congregation'],['correction','Correction']].map(([id,label])=>`<li><a href="https://github.com/${esc(cfg.contribute.repo)}/issues/new?template=${id}.yml">${label} issue form</a></li>`).join('')}</ul><p class="small">GitHub forms require a GitHub account and are public.</p></details></aside></div></div>` }));
+
 await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `${BASE}about/`, current: 'about/',
   description: 'Scope, methods, data model, sources and how to cite or contribute to Kehillot.',
   body: `<div class="wrap prose-wide">
   <h1>About the project</h1>
   <p class="lede">${esc(cfg.title)} is a static, open digital atlas and database of Jewish communal life in the United States between ${Y0} and ${Y1}, the era of mass Central European immigration, westward expansion, the first American Reform congregations, and the Civil War.</p>
   <h2 id="contribute">Contribute</h2>
-  <p>Anyone can suggest additions and corrections. Each suggestion is a short form on GitHub (a free account is needed). An editor checks it against its source; once accepted, it becomes a record that the site validates automatically, and it is published when an editor approves it. Contributors are credited on the record and on the <a href="../contributors/">Contributors</a> page, with an ORCID iD if you give one.</p>
+  <p>Anyone can suggest additions and corrections. Start at the <a href="../contribute/">contribution desk</a>; you do not need a GitHub account to prepare a suggestion. GitHub issue forms remain available for contributors who prefer them. An editor checks it against its source; once accepted, it becomes a record that the site validates automatically, and it is published when an editor approves it. Contributors are credited on the record and on the <a href="../contributors/">Contributors</a> page, with an ORCID iD if you give one.</p>
   <ul class="suggest-buttons">
     <li><a class="btn btn-small" href="${esc(suggestUrl('add-site'))}">Suggest a place</a> <span class="small muted">synagogue, school, bakery, hotel, restaurant, business, bookstore</span></li>
     <li><a class="btn btn-small" href="${esc(suggestUrl('add-cemetery'))}">Suggest a cemetery</a></li>
@@ -1305,7 +1351,7 @@ await out('about/index.html', layout({ rel: '../', title: 'About', canonical: `$
     <li><strong>Cite a source</strong> that someone else could check: a book, newspaper, directory, census, synagogue record or archive, with date and page. Family memory is welcome as a lead but needs a documentary source to be published.</li>
     <li><strong>Say how sure you are.</strong> Use “medium” certainty when sources disagree or a date is approximate, and give an approximate location rather than none.</li>
     <li><strong>Stay in the period.</strong> Kehillot covers about 1840 to 1870; earlier or later places are welcome when they explain something in that period.</li>
-    <li><strong>No private information about living people.</strong> Suggestions and GitHub usernames are public.</li>
+    <li><strong>No private information about living people.</strong> Approved contributions are public; choose the name you want used for credit. GitHub submissions and usernames are public.</li>
     <li><strong>Licensing.</strong> Contributions are published under CC BY 4.0, like the rest of the data. Don't paste long passages from copyrighted works; summarise and cite.</li>
   </ul>
   <p class="small">Working with a large list, such as a city directory or a run of advertisements? Get in touch through a <a href="${esc(suggestUrl('correction', { title: '[Bulk contribution] ' }))}">suggestion</a>: a spreadsheet can be imported in one go.</p>

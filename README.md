@@ -131,7 +131,7 @@ The build then produces:
 
 ## Contributions from others
 
-Anyone can suggest additions and corrections through GitHub issue forms. The site links to them from every record ("Suggest a correction"), from the city guides and empty maps, and from the About page. Editors review each suggestion; adding the `accepted` label runs `.github/workflows/suggestions.yml`, which:
+Anyone can prepare additions and corrections at `/contribute/` without a GitHub account. The contribution desk downloads a sourced suggestion locally until an HTTPS `contribute.endpoint` is configured in `site.config.json`; with an endpoint, it posts to a review inbox. Editors review these submissions manually. Existing GitHub issue forms remain available from the desk. The site links to the contribution desk from every record ("Suggest a correction"), from the city guides and empty maps, and from the About page. Editors review each suggestion; adding the `accepted` label runs `.github/workflows/suggestions.yml`, which:
 
 1. converts the form into a record (`scripts/issue-to-record.mjs`);
 2. validates it with the full build;

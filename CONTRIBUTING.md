@@ -1,10 +1,12 @@
 # Contributing to Kehillot
 
-Thank you for helping build Kehillot. There are two ways to contribute.
+Thank you for helping build Kehillot. You can use the public contribution desk, the GitHub forms, or edit the data directly.
 
 ## 1. Suggest an addition or correction (no coding)
 
-Use the forms under **Issues → New issue**, or the "Suggest…" links throughout the site:
+The site's **Contribution desk** at `/contribute/` lets you prepare a sourced suggestion without a GitHub account. If online delivery has not been configured, it downloads a text file for you to share with an editor; downloading does **not** send the contribution to the project. A configured inbox receives suggestions for manual editorial review.
+
+The desk also links to the existing forms under **Issues → New issue** for those who prefer GitHub:
 
 | Form | For |
 |---|---|
@@ -47,3 +49,17 @@ If you add a city, a place type or a clergy title, regenerate the forms so their
 ```bash
 npm run build && npm run forms
 ```
+
+## Connecting account-free submissions
+
+Set `contribute.endpoint` in `site.config.json` to an HTTPS form inbox endpoint that accepts ordinary HTML form POSTs. For example, a registered Form.taxi inbox can receive the desk's named fields. Rebuild after setting it. Until then, the desk offers only the explicitly labelled local download. The form provider handles delivery confirmation; the website does not report success without delivery. Configure spam controls, allowed origins, and retention in the inbox provider before enabling it.
+
+An editor checks the source and manually creates or updates records from inbox submissions. The existing GitHub `accepted` label automation still applies only to GitHub issue forms; the public desk does not auto-create issues or publish records.
+
+## Optional AI screening
+
+A small server-side service could check submissions before editorial review using a free-tier model such as Llama on Cloudflare Workers AI. Suggested sequence: validate fields and spam controls → save to a review inbox → ask the model for flags and reasons → editor checks the cited source → existing validated publishing workflow. Keep submissions even when the model is unavailable or its daily quota is exhausted.
+
+AI screening should flag off-topic material, missing citations, likely spam, possible duplicates and contradictions with existing records. A citation's presence is not proof that it exists or supports the claim. Supply source text when available; otherwise report it as unverified. Treat all submission text as untrusted evidence, never as instructions, and do not give the model publishing credentials. Never automatically accept or silently discard a suggestion based on its score.
+
+AI screening is a proposed integration, not enabled in this repository. It needs a backend/inbox and a configured AI account; credentials must stay server-side. Cloudflare's daily free allowance and model eligibility are documented at https://developers.cloudflare.com/workers-ai/platform/pricing/.
