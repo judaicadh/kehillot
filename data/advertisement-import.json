@@ -1,0 +1,77 @@
+{
+  "imported": "2026-11-16",
+  "scope": "Structured notices about advertised places, schools, institutions and services from the Deborah CSV and readable Occident advertising scans. This is a data extraction, not a public full-text archive.",
+  "sourceFiles": {
+    "deborahCSVRows": 22,
+    "occidentPDFs": 134,
+    "occidentPhotographs": 228
+  },
+  "records": 259,
+  "countsByType": {
+    "lodging": 45,
+    "education": 36,
+    "business": 56,
+    "matzah-bakery": 6,
+    "kosher-restaurant": 1,
+    "bookstore": 27,
+    "institution": 14,
+    "congregation": 74
+  },
+  "acceptedDatedRecords": 197,
+  "uncertainDates": 62,
+  "checkedCoreLinks": 35,
+  "limitations": [
+    "Scan verification remains pending for OCR readings.",
+    "125 photographs required rotation before OCR. 26 photographs have undetermined orientation or low-confidence text and require manual review.",
+    "Mixed and mislabeled scans occur in the collection. File/folder dates alone are not accepted as publication dates.",
+    "Annual compilations with corrupt text layers and the June 1861 text layer need image-based checking; source filenames do not prove readable coverage.",
+    "A cited contact address may be a correspondence address, not the institution’s premises.",
+    "City points use existing cited locality coordinates; no historical street numbers were geocoded as modern addresses.",
+    "Proposals remain distinct from operating institutions. Jewish ownership and kosher status are not inferred from publication, surname or name-only matches."
+  ],
+  "excludedFalseMatches": [
+    "Heilbronn complaint treated as hotel advertisement",
+    "Lewis Ellinger committee membership treated as M. Ellinger bookseller advertisement",
+    "Ritterband book-agency mention treated as boarding-house activity",
+    "Subscriber-payment acknowledgments treated as business activity"
+  ],
+  "earlyReview": {
+    "pagesScreened": 213,
+    "uprightPagesReadable": 118,
+    "scope": "All early OCR page records screened; upright pages read for missing named advertisements. Inverted/corrupted photographs are pending orientation-corrected OCR and were not treated as reliable negatives.",
+    "limits": [
+      "A notice date printed without year is not promoted to a precise calendar date.",
+      "1851-11.pdf has potentially mixed issue pages:pp3–4containlater-lookingads.These are not used for new factual dates.",
+      "Existing named records in advertisements.json were excluded; repeated book-catalogue notices and agents lists were not expanded into imagined storefronts."
+    ],
+    "orientationUndeterminedFiles": [
+      "1843/1843-04/IMG_5265.HEIC",
+      "1844/1844-07/IMG_5291.HEIC",
+      "1846/1846-05/IMG_5350.HEIC",
+      "1846/1846-05/IMG_5352.HEIC",
+      "1846/1846-05/IMG_5353.HEIC",
+      "1846/1846-06/IMG_5354.HEIC",
+      "1846/1846-07/IMG_5363.HEIC",
+      "1846/1846-08/IMG_5372.HEIC",
+      "1846/1846-08/IMG_5374.HEIC",
+      "1846/1846-08/IMG_5379.HEIC",
+      "1847/1847-01/IMG_5380.HEIC",
+      "1847/1847-01/IMG_5381.HEIC",
+      "1847/1847-01/IMG_5382.HEIC",
+      "1847/1847-01/IMG_5383.HEIC",
+      "1847/1847-01/IMG_5384.HEIC",
+      "1847/1847-01/IMG_5386.HEIC",
+      "1847/1847-01/IMG_5387.HEIC",
+      "1850/1850-04/IMG_5392.HEIC",
+      "1850/1850-05/IMG_5406.HEIC",
+      "1850/1850-08/1.HEIC",
+      "1850/1850-08/6.HEIC",
+      "1850/1850-11/8.jpeg",
+      "1850/1850-12/6.jpeg",
+      "1850/1850-12/8.jpeg",
+      "1851/1851-02/IMG_0331.jpeg",
+      "1851/1851-03/8.jpeg"
+    ],
+    "orientationCorrectionFollowUp": "Corrected early photographs were re-screened. Remaining orientation-undetermined images are listed; some are covers or contain only collection watermarks. None was treated as proof of absence of advertisements."
+  }
+}

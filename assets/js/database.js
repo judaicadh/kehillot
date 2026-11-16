@@ -175,9 +175,9 @@
     }
   };
 
-  var PATHS = {congregations:'congregation',people:'person',clergy:'person',institutions:'institution',events:'event',places:'place',cemeteries:'cemetery',sites:'site',periodicals:'periodical',sources:'source',media:'media'};
-  var LABELS = {congregations:'Congregation',people:'Person',institutions:'Institution',events:'Event',places:'Place',cemeteries:'Cemetery',sites:'Site',periodicals:'Periodical',sources:'Source',media:'Picture / document'};
-  function recordPlace(r) {return r._kind==='places' ? r.name+', '+r.state : r.place ? placeName(r.place) : (r.places||[]).map(placeName).join('; ');}
+  var PATHS = {advertisements:'advertisement',congregations:'congregation',people:'person',clergy:'person',institutions:'institution',events:'event',places:'place',cemeteries:'cemetery',sites:'site',periodicals:'periodical',sources:'source',media:'media'};
+  var LABELS = {advertisements:'Advertisement research record',congregations:'Congregation',people:'Person',institutions:'Institution',events:'Event',places:'Place',cemeteries:'Cemetery',sites:'Site',periodicals:'Periodical',sources:'Source',media:'Picture / document'};
+  function recordPlace(r) {if(r._kind==='advertisements')return r.placeAsRead;return r._kind==='places' ? r.name+', '+r.state : r.place ? placeName(r.place) : (r.places||[]).map(placeName).join('; ');}
   function recordDate(r) {return r.date || (r.founded || (r.documented ? 'Documented '+r.documented : '')) || r.established || r.built || r.opened || r.year || (r.born || r.died ? (r.born||'?')+'–'+(r.died||'?') : '');}
   TYPES.sources = {
     rows:function(){return D.sources.map(function(r){return Object.assign({name:r.title},r);});},text:function(r){return [r.title,r.author,r.year,r.note].join(' ');},
@@ -189,8 +189,13 @@
     facets:{holder:{label:'Collection / holder',get:function(r){return r.holder;}}},
     cols:[{key:'name',label:'Title',val:function(r){return r.name;},html:function(r){return a('media',r.id,r.name);}},{key:'holder',label:'Holder',val:function(r){return r.holder||'';}},{key:'date',label:'Date',val:function(r){return r.date||'';}}],sort:'name'
   };
+  TYPES.advertisements = {
+    rows:function(){return D.advertisements || [];}, text:function(r){return [r.name,r.placeAsRead,r.addressAsRead,r.contactAsRead,r.description,r.evidenceCategory,r.verificationStatus,r.publication].join(' ');},
+    facets:{publication:{label:'Publication',get:function(r){return r.publication;}},adKind:{label:'Advertised type',get:function(r){return r.adKind;}},period:{label:'Period',get:function(r){return !r.date ? 'Date uncertain' : r.inAtlasPeriod ? '1840–1870' : 'Later research';}}},
+    cols:[{key:'name',label:'Advertisement / lead',val:function(r){return r.name;},html:function(r){return a('advertisement',r.id,r.name);}},{key:'adKind',label:'Type',val:function(r){return r.adKind;}},{key:'place',label:'Place as read',val:function(r){return r.placeAsRead;}},{key:'date',label:'Dated mention',val:function(r){return r.date || 'Uncertain';}},{key:'addressAsRead',label:'Address as read',val:function(r){return r.addressAsRead || 'Not supplied';}},{key:'verificationStatus',label:'Review status',val:function(r){return 'Needs scan check';}}],sort:'name'
+  };
   TYPES.all = {
-    rows:function(){return Object.keys(LABELS).flatMap(function(kind){return TYPES[kind].rows().map(function(r){return Object.assign({},r,{_kind:kind});});});},
+    rows:function(){return Object.keys(LABELS).filter(function(kind){return kind!=='sources';}).flatMap(function(kind){return TYPES[kind].rows().map(function(r){return Object.assign({},r,{_kind:kind});});});},
     text:function(r){return TYPES[r._kind].text(r);},facets:{place:{label:'Place',get:recordPlace}},
     cols:[{key:'name',label:'Record',val:function(r){return r.name||r.title;},html:function(r){return a(PATHS[r._kind],r.id,r.name||r.title);}},{key:'kind',label:'Type',val:function(r){return LABELS[r._kind];}},{key:'place',label:'Place',val:recordPlace},{key:'date',label:'Date',val:recordDate}],sort:'name'
   };

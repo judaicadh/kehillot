@@ -1174,3 +1174,5 @@ input[type=search],textarea { font-family:var(--sans); border:1px solid var(--ru
 @media(max-width:600px){.map-city-context{align-items:start;flex-direction:column;gap:.6rem}}
 
 @media(max-width:760px){.fmap .city-jump-fields #city-jump{flex:1 1 12rem;}}
+
+.research-status{padding:.8rem 1rem;border-left:3px solid #285d4a;background:#f1f6f2}
