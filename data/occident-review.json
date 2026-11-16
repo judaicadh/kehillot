@@ -1,0 +1,3951 @@
+{
+  "title": "Occident institutional review, Volumes I–X",
+  "reviewed": "2026-11-15",
+  "scope": "Institution-focused screening of all ten available linked volume indexes (April 1843–March 1853), followed by selected institutional passages and news notices. This is not a word-by-word review of every article, or coverage of the complete 1843–1868 run.",
+  "method": [
+    "Screened all 1,955 article-link labels in ten volume indexes.",
+    "Selected 212 institution-related index entries by title, and additional News Items and election pages where headings can conceal local reports.",
+    "Screened 249 distinct source pages. Passage-linked means at least one specific passage supports a record; it does not mean every claim in that article has been extracted.",
+    "Screened-no-record-linked means no claim was added from that page in this pass. These pages include overseas reports, essays, proposals and unresolved identities; the status is not a finding that the page contains no institutions.",
+    "Institution dates and publication years are separate. A documentary year establishes evidence of activity or a reported historical event, not a continuous operational lifespan. Locality centers are not institution street addresses."
+  ],
+  "counts": {
+    "indexes": 10,
+    "indexedLinks": 1955,
+    "titleCandidates": 212,
+    "pagesScreened": 249,
+    "pagesWithLinkedPassages": 147,
+    "newInstitutions": 57,
+    "institutionsTotal": 83,
+    "unlinkedIndexLeads": 8
+  },
+  "followUp": [
+    {
+      "issue": "Eight institutional index entries lack a linked transcription",
+      "detail": "Retain as index-only leads; a title alone does not establish dates or an operating institution."
+    },
+    {
+      "issue": "Philadelphia Bickur Cholim identity",
+      "detail": "The 1850 officers resemble the older Mutual Assistance and Visitation society. Confirm the alias before merging records."
+    },
+    {
+      "issue": "New Orleans relief societies",
+      "detail": "Do not equate the unnamed 1848 Gemilut Hassadim notice with Bikkur Cholim or Love and Benevolence without stronger evidence."
+    },
+    {
+      "issue": "San Francisco society founded September 1850",
+      "detail": "The second unnamed society in the 1852 almanac extract may relate to Eureka, but the identification remains unresolved."
+    },
+    {
+      "issue": "Proposals and overseas institutions",
+      "detail": "Proposed colleges, dispensaries and school mergers remain research leads. Overseas reports have not been added to the current US institution dataset."
+    },
+    {
+      "issue": "Volume X transcription headers",
+      "detail": "Some April 1852 files print Vol. IX although the archive files them under Volume X. Preserve the archive path and issue date; do not silently repair the source."
+    },
+    {
+      "issue": "Remainder of the Occident run",
+      "detail": "Only the ten volume indexes linked on this archive were available in the imported catalogue. Volumes after March 1853 have not been reviewed."
+    }
+  ],
+  "unlinkedIndexEntries": [
+    {
+      "volume": 6,
+      "title": "Bachelors' Hebrew Benevolent Loan Association, of New York",
+      "url": "http://www.theoccident.com/Occident/volume6/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 7,
+      "title": "Hebrew Education Society of Philadelphia",
+      "url": "http://www.theoccident.com/Occident/volume7/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "The Metropolitan Academy of New York,",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "Female Hebrew Benevolent Society of Philadelphia,",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "Hebrew Ladies' Sewing Society of Philadelphia,",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "Liverpool Hebrew School,",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "Philadelphia Hebrew Education Society",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    },
+    {
+      "volume": 10,
+      "title": "Semi-Annual Examination of the Hebrew Education Society",
+      "url": "http://www.theoccident.com/Occident/volume10/contents.html",
+      "status": "index-only",
+      "note": "The index lists this entry without a linked article in that row; no institution facts have been inferred from this title alone."
+    }
+  ],
+  "pages": [
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/april1843/meliorate.html",
+      "volume": 1,
+      "titles": [
+        "American Society for Meliorating the Condition of the Jews 1 (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/april1843/news_items.html",
+      "volume": 1,
+      "titles": [
+        "Jews in Hamburg (1)",
+        "Alexandrow, a Cossack Village (1)",
+        "Geneva (1)",
+        "Col. Churchill's Mission to Palestine (1)",
+        "Military Services of Israelites in Poland (1)",
+        "Hospital at Jerusalem (1)",
+        "Election of Rabbis in France (1)",
+        "Mr. S. Cahen's Translation of the Bible (1)",
+        "Vote of the Norwegian Storthing concerning Jews (1)",
+        "Election of Rev. Mr. Noot at Philadelphia (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/april1843/sunday.html",
+      "volume": 1,
+      "titles": [
+        "Examination of the Sunday School at Philadelphia (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": [
+        "occident-v1-sunday"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/aug1843/news.html",
+      "volume": 1,
+      "titles": [
+        "Khan for Jewish Travellers in Syria (5)",
+        "Cassel (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/dec1843/elections_december_1843.html",
+      "volume": 1,
+      "titles": [
+        "Congregation Benai Jeshurun, New York (9)",
+        "Female Hebrew Benevolent Society, Philadelphia (9)",
+        "Female Hebrew Sewing Society, Philadelphia (9)",
+        "Congregation Shangarai Chessed, New Orleans (9)",
+        "Congregation Shearith Israel, New York (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent",
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-dbd8d3e46289"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/dec1843/female.html",
+      "volume": 1,
+      "titles": [
+        "Female Hebrew Benevolent Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-v1-female"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/dec1843/sewing.html",
+      "volume": 1,
+      "titles": [
+        "Female Hebrew Sewing Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-v1-sewing"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/feb1844/elections.html",
+      "volume": 1,
+      "titles": [
+        "Congregation Benai Israel, Cincinnati (11)",
+        "Hebrew Benevolent Society, Cincinnati (11)",
+        "Hebrew Society for Mutual Assistance and Visitation of the Sick, Philadelphia (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "mutual-assistance-sick-phl",
+        "hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-v1-elections-feb"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/feb1844/exam.html",
+      "volume": 1,
+      "titles": [
+        "Talmud Torah School, Examination of, communicated by J. K. G. (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/feb1844/institute.html",
+      "volume": 1,
+      "titles": [
+        "Talmud Torah School, Examination of, communicated officially (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": [
+        "occident-v1-institute"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/feb1844/news.html",
+      "volume": 1,
+      "titles": [
+        "Death Notices (11)",
+        "Education of the Poor in London (11)",
+        "Installation of the Rev. Mr. Issachar at Kingston (11)",
+        "New Jewish Periodical in Kingston, Jamaica (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/jan1844/assistance.html",
+      "volume": 1,
+      "titles": [
+        "New York Hebrew Assistance Society (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-assistance-ny"
+      ],
+      "sources": [
+        "occident-v1-assistance"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/jan1844/charity.html",
+      "volume": 1,
+      "titles": [
+        "Anniversary, 22nd, of the N.Y. Hebrew Benevolent Society (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-v1-charity"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/jan1844/education.html",
+      "volume": 1,
+      "titles": [
+        "Religious Education, by the Rev. Mr. Isaacs (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/jan1844/news.html",
+      "volume": 1,
+      "titles": [
+        "Confirmation at St. Thomas (10)",
+        "Conversion Societies (10)",
+        "New Societies in Philadelphia (10)",
+        "Officers of the Societies connected with Elm Street Synagogue, New York (10)",
+        "Quo Warranto case at Charleston (4) (10)",
+        "Female Hebrew Benevolent Society of Philadelphia, Treasurer's Report (10)",
+        "Sunday School at Columbia, S. C. (10)",
+        "Congregation at Charleston (10)",
+        "What Means Russia? (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school",
+        "female-hebrew-benevolent",
+        "mercy-truth-phl",
+        "sick-widows-orphans-phl",
+        "ladies-benevolent-elm-ny",
+        "indigent-old-men-elm-ny",
+        "gemilut-hesed-elm-ny"
+      ],
+      "sources": [
+        "occident-v1-news-jan"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/july1843/palache.html",
+      "volume": 1,
+      "titles": [
+        "Miss Palache's School, Examination of, by Observer (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palache-school-ny"
+      ],
+      "sources": [
+        "occident-review-d7405fd536e3"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/june1843/news.html",
+      "volume": 1,
+      "titles": [
+        "Gallacia, State of Jews in (3)",
+        "Moravian Jews (3)",
+        "Montefiore Testimonial (3)",
+        "Rome, oppression of Jews in (3)",
+        "Decree, Reported, concerning the Jews in Mexico, by Santa Anna (3)",
+        "Damascus Jews (3)",
+        "Santa Anna, President of Mexico (3)",
+        "Proceedings of Jews in England concerning a future Chief Rabbi (3)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/mar1844/news.html",
+      "volume": 1,
+      "titles": [
+        "Balls, Charity, at Philadelphia and New York (12)",
+        "Literary Hebrew Association, at Kingston, Jamaica (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/may1843/anniversary_prayer.html",
+      "volume": 1,
+      "titles": [
+        "Prayer at the Fifth Annual Examination of the Philadelphia Sunday School (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/may1843/meliorate2.html",
+      "volume": 1,
+      "titles": [
+        "American Society for Meliorating the Condition of the Jews 2 (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/may1843/news.html",
+      "volume": 1,
+      "titles": [
+        "Russian Jews (2)",
+        "Jews in New Zealand (2)",
+        "Jews in Sydney, South Wales (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/may1843/palache.html",
+      "volume": 1,
+      "titles": [
+        "Miss Palache's School, New York (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palache-school-ny"
+      ],
+      "sources": [
+        "occident-v1-palache"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/may1843/talmudtorah.html",
+      "volume": 1,
+      "titles": [
+        "Talmud Torah School of New York (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "talmud-torah-hebrew-institute-ny"
+      ],
+      "sources": [
+        "occident-v1-talmud"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/nov1843/election.html",
+      "volume": 1,
+      "titles": [
+        "Congregation Benai Jeshurun, Cincinnati (8)",
+        "Congregation Mikve Israel, Savannah (8)",
+        "German and Polish Congregation, Montreal (8)",
+        "United Hebrew Beneficent Fuel and Savings Society (8)",
+        "United Hebrew Beneficent Society, Philadelphia (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-fuel-savings-phl",
+        "united-hebrew-beneficent-phl"
+      ],
+      "sources": [
+        "occident-v1-elections-nov"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/nov1843/public.html",
+      "volume": 1,
+      "titles": [
+        "Public Religious Education (8)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/oct1843/birmin.html",
+      "volume": 1,
+      "titles": [
+        "Hebrew National School at Birmingham (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/oct1843/elections.html",
+      "volume": 1,
+      "titles": [
+        "Congregation House of Israel, Philadelphia (7)",
+        "Congregation Mikve Israel, Philadelphia (7)",
+        "Congregation of St. Thomas (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/oct1843/evangel.html",
+      "volume": 1,
+      "titles": [
+        "Pennsylvania Society for Evangelizing the Jews (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/oct1843/literary_notices.html",
+      "volume": 1,
+      "titles": [
+        "Sabbath Tract Society's Publications (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/oct1843/stthomas.html",
+      "volume": 1,
+      "titles": [
+        "Examination of the Sunday School at St. Thomas (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume1/sept1843/college.html",
+      "volume": 1,
+      "titles": [
+        "Hebrew College (6)",
+        "Plan of Judge Noah",
+        "Editorial Remarks"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news1.html",
+      "volume": 10,
+      "titles": [
+        "Boston (1) (2)",
+        "Jewish Publication Society (1)",
+        "Hospital in New York (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-3bb66628ee1b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news2.html",
+      "volume": 10,
+      "titles": [
+        "Cleveland, Ohio (1)",
+        "Columbus, Ohio (1)",
+        "Zanesville, Ohio (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news3.html",
+      "volume": 10,
+      "titles": [
+        "Cincinnati (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bnai-jeshurun-sunday-school-cin"
+      ],
+      "sources": [
+        "occident-review-976e498170a8"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news4.html",
+      "volume": 10,
+      "titles": [
+        "Fort Wayne, Indiana (1)",
+        "Lafayette, Indiana (1)",
+        "Louisville, Kentucky (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news5.html",
+      "volume": 10,
+      "titles": [
+        "Detroit, Michigan (1)",
+        "Galveston, Texas (1)",
+        "Memphis, Tennessee (1)",
+        "Quincy, Illinois (1)",
+        "St. Louis, Mo., (1) (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "benevolent-society-memphis",
+        "burial-association-memphis"
+      ],
+      "sources": [
+        "occident-review-43d22a9811bb"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/news6.html",
+      "volume": 10,
+      "titles": [
+        "California (1)",
+        "Europe (1)",
+        "Rabbis of Europe (1)",
+        "Stockton, California (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "benevolent-society-sacramento",
+        "cholera-auxiliary-sf",
+        "hebrew-benevolent-sf",
+        "lovely-nation-stockton"
+      ],
+      "sources": [
+        "occident-review-b64ea6d18258"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/apr1852/phila.html",
+      "volume": 10,
+      "titles": [
+        "Hebrew Sunday School of Philadelphia"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-923fc4d71fab"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/aug1852/news.html",
+      "volume": 10,
+      "titles": [
+        "Detroit, Michigan (1) (5)",
+        "England (3) (5)",
+        "Germany (5)",
+        "Italy (5)",
+        "New York, (2) (3) (4) (5)",
+        "Palestine (5)",
+        "Philadelphia (2) (5)",
+        "Switzerland (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bikkur-cholim-detroit",
+        "hebrew-education-society",
+        "noot-school-ny",
+        "rodef-sholem-school-phl"
+      ],
+      "sources": [
+        "occident-review-0a902e6a9e97"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/jul1852/news.html",
+      "volume": 10,
+      "titles": [
+        "Charleston, S. C. (3) (4)",
+        "New York, (2) (3) (4) (5)",
+        "Testimonial to Mr. Hyman Polock (4)",
+        "Richmond, (3) (4)",
+        "Savannah, Ga., (3) (4) (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "mutual-aid-richmond"
+      ],
+      "sources": [
+        "occident-review-cf55d58be898"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/jun1852/hesp.html",
+      "volume": 10,
+      "titles": [
+        "Hebrew Education Society of Philadelphia"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-education-society"
+      ],
+      "sources": [
+        "occident-review-745bbcb6ee2f"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/jun1852/news.html",
+      "volume": 10,
+      "titles": [
+        "Augusta, Ga. (2) (3)",
+        "Baltimore, Md., 3)",
+        "Charleston, S. C. (3) (4)",
+        "Columbia, S. C. (3)",
+        "England (3) (5)",
+        "The Hebrew Benevolent Fuel Society of Philadelphia (3)",
+        "New York, (2) (3) (4) (5)",
+        "Norfolk (3)",
+        "Contribution for Palestine (3)",
+        "Panama, New Granada (3)",
+        "Petersburg, Va. (3)",
+        "Richmond, (3) (4)",
+        "Rodef Sholom Congregation of Philadelphia, (3)",
+        "Savannah, Ga., (3) (4) (6)",
+        "St. Thomas (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-fuel-savings-phl",
+        "solomon-jacobs-school-bal"
+      ],
+      "sources": [
+        "occident-review-b863c0d11750"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/jun1852/noot.html",
+      "volume": 10,
+      "titles": [
+        "Rev. Mr. Noot's School in New York"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "noot-school-ny"
+      ],
+      "sources": [
+        "occident-review-4bfbaa68ba6d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/may1852/montreal.html",
+      "volume": 10,
+      "titles": [
+        "Third Annual Examination of the Montreal Sunday School"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/may1852/news.html",
+      "volume": 10,
+      "titles": [
+        "Atlanta, Ga.(2)",
+        "Augusta, Ga. (2) (3)",
+        "Boston (1) (2)",
+        "Lafayette, Louisiana (2)",
+        "Vicksburg, Natchez, Woodville, and Clinton, Mississippi (2)",
+        "Mobile (2)",
+        "Montgomery, Alabama (2)",
+        "New Haven, (2)",
+        "New Orleans, (2) (3) (6)",
+        "New York, (2) (3) (4) (5)",
+        "Philadelphia (2) (5)",
+        "Pittsburg, Pa. (2) (6)",
+        "Wheeling, Va. (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume10/sep1852/news.html",
+      "volume": 10,
+      "titles": [
+        "Basle, Switzerland",
+        "Breslau, Prussia",
+        "The Hebrew Literary Association of Philadelphia",
+        "S. Solis to Ellen Samuel, Liverpool",
+        "Nashville, Tennessee",
+        "New Orleans, (2) (3) (6)",
+        "Ober Endingen, Switzerland",
+        "Pittsburg, Pa. (2) (6)",
+        "Savannah, Ga., (3) (4) (6)",
+        "St. Louis, Mo., (1) (6)",
+        "Strasbourg, France",
+        "Barcelona, Venezuela",
+        "Washington, D. C.",
+        "Williamsburgh, N. Y."
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-874155af9a9a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/april1844/elections.html",
+      "volume": 2,
+      "titles": [
+        "Portuguese Congregation of Kingston, Jamaica (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/april1844/news.html",
+      "volume": 2,
+      "titles": [
+        "Charity Ball at Cincinnati (1)",
+        "First Examination of Sunday School, at Columbia, S. C. (1)",
+        "St. Thomas (1)",
+        "Mr. E. Halphen, of Paris (1)",
+        "Synagogues at Hobard Town and New Zealand (1)",
+        "The Sixth Annual Examination of the Hebrew Sunday School at Philadelphia (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school",
+        "hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-b7d0ad63690f"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/aug1844/institute.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Institute, by the Rev. H. Felsenheld (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/aug1844/shmad.html",
+      "volume": 2,
+      "titles": [
+        "London Society for Promoting Christianity among the Jews (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/dec1844/elections.html",
+      "volume": 2,
+      "titles": [
+        "Ladies' Benevolent Society of B'nai Jeshurun, New York (9)",
+        "Female Hebrew Benevolent Society of Philadelphia (9)",
+        "Female Sewing Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent",
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-9eb73729579a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/dec1844/female.html",
+      "volume": 2,
+      "titles": [
+        "The 25th Anniversary Meeting of the Ladies' Benevolent Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-33f8d70b1f21"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/dec1844/ladies.html",
+      "volume": 2,
+      "titles": [
+        "Annual Meeting of the Ladies' Benevolent Society of the Congregation B'nai Jeshurun, of New York (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-benevolent-elm-ny"
+      ],
+      "sources": [
+        "occident-review-883814ff6437"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/dec1844/sewing.html",
+      "volume": 2,
+      "titles": [
+        "Sixth Annual Report of the Hebrew Female Sewing Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-de21853469f2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/feb1845/conversion.html",
+      "volume": 2,
+      "titles": [
+        "Conversion Societies (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/feb1845/elections.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Society for the Visitation of the Sick and Mutual Assistance (11)",
+        "Congregation of Easton, PA (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/feb1845/news.html",
+      "volume": 2,
+      "titles": [
+        "Deserved Compliment (11)",
+        "Jewish Sheriffs (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jan1845/elections.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Mutual Benefit Society (10)",
+        "Society for Education of Poor Children, N. Y. (10)",
+        "St. Louis (10)",
+        "United Hebrew Benevolent Society of Philadelphia (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-mutual-benefit-ny",
+        "poor-children-education-ny",
+        "united-hebrew-beneficent-phl"
+      ],
+      "sources": [
+        "occident-review-042c806a4e26"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jan1845/news.html",
+      "volume": 2,
+      "titles": [
+        "Quo Warranto Appeal (10)",
+        "The Israelites of Baltimore (10)",
+        "The Mendelssohnian Society of New York (10)",
+        "The Congregation of Spanish Town, Jamaica (10)",
+        "The Election of Rabbi at London (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jul1844/news.html",
+      "volume": 2,
+      "titles": [
+        "Conversions from Christianity (4)",
+        "Dr. Ludwig Philippson and the Annual Meeting of German Rabbis and Ministers (4)",
+        "Hospital at Jerusalem (4)",
+        "Jews in France (4)",
+        "Mr. Altares (4)",
+        "The Royal Assent Withheld from the Bill Emancipating the Jews in Rhenish Provinces (4)",
+        "Russian Jews (4)",
+        "Trades Among Jews (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jul1844/objects.html",
+      "volume": 2,
+      "titles": [
+        "Objects and Means of Education, by J. K. G. (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jul1844/on_education.html",
+      "volume": 2,
+      "titles": [
+        "No. 2.--On Education, by Dr. L. Philippson (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/jul1844/palache.html",
+      "volume": 2,
+      "titles": [
+        "Public Examination of Miss Palache's Academy (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palache-school-ny"
+      ],
+      "sources": [
+        "occident-review-c311ef3fdc01"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/june1844/assistance.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Assistance Society of New York (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-assistance-ny"
+      ],
+      "sources": [
+        "occident-review-88c7a6eac6c9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/june1844/kingston.html",
+      "volume": 2,
+      "titles": [
+        "Beth Limmud Society of Kingston (3)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/june1844/neworleans.html",
+      "volume": 2,
+      "titles": [
+        "Charitable Society in New Orleans (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no"
+      ],
+      "sources": [
+        "occident-review-6efd51b46094"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/june1844/news.html",
+      "volume": 2,
+      "titles": [
+        "Kingston, Ja. (3)",
+        "London (3)",
+        "Mobile (3)",
+        "New Orleans (3)",
+        "New York (3)",
+        "Russian Ukase (3)",
+        "The First Fruits of the West (3)",
+        "Quo Warranto Case at Charleston (3)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/june1844/newschool.html",
+      "volume": 2,
+      "titles": [
+        "New School in Charleston (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jewish-doctrine-school-charleston"
+      ],
+      "sources": [
+        "occident-review-640c8acb2aa7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/mar1845/news.html",
+      "volume": 2,
+      "titles": [
+        "Quo Warranto Appeal (10) (12)",
+        "Dr. Adler, Chief Rabbi (12)",
+        "Hamburgh (12)",
+        "Mitigation of the Russo-Polish Conscription (12)",
+        "The Mogador Calamity (12)",
+        "Order Restored at Mogador (12)",
+        "Second Annual Dinner of the Hebrew Benevolent Society of St. Louis (12)",
+        "The Second Annual Examination of the Talmud Torah School of New York (12)",
+        "Third Annual Charity Ball of the Israelites of Philadelphia (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "revival-of-life-stl",
+        "talmud-torah-hebrew-institute-ny"
+      ],
+      "sources": [
+        "occident-review-e3400e162b2d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/mar1845/schools.html",
+      "volume": 2,
+      "titles": [
+        "Prayers for Schools (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/may1844/barbadoes.html",
+      "volume": 2,
+      "titles": [
+        "Barbadoes--Progress of Education (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/may1844/columbia.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Sunday School of Columbia, S. C. (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-a0e685c78b0a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/may1844/elections.html",
+      "volume": 2,
+      "titles": [
+        "Hebrew Fuel Society of Philadlephia (2)",
+        "Ohabe Lemudah of Philadelphia (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-fuel-savings-phl"
+      ],
+      "sources": [
+        "occident-review-2c47c331e285"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/may1844/news.html",
+      "volume": 2,
+      "titles": [
+        "Jews in Hungary (2)",
+        "Rev. S. E. Cohen Noot (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/may1844/remarks.html",
+      "volume": 2,
+      "titles": [
+        "Remarks on Education, by S. S. (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/nov1844/benevolent.html",
+      "volume": 2,
+      "titles": [
+        "The New York Hebrew Benevolent Society, 23rd Anniversary (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-fdb3fe0d08b3"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/nov1844/elections.html",
+      "volume": 2,
+      "titles": [
+        "Nidche Israel of Baltimore (8)",
+        "Chesed Vaemeth of Philadelphia (8)",
+        "Talmud Torah School of New York (8)",
+        "Shangari Chassed of New Orleans (8)",
+        "Montego Bay, Jamaica (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "mercy-truth-phl",
+        "talmud-torah-hebrew-institute-ny"
+      ],
+      "sources": [
+        "occident-review-a10ee0e0d8a7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/nov1844/philo.html",
+      "volume": 2,
+      "titles": [
+        "Jewish Schools, by Philo (8)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/oct1844/barbadoes.html",
+      "volume": 2,
+      "titles": [
+        "Sunday School in Barbadoes (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/oct1844/news.html",
+      "volume": 2,
+      "titles": [
+        "Consecration of the Sydney Synagogue (7)",
+        "Constantinople (7)",
+        "Hospital at Jerusalem (4) (7)",
+        "Melbourne (7)",
+        "Mr. Green (7)",
+        "Synagogue of Hobard Town, Van Diemen's Land (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/sep1844/elections.html",
+      "volume": 2,
+      "titles": [
+        "Bnai Jeshurun, New York (6)",
+        "St. Louis (6)",
+        "St. Thomas (6)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume2/sep1844/frankfort.html",
+      "volume": 2,
+      "titles": [
+        "The Reform Society at Frankfort (6)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/apr1845/jps_richmond.html",
+      "volume": 3,
+      "titles": [
+        "The Jewish Publication Auxiliary Society of Richmond (1)",
+        "Constitution"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jps-auxiliary-richmond"
+      ],
+      "sources": [
+        "occident-review-b4e740074fb7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/apr1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Berlin (1)",
+        "Brunswick (1)",
+        "Kingston, Jamaica (1)",
+        "Launceston, Van Diemen's Land (1)",
+        "Mogador (1)",
+        "Montego Bay (1)",
+        "Moravia (1)",
+        "Russia (1)",
+        "The Rev. Solomon Jacobs (1)",
+        "St. Thomas (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/apr1845/talmudtorah.html",
+      "volume": 3,
+      "titles": [
+        "Second Annual of the Talmud Torah School of New York, by J. K. G. (1)",
+        "Address of J. B. Phillips, Esq."
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "talmud-torah-hebrew-institute-ny"
+      ],
+      "sources": [
+        "occident-review-66ef6ea8937d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/aug1845/barbadoes.html",
+      "volume": 3,
+      "titles": [
+        "Shangare Limmud School of Barbadoes (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/aug1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Bavarian Intolerance and Oppression (5)",
+        "Cape of Good Hope (5)",
+        "Installation of Dr. Adler (5)",
+        "The Fine Arts (5)",
+        "Franklin Street Synagogue, New York (5)",
+        "Hebrew Library (5)",
+        "Henry Street Congregation, New York (5)",
+        "New Congregations (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "henry-street-school-ny"
+      ],
+      "sources": [
+        "occident-review-286ff5fd0a2e"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/elections.html",
+      "volume": 3,
+      "titles": [
+        "Elections (9)",
+        "Hebrew Congregation of Baltimore",
+        "Congregation Beneh Israel of Cincinnati",
+        "Hebrew Benevolent Society of Cincinnati",
+        "Hebrew Ladies' Benevolent society of Cincinnati",
+        "\"Mercy and Truth\" of Philadelphia",
+        "Hebrew Congregation \"Shanarai Chassed\" of New Orleans",
+        "Ladies' Hebrew Sewing Society"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin",
+        "ladies-hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-725252c3b1a5"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/female.html",
+      "volume": 3,
+      "titles": [
+        "Report of the Female Hebrew Benevolent Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-59a0dda91224"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/jps.html",
+      "volume": 3,
+      "titles": [
+        "Formation of the American Jewish Publication Society (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-1905f2adfea8"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Constantinople (9)",
+        "Copenhagen (9)",
+        "Allotment of Russian Crown Lands for the Use of the Jews (9)",
+        "False Charges Against the Jews for Kidnapping (9)",
+        "Dr. Z. Frankel (9)",
+        "Frankfort-on-the-Oder (9)",
+        "Hanover Congregation (9)",
+        "The Late Rev. Rabbi Hirschell's Valuable Library (9)",
+        "Dr. Lilienthal (9)",
+        "Norway (8) (9)",
+        "Mrs. Sarah Moses (9)",
+        "Outrages Against the Jews in Bavaria (9)",
+        "Hebrew Books Printed in Poland (9)",
+        "Schwerin (9)",
+        "Dr. G. Weil (9)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/newyork.html",
+      "volume": 3,
+      "titles": [
+        "New York Hebrew Benevolent Society (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-19de899a4e5e"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/dec1845/sewing.html",
+      "volume": 3,
+      "titles": [
+        "Report of the Directresses of the Ladies' Hebrew Sewing Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-40a892ae7a00"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/feb1846/cincinnati.html",
+      "volume": 3,
+      "titles": [
+        "Fourth Anniversary of the Hebrew Benevolent Society of Cincinnati (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-889137e5f97d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/feb1846/news.html",
+      "volume": 3,
+      "titles": [
+        "Rev. Mr. Isaacs (11)",
+        "American Jewish Publication Society (7) (11) (12)",
+        "Philadelphia (8) (11) (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-62573f3e2312"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jan1846/german.html",
+      "volume": 3,
+      "titles": [
+        "New York German Hebrew Benevolent Society (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "german-hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-7a8a715d519c"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jan1846/news.html",
+      "volume": 3,
+      "titles": [
+        "Baltimore (7) (10)",
+        "The Rev. Mr. Isaacs, of New York (10)",
+        "Papé-Traubel (10)",
+        "St. Louis (10)",
+        "St. Thomas (1) (3) (7) (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jul1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Charleston (4)",
+        "Coblenz (4)",
+        "Education (4)",
+        "Frankfort-on-the-Maine (4)",
+        "Good News for Judaism (4)",
+        "Jewish Charity, Gibraltar (4)",
+        "The Jewish Miscellany (4)",
+        "Jewish Population of the Rhenish Prussian Provinces and Westphalia (4)",
+        "Malta (4)",
+        "New York (4)",
+        "Russia and Poland (4)",
+        "The Russian Jews (4)",
+        "The Russo-Polish Jews (4)",
+        "The Jews in Silesia (4)",
+        "Treves (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-school-augusta"
+      ],
+      "sources": [
+        "occident-review-531e693373f2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jul1845/newsynagogue.html",
+      "volume": 3,
+      "titles": [
+        "New Synagogue in New York (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jul1845/ukase.html",
+      "volume": 3,
+      "titles": [
+        "Ukase Respecting the Education of Jews in Russia (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jun1845/charleston.html",
+      "volume": 3,
+      "titles": [
+        "Examination of the Pupils of the Society for the Instruction of Jewish Doctrine, Charleston, S. C., by Lamed. (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jewish-doctrine-school-charleston"
+      ],
+      "sources": [
+        "occident-review-6bbcef4767cc"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/jun1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Falmouth, Jamaica (3)",
+        "Hebrew Collegiate School (3)",
+        "Jerusalem (3)",
+        "Mobile (3)",
+        "Montego Bay (1) (3) (7)",
+        "Jews of Morocco (3)",
+        "P. S. Jacobs (3)",
+        "Political State of the Jews (3)",
+        "The Rev. Solomon Jacobs (1) (3)",
+        "St. Thomas (1) (3) (7) (10)",
+        "Jewish Disabilities Bill (3)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/mar1846/news.html",
+      "volume": 3,
+      "titles": [
+        "American Jewish Publication Society (7) (11) (12)",
+        "Constantinople (9) (12)",
+        "Justice to Jewish Converts (12)",
+        "London (12)",
+        "New York (4) (12)",
+        "Philadelphia (8) (11) (12)",
+        "Strange Contest (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845",
+        "jps-auxiliary-no"
+      ],
+      "sources": [
+        "occident-review-408881c02016"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/may1845/charleston.html",
+      "volume": 3,
+      "titles": [
+        "Hebrew Society for the Instruction of Jewish Youth in Charleston, by M. M. S. (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jewish-youth-school-charleston"
+      ],
+      "sources": [
+        "occident-review-9fcbd57a0c97"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/may1845/news.html",
+      "volume": 3,
+      "titles": [
+        "England, Jewish Emancipation (2)",
+        "Grisons, Switzerland (2)",
+        "The Seventh Annual Examination of the Hebrew Sunday School of Philadelphia (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-1fb527488860"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/nov1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Augusta, Georgia (11)",
+        "Cleveland, Ohio (8)",
+        "The Jews of Corfu (8)",
+        "France (8)",
+        "The Jews in India (8)",
+        "Kos Jeshuoth (8)",
+        "London (8)",
+        "Carvalho-Solis (9)",
+        "New Orleans (8)",
+        "Norway (8)",
+        "Philadelphia (8)",
+        "Richmond, Va. (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-school-augusta"
+      ],
+      "sources": [
+        "occident-review-6b46f0af0e26"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/oct1845/news.html",
+      "volume": 3,
+      "titles": [
+        "Baltimore (7)",
+        "Burton Street Synagogue, London (7)",
+        "Dr. Adler (7)",
+        "The Hanover Congregation (7)",
+        "American Jewish Publication Society (7)",
+        "Opinion of the Court in the Case of the Elm Street Synagogue of New York (7)",
+        "Ourself (7)",
+        "Savannah (7)",
+        "St. Thomas (1) (3) (7) (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-50e911932619"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/oct1845/public.html",
+      "volume": 3,
+      "titles": [
+        "Public Education (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume3/sep1845/news.html",
+      "volume": 3,
+      "titles": [
+        "The Chief Rabbi of England (6)",
+        "Jewish Disabilities Bill (3) (6)",
+        "The Jewish Miscellany (4) (6)",
+        "The Second Rabbinical Meeting at Frankford (6)",
+        "To Our Readers (6)",
+        "Jews of Wurtemberg (6)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/apr1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Aix La Chapelle (1)",
+        "American Jewish Publication Society (1)",
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "Prayers for Jews in Russia (1)",
+        "The Hebrew Ladies' Benevolent Society of Cincinnati (1)",
+        "Jewish Population in Italy (1)",
+        "David Sanders, 18 Heshvan 5607 (1)",
+        "Russian Jews and Sir Moses Montefiore (1)",
+        "Russia (1) (5) (10)",
+        "St. Domingo (1)",
+        "St. Thomas (1) (7)",
+        "Sunday Legislation (1)",
+        "Vienna (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845",
+        "ladies-hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-b4132e923ce2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/aug1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Charleston (2) (5) (7)",
+        "Confirmation in New York and St. Thomas (5)",
+        "Election of Grand Rabbi of France (5)",
+        "Jewish Free-Masons in Prussia (5)",
+        "The Rev. Mr. Jacobs, of Kingston, Jamaica (5)",
+        "Sir Moses Montefiore (8)",
+        "Russia (1) (5) (10)",
+        "Palestinian Jews (5)",
+        "Prospective Return of Jews to Spain (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/dec1846/femalebenevolent.html",
+      "volume": 4,
+      "titles": [
+        "Annual Report of the Female Hebrew Benevolent Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-28cbc3f28c9a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/dec1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "Columbia, South Carolina (6) (9)",
+        "The Proposed Conference of Jewish Theologians (9)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/feb1847/cinci.html",
+      "volume": 4,
+      "titles": [
+        "The Cincinnati Hebrew Benevolent Society (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-d43a9a0d7d58"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/feb1847/educate.html",
+      "volume": 4,
+      "titles": [
+        "Jewish Education, by L. M. Ritterband (11)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/feb1847/news.html",
+      "volume": 4,
+      "titles": [
+        "Albany (11)",
+        "Baltimore (7) (11)",
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "The Fifth Anniversary Hebrew Ball, Philadelphia (11)",
+        "Ohio, Liberty of Conscience Triumphant (11)",
+        "Montego Bay, Jamaica (11)",
+        "Montreal (8) (11)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)",
+        "Sydney, New South Wales (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-united-sewing-cin"
+      ],
+      "sources": [
+        "occident-review-c1d7834f2ca6"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jan1847/education.html",
+      "volume": 4,
+      "titles": [
+        "Education for the Ministry (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jan1847/german.html",
+      "volume": 4,
+      "titles": [
+        "Third Anniversary of the German Hebrew Benevolent Society of New York (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "german-hebrew-benevolent-ny",
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-e86a09ad0f23"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jan1847/news.html",
+      "volume": 4,
+      "titles": [
+        "Bohemia (10)",
+        "Boston (10)",
+        "Jewish Liberality (10)",
+        "Jewish Loan Institutions (10)",
+        "New Orleans (8) (10)",
+        "Jews in the Papal States (11)",
+        "Russia (1) (5) (10)",
+        "New York Congregation Shearith Israel (10)",
+        "Proposed Conference II (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jul1846/benevolent.html",
+      "volume": 4,
+      "titles": [
+        "Hebrew Benevolent Society of New York (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-79f47819fefd"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jul1846/charleston.html",
+      "volume": 4,
+      "titles": [
+        "Examination of the Pupils of the School for the Instruction of the Jewish Doctrine in Charleston, S. C. (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jewish-doctrine-school-charleston"
+      ],
+      "sources": [
+        "occident-review-f43baa8eecd7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jul1846/school.html",
+      "volume": 4,
+      "titles": [
+        "Hebrew and English School (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jacobs-aylward-school-phl"
+      ],
+      "sources": [
+        "occident-review-81852d08da9a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jul1846/societies.html",
+      "volume": 4,
+      "titles": [
+        "Societies for the Religious Instruction of Jewish Youth (4)",
+        "Letter of S."
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jun1846/columbia.html",
+      "volume": 4,
+      "titles": [
+        "Hebrew Sunday School at Columbia, S. C. (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school",
+        "hebrew-benevolent-columbia"
+      ],
+      "sources": [
+        "occident-review-a7af62e09472"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/jun1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "London (3)",
+        "The Hebrew Beneficial Society of Mercy and Truth, of Philadelphia (3)",
+        "Benjamin Jonas, 17 Iyar 5606 (3)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "mercy-truth-phl"
+      ],
+      "sources": [
+        "occident-review-edf457d90d0b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/mar1847/ministry.htm",
+      "volume": 4,
+      "titles": [
+        "Education to the Ministry, by D. (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/mar1847/news.html",
+      "volume": 4,
+      "titles": [
+        "Rabbi Jechiel Cohen, of Hebron (12)",
+        "Dr. Kohlmeyer (12)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)",
+        "S. M. Isaacs (12)",
+        "Sunday Laws at Richmond (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/may1846/neworleans.html",
+      "volume": 4,
+      "titles": [
+        "New Orleans Hebrew Benevolent Society (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no"
+      ],
+      "sources": [
+        "occident-review-c40b97718e3d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/may1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Charleston (2) (5) (7)",
+        "Cleveland (2) (7)",
+        "Coro (2)",
+        "England (2)",
+        "New York (2)",
+        "Moses Nathan Binley, March 11, 1846 (2)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)",
+        "Richmond, Va. (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-fuel-savings-phl"
+      ],
+      "sources": [
+        "occident-review-256067ffe7ca"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/may1846/palache.html",
+      "volume": 4,
+      "titles": [
+        "Examination of Miss Palache's School (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palache-school-ny"
+      ],
+      "sources": [
+        "occident-review-c388760d8eb9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/may1846/plea.html",
+      "volume": 4,
+      "titles": [
+        "A Plea for Education (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/nov1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "Egypt (8)",
+        "Kingston, Jamaica (7) (8)",
+        "Mercy and Truth, II (8)",
+        "Montreal (8) (11)",
+        "New Orleans (8) (10)",
+        "Miss Amanda M. Hart, of Savannah, October 5, 1846 (8)",
+        "Jewish Settlements Throughout the Country (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-6a8d35cacd5e"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/nov1846/sewing.html",
+      "volume": 4,
+      "titles": [
+        "Directresses' Annual Report of the Ladies Hebrew Sewing Society of Philadelphia (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-948edf69b45d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/oct1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Baltimore (7) (11)",
+        "Charleston (2) (5) (7)",
+        "Cincinnati (1) (3) (7) (8) (9) (11)",
+        "Cleveland (2) (7)",
+        "Kingston, Jamaica (7) (8)",
+        "Philadelphia (2) (3) (7) (9) (11) (12)",
+        "Relief for Palestine (7)",
+        "Rev. A. P. Mendes (7)",
+        "St. Thomas (1) (7)",
+        "The Late Assembly of Rabbins (7)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-institute-cin"
+      ],
+      "sources": [
+        "occident-review-0fc388fc4d06"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume4/sep1846/news.html",
+      "volume": 4,
+      "titles": [
+        "Augusta, Georgia (6)",
+        "Clairborne, Alabama (6)",
+        "Consecration at Cleveland, Ohio (6)",
+        "Columbia, South Carolina (6) (9)",
+        "Jewish Population in Russia (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-school-augusta"
+      ],
+      "sources": [
+        "occident-review-9b9725defc33"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/apr1847/ball.html",
+      "volume": 5,
+      "titles": [
+        "Hebrew School Fund Ball at Richmond, Va. (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/apr1847/demand.html",
+      "volume": 5,
+      "titles": [
+        "Demand for Education (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/apr1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Augusta I (1)",
+        "Laws and Regulations for all the Synagogues of the British Empire (1)",
+        "Cincinnati I (1)",
+        "Easton, Pa. (1)",
+        "Kingston I (1)",
+        "An Act relating to evidence (1)",
+        "The Jewish Miscellany (1)",
+        "Mobile I (1)",
+        "Montego Bay, Jamaica (1)",
+        "Philadelphia I (1)",
+        "Relief of Indigent Jews at Cincinnati (1)",
+        "Rome (1)",
+        "St. Thomas I (1)",
+        "Venezuela I (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-institute-cin"
+      ],
+      "sources": [
+        "occident-review-83a679eddac7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/apr1847/school.html",
+      "volume": 5,
+      "titles": [
+        "Meeting at Philadelphia in Favour of Establishing a General and Hebrew School (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/aug1847/augusta.html",
+      "volume": 5,
+      "titles": [
+        "Examination of the Sunday School at Augusta, Ga. (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-school-augusta"
+      ],
+      "sources": [
+        "occident-review-27acd98d6927"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/aug1847/examin.html",
+      "volume": 5,
+      "titles": [
+        "Examination of the Children of the Society for Instruction of the Jewish Doctrine, at Charleston (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "jewish-doctrine-school-charleston"
+      ],
+      "sources": [
+        "occident-review-ff26cdea59c7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/aug1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Albany II (5)",
+        "Buffalo (5)",
+        "Montreal I (5)",
+        "New Orleans II (5)",
+        "New York II (5)",
+        "Palestine Relief Fund (5)",
+        "Philadelphia IV (5)",
+        "Prussia and Rome (5)",
+        "Rochester, N. Y. (5)",
+        "Syracuse, N. Y. (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "beth-el-school-albany"
+      ],
+      "sources": [
+        "occident-review-aa11e5ec0252"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/aug1847/nyhbs.html",
+      "volume": 5,
+      "titles": [
+        "The New York Hebrew Benevolent Society (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-fdc978656c25"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/dec1847/ajps.html",
+      "volume": 5,
+      "titles": [
+        "The American Jewish Publication Society (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-87c4234d9c70"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/dec1847/fhbs.html",
+      "volume": 5,
+      "titles": [
+        "Twenty-eighth Anniversary of the Female Heb. Benevolent Society of Philadelphia (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-b9a384c22b95"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/dec1847/inst.html",
+      "volume": 5,
+      "titles": [
+        "Charitable Institutions (9)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/dec1847/lbs.html",
+      "volume": 5,
+      "titles": [
+        "Ladies' Benevolent Society of New York (9)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/dec1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Augusta II (9)",
+        "Baltimore IV (9)",
+        "Civil Elevation of the Jews (9)",
+        "New Orleans IV (9)",
+        "New York IV (9)",
+        "Philadelphia VII (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no"
+      ],
+      "sources": [
+        "occident-review-998ea496832a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/feb1848/bhla.html",
+      "volume": 5,
+      "titles": [
+        "New York Bachelors' Hebrew Ben. Loan Association (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bachelors-hebrew-loan-ny"
+      ],
+      "sources": [
+        "occident-review-9f79aa4d8cf8"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/feb1848/hlusc.html",
+      "volume": 5,
+      "titles": [
+        "Report of the Hebrew Ladies' Un. Sewing Society of Cincinnati (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-united-sewing-cin"
+      ],
+      "sources": [
+        "occident-review-cf2114303de6"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/feb1848/news.html",
+      "volume": 5,
+      "titles": [
+        "Baltimore VI (11)",
+        "Cincinnati III (10)",
+        "Rev. S. M. Isaacs (11)",
+        "Mechlenberg Schwerin (11)",
+        "New York V (11)",
+        "Philadelphia IX (11)",
+        "Election of the Rabbi of Paris (11)",
+        "Sydney, New South Wales (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin",
+        "ladies-hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-5bd2e47e82e2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jan1848/charity.html",
+      "volume": 5,
+      "titles": [
+        "Ode to Charity, by G. A. (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jan1848/hbsny.html",
+      "volume": 5,
+      "titles": [
+        "Twenty-sixth Anniversary of the Hebrew Ben. Society of New York (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-09a11437d4b1"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jan1848/news.html",
+      "volume": 5,
+      "titles": [
+        "Baltimore V (10)",
+        "Charleston IV (10)",
+        "Curaçoa (10)",
+        "The Ladies Benevolent Society of N. Y. (10)",
+        "Louisville II (10)",
+        "Montreal II (10)",
+        "New York, Formation of a New Society (10)",
+        "Philadelphia VIII (10)",
+        "Prussia II (10)",
+        "Society of Mercy and Truth, of Philadelphia (10)",
+        "Tribute of Respect to Grace Aguilar, at Charleston, S. C. (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "mercy-truth-phl"
+      ],
+      "sources": [
+        "occident-review-d9d852d6f7d7"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jan1848/verses.html",
+      "volume": 5,
+      "titles": [
+        "Verses Spoken at the Infant School, \"Path of Truth,\" by Miss Samuda (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jul1847/education.html",
+      "volume": 5,
+      "titles": [
+        "Religious Education, by Rev. J. K. G. (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jul1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Baltimore I (4)",
+        "Charleston I (4)",
+        "Kingston II (4)",
+        "Montgomery I (4)",
+        "New Orleans I (4)",
+        "New York I (4)",
+        "Philadelphia III (4)",
+        "Presentation of a Testimonial of Respect (4)",
+        "St. Thomas III (4)",
+        "Venezuela II (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jun1847/columbia.html",
+      "volume": 5,
+      "titles": [
+        "Hebrew Sunday School at Columbia, S. C. (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-9c65e2827a93"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/jun1847/news.html",
+      "volume": 5,
+      "titles": [
+        "New York, Elm Street Congregation (3)",
+        "Philadelphia, Rodef Sholum Congregation (3)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/mar1848/hbsc.html",
+      "volume": 5,
+      "titles": [
+        "Hebrew Benevolent Society of Cincinnati (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-03dba983a961"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/mar1848/news.html",
+      "volume": 5,
+      "titles": [
+        "Chicago (12)",
+        "Koenigsburg, Prussia (12)",
+        "Mobile II (12)",
+        "Philadelphia X (12)",
+        "Porto Cabello, Venezuela (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/may1847/benevolent.html",
+      "volume": 5,
+      "titles": [
+        "Benevolent Societies in New Orleans (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no"
+      ],
+      "sources": [
+        "occident-review-4b0c275adbf8"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/may1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Albany I (2)",
+        "Congregation Shearith Israel, of N. Y. (2)",
+        "England (2)",
+        "Philadelphia II (2)",
+        "Russia and the Jews (2)",
+        "St. Thomas II (2)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "beth-el-school-albany",
+        "hebrew-fuel-savings-phl"
+      ],
+      "sources": [
+        "occident-review-cd13e9640032"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/nov1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Albany III (8)",
+        "Baltimore III (8)",
+        "Boston (8)",
+        "Cincinnati II (8)",
+        "France (8)",
+        "Louisville I (8)",
+        "Memphis, Tennessee (8)",
+        "Montgomery II (8)",
+        "New Congregations (8)",
+        "New York III (8)",
+        "Philadelphia VI (8)",
+        "Prussia I (8)",
+        "Reconversion to Judaism (2)",
+        "Richmond II (8)",
+        "Savannah, Ga. (8)",
+        "Tribute of Respect to Edward Woolf (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "beth-el-school-albany",
+        "ladies-sewing-shearith-ny"
+      ],
+      "sources": [
+        "occident-review-787c5617bc1a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/nov1847/sewing.html",
+      "volume": 5,
+      "titles": [
+        "Ninth Annual Meeting of the Ladies' Hebrew Sewing Society Philadelphia (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-b3c9fcf9883d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/oct1847/news.html",
+      "volume": 5,
+      "titles": [
+        "Baltimore II (7)",
+        "Congregation Benay Israel II (7)",
+        "Charleston III (7)",
+        "Education (7)",
+        "Elections at Philadelphia (7)",
+        "Elm Street Congregation II (7)",
+        "Philadelphia, Consecration of the Synagogue Rodef Sholum (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/sep1847/ball.html",
+      "volume": 5,
+      "titles": [
+        "Ball for the Benefit of the Hebrew Benevolent Society of Charleston (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-charleston"
+      ],
+      "sources": [
+        "occident-review-78d77ed94571"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume5/sep1847/news.html",
+      "volume": 5,
+      "titles": [
+        "An Appeal (6)",
+        "Congregation Benay Israel, of N. Y. (6)",
+        "Charleston II (6)",
+        "Corrections (6)",
+        "Dr. Lilienthal's School (6)",
+        "New Orleans III (6)",
+        "Contribution to the Palestine Relief Fund, N. Y. (6)",
+        "Philadelphia V (6)",
+        "Richmond I (6)",
+        "Synagogue Shaaray Tefilla, of N. Y. (6)",
+        "Coro, Venezuela (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "lilienthal-school-ny"
+      ],
+      "sources": [
+        "occident-review-d8ebd72cd147"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/apr1848/charleston.html",
+      "volume": 6,
+      "titles": [
+        "Fifth-Sixth Anniversary of the Hebrew Benevolent Society of Charleston (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-charleston"
+      ],
+      "sources": [
+        "occident-review-51c3ca6d9d2c"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/apr1848/education.html",
+      "volume": 6,
+      "titles": [
+        "Education (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/apr1848/hbsc.html",
+      "volume": 6,
+      "titles": [
+        "Hebrew Benevolent Society of Cincinnati (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-bf18216975c9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/apr1848/news.html",
+      "volume": 6,
+      "titles": [
+        "Meeting at Philadelphia, in Behalf of Education (1)",
+        "April 1848",
+        "Sunday Laws in Pennsylvania (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/aug1848/news.html",
+      "volume": 6,
+      "titles": [
+        "August 1848",
+        "Relief for Palestine (5)",
+        "Rome, Excesses Committed against the Jews (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-education-society"
+      ],
+      "sources": [
+        "occident-review-d8dffe8864b9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/aug1848/nyhbs.html",
+      "volume": 6,
+      "titles": [
+        "New York Hebrew Benevolent Society (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-2314f59f1a68"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/dec1848/fhbsp.html",
+      "volume": 6,
+      "titles": [
+        "Female Hebrew Benevolent Society of Philadelphia, Report (9)",
+        "Treasurer's Report"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-ca6112236da9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/dec1848/news.html",
+      "volume": 6,
+      "titles": [
+        "December 1848",
+        "New Synagogue at Jerusalem (9)",
+        "Relief for the Jews in Persia (9)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/dec1848/sewing.html",
+      "volume": 6,
+      "titles": [
+        "Tenth Annual Report of the Hebrew Sewing Society, of Philadelphia (9)",
+        "Treasurer's Report"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl"
+      ],
+      "sources": [
+        "occident-review-9425ecb4ac5f"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/feb1849/news.html",
+      "volume": 6,
+      "titles": [
+        "Louisville, Kentucky (11)",
+        "February 1849"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jan1849/hbs.html",
+      "volume": 6,
+      "titles": [
+        "Twenty-Seventh Anniversary of the Hebrew Benevolent Society of New York (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-15fd5a7c4215"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jan1849/news.html",
+      "volume": 6,
+      "titles": [
+        "January 1849",
+        "Montgomery, Alabama (10)",
+        "Miss Sarah M. Cohen,"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bnai-jeshurun-ladies-ny"
+      ],
+      "sources": [
+        "occident-review-7146cd1cb05b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jul1848/news.html",
+      "volume": 6,
+      "titles": [
+        "July 1848",
+        "Brunswick (4)",
+        "The Immanuel Congregation, of New York (4)",
+        "Progress (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-progression-albany"
+      ],
+      "sources": [
+        "occident-review-58ce61facac2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jun1848/columbia.html",
+      "volume": 6,
+      "titles": [
+        "Hebrew Sunday School at Columbia, S. C. (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-6dbdab83aea0"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jun1848/hbsny.html",
+      "volume": 6,
+      "titles": [
+        "Hebrew Benevolent Society of New York (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-d13de9f04943"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/jun1848/news.html",
+      "volume": 6,
+      "titles": [
+        "June 1848",
+        "Boston (3)",
+        "Coro, Venezuela (3)",
+        "Curacoa (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "netherland-palestine-relief-ny",
+        "terumath-kodesh-ny"
+      ],
+      "sources": [
+        "occident-review-d7c24934f1a0"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/mar1849/news.html",
+      "volume": 6,
+      "titles": [
+        "March 1849",
+        "Buffalo (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "young-mens-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-71c2dfdbd5bf"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/mar1849/society.html",
+      "volume": 6,
+      "titles": [
+        "The Best Society Yet, by W. Cresson (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/may1848/news.html",
+      "volume": 6,
+      "titles": [
+        "Congregation Beth Jacob, at Albany (2)",
+        "Columbia, South Carolina (2)",
+        "May 1848",
+        "New York, Consecration of the Synagogue Imanuel (2)",
+        "New York, Congregation Synagogue Shearay Tefilla (2)",
+        "Philadelphia, the Tenth Examination of the Hebrew Sunday School (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/nov1848/ajps.html",
+      "volume": 6,
+      "titles": [
+        "The American Jewish Publication Society (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845"
+      ],
+      "sources": [
+        "occident-review-c2c3cf3e20df"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/nov1848/news.html",
+      "volume": 6,
+      "titles": [
+        "November 1848",
+        "Augusta, Georgia (8)",
+        "Charleston (8)",
+        "Jerusalem (8)",
+        "New Congregations (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "beth-el-school-albany"
+      ],
+      "sources": [
+        "occident-review-ce551643cae2"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/oct1848/assoc.html",
+      "volume": 6,
+      "titles": [
+        "On Association (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/oct1848/montreal.html",
+      "volume": 6,
+      "titles": [
+        "First Annual Meeting of the Montreal Hebrew Philanthropic Society (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/oct1848/news.html",
+      "volume": 6,
+      "titles": [
+        "October 1848",
+        "Dresden, Eligibility of Jews as Members of Parliament (7)",
+        "Prague, Protection of Jews by Christian Labourers (7)",
+        "St. Thomas (7)",
+        "Wilkes-Barre, Pennsylvania (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume6/sep1848/news.html",
+      "volume": 6,
+      "titles": [
+        "September 1848",
+        "Mrs. Eliza De Costa",
+        "Union of Israelites (6)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/apr1849/education.html",
+      "volume": 7,
+      "titles": [
+        "Jewish Education, by Albert N. Cardozo (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/apr1849/montreal.html",
+      "volume": 7,
+      "titles": [
+        "Montreal Sunday School, by Dr. A. H. David (1)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/apr1849/news.html",
+      "volume": 7,
+      "titles": [
+        "The Synagogue Beth Israel of Philadelphia (1)",
+        "Charleston (1) (3)",
+        "Cincinnati (1) (4) (8) (11)",
+        "Constantinople (1)",
+        "Louisville (1)",
+        "Mobile (1)",
+        "Montreal (1)",
+        "New York (1) (7) (8) (10) (12)",
+        "Philadelphia (1) (7) (12)",
+        "Evidence of the Increase of the Jewish Population in the West, by Rev. J. K. Gutheim (1)",
+        "Presentation of a Silver Salver to the Rev. S. M. Isaacs (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-hebrew-benevolent-cin"
+      ],
+      "sources": [
+        "occident-review-f7e3e70ecd70"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/apr1849/richmond.html",
+      "volume": 7,
+      "titles": [
+        "Third Annual Hebrew School Fund Ball, at Richmond, Va. (1)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-english-institute-richmond"
+      ],
+      "sources": [
+        "occident-review-23e6785439e5"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/aug1849/news.html",
+      "volume": 7,
+      "titles": [
+        "A Prayer by Kossuth (5)",
+        "Jews' Alms-House (5)",
+        "Conversion to Judaism (5)",
+        "England (2) (3) (5)",
+        "Hungary (5)",
+        "Jewish Soldiers (5)",
+        "Leghorn (5)",
+        "Sir Moses Montefiore's Journey to Palestine (5)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/dec1849/ladies.html",
+      "volume": 7,
+      "titles": [
+        "Report of the Directress of the Sewing Society of Philadelphia (9)",
+        "Ladies' Sewing Association of New York (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-sewing-phl",
+        "ladies-sewing-shearith-ny"
+      ],
+      "sources": [
+        "occident-review-4568896ec7ad"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/dec1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Baltimore (3) (9)",
+        "Beth Elohim Congregation of Charleston (9)",
+        "Hebra Terumath Hackodesh (9)",
+        "Ladies Benevolent Society of Philadelphia (9)",
+        "Lafayette City, Louisiana (9)",
+        "Montreal (1) (6) (9) (12)",
+        "Mr. Nathan Oettinger (9)",
+        "New Orleans Congregation Shaaray Chesed (9)",
+        "Mrs. Sarah Harriet Hart (9)",
+        "Richmond, Va. (7) (9)",
+        "San Francisco (9)",
+        "Shearith Israel Congregation of Charleston (9)",
+        "St. Louis (9)",
+        "The American Jewish Publication Society (9)",
+        "The B'nai Jeshurun Congregation of Cincinnati (9)",
+        "Netherland Congregation of N. Y. (9)",
+        "The New York Henry Street Congregation (9)",
+        "Dr. M. J. Raphall (8) (9) (11) (12)",
+        "Rev. M. N. Nathan (9)",
+        "The Society of Mercy and Truth of Philadelphia (9)",
+        "Token of Respect to the Rev. J. K. Gutheim (9)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "american-jewish-publication-1845",
+        "female-hebrew-benevolent",
+        "mercy-truth-phl"
+      ],
+      "sources": [
+        "occident-review-1f7eb9d3ef6c"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/feb1850/news.html",
+      "volume": 7,
+      "titles": [
+        "Cincinnati (1) (4) (8) (11)",
+        "Dr. M. J. Raphall (8) (9) (11) (12)",
+        "Young Men's Hebrew Benevolent Association of N. Y. (11)",
+        "Dr. M. J. Raphall Lectures on Hebrew Poetry (11)",
+        "The Congregation House of Israel of Philadelphia (11)",
+        "Token of Respect to the Rev. J. K. Gutheim (9) (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "young-mens-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-fdf53ac51392"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jan1850/german.html",
+      "volume": 7,
+      "titles": [
+        "Dinner of the New York and German Benevolent Societies of N. Y. (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "german-hebrew-benevolent-ny",
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-bee37d3af138"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jan1850/hebfem.html",
+      "volume": 7,
+      "titles": [
+        "Annual Report of the Female Hebrew Benevolent Society of Philadelphia (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-14050292184c"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jan1850/news.html",
+      "volume": 7,
+      "titles": [
+        "Hebra Bickur Cholim of Philadelphia (10)",
+        "Curaçoa (10)",
+        "Europe (3) (8) (10)",
+        "New Orleans (3) (4) (10)",
+        "New York (1) (7) (8) (10) (12)",
+        "Thanksgiving in Pennsylvania (10)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jul1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Hamburg.—Sudden Death of Rabbi Isaac Bernays (4)",
+        "Cincinnati (1) (4) (8) (11)",
+        "New Congregations (4)",
+        "New Orleans (3) (4) (10)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palestine-relief-cin"
+      ],
+      "sources": [
+        "occident-review-05753a2c6fff"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jul1849/society.htm",
+      "volume": 7,
+      "titles": [
+        "The American Society for Meliorating the Condition of the Jews (4)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jun1849/columbia.html",
+      "volume": 7,
+      "titles": [
+        "Examination of the Hebrew Sunday-School, at Columbia, S. C. (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-716e826dc36d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/jun1849/news.html",
+      "volume": 7,
+      "titles": [
+        "New Orleans (3)",
+        "Baltimore (3)",
+        "Charleston (1) (3)",
+        "The Proposed Convention (2) (3)",
+        "Correction (3)",
+        "England (2) (3) (5)",
+        "Europe (3)",
+        "Philadelphia Congregation Rodef Sholem (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no"
+      ],
+      "sources": [
+        "occident-review-41236aa79943"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/mar1850/news.html",
+      "volume": 7,
+      "titles": [
+        "Dr. M. J. Raphall (8) (9) (11) (12)",
+        "Montreal (1) (6) (9) (12)",
+        "New York (1) (7) (8) (10) (12)",
+        "Philadelphia (1) (7) (12)",
+        "Sabbath Convention (12)",
+        "Virginia (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/may1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Consecration of the Synagogue House of Israel, Phil. (2)",
+        "The Proposed Convention (2)",
+        "England (2)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/nov1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Berlin (8)",
+        "Boston (8)",
+        "Changes in Ministers (8)",
+        "Cincinnati (1) (4) (8) (11)",
+        "Europe (3) (8) (10)",
+        "Reconversion to Judaism of a Distinguished Poet (8)",
+        "Important MS. (8)",
+        "Jamaica (8)",
+        "New York (1) (7) (8) (10) (12)",
+        "Palestine (8)",
+        "Paris (8)",
+        "Dr. M. J. Raphall (8)",
+        "Return of Eight Jewish Members to the Jamaica House of Assembly (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palestine-relief-cin"
+      ],
+      "sources": [
+        "occident-review-42c049422f6e"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/oct1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Danville, Pa. (7)",
+        "A Descriptive Geography of Palestine (7)",
+        "New York (1) (7) (8) (10) (12)",
+        "Philadelphia (1) (7) (12)",
+        "Richmond, Va. (7)",
+        "The Asmonean (7)",
+        "Wilkes-Barre, Consecration (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/oct1849/palestine.html",
+      "volume": 7,
+      "titles": [
+        "The Poor of Palestine (7)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/sep1849/montreal.html",
+      "volume": 7,
+      "titles": [
+        "Montreal Hebrew Philanthropic Society (6)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume7/sep1849/news.html",
+      "volume": 7,
+      "titles": [
+        "Cleveland (6)",
+        "Correction (3) (6)",
+        "Montreal (1) (6) (9) (12)",
+        "Pittsburg (6)",
+        "Relief for Palestine (6)",
+        "Bohemian Israelites in Wisconsin (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-school-cleveland"
+      ],
+      "sources": [
+        "occident-review-6ec06a597e75"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/apr1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Another Reconversion to Judaism",
+        "Bavaria",
+        "Charleston",
+        "Detroit—The Sisters of Charity",
+        "Georgia",
+        "Mobile, Alabama (1) (2) (5) (12)",
+        "Montgomery, Alabama",
+        "Montreal",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)",
+        "Richmond, Hebrew and English Institute",
+        "Spanish Town, Jamaica",
+        "Sunday Laws in Pennsylvania",
+        "Rev. Mr. Nathan"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-english-institute-richmond"
+      ],
+      "sources": [
+        "occident-review-35b32f3fc633"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/aug1850/news.html",
+      "volume": 8,
+      "titles": [
+        "The Bnai Jeshurun Congregation of New York",
+        "Buffalo",
+        "Cincinnati (5) (9) (12)",
+        "France (5) (6)",
+        "Mobile, Alabama (1) (2) (5) (12)",
+        "The Nefuzoth Yehudah Hebrew Congregation of New Orleans",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "Paris, Formation of a Jewish Hospital",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)",
+        "Syria (4) (5)",
+        "Young Men's Literary Association of Philadelphia (5) (11)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-c12dbd131149"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/dec1850/female.html",
+      "volume": 8,
+      "titles": [
+        "Female Hebrew Benevolent Society of Philadelphia"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "female-hebrew-benevolent"
+      ],
+      "sources": [
+        "occident-review-6b045567f965"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/dec1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Augusta, Georgia",
+        "Cincinnati (5) (9) (12)",
+        "Cleveland, Ohio (9) (11)",
+        "K. K. Bnai Israel of Cincinnati",
+        "Louisville, Kentucky (2) (4) (6) (9)",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)",
+        "San Francisco",
+        "Thanksgiving Day",
+        "Thanksgiving in Ohio",
+        "Congregation Anshe Emeth of Albany (8) (9)",
+        "New York Hebrew Benevolent Society"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-ny",
+        "hebrew-sunday-school-no"
+      ],
+      "sources": [
+        "occident-review-fcceb4fb5fa0"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/feb1851/bnaijeshurun.html",
+      "volume": 8,
+      "titles": [
+        "Bnai Jeshurun Ladies' Hebrew Benevolent Society of New York"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bnai-jeshurun-ladies-ny",
+        "hebrew-benevolent-ny"
+      ],
+      "sources": [
+        "occident-review-39f750db58f0"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/feb1851/mendel.html",
+      "volume": 8,
+      "titles": [
+        "The Opinion of Mendelssohn on the Talmud, by Rev. Julius Eckman"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/feb1851/news.html",
+      "volume": 8,
+      "titles": [
+        "Baltimore",
+        "Cong. Bnai Israel of New York",
+        "California",
+        "Cleveland, Ohio (9) (11)",
+        "Young Men's Literary Association of Philadelphia (5) (11)",
+        "Jamaica (10) (11)",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "New Publication",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-230e3861d23d"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/jan1851/news.html",
+      "volume": 8,
+      "titles": [
+        "Jamaica (10) (11)",
+        "Cong. Shaaray Tefillah of New York"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/jul1850/hebrewed.html",
+      "volume": 8,
+      "titles": [
+        "Hebrew Education Society of Philadelphia"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-education-society"
+      ],
+      "sources": [
+        "occident-1850-hebrew-education"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/jul1850/loanassoc.html",
+      "volume": 8,
+      "titles": [
+        "The Bachelors' Hebrew Benevolent Loan Association of New York"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bachelors-hebrew-loan-ny"
+      ],
+      "sources": [
+        "occident-review-2240f6915a50"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/jul1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Charleston Beth Elohim Congregation",
+        "Louisville, Kentucky (2) (4) (6) (9)",
+        "Mobile, Alabama (1) (2) (5) (12)",
+        "Montreal Lecture on the Ancient Hebrews as Promoters of the Arts and Sciences, by the Rev. A. De Sola",
+        "New Orleans Society Bikkur Cholim",
+        "New York (2) (4) (12)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)",
+        "Charleston Shearith Israel Congregation (4) (7)",
+        "Syria (4) (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bikkur-cholim-no"
+      ],
+      "sources": [
+        "occident-review-b351a3b56348"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/jun1850/sundayschool.html",
+      "volume": 8,
+      "titles": [
+        "The Hebrew Sunday-School Celebration at Columbia, S.C.",
+        "Mr. Jacob Levin's Address",
+        "Note by the Editor"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-64c83346d80b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/mar1851/news.html",
+      "volume": 8,
+      "titles": [
+        "Chicago, Illinois (7) (12)",
+        "Cincinnati (5) (9) (12)",
+        "The Bnai Jeshurun Congregation of New York (5) (12)",
+        "Easton, Pa.",
+        "Kingston, Jamaica",
+        "Mobile, Alabama (1) (2) (5) (12)",
+        "Montgomery, Alabama (1) (12)",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "New York (2) (4) (12)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/may1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Columbia, South Carolina",
+        "Curaçoa",
+        "Europe (2) (7)",
+        "Frankfort",
+        "Louisville, Kentucky (2) (4) (6) (9)",
+        "Montreal (1) (2)",
+        "New Benevolent Society at New Orleans",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "New York (2) (4) (12)",
+        "Paris (2)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)",
+        "Tunis",
+        "Vienna"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-beneficial-louisville",
+        "love-benevolence-no"
+      ],
+      "sources": [
+        "occident-review-d4b5f3cd5740"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/nov1850/lilienthal.html",
+      "volume": 8,
+      "titles": [
+        "Dr. Lilienthal's School, by M. M. Noah, Esq."
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "lilienthal-school-ny"
+      ],
+      "sources": [
+        "occident-review-bb0a6dbf453b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/nov1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Congregation Anshe Emeth of Albany",
+        "Cong. Knesseth Israel of Philadelphia",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "Philadelphia (1) (2) (4) (5) (8) (9) (11) (12)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/oct1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Albany",
+        "Charleston Shearith Israel Congregation (4) (7)",
+        "Chicago, Illinois",
+        "Europe (2) (7)",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)",
+        "Newport, Rhode Island",
+        "Hyam Cohen",
+        "To the Jewish Public in America, England and the West Indies",
+        "St. Thomas"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume8/sep1850/news.html",
+      "volume": 8,
+      "titles": [
+        "Berlin",
+        "England (6)",
+        "France (5) (6)",
+        "Judaism in California",
+        "Louisville, Kentucky (2) (4) (6) (9)",
+        "New Orleans (1) (2) (5) (6) (7) (8) (9) (11) (12)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "henry-school-louisville"
+      ],
+      "sources": [
+        "occident-review-0f602ee8ec3b"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/apr1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Charleston (1) (4)",
+        "Hebrew Education Society of Philadelphia (1)",
+        "Mobile, Ala. (1) (2) (9)",
+        "Consecration of Synagogue Shangaray Chassed",
+        "Hebrew Benevolent Association",
+        "M. M. Noah, death notice (1)",
+        "The Thirteenth Annual Examination of the Hebrew Sunday School of Philadelphia"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-no",
+        "hebrew-education-society",
+        "hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-64ff145debc0"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/apr1851/sewing.html",
+      "volume": 9,
+      "titles": [
+        "Ladies' Sewing Society of New York"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "ladies-sewing-shearith-ny"
+      ],
+      "sources": [
+        "occident-review-1400fa728ea9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/aug1851/columbia.html",
+      "volume": 9,
+      "titles": [
+        "Sunday School at Columbia, S. C."
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "columbia-hebrew-sunday-school"
+      ],
+      "sources": [
+        "occident-review-1e9049693337"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/aug1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Baltimore, Maryland (5)",
+        "Chicago (5)",
+        "Rev. H. A. Henry (5)",
+        "Hebrew Sunday School",
+        "Sydney, New South Wales (5)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-sunday-school-no"
+      ],
+      "sources": [
+        "occident-review-aba0768e7823"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/aug1851/prayer.html",
+      "volume": 9,
+      "titles": [
+        "The Institution of Prayer in the Historical Development"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-a83faa7f80fd"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/dec1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Albany, N. Y. (2) (3) (7) (8) (9)",
+        "Boston, Massachusetts (7) (9)",
+        "Cincinnati (2) (4) (6) (9)",
+        "Europe (9)",
+        "Louisville (9)",
+        "Mobile, Ala. (1) (2) (9)",
+        "Dr. Lilienthal (9)"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/jul1851/hebed.html",
+      "volume": 9,
+      "titles": [
+        "Report of the President of the Hebrew Education Society"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-education-society"
+      ],
+      "sources": [
+        "occident-review-ec9ab06e7765"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/jul1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Asia (4)",
+        "Charleston (1) (4)",
+        "Cincinnati (2) (4) (6) (9)",
+        "Columbia (4)",
+        "England (4) (7)",
+        "Kingston, Jamaica (4)",
+        "Mrs. Sarah Jos. Bomeisler",
+        "Philadelphia (2) (4) (8)",
+        "Congregation Rodef Sholem of Philadelphia (3) (4)",
+        "Sweden (2) (4)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "bnai-israel-school-cin",
+        "rodef-sholem-school-phl"
+      ],
+      "sources": [
+        "occident-review-31b5900d32e6"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/jun1851/kingston.html",
+      "volume": 9,
+      "titles": [
+        "Annual Report of the Hebrew National School of Kingston, Jamaica"
+      ],
+      "status": "screened-no-record-linked",
+      "institutions": [],
+      "sources": []
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/jun1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Albany, N. Y. (2) (3) (7) (8) (9)",
+        "Augusta, Ga. (3) (6)",
+        "Congregation Rodef Sholem of Philadelphia (3) (4)",
+        "Mr. O. M. Da Costa",
+        "The Congregation Kenesseth Israel (3)",
+        "Pittsburg (3)",
+        "Richmond, Va. (3) (7)",
+        "Shearith Israel Congregation of New York (3)",
+        "Saint Louis (3)",
+        "Hebrew Education Society School (3)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-education-society"
+      ],
+      "sources": [
+        "occident-review-484a8fd2068a"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/jun1851/palache.html",
+      "volume": 9,
+      "titles": [
+        "The Misses Palache's School"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "palache-school-ny"
+      ],
+      "sources": [
+        "occident-review-4286cfbda7ff"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/may1851/lilienthal.html",
+      "volume": 9,
+      "titles": [
+        "Rev. Dr. Lilienthal's School"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "lilienthal-school-ny"
+      ],
+      "sources": [
+        "occident-review-1025d536bf39"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/may1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Albany, N. Y. (2) (3) (7) (8) (9)",
+        "Cincinnati (2) (4) (6) (9)",
+        "Easton, Pa. (2)",
+        "Young Men's Literary Association (2)",
+        "Memphis, Tenn. (2)",
+        "Mobile, Ala. (1) (2) (9)",
+        "Montreal, Canada (2)",
+        "New Orleans (2)",
+        "The Congregation Bnai Israel (2)",
+        "Philadelphia (2) (4) (8)",
+        "San Francisco, California (2)",
+        "Sweden (2) (4)",
+        "Switzerland (2)",
+        "Syracuse (2) (7)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-2c78bbe23bb9"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/nov1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Albany, N. Y. (2) (3) (7) (8) (9)",
+        "Berlin, Wisconsin (8)",
+        "B'nai Jeshurun Congregation of New York (8)",
+        "Isaac Hart, Esq. of New Orleans (6) (8)",
+        "Lafayette, Indiana (8)",
+        "Montgomery, Ala. (8)",
+        "Philadelphia (2) (4) (8)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-benevolent-montgomery"
+      ],
+      "sources": [
+        "occident-review-19343a821712"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/oct1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Albany, N. Y. (2) (3) (7) (8) (9)",
+        "Bangor, Maine (7)",
+        "Boston, Massachusetts (7) (9)",
+        "Buffalo (7)",
+        "Rev. D. M. Isaacs (7)",
+        "England (4) (7)",
+        "Hartford, Connecticut (7)",
+        "New Haven, Connecticut (7)",
+        "Poughkeepsie, N. Y. (7)",
+        "Providence, Rhode Island (7)",
+        "Richmond, Va. (3) (7)",
+        "Rochester, N. Y. (7)",
+        "Syracuse (2) (7)",
+        "Utica (7)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "brotherly-love-syracuse",
+        "hebrew-english-school-hartford",
+        "hebrew-school-boston",
+        "ladies-benevolent-rochester",
+        "ladies-benevolent-syracuse",
+        "mutual-assistance-syracuse"
+      ],
+      "sources": [
+        "occident-review-88ce6482c265"
+      ]
+    },
+    {
+      "url": "http://www.theoccident.com/Occident/volume9/sep1851/news.html",
+      "volume": 9,
+      "titles": [
+        "Augusta, Ga. (3) (6)",
+        "Cincinnati (2) (4) (6) (9)",
+        "Hebrew Literary Association of Philadelphia (6)",
+        "Isaac Hart, Esq. of New Orleans (6) (8)",
+        "Savannah, Ga. (6)"
+      ],
+      "status": "passage-linked",
+      "institutions": [
+        "hebrew-literary-phl"
+      ],
+      "sources": [
+        "occident-review-8c5d3033654a"
+      ]
+    }
+  ]
+}

@@ -278,5 +278,32 @@
     "region": "West",
     "lat": 37.9841,
     "lon": -120.3822
+  },
+  {
+    "id": "columbia-sc",
+    "name": "Columbia",
+    "state": "South Carolina",
+    "region": "South",
+    "lat": 34.0006,
+    "lon": -81.0442,
+    "subscriberLocality": "Q38453"
+  },
+  {
+    "id": "augusta-ga",
+    "name": "Augusta",
+    "state": "Georgia",
+    "region": "South",
+    "lat": 33.47,
+    "lon": -81.975,
+    "subscriberLocality": "Q181962"
+  },
+  {
+    "id": "stockton-ca",
+    "name": "Stockton",
+    "state": "California",
+    "region": "West",
+    "lat": 37.9575,
+    "lon": -121.2925,
+    "subscriberLocality": "Q49240"
   }
 ]

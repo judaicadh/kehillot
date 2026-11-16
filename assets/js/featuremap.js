@@ -48,6 +48,7 @@
   }
   function visible(it, s) {
     if (s.feats.indexOf(it.f) < 0) return false;
+    if (it.documentedYears && !it.documentedYears.some(function(y) { return y >= s.from && y <= s.to; })) return false;
     if (it.from && it.from > s.to) return false;
     if (it.to && it.to < s.from) return false;
     if (s.q && (it.name + ' ' + (it.sub || '') + ' ' + (it.placeName || '')).toLowerCase().indexOf(s.q) < 0) return false;

@@ -416,5 +416,20 @@
     "sources": [
       "occident-1850-hebrew-education"
     ]
+  },
+  {
+    "id": "hebrew-education-school-opens-1851",
+    "name": "Hebrew Education Society school begins instruction",
+    "date": "1851-04-07",
+    "place": "philadelphia",
+    "category": "education",
+    "certainty": "medium",
+    "description": "The society formally opened its school on April 6, 1851; the report states that twenty-two pupils assembled for instruction the following morning. These dates are separate from the society’s organization in 1848.",
+    "orgs": [
+      "hebrew-education-society"
+    ],
+    "sources": [
+      "occident-review-64ff145debc0"
+    ]
   }
 ]

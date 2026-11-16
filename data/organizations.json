@@ -9,7 +9,28 @@
     "description": "Women's relief society organized by Rebecca Gratz and others; among the earliest Jewish charities independent of a synagogue.",
     "sources": [
       "sarna-2004",
-      "occident-v1-female"
+      "occident-v1-female",
+      "occident-review-dbd8d3e46289",
+      "occident-v1-news-jan",
+      "occident-review-9eb73729579a",
+      "occident-review-33f8d70b1f21",
+      "occident-review-59a0dda91224",
+      "occident-review-28cbc3f28c9a",
+      "occident-review-ca6112236da9",
+      "occident-review-1f7eb9d3ef6c",
+      "occident-review-14050292184c",
+      "occident-review-6b045567f965",
+      "occident-review-b9a384c22b95"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1845,
+      1846,
+      1847,
+      1848,
+      1849,
+      1850
     ]
   },
   {
@@ -22,7 +43,17 @@
     "description": "Rebecca Gratz's coeducational Sunday school, taught largely by women; replicated in Charleston, Savannah, New York and elsewhere.",
     "sources": [
       "sarna-2004",
-      "occident-v1-sunday"
+      "occident-v1-sunday",
+      "occident-review-b7d0ad63690f",
+      "occident-review-1fb527488860",
+      "occident-review-64ff145debc0",
+      "occident-review-923fc4d71fab"
+    ],
+    "documentedYears": [
+      1844,
+      1845,
+      1851,
+      1852
     ]
   },
   {
@@ -45,9 +76,22 @@
     "place": "philadelphia",
     "founded": 1848,
     "certainty": "high",
-    "description": "Day school and educational society initiated by Isaac Leeser.",
+    "description": "Educational society organized in Philadelphia in 1848. Contemporary reports distinguish its organization from the formal opening of its Hebrew and English school on April 6, 1851, with instruction beginning the following morning.",
     "sources": [
-      "sussman-1995"
+      "sussman-1995",
+      "occident-1850-hebrew-education",
+      "occident-review-64ff145debc0",
+      "occident-review-484a8fd2068a",
+      "occident-review-ec9ab06e7765",
+      "occident-review-745bbcb6ee2f",
+      "occident-review-d8dffe8864b9",
+      "occident-review-0a902e6a9e97"
+    ],
+    "documentedYears": [
+      1848,
+      1850,
+      1851,
+      1852
     ]
   },
   {
@@ -157,7 +201,17 @@
     "certainty": "medium",
     "description": "A New York school for Jewish girls operated by the Misses Palaché. The May 1843 report describes boarding and day pupils and instruction in English subjects, Hebrew, languages, music and drawing. It does not supply a founding date.",
     "sources": [
-      "occident-v1-palache"
+      "occident-v1-palache",
+      "occident-review-d7405fd536e3",
+      "occident-review-c311ef3fdc01",
+      "occident-review-c388760d8eb9",
+      "occident-review-4286cfbda7ff"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1846,
+      1851
     ]
   },
   {
@@ -170,7 +224,15 @@
     "description": "School associated with the B’nai Jeshurun congregation in Elm Street and Samuel M. Isaacs, offering English and Hebrew education. The May 1843 report describes about eighty pupils and says the organizing society was founded about a year earlier.",
     "sources": [
       "occident-v1-talmud",
-      "occident-v1-institute"
+      "occident-v1-institute",
+      "occident-review-a10ee0e0d8a7",
+      "occident-review-e3400e162b2d",
+      "occident-review-66ef6ea8937d"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1845
     ]
   },
   {
@@ -182,7 +244,12 @@
     "certainty": "medium",
     "description": "Philadelphia relief society providing assistance to poor and sick Jewish people, medical attendance, burial support and apprenticeships for children. Its November 1843 election notice explicitly dates its institution to June 16, 1822.",
     "sources": [
-      "occident-v1-elections-nov"
+      "occident-v1-elections-nov",
+      "occident-review-042c806a4e26"
+    ],
+    "documentedYears": [
+      1843,
+      1845
     ]
   },
   {
@@ -194,7 +261,18 @@
     "certainty": "medium",
     "description": "Society distributing fuel and stoves to Philadelphia’s Jewish poor and encouraging savings to obtain winter fuel at cost. The November 1843 notice says it was instituted in February 1841.",
     "sources": [
-      "occident-v1-elections-nov"
+      "occident-v1-elections-nov",
+      "occident-review-2c47c331e285",
+      "occident-review-b863c0d11750",
+      "occident-review-cd13e9640032",
+      "occident-review-256067ffe7ca"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1846,
+      1847,
+      1852
     ]
   },
   {
@@ -206,7 +284,24 @@
     "certainty": "medium",
     "description": "Philadelphia women’s society supplying clothing to people in need. Its fifth annual report discusses support for forty-four children and cooperation with other local benevolent and fuel societies. The anniversary number alone is not treated as an exact foundation date.",
     "sources": [
-      "occident-v1-sewing"
+      "occident-v1-sewing",
+      "occident-review-dbd8d3e46289",
+      "occident-review-9eb73729579a",
+      "occident-review-de21853469f2",
+      "occident-review-40a892ae7a00",
+      "occident-review-948edf69b45d",
+      "occident-review-b3c9fcf9883d",
+      "occident-review-9425ecb4ac5f",
+      "occident-review-4568896ec7ad"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1845,
+      1846,
+      1847,
+      1848,
+      1849
     ]
   },
   {
@@ -218,7 +313,11 @@
     "certainty": "medium",
     "description": "Society dispensing relief to Jewish residents and travellers in need. A January 1844 report explicitly states that it was established in 1839 and describes its fourth-anniversary dinner on November 15.",
     "sources": [
-      "occident-v1-assistance"
+      "occident-v1-assistance",
+      "occident-review-88c7a6eac6c9"
+    ],
+    "documentedYears": [
+      1844
     ]
   },
   {
@@ -230,7 +329,30 @@
     "certainty": "medium",
     "description": "New York charitable society whose twenty-second anniversary was celebrated on December 14, 1843, with M. M. Noah presiding. The report documents the society’s activity but is not used to infer an exact founding year.",
     "sources": [
-      "occident-v1-charity"
+      "occident-v1-charity",
+      "occident-review-fdb3fe0d08b3",
+      "occident-review-19de899a4e5e",
+      "occident-review-79f47819fefd",
+      "occident-review-e86a09ad0f23",
+      "occident-review-fdc978656c25",
+      "occident-review-09a11437d4b1",
+      "occident-review-d13de9f04943",
+      "occident-review-2314f59f1a68",
+      "occident-review-15fd5a7c4215",
+      "occident-review-fcceb4fb5fa0",
+      "occident-review-39f750db58f0",
+      "occident-review-bee37d3af138"
+    ],
+    "documentedYears": [
+      1843,
+      1844,
+      1845,
+      1846,
+      1847,
+      1848,
+      1849,
+      1850,
+      1851
     ]
   },
   {
@@ -242,7 +364,17 @@
     "certainty": "medium",
     "description": "Philadelphia beneficial society formed to support sick members, bury deceased members, and assist widows and orphans. The January 1844 notice reports formation on October 11 in its account of new societies.",
     "sources": [
-      "occident-v1-news-jan"
+      "occident-v1-news-jan",
+      "occident-review-a10ee0e0d8a7",
+      "occident-review-edf457d90d0b",
+      "occident-review-d9d852d6f7d7",
+      "occident-review-1f7eb9d3ef6c"
+    ],
+    "documentedYears": [
+      1844,
+      1846,
+      1848,
+      1849
     ]
   },
   {
@@ -266,7 +398,11 @@
     "certainty": "medium",
     "description": "Women’s benevolent society listed among the charitable institutions connected with New York’s Elm Street Synagogue for 5604. The notice names Mrs. John M. Davis and Mrs. Morland Micholl as its directresses, and Samuel M. Isaacs as honorary secretary.",
     "sources": [
-      "occident-v1-news-jan"
+      "occident-v1-news-jan",
+      "occident-review-883814ff6437"
+    ],
+    "documentedYears": [
+      1844
     ]
   },
   {
@@ -314,7 +450,975 @@
     "certainty": "medium",
     "description": "Cincinnati society for relief of poor and sick Jewish people. Its February 1844 election notice names Joseph Jonas president and gives its institution date in the Hebrew calendar, Heshvan 5603. The founding date is retained in its original calendar; a Gregorian founding year is not recorded here.",
     "sources": [
-      "occident-v1-elections-feb"
+      "occident-v1-elections-feb",
+      "occident-review-725252c3b1a5",
+      "occident-review-889137e5f97d",
+      "occident-review-d43a9a0d7d58",
+      "occident-review-03dba983a961",
+      "occident-review-bf18216975c9",
+      "occident-review-5bd2e47e82e2"
+    ],
+    "documentedYears": [
+      1844,
+      1845,
+      1846,
+      1847,
+      1848
+    ]
+  },
+  {
+    "id": "columbia-hebrew-sunday-school",
+    "name": "Hebrew Sunday School of Columbia",
+    "place": "columbia-sc",
+    "category": "education",
+    "founded": 1843,
+    "certainty": "medium",
+    "description": "School directed by Jewish women in Columbia. Its May 1844 report states that instruction began on October 15 of the preceding year.",
+    "sources": [
+      "occident-review-a0e685c78b0a",
+      "occident-v1-news-jan",
+      "occident-review-b7d0ad63690f",
+      "occident-review-a7af62e09472",
+      "occident-review-9c65e2827a93",
+      "occident-review-6dbdab83aea0",
+      "occident-review-716e826dc36d",
+      "occident-review-64c83346d80b",
+      "occident-review-1e9049693337"
+    ],
+    "documentedYears": [
+      1844,
+      1846,
+      1847,
+      1848,
+      1849,
+      1850,
+      1851
+    ]
+  },
+  {
+    "id": "jewish-youth-school-charleston",
+    "name": "Hebrew Society for the Instruction of Jewish Youth",
+    "place": "charleston",
+    "category": "education",
+    "founded": 1839,
+    "certainty": "medium",
+    "description": "School organized by women of Congregation Beth Elohim. The 1845 report explicitly dates the society to 1839 and distinguishes a separate school formed after the congregational dispute.",
+    "sources": [
+      "occident-review-9fcbd57a0c97"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "jewish-doctrine-school-charleston",
+    "name": "Society for the Instruction of Jewish Doctrine",
+    "place": "charleston",
+    "category": "education",
+    "founded": 1844,
+    "certainty": "medium",
+    "description": "Charleston school organized by women opposed to the ritual changes at Beth Elohim. It is distinct from the society for instruction of Jewish youth founded in 1839.",
+    "sources": [
+      "occident-review-6bbcef4767cc",
+      "occident-review-640c8acb2aa7",
+      "occident-review-f43baa8eecd7",
+      "occident-review-ff26cdea59c7"
+    ],
+    "documentedYears": [
+      1844,
+      1845,
+      1846,
+      1847
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-no",
+    "name": "Hebrew Benevolent Association of New Orleans",
+    "place": "new-orleans",
+    "category": "philanthropy",
+    "founded": 1844,
+    "certainty": "medium",
+    "description": "Association formed to relieve Jewish people in need. A June 1844 report records its formation and first election on March 17.",
+    "sources": [
+      "occident-review-6efd51b46094",
+      "occident-review-c40b97718e3d",
+      "occident-review-4b0c275adbf8",
+      "occident-review-64ff145debc0",
+      "occident-review-41236aa79943",
+      "occident-review-998ea496832a"
+    ],
+    "documentedYears": [
+      1844,
+      1846,
+      1847,
+      1849,
+      1851
+    ]
+  },
+  {
+    "id": "poor-children-education-ny",
+    "name": "Society for the Education of Poor Children and Relief of Indigent Persons",
+    "place": "new-york",
+    "category": "education",
+    "founded": 1831,
+    "certainty": "medium",
+    "description": "New York society supporting education and relief. Its January 1845 officer notice explicitly states organization in 1831; the meeting was held in the Crosby Street synagogue trustee room.",
+    "sources": [
+      "occident-review-042c806a4e26"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "hebrew-mutual-benefit-ny",
+    "name": "Hebrew Mutual Benefit Society (New York)",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1845,
+    "certainty": "medium",
+    "description": "Society called חברה גמילות חסד in its January 1845 election notice, with James Solomons as president. It is not identified here with another society solely on the shared Hebrew wording.",
+    "sources": [
+      "occident-review-042c806a4e26"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "revival-of-life-stl",
+    "name": "Revival of Life (Hebrew Beneficial Society)",
+    "place": "st-louis",
+    "category": "philanthropy",
+    "founded": 1842,
+    "certainty": "medium",
+    "description": "St. Louis relief society that adopted the name Revival of Life. Its March 1845 report names its founders and explicitly places formation in November 1842.",
+    "sources": [
+      "occident-review-e3400e162b2d"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "jps-auxiliary-richmond",
+    "name": "Jewish Publication Auxiliary Society of Richmond",
+    "place": "richmond",
+    "category": "education",
+    "founded": 1845,
+    "certainty": "medium",
+    "description": "Richmond auxiliary formed to support Jewish publications. A letter dated February 28, 1845 reports that members had adopted a constitution and by-laws.",
+    "sources": [
+      "occident-review-b4e740074fb7"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "american-jewish-publication-1845",
+    "name": "American Jewish Publication Society (1845)",
+    "place": "philadelphia",
+    "category": "education",
+    "founded": 1845,
+    "certainty": "medium",
+    "description": "Philadelphia-based society for publishing and circulating Jewish books, organized with Abraham Hart and Isaac Leeser. This is the nineteenth-century society described in the Occident, not an asserted identity with a later publisher.",
+    "sources": [
+      "occident-review-1905f2adfea8",
+      "occident-review-50e911932619",
+      "occident-review-62573f3e2312",
+      "occident-review-408881c02016",
+      "occident-review-b4132e923ce2",
+      "occident-review-87c4234d9c70",
+      "occident-review-c2c3cf3e20df",
+      "occident-review-1f7eb9d3ef6c",
+      "occident-review-3bb66628ee1b"
+    ],
+    "documentedYears": [
+      1845,
+      1846,
+      1847,
+      1848,
+      1849,
+      1852
+    ]
+  },
+  {
+    "id": "german-hebrew-benevolent-ny",
+    "name": "German Hebrew Benevolent Society of New York",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1846,
+    "certainty": "medium",
+    "description": "Relief society whose second-anniversary dinner is reported in January 1846, with Henry Kayzer presiding. It is distinct from the New York Hebrew Benevolent Society; later reports describe joint dinners of the two.",
+    "sources": [
+      "occident-review-7a8a715d519c",
+      "occident-review-e86a09ad0f23",
+      "occident-review-bee37d3af138"
+    ],
+    "documentedYears": [
+      1846,
+      1847,
+      1850
+    ]
+  },
+  {
+    "id": "ladies-hebrew-benevolent-cin",
+    "name": "Hebrew Ladies’ Benevolent Society of Cincinnati",
+    "place": "cincinnati",
+    "category": "philanthropy",
+    "documented": 1845,
+    "certainty": "medium",
+    "description": "Women’s relief society assisting poor women. The December 1845 officer notice says it had operated for about six years, without supplying an exact founding date.",
+    "sources": [
+      "occident-review-725252c3b1a5",
+      "occident-review-b4132e923ce2",
+      "occident-review-5bd2e47e82e2",
+      "occident-review-6a8d35cacd5e",
+      "occident-review-f7e3e70ecd70"
+    ],
+    "documentedYears": [
+      1845,
+      1846,
+      1848,
+      1849
+    ]
+  },
+  {
+    "id": "ladies-united-sewing-cin",
+    "name": "Hebrew Ladies’ United Sewing Society of Cincinnati",
+    "place": "cincinnati",
+    "category": "philanthropy",
+    "documented": 1846,
+    "certainty": "medium",
+    "description": "Women’s sewing society distributing clothing. Its first officer election is reported as December 21 of the preceding year in February 1847; a later report gives clothing and cash accounts.",
+    "sources": [
+      "occident-review-c1d7834f2ca6",
+      "occident-review-cf2114303de6"
+    ],
+    "documentedYears": [
+      1846,
+      1847,
+      1848
+    ]
+  },
+  {
+    "id": "hebrew-school-augusta",
+    "name": "Hebrew Sunday School of Augusta",
+    "place": "augusta-ga",
+    "category": "education",
+    "documented": 1845,
+    "certainty": "medium",
+    "description": "Jewish religious school in Augusta, reported in 1845 as teaching eleven children. A later examination report describes instruction by women of the community.",
+    "sources": [
+      "occident-review-531e693373f2",
+      "occident-review-27acd98d6927",
+      "occident-review-6b46f0af0e26",
+      "occident-review-9b9725defc33"
+    ],
+    "documentedYears": [
+      1845,
+      1846,
+      1847
+    ]
+  },
+  {
+    "id": "jacobs-aylward-school-phl",
+    "name": "Jacobs and Aylward’s Hebrew and English School",
+    "place": "philadelphia",
+    "category": "education",
+    "founded": 1846,
+    "certainty": "medium",
+    "description": "School offering Hebrew and English instruction in Philadelphia. Its July 1846 notice says that Jacobs and Aylward had opened it.",
+    "sources": [
+      "occident-review-81852d08da9a"
+    ],
+    "documentedYears": [
+      1846
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-charleston",
+    "name": "Hebrew Benevolent Society of Charleston",
+    "place": "charleston",
+    "category": "philanthropy",
+    "founded": 1791,
+    "certainty": "medium",
+    "description": "Charleston charitable society. The September 1847 report explicitly dates its organization to 1791 and its reorganization and incorporation to 1830.",
+    "sources": [
+      "occident-review-78d77ed94571",
+      "occident-review-51c3ca6d9d2c"
+    ],
+    "documentedYears": [
+      1847,
+      1848
+    ]
+  },
+  {
+    "id": "hebrew-english-institute-richmond",
+    "name": "Hebrew and English Institute of Richmond",
+    "place": "richmond",
+    "category": "education",
+    "documented": 1848,
+    "certainty": "medium",
+    "description": "Institute incorporated on April 4, 1848, according to an April 1849 report. A separate April 1850 notice states that its school opened on January 2, 1850. Incorporation and school opening are kept distinct.",
+    "sources": [
+      "occident-review-23e6785439e5",
+      "occident-review-35b32f3fc633"
+    ],
+    "documentedYears": [
+      1848,
+      1849,
+      1850
+    ]
+  },
+  {
+    "id": "lilienthal-school-ny",
+    "name": "Dr. Lilienthal’s Boarding School",
+    "place": "new-york",
+    "category": "education",
+    "documented": 1847,
+    "certainty": "medium",
+    "description": "New York boarding and collegiate school conducted by Max Lilienthal. Contemporary accounts describe its teaching and examinations; its identity is separate from an earlier proposed Hebrew college.",
+    "sources": [
+      "occident-review-d8ebd72cd147",
+      "occident-review-bb0a6dbf453b",
+      "occident-review-1025d536bf39"
+    ],
+    "documentedYears": [
+      1847,
+      1850,
+      1851
+    ]
+  },
+  {
+    "id": "bachelors-hebrew-loan-ny",
+    "name": "Bachelors’ Hebrew Benevolent Loan Association",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1848,
+    "certainty": "medium",
+    "description": "New York association making small loans to immigrants and others in need. The February 1848 report prints its correspondence and describes its lending purpose.",
+    "sources": [
+      "occident-review-9f79aa4d8cf8",
+      "occident-review-2240f6915a50"
+    ],
+    "documentedYears": [
+      1848,
+      1850
+    ]
+  },
+  {
+    "id": "ladies-sewing-shearith-ny",
+    "name": "Ladies’ Sewing Association of Congregation Shearith Israel",
+    "place": "new-york",
+    "category": "philanthropy",
+    "founded": 1847,
+    "certainty": "medium",
+    "description": "Women’s sewing association affiliated with Shearith Israel in New York. Its November 1847 notice says its constitution was adopted on October 10.",
+    "sources": [
+      "occident-review-787c5617bc1a",
+      "occident-review-4568896ec7ad",
+      "occident-review-1400fa728ea9"
+    ],
+    "documentedYears": [
+      1847,
+      1849,
+      1851
+    ]
+  },
+  {
+    "id": "hebrew-literary-phl",
+    "name": "Hebrew Literary Association of Philadelphia",
+    "place": "philadelphia",
+    "category": "education",
+    "founded": 1850,
+    "certainty": "medium",
+    "description": "Young men’s literary association promoting lectures, debates and reading. The May 1851 notice explicitly gives organization on June 23 of the preceding year.",
+    "sources": [
+      "occident-review-2c78bbe23bb9",
+      "occident-review-c12dbd131149",
+      "occident-review-230e3861d23d",
+      "occident-review-8c5d3033654a",
+      "occident-review-874155af9a9a",
+      "occident-review-a83faa7f80fd"
+    ],
+    "documentedYears": [
+      1850,
+      1851,
+      1852
+    ]
+  },
+  {
+    "id": "young-mens-benevolent-ny",
+    "name": "Young Men’s Hebrew Benevolent Association of New York",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1849,
+    "certainty": "medium",
+    "description": "Young men’s association supplying fuel and stoves to poor Jewish residents. Its organization is reported in March 1849 and its growing membership in February 1850.",
+    "sources": [
+      "occident-review-71c2dfdbd5bf",
+      "occident-review-fdf53ac51392"
+    ],
+    "documentedYears": [
+      1849,
+      1850
+    ]
+  },
+  {
+    "id": "love-benevolence-no",
+    "name": "Love and Benevolence",
+    "place": "new-orleans",
+    "category": "philanthropy",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "New Orleans society formed for sick assistance and burial services. The May 1850 notice names Jacob Pretto Henriquez as president and I. C. Labatt as vice-president.",
+    "sources": [
+      "occident-review-d4b5f3cd5740"
+    ],
+    "documentedYears": [
+      1850
+    ]
+  },
+  {
+    "id": "bikkur-cholim-no",
+    "name": "Bikkur Cholim of New Orleans",
+    "place": "new-orleans",
+    "category": "philanthropy",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "Sick-visiting, burial and charitable association with Joseph Turner as president in its July 1850 report. The report says it had existed for about five years; no exact founding year is inferred.",
+    "sources": [
+      "occident-review-b351a3b56348"
+    ],
+    "documentedYears": [
+      1850
+    ]
+  },
+  {
+    "id": "hebrew-sunday-school-no",
+    "name": "Hebrew Sunday School of New Orleans",
+    "place": "new-orleans",
+    "category": "education",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "Sunday school organized by women of the Portuguese congregation, with Mrs. Benjamin Florance as superintendent. A December 1850 announcement and August 1851 follow-up document its activity.",
+    "sources": [
+      "occident-review-fcceb4fb5fa0",
+      "occident-review-aba0768e7823"
+    ],
+    "documentedYears": [
+      1850,
+      1851
+    ]
+  },
+  {
+    "id": "noot-school-ny",
+    "name": "Rev. Noot’s Hebrew School",
+    "place": "new-york",
+    "category": "education",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "School organized by New York’s Bnai Israel congregation and placed under Rev. Noot. The report describes the appointment and the start of instruction, without giving a precise founding year.",
+    "sources": [
+      "occident-review-4bfbaa68ba6d",
+      "occident-review-0a902e6a9e97"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "solomon-jacobs-school-bal",
+    "name": "Solomon Jacobs’s School",
+    "place": "baltimore",
+    "category": "education",
+    "founded": 1851,
+    "certainty": "medium",
+    "description": "Private school in Baltimore conducted by Solomon Jacobs. A June 1852 notice states that he began it in the preceding autumn and that it had fifty-three scholars.",
+    "sources": [
+      "occident-review-b863c0d11750"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "henry-street-school-ny",
+    "name": "Henry Street Synagogue Hebrew School",
+    "place": "new-york",
+    "category": "education",
+    "founded": 1845,
+    "certainty": "medium",
+    "description": "Hebrew school attached to the Henry Street synagogue and taught by Hermann Felsenheld. The August 1845 notice explicitly gives its opening as July 7.",
+    "sources": [
+      "occident-review-286ff5fd0a2e"
+    ],
+    "documentedYears": [
+      1845
+    ]
+  },
+  {
+    "id": "beth-el-school-albany",
+    "name": "Beth El School (Albany)",
+    "place": "albany",
+    "category": "education",
+    "documented": 1847,
+    "certainty": "medium",
+    "description": "School conducted by Isaac Mayer Wise in connection with Albany’s Beth El congregation. Reports describe examinations, enrolment and support from an education society.",
+    "sources": [
+      "occident-review-cd13e9640032",
+      "occident-review-aa11e5ec0252",
+      "occident-review-787c5617bc1a",
+      "occident-review-ce551643cae2"
+    ],
+    "documentedYears": [
+      1847,
+      1848
+    ]
+  },
+  {
+    "id": "ladies-progression-albany",
+    "name": "Ladies Progression Society",
+    "place": "albany",
+    "category": "philanthropy",
+    "documented": 1848,
+    "certainty": "medium",
+    "description": "Association organized by women of Beth El in Albany to promote education, charity and worship. The July 1848 notice names its officers.",
+    "sources": [
+      "occident-review-58ce61facac2"
+    ],
+    "documentedYears": [
+      1848
+    ]
+  },
+  {
+    "id": "hebrew-institute-cin",
+    "name": "Cincinnati Hebrew Institute",
+    "place": "cincinnati",
+    "category": "education",
+    "documented": 1846,
+    "certainty": "medium",
+    "description": "School reported holding a first semi-annual examination on August 30, 1846, with James K. Gutheim participating. Its officers and educational programme are described in later notices.",
+    "sources": [
+      "occident-review-0fc388fc4d06",
+      "occident-review-83a679eddac7"
+    ],
+    "documentedYears": [
+      1846,
+      1847
+    ]
+  },
+  {
+    "id": "palestine-relief-cin",
+    "name": "Society for Relief of the Jews in Palestine (Cincinnati)",
+    "place": "cincinnati",
+    "category": "philanthropy",
+    "documented": 1849,
+    "certainty": "medium",
+    "description": "Cincinnati association collecting funds for Jews in the Holy Land, with James K. Gutheim as president and Seixas Solomon as secretary.",
+    "sources": [
+      "occident-review-05753a2c6fff",
+      "occident-review-42c049422f6e"
+    ],
+    "documentedYears": [
+      1849
+    ]
+  },
+  {
+    "id": "hebrew-school-cleveland",
+    "name": "Hebrew School of Cleveland",
+    "place": "cleveland",
+    "category": "education",
+    "founded": 1844,
+    "certainty": "medium",
+    "description": "Cleveland Jewish school reported in September 1849 as having begun in 1844, before the congregation’s synagogue was built. No classroom coordinates are supplied.",
+    "sources": [
+      "occident-review-6ec06a597e75"
+    ],
+    "documentedYears": [
+      1849
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-ladies-ny",
+    "name": "B’nai Jeshurun Ladies’ Hebrew Benevolent Society",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1849,
+    "certainty": "medium",
+    "description": "Women’s benevolent society announced in January 1849, with Mrs. A. Lissak among its founders. It is not automatically identified with the earlier Elm Street ladies’ society; the later report calls its meeting the second annual meeting.",
+    "sources": [
+      "occident-review-7146cd1cb05b",
+      "occident-review-39f750db58f0"
+    ],
+    "documentedYears": [
+      1849,
+      1851
+    ]
+  },
+  {
+    "id": "terumath-kodesh-ny",
+    "name": "Terumath Hakodesh Society (New York)",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1848,
+    "certainty": "medium",
+    "description": "Association raising relief funds for Jews in Palestine, described in June 1848 as having been led by I. B. Kursheedt for many years. It is distinct from the new parallel association in the Netherland congregation.",
+    "sources": [
+      "occident-review-d7c24934f1a0"
+    ],
+    "documentedYears": [
+      1848
+    ]
+  },
+  {
+    "id": "netherland-palestine-relief-ny",
+    "name": "Palestine Relief Society of the Netherland Congregation",
+    "place": "new-york",
+    "category": "philanthropy",
+    "documented": 1848,
+    "certainty": "medium",
+    "description": "New association within New York’s Netherland congregation to aid poor Jews in Palestine. The June 1848 notice requests donations through A. Leon. The descriptive English title is editorial; the notice does not give a formal title.",
+    "sources": [
+      "occident-review-d7c24934f1a0"
+    ],
+    "documentedYears": [
+      1848
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-sf",
+    "name": "Hebrew Benevolent Society of San Francisco",
+    "place": "san-francisco",
+    "category": "philanthropy",
+    "founded": 1850,
+    "certainty": "medium",
+    "description": "Society for poor relief and burial, described in an almanac extract reprinted in April 1852 as organized in January 1850. It is not merged with the unnamed September 1850 society in the next notice.",
+    "sources": [
+      "occident-review-b64ea6d18258"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "cholera-auxiliary-sf",
+    "name": "Cholera Relief Auxiliary (San Francisco)",
+    "place": "san-francisco",
+    "category": "philanthropy",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "Temporary society formed during the autumn 1850 cholera outbreak as an auxiliary to San Francisco’s Benevolent Society. The source names its managers but not a separate formal title; this title is descriptive.",
+    "sources": [
+      "occident-review-b64ea6d18258"
+    ],
+    "documentedYears": [
+      1850,
+      1852
+    ]
+  },
+  {
+    "id": "benevolent-society-sacramento",
+    "name": "Benevolent Society of Sacramento",
+    "place": "sacramento",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Benevolent society described as established and flourishing in the California almanac extract printed in April 1852. The report gives neither a foundation date nor a more specific formal title.",
+    "sources": [
+      "occident-review-b64ea6d18258"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "lovely-nation-stockton",
+    "name": "Lovely Nation Society",
+    "place": "stockton-ca",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Stockton benevolent society named Lovely Nation in the California almanac extract. The notice names I. Zechariah as president and A. Greenbaum as vice-president; its identity is not equated with a later congregation.",
+    "sources": [
+      "occident-review-b64ea6d18258"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "brotherly-love-syracuse",
+    "name": "Society of Brotherly Love (Ahavat Achim)",
+    "place": "syracuse",
+    "category": "philanthropy",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Syracuse benevolent society with William Henochsberg as president, providing sick relief and beginning a widows’ and orphans’ fund.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "mutual-assistance-syracuse",
+    "name": "Mutual Assistance Society (Rodef Chesed)",
+    "place": "syracuse",
+    "category": "philanthropy",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Syracuse mutual-aid society under Isaac Garson, providing sickness allowances and funeral services. It is separately listed from Ahavat Achim.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "ladies-benevolent-syracuse",
+    "name": "Ladies’ Benevolent Society (Syracuse)",
+    "place": "syracuse",
+    "category": "philanthropy",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Women’s society reported as having sixty-five members, with Fanny Bamberger president and Rosa Stone treasurer and secretary. The transcription leaves its formal title blank; the displayed name is descriptive.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "ladies-benevolent-rochester",
+    "name": "Ladies’ Benevolent Society of Rochester",
+    "place": "rochester",
+    "category": "philanthropy",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Women’s benevolent society briefly attested in the October 1851 account of Rochester. The writer expressly says that further particulars were not obtained.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "benevolent-society-memphis",
+    "name": "Benevolent Society (Memphis)",
+    "place": "memphis",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Benevolent association attested in the April 1852 visit to Memphis. The source does not supply its formal title or founding date; the record title is descriptive.",
+    "sources": [
+      "occident-review-43d22a9811bb"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "burial-association-memphis",
+    "name": "Burial-Ground Association (Memphis)",
+    "place": "memphis",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Association caring for the burial ground presented by Mr. Andrews, separately mentioned from the Memphis benevolent society. The source does not give a formal title or foundation date.",
+    "sources": [
+      "occident-review-43d22a9811bb"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "bikkur-cholim-detroit",
+    "name": "Bikkur Cholim of Detroit",
+    "place": "detroit",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Benevolent society formed through Jacob Silberman’s efforts. A letter dated June 10, printed in August 1852, names C. E. Bresler president and J. Silberman cashier.",
+    "sources": [
+      "occident-review-0a902e6a9e97"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "hebrew-english-school-hartford",
+    "name": "Hebrew and English School of Hartford",
+    "place": "hartford",
+    "category": "education",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "School with about twenty-five pupils under Lazarus Mosbacher, described in the October 1851 account of Hartford. Its founding date and classroom address are not given.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "hebrew-school-boston",
+    "name": "Congregational Hebrew School (Boston)",
+    "place": "boston",
+    "category": "education",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Hebrew school conducted by Joseph Strouse, the Boston congregation’s minister, as reported in October 1851. The source does not establish a separate school building.",
+    "sources": [
+      "occident-review-88ce6482c265"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "henry-school-louisville",
+    "name": "Rev. Henry’s School (Louisville)",
+    "place": "louisville",
+    "category": "education",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "School conducted by Rev. Henry after his move to Louisville. The September 1850 notice describes it as following an earlier congregational school; the two are not assumed to have identical institutional lifespans.",
+    "sources": [
+      "occident-review-0f602ee8ec3b"
+    ],
+    "documentedYears": [
+      1850
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-montgomery",
+    "name": "Hebrew Benevolent Society of Montgomery",
+    "place": "montgomery",
+    "category": "philanthropy",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Society announced in November 1851 as an association of twenty-one Montgomery Israelites for charitable purposes.",
+    "sources": [
+      "occident-review-19343a821712"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "mutual-aid-richmond",
+    "name": "Mutual-Assistance Society (Richmond)",
+    "place": "richmond",
+    "category": "philanthropy",
+    "documented": 1852,
+    "certainty": "medium",
+    "description": "Richmond association for sickness assistance, burial and other charitable work, reported in July 1852 with nineteen members. The source gives its officers but not a formal title; this English title is descriptive.",
+    "sources": [
+      "occident-review-cf55d58be898"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "rodef-sholem-school-phl",
+    "name": "Rodef Sholem Hebrew School (Philadelphia)",
+    "place": "philadelphia",
+    "category": "education",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "Congregational Hebrew school reported in July 1851 as teaching one hundred and seventy children. A later notice discusses placing the school under the Education Society, but that proposal is not treated as a completed merger.",
+    "sources": [
+      "occident-review-31b5900d32e6",
+      "occident-review-0a902e6a9e97"
+    ],
+    "documentedYears": [
+      1851,
+      1852
+    ]
+  },
+  {
+    "id": "bnai-israel-school-cin",
+    "name": "Bene Israel Hebrew and General School (Cincinnati)",
+    "place": "cincinnati",
+    "category": "education",
+    "documented": 1851,
+    "certainty": "medium",
+    "description": "School established by Cincinnati’s Bene Israel congregation and placed under Dr. I. M. Mayer, with female and male assistants and about eighty scholars. It is not automatically merged with the earlier Hebrew Institute.",
+    "sources": [
+      "occident-review-31b5900d32e6"
+    ],
+    "documentedYears": [
+      1851
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-sunday-school-cin",
+    "name": "B’nai Jeshurun Sunday School (Cincinnati)",
+    "place": "cincinnati",
+    "category": "education",
+    "founded": 1852,
+    "certainty": "medium",
+    "description": "Sunday school begun in January under Joseph Rosenfeld, reported in April 1852 as enrolling nearly two hundred children within five weeks. The notice distinguishes it from the congregation’s day school.",
+    "sources": [
+      "occident-review-976e498170a8"
+    ],
+    "documentedYears": [
+      1852
+    ]
+  },
+  {
+    "id": "ladies-beneficial-louisville",
+    "name": "Ladies’ Hebrew Beneficial Society of Louisville",
+    "place": "louisville",
+    "category": "philanthropy",
+    "documented": 1850,
+    "certainty": "medium",
+    "description": "Incorporated women’s society whose Purim anniversary ball is reported in May 1850. The notice describes a fund-raising event but does not give a founding date.",
+    "sources": [
+      "occident-review-d4b5f3cd5740"
+    ],
+    "documentedYears": [
+      1850
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-columbia",
+    "name": "Hebrew Benevolent Society of Columbia",
+    "place": "columbia-sc",
+    "category": "philanthropy",
+    "documented": 1846,
+    "certainty": "medium",
+    "description": "Society whose newly completed building housed Columbia’s Hebrew Sunday School examination in 1846. The report establishes its existence but not its founding year or a precise building location.",
+    "sources": [
+      "occident-review-a7af62e09472"
+    ],
+    "documentedYears": [
+      1846
+    ]
+  },
+  {
+    "id": "jps-auxiliary-no",
+    "name": "Jewish Publication Auxiliary Society of New Orleans",
+    "place": "new-orleans",
+    "category": "education",
+    "documented": 1846,
+    "certainty": "medium",
+    "description": "New Orleans auxiliary named as sending one hundred dollars to the American Jewish Publication Society in its March 1846 notice. No local organizing date is stated.",
+    "sources": [
+      "occident-review-408881c02016"
+    ],
+    "documentedYears": [
+      1846
     ]
   }
 ]

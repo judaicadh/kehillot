@@ -48,7 +48,7 @@
   }
   var active = function (c, y) { return c.founded <= y && !(c.dissolved && c.dissolved <= y); };
   var dormant = function (c, y) { return c.dormant && y >= c.dormant[0] && y < c.dormant[1]; };
-  var runs = function (o, y) { return (o.founded == null ? o.documented === y : o.founded <= y) && !((o.dissolved || o.ceased) && (o.dissolved || o.ceased) <= y); };
+  var runs = function (o, y) { return (o.founded == null ? (o.documentedYears || [o.documented]).indexOf(y) !== -1 : o.founded <= y) && !((o.dissolved || o.ceased) && (o.dissolved || o.ceased) <= y); };
   var href = function (type, id) { return root + type + '/' + id + '/'; };
   var plural = function (n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); };
   var WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
@@ -85,7 +85,7 @@
       ds.forEach(function (c) { h += '<li class="dormant"><a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, without a resident congregation</li>'; });
       h += '</ul>';
     }
-    if (is.length) { h += '<p class="pop-sub">Societies &amp; schools</p><ul>'; is.forEach(function (o) { h += '<li><a href="' + href('institution', o.id) + '">' + esc(o.name) + '</a>, ' + (o.founded == null ? 'documented ' + o.documented : 'founded ' + o.founded) + '</li>'; }); h += '</ul>'; }
+    if (is.length) { h += '<p class="pop-sub">Societies &amp; schools</p><ul>'; is.forEach(function (o) { h += '<li><a href="' + href('institution', o.id) + '">' + esc(o.name) + '</a>, ' + (o.founded == null ? 'documented ' + (o.documentedYears || [o.documented]).join(', ') : 'founded ' + o.founded) + '</li>'; }); h += '</ul>'; }
     if (ps.length) { h += '<p class="pop-sub">Periodicals</p><ul>'; ps.forEach(function (o) { h += '<li><a href="' + href('periodical', o.id) + '"><i>' + esc(o.name) + '</i></a>, ' + o.founded + '</li>'; }); h += '</ul>'; }
     if (es.length) { h += '<p class="pop-sub">Events</p><ul>'; es.forEach(function (e) { h += '<li><a href="' + href('event', e.id) + '">' + esc(e.name) + '</a>, ' + String(e.date).slice(0, 4) + '</li>'; }); h += '</ul>'; }
     if (nLocal || (D.cityGuides || []).indexOf(p.id) > -1) {

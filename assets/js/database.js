@@ -141,7 +141,7 @@
         { key: 'category', label: 'Type', val: function (r) { return V.category[r.category]; } },
         { key: 'place', label: 'Place', html: function (r) { return a('place', r.place, placeName(r.place)); }, val: function (r) { return placeName(r.place); } },
         { key: 'founded', label: 'Founded', val: function (r) { return r.founded || ''; }, num: true },
-        { key: 'documented', label: 'Documented', val: function (r) { return r.documented || ''; }, num: true },
+        { key: 'documented', label: 'Documented years', val: function (r) { return (r.documentedYears || (r.documented ? [r.documented] : [])).join(', '); } },
         { key: 'dissolved', label: 'Ceased', val: function (r) { return r.dissolved || ''; }, num: true }
       ],
       sort: 'founded'

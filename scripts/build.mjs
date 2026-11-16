@@ -163,6 +163,7 @@ for (const [type, rows] of Object.entries(data)) {
     if(type === 'institution') {
       if(!Number.isInteger(r.founded) && !Number.isInteger(r.documented)) errors.push(`${at}: needs a founding year or a documented year`);
       for(const field of ['founded','documented']) if(r[field]!=null && !Number.isInteger(r[field])) errors.push(`${at}: ${field} must be a year`);
+      if(r.documentedYears && (!Array.isArray(r.documentedYears) || r.documentedYears.some(y=>!Number.isInteger(y)))) errors.push(`${at}: documentary years must be integers`);
       if(r.founded!=null && r.documented!=null && r.documented<r.founded) errors.push(`${at}: documented before founding`);
     }
     for (const s of r.sources || []) if (!index.source.has(s)) errors.push(`${at}: unknown source "${s}"`);
@@ -209,7 +210,7 @@ for (const [key, fields] of Object.entries(claimEvidence)) {
   const [type, id] = key.split('/'), record = index[type]?.get(id);
   if (!record) { errors.push(`Evidence: unknown record ${key}`); continue; }
   for (const [field, entries] of Object.entries(fields)) {
-    if (!['founded','dissolved','established','built','opened','closed','ceased','date','documented','location'].includes(field) || (field !== 'location' && record[field] == null)) errors.push(`Evidence: invalid field ${key}/${field}`);
+    if (!['founded','dissolved','established','built','opened','closed','ceased','date','documented','documentedYears','location'].includes(field) || (field !== 'location' && record[field] == null)) errors.push(`Evidence: invalid field ${key}/${field}`);
     if (!Array.isArray(entries) || !entries.length) { errors.push(`Evidence: no passages for ${key}/${field}`); continue; }
     for (const e of entries) if (!record.sources?.includes(e.source) || !index.source.has(e.source) || !e.locator?.trim()) errors.push(`Evidence: source and precise locator required for ${key}/${field}`);
   }
@@ -253,8 +254,9 @@ for (const t of ['congregation', 'institution', 'periodical', 'cemetery', 'site'
 
 const yearOf = (d) => Number(String(d).slice(0, 4));
 const clergyTitles = (p) => [...new Set([...(p.clergyTitles || []), ...(p.occupation || []).filter((o) => VOCAB.clergyTitle.concepts[o])])];
+const institutionReports = r => r.documentedYears || (r.documented != null ? [r.documented] : []);
 const institutionYear = r => r.founded ?? r.documented;
-const institutionDateLabel = r => r.founded != null ? `Founded ${r.founded}` : `Documented ${r.documented}`;
+const institutionDateLabel = r => r.founded != null ? `Founded ${r.founded}` : `Documented ${institutionReports(r).join(", ")}`;
 const activeIn = (c, y) => c.founded <= y && !(c.dissolved && c.dissolved <= y);
 const dormantIn = (c, y) => !!c.dormant && y >= c.dormant[0] && y < c.dormant[1];
 
@@ -347,10 +349,10 @@ const datasetFor = (paper) => DATASETS.find((d) => d.key === READERS[paper]?.dat
 const qidOfPlace = (placeId) => wikidata.place?.[placeId] || null;
 const placeIdByQid = new Map(Object.entries(wikidata.place || {}).map(([id, q]) => [q, id]));
 function readersFor(placeId) {
-  const q = qidOfPlace(placeId);
-  if (!q) return [];
+  const q = qidOfPlace(placeId), locality = index.place.get(placeId)?.subscriberLocality;
+  if (!q && !locality) return [];
   return Object.entries(READERS).map(([paper, R]) => {
-    const pl = R.places.find((x) => x.qid === q);
+    const pl = R.places.find((x) => (q && x.qid === q) || (locality && x.k === locality));
     if (!pl) return null;
     const ys = Object.keys(pl.y).map(Number);
     return { paper, R, place: pl, n: pl.n, from: ys.length ? Math.min(...ys) : null, to: ys.length ? Math.max(...ys) : null,
@@ -417,7 +419,7 @@ function periodicalReadership(rel, paper) {
   ${d ? `<p class="small">Source: ${dsCitation(d)}. ${R.unlocated ? `${R.unlocated.toLocaleString('en-US')} subscriptions have no recorded place and are not mapped.` : ''}</p>` : ''}</section>`;
 }
 
-const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || readersFor(p.id).length).map((p) => p.id);
+const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || (instByPlace.get(p.id) || []).length || readersFor(p.id).length).map((p) => p.id);
 
 const ALL_GUIDES = new Map([...data.place.map(p=>[p.id,p.name]),...READ_PLACES.filter(p=>!p.own).map(p=>[p.cityId,p.name])]);
 for (const col of mediaConfig.collections || []) for(const id of col.cityGuides || []) if(!ALL_GUIDES.has(id)) throw new Error(`Unknown collection city guide: ${col.id}/${id}`);
@@ -563,7 +565,7 @@ function nodeBase(type, r) {
         citation: r.sources.map((s) => uri('source', s)) });
     case 'institution':
       return strip({ ...base, '@type': [INST_TYPES[r.category] || 'schema:NGO'], name: r.name, description: r.description,
-        location: uri('place', r.place), foundingDate: r.founded != null ? String(r.founded) : undefined, documented:r.documented != null ? String(r.documented) : undefined, dissolutionDate: r.dissolved ? String(r.dissolved) : undefined,
+        location: uri('place', r.place), foundingDate: r.founded != null ? String(r.founded) : undefined, documented:institutionReports(r).length ? institutionReports(r).map(String) : undefined, dissolutionDate: r.dissolved ? String(r.dissolved) : undefined,
         additionalType: conceptUri('category', r.category), certainty: conceptUri('certainty', r.certainty),
         citation: r.sources.map((s) => uri('source', s)) });
     case 'periodical':
@@ -747,12 +749,12 @@ function citeBox(type, r) {
   <p class="data-links"><a class="suggest" href="${esc(suggestUrl('correction', { record: docUri(type, r.id), title: `[Correction] ${type === 'source' ? r.title : r.name}` }))}">Suggest a correction</a> · Machine-readable: <a href="index.jsonld" type="application/ld+json">JSON-LD</a>${wd(type, r.id) ? ` · Same as <a href="https://www.wikidata.org/wiki/${wikidata[type][r.id]}">Wikidata ${wikidata[type][r.id]}</a>` : ''}</p></section>`;
 }
 function evidenceSection(type, r, rel) {
-  const fields = [['documented','Documented in sources'],['founded','Founded'],['established','Established'],['built','Built or acquired'],['opened','Opened'],['closed','Closed'],['ceased','Ceased'],['dissolved','Dissolved'],['date','Date']].filter(([f])=>r[f] != null);
+  const fields = [['documentedYears','Documented years'],['documented','Documented in sources'],['founded','Founded'],['established','Established'],['built','Built or acquired'],['opened','Opened'],['closed','Closed'],['ceased','Ceased'],['dissolved','Dissolved'],['date','Date']].filter(([f])=>r[f] != null);
   if (Number.isFinite(r.lat) && Number.isFinite(r.lon)) fields.push(['location','Location']);
   if (!fields.length || type === 'source') return '';
   return `<section class="claim-evidence"><h2>Evidence for dates &amp; locations</h2><p class="small muted">A record citation and a passage linked to a particular claim are shown separately.</p>${fields.map(([field,label])=>{
     const entries=claimEvidence[`${type}/${r.id}`]?.[field] || [];
-    const value=field==='location' ? `${r.lat}, ${r.lon}${r.precision ? ` · ${r.precision}` : ' · locality center'}` : String(r[field]);
+    const value=field==='location' ? `${r.lat}, ${r.lon}${r.precision ? ` · ${r.precision}` : ' · locality center'}` : Array.isArray(r[field]) ? r[field].join(", ") : String(r[field]);
     return `<details id="claim-${field}"><summary>${esc(label)}: ${esc(value)} <span class="small muted">· ${entries.length ? 'passage linked' : 'passage needed'}</span></summary>${entries.length ? entries.map(e=>{const s=index.source.get(e.source);return `<p>${link(rel,'source',s.id,s.title)} — ${esc(e.locator)}${s.url ? ` · <a href="${esc(s.url)}">Read original report ↗</a>` : ''}</p>${e.note ? `<p class="small">${esc(e.note)}</p>` : ''}`;}).join('') : `<p class="small">${(r.sources || []).length ? `Record-level references: ${(r.sources || []).map(id=>link(rel,'source',id,index.source.get(id).title)).join('; ')}. A specific page or passage has not yet been linked to this claim.` : 'No source passage is recorded for these locality coordinates.'}</p>`}<a class="small" href="${esc(suggestUrl('evidence',{record:docUri(type,r.id),title:r.name,claim:field,value}))}">Add or challenge the evidence →</a></details>`;
   }).join('')}</section>`;
 }
@@ -779,7 +781,7 @@ const cemList = (rel, rows) => ul(rows.map((c) => `${link(rel, 'cemetery', c.id,
 function entityBody(type, r, rel) {
   const crumbs = `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}">Home</a></li><li><a href="${rel}browse/#${type}">${TYPE_INFO[type].plural}</a></li><li aria-current="page">${esc(type === 'source' ? r.title : r.name)}</li></ol></nav>`;
   const facts = rows => dl(rows.map(([label,value])=>{
-    const field=({'Founded':'founded','Documented in sources':'documented','Established':'established','Built or acquired':'built','Date':'date','Dissolved / merged':'dissolved','Ceased':'dissolved','Closed to burials':'closed','Location':'location','Coordinates':'location','Address':'location'})[label];
+    const field=({'Documented years':'documentedYears','Founded':'founded','Documented in sources':'documented','Established':'established','Built or acquired':'built','Date':'date','Dissolved / merged':'dissolved','Ceased':'dissolved','Closed to burials':'closed','Location':'location','Coordinates':'location','Address':'location'})[label];
     const available=field==='location' ? Number.isFinite(r.lat) && Number.isFinite(r.lon) : field && r[field]!=null;
     return [label,available && value!=null && value!=='' ? `${value} <a class="fact-evidence-link" href="#claim-${field}">Evidence</a>` : value];
   }));
@@ -830,7 +832,7 @@ function entityBody(type, r, rel) {
     const roles = rolesByOrg.get(r.id) || [];
     const sites = sitesByOrg.get(r.id) || [];
     main = `<p class="lede">${esc(r.description)}</p>
-    ${facts([['Type', badge('category', r.category)], ['Place', link(rel, 'place', r.place, placeLabel(r.place))], ['Founded', r.founded != null ? `${r.founded} ${badge('certainty', r.certainty)}` : 'Not yet established from the sources'], ['Documented in sources', r.documented ? `${r.documented} ${badge('certainty', r.certainty)} <span class="small muted">This is a documentary date, not a founding date.</span>` : ''], ['Ceased', r.dissolved]])}
+    ${facts([['Type', badge('category', r.category)], ['Place', link(rel, 'place', r.place, placeLabel(r.place))], ['Founded', r.founded != null ? `${r.founded} ${badge('certainty', r.certainty)}` : 'Not yet established from the sources'], ['Documented in sources', r.documented ? `${r.documented} ${badge('certainty', r.certainty)} <span class="small muted">This is a documentary date, not a founding date.</span>` : ''], ['Documented years', r.documentedYears?.join(', ')], ['Ceased', r.dissolved]])}
     ${sites.length ? `<section><h2>Buildings and meeting places</h2>${buildingsList(rel, sites)}</section>` : ''}
     <section><h2>People</h2>${peopleList(rel, roles)}</section>
     ${eventList(rel, eventsByOrg.get(r.id) || [])}
@@ -963,7 +965,7 @@ const TABLES = {
     get: (r, c) => (c === 'wikidata' ? wikidata.person?.[r.id] : r[c]), about: 'person' },
   roles: { rows: data.person.flatMap((p) => p.roles.map((x) => ({ person: p.id, organization: x.org, organizationType: typeOfOrg(x.org), role: x.role, start: x.start, end: x.end }))),
     cols: [['person', 'string'], ['organization', 'string'], ['organizationType', 'string'], ['role', 'string'], ['start', 'gYear'], ['end', 'gYear']], get: (r, c) => r[c] },
-  institutions: { rows: data.institution, cols: [['id', 'string'], ['name', 'string'], ['category', 'string'], ['place', 'string'], ['founded', 'gYear'], ['documented', 'gYear'], ['dissolved', 'gYear'], ['certainty', 'string'], ['description', 'string'], ['sources', 'string'], ['wikidata', 'string']],
+  institutions: { rows: data.institution, cols: [['id', 'string'], ['name', 'string'], ['category', 'string'], ['place', 'string'], ['founded', 'gYear'], ['documented', 'gYear'], ['documentedYears', 'gYear'], ['dissolved', 'gYear'], ['certainty', 'string'], ['description', 'string'], ['sources', 'string'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.institution?.[r.id] : r[c]), about: 'institution' },
   periodicals: { rows: data.periodical, cols: [['id', 'string'], ['name', 'string'], ['place', 'string'], ['founded', 'gYear'], ['ceased', 'gYear'], ['language', 'string'], ['frequency', 'string'], ['orientation', 'string'], ['certainty', 'string'], ['description', 'string'], ['sources', 'string'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.periodical?.[r.id] : r[c]), about: 'periodical' },
@@ -987,7 +989,7 @@ for (const [name, t] of Object.entries(TABLES)) {
     url: `${name}.csv`,
     tableSchema: strip({
       columns: t.cols.map(([c, dt]) => strip({ name: c, titles: t.titles?.[c] || c, datatype: dt,
-        separator: ['sources', 'places', 'alsoAt', 'people', 'orgs', 'occupation', 'owners', 'language'].includes(c) ? '|' : undefined,
+        separator: ['sources', 'places', 'alsoAt', 'people', 'orgs', 'occupation', 'owners', 'language', 'documentedYears'].includes(c) ? '|' : undefined,
         required: c === 'id' ? true : undefined })),
       primaryKey: t.about ? 'id' : undefined,
       aboutUrl: t.about ? `${BASE}${TYPE_INFO[t.about].path}/{id}/#this` : undefined,
@@ -1063,7 +1065,7 @@ await out('data/csv-metadata.json', JSON.stringify(csvw, null, 2));
 // GeoJSON of everything with a location (used by the atlas)
 const feature = (type, r, placeId) => { const p = index.place.get(placeId);
   return { type: 'Feature', id: uri(type, r.id), geometry: { type: 'Point', coordinates: [p.lon, p.lat] },
-    properties: strip({ type, id: r.id, name: r.name, place: placeId, founded: r.founded, documented:r.documented, dissolved: r.dissolved, date: r.date, rite: r.rite, orientation: r.orientation, category: r.category, certainty: r.certainty, uri: uri(type, r.id) }) }; };
+    properties: strip({ type, id: r.id, name: r.name, place: placeId, founded: r.founded, documented:r.documented, documentedYears:r.documentedYears, dissolved: r.dissolved, date: r.date, rite: r.rite, orientation: r.orientation, category: r.category, certainty: r.certainty, uri: uri(type, r.id) }) }; };
 await out('data/atlas.geojson', JSON.stringify({ type: 'FeatureCollection',
   features: [...data.congregation.map((r) => feature('congregation', r, r.place)), ...data.institution.map((r) => feature('institution', r, r.place)),
     ...data.periodical.map((r) => feature('periodical', r, r.place)), ...data.event.map((r) => feature('event', r, r.place)),
@@ -1257,12 +1259,13 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
   </div>` }));
 
 // Shared city finder: built from curated places and address-level records, never geocoded guesses.
+function isSeparateLocality(p) { return !p.own && !data.place.some(c=>c.subscriberLocality === p.k); }
 function cityNavigator(rel, action = 'Zoom to city') {
   const cities = data.place.map(p => {
     const sites = [...data.site, ...data.cemetery].filter(x => x.place === p.id && x.precision !== 'city');
-    const readership = READ_PLACES.find(x => x.own === p.id);
+    const readership = READ_PLACES.find(x => x.own === p.id || x.k === p.subscriberLocality);
     return { id: p.id, name: p.name, state: p.state, lat: p.lat, lon: p.lon, aliases: readership && readership.name !== p.name ? [readership.name] : [], subscriptions: readership ? subscriptionCount(readership) : 0, points: sites.map(x => [x.lat, x.lon]), guide: CITY_IDS.includes(p.id) ? `${rel}city/${p.id}/` : null };
-  }).concat(READ_PLACES.filter(p => !p.own).map(p => ({ id: p.cityId, name: p.name, state: p.state || p.country || '', lat: p.lat, lon: p.lon, subscriptions: subscriptionCount(p), points: [], guide: `${rel}city/${p.cityId}/` }))).sort((a,b)=>a.name.localeCompare(b.name));
+  }).concat(READ_PLACES.filter(isSeparateLocality).map(p => ({ id: p.cityId, name: p.name, state: p.state || p.country || '', lat: p.lat, lon: p.lon, subscriptions: subscriptionCount(p), points: [], guide: `${rel}city/${p.cityId}/` }))).sort((a,b)=>a.name.localeCompare(b.name));
   return `<section class="city-navigator" aria-labelledby="city-nav-title"><h2 id="city-nav-title" class="visually-hidden">Zoom the map to a city</h2>
   <form id="city-jump-form" class="city-jump-form"><label for="city-jump">Zoom to a city</label><div class="city-jump-fields"><input id="city-jump" type="search" list="city-choices" placeholder="Try New York or Cincinnati" autocomplete="off" required disabled aria-describedby="city-jump-status"><datalist id="city-choices">${cities.map(p=>`<option value="${esc(p.name)}, ${esc(p.state)}"></option>`).join('')}</datalist><button class="btn btn-ghost" type="submit" disabled>${esc(action)}</button><button class="btn btn-ghost" id="city-reset" type="button" disabled>National view</button></div></form>
   <details class="city-shortcuts"><summary>Map help &amp; quick cities</summary>${['new-york','philadelphia','cincinnati','san-francisco'].filter(id=>index.place.has(id)).map(id=>`<button type="button" data-city-jump="${id}" disabled>${esc(index.place.get(id).name)}</button>`).join('')}<p>Modern streets provide context. Dashed symbols are approximate; city-level records are not street addresses.</p></details>
@@ -1836,11 +1839,16 @@ for (const place of READ_PLACES.filter(p => !p.own)) {
     body: `<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${rel}cities/">Cities and towns</a></li><li aria-current="page">${esc(place.name)}</li></ol></nav><header class="city-head" id="locality"><p class="kicker">Subscriber locality</p><h1>${esc(place.name)}</h1><p class="lede">${esc(place.state || '')}${place.state && place.country ? ' · ' : ''}${esc(place.country || '')}</p><p>${subscriptionCount(place).toLocaleString('en-US')} subscriptions across ${papers.length} newspaper${papers.length === 1 ? '' : 's'}.</p></header>
     <div class="plate"><div id="subscriber-city-map" class="city-map subscriber-city-map" role="region" aria-label="Street map of ${esc(label)}"></div></div><p class="section-note">The marker identifies the locality recorded in the source, not a subscriber’s home or business address. Modern streets and optional terrain relief show today’s geography. No congregation or institution is inferred from a subscription.</p>
     <p class="cta"><a class="btn btn-small btn-ghost" href="${rel}contribute/?type=location&amp;record=${encodeURIComponent(`${BASE}city/${place.cityId}/`)}&amp;title=${encodeURIComponent(place.name)}&amp;place=${encodeURIComponent(label)}&amp;lat=${place.lat}&amp;lon=${place.lon}">Help locate a historical address ↗</a><a class="btn btn-small" href="${rel}subscribers/#place=${encodeURIComponent(place.k)}">See this place on the subscriber map ↗</a><a class="btn btn-small btn-ghost" href="${esc(suggestUrl('add-site',{title:`[Place] ${place.name}`}))}">Add a sourced local site</a></p>
-    <details class="research-profile"><summary>Research profile · evidence &amp; gaps</summary><div class="profile-content"><p>This locality is documented by the subscriber lists cited below. Subscription years identify entries in those lists, not a person’s complete residence history.</p><p>Congregations, institutions and specific subscriber addresses are not yet linked to this locality in Kehillot. The map point identifies a locality center; it is not evidence for a home or business location.</p><a href="${rel}sources/occident/?q=${encodeURIComponent(place.name)}">Find reading leads in the Occident archive →</a></div></details>${cityCollections(place.cityId,rel)}${rows}${place.qid ? `<p class="small">Source locality identifier: <a href="https://www.wikidata.org/wiki/${esc(place.qid)}">${esc(place.qid)}</a>.</p>` : ''}</div>
+    <details class="research-profile"><summary>Research profile · evidence &amp; gaps</summary><div class="profile-content"><p>This locality is documented by the subscriber lists cited below. Subscription years identify entries in those lists, not a person’s complete residence history.</p><p>${data.place.some(p=>p.subscriberLocality===place.k) ? `<a href="${rel}city/${data.place.find(p=>p.subscriberLocality===place.k).id}/">Explore the connected city guide and institutional records →</a>` : "Congregations, institutions and specific subscriber addresses are not yet linked to this locality in Kehillot."} The map point identifies a locality center; it is not evidence for a home or business location.</p><a href="${rel}sources/occident/?q=${encodeURIComponent(place.name)}">Find reading leads in the Occident archive →</a></div></details>${cityCollections(place.cityId,rel)}${rows}${place.qid ? `<p class="small">Source locality identifier: <a href="https://www.wikidata.org/wiki/${esc(place.qid)}">${esc(place.qid)}</a>.</p>` : ''}</div>
     <script type="application/json" id="subscriber-city-data">${jsonForScript({lat:place.lat,lon:place.lon,tiles:cfg.streetmap,terrain:cfg.terrain})}</script>` }));
 }
 
 // Original-source article catalogue: metadata only, independently identifiable entries.
+const institutionReview = await readJSON('data/occident-review.json');
+await out('data/occident-review.json',JSON.stringify(institutionReview,null,2));
+const reviewRel='../../../';
+await out('sources/occident/review/index.html',layout({rel:reviewRel,title:'Occident institution review',description:institutionReview.scope,canonical:`${BASE}sources/occident/review/`,body:`<article class="wrap archive-page"><nav class="crumbs"><a href="../">Occident article index</a> / Review coverage</nav><header><p class="kicker">Research notebook · Volumes I–X</p><h1>Institutions in the Occident</h1><p class="lede">Ten indexes screened. 57 institutions added.</p><p>${esc(institutionReview.scope)}</p></header><h2>What this pass covers</h2><ul>${institutionReview.method.map(m=>`<li>${esc(m)}</li>`).join('')}</ul><p><strong>${institutionReview.counts.pagesScreened} source pages screened</strong> · ${institutionReview.counts.pagesWithLinkedPassages} with passages linked to records · ${institutionReview.counts.institutionsTotal} institutions now in the dataset.</p><p><a href="${reviewRel}maps/education/">Explore schools on the map →</a> · <a href="${reviewRel}maps/societies/">Explore societies →</a></p><h2>By volume</h2><p>Open a volume to see its source pages and the records supported by selected passages. A page without a linked record may still contain useful research leads.</p>${Array.from({length:10},(_,i)=>i+1).map(v=>{const rows=institutionReview.pages.filter(p=>p.volume===v);return `<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v} · ${rows.length} pages screened</summary><ul>${rows.map(p=>`<li><a href="${esc(p.url)}">${esc(p.titles.join(' / ') || p.url.split('/').pop())}</a><br><span class="small muted">${p.institutions.length ? 'Selected passages linked to: ' : 'Screened; no record linked in this pass.'}</span>${p.institutions.map(id=>link(reviewRel,'institution',id,index.institution.get(id).name)).join('; ')}</li>`).join('')}</ul></details>`;}).join('')}<h2>Still to resolve</h2><ul>${institutionReview.followUp.map(f=>`<li><strong>${esc(f.issue)}.</strong> ${esc(f.detail)}</li>`).join('')}</ul><details class="archive-volume"><summary>Index entries without a linked transcription · ${institutionReview.unlinkedIndexEntries.length}</summary><ul>${institutionReview.unlinkedIndexEntries.map(a=>`<li>Volume ${a.volume}: <a href="${esc(a.url)}">${esc(a.title)}</a></li>`).join('')}</ul></details><p class="small">Reviewed ${esc(institutionReview.reviewed)}. Transcriptions remain on TheOccident.com. <a href="${reviewRel}data/occident-review.json">Download the review ledger (JSON)</a>.</p></article>`}));
+
 const archivePage=`${BASE}sources/occident/`;
 const archiveLD={'@context':'https://schema.org','@graph':[
   {'@id':archivePage,'@type':'CollectionPage',name:occidentArchive.title,url:archivePage,description:occidentArchive.coverage,isBasedOn:occidentArchive.source},
@@ -1854,7 +1862,7 @@ const evidenceLD={'@context':'https://schema.org','@graph':Object.entries(claimE
   return Object.entries(fields).map(([field,entries])=>({'@id':`${docUri(type,id)}#claim-${field}`,'@type':'Claim',text:`${record.name}: ${field} = ${field==='location' ? `${record.lat}, ${record.lon}` : record[field]}`,about:{'@id':uri(type,id)},citation:entries.map(e=>({'@type':'CreativeWork',name:e.locator,isPartOf:{'@id':uri('source',e.source)},url:index.source.get(e.source).url,description:e.note}))}));
 })};
 await out('data/evidence.jsonld',JSON.stringify(evidenceLD,null,2));
-await out('sources/occident/index.html',layout({rel:'../../',title:'Read the Occident',description:'Search article titles from ten Occident volume indexes, 1843–1853, with links to original reports.',canonical:archivePage,alternate:'index.jsonld',jsonld:archiveLD,scripts:['assets/js/occident-archive.js'],body:`<div class="wrap archive-page"><nav class="crumbs"><a href="../../database/">Find a record</a> / Source archive</nav><header><p class="kicker">Primary sources · article index</p><h1>Read the Occident</h1><p class="lede">Explore ${occidentArchive.articles.length.toLocaleString('en-US')} article links from the ten volume indexes linked by <a href="${esc(occidentArchive.source)}">TheOccident.com</a>.</p><p>Coverage: April 1843–March 1853. This catalogue imports article links and their labels, not full text or the complete 1843–1868 run. Issue months come from archive paths; publication dates may differ from the events described.</p></header><label for="archive-search">Find a city, person, institution or subject in article titles</label><input type="search" id="archive-search" placeholder="Try Philadelphia, school, or Buffalo"><p id="archive-status" class="small" role="status" aria-live="polite"></p>${Array.from({length:10},(_,i)=>i+1).map(v=>`<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v}</summary><ul>${occidentArchive.articles.filter(a=>a.volume===v).map(a=>`<li id="article-${a.id}" data-article-title="${esc(a.title.toLowerCase())}"><a href="${esc(a.url)}">${esc(a.title)}</a> <span class="small muted">${a.date}</span></li>`).join('')}</ul></details>`).join('')}<p class="small">Titles follow the archive’s link labels, including abbreviated headings. Imported ${esc(occidentArchive.imported)}. Transcriptions remain with the Jewish-American History Documentation Foundation. Some archive links use HTTP because its HTTPS certificate could not be verified during import.</p><p><a href="../../data/occident-articles.json">Download article metadata (JSON)</a> · <a href="index.jsonld">Linked data (JSON-LD)</a></p></div>`}));
+await out('sources/occident/index.html',layout({rel:'../../',title:'Read the Occident',description:'Search article titles from ten Occident volume indexes, 1843–1853, with links to original reports.',canonical:archivePage,alternate:'index.jsonld',jsonld:archiveLD,scripts:['assets/js/occident-archive.js'],body:`<div class="wrap archive-page"><nav class="crumbs"><a href="../../database/">Find a record</a> / Source archive</nav><header><p class="kicker">Primary sources · article index</p><h1>Read the Occident</h1><p class="lede">Explore ${occidentArchive.articles.length.toLocaleString('en-US')} article links from the ten volume indexes linked by <a href="${esc(occidentArchive.source)}">TheOccident.com</a>.</p><p>Coverage: April 1843–March 1853. This catalogue imports article links and their labels, not full text or the complete 1843–1868 run. See the <a href="review/">institution review and remaining research leads →</a></p><p>Issue months come from archive paths; publication dates may differ from the events described.</p></header><label for="archive-search">Find a city, person, institution or subject in article titles</label><input type="search" id="archive-search" placeholder="Try Philadelphia, school, or Buffalo"><p id="archive-status" class="small" role="status" aria-live="polite"></p>${Array.from({length:10},(_,i)=>i+1).map(v=>`<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v}</summary><ul>${occidentArchive.articles.filter(a=>a.volume===v).map(a=>`<li id="article-${a.id}" data-article-title="${esc(a.title.toLowerCase())}"><a href="${esc(a.url)}">${esc(a.title)}</a> <span class="small muted">${a.date}</span></li>`).join('')}</ul></details>`).join('')}<p class="small">Titles follow the archive’s link labels, including abbreviated headings. Imported ${esc(occidentArchive.imported)}. Transcriptions remain with the Jewish-American History Documentation Foundation. Some archive links use HTTP because its HTTPS certificate could not be verified during import.</p><p><a href="../../data/occident-articles.json">Download article metadata (JSON)</a> · <a href="index.jsonld">Linked data (JSON-LD)</a></p></div>`}));
 
 // Cities index
 const cityCards = CITY_IDS.map((id) => {
@@ -1877,9 +1885,9 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     ${c.cover ? `<img src="${esc(c.cover.image.thumb)}" alt="" loading="lazy">` : '<span class="city-card-blank" aria-hidden="true">'+c.n+'<small>mapped places</small></span>'}
     <span class="city-card-body"><strong>${esc(c.p.name)}</strong><span class="muted">${esc(c.p.state)}</span>
     <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ') || `${readersFor(c.id).reduce((n,x)=>n+x.n,0)} subscriptions recorded`}</span><span class="guide-open-label">Open city guide ↗</span></span></a></li>`).join('')}</ul>
-  <details class="locality-directory"><summary>Browse all recorded cities and subscriber localities</summary><h2>All recorded places</h2><label for="locality-search">Find a city, town, state, or country</label><input id="locality-search" type="search" placeholder="Search all recorded places…" autocomplete="off"><p id="locality-count" role="status">${data.place.length + READ_PLACES.filter(p=>!p.own).length} places</p>
+  <details class="locality-directory"><summary>Browse all recorded cities and subscriber localities</summary><h2>All recorded places</h2><label for="locality-search">Find a city, town, state, or country</label><input id="locality-search" type="search" placeholder="Search all recorded places…" autocomplete="off"><p id="locality-count" role="status">${data.place.length + READ_PLACES.filter(isSeparateLocality).length} places</p>
   <div class="table-wrap"><table id="locality-table"><thead><tr><th scope="col">Place</th><th scope="col">State or country</th><th scope="col">Evidence recorded</th></tr></thead><tbody>
-  ${[...data.place.map(p=>({id:p.id,name:p.name,region:p.state,sites:(siteByPlace.get(p.id)||[]).length+(cemByPlace.get(p.id)||[]).length, subscriptions:readersFor(p.id).reduce((n,x)=>n+x.n,0),guide:CITY_IDS.includes(p.id)})),...READ_PLACES.filter(p=>!p.own).map(p=>({id:p.cityId,name:p.name,region:[p.state,p.country].filter(Boolean).join(' · '),sites:0,subscriptions:subscriptionCount(p),guide:true}))].sort((a,b)=>a.name.localeCompare(b.name)||a.region.localeCompare(b.region)).map(p=>`<tr><th scope="row"><a href="../${p.guide?'city':'place'}/${p.id}/">${esc(p.name)}</a></th><td>${esc(p.region)}</td><td>${[p.sites ? `${p.sites} mapped sites` : '',p.subscriptions ? `${p.subscriptions.toLocaleString('en-US')} subscriptions` : ''].filter(Boolean).join(' · ') || 'Curated place record'}</td></tr>`).join('')}
+  ${[...data.place.map(p=>({id:p.id,name:p.name,region:p.state,sites:(siteByPlace.get(p.id)||[]).length+(cemByPlace.get(p.id)||[]).length, subscriptions:readersFor(p.id).reduce((n,x)=>n+x.n,0),guide:CITY_IDS.includes(p.id)})),...READ_PLACES.filter(isSeparateLocality).map(p=>({id:p.cityId,name:p.name,region:[p.state,p.country].filter(Boolean).join(' · '),sites:0,subscriptions:subscriptionCount(p),guide:true}))].sort((a,b)=>a.name.localeCompare(b.name)||a.region.localeCompare(b.region)).map(p=>`<tr><th scope="row"><a href="../${p.guide?'city':'place'}/${p.id}/">${esc(p.name)}</a></th><td>${esc(p.region)}</td><td>${[p.sites ? `${p.sites} mapped sites` : '',p.subscriptions ? `${p.subscriptions.toLocaleString('en-US')} subscriptions` : ''].filter(Boolean).join(' · ') || 'Curated place record'}</td></tr>`).join('')}
   </tbody></table></div><button class="btn btn-small btn-ghost" id="locality-more" type="button" hidden>Show more places</button></details>
 </div>` }));
 
@@ -1910,14 +1918,14 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
           : p.places.slice(0, 1).map((pl) => ({ ...cityPt(pl), id: p.id, name: p.name, href: docPath('person', p.id), from: null, to: null, sub: title }));
       }) },
     { id: 'education', symbol: 'school', label: 'Educational institutions', blurb: 'Schools, Sunday schools, seminaries and educational societies.',
-      items: () => [...siteItems(['school']), ...data.institution.filter((o) => o.category === 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: institutionYear(o), to: o.founded != null ? o.dissolved || null : o.documented, dateLabel:o.founded == null ? `Documented ${o.documented}; founding date unknown` : null, sub: 'Educational institution' }))] },
+      items: () => [...siteItems(['school']), ...data.institution.filter((o) => o.category === 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: institutionYear(o), to: o.founded != null ? o.dissolved || null : Math.max(...institutionReports(o)), documentedYears:o.founded == null ? institutionReports(o) : undefined, dateLabel:o.founded == null ? `${institutionDateLabel(o)}; founding date unknown` : null, sub: 'Educational institution' }))] },
     { id: 'matzah-bakeries', symbol: 'matzah-bakery', label: 'Matzah bakeries', blurb: 'Bakeries producing matzah for Passover.', items: () => siteItems(['matzah-bakery']) },
     { id: 'lodging', symbol: 'lodging', label: 'Hotels and boarding houses', blurb: 'Jewish hotels and kosher boarding houses.', items: () => siteItems(['lodging']) },
     { id: 'kosher-restaurants', symbol: 'kosher-restaurant', label: 'Kosher restaurants', blurb: 'Eating houses advertised as kosher.', items: () => siteItems(['kosher-restaurant']) },
     { id: 'businesses', symbol: 'business', label: 'Jewish-owned businesses', blurb: 'Shops, markets and firms owned by Jews.', items: () => siteItems(['business']) },
     { id: 'bookstores', symbol: 'bookstore', label: 'Bookstores', blurb: 'Sellers of Hebrew and Jewish books and religious goods.', items: () => siteItems(['bookstore']) },
     { id: 'societies', symbol: 'society', label: 'Societies and institutions', blurb: 'Benevolent societies, fraternal orders, hospitals and communal bodies.',
-      items: () => [...data.institution.filter((o) => o.category !== 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: institutionYear(o), to: o.founded != null ? o.dissolved || null : o.documented, dateLabel:o.founded == null ? `Documented ${o.documented}; founding date unknown` : null, sub: conceptLabel('category', o.category) })),
+      items: () => [...data.institution.filter((o) => o.category !== 'education').map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('institution', o.id), from: institutionYear(o), to: o.founded != null ? o.dissolved || null : Math.max(...institutionReports(o)), documentedYears:o.founded == null ? institutionReports(o) : undefined, dateLabel:o.founded == null ? `${institutionDateLabel(o)}; founding date unknown` : null, sub: conceptLabel('category', o.category) })),
         ...siteItems(['hospital', 'meeting-place'])] },
     { id: 'periodicals', symbol: 'periodical', label: 'Periodicals', blurb: 'Jewish newspapers and journals, at their place of publication.',
       items: () => data.periodical.map((o) => ({ ...cityPt(o.place), id: o.id, name: o.name, href: docPath('periodical', o.id), from: o.founded, to: o.ceased || null, sub: `${o.language.map((l) => LANGS[l]).join('/')} ${o.frequency}` })) },

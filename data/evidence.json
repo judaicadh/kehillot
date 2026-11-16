@@ -33,6 +33,33 @@
         "locator": "Vol. I, no. 2 (May 1843), opening paragraphs and curriculum list",
         "note": "1843 is the report year, not the founding year. The writer also recalls visiting in the preceding November."
       }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-v1-palache",
+        "locator": "Miss Palache's School, New York (2)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d7405fd536e3",
+        "locator": "Miss Palache's School, Examination of, by Observer (4)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-c311ef3fdc01",
+        "locator": "Public Examination of Miss Palache's Academy (4)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-c388760d8eb9",
+        "locator": "Examination of Miss Palache's School (2)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-4286cfbda7ff",
+        "locator": "The Misses Palache's School",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
     ]
   },
   "institution/talmud-torah-hebrew-institute-ny": {
@@ -41,6 +68,28 @@
         "source": "occident-v1-talmud",
         "locator": "Vol. I, no. 2 (May 1843), opening paragraph",
         "note": "1842 is derived from the report’s relative dating, “about this time last year”; no exact founding day is claimed."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-v1-talmud",
+        "locator": "Talmud Torah School of New York (2)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-a10ee0e0d8a7",
+        "locator": "Talmud Torah School of New York (8)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-e3400e162b2d",
+        "locator": "The Second Annual Examination of the Talmud Torah School of New York (12)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-66ef6ea8937d",
+        "locator": "Second Annual of the Talmud Torah School of New York, by J. K. G. (1)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
       }
     ]
   },
@@ -51,6 +100,18 @@
         "locator": "Vol. I, no. 8 (November 1843), section “The United Hebrew Beneficent Society”",
         "note": "The foundation year is explicit in the notice; it is not the 1843 election year."
       }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-v1-elections-nov",
+        "locator": "United Hebrew Beneficent Society, Philadelphia (8)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-042c806a4e26",
+        "locator": "United Hebrew Benevolent Society of Philadelphia (10)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
     ]
   },
   "institution/hebrew-fuel-savings-phl": {
@@ -59,6 +120,33 @@
         "source": "occident-v1-elections-nov",
         "locator": "Vol. I, no. 8 (November 1843), section “The United Hebrew Beneficent Fuel and Savings Society”",
         "note": "The source explicitly gives February 1841. Its March 1843 officer election is a separate date."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-v1-elections-nov",
+        "locator": "United Hebrew Beneficent Fuel and Savings Society (8)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-2c47c331e285",
+        "locator": "Hebrew Fuel Society of Philadlephia (2)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b863c0d11750",
+        "locator": "The Hebrew Benevolent Fuel Society of Philadelphia (3)",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-cd13e9640032",
+        "locator": "Philadelphia report of the fuel society’s sixth annual meeting",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-256067ffe7ca",
+        "locator": "Philadelphia notice of the fuel society’s April 5 election",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
       }
     ]
   },
@@ -69,6 +157,53 @@
         "locator": "Vol. I, no. 9 (December 1843), title and opening report, including the paragraph beginning “Our Report states forty-four children”",
         "note": "1843 dates the published annual report. No founding year is assigned from anniversary arithmetic."
       }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-dbd8d3e46289",
+        "locator": "Female Hebrew Sewing Society, Philadelphia (9)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-v1-sewing",
+        "locator": "Female Hebrew Sewing Society of Philadelphia (9)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9eb73729579a",
+        "locator": "Female Sewing Society of Philadelphia (9)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-de21853469f2",
+        "locator": "Sixth Annual Report of the Hebrew Female Sewing Society of Philadelphia (9)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-40a892ae7a00",
+        "locator": "Report of the Directresses of the Ladies' Hebrew Sewing Society of Philadelphia (9)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-948edf69b45d",
+        "locator": "Directresses' Annual Report of the Ladies Hebrew Sewing Society of Philadelphia (8)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b3c9fcf9883d",
+        "locator": "Ninth Annual Meeting of the Ladies' Hebrew Sewing Society Philadelphia (8)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9425ecb4ac5f",
+        "locator": "Tenth Annual Report of the Hebrew Sewing Society, of Philadelphia (9)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-4568896ec7ad",
+        "locator": "Report of the Directress of the Sewing Society of Philadelphia (9)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
     ]
   },
   "institution/hebrew-assistance-ny": {
@@ -77,6 +212,13 @@
         "source": "occident-v1-assistance",
         "locator": "Vol. I, no. 10 (January 1844), opening paragraph",
         "note": "The foundation year 1839 is explicitly stated. The issue date and the anniversary dinner are not founding dates."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-88c7a6eac6c9",
+        "locator": "Hebrew Assistance Society of New York (3)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
       }
     ]
   },
@@ -87,6 +229,68 @@
         "locator": "Vol. I, no. 10 (January 1844), title and opening paragraph",
         "note": "The December 14 anniversary described in the January 1844 issue documents activity in 1843. A founding year is left unset."
       }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-fdb3fe0d08b3",
+        "locator": "The New York Hebrew Benevolent Society, 23rd Anniversary (8)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-19de899a4e5e",
+        "locator": "New York Hebrew Benevolent Society (9)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-79f47819fefd",
+        "locator": "Hebrew Benevolent Society of New York (4)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-e86a09ad0f23",
+        "locator": "Third Anniversary of the German Hebrew Benevolent Society of New York (10)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-fdc978656c25",
+        "locator": "The New York Hebrew Benevolent Society (5)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-09a11437d4b1",
+        "locator": "Twenty-sixth Anniversary of the Hebrew Ben. Society of New York (10)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d13de9f04943",
+        "locator": "Hebrew Benevolent Society of New York (3)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-2314f59f1a68",
+        "locator": "New York Hebrew Benevolent Society (5)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-15fd5a7c4215",
+        "locator": "Twenty-Seventh Anniversary of the Hebrew Benevolent Society of New York (10)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-fcceb4fb5fa0",
+        "locator": "New York Hebrew Benevolent Society",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-39f750db58f0",
+        "locator": "Bnai Jeshurun Ladies' Hebrew Benevolent Society of New York",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-bee37d3af138",
+        "locator": "Joint dinner of the New York and German Hebrew Benevolent Societies",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
     ]
   },
   "institution/mercy-truth-phl": {
@@ -95,6 +299,28 @@
         "source": "occident-v1-news-jan",
         "locator": "Vol. I, no. 10 (January 1844), “New Societies in Philadelphia”, first paragraph",
         "note": "The October 11 date is read as the preceding October, 1843, in this January 1844 report; the day is not stored as a separate exact founding date."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-a10ee0e0d8a7",
+        "locator": "Chesed Vaemeth of Philadelphia (8)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-edf457d90d0b",
+        "locator": "The Hebrew Beneficial Society of Mercy and Truth, of Philadelphia (3)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d9d852d6f7d7",
+        "locator": "Society of Mercy and Truth, of Philadelphia (10)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1f7eb9d3ef6c",
+        "locator": "The Society of Mercy and Truth of Philadelphia (9)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
       }
     ]
   },
@@ -113,6 +339,13 @@
         "source": "occident-v1-news-jan",
         "locator": "Vol. I, no. 10 (January 1844), “Officers”, entry “Ladies’ Benevolent Society”",
         "note": "The notice documents the society in January 1844. It gives officers, not a founding date."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-883814ff6437",
+        "locator": "Annual meeting of the B’nai Jeshurun ladies’ society, November 17, 1844",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
       }
     ]
   },
@@ -150,6 +383,38 @@
         "locator": "Vol. I, no. 11 (February 1844), “Elections”, notice beginning “At the annual meeting of the Hebrew Benevolent Society of Cincinnati”",
         "note": "1844 is the report year. The original foundation date Heshvan 5603 is retained in the description rather than silently converted."
       }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-725252c3b1a5",
+        "locator": "Hebrew Benevolent Society of Cincinnati",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-889137e5f97d",
+        "locator": "Fourth Anniversary of the Hebrew Benevolent Society of Cincinnati (11)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d43a9a0d7d58",
+        "locator": "The Cincinnati Hebrew Benevolent Society (11)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-03dba983a961",
+        "locator": "Hebrew Benevolent Society of Cincinnati (12)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-bf18216975c9",
+        "locator": "Hebrew Benevolent Society of Cincinnati (1)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-5bd2e47e82e2",
+        "locator": "Cincinnati Hebrew Benevolent Society officer list",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
     ]
   },
   "institution/female-hebrew-benevolent": {
@@ -158,6 +423,1394 @@
         "source": "occident-v1-female",
         "locator": "Vol. I, no. 9 (December 1843), “Female Hebrew Benevolent Society”, opening report recalling autumn 1819",
         "note": "The society’s report describes its organizing initiative in autumn 1819. This adds a contemporary institutional account to the existing secondary reference."
+      }
+    ],
+    "documentedYears": [
+      {
+        "source": "occident-review-dbd8d3e46289",
+        "locator": "Female Hebrew Benevolent Society, Philadelphia (9)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-v1-female",
+        "locator": "Female Hebrew Benevolent Society of Philadelphia (9)",
+        "note": "This 1843 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Female Hebrew Benevolent Society of Philadelphia, Treasurer's Report (10)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9eb73729579a",
+        "locator": "Female Hebrew Benevolent Society of Philadelphia (9)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-33f8d70b1f21",
+        "locator": "The 25th Anniversary Meeting of the Ladies' Benevolent Society of Philadelphia (9)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-59a0dda91224",
+        "locator": "Report of the Female Hebrew Benevolent Society of Philadelphia (9)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-28cbc3f28c9a",
+        "locator": "Annual Report of the Female Hebrew Benevolent Society of Philadelphia (9)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-ca6112236da9",
+        "locator": "Female Hebrew Benevolent Society of Philadelphia, Report (9)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1f7eb9d3ef6c",
+        "locator": "Ladies Benevolent Society of Philadelphia (9)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-14050292184c",
+        "locator": "Annual Report of the Female Hebrew Benevolent Society of Philadelphia (10)",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-6b045567f965",
+        "locator": "Female Hebrew Benevolent Society of Philadelphia",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b9a384c22b95",
+        "locator": "Twenty-eighth Anniversary of the Female Heb. Benevolent Society of Philadelphia (9)",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      }
+    ]
+  },
+  "institution/columbia-hebrew-sunday-school": {
+    "documentedYears": [
+      {
+        "source": "occident-review-a0e685c78b0a",
+        "locator": "“Hebrew Sunday School, of Columbia, S. C.”, opening paragraph",
+        "note": "The May 1844 report explicitly dates the start to October 15 last, i.e. 1843."
+      },
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Sunday School at Columbia, S. C. (10)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b7d0ad63690f",
+        "locator": "First Examination of Sunday School, at Columbia, S. C. (1)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-a0e685c78b0a",
+        "locator": "Hebrew Sunday School of Columbia, S. C. (2)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-a7af62e09472",
+        "locator": "Hebrew Sunday School at Columbia, S. C. (3)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9c65e2827a93",
+        "locator": "Hebrew Sunday School at Columbia, S. C. (3)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-6dbdab83aea0",
+        "locator": "Hebrew Sunday School at Columbia, S. C. (3)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-716e826dc36d",
+        "locator": "Examination of the Hebrew Sunday-School, at Columbia, S. C. (3)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-64c83346d80b",
+        "locator": "The Hebrew Sunday-School Celebration at Columbia, S.C.",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1e9049693337",
+        "locator": "Sunday School at Columbia, S. C.",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-a0e685c78b0a",
+        "locator": "“Hebrew Sunday School, of Columbia, S. C.”, opening paragraph",
+        "note": "The May 1844 report explicitly dates the start to October 15 last, i.e. 1843."
+      }
+    ]
+  },
+  "institution/jewish-youth-school-charleston": {
+    "documentedYears": [
+      {
+        "source": "occident-review-9fcbd57a0c97",
+        "locator": "Opening account of the sixth anniversary and the sentence dating formation to 1839",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9fcbd57a0c97",
+        "locator": "Hebrew Society for the Instruction of Jewish Youth in Charleston, by M. M. S. (2)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-9fcbd57a0c97",
+        "locator": "Opening account of the sixth anniversary and the sentence dating formation to 1839",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/jewish-doctrine-school-charleston": {
+    "documentedYears": [
+      {
+        "source": "occident-review-6bbcef4767cc",
+        "locator": "Opening paragraph describing a society founded one year earlier",
+        "note": "1844 is supported by the June 1845 statement and the June 1844 announcement of the new school."
+      },
+      {
+        "source": "occident-review-6bbcef4767cc",
+        "locator": "Examination of the Pupils of the Society for the Instruction of Jewish Doctrine, Charleston, S. C., by Lamed. (3)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-640c8acb2aa7",
+        "locator": "New School in Charleston announcement",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-f43baa8eecd7",
+        "locator": "Examination of the Pupils of the School for the Instruction of the Jewish Doctrine in Charleston, S. C. (4)",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      },
+      {
+        "source": "occident-review-ff26cdea59c7",
+        "locator": "Examination of the Children of the Society for Instruction of the Jewish Doctrine, at Charleston (5)",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-6bbcef4767cc",
+        "locator": "Opening paragraph describing a society founded one year earlier",
+        "note": "1844 is supported by the June 1845 statement and the June 1844 announcement of the new school."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-no": {
+    "documentedYears": [
+      {
+        "source": "occident-review-6efd51b46094",
+        "locator": "“Charitable Society in New Orleans”, formation notice and first election",
+        "note": "The report places the first officer election on March 17 of the current year, 1844."
+      },
+      {
+        "source": "occident-review-c40b97718e3d",
+        "locator": "New Orleans Hebrew Benevolent Society (2)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-4b0c275adbf8",
+        "locator": "Benevolent Societies in New Orleans (2)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-64ff145debc0",
+        "locator": "Hebrew Benevolent Association",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-41236aa79943",
+        "locator": "New Orleans Hebrew Benevolent Association officer list, president G. Kursheedt",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-998ea496832a",
+        "locator": "New Orleans yellow-fever relief acknowledgements, secretary S. Magner",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-6efd51b46094",
+        "locator": "“Charitable Society in New Orleans”, formation notice and first election",
+        "note": "The report places the first officer election on March 17 of the current year, 1844."
+      }
+    ]
+  },
+  "institution/poor-children-education-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-042c806a4e26",
+        "locator": "Officer notice headed “Society for the Education of Poor Children and Relief of Indigent Persons”",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-042c806a4e26",
+        "locator": "Officer notice headed “Society for the Education of Poor Children and Relief of Indigent Persons”",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/hebrew-mutual-benefit-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-042c806a4e26",
+        "locator": "New York notice for the Hebrew Mutual Benefit Society",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-042c806a4e26",
+        "locator": "New York notice for the Hebrew Mutual Benefit Society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/revival-of-life-stl": {
+    "documentedYears": [
+      {
+        "source": "occident-review-e3400e162b2d",
+        "locator": "“The Second Anniversary Dinner of the Hebrew Beneficial Society of St. Louis”, final sentence",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-e3400e162b2d",
+        "locator": "“The Second Anniversary Dinner of the Hebrew Beneficial Society of St. Louis”, final sentence",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/jps-auxiliary-richmond": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b4e740074fb7",
+        "locator": "Letter dated Richmond, February 28, 1845, reporting an adopted constitution",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-b4e740074fb7",
+        "locator": "Letter dated Richmond, February 28, 1845, reporting an adopted constitution",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/american-jewish-publication-1845": {
+    "documentedYears": [
+      {
+        "source": "occident-review-1905f2adfea8",
+        "locator": "“Formation of the American Jewish Publication Society”, account of its organizing meeting",
+        "note": "The article records actual organization, rather than merely repeating an earlier proposal."
+      },
+      {
+        "source": "occident-review-50e911932619",
+        "locator": "American Jewish Publication Society (7)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1905f2adfea8",
+        "locator": "Formation of the American Jewish Publication Society (9)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-62573f3e2312",
+        "locator": "American Jewish Publication Society (7) (11) (12)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-408881c02016",
+        "locator": "American Jewish Publication Society (7) (11) (12)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b4132e923ce2",
+        "locator": "American Jewish Publication Society (1)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-87c4234d9c70",
+        "locator": "The American Jewish Publication Society (9)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-c2c3cf3e20df",
+        "locator": "The American Jewish Publication Society (8)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1f7eb9d3ef6c",
+        "locator": "The American Jewish Publication Society (9)",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-3bb66628ee1b",
+        "locator": "Jewish Publication Society (1)",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-1905f2adfea8",
+        "locator": "“Formation of the American Jewish Publication Society”, account of its organizing meeting",
+        "note": "The article records actual organization, rather than merely repeating an earlier proposal."
+      }
+    ]
+  },
+  "institution/german-hebrew-benevolent-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-7a8a715d519c",
+        "locator": "Opening account of the second-anniversary dinner",
+        "note": "An anniversary number is not converted into a founding year."
+      },
+      {
+        "source": "occident-review-7a8a715d519c",
+        "locator": "New York German Hebrew Benevolent Society (10)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-e86a09ad0f23",
+        "locator": "Third Anniversary of the German Hebrew Benevolent Society of New York (10)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-bee37d3af138",
+        "locator": "Same joint dinner; two institutions remain separate",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-7a8a715d519c",
+        "locator": "Opening account of the second-anniversary dinner",
+        "note": "An anniversary number is not converted into a founding year."
+      }
+    ]
+  },
+  "institution/ladies-hebrew-benevolent-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-725252c3b1a5",
+        "locator": "Notice headed “Hebrew Ladies’ Benevolent Society of Cincinnati”",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-725252c3b1a5",
+        "locator": "Hebrew Ladies' Benevolent society of Cincinnati",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-b4132e923ce2",
+        "locator": "The Hebrew Ladies' Benevolent Society of Cincinnati (1)",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-5bd2e47e82e2",
+        "locator": "Cincinnati Ladies Hebrew Benevolent Society officer list",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-6a8d35cacd5e",
+        "locator": "Cincinnati women’s society annual election",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-f7e3e70ecd70",
+        "locator": "Cincinnati ladies’ society ball",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-725252c3b1a5",
+        "locator": "Notice headed “Hebrew Ladies’ Benevolent Society of Cincinnati”",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/ladies-united-sewing-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-c1d7834f2ca6",
+        "locator": "Cincinnati notice of the Ladies’ Sewing Society’s first election",
+        "note": "The February 1847 report explicitly describes a December election in 1846; no exact founding date is assigned."
+      },
+      {
+        "source": "occident-review-cf2114303de6",
+        "locator": "Report of the Hebrew Ladies' Un. Sewing Society of Cincinnati (11)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-c1d7834f2ca6",
+        "locator": "Cincinnati notice of the Ladies’ Sewing Society’s first election",
+        "note": "The February 1847 report explicitly describes a December election in 1846; no exact founding date is assigned."
+      }
+    ]
+  },
+  "institution/hebrew-school-augusta": {
+    "documentedYears": [
+      {
+        "source": "occident-review-531e693373f2",
+        "locator": "Education notice mentioning the Augusta school",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-27acd98d6927",
+        "locator": "Examination of the Sunday School at Augusta",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-6b46f0af0e26",
+        "locator": "Augusta notice of the Sunday school’s examination",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9b9725defc33",
+        "locator": "Augusta notice of the prospering religious school",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-531e693373f2",
+        "locator": "Education notice mentioning the Augusta school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/jacobs-aylward-school-phl": {
+    "documentedYears": [
+      {
+        "source": "occident-review-81852d08da9a",
+        "locator": "“Hebrew and English School”, opening announcement",
+        "note": "The contemporary announcement establishes opening by July 1846, without a day or building address."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-81852d08da9a",
+        "locator": "“Hebrew and English School”, opening announcement",
+        "note": "The contemporary announcement establishes opening by July 1846, without a day or building address."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-charleston": {
+    "documentedYears": [
+      {
+        "source": "occident-review-78d77ed94571",
+        "locator": "Statement that the society was first organized in 1791 and remodelled in 1830",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-51c3ca6d9d2c",
+        "locator": "Fifth-Sixth Anniversary of the Hebrew Benevolent Society of Charleston (1)",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-78d77ed94571",
+        "locator": "Statement that the society was first organized in 1791 and remodelled in 1830",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/hebrew-english-institute-richmond": {
+    "documentedYears": [
+      {
+        "source": "occident-review-23e6785439e5",
+        "locator": "Opening description of the institute’s April 4, 1848 incorporation",
+        "note": "1848 is an attested incorporation year, not an inferred founding or school-opening date."
+      },
+      {
+        "source": "occident-review-35b32f3fc633",
+        "locator": "Richmond, Hebrew and English Institute",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-23e6785439e5",
+        "locator": "Opening description of the institute’s April 4, 1848 incorporation",
+        "note": "1848 is an attested incorporation year, not an inferred founding or school-opening date."
+      }
+    ]
+  },
+  "institution/lilienthal-school-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-d8ebd72cd147",
+        "locator": "Notice headed “Dr. Lilienthal’s School”",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d8ebd72cd147",
+        "locator": "Dr. Lilienthal's School (6)",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-bb0a6dbf453b",
+        "locator": "Dr. Lilienthal's School, by M. M. Noah, Esq.",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1025d536bf39",
+        "locator": "Rev. Dr. Lilienthal's School",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-d8ebd72cd147",
+        "locator": "Notice headed “Dr. Lilienthal’s School”",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/bachelors-hebrew-loan-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-9f79aa4d8cf8",
+        "locator": "Opening correspondence and statement of the association’s objects",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-9f79aa4d8cf8",
+        "locator": "New York Bachelors' Hebrew Ben. Loan Association (11)",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-2240f6915a50",
+        "locator": "The Bachelors' Hebrew Benevolent Loan Association of New York",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-9f79aa4d8cf8",
+        "locator": "Opening correspondence and statement of the association’s objects",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/ladies-sewing-shearith-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-787c5617bc1a",
+        "locator": "New York notice naming the association and October 10 organization",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-4568896ec7ad",
+        "locator": "“Ladies’ Sewing Association of New York”",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1400fa728ea9",
+        "locator": "Opening letter naming the Shearith Israel congregation and its 1850 annual meeting",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-787c5617bc1a",
+        "locator": "New York notice naming the association and October 10 organization",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/hebrew-literary-phl": {
+    "documentedYears": [
+      {
+        "source": "occident-review-2c78bbe23bb9",
+        "locator": "Young Men’s Literary Association notice, sentence dating organization to June 23 last",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-c12dbd131149",
+        "locator": "Young Men's Literary Association of Philadelphia (5) (11)",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-230e3861d23d",
+        "locator": "Young Men's Literary Association of Philadelphia (5) (11)",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-2c78bbe23bb9",
+        "locator": "Young Men's Literary Association (2)",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-8c5d3033654a",
+        "locator": "Hebrew Literary Association of Philadelphia (6)",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-874155af9a9a",
+        "locator": "The Hebrew Literary Association of Philadelphia",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-a83faa7f80fd",
+        "locator": "Lecture heading identifying delivery before the Hebrew Literary Association on May 22, 1851",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-874155af9a9a",
+        "locator": "Hebrew Literary Association officer list",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-2c78bbe23bb9",
+        "locator": "Young Men’s Literary Association notice, sentence dating organization to June 23 last",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/young-mens-benevolent-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-71c2dfdbd5bf",
+        "locator": "New York notice naming the Young Men’s Hebrew Benevolent Association",
+        "note": "The 1849 announcement is retained rather than deriving a new foundation from a later relative date."
+      },
+      {
+        "source": "occident-review-fdf53ac51392",
+        "locator": "Young Men's Hebrew Benevolent Association of N. Y. (11)",
+        "note": "This report documents the institution; the report date does not establish its founding date or complete lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-71c2dfdbd5bf",
+        "locator": "New York notice naming the Young Men’s Hebrew Benevolent Association",
+        "note": "The 1849 announcement is retained rather than deriving a new foundation from a later relative date."
+      }
+    ]
+  },
+  "institution/love-benevolence-no": {
+    "documentedYears": [
+      {
+        "source": "occident-review-d4b5f3cd5740",
+        "locator": "“New Benevolent Society At New Orleans”",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-d4b5f3cd5740",
+        "locator": "“New Benevolent Society At New Orleans”",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/bikkur-cholim-no": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b351a3b56348",
+        "locator": "“New Orleans.—Society Bikkur Cholim”",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-b351a3b56348",
+        "locator": "“New Orleans.—Society Bikkur Cholim”",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-sunday-school-no": {
+    "documentedYears": [
+      {
+        "source": "occident-review-fcceb4fb5fa0",
+        "locator": "New Orleans paragraph announcing the women’s Sunday school",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-aba0768e7823",
+        "locator": "New Orleans Sunday-school report naming Benjamin Florance as superintendent",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-fcceb4fb5fa0",
+        "locator": "New Orleans paragraph announcing the women’s Sunday school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/noot-school-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-4bfbaa68ba6d",
+        "locator": "Account of the Bnai Israel congregation’s school and Rev. Noot’s appointment",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-0a902e6a9e97",
+        "locator": "New York Netherland congregation notice of Noot’s successful school",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-4bfbaa68ba6d",
+        "locator": "Account of the Bnai Israel congregation’s school and Rev. Noot’s appointment",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/solomon-jacobs-school-bal": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b863c0d11750",
+        "locator": "Notice stating that Solomon Jacobs commenced a private school at Baltimore last autumn",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-b863c0d11750",
+        "locator": "Notice stating that Solomon Jacobs commenced a private school at Baltimore last autumn",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/henry-street-school-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-286ff5fd0a2e",
+        "locator": "“Henry Street Synagogue, N. Y.” school announcement",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-286ff5fd0a2e",
+        "locator": "“Henry Street Synagogue, N. Y.” school announcement",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/beth-el-school-albany": {
+    "documentedYears": [
+      {
+        "source": "occident-review-cd13e9640032",
+        "locator": "Albany paragraph describing Dr. Wise’s school examination",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-aa11e5ec0252",
+        "locator": "Albany school enrolment report",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-787c5617bc1a",
+        "locator": "Albany account of Dr. Wise’s eighty scholars",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-ce551643cae2",
+        "locator": "Albany school examination notice",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-cd13e9640032",
+        "locator": "Albany paragraph describing Dr. Wise’s school examination",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/ladies-progression-albany": {
+    "documentedYears": [
+      {
+        "source": "occident-review-58ce61facac2",
+        "locator": "Albany paragraph naming “The Ladies Progression Society”",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-58ce61facac2",
+        "locator": "Albany paragraph naming “The Ladies Progression Society”",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-institute-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-0fc388fc4d06",
+        "locator": "Opening account of the Cincinnati Hebrew Institute’s examination",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-83a679eddac7",
+        "locator": "Cincinnati report of the Hebrew Institute’s officers and annual examination",
+        "note": "This 1847 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-0fc388fc4d06",
+        "locator": "Opening account of the Cincinnati Hebrew Institute’s examination",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/palestine-relief-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-05753a2c6fff",
+        "locator": "Cincinnati notice announcing the association for assistance to Jews in the Holy Land",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-42c049422f6e",
+        "locator": "Cincinnati notice of the Society for Relief of the Jews in Palestine",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-05753a2c6fff",
+        "locator": "Cincinnati notice announcing the association for assistance to Jews in the Holy Land",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-school-cleveland": {
+    "documentedYears": [
+      {
+        "source": "occident-review-6ec06a597e75",
+        "locator": "Cleveland paragraph stating that the school was established in 1844",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-6ec06a597e75",
+        "locator": "Cleveland paragraph stating that the school was established in 1844",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/bnai-jeshurun-ladies-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-7146cd1cb05b",
+        "locator": "New York paragraph naming the newly organized B’nai Jeshurun ladies’ society",
+        "note": "This 1849 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-39f750db58f0",
+        "locator": "Opening account of the second annual meeting; not equated with the older Elm Street society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-7146cd1cb05b",
+        "locator": "New York paragraph naming the newly organized B’nai Jeshurun ladies’ society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/terumath-kodesh-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-d7c24934f1a0",
+        "locator": "New York paragraph distinguishing the existing תרומת הקודש society from a new one",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-d7c24934f1a0",
+        "locator": "New York paragraph distinguishing the existing תרומת הקודש society from a new one",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/netherland-palestine-relief-ny": {
+    "documentedYears": [
+      {
+        "source": "occident-review-d7c24934f1a0",
+        "locator": "New York paragraph announcing a parallel association in the Netherland congregation",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-d7c24934f1a0",
+        "locator": "New York paragraph announcing a parallel association in the Netherland congregation",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-sf": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, first San Francisco charitable-society notice",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, first San Francisco charitable-society notice",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/cholera-auxiliary-sf": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "Almanac extract, paragraph on a society formed during the fall 1850 cholera outbreak",
+        "note": "The notice concerns 1850 activity reprinted in 1852; it is not evidence of operation in every intervening year."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "Almanac extract, paragraph on a society formed during the fall 1850 cholera outbreak",
+        "note": "The notice concerns 1850 activity reprinted in 1852; it is not evidence of operation in every intervening year."
+      }
+    ]
+  },
+  "institution/benevolent-society-sacramento": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, Sacramento paragraph",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, Sacramento paragraph",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/lovely-nation-stockton": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, Stockton paragraph",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-b64ea6d18258",
+        "locator": "California almanac extract, Stockton paragraph",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/brotherly-love-syracuse": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, first named benevolent society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, first named benevolent society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/mutual-assistance-syracuse": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, second named benevolent society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, second named benevolent society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/ladies-benevolent-syracuse": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, third society, headed as a ladies’ society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Syracuse paragraph, third society, headed as a ladies’ society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/ladies-benevolent-rochester": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Rochester paragraph, final statement about a ladies’ benevolent society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Rochester paragraph, final statement about a ladies’ benevolent society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/benevolent-society-memphis": {
+    "documentedYears": [
+      {
+        "source": "occident-review-43d22a9811bb",
+        "locator": "Memphis paragraph naming an existing benevolent society",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-43d22a9811bb",
+        "locator": "Memphis paragraph naming an existing benevolent society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/burial-association-memphis": {
+    "documentedYears": [
+      {
+        "source": "occident-review-43d22a9811bb",
+        "locator": "Memphis paragraph mentioning the association in charge of the burial ground",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-43d22a9811bb",
+        "locator": "Memphis paragraph mentioning the association in charge of the burial ground",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/bikkur-cholim-detroit": {
+    "documentedYears": [
+      {
+        "source": "occident-review-0a902e6a9e97",
+        "locator": "Detroit letter, paragraph naming the new Bikkur Cholim society",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-0a902e6a9e97",
+        "locator": "Detroit letter, paragraph naming the new Bikkur Cholim society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-english-school-hartford": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Hartford paragraph, final sentence on the Hebrew and English school",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Hartford paragraph, final sentence on the Hebrew and English school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-school-boston": {
+    "documentedYears": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Boston paragraph identifying the minister and school",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-88ce6482c265",
+        "locator": "Boston paragraph identifying the minister and school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/henry-school-louisville": {
+    "documentedYears": [
+      {
+        "source": "occident-review-0f602ee8ec3b",
+        "locator": "Louisville paragraph on Rev. Henry and the school",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-0f602ee8ec3b",
+        "locator": "Louisville paragraph on Rev. Henry and the school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-montgomery": {
+    "documentedYears": [
+      {
+        "source": "occident-review-19343a821712",
+        "locator": "Montgomery paragraph naming the Hebrew Benevolent Society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-19343a821712",
+        "locator": "Montgomery paragraph naming the Hebrew Benevolent Society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/mutual-aid-richmond": {
+    "documentedYears": [
+      {
+        "source": "occident-review-cf55d58be898",
+        "locator": "Richmond paragraph reporting a society organized during the preceding winter",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-cf55d58be898",
+        "locator": "Richmond paragraph reporting a society organized during the preceding winter",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/rodef-sholem-school-phl": {
+    "documentedYears": [
+      {
+        "source": "occident-review-31b5900d32e6",
+        "locator": "Philadelphia paragraph on the Rodef Sholem Hebrew school",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-0a902e6a9e97",
+        "locator": "Philadelphia proposed agreement with the Education Society",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-31b5900d32e6",
+        "locator": "Philadelphia paragraph on the Rodef Sholem Hebrew school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/bnai-israel-school-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-31b5900d32e6",
+        "locator": "Cincinnati paragraph announcing the Bene Israel school",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-31b5900d32e6",
+        "locator": "Cincinnati paragraph announcing the Bene Israel school",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/bnai-jeshurun-sunday-school-cin": {
+    "documentedYears": [
+      {
+        "source": "occident-review-976e498170a8",
+        "locator": "Cincinnati account, paragraph beginning “in addition to the day school”",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-976e498170a8",
+        "locator": "Cincinnati account, paragraph beginning “in addition to the day school”",
+        "note": "The report gives this foundation year explicitly; the report year is separate."
+      }
+    ]
+  },
+  "institution/ladies-beneficial-louisville": {
+    "documentedYears": [
+      {
+        "source": "occident-review-d4b5f3cd5740",
+        "locator": "Louisville paragraph on the incorporated Ladies’ Hebrew Beneficial Society",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-d4b5f3cd5740",
+        "locator": "Louisville paragraph on the incorporated Ladies’ Hebrew Beneficial Society",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-columbia": {
+    "documentedYears": [
+      {
+        "source": "occident-review-a7af62e09472",
+        "locator": "Opening paragraph describing the completed Hebrew Benevolent Society building",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-a7af62e09472",
+        "locator": "Opening paragraph describing the completed Hebrew Benevolent Society building",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/jps-auxiliary-no": {
+    "documentedYears": [
+      {
+        "source": "occident-review-408881c02016",
+        "locator": "American Jewish Publication Society remittance notice naming the New Orleans auxiliary",
+        "note": "This 1846 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "documented": [
+      {
+        "source": "occident-review-408881c02016",
+        "locator": "American Jewish Publication Society remittance notice naming the New Orleans auxiliary",
+        "note": "The source establishes documentation in this year, not a founding date."
+      }
+    ]
+  },
+  "institution/hebrew-sunday-school": {
+    "documentedYears": [
+      {
+        "source": "occident-review-b7d0ad63690f",
+        "locator": "The Sixth Annual Examination of the Hebrew Sunday School at Philadelphia (1)",
+        "note": "This 1844 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-1fb527488860",
+        "locator": "The Seventh Annual Examination of the Hebrew Sunday School of Philadelphia (2)",
+        "note": "This 1845 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-64ff145debc0",
+        "locator": "The Thirteenth Annual Examination of the Hebrew Sunday School of Philadelphia",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-923fc4d71fab",
+        "locator": "Hebrew Sunday School of Philadelphia",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ]
+  },
+  "institution/hebrew-education-society": {
+    "documentedYears": [
+      {
+        "source": "occident-1850-hebrew-education",
+        "locator": "Hebrew Education Society of Philadelphia",
+        "note": "This 1850 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-64ff145debc0",
+        "locator": "Hebrew Education Society of Philadelphia (1)",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-484a8fd2068a",
+        "locator": "Hebrew Education Society School (3)",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-ec9ab06e7765",
+        "locator": "Report of the President of the Hebrew Education Society",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-745bbcb6ee2f",
+        "locator": "Hebrew Education Society of Philadelphia",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-d8dffe8864b9",
+        "locator": "Philadelphia notice explicitly dating organization to July 16, 1848",
+        "note": "This 1848 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-64ff145debc0",
+        "locator": "Philadelphia report dating the school’s formal opening to April 6 and instruction to April 7",
+        "note": "This 1851 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      },
+      {
+        "source": "occident-review-0a902e6a9e97",
+        "locator": "Philadelphia proposal for an additional school; treated as a proposal, not a completed merger",
+        "note": "This 1852 report documents the institution. Report years are evidence dates, not a complete operational lifespan."
+      }
+    ],
+    "founded": [
+      {
+        "source": "occident-review-d8dffe8864b9",
+        "locator": "Philadelphia notice stating that the society was duly organized on July 16, 1848",
+        "note": "This establishes society organization in 1848, not the school opening in 1851."
+      }
+    ]
+  },
+  "event/hebrew-education-school-opens-1851": {
+    "date": [
+      {
+        "source": "occident-review-64ff145debc0",
+        "locator": "Philadelphia account of the April 6 formal opening and the following Monday’s instruction",
+        "note": "April 7 dates instruction, not the society foundation or the preceding opening ceremony."
       }
     ]
   }
