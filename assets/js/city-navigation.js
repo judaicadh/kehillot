@@ -7,6 +7,7 @@ window.KhCityNavigation = function (map, options) {
   var cities = JSON.parse(document.querySelector('#city-navigation-data').textContent);
   var input = document.querySelector('#city-jump');
   var status = document.querySelector('#city-jump-status');
+  var context=document.querySelector('#city-guide-context'), contextName=document.querySelector('#map-city-name');
   var guide = document.querySelector('#city-guide-link');
   var reset = document.querySelector('#city-reset');
   var current = null;
@@ -23,7 +24,8 @@ window.KhCityNavigation = function (map, options) {
   function overview() {
     current = null;reset.hidden=true;
     input.value = '';
-    guide.hidden = false;guide.href=guide.dataset.directory;guide.textContent='Open city guide ↗';
+    guide.hidden = true;guide.href=guide.dataset.directory;
+    if(context)context.hidden=true;
     mapEl.setAttribute('aria-label', nationalLabel);
     mapEl.parentElement.classList.remove('plate-street');
     status.textContent = '';
@@ -41,7 +43,8 @@ window.KhCityNavigation = function (map, options) {
       ? city.points.length + ' address-level locations recorded across all years. Date and layer filters still apply.'
       : 'No address-level locations recorded yet. Showing the city’s streets; city-level records are placed at its center.');
     guide.hidden = false;
-    guide.href=city.guide || guide.dataset.directory;guide.textContent=city.guide ? 'Open ' + city.name + ' guide ↗' : 'Open city guides ↗';
+    guide.href=city.guide || guide.dataset.directory;guide.textContent=city.guide ? 'Read the ' + city.name + ' guide →' : 'Browse city guides →';
+    if(context){context.hidden=false;contextName.textContent=label(city);}
     mapEl.setAttribute('aria-label', 'Street map of ' + label(city));
     map.stop();
     map.closePopup();

@@ -25,5 +25,140 @@
         "note": "The editorial describes the Rosh Hashanah dispute after Wise’s dismissal on September 5. This supports September 1850, without specifying a day for the confrontation."
       }
     ]
+  },
+  "institution/palache-school-ny": {
+    "documented": [
+      {
+        "source": "occident-v1-palache",
+        "locator": "Vol. I, no. 2 (May 1843), opening paragraphs and curriculum list",
+        "note": "1843 is the report year, not the founding year. The writer also recalls visiting in the preceding November."
+      }
+    ]
+  },
+  "institution/talmud-torah-hebrew-institute-ny": {
+    "founded": [
+      {
+        "source": "occident-v1-talmud",
+        "locator": "Vol. I, no. 2 (May 1843), opening paragraph",
+        "note": "1842 is derived from the report’s relative dating, “about this time last year”; no exact founding day is claimed."
+      }
+    ]
+  },
+  "institution/united-hebrew-beneficent-phl": {
+    "founded": [
+      {
+        "source": "occident-v1-elections-nov",
+        "locator": "Vol. I, no. 8 (November 1843), section “The United Hebrew Beneficent Society”",
+        "note": "The foundation year is explicit in the notice; it is not the 1843 election year."
+      }
+    ]
+  },
+  "institution/hebrew-fuel-savings-phl": {
+    "founded": [
+      {
+        "source": "occident-v1-elections-nov",
+        "locator": "Vol. I, no. 8 (November 1843), section “The United Hebrew Beneficent Fuel and Savings Society”",
+        "note": "The source explicitly gives February 1841. Its March 1843 officer election is a separate date."
+      }
+    ]
+  },
+  "institution/female-hebrew-sewing-phl": {
+    "documented": [
+      {
+        "source": "occident-v1-sewing",
+        "locator": "Vol. I, no. 9 (December 1843), title and opening report, including the paragraph beginning “Our Report states forty-four children”",
+        "note": "1843 dates the published annual report. No founding year is assigned from anniversary arithmetic."
+      }
+    ]
+  },
+  "institution/hebrew-assistance-ny": {
+    "founded": [
+      {
+        "source": "occident-v1-assistance",
+        "locator": "Vol. I, no. 10 (January 1844), opening paragraph",
+        "note": "The foundation year 1839 is explicitly stated. The issue date and the anniversary dinner are not founding dates."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-ny": {
+    "documented": [
+      {
+        "source": "occident-v1-charity",
+        "locator": "Vol. I, no. 10 (January 1844), title and opening paragraph",
+        "note": "The December 14 anniversary described in the January 1844 issue documents activity in 1843. A founding year is left unset."
+      }
+    ]
+  },
+  "institution/mercy-truth-phl": {
+    "founded": [
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Vol. I, no. 10 (January 1844), “New Societies in Philadelphia”, first paragraph",
+        "note": "The October 11 date is read as the preceding October, 1843, in this January 1844 report; the day is not stored as a separate exact founding date."
+      }
+    ]
+  },
+  "institution/sick-widows-orphans-phl": {
+    "documented": [
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Vol. I, no. 10 (January 1844), “New Societies in Philadelphia”, second society notice",
+        "note": "1844 is the publication year documenting the organization. It is distinct from the Mercy and Truth society in the preceding paragraph."
+      }
+    ]
+  },
+  "institution/ladies-benevolent-elm-ny": {
+    "documented": [
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Vol. I, no. 10 (January 1844), “Officers”, entry “Ladies’ Benevolent Society”",
+        "note": "The notice documents the society in January 1844. It gives officers, not a founding date."
+      }
+    ]
+  },
+  "institution/indigent-old-men-elm-ny": {
+    "documented": [
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Vol. I, no. 10 (January 1844), “Officers”, entry “Society for Indigent Old Men”",
+        "note": "1844 is the date of the published officer list. No institutional lifespan or separate building is inferred."
+      }
+    ]
+  },
+  "institution/gemilut-hesed-elm-ny": {
+    "documented": [
+      {
+        "source": "occident-v1-news-jan",
+        "locator": "Vol. I, no. 10 (January 1844), “Officers”, entry headed גמילות חסד",
+        "note": "The published list documents the society in 1844. Its shared Hebrew terminology does not identify it with a Philadelphia organization."
+      }
+    ]
+  },
+  "institution/mutual-assistance-sick-phl": {
+    "documented": [
+      {
+        "source": "occident-v1-elections-feb",
+        "locator": "Vol. I, no. 11 (February 1844), “Elections”, first annual-meeting notice; Volume I contents index entry identifies Philadelphia",
+        "note": "The meeting date is December 24, 1843; February 1844 is the publication date. Locality is supplied by the archive’s contents-index label."
+      }
+    ]
+  },
+  "institution/hebrew-benevolent-cin": {
+    "documented": [
+      {
+        "source": "occident-v1-elections-feb",
+        "locator": "Vol. I, no. 11 (February 1844), “Elections”, notice beginning “At the annual meeting of the Hebrew Benevolent Society of Cincinnati”",
+        "note": "1844 is the report year. The original foundation date Heshvan 5603 is retained in the description rather than silently converted."
+      }
+    ]
+  },
+  "institution/female-hebrew-benevolent": {
+    "founded": [
+      {
+        "source": "occident-v1-female",
+        "locator": "Vol. I, no. 9 (December 1843), “Female Hebrew Benevolent Society”, opening report recalling autumn 1819",
+        "note": "The society’s report describes its organizing initiative in autumn 1819. This adds a contemporary institutional account to the existing secondary reference."
+      }
+    ]
   }
 }

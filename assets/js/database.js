@@ -140,7 +140,8 @@
         { key: 'name', label: 'Name', html: function (r) { return a('institution', r.id, r.name); }, val: function (r) { return r.name; } },
         { key: 'category', label: 'Type', val: function (r) { return V.category[r.category]; } },
         { key: 'place', label: 'Place', html: function (r) { return a('place', r.place, placeName(r.place)); }, val: function (r) { return placeName(r.place); } },
-        { key: 'founded', label: 'Founded', val: function (r) { return r.founded; }, num: true },
+        { key: 'founded', label: 'Founded', val: function (r) { return r.founded || ''; }, num: true },
+        { key: 'documented', label: 'Documented', val: function (r) { return r.documented || ''; }, num: true },
         { key: 'dissolved', label: 'Ceased', val: function (r) { return r.dissolved || ''; }, num: true }
       ],
       sort: 'founded'
@@ -177,7 +178,7 @@
   var PATHS = {congregations:'congregation',people:'person',clergy:'person',institutions:'institution',events:'event',places:'place',cemeteries:'cemetery',sites:'site',periodicals:'periodical',sources:'source',media:'media'};
   var LABELS = {congregations:'Congregation',people:'Person',institutions:'Institution',events:'Event',places:'Place',cemeteries:'Cemetery',sites:'Site',periodicals:'Periodical',sources:'Source',media:'Picture / document'};
   function recordPlace(r) {return r._kind==='places' ? r.name+', '+r.state : r.place ? placeName(r.place) : (r.places||[]).map(placeName).join('; ');}
-  function recordDate(r) {return r.date || r.founded || r.established || r.built || r.opened || r.year || (r.born || r.died ? (r.born||'?')+'–'+(r.died||'?') : '');}
+  function recordDate(r) {return r.date || (r.founded || (r.documented ? 'Documented '+r.documented : '')) || r.established || r.built || r.opened || r.year || (r.born || r.died ? (r.born||'?')+'–'+(r.died||'?') : '');}
   TYPES.sources = {
     rows:function(){return D.sources.map(function(r){return Object.assign({name:r.title},r);});},text:function(r){return [r.title,r.author,r.year,r.note].join(' ');},
     facets:{author:{label:'Author',get:function(r){return r.author;}}},

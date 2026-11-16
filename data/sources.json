@@ -223,5 +223,104 @@
     "year": 1850,
     "url": "http://www.theoccident.com/Occident/volume8/nov1850/albany.html",
     "note": "The Occident, vol. VIII, no. 8 (November 1850), pp. 422–424. An editorial report of the dispute; read alongside other accounts."
+  },
+  {
+    "id": "occident-v1-palache",
+    "type": "Article",
+    "title": "Boarding and Day School for Young Ladies of the Jewish Faith",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/may1843/palache.html",
+    "note": "Volume I, no. 2 (1843-05). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-talmud",
+    "type": "Article",
+    "title": "Talmud Torah School, of New York",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/may1843/talmudtorah.html",
+    "note": "Volume I, no. 2 (1843-05). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-elections-nov",
+    "type": "Article",
+    "title": "Elections, &c.",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/nov1843/election.html",
+    "note": "Volume I, no. 8 (1843-11). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-sewing",
+    "type": "Article",
+    "title": "Fifth Annual Report of the Female Hebrew Sewing Society of Philadelphia",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/dec1843/sewing.html",
+    "note": "Volume I, no. 9 (1843-12). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-female",
+    "type": "Article",
+    "title": "Female Hebrew Benevolent Society",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/dec1843/female.html",
+    "note": "Volume I, no. 9 (1843-12). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-assistance",
+    "type": "Article",
+    "title": "New York Hebrew Assistance Society",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1844,
+    "url": "http://www.theoccident.com/Occident/volume1/jan1844/assistance.html",
+    "note": "Volume I, no. 10 (1844-01). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-charity",
+    "type": "Article",
+    "title": "Twenty-Second Anniversary of the New York Hebrew Benevolent Society",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1844,
+    "url": "http://www.theoccident.com/Occident/volume1/jan1844/charity.html",
+    "note": "Volume I, no. 10 (1844-01). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-news-jan",
+    "type": "Article",
+    "title": "News Items",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1844,
+    "url": "http://www.theoccident.com/Occident/volume1/jan1844/news.html",
+    "note": "Volume I, no. 10 (1844-01). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-elections-feb",
+    "type": "Article",
+    "title": "Elections",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1844,
+    "url": "http://www.theoccident.com/Occident/volume1/feb1844/elections.html",
+    "note": "Volume I, no. 11 (1844-02). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-institute",
+    "type": "Article",
+    "title": "New York Talmud Torah and Hebrew Institute: examination report",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1844,
+    "url": "http://www.theoccident.com/Occident/volume1/feb1844/institute.html",
+    "note": "Volume I, no. 11 (1844-02). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
+  },
+  {
+    "id": "occident-v1-sunday",
+    "type": "Article",
+    "title": "Examination of the Sunday School at Philadelphia",
+    "publisher": "The Occident and American Jewish Advocate",
+    "year": 1843,
+    "url": "http://www.theoccident.com/Occident/volume1/april1843/sunday.html",
+    "note": "Volume I, no. 1 (1843-04). Digital transcription at TheOccident.com. Claim locators use section headings and paragraphs; no printed page numbers have been inferred."
   }
 ]

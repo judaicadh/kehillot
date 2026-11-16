@@ -8,7 +8,8 @@
     "certainty": "high",
     "description": "Women's relief society organized by Rebecca Gratz and others; among the earliest Jewish charities independent of a synagogue.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "occident-v1-female"
     ]
   },
   {
@@ -20,7 +21,8 @@
     "certainty": "high",
     "description": "Rebecca Gratz's coeducational Sunday school, taught largely by women; replicated in Charleston, Savannah, New York and elsewhere.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "occident-v1-sunday"
     ]
   },
   {
@@ -144,6 +146,175 @@
     "description": "Regional orphanage established by B'nai B'rith after the Civil War.",
     "sources": [
       "sarna-2004"
+    ]
+  },
+  {
+    "id": "palache-school-ny",
+    "name": "Misses Palaché’s Boarding and Day School",
+    "category": "education",
+    "place": "new-york",
+    "documented": 1843,
+    "certainty": "medium",
+    "description": "A New York school for Jewish girls operated by the Misses Palaché. The May 1843 report describes boarding and day pupils and instruction in English subjects, Hebrew, languages, music and drawing. It does not supply a founding date.",
+    "sources": [
+      "occident-v1-palache"
+    ]
+  },
+  {
+    "id": "talmud-torah-hebrew-institute-ny",
+    "name": "New York Talmud Torah and Hebrew Institute",
+    "category": "education",
+    "place": "new-york",
+    "founded": 1842,
+    "certainty": "medium",
+    "description": "School associated with the B’nai Jeshurun congregation in Elm Street and Samuel M. Isaacs, offering English and Hebrew education. The May 1843 report describes about eighty pupils and says the organizing society was founded about a year earlier.",
+    "sources": [
+      "occident-v1-talmud",
+      "occident-v1-institute"
+    ]
+  },
+  {
+    "id": "united-hebrew-beneficent-phl",
+    "name": "United Hebrew Beneficent Society",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "founded": 1822,
+    "certainty": "medium",
+    "description": "Philadelphia relief society providing assistance to poor and sick Jewish people, medical attendance, burial support and apprenticeships for children. Its November 1843 election notice explicitly dates its institution to June 16, 1822.",
+    "sources": [
+      "occident-v1-elections-nov"
+    ]
+  },
+  {
+    "id": "hebrew-fuel-savings-phl",
+    "name": "United Hebrew Beneficent Fuel and Savings Society",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "founded": 1841,
+    "certainty": "medium",
+    "description": "Society distributing fuel and stoves to Philadelphia’s Jewish poor and encouraging savings to obtain winter fuel at cost. The November 1843 notice says it was instituted in February 1841.",
+    "sources": [
+      "occident-v1-elections-nov"
+    ]
+  },
+  {
+    "id": "female-hebrew-sewing-phl",
+    "name": "Female Hebrew Sewing Society",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "documented": 1843,
+    "certainty": "medium",
+    "description": "Philadelphia women’s society supplying clothing to people in need. Its fifth annual report discusses support for forty-four children and cooperation with other local benevolent and fuel societies. The anniversary number alone is not treated as an exact foundation date.",
+    "sources": [
+      "occident-v1-sewing"
+    ]
+  },
+  {
+    "id": "hebrew-assistance-ny",
+    "name": "New York Hebrew Assistance Society",
+    "category": "philanthropy",
+    "place": "new-york",
+    "founded": 1839,
+    "certainty": "medium",
+    "description": "Society dispensing relief to Jewish residents and travellers in need. A January 1844 report explicitly states that it was established in 1839 and describes its fourth-anniversary dinner on November 15.",
+    "sources": [
+      "occident-v1-assistance"
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-ny",
+    "name": "New York Hebrew Benevolent Society",
+    "category": "philanthropy",
+    "place": "new-york",
+    "documented": 1843,
+    "certainty": "medium",
+    "description": "New York charitable society whose twenty-second anniversary was celebrated on December 14, 1843, with M. M. Noah presiding. The report documents the society’s activity but is not used to infer an exact founding year.",
+    "sources": [
+      "occident-v1-charity"
+    ]
+  },
+  {
+    "id": "mercy-truth-phl",
+    "name": "Mercy and Truth (Chesed ve-Emet)",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "founded": 1843,
+    "certainty": "medium",
+    "description": "Philadelphia beneficial society formed to support sick members, bury deceased members, and assist widows and orphans. The January 1844 notice reports formation on October 11 in its account of new societies.",
+    "sources": [
+      "occident-v1-news-jan"
+    ]
+  },
+  {
+    "id": "sick-widows-orphans-phl",
+    "name": "Gemilut Hasadim u-Mish’enet Yatom ve-Almanah",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "documented": 1844,
+    "certainty": "medium",
+    "description": "Philadelphia mutual-benefit society named חברת גמילות חסדים ומשענת יתום ואלמנה in the source. Its stated purposes were sick relief, burial costs and weekly allowances to widows and orphans. Mayer Schoyer was listed as president. Its founding date is not specified.",
+    "sources": [
+      "occident-v1-news-jan"
+    ]
+  },
+  {
+    "id": "ladies-benevolent-elm-ny",
+    "name": "Ladies’ Benevolent Society (Elm Street Synagogue)",
+    "category": "philanthropy",
+    "place": "new-york",
+    "documented": 1844,
+    "certainty": "medium",
+    "description": "Women’s benevolent society listed among the charitable institutions connected with New York’s Elm Street Synagogue for 5604. The notice names Mrs. John M. Davis and Mrs. Morland Micholl as its directresses, and Samuel M. Isaacs as honorary secretary.",
+    "sources": [
+      "occident-v1-news-jan"
+    ]
+  },
+  {
+    "id": "indigent-old-men-elm-ny",
+    "name": "Society for Indigent Old Men (Elm Street Synagogue)",
+    "category": "philanthropy",
+    "place": "new-york",
+    "documented": 1844,
+    "certainty": "medium",
+    "description": "Society listed among the charitable institutions connected with New York’s Elm Street Synagogue. The notice names M. B. Davis as honorary manager, but supplies neither a founding date nor a street address for the society.",
+    "sources": [
+      "occident-v1-news-jan"
+    ]
+  },
+  {
+    "id": "gemilut-hesed-elm-ny",
+    "name": "Gemilut Hesed (Elm Street Synagogue)",
+    "category": "philanthropy",
+    "place": "new-york",
+    "documented": 1844,
+    "certainty": "medium",
+    "description": "Charitable society listed as גמילות חסד among the institutions connected with New York’s Elm Street Synagogue. D. Samson is named as president, J. Solomon as vice-president and J. Bernard as treasurer.",
+    "sources": [
+      "occident-v1-news-jan"
+    ]
+  },
+  {
+    "id": "mutual-assistance-sick-phl",
+    "name": "Hebrew Society for Mutual Assistance and Visitation of the Sick",
+    "category": "philanthropy",
+    "place": "philadelphia",
+    "documented": 1843,
+    "certainty": "medium",
+    "description": "Society whose annual meeting on December 24, 1843 elected Henry M. Phillips president, Abraham S. Wolf secretary and Marcus Cauffman treasurer. The volume’s contents index identifies the locality as Philadelphia. No founding date is given.",
+    "sources": [
+      "occident-v1-elections-feb"
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-cin",
+    "name": "Hebrew Benevolent Society of Cincinnati",
+    "category": "philanthropy",
+    "place": "cincinnati",
+    "documented": 1844,
+    "certainty": "medium",
+    "description": "Cincinnati society for relief of poor and sick Jewish people. Its February 1844 election notice names Joseph Jonas president and gives its institution date in the Hebrew calendar, Heshvan 5603. The founding date is retained in its original calendar; a Gregorian founding year is not recorded here.",
+    "sources": [
+      "occident-v1-elections-feb"
     ]
   }
 ]

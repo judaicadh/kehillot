@@ -12,6 +12,16 @@
     ['city','from','to'].forEach(key=>{if(current.has(key))next.set(key,current.get(key));});
     target.hash=next.toString();if(new URLSearchParams(location.search).get('terrain')==='1')target.searchParams.set('terrain','1');location.assign(target.href);
   }));
+  document.querySelectorAll('[data-map-type-link]').forEach(link=>link.addEventListener('click',()=>{
+    const target=new URL(link.getAttribute('href'),location.href), current=new URLSearchParams(location.hash.slice(1)), next=new URLSearchParams();
+    ['city','from','to','q'].forEach(key=>{if(current.has(key))next.set(key,current.get(key));});
+    target.hash=next.toString();if(new URLSearchParams(location.search).get('terrain')==='1')target.searchParams.set('terrain','1');link.href=target.href;
+  }));
+  const typePicker=document.querySelector('.map-type-picker');
+  if(typePicker){
+    document.addEventListener('click',event=>{if(!typePicker.contains(event.target))typePicker.open=false;});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape' && typePicker.open){typePicker.open=false;typePicker.querySelector('summary').focus();}});
+  }
   // A shared claim or subscriber fragment opens its surrounding disclosures.
   function revealFragment() {
     let id; try { id=decodeURIComponent(location.hash.slice(1)); } catch { return; }
