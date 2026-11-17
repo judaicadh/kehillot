@@ -10,10 +10,10 @@
   var C = JSON.parse($('#city-data').textContent);
   var mapEl = $('#city-map');
   var list = $('#city-list');
-  var yearInput = $('#city-year'), yearOut = $('#city-year-out');
+  var yearInput = $('#city-year'), yearOut = $('#city-year-out'), allDates=$('#city-all-dates');
   function viewParams() {
     var params = new URLSearchParams(location.search), legacy = new URLSearchParams(location.hash.slice(1));
-    ['year','groups','tour','stop'].forEach(function(key){if(!params.has(key) && legacy.has(key)) params.set(key,legacy.get(key));});
+    ['year','when','groups','tour','stop'].forEach(function(key){if(!params.has(key) && legacy.has(key)) params.set(key,legacy.get(key));});
     return params;
   }
   var initialHash = location.hash, initial = viewParams();
@@ -120,22 +120,27 @@
     var a = e.target.closest('[data-goto]');
     if (!a) return;
     e.preventDefault();
+    var linkedEntry=$('#e-'+a.dataset.goto);
+    if(linkedEntry && linkedEntry.dataset.advertised==='1' && allDates && !map.hasLayer(markers[a.dataset.goto])){allDates.checked=true;render();}
     mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
     select(a.dataset.goto, true);
   });
 
   // ── filters and year ──
   function render() {
-    var y = yearInput ? +yearInput.value : Infinity;
-    if (yearOut) yearOut.textContent = y;
-    $('.explorer-controls summary').textContent='Map year ' + (isFinite(y)?y:'all dates') + ' · filters';
+    var showAll=allDates && allDates.checked;
+    var y = !showAll && yearInput ? +yearInput.value : Infinity;
+    if (yearOut) yearOut.textContent = isFinite(y) ? y : 'All dates';
+    if(yearInput)yearInput.disabled=!!showAll;
+    $('.explorer-controls summary').textContent=(isFinite(y)?'Map year '+y:'All recorded dates') + ' · filters';
     var groups = $$('input[name=group]:checked').map(function (i) { return i.value; });
     var shown = 0;
     entries.forEach(function (li) {
       var d = li.dataset;
-      var inGroup = groups.indexOf(d.group) > -1;
-      var standing = !d.from || +d.from <= y;
-      var gone = d.to && +d.to <= y;
+      var inGroup = groups.indexOf(d.group) > -1 || d.advertised==='1' && groups.indexOf('Advertised places & services') > -1;
+      var notice = d.type==='advertisedLocation', noticeYears=notice ? JSON.parse(d.noticeYears || '[]') : [];
+      var standing = showAll || (notice ? noticeYears.indexOf(y)!==-1 : !d.from || +d.from <= y);
+      var gone = !showAll && !notice && d.to && +d.to <= y;
       li.hidden = !inGroup;
       li.classList.toggle('not-yet', inGroup && !standing);
       li.classList.toggle('gone', inGroup && standing && !!gone);
@@ -150,8 +155,8 @@
     if (!showPics && map.hasLayer(photoLayer)) map.removeLayer(photoLayer);
     var total = entries.filter(function (li) { return !li.hidden; }).length;
     $('#city-count').textContent = isFinite(y)
-      ? shown + ' of ' + total + ' places recorded by ' + y + (shown < total ? '; later ones are greyed in the list.' : '.')
-      : shown + ' places.';
+      ? shown + ' of ' + total + ' places shown for ' + y + (shown < total ? '; other dates are greyed in the list.' : '.')
+      : shown + ' places across all recorded dates.';
     refreshJourney();
     if (!tourRunning && selected && !map.hasLayer(markers[selected])) {select(null);map.closePopup();}
     saveView();
@@ -160,7 +165,8 @@
   function saveView() {
     var params = new URLSearchParams();
     if (new URLSearchParams(location.search).get('terrain') === '1') params.set('terrain','1');
-    if (yearInput) params.set('year',yearInput.value);
+    if (allDates && allDates.checked) params.set('when','all');
+    else if (yearInput) params.set('year',yearInput.value);
     var chosen=$$('input[name=group]:checked').map(function(input){return input.value;});
     if(chosen.length !== $$('input[name=group]').length) params.set('groups',chosen.join(','));
     if (tourRunning) {params.set('tour','1'); if (selected) params.set('stop',selected);}
@@ -188,7 +194,7 @@
     $('#tour-map-caption').textContent = tourTitle.textContent;
     $('#tour-map-caption').hidden=false;
     $('#tour-entity-link').href = entry.dataset.entityUri;
-    $('#tour-jsonld-link').href = entry.dataset.recordUrl + 'index.jsonld';
+    $('#tour-jsonld-link').href = entry.dataset.jsonldUrl || entry.dataset.recordUrl + 'index.jsonld';
     $('#tour-share-status').textContent = '';
     tourStory.innerHTML = $('.entry-body',entry).innerHTML;
     var date = entry.dataset.from || 'date unknown';
@@ -218,7 +224,7 @@
     }).sort(function(a,b){return (Number(a.dataset.from) || Infinity) - (Number(b.dataset.from) || Infinity) || $('.entry-name',a).textContent.localeCompare($('.entry-name',b).textContent);});
     tourStart.disabled = !tourStops.length;
     $('#tour-launch').disabled = !tourStops.length;
-    tourStart.textContent = 'Explore' + (yearInput ? ' in ' + yearInput.value : '') + ' · ' + tourStops.length + ' stop' + (tourStops.length === 1 ? '' : 's');
+    tourStart.textContent = 'Explore' + (allDates && allDates.checked ? ' all dates' : yearInput ? ' in ' + yearInput.value : '') + ' · ' + tourStops.length + ' stop' + (tourStops.length === 1 ? '' : 's');
     $('#tour-stops').innerHTML = tourStops.map(function(entry){return '<li><button type="button" data-tour-id="' + esc(entry.dataset.id) + '">' + esc($('.entry-name',entry).textContent) + '</button></li>';}).join('');
     if (!tourStops.length) {
       tourRunning = false; tourIndex = -1;
@@ -289,11 +295,13 @@
   }
   map.on('zoomend moveend', declutter);
 
-  if (yearInput) yearInput.addEventListener('input', function () { render(); declutter(); });
+  if (yearInput) yearInput.addEventListener('input', function () { if(allDates)allDates.checked=false;render(); declutter(); });
+  if(allDates)allDates.addEventListener('change',function(){render();declutter();});
   $$('input[name=group]').forEach(function (i) { i.addEventListener('change', function () { render(); declutter(); }); });
   var defaultYear = yearInput ? yearInput.value : null;
   function restoreView(params, fragment) {
     tourRunning=false;selected=null;
+    if(allDates)allDates.checked=params.get('when')==='all' || (!params.has('year') && C.hasAdvertisements);
     if (yearInput) yearInput.value = params.has('year') && /^\d{4}$/.test(params.get('year')) ? Math.max(+yearInput.min,Math.min(+yearInput.max,+params.get('year'))) : defaultYear;
     var wanted=params.has('groups') ? params.get('groups').split(',') : null;
     $$('input[name=group]').forEach(function(input){input.checked=!wanted || wanted.indexOf(input.value)>-1;});

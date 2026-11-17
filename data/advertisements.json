@@ -4365,6 +4365,9 @@
         ],
         "status": "OCR reading; scan verification pending"
       }
+    ],
+    "knownSites": [
+      "jews-hospital-28th-street"
     ]
   },
   {
@@ -8407,6 +8410,9 @@
         ],
         "status": "OCR reading; scan verification pending"
       }
+    ],
+    "knownSites": [
+      "lloyd-street-synagogue"
     ]
   },
   {

@@ -1813,5 +1813,19 @@
         "note": "April 7 dates instruction, not the society foundation or the preceding opening ceremony."
       }
     ]
+  },
+  "site/jews-hospital-28th-street": {
+    "location": [
+      {
+        "source": "occident-ads-scan-29f58d1490f3d2d8",
+        "locator": "1855/1855-12.pdf, PDF page 5, Jews’ Hospital admission notice",
+        "note": "The notice explicitly identifies 28th Street between Seventh and Eighth Avenues. This supports a block location, not an exact parcel."
+      },
+      {
+        "source": "esri-world-geocoder",
+        "locator": "West 28th Street at Seventh and Eighth Avenues, Manhattan; reference intersections",
+        "note": "The approximate pin is the midpoint of the two matched street intersections. Query URLs and returned coordinates are retained in the advertised-location review download."
+      }
+    ]
   }
 }

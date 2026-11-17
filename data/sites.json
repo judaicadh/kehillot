@@ -118,8 +118,8 @@
     "kind": "hospital",
     "place": "new-york",
     "address": "West 28th Street between Seventh and Eighth Avenues",
-    "lat": 40.7487,
-    "lon": -73.9951,
+    "lat": 40.7478338,
+    "lon": -73.99478,
     "precision": "approximate",
     "built": 1855,
     "certainty": "medium",
@@ -131,8 +131,11 @@
       }
     ],
     "sources": [
-      "grinstein-1945"
-    ]
+      "grinstein-1945",
+      "occident-ads-scan-29f58d1490f3d2d8",
+      "esri-world-geocoder"
+    ],
+    "note": "The pin anchors the advertised West 28th Street block between Seventh and Eighth Avenues. The historical parcel has not been identified."
   },
   {
     "id": "sinsheimer-cafe",

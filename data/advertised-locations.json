@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "deborah-lodging-001-ffc26497",
+    "name": "Privat-Boarding Haus",
+    "advertisement": "deborah-lodging-001",
+    "place": "cincinnati",
+    "kind": "lodging",
+    "address": "Seventh Street near Walnut Street, Cincinnati",
+    "lat": 39.10394,
+    "lon": -84.512012,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1859
+    ],
+    "dates": [
+      "1859-08-19"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "E 7th St & Walnut St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=East+7th+Street+and+Walnut+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-79fd817a774b",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-003-09681178",
+    "name": "Harts Hotel",
+    "advertisement": "deborah-lodging-003",
+    "place": "cincinnati",
+    "kind": "lodging",
+    "address": "Sixth Street between Main and Walnut Streets, Cincinnati",
+    "lat": 39.1027887,
+    "lon": -84.5108984,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 101,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1862
+    ],
+    "dates": [
+      "1862-05-02"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "E 6th St & Main St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=East+6th+Street+and+Main+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "E 6th St & Walnut St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=East+6th+Street+and+Walnut+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-4d92e9da1aad",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-006-3fb5a16d",
+    "name": "Neues Boardinghaus",
+    "advertisement": "deborah-lodging-006",
+    "place": "cincinnati",
+    "kind": "lodging",
+    "address": "Seventh Street between Vine and Race Streets, Cincinnati",
+    "lat": 39.1035741,
+    "lon": -84.5144299,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 102,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1868
+    ],
+    "dates": [
+      "1868-08-07"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "W 7th St & Vine St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+7th+Street+and+Vine+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "W 7th St & Race St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+7th+Street+and+Race+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-4b03f53dbdb8",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-005-981c24ba",
+    "name": "Wolfner's House",
+    "advertisement": "deborah-lodging-005",
+    "place": "chicago",
+    "kind": "lodging",
+    "address": "Monroe and Wells Streets, Chicago",
+    "lat": 41.8806541,
+    "lon": -87.6337989,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1868
+    ],
+    "dates": [
+      "1868-08-07"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "W Monroe St & S Wells St, Chicago, Illinois, 60603",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+Monroe+Street+and+South+Wells+Street%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-4b03f53dbdb8",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-012-1263984b",
+    "name": "Jüdisches Boardinghaus",
+    "advertisement": "deborah-lodging-012",
+    "place": "chicago",
+    "kind": "lodging",
+    "address": "Fulton and Peoria Streets, Chicago",
+    "lat": 41.886768,
+    "lon": -87.649809,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1874
+    ],
+    "dates": [
+      "1874-09-25"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "W Fulton St & N Peoria St, Chicago, Illinois, 60607",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+Fulton+Street+and+North+Peoria+Street%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-86a65a8ae72c",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-009-91c56f6e",
+    "name": "Merchants' Exchange",
+    "advertisement": "deborah-lodging-009",
+    "place": "louisville",
+    "kind": "lodging",
+    "address": "Fifth and Market Streets, Louisville",
+    "lat": 38.2554152,
+    "lon": -85.758431,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1868
+    ],
+    "dates": [
+      "1868-08-07"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "W Market St & S 5th St, Louisville, Kentucky, 40202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+Market+Street+and+South+5th+Street%2C+Louisville%2C+Kentucky&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-4b03f53dbdb8",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-014-a3089aaa",
+    "name": "Himmelreich's Hotel und Restauration",
+    "advertisement": "deborah-lodging-014",
+    "place": "cincinnati",
+    "kind": "lodging",
+    "address": "Elm Street near Fourth Street, Cincinnati",
+    "lat": 39.0994435,
+    "lon": -84.515885,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1877
+    ],
+    "dates": [
+      "1877-09-07"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "Elm St & W 4th St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Elm+Street+and+West+4th+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-8eb88b2e7177",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-saloshin-cincinnati-2f867f8e",
+    "name": "L. & M. Saloshin",
+    "advertisement": "occident-ad-saloshin-cincinnati",
+    "place": "cincinnati",
+    "kind": "lodging",
+    "address": "Main Street near Seventh Street, Cincinnati",
+    "lat": 39.1041659,
+    "lon": -84.5103993,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1855
+    ],
+    "dates": [
+      "1855-12"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "Main St & E 7th St, Cincinnati, Ohio, 45202",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Main+Street+and+East+7th+Street%2C+Cincinnati%2C+Ohio&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-29f58d1490f3d2d8",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-heilbronn-hotel-chicago-13579aaa",
+    "name": "Heilbronn’s Hotel",
+    "advertisement": "occident-ad-heilbronn-hotel-chicago",
+    "place": "chicago",
+    "kind": "lodging",
+    "address": "Franklin Street between Randolph and Lake Streets, Chicago",
+    "lat": 41.8851145,
+    "lon": -87.6353846,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 101,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1861
+    ],
+    "dates": [
+      "1861-12"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "N Franklin St & W Randolph St, Chicago, Illinois, 60606",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=North+Franklin+Street+and+West+Randolph+Street%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "N Franklin St & W Lake St, Chicago, Illinois, 60606",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=North+Franklin+Street+and+West+Lake+Street%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-e2a2e0349fa9ea6d",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "deborah-lodging-011-34ee9d3b",
+    "name": "Hess House",
+    "advertisement": "deborah-lodging-011",
+    "place": "chicago",
+    "kind": "lodging",
+    "address": "Wabash Avenue between 22nd and 23rd Streets, Chicago",
+    "lat": 41.851965,
+    "lon": -87.625509,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 124,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1874
+    ],
+    "dates": [
+      "1874-09-25"
+    ],
+    "note": "The notice’s 22nd Street is now Cermak Road. The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "Source-described intersection or block, anchored to primary map-service street geometry; historical street number is not treated as a modern parcel number.",
+    "geometrySources": [
+      {
+        "title": "S Wabash Ave & E Cermak Rd, Chicago, Illinois, 60616",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=South+Wabash+Avenue+and+East+Cermak+Road%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "S Wabash Ave & E 23rd St, Chicago, Illinois, 60616",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=South+Wabash+Avenue+and+East+23rd+Street%2C+Chicago%2C+Illinois&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "Chicago Transit Authority historical calendar: 22nd Street renamed Cermak Road",
+        "url": "https://www.transitchicago.com/assets/1/6/historicalcalendar_2004.pdf"
+      }
+    ],
+    "sources": [
+      "deborah-ads-86a65a8ae72c",
+      "esri-world-geocoder",
+      "cta-cermak-street-name"
+    ]
+  },
+  {
+    "id": "occident-ad-hexter-boarding-phl-6400df9e",
+    "name": "David Hexter’s Jewish Boarding House",
+    "advertisement": "occident-ad-hexter-boarding-phl",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "147 Arch Street, between Fourth and Fifth, Philadelphia",
+    "lat": 39.9524775,
+    "lon": -75.1476435,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 103,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1855
+    ],
+    "dates": [
+      "1855-09"
+    ],
+    "note": "The notice’s cross-streets distinguish this address from Hexter’s other Arch Street notice. The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "Arch St & N 4th St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Arch+Street+%26+N+4th+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "Arch St & N 5th St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Arch+Street+%26+N+5th+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-fa0655c35bfb4a47",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-ad-hexter-boarding-phl-73496b13",
+    "name": "David Hexter’s Jewish Boarding House",
+    "advertisement": "occident-ad-hexter-boarding-phl",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "623 Arch Street, between Sixth and Seventh",
+    "lat": 39.952872,
+    "lon": -75.150744,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      1
+    ],
+    "documentedYears": [
+      1861
+    ],
+    "dates": [
+      "1861-12"
+    ],
+    "note": "The notice’s cross-streets distinguish this address from Hexter’s other Arch Street notice. The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "Arch St & N 6th St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Arch+Street+%26+N+6th+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "Arch St & N 7th St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Arch+Street+%26+N+7th+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-e2a2e0349fa9ea6d",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "deborah-lodging-004-c1af4077",
+    "name": "National Hotel",
+    "advertisement": "deborah-lodging-004",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "Race Straße, zwischen 3. und 4. Straße; number requires scan verification",
+    "lat": 39.9541135,
+    "lon": -75.1456251,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1865
+    ],
+    "dates": [
+      "1865-12-29"
+    ],
+    "note": "The Deborah and Occident notices name the same hotel, proprietor and Race Street block; they share this location. The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "Race St & N 3rd St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Race+Street+%26+N+3rd+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "Race St & N 4th St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Race+Street+%26+N+4th+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "deborah-ads-39c49ed1aeff",
+      "esri-world-geocoder",
+      "occident-ads-scan-1f8902bb386f43bc",
+      "philadelphia-street-numbering-guide"
+    ],
+    "advertisements": [
+      "deborah-lodging-004",
+      "occident-ad-national-hotel-phl"
+    ],
+    "noticeRefs": [
+      {
+        "advertisement": "deborah-lodging-004",
+        "index": 0
+      },
+      {
+        "advertisement": "occident-ad-national-hotel-phl",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": "occident-ad-joseph-cartledge-marble-phl-a5b79169",
+    "name": "Joseph Cartledge, Marble Mason",
+    "advertisement": "occident-ad-joseph-cartledge-marble-phl",
+    "place": "philadelphia",
+    "kind": "business",
+    "address": "Northeast corner Tenth and Federal Streets, Philadelphia",
+    "lat": 39.9345587,
+    "lon": -75.160432,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1857
+    ],
+    "dates": [
+      "1857-04"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "S 10th St & Federal St, Philadelphia, Pennsylvania, 19147",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+10th+Street+%26+Federal+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-204087dff8b310f2",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-ad-j-m-ellis-grocery-2a453b45",
+    "name": "J. M. Ellis & Son, Tea and Grocery Store",
+    "advertisement": "occident-ad-j-m-ellis-grocery",
+    "place": "philadelphia",
+    "kind": "business",
+    "address": "Southeast corner Ninth and Spring Garden Streets, Philadelphia",
+    "lat": 39.961525,
+    "lon": -75.15293,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1859
+    ],
+    "dates": [
+      "1859-03"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "N 9th St & Spring Garden St, Philadelphia, Pennsylvania, 19123",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=N+9th+Street+%26+Spring+Garden+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-a8d9639beb6d4c8d",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-notice-a98ccdd47a3065e0-a51ac132",
+    "name": "J. L. Greiner’s Boarding House",
+    "advertisement": "occident-notice-a98ccdd47a3065e0",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "Northeast corner of Second and Race Streets",
+    "lat": 39.9537579,
+    "lon": -75.1428988,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1858
+    ],
+    "dates": [
+      "1858-02"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "N 2nd St & Race St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=N+2nd+Street+%26+Race+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-3c56ac3f809ee054",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-notice-93689919c296eee4-87f26ac3",
+    "name": "I. L. Cowan’s Fulton Hotel and Boarding House",
+    "advertisement": "occident-notice-93689919c296eee4",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "Southeast corner Third and Gaskill Streets",
+    "lat": 39.9419424,
+    "lon": -75.1474919,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [],
+    "dates": [],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "S 3rd St & Gaskill St, Philadelphia, Pennsylvania, 19147",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+3rd+Street+%26+Gaskill+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-e8f590b3ed7cca5b",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-ad-john-yeager-marble-phl-66c62777",
+    "name": "John M. Yeager’s Marble Yard",
+    "advertisement": "occident-ad-john-yeager-marble-phl",
+    "place": "philadelphia",
+    "kind": "business",
+    "address": "Catharine Street and Passyunk Road, below Sixth, Philadelphia",
+    "lat": 39.9387167,
+    "lon": -75.1526633,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1858
+    ],
+    "dates": [
+      "1858-10"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "Catharine St & E Passyunk Ave, Philadelphia, Pennsylvania, 19147",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Catharine+Street+%26+E+Passyunk+Avenue%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-c1710291dbfaf23d",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-notice-0b1d0828f96b954c-a67c3d68",
+    "name": "Mrs. Wolf Wiener’s Jewish Boarding House",
+    "advertisement": "occident-notice-0b1d0828f96b954c",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "23 South Second Street, between Market and Chestnut, east side, upstairs",
+    "lat": 39.9491195,
+    "lon": -75.1439075,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 114,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [],
+    "dates": [],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "S 2nd St & Market St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+2nd+Street+%26+Market+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "S 2nd St & Chestnut St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+2nd+Street+%26+Chestnut+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-c655c18cb9ad44df",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-notice-0a2d216c663b71a5-7b230953",
+    "name": "Mrs. A. Hyneman’s Jewish Boarding House",
+    "advertisement": "occident-notice-0a2d216c663b71a5",
+    "place": "philadelphia",
+    "kind": "lodging",
+    "address": "20 &22 South Third Street, between Market &Chestnut",
+    "lat": 39.949387,
+    "lon": -75.145851,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 116,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [],
+    "dates": [],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "S 3rd St & Market St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+3rd+Street+%26+Market+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "S 3rd St & Chestnut St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+3rd+Street+%26+Chestnut+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-6e644cf0de0f9840",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-notice-fe122c5f084b75ac-56a50a3c",
+    "name": "A. Hart, Publisher, formerly Carey and Hart",
+    "advertisement": "occident-notice-fe122c5f084b75ac",
+    "place": "philadelphia",
+    "kind": "bookstore",
+    "address": "Corner Fourth and Chestnut Streets,Philadelphia",
+    "lat": 39.948832,
+    "lon": -75.147574,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [],
+    "dates": [],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "S 4th St & Chestnut St, Philadelphia, Pennsylvania, 19106",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=S+4th+Street+%26+Chestnut+Street%2C+Philadelphia%2C+PA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-6b90c823c982c230",
+      "esri-world-geocoder",
+      "philadelphia-street-numbering-guide"
+    ]
+  },
+  {
+    "id": "occident-ad-ritterband-boarding-ny-48000223",
+    "name": "Mrs. L. M. Ritterband’s Boarding House",
+    "advertisement": "occident-ad-ritterband-boarding-ny",
+    "place": "new-york",
+    "kind": "lodging",
+    "address": "991 & 993 Broadway, between 26th and 27th Streets",
+    "lat": 40.744182,
+    "lon": -73.988948,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1861
+    ],
+    "dates": [
+      "1861-04"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "Broadway & W 26th St, New York, New York, 10010",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Broadway+and+West+26th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "Broadway & W 27th St, New York, New York, 10001",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Broadway+and+West+27th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-effc74c76811be90",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-samuel-hart-institute-ny-a7e1a3bc",
+    "name": "Samuel E. Hart’s Educational Institute",
+    "advertisement": "occident-ad-samuel-hart-institute-ny",
+    "place": "new-york",
+    "kind": "school",
+    "address": "115 West Forty-sixth Street, between Sixth and Seventh Avenues",
+    "lat": 40.7579916,
+    "lon": -73.9836683,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 166,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1866
+    ],
+    "dates": [
+      "1866-12"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "W 46th St & 6th Ave, New York, New York, 10036",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+46th+Street+and+6th+Avenue%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "W 46th St & 7th Ave, New York, New York, 10036",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West+46th+Street+and+7th+Avenue%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-0b2179744e340e39",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-miss-hart-school-ny-87557b4d",
+    "name": "Miss M. Hart’s School for Small Children",
+    "advertisement": "occident-ad-miss-hart-school-ny",
+    "place": "new-york",
+    "kind": "school",
+    "address": "773 Sixth Avenue, corner of 42nd Street, New York",
+    "lat": 40.7548501,
+    "lon": -73.9841025,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1866
+    ],
+    "dates": [
+      "1866-10"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "6th Ave & W 42nd St, New York, New York, 10036",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=6th+Avenue+and+West+42nd+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-0f408563b19e02af",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-rosenbaum-institute-ny-dd27b128",
+    "name": "S. E. Rosenbaum’s Institute",
+    "advertisement": "occident-ad-rosenbaum-institute-ny",
+    "place": "new-york",
+    "kind": "school",
+    "address": "1058 Second Avenue, between 55th and 56th Streets, New York",
+    "lat": 40.758311,
+    "lon": -73.966006,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1866
+    ],
+    "dates": [
+      "1866-10"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "2nd Ave & E 55th St, New York, New York, 10022",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=2nd+Avenue+and+East+55th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "2nd Ave & E 56th St, New York, New York, 10022",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=2nd+Avenue+and+East+56th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-0f408563b19e02af",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-notice-721ecff5564a707e-9ff03ebd",
+    "name": "Carl Keller, Boarding Pupils and Tuition",
+    "advertisement": "occident-notice-721ecff5564a707e",
+    "place": "new-york",
+    "kind": "school",
+    "address": "280 Sixth Avenue, between 17th and 18th Streets",
+    "lat": 40.739559,
+    "lon": -73.9952285,
+    "precision": "approximate",
+    "extent": "block",
+    "uncertaintyMeters": 100,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1862
+    ],
+    "dates": [
+      "1862-04"
+    ],
+    "note": "The pin marks the source-described street block; the historical building or parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "6th Ave & W 17th St, New York, New York, 10011",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=6th+Avenue+and+West+17th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      },
+      {
+        "title": "6th Ave & W 18th St, New York, New York, 10011",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=6th+Avenue+and+West+18th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-d0fd39e8c9b56c71",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-notice-413efe409656bb3c-b2262376",
+    "name": "Solomon Lazarus’s Jewish Boarding House",
+    "advertisement": "occident-notice-413efe409656bb3c",
+    "place": "new-york",
+    "kind": "lodging",
+    "address": "Seventh Avenue at Fifteenth Street; street number is conflicting in OCR",
+    "lat": 40.739239,
+    "lon": -73.999175,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 75,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1857
+    ],
+    "dates": [
+      "1857-04"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "7th Ave & W 15th St, New York, New York, 10011",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=7th+Avenue+and+West+15th+Street%2C+Manhattan%2C+New+York%2C+USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-204087dff8b310f2",
+      "esri-world-geocoder"
+    ]
+  },
+  {
+    "id": "occident-ad-ridskopf-academy-ny-3fc636eb",
+    "name": "Dr. Jos. Ridskopf’s Academy",
+    "advertisement": "occident-ad-ridskopf-academy-ny",
+    "place": "new-york",
+    "kind": "school",
+    "address": "West 25th Street near Seventh Avenue, New York",
+    "lat": 40.7453732,
+    "lon": -73.9946956,
+    "precision": "approximate",
+    "extent": "intersection",
+    "uncertaintyMeters": 150,
+    "role": "premises",
+    "noticeIndices": [
+      0
+    ],
+    "documentedYears": [
+      1861
+    ],
+    "dates": [
+      "1861-04"
+    ],
+    "note": "The pin anchors the source-described corner or nearby intersection; the historical parcel has not been identified.",
+    "method": "The advertised block or cross-streets supply the historical location; modern reference geometry anchors that stated area. Historical house numbers are not treated as current parcel numbers.",
+    "geometrySources": [
+      {
+        "title": "7th Ave & W 25th St, New York, New York, 10001",
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=7th%20Avenue%20and%20West%2025th%20Street%2C%20Manhattan%2C%20New%20York%2C%20USA&f=json&outFields=Match_addr%2CAddr_type",
+        "matchType": "StreetInt",
+        "score": 100
+      }
+    ],
+    "sources": [
+      "occident-ads-scan-effc74c76811be90",
+      "esri-world-geocoder"
+    ]
+  }
+]

@@ -1,0 +1,3743 @@
+{
+  "reviewed": "2026-11-16",
+  "scope": "Address-level map placement for advertised places and services. Only source-supported locations are added to city maps; locality centers are not used as premises.",
+  "newLocations": 28,
+  "reusedSites": [
+    "jews-hospital-28th-street",
+    "lloyd-street-synagogue"
+  ],
+  "counts": {
+    "mapped-area": 29,
+    "historical-address-unresolved": 117,
+    "no-premises-address": 81,
+    "transcription-needs-check": 9,
+    "mapped-existing-site": 2,
+    "correspondence-not-premises": 32,
+    "venue-needs-research": 2
+  },
+  "method": [
+    "Block and intersection anchors use the streets stated in the notice, with the exact geometry-service query preserved.",
+    "Approximate pins do not identify a historical parcel or surviving building.",
+    "Multiple addresses belonging to one advertiser remain separate locations; two notices of the same National Hotel share one geographic location.",
+    "Institutional correspondence addresses are held separately from premises.",
+    "Existing cited historical buildings are reused rather than duplicated.",
+    "All recorded dates is the default for cities with advertised addresses. Selecting a year shows advertised-location pins only for their documented notice years; it does not infer a continuous lifespan."
+  ],
+  "mentions": [
+    {
+      "advertisement": "deborah-lodging-001",
+      "name": "Privat-Boarding Haus",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1859-08-19",
+      "addressAsRead": "Siebente Straße, near Walnut; number unclear in OCR",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-001-ffc26497"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-002",
+      "name": "Gasthaus der Madame R. Solomon",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1859-08-19",
+      "addressAsRead": "250 William Str. [confirm from scan]",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-003",
+      "name": "Harts Hotel",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1862-05-02",
+      "addressAsRead": "Sixth Street, between Main and Walnut; numbers require scan verification",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-003-09681178"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-004",
+      "name": "National Hotel",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1865-12-29",
+      "addressAsRead": "Race Straße, zwischen 3. und 4. Straße; number requires scan verification",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-004-c1af4077"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-005",
+      "name": "Wolfner's House",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "Ecke der Monroe und Wells Straße",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-005-981c24ba"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-006",
+      "name": "Neues Boardinghaus",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "No. 80 Siebte Str., zwischen Vine und Race",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-006-3fb5a16d"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-007",
+      "name": "Privat-Boarding-Haus",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "No. 22 Longworth Str., zwischen Vine und Race",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-008",
+      "name": "Wein-Saloon und Boardinghaus",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "No. 21 College Str.",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-009",
+      "name": "Merchants' Exchange",
+      "place": "louisville",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "Nordwestl. Ecke der Fünften und Market Str.",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-009-91c56f6e"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-010",
+      "name": "Merchant Exchange Hotel (vormals Hexter)",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1868-08-07",
+      "addressAsRead": "130 Chamber Str.",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-011",
+      "name": "Hess House",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1874-09-25",
+      "addressAsRead": "1021 Wabash Avenue, zwischen 22. und 23. Str.",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-011-34ee9d3b"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-012",
+      "name": "Jüdisches Boardinghaus",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1874-09-25",
+      "addressAsRead": "Ecke Fulton & Peoria Str.",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-012-1263984b"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-013",
+      "name": "Klines Hotel",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1874-09-25",
+      "addressAsRead": "76 E. Van Buren St.",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-014",
+      "name": "Himmelreich's Hotel und Restauration",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1877-09-07",
+      "addressAsRead": "143 Elm Straße, drei Thüren unterhalb der 4. Straße",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-014-a3089aaa"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-015",
+      "name": "Unnamed hotel operated by Baschkopf",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1891-09-17",
+      "addressAsRead": "East Broadway; no number in report",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-016",
+      "name": "Hotel of Frau Harris",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-017",
+      "name": "Hotel of Frau Stern",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-018",
+      "name": "Bath Villa",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-019",
+      "name": "Boarding house of Frau Berlinger",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-020",
+      "name": "Lodging of Frau Strauß",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-021",
+      "name": "Atlantic Hotel",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "deborah-lodging-022",
+      "name": "Blythewood",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1899-08-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-bayersdorfer-boston",
+      "name": "M. Bayersdorfer’s Jewish Boarding House",
+      "place": "boston",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "93 Pleasant Street, Boston",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-levi-boarding-ny",
+      "name": "Mrs. Charles Levi’s Boarding House / Family Hotel",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1845-06-16",
+      "addressAsRead": "103 Franklin Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-levi-boarding-ny",
+      "name": "Mrs. Charles Levi’s Boarding House / Family Hotel",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1855-12",
+      "addressAsRead": "110 Bleeker Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-levi-boarding-ny",
+      "name": "Mrs. Charles Levi’s Boarding House / Family Hotel",
+      "place": "new-york",
+      "noticeIndex": 2,
+      "date": null,
+      "addressAsRead": "110 Bleecker Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hexter-boarding-phl",
+      "name": "David Hexter’s Jewish Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1855-09",
+      "addressAsRead": "147 Arch Street, between Fourth and Fifth, Philadelphia",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-hexter-boarding-phl-6400df9e"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hexter-boarding-phl",
+      "name": "David Hexter’s Jewish Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 1,
+      "date": "1861-12",
+      "addressAsRead": "623 Arch Street, between Sixth and Seventh",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-hexter-boarding-phl-73496b13"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-ritterband-boarding-ny",
+      "name": "Mrs. L. M. Ritterband’s Boarding House",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "991 & 993 Broadway, between 26th and 27th Streets",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-ritterband-boarding-ny-48000223"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-kreuter-hotel-ny",
+      "name": "Kreuter’s Hotel",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "262 William Street, between Pearl and Duane",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-heilbronn-hotel-chicago",
+      "name": "Heilbronn’s Hotel",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "49 Franklin Street, between Randolph and Lake Streets",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-heilbronn-hotel-chicago-13579aaa"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-loewenstein-boarding-phl",
+      "name": "N. Loewenstein’s Jewish Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "119 New Street, between Front and Second",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-berlyn-boarding-ny",
+      "name": "George Berlyn’s Boarding House",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "93 Chatham Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-national-hotel-phl",
+      "name": "National Hotel, formerly White Swan",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "308 & 310 Race Street, above Third",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "deborah-lodging-004-c1af4077"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-merchants-exchange-ny",
+      "name": "Merchants’ Exchange Hotel",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "130 Chambers Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-atlantic-hotel-long-branch",
+      "name": "Atlantic Hotel / Cristalar’s Atlantic Hotel",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1865-07",
+      "addressAsRead": "Long Branch, New Jersey; correspondence via 14 Murray Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-emanuel-summer-board",
+      "name": "Mrs. H. Emanuel’s Summer Boarding",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Linwood, Delaware County, Pennsylvania",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-de-souza-bensaquen-london",
+      "name": "Misses de Souza and Bensaquen’s Private Boarding House",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "10 South Street, Finsbury Square, London",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-loewe-school-ny",
+      "name": "A. Loewe’s Hebrew, Classical and English Institute",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "43 Carmine Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-loewe-school-ny",
+      "name": "A. Loewe’s Hebrew, Classical and English Institute",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "168 Greene Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-loewe-school-ny",
+      "name": "A. Loewe’s Hebrew, Classical and English Institute",
+      "place": "new-york",
+      "noticeIndex": 2,
+      "date": null,
+      "addressAsRead": "174 Thompson Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-livor-school-ny",
+      "name": "John Livor’s Commercial Institute",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "20 First Avenue, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-livor-school-ny",
+      "name": "John Livor’s Commercial Institute",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "45 Second Avenue, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-palache-school-ny",
+      "name": "The Misses Palache’s Boarding and Day School",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-09",
+      "addressAsRead": "97 Thompson Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-palache-school-ny",
+      "name": "The Misses Palache’s Boarding and Day School",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "Fitzray Place, 183 West 28th Street, New York [OCR 2%th]",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-katzenberg-long-school-ny",
+      "name": "J. Katzenberg and M. Long’s School",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "101 Eighth Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-katzenberg-long-school-ny",
+      "name": "J. Katzenberg and M. Long’s School",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-05",
+      "addressAsRead": "101 St. Mark’s Place, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-becker-institute-ny",
+      "name": "Becker’s Institute",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "66 Hammond Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-ridskopf-academy-ny",
+      "name": "Dr. Jos. Ridskopf’s Academy",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "88 West 25th Street, near Seventh Avenue, New York",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-ridskopf-academy-ny-3fc636eb"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-linwood-seminary",
+      "name": "The Misses Emanuel’s Linwood Seminary",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1862-04",
+      "addressAsRead": "Linwood, Delaware County, Pennsylvania",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-samuel-hart-institute-ny",
+      "name": "Samuel E. Hart’s Educational Institute",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-12",
+      "addressAsRead": "115 West Forty-sixth Street, between Sixth and Seventh Avenues",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-samuel-hart-institute-ny-a7e1a3bc"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-miss-hart-school-ny",
+      "name": "Miss M. Hart’s School for Small Children",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-10",
+      "addressAsRead": "773 Sixth Avenue, corner of 42nd Street, New York",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-miss-hart-school-ny-87557b4d"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-rosenbaum-institute-ny",
+      "name": "S. E. Rosenbaum’s Institute",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-10",
+      "addressAsRead": "1058 Second Avenue, between 55th and 56th Streets, New York",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-rosenbaum-institute-ny-dd27b128"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-leopold-weil-school-ny",
+      "name": "Mrs. Leopold Weil’s School",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "320 West 31st Street [OCR 820 West Sist], New York",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hirsch-school-frankfurt",
+      "name": "Dr. M. Hirsch’s Educational Establishment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "5 Schone Aussicht, Frankfort-on-the-Maine",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hirsch-school-frankfurt",
+      "name": "Dr. M. Hirsch’s Educational Establishment",
+      "place": null,
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "5 Schöne Aussicht, Frankfurt am Main",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-philip-friedman-meats",
+      "name": "Philip Friedman’s Meat Business",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "21 Essex Market and 134 Rivington Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-philip-friedman-meats",
+      "name": "Philip Friedman’s Meat Business",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "21 Essex Market and 134 Rivington Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-schlessinger-butchers-phl",
+      "name": "M. Schlessinger & Brother, Butchers",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "208 Buttonwood Street and 207 Race Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hammerschlag-meats-phl",
+      "name": "S. Hammerschlag’s Meat Business",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1865-01",
+      "addressAsRead": "1209 Hancock Street, between Second Street and Girard Avenue, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-greenhood-meats-chicago",
+      "name": "Jacob Greenhood’s Meat Business",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1862-07",
+      "addressAsRead": "North Market, northeast corner, Chicago",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hamberg-matzah-phl",
+      "name": "Philip Hamberg’s Matzah Business",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Bake-house: 1321 Ridge Avenue; application contact: 610 Franklin Street above Green, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-rheinstrom-matzah-phl",
+      "name": "Matzah Baking under Isaac Rheinstrom",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1857-03",
+      "addressAsRead": "85 Race Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-mark-isaacs-matzah-ny",
+      "name": "Mark Isaacs, Matzah Baker",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1857-03",
+      "addressAsRead": "194 Division Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-romberg-essen-matzah-phl",
+      "name": "Romberg & Essen",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858",
+      "addressAsRead": "237 Race Street above Second, Philadelphia; Romberg residence at 610 Franklin above Green",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-felix-dining-ny",
+      "name": "Felix Dining Saloon, branch",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-12",
+      "addressAsRead": "45 and 47 Lispenard Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-m-light-books-ny",
+      "name": "M. Light, Bookseller",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "187 Forsyth Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-m-light-books-ny",
+      "name": "M. Light, Bookseller",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": null,
+      "addressAsRead": "187 Forsyth Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-moss-brother-books-phl",
+      "name": "Moss & Brother",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1856-02",
+      "addressAsRead": "12 South Fourth Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-ellinger-books-ny",
+      "name": "M. Ellinger, Hebrew Books and Literature",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-10",
+      "addressAsRead": "436 Broadway; bottom contact line 81 Warren Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-thalmessinger-cahn-ny",
+      "name": "Thalmessinger & Cahn",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-12",
+      "addressAsRead": "310 Broadway, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-l-h-frank-printing-ny",
+      "name": "L. H. Frank / Franks, Hebrew Printing",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1865-01",
+      "addressAsRead": "49 Nassau Street; bottom signature also 185 Division Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-hubbard-printing-phl",
+      "name": "Hubbard & Co., Book and Job Printers",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "40 South Third Street, Pennsylvanian Building, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-saloshin-cincinnati",
+      "name": "L. & M. Saloshin",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "Main Street west side, one door below Seventh, Cincinnati; number uncertain in this OCR",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-saloshin-cincinnati-2f867f8e"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-charles-levi-bonnets-ny",
+      "name": "Mrs. Charles Levi, Bonnets and Dress Caps",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "110 Bleecker Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-j-abraham-law-cincinnati",
+      "name": "J. Abraham, Attorney",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "Cincinnati, Ohio",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-asher-cohen-law-charleston",
+      "name": "Asher D. Cohen, Attorney",
+      "place": "charleston",
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "Charleston, South Carolina",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-joseph-c-levi-law-ny",
+      "name": "Joseph C. Levi, Attorney",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "146 Broadway, Room 9, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-solis-ritterband-law-ny",
+      "name": "J. Solis Ritterband, Attorney",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "1147 Broadway, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-josiah-cohen-law-pittsburgh",
+      "name": "Josiah Cohen, Attorney",
+      "place": "pittsburgh",
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "Pittsburgh, Pennsylvania",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-joseph-cartledge-marble-phl",
+      "name": "Joseph Cartledge, Marble Mason",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1857-04",
+      "addressAsRead": "Northeast corner Tenth and Federal Streets, Philadelphia",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-joseph-cartledge-marble-phl-a5b79169"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-john-yeager-marble-phl",
+      "name": "John M. Yeager’s Marble Yard",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858-10",
+      "addressAsRead": "Catharine Street and Passyunk Road, below Sixth, Philadelphia",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-john-yeager-marble-phl-66c62777"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-aub-hackenburg-silks-phl",
+      "name": "Aub & Hackenburg / Aub, Hackenburg & Co.",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Northwest corner Front and New Streets, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-m-vogel-soaps-phl",
+      "name": "M. Vogel & Co., Fancy Soaps",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-09",
+      "addressAsRead": "9 Decatur Street near Market, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-isaacs-kahn-clothing-ny",
+      "name": "Isaacs, Kahn & Co.",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-10",
+      "addressAsRead": "411 Broadway, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-alexander-hart-clothing-no",
+      "name": "Alexander Hart & Co.",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "13 Chartres Street [OCR char ters], New Orleans",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-mitchell-allen-importers",
+      "name": "Mitchell & Allen",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "214 South Front Street, Philadelphia; 82 Beaver Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-arnold-nusbaum-nirdlinger-phl",
+      "name": "Arnold, Nusbaum & Nirdlinger",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "55 North Third Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-c-levy-furnishing-phl",
+      "name": "C. Levy, Gentlemen’s Furnishing Establishment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-12",
+      "addressAsRead": "5 South Eighth Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-bachman-metz-milwaukee",
+      "name": "Bachman & Metz",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "227 East Water Street, Milwaukee, Wisconsin",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-j-m-ellis-grocery",
+      "name": "J. M. Ellis & Son, Tea and Grocery Store",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1859-03",
+      "addressAsRead": "Southeast corner Ninth and Spring Garden Streets, Philadelphia",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-ad-j-m-ellis-grocery-2a453b45"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-henry-heller-mohel-phl",
+      "name": "Dr. Henry Heller, Mohel",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1864-08",
+      "addressAsRead": "628 Wood Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-moses-breidenbach-mohel-phl",
+      "name": "Moses Breidenbach, Mohel",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1865-06",
+      "addressAsRead": "641 East Girard Avenue, corner of Vienna Street, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-b-burgauer-phl",
+      "name": "B. Burgauer, Diploma Agent",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1864-10",
+      "addressAsRead": "953 Randolph Street above Poplar, Philadelphia",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-samuel-isaacs-ritual-ny",
+      "name": "Rev. S. M. Isaacs, Ritual Articles",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1856-09",
+      "addressAsRead": "694 Houston Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-samuel-isaacs-ritual-ny",
+      "name": "Rev. S. M. Isaacs, Ritual Articles",
+      "place": "new-york",
+      "noticeIndex": 1,
+      "date": "1861-04",
+      "addressAsRead": "Office of the Jewish Messenger, 694 Houston Street, New York",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-ad-jews-hospital-ny",
+      "name": "Jews’ Hospital in New York, Admission Notice",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855-12",
+      "addressAsRead": "Twenty-eighth Street between Seventh and Eighth Avenues, New York",
+      "status": "mapped-existing-site",
+      "reason": "The notice matches an already-curated historical building; its existing map marker is reused.",
+      "locations": [],
+      "existingSites": [
+        "jews-hospital-28th-street"
+      ]
+    },
+    {
+      "advertisement": "occident-notice-375af7f8401d8edc",
+      "name": "James Parr, Passover Bread Baker",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1845-02-13",
+      "addressAsRead": "73 Mott Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5f2d8b9001bac2cb",
+      "name": "Moses S. Cohen, Agent for Passover Bread",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "69 Duane Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-fad77bd5b8dec290",
+      "name": "Hebrew Institute, Cincinnati — Teacher Recruitment",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-aed4a1a1543b25ab",
+      "name": "J. M. Van Bergh’s Jewish Boarding House",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1845-06-17",
+      "addressAsRead": "108 Leonard Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-0b1d0828f96b954c",
+      "name": "Mrs. Wolf Wiener’s Jewish Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "23 South Second Street, between Market and Chestnut, east side, upstairs",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-0b1d0828f96b954c-a67c3d68"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-0a2d216c663b71a5",
+      "name": "Mrs. A. Hyneman’s Jewish Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "20 &22 South Third Street, between Market &Chestnut",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-0a2d216c663b71a5-7b230953"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-8fb3453661de66e3",
+      "name": "C. Nusbaum, Hebrew Books and Ritual Articles",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "187 Rivington Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5323d24cfcb5485d",
+      "name": "Nathan Ottinger, Sopher",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "93 Pitt Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-75d05a5321e98975",
+      "name": "Rev. Dr. Lilienthal’s Boarding School",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "307 Tenth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-37342dc7c6405bfa",
+      "name": "R. Lyon, Publisher of The Asmonean",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "151 West Sixteenth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5b27a44ae12b6736",
+      "name": "Rev. S. C. Noot, Hebrew Books and Ritual Articles",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "38 Mulberry Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-47a984cdd6ff045e",
+      "name": "Congregation Benay Israel, Augusta — Clergy Recruitment",
+      "place": "augusta-ga",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-fe122c5f084b75ac",
+      "name": "A. Hart, Publisher, formerly Carey and Hart",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Corner Fourth and Chestnut Streets,Philadelphia",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-fe122c5f084b75ac-56a50a3c"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-fe122c5f084b75ac",
+      "name": "A. Hart, Publisher, formerly Carey and Hart",
+      "place": "philadelphia",
+      "noticeIndex": 1,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-4bed309fa3544866",
+      "name": "American Jewish Publication Society — Publications",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-6a027c6a85980eeb",
+      "name": "Abraham Schwarz, Geography Publication Notice",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1849-08-30",
+      "addressAsRead": "244 Second Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5cf4105d25a49213",
+      "name": "Hebrew Education Society of Philadelphia — Teacher Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-58ee9af6d66d3ab8",
+      "name": "Baltimore Hebrew Congregation — Hazan Recruitment",
+      "place": "baltimore",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Contact:62ParkStreet",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-2814fedca213df43",
+      "name": "Talmud Torah and Hebrew Institute — Teacher Recruitment",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Contact: William Street; number unclear",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d2c73a6b8da92cb2",
+      "name": "Samuel [H. / B.] Lind, Hebrew and German Tuition",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "186 South Fourth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-0e68fb5f3f4e9cf0",
+      "name": "Joseph P. Deyoungh, Hebrew Books",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "454 Pearl Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-258f993d4622daaf",
+      "name": "Jewish Young Men’s Literary Association — Formation Proposal",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1850-04",
+      "addressAsRead": "Contacts: northeast corner Fourth and Spruce;103 Spruce Street;47 Almond Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-3b149d6285d1fc8e",
+      "name": "Congregation Kenesseth Israel — Hazan and Teacher Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1850",
+      "addressAsRead": "Contact:72 Charlotte Street above [cross street unclear]",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5bb1d33583fd4675",
+      "name": "Congregation Mickve Israel — Hazan Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1850-04-11",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-aa77104a6c976182",
+      "name": "Congregation Adas Israel, Louisville — Public Resolutions",
+      "place": "louisville",
+      "noticeIndex": 0,
+      "date": "1850-04-23",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-28d904e1014a1263",
+      "name": "Congregation Anshe Chesed — Hazan and Teacher Recruitment",
+      "place": "cleveland",
+      "noticeIndex": 0,
+      "date": "1850",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-328699b7e191ecba",
+      "name": "Jewish Congregation at Easton — Clergy Recruitment",
+      "place": "easton",
+      "noticeIndex": 0,
+      "date": "1851-02-17",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b320adc70887bd1b",
+      "name": "William S. Martien, Bookseller",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "142 Chestnut Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-93e29a07dcd99b93",
+      "name": "Robert Carter, Bookseller",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "285 Broadway",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b757a19c2d42f178",
+      "name": "Mrs. S. Joel, Bookseller and Occident Seller",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1851-03",
+      "addressAsRead": "42 Fore Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-11d4b032a98e3637",
+      "name": "G. Levi, Occident Seller",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1851-03",
+      "addressAsRead": "96 London Road",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-8e4352d91431cc3b",
+      "name": "John Pennington, Bookseller",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-c962afafcb248e39",
+      "name": "Henry Cohen, Subscription Agent for The Voice of Jacob",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-2f86760f7f826a3c",
+      "name": "Isaac Leeser, Publication Office",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Walnut Street; street number needs scan comparison",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-107ad7f09346842c",
+      "name": "S. Hart, Sen., Publisher",
+      "place": "charleston",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-730e377c9e147ff6",
+      "name": "H. Rosenbaum, Mohel",
+      "place": "pittsburgh",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-3a118c5224ff1ccc",
+      "name": "Rev. Samuel M. Laski, Mohel",
+      "place": "columbia-sc",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "Care of L. T. Levin",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-47be227665bbc260",
+      "name": "Congregation Shearith Israel, Lecturer Recruitment",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-9feefe284e2f6b23",
+      "name": "Congregation Shangarai Chassed, Minister Recruitment",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5304448a520caabd",
+      "name": "Isaac Hart, Occident Publications Agent",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-19e9055cccaf63aa",
+      "name": "Roggenburger & Co., Store Offering Occident Books",
+      "place": "san-francisco",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-eaef148d5b2c92b9",
+      "name": "Hebrew Congregation of St. Thomas, Reader Recruitment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1855-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f5acf5f2876dcbb2",
+      "name": "Congregation Gates of Heaven, Recruitment",
+      "place": "pittsburgh",
+      "noticeIndex": 0,
+      "date": "1855-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5926c4715dca2f9e",
+      "name": "Anshe Chessed Congregation, Minister Recruitment",
+      "place": "cleveland",
+      "noticeIndex": 0,
+      "date": "1855-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-38602ee68a724d38",
+      "name": "Ladies’ Benevolent Society of San Francisco",
+      "place": "san-francisco",
+      "noticeIndex": 0,
+      "date": "1855-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-168caf09417fccef",
+      "name": "Unnamed Congregation at Danville, Recruitment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d5200cc9d8f70ec4",
+      "name": "Hebrew Education Society of Philadelphia, Teacher Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1855",
+      "addressAsRead": "Contact: Isidore Binswanger, No. 81 North Third Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-e91a74e46befe962",
+      "name": "Selig Newman, Hebrew Grammar Publication",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1856-02",
+      "addressAsRead": "144 Amos Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f01d7b3a536ae2c2",
+      "name": "United Hebrew Congregation, Reader Recruitment",
+      "place": "st-louis",
+      "noticeIndex": 0,
+      "date": "1856-02",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-201a2974bd124c4a",
+      "name": "Congregation Emanu-El, Minister Recruitment",
+      "place": "san-francisco",
+      "noticeIndex": 0,
+      "date": "1856-03",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-fe2fe82993b2ee44",
+      "name": "Congregation Shangari Shamayim, Reader Recruitment",
+      "place": "mobile",
+      "noticeIndex": 0,
+      "date": "1856-03",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f384fb8af80218db",
+      "name": "Congregation Benai Israel, Hazan Recruitment",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1856-04",
+      "addressAsRead": "Contact: Philip Levi, 41 Cramine Street [OCR]",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5a2ec8c9ff3069bc",
+      "name": "Unnamed Hebrew Congregation at Memphis, Recruitment",
+      "place": "memphis",
+      "noticeIndex": 0,
+      "date": "1856-05",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f2071977c488b5ae",
+      "name": "B. M. Dayis [OCR reading], Cheese Dealer",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1856-06",
+      "addressAsRead": "114 Wooster Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-3644e87dfed5f35e",
+      "name": "Messrs. Wiley, Newspaper Orders",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1856",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d5782380c3827661",
+      "name": "Congregation Ohabei Shalom, Teacher Recruitment",
+      "place": "boston",
+      "noticeIndex": 0,
+      "date": "1856-09",
+      "addressAsRead": "Contact: S. Marckwald, 30 Broomfield Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a7280a338d2c136d",
+      "name": "Kenesseth Israel Congregation, Preacher Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1856-09",
+      "addressAsRead": "Contact: Adolf Klopfer, 358 Market Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-618e9f3acb8ec5c2",
+      "name": "Congregation Bethel, Teacher Recruitment",
+      "place": "albany",
+      "noticeIndex": 0,
+      "date": "1856-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-02a6c6252f591256",
+      "name": "Proposed Benevolent Loan Society Meeting",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1856-11",
+      "addressAsRead": "Meeting venue: Hall of the Hebrew Education Society, North Seventh Street above Wood",
+      "status": "venue-needs-research",
+      "reason": "The proposed institution or announced meeting venue requires separate location evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-6b7f4f6c79e4a392",
+      "name": "Unnamed Congregation at Pottsville, Recruitment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1856-11",
+      "addressAsRead": "Contacts: Jacob Greenewald, Pottsville; Emanuel Straus, Port Carbon",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-98d319e963cd89da",
+      "name": "Dr. Heimann’s Educational Establishment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1857-02",
+      "addressAsRead": "Gordon Square; 57/67 readings conflict in OCR",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-ca30d40a9bead25b",
+      "name": "Congregation Beth Israel, Bickar Cholim, Recruitment",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1857-01",
+      "addressAsRead": "56 Christie Street [OCR]",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-617a96bd932eb8c5",
+      "name": "Kehilath Anshe Mayriv, School and Cantor Recruitment",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1857-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-518f28471286105f",
+      "name": "Congregation Beth El Jacob, Teacher Recruitment",
+      "place": "albany",
+      "noticeIndex": 0,
+      "date": "1857-04",
+      "addressAsRead": "Contact: Mr. Hermann, 7 Washington Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1726be713e72aede",
+      "name": "Lord Mayor’s Commemoration Scholarship Proposal",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1857-04",
+      "addressAsRead": "Jewish College, London [proposed scholarship]",
+      "status": "venue-needs-research",
+      "reason": "The proposed institution or announced meeting venue requires separate location evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a6cf84799c6f37ea",
+      "name": "Kahal Kodesh Mogen David, Recruitment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1857-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a83c71f49a4af70f",
+      "name": "Congregation Bnai El, Teacher Recruitment",
+      "place": "st-louis",
+      "noticeIndex": 0,
+      "date": "1857-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-413efe409656bb3c",
+      "name": "Solomon Lazarus’s Jewish Boarding House",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1857-04",
+      "addressAsRead": "Seventh Avenue at Fifteenth Street; street number is conflicting in OCR",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-413efe409656bb3c-b2262376"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-7e7c0dca2399be39",
+      "name": "Congregation Beth Shalom, Recruitment",
+      "place": "richmond",
+      "noticeIndex": 0,
+      "date": "1857-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-34c0c6eaf63c41ec",
+      "name": "J. J. Peres’s Boarding and Day School",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1857",
+      "addressAsRead": "North Seventh Street near Buttonwood Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-fb3e72e0214edb44",
+      "name": "Home of the Jewish Widows and Orphans, Matron Recruitment",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1857-12",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-10d8b11a0e29dd23",
+      "name": "Hebrew Relief Association of Philadelphia",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1857-12",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-77eaf323f29e2a6a",
+      "name": "Lazarus Silverman, Banker",
+      "place": "chicago",
+      "noticeIndex": 0,
+      "date": "1858-01",
+      "addressAsRead": "50 Lasalle Street, Metropolitan Block",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d1b7889836cada4c",
+      "name": "K. L. Johnson, Marble Designer and Carver",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1858-01",
+      "addressAsRead": "94 Ridge Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a98ccdd47a3065e0",
+      "name": "J. L. Greiner’s Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858-02",
+      "addressAsRead": "Northeast corner of Second and Race Streets",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-a98ccdd47a3065e0-a51ac132"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-71da11ff802d22a2",
+      "name": "Ellis Lyons, Meat and Grocery Dealer",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "610 Callowhill Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-72cd11b2480ecec3",
+      "name": "Jacob Friedeman, Mohel",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "11 Uffenheimer’s Court, running from Poplar Street between Second and Third [OCR]",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-9ebec74d3906125f",
+      "name": "D. Pesoa, Ritual Textiles",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "304 South Second Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1b986b0e3ce61878",
+      "name": "Congregation Berith Shalom, Recruitment",
+      "place": "charleston",
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "Contact: I. Blank, 157 King Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-4409b97019891d03",
+      "name": "Hebrew Association Temime Derech, Recruitment",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-db4d40898ece65d3",
+      "name": "Congregation House of Jacob, Recruitment",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-dd24db3a827464c8",
+      "name": "Kenesseth Israel Congregation, Recruitment",
+      "place": "richmond",
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f609fc83a0a96fde",
+      "name": "Fells’ Point Hebrew Friendship Congregation, Teacher Recruitment",
+      "place": "baltimore",
+      "noticeIndex": 0,
+      "date": "1858-09",
+      "addressAsRead": "Contact: Levy Herzog, 91 Lombard Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d5fedc25d28c5c70",
+      "name": "Baltimore Hebrew Congregation, Recruitment",
+      "place": "baltimore",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "Lloyd Street; contact at 123 Franklin Street",
+      "status": "mapped-existing-site",
+      "reason": "The notice matches an already-curated historical building; its existing map marker is reused.",
+      "locations": [],
+      "existingSites": [
+        "lloyd-street-synagogue"
+      ]
+    },
+    {
+      "advertisement": "occident-notice-c44336384b59350d",
+      "name": "Unnamed Kahl at Montgomery, Recruitment",
+      "place": "montgomery",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d22a0eb538f0b56b",
+      "name": "Congregation Children of Israel, Recruitment",
+      "place": "memphis",
+      "noticeIndex": 0,
+      "date": "1858-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-260ce98a66d590be",
+      "name": "Martin Goldman, Tombstone Lettering Manufacturer",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1858-04",
+      "addressAsRead": "74 Delancey Street [OCR variants]",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-49b2e7cafabe3c43",
+      "name": "A. Isaacs, Wallpaper and Window Shades",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1858",
+      "addressAsRead": "163 North Second Street below Race, east side",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-9997c6dd6dd78137",
+      "name": "Rodef Sholem Congregation, Rabbi Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1859-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-71fb8235667efb64",
+      "name": "Congregation Rodef Sholaum, Teacher Recruitment",
+      "place": "pittsburgh",
+      "noticeIndex": 0,
+      "date": "1859-02",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-18e9947eff88f62d",
+      "name": "Miss Jeanette Lyons, German and Music Lessons",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1859-02",
+      "addressAsRead": "Contact: Mrs. A. Finzi, rear of the synagogue, Cherry Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b1327f9ee37f70c1",
+      "name": "Madam Rosalie Bondi’s Finishing Academy",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "95 St. Mark’s Place, Eighth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-32515e47756cf05f",
+      "name": "Rev. L. Naumburg’s Select Day School",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "412 Crown Street, above Callowhill",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-35180dd0b89d76ac",
+      "name": "A. Sulzberger, Upholsterer",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-04",
+      "addressAsRead": "535 North Eighth Street, Harrison’s Building; residence separately stated as 914 North Fourth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5f1f6a3d12b2eadf",
+      "name": "S. E. & J. Sulzberger, Upholsterers",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-09",
+      "addressAsRead": "1317 Ridge Avenue, below Wallace, between Green and Coates Streets",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-aec3d12fad628b04",
+      "name": "J. Middleman, Hungarian Kasher Wine",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1861-09",
+      "addressAsRead": "88 Bayard Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5fb20e0eb217e4cd",
+      "name": "I. Sabin, Bookseller",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-09",
+      "addressAsRead": "27 South Sixth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-e8723c0f531c44ae",
+      "name": "H. Polano, Private Hebrew Instruction",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1861-10",
+      "addressAsRead": "602 Christian Street in this notice; other notices print Catharine Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-c2e968edd7ab0c17",
+      "name": "David Cantee [OCR], Passover Cake Baker",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1862-04",
+      "addressAsRead": "26 Ludlow Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-721ecff5564a707e",
+      "name": "Carl Keller, Boarding Pupils and Tuition",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1862-04",
+      "addressAsRead": "280 Sixth Avenue, between 17th and 18th Streets",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-721ecff5564a707e-9ff03ebd"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-863ff7bbdbbd3102",
+      "name": "Mrs. H. Simons’s Select School",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1862-11",
+      "addressAsRead": "21 and 22 Mansfield Place, West Fifty-first Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-65fc88cd5d0b4abe",
+      "name": "M. Rice’s Paternal Home",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "635 North Eighth Street, above Green",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-93689919c296eee4",
+      "name": "I. L. Cowan’s Fulton Hotel and Boarding House",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Southeast corner Third and Gaskill Streets",
+      "status": "mapped-area",
+      "reason": "Source-supported block or intersection; historical parcel is not established.",
+      "locations": [
+        "occident-notice-93689919c296eee4-87f26ac3"
+      ],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-4bc8fbdf19dacfd7",
+      "name": "Mrs. Pach’s Private Boarding House and Catering",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1863-12",
+      "addressAsRead": "112 Vine Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-eb557bb322f6581d",
+      "name": "Schoneman & Blakemore, Plumbers",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "537 Race Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-636574837925cfc5",
+      "name": "G. Vasen, Fancy Soap Manufacturer",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Strawberry Street, near Chestnut",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1e69c4845e32d73b",
+      "name": "National Commercial College",
+      "place": "syracuse",
+      "noticeIndex": 0,
+      "date": "1864-10",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1935edbe3978f1bc",
+      "name": "Cremer & Co., Photograph Establishment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "18 South Eighth Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-37f1c2fa65bd218f",
+      "name": "Jonas Glick’s Boarding House",
+      "place": "washington",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "365 C Street, between 4½ and Sixth Streets",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-89fe9a0962626d4d",
+      "name": "Abraham Schoneman, Plumber",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "537 Race Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-870409fe8f495b92",
+      "name": "G. Cohen, Smoked and Salt Meats",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "963 St. John Street, above Poplar",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a937b236e990d8e2",
+      "name": "Lewis Ellinger & Co., Fancy Soaps",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1865-07",
+      "addressAsRead": "9 Decatur Street, near Chestnut",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-bf62f29c69707dff",
+      "name": "Dr. A. Feldstein’s Medical Practice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1865-12",
+      "addressAsRead": "610 Parrish Street, above Sixth",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-023a2a8e2caa7c66",
+      "name": "Schäfer & Koradi, Booksellers",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-062caf9f272116a1",
+      "name": "District Grand Lodge No. III, B’nai B’rith, Office Notice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "495 Dillwyn Street, between Third and Fourth, below Buttonwood",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b870e4c2dc134dd8",
+      "name": "Hammerschlag & Amran, Kasher Soap",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "1209 Hancock Street, near Girard Avenue",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a7a4387c5e92a31a",
+      "name": "Mrs. Simon Goldstein’s Boarding Offer",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-09",
+      "addressAsRead": "2044 Locust Street, above Twentieth",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b9315251e492e8b3",
+      "name": "Goldstein & Co., Publishers",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1866-12",
+      "addressAsRead": "19 Beekman Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-3d7f825f747dc1ac",
+      "name": "M. B. Jonas, Attorney",
+      "place": "mobile",
+      "noticeIndex": 0,
+      "date": "1867-03",
+      "addressAsRead": "32 St. Francis Street, upstairs",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f0c39309ed963234",
+      "name": "Hoffman & Marks, Auctioneers",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1867-03",
+      "addressAsRead": "18 Chartres Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-6357872123aff5fa",
+      "name": "Hoffman, Marks & Co., Auctioneers",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "18 Chartres Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f3c1073fd10d4831",
+      "name": "Cohen’s Veille House",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Broadway; OCR gives Nos. 645 & 617, verify street numbers",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d585c791e16002ce",
+      "name": "M. Samelson, Photographic Publisher",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "207 Canal Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-8aec1e93ff612cdc",
+      "name": "Rev. Isaac Marks, Reader, Shochet and Teacher",
+      "place": "baltimore",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "96 East Lombard Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-732fbda2cf6745de",
+      "name": "Joseph Polak, Private Hebrew Instruction",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence care of T. Peres, 821 Poplar Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-aba97f7d60c6b103",
+      "name": "The Misses Mordecai’s School",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "1205 Spruce Street; removed from 1825 Delancey Place",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-735e20655592a0bd",
+      "name": "S. Goldstein, Ladies’ Fancy Furs",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "211 Arch Street above Second [OCR initial 8. Goldstein]",
+      "status": "transcription-needs-check",
+      "reason": "The address reading or historical number needs verification before mapping.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1ed1be1d07c2e9cb",
+      "name": "Estate of Isaac Leeser, Book Sales",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Executor contacts: Front and New Streets; 47 North Third Street; 29 South Sixth Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-e28ad09e6ccb3ff2",
+      "name": "Berith Shalom Congregation, Recruitment Notice",
+      "place": "charleston",
+      "noticeIndex": 0,
+      "date": "1861-05",
+      "addressAsRead": "Correspondence: I. Blank, 157 King Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-6f8def73426f1558",
+      "name": "Sydney Hebrew Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1861-10",
+      "addressAsRead": "London committee correspondence: 2 Monument Yard, E.C.",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-79df4e331841a619",
+      "name": "Bene Israel Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1862-02",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-0e3e1c413a05be22",
+      "name": "Rodef Sholem Congregation, School Recruitment Notice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1862-02",
+      "addressAsRead": "Correspondence addresses: 119 Vine Street and 418 Arch Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-b07e550e18485c52",
+      "name": "Beth-El-Jacob Congregation, Recruitment Notice",
+      "place": "albany",
+      "noticeIndex": 0,
+      "date": "1862-04",
+      "addressAsRead": "Correspondence: Samuel Levy, 19 Hamilton Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-cbeea79241aea69c",
+      "name": "Netherland Congregation Bnai Israel, Debt Appeal",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-dbd01fc7f201e39a",
+      "name": "Ohabai Shalom Congregation, Recruitment Notice",
+      "place": "boston",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence: S. Sternburg, 8 Salem Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a185c82ca01f5325",
+      "name": "Beth Israel Bikur Cholim Congregation, Recruitment Notice",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1862-07",
+      "addressAsRead": "Congregation: 56 Christie Street; president correspondence: 35 City Hall Place",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-21e89f0325fa4904",
+      "name": "Achduth Yeshalom Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5210e473ed2faa88",
+      "name": "Beth-El-Emeth Congregation, Recruitment Notice",
+      "place": "memphis",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence: Box 8",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f2a6c1c44bc6432a",
+      "name": "Hebrew Congregation at Hagerstown, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1862-09",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-02e780440e14e4fa",
+      "name": "Hebrew Congregation of St. Thomas, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-860687d04a78fb4e",
+      "name": "Oheb Sholem Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1863-02",
+      "addressAsRead": "Correspondence: P.O. Box 214",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-e78b0b630bae203a",
+      "name": "Oheb Zedek Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-d087a7f2a6ffa038",
+      "name": "Adath Jeshurun Congregation, Election Notice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence: North Second Street near Green",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-8d37a32a34d140a2",
+      "name": "Benai Zion Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1863-05",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-2fa3ffe39579f471",
+      "name": "House of Israel Congregation, Recruitment Notice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1863-05",
+      "addressAsRead": "Correspondence: B. Abeles, 54 South Second Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-156b6bbfa1d88f42",
+      "name": "Indianapolis Hebrew Congregation, Recruitment Notice",
+      "place": "indianapolis",
+      "noticeIndex": 0,
+      "date": "1863-05",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-aead2987c08d2bf3",
+      "name": "Mogen David Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1863-05",
+      "addressAsRead": "Correspondence: P.O. Box 625",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-9d0210b0a762a90b",
+      "name": "United Hebrew Congregation, Recruitment Notice",
+      "place": "st-louis",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-ce83b351a72266fa",
+      "name": "B’ne Zion Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-97fb50add8f9769f",
+      "name": "Washington Hebrew Congregation, Recruitment Notice",
+      "place": "washington",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-4c247adea1793a2d",
+      "name": "Shearith Israel Congregation, Recruitment Notice",
+      "place": "cincinnati",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence care of Samuels & Holzman",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-f6fac5d0eeb90743",
+      "name": "Shearith Israel Congregation, Lecturer Recruitment",
+      "place": "new-york",
+      "noticeIndex": 0,
+      "date": "1864-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-750e0b97116f1420",
+      "name": "Hebrew Congregation at Frederick City, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1864-02",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-604f34fc4d919531",
+      "name": "Fells’ Point Hebrew Congregation, Recruitment Notice",
+      "place": "baltimore",
+      "noticeIndex": 0,
+      "date": "1864-05",
+      "addressAsRead": "Correspondence: Moses Ring, Pratt Street; number requires scan verification",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-500af03327a6d79f",
+      "name": "Hebrew Congregation of Alexandria, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence care of Sanger, Brother & Co.",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-1449c6c66d6cca98",
+      "name": "Berith Shalom Congregation, Recruitment Notice",
+      "place": "easton",
+      "noticeIndex": 0,
+      "date": "1864-08",
+      "addressAsRead": "Correspondence: P.O. Box 368",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-121471d2e07c6be2",
+      "name": "Jewish Foster Home, Teacher Recruitment",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1864-11",
+      "addressAsRead": "Correspondence: Mrs. E. Mawson, 219 North Twentieth Street",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-2576cd566f5d5a70",
+      "name": "Rodef Sholom Congregation, Recruitment Notice",
+      "place": "pittsburgh",
+      "noticeIndex": 0,
+      "date": "1865-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-ad6ac34393bd0bb7",
+      "name": "Emanuel Congregation, Religious School Recruitment",
+      "place": "san-francisco",
+      "noticeIndex": 0,
+      "date": "1865-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-63d1cbfe6f51d7fe",
+      "name": "Ohabai Shalome Congregation, Recruitment Notice",
+      "place": "san-francisco",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-e5cf0ae2e6e257b5",
+      "name": "Bayth Ahabah Congregation, Recruitment Notice",
+      "place": "richmond",
+      "noticeIndex": 0,
+      "date": "1865-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-54590c6b85f1d977",
+      "name": "Hebrew Congregation in Montgomery, Recruitment Notice",
+      "place": "montgomery",
+      "noticeIndex": 0,
+      "date": "1865-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-52b2f3a1c5a4ce20",
+      "name": "Shaaray Shamayim Congregation, School Recruitment Notice",
+      "place": "mobile",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-64d152ad9844907a",
+      "name": "Dispersed of Judah Congregation, Recruitment Notice",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-2a09b6333d0f852e",
+      "name": "Portuguese Hebrew Congregation, Recruitment Notice",
+      "place": "savannah",
+      "noticeIndex": 0,
+      "date": "1865-12",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-3992871b2d19e2c2",
+      "name": "Tifereth Israel Congregation, Recruitment Notice",
+      "place": "cleveland",
+      "noticeIndex": 0,
+      "date": "1866-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-08f10f02d8101226",
+      "name": "House of Israel Congregation, Recruitment Notice",
+      "place": "richmond",
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence: congregation P.O. Box; number unreadable",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-c3f6aca23c01bf71",
+      "name": "United Beth Elohim and Shearith Israel, Minister Recruitment",
+      "place": "charleston",
+      "noticeIndex": 0,
+      "date": "1866-06",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-250424a067aebf46",
+      "name": "Amunath Abothenu Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-5d33c40f85f93de6",
+      "name": "B’nai Israel Congregation, Recruitment Notice",
+      "place": "augusta-ga",
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-4f2c8cc1add7299e",
+      "name": "Anshe Chassed Congregation, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-82f827f5ad0f6b71",
+      "name": "Jewish Hospital Association, Admission Notice",
+      "place": "philadelphia",
+      "noticeIndex": 0,
+      "date": "1866-08",
+      "addressAsRead": "Hospital location not stated in this notice; correspondence: 321 Chestnut Street",
+      "status": "historical-address-unresolved",
+      "reason": "Street names, numbering, or parcel location have not been reconciled to reliable geographic evidence.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-c4e1844435ec5992",
+      "name": "Hebrew Education Society, Teacher Recruitment",
+      "place": "new-orleans",
+      "noticeIndex": 0,
+      "date": "1867-01",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-22f7639d8d2894dc",
+      "name": "Israelite Congregation of Wilmington, Recruitment Notice",
+      "place": null,
+      "noticeIndex": 0,
+      "date": null,
+      "addressAsRead": "Correspondence: P.O. Box 163 or 166, OCR varies",
+      "status": "correspondence-not-premises",
+      "reason": "A contact or correspondence address must not be treated as the institution’s premises.",
+      "locations": [],
+      "existingSites": []
+    },
+    {
+      "advertisement": "occident-notice-a106cf7f8d0a4bf8",
+      "name": "Norfolk Hebrew and English Literary Institute",
+      "place": null,
+      "noticeIndex": 0,
+      "date": "1866-07",
+      "addressAsRead": "",
+      "status": "no-premises-address",
+      "reason": "No specific premises address is supplied in this notice.",
+      "locations": [],
+      "existingSites": []
+    }
+  ],
+  "reusedSiteGeometry": [
+    {
+      "site": "jews-hospital-28th-street",
+      "lat": 40.7478338,
+      "lon": -73.99478,
+      "precision": "approximate",
+      "extent": "block",
+      "method": "Midpoint of source-described West 28th Street block; no exact historical parcel is asserted",
+      "references": [
+        {
+          "query": "West 28th Street and 7th Avenue, Manhattan, New York, USA",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West%2028th%20Street%20and%207th%20Avenue%2C%20Manhattan%2C%20New%20York%2C%20USA&f=json&outFields=Match_addr%2CAddr_type",
+          "response": {
+            "spatialReference": {
+              "wkid": 4326,
+              "latestWkid": 4326
+            },
+            "candidates": [
+              {
+                "address": "W 28th St & 7th Ave, New York, New York, 10001",
+                "location": {
+                  "x": -73.993366963227,
+                  "y": 40.747244595898
+                },
+                "score": 100,
+                "attributes": {
+                  "Match_addr": "W 28th St & 7th Ave, New York, New York, 10001",
+                  "Addr_type": "StreetInt"
+                },
+                "extent": {
+                  "xmin": -73.994366963227,
+                  "ymin": 40.746244595898,
+                  "xmax": -73.992366963227,
+                  "ymax": 40.748244595898
+                }
+              }
+            ]
+          }
+        },
+        {
+          "query": "West 28th Street and 8th Avenue, Manhattan, New York, USA",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=West%2028th%20Street%20and%208th%20Avenue%2C%20Manhattan%2C%20New%20York%2C%20USA&f=json&outFields=Match_addr%2CAddr_type",
+          "response": {
+            "spatialReference": {
+              "wkid": 4326,
+              "latestWkid": 4326
+            },
+            "candidates": [
+              {
+                "address": "W 28th St & 8th Ave, New York, New York, 10001",
+                "location": {
+                  "x": -73.996193005702,
+                  "y": 40.748423007665
+                },
+                "score": 100,
+                "attributes": {
+                  "Match_addr": "W 28th St & 8th Ave, New York, New York, 10001",
+                  "Addr_type": "StreetInt"
+                },
+                "extent": {
+                  "xmin": -73.997193005702,
+                  "ymin": 40.747423007665,
+                  "xmax": -73.995193005702,
+                  "ymax": 40.749423007665
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "withheldChecks": [
+    {
+      "advertisement": "occident-ad-loewenstein-boarding-phl",
+      "address": "119 New Street, between Front and Second",
+      "reason": "No verified intersection geometry; a modern street-name or city match is insufficient",
+      "query": "New Street & N Front Street, Philadelphia, PA"
+    },
+    {
+      "advertisement": "occident-ad-aub-hackenburg-silks-phl",
+      "address": "Northwest corner Front and New Streets, Philadelphia",
+      "reason": "No verified intersection geometry; a modern street-name or city match is insufficient",
+      "query": "N Front Street & New Street, Philadelphia, PA"
+    },
+    {
+      "advertisement": "occident-ad-moses-breidenbach-mohel-phl",
+      "address": "641 East Girard Avenue, corner of Vienna Street, Philadelphia",
+      "reason": "No verified intersection geometry; a modern street-name or city match is insufficient",
+      "query": "E Girard Avenue & E Vienna Street, Philadelphia, PA"
+    },
+    {
+      "advertisement": "occident-notice-34c0c6eaf63c41ec",
+      "address": "North Seventh Street near Buttonwood Street",
+      "reason": "No verified intersection geometry; a modern street-name or city match is insufficient",
+      "query": "N 7th Street & Buttonwood Street, Philadelphia, PA"
+    },
+    {
+      "advertisement": "occident-notice-02a6c6252f591256",
+      "address": "Meeting venue: Hall of the Hebrew Education Society, North Seventh Street above Wood",
+      "reason": "No verified intersection geometry; a modern street-name or city match is insufficient",
+      "query": "N 7th Street & Wood Street, Philadelphia, PA"
+    },
+    {
+      "advertisement": "occident-ad-hamberg-matzah-phl",
+      "address": "Bake-house: 1321 Ridge Avenue; application contact: 610 Franklin Street above Green, Philadelphia",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-258f993d4622daaf",
+      "address": "Contacts: northeast corner Fourth and Spruce;103 Spruce Street;47 Almond Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-3b149d6285d1fc8e",
+      "address": "Contact:72 Charlotte Street above [cross street unclear]",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-d5200cc9d8f70ec4",
+      "address": "Contact: Isidore Binswanger, No. 81 North Third Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-a7280a338d2c136d",
+      "address": "Contact: Adolf Klopfer, 358 Market Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-18e9947eff88f62d",
+      "address": "Contact: Mrs. A. Finzi, rear of the synagogue, Cherry Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-732fbda2cf6745de",
+      "address": "Correspondence care of T. Peres, 821 Poplar Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-1ed1be1d07c2e9cb",
+      "address": "Executor contacts: Front and New Streets; 47 North Third Street; 29 South Sixth Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-0e3e1c413a05be22",
+      "address": "Correspondence addresses: 119 Vine Street and 418 Arch Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-d087a7f2a6ffa038",
+      "address": "Correspondence: North Second Street near Green",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-2fa3ffe39579f471",
+      "address": "Correspondence: B. Abeles, 54 South Second Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-121471d2e07c6be2",
+      "address": "Correspondence: Mrs. E. Mawson, 219 North Twentieth Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertisement": "occident-notice-82f827f5ad0f6b71",
+      "address": "Hospital location not stated in this notice; correspondence: 321 Chestnut Street",
+      "reason": "This is explicitly correspondence/contact/agent or executor information. Do not map it as the institution’s operational premises without independent evidence."
+    },
+    {
+      "advertiserId": "deborah-lodging-002",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "deborah-lodging-010",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "deborah-lodging-015",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-levi-boarding-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-kreuter-hotel-ny",
+      "reason": "Source gives William Street between Pearl and Duane, but this old northeastern William Street/Duane geography was altered; do not use present William Street number 262 or an arbitrary current intersection."
+    },
+    {
+      "advertiserId": "occident-ad-berlyn-boarding-ny",
+      "reason": "Chatham Street became Park Row in 1886 and was widened/altered. Historical 93 must be located on a period map; current Park Row 93 is not proof."
+    },
+    {
+      "advertiserId": "occident-ad-merchants-exchange-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-loewe-school-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-livor-school-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-palache-school-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-katzenberg-long-school-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-becker-institute-ny",
+      "reason": "Hammond Street became West 11th Street and numbers changed. NYC LPC documents144 Hammond becoming354 W11th, showing why66 Hammond cannot be mapped to66 W11th without reconciliation."
+    },
+    {
+      "advertiserId": "occident-ad-ridskopf-academy-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-leopold-weil-school-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-philip-friedman-meats",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-mark-isaacs-matzah-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-felix-dining-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-m-light-books-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-ellinger-books-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site. This notice also identifies a correspondence/contact address; do not relabel it as institutional premises."
+    },
+    {
+      "advertiserId": "occident-ad-thalmessinger-cahn-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-l-h-frank-printing-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-charles-levi-bonnets-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-joseph-c-levi-law-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-solis-ritterband-law-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-isaacs-kahn-clothing-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-ad-samuel-isaacs-ritual-ny",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-375af7f8401d8edc",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-5f2d8b9001bac2cb",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site. Moses S. Cohen is explicitly an agent;69Duane Street is not proved to be the bakery."
+    },
+    {
+      "advertiserId": "occident-notice-aed4a1a1543b25ab",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-8fb3453661de66e3",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-5323d24cfcb5485d",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-75d05a5321e98975",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-37342dc7c6405bfa",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-5b27a44ae12b6736",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-6a027c6a85980eeb",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-2814fedca213df43",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site. This notice also identifies a correspondence/contact address; do not relabel it as institutional premises."
+    },
+    {
+      "advertiserId": "occident-notice-0e68fb5f3f4e9cf0",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-93e29a07dcd99b93",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-47be227665bbc260",
+      "reason": "No usable street address in the source notice."
+    },
+    {
+      "advertiserId": "occident-notice-e91a74e46befe962",
+      "reason": "Amos Street became West 10th Street; historical 144 needs a period-map reconciliation before assigning a building or block."
+    },
+    {
+      "advertiserId": "occident-notice-f384fb8af80218db",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site. This notice also identifies a correspondence/contact address; do not relabel it as institutional premises."
+    },
+    {
+      "advertiserId": "occident-notice-f2071977c488b5ae",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-3644e87dfed5f35e",
+      "reason": "No usable street address in the source notice."
+    },
+    {
+      "advertiserId": "occident-notice-ca30d40a9bead25b",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-d1b7889836cada4c",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-260ce98a66d590be",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-b1327f9ee37f70c1",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-aec3d12fad628b04",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-c2e968edd7ab0c17",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-863ff7bbdbbd3102",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-b9315251e492e8b3",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-f3c1073fd10d4831",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-d585c791e16002ce",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site."
+    },
+    {
+      "advertiserId": "occident-notice-a185c82ca01f5325",
+      "reason": "Historical street number has not been reconciled against a contemporary map or address source. A modern geocoder match alone would not establish the historical site. This notice also identifies a correspondence/contact address; do not relabel it as institutional premises."
+    },
+    {
+      "advertiserId": "occident-notice-f6fac5d0eeb90743",
+      "reason": "No usable street address in the source notice."
+    }
+  ]
+}

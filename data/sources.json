@@ -2451,5 +2451,30 @@
     "publisher": "The Occident and American Jewish Advocate",
     "note": "Source supplied from the Occident Ads research collection. File locator: 1867/1867-09/6.jpg. Issue date 1867-09 is taken from the folder or filename; annual or combined files are not assigned invented issue months. OCR text is unverified; PDF page numbers are digital file positions, not printed pagination. File dates are locators, not independently verified publication dates. Mixed scans have been found in this collection.",
     "fileYear": 1867
+  },
+  {
+    "id": "esri-world-geocoder",
+    "type": "WebSite",
+    "title": "Esri World Geocoding Service: street-intersection reference geometry",
+    "publisher": "Esri",
+    "url": "https://developers.arcgis.com/rest/geocode/find-address-candidates/",
+    "note": "Used to anchor named street intersections from the notices, not to equate historical house numbers with modern parcels. Query URLs and match metadata are retained on each advertised-location record."
+  },
+  {
+    "id": "cta-cermak-street-name",
+    "type": "CreativeWork",
+    "title": "Chicago Transit Authority historical calendar, 2004: Cermak Road / 22nd Street",
+    "publisher": "Chicago Transit Authority",
+    "year": 2004,
+    "url": "https://www.transitchicago.com/assets/1/6/historicalcalendar_2004.pdf",
+    "note": "Used only to reconcile the historical street name 22nd Street with Cermak Road; it does not locate the advertised building or reconcile its old street number."
+  },
+  {
+    "id": "philadelphia-street-numbering-guide",
+    "type": "WebSite",
+    "title": "Philadelphia street names, house numbering and street positioning",
+    "publisher": "Free Library of Philadelphia",
+    "url": "https://libwww.freelibrary.org/explore/guide/street-name-changes-house-numbering-and-street-positioning",
+    "note": "Explains historical numbering and street-position wording. Used as a methodological reference; individual premises still require their own source and geographic evidence."
   }
 ]
