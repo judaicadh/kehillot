@@ -684,11 +684,32 @@ function toTriples(n, out) {
 // ───────────────────────── HTML helpers ─────────────────────────
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jsonForScript = (o) => JSON.stringify(o, null, 2).replace(/</g, '\\u003c');
+// One section model drives primary navigation, related tools and the footer.
 const NAV = [
-  ['maps/all/', 'Map'], ['cities/', 'City guides'], ['database/', 'Find a record'], ['datasets/', 'Data'], ['about/', 'About'], ['contribute/', 'Contribute'],
+  { href: 'maps/', label: 'Maps & places', sections: ['maps/', 'cities/'], links: [
+    ['maps/', 'Map directory'], ['maps/all/', 'All records map'], ['cities/', 'City guides'], ['atlas/', 'Congregations over time'],
+  ] },
+  { href: 'database/', label: 'Records', sections: ['database/', 'browse/'], links: [
+    ['database/', 'Search records'], ['browse/', 'Browse by type'], ['collections/', 'Pictures & archives'], ['database/#type=advertisements', 'Advertised places'],
+  ] },
+  { href: 'newspapers/', label: 'Newspapers', sections: ['newspapers/', 'subscribers/'], links: [
+    ['newspapers/', 'Overview'], ['sources/occident/', 'Occident article index'], ['subscribers/', 'Newspaper subscribers'], ['database/#type=periodicals', 'Periodical records'], ['sources/occident/review/', 'Source coverage'],
+  ] },
+  { href: 'visualizations/', label: 'Networks & charts', sections: ['visualizations/'], links: [
+    ['visualizations/', 'Charts'], ['network/', 'Knowledge network'],
+  ] },
+  { href: 'datasets/', label: 'Research data', sections: ['datasets/'], links: [
+    ['datasets/', 'Downloads'], ['database/#type=sources', 'Source bibliography'], ['vocab/', 'Vocabulary'], ['about/#cite', 'How to cite'],
+  ] },
+  { href: 'about/', label: 'About', sections: ['about/'], links: [
+    ['about/', 'About the project'], ['contributors/', 'Contributors'], ['about/#cite', 'How to cite'],
+  ] },
+  { href: 'contribute/', label: 'Contribute', sections: ['contribute/'], links: [] },
 ];
 function layout({ rel, title, description, canonical, body, jsonld, scripts = [], styles = [], current = '', alternate }) {
   if (scripts.includes('assets/vendor/leaflet/leaflet.js')) scripts = scripts.flatMap(s => s === 'assets/vendor/leaflet/leaflet.js' ? [s, 'assets/js/terrain.js'] : [s]);
+  const section = NAV.find(item => item.sections.includes(current));
+  const pagePath = canonical.startsWith(BASE) ? canonical.slice(BASE.length) : '';
   const fullTitle = title ? `${title} · ${cfg.title}` : `${cfg.title}: ${cfg.subtitle}`;
   return `<!doctype html>
 <html lang="${cfg.language}">
@@ -715,16 +736,17 @@ ${jsonld ? `<script type="application/ld+json">\n${jsonForScript(jsonld)}\n</scr
   <div class="wrap header-inner">
     <a class="brand" href="${rel}"><span><strong>${esc(cfg.title)}</strong><small>${esc(cfg.subtitle)}</small></span></a>
     <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu</button><nav id="primary-nav" aria-label="Primary"><ul>
-      ${NAV.map(([href, label]) => `<li><a href="${rel}${href}"${(current === href || (href === 'maps/all/' && ['maps/','subscribers/','visualizations/'].includes(current))) ? ' aria-current="page"' : ''}>${label}</a></li>`).join('')}
+      ${NAV.map(item => `<li><a href="${rel}${item.href}"${section === item ? ` aria-current="${pagePath === item.href ? 'page' : 'true'}"` : ''}>${esc(item.label)}</a></li>`).join('')}
     </ul></nav>
   </div>
 </header>
-${['maps/','subscribers/','visualizations/'].includes(current) ? `<nav class="section-nav wrap" aria-label="Explore"><a href="${rel}maps/all/"${canonical.endsWith('/maps/all/')?' aria-current="page"':''}>All features</a><a href="${rel}atlas/"${canonical.endsWith('/atlas/')?' aria-current="page"':''}>Congregations over time</a><a href="${rel}subscribers/"${current==='subscribers/'?' aria-current="page"':''}>Newspaper subscribers</a><a href="${rel}visualizations/"${current==='visualizations/'?' aria-current="page"':''}>Connections &amp; charts</a><a href="${rel}maps/">Map directory</a></nav>` : ''}
+${section?.links.length ? `<nav class="section-nav wrap" aria-label="${esc(section.label)}"><span class="section-nav-label">${esc(section.label)}</span>${section.links.map(([href, label]) => `<a href="${rel}${href}"${pagePath === href ? ' aria-current="page"' : ''}>${esc(label)}</a>`).join('')}</nav>` : ''}
 <main id="main" tabindex="-1">
 ${body}
 </main>
 <footer class="site-footer">
   <div class="wrap footer-inner">
+    <nav class="footer-directory" aria-label="Site directory">${NAV.filter(item => item.links.length).map(item => `<div><h2><a href="${rel}${item.href}">${esc(item.label)}</a></h2><ul>${item.links.map(([href, label]) => `<li><a href="${rel}${href}">${esc(label)}</a></li>`).join('')}</ul></div>`).join('')}</nav>
     <p><strong>${esc(cfg.title)}</strong> v${esc(cfg.version)} · Data released under <a href="${cfg.license.url}" rel="license">${esc(cfg.license.name)}</a> · Built ${BUILD_DATE}</p>
     <p><a href="${rel}contribute/">Contribute</a> · <a href="${rel}contributors/">Contributors</a> · <a href="${rel}sources/occident/review/">Source coverage</a> · <a href="${rel}browse/">Browse all records</a> · <a href="${rel}datasets/">Download the data</a> · <a href="${rel}vocab/">Vocabulary</a> · <a href="${rel}about/#cite">How to cite</a></p>
   </div>
@@ -1302,15 +1324,22 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
     <h1>Jewish America.<br><em>1840–1870.</em></h1>
     <p class="hero-subtitle">A research atlas of people, places, and institutions.</p>
     <p class="lede">Explore congregations, people, institutions, businesses, and newspapers across the United States. Each record links back to its historical sources.</p>
-    <p class="cta"><a class="btn" href="cities/">Explore city guides</a> <a class="btn btn-ghost" href="maps/all/">Explore the map</a> <a class="hero-data-link" href="database/">Search records →</a></p>
+    <p class="cta"><a class="btn" href="cities/">Explore city guides</a> <a class="btn btn-ghost" href="maps/all/">Explore the map</a> <a class="hero-data-link" href="database/">Search records</a></p>
     <p class="hero-footnote">Source-cited records · Maps · Open research data</p></div>
-    <figure class="hero-plate"><div class="plate-heading"><span>KEHILLOT / LOCATIONS</span><span>FIG. 01</span></div>${homeMap()}<figcaption><span>Recorded cities</span><a href="atlas/">Explore the interactive atlas ↗</a></figcaption></figure>
+    <figure class="hero-plate"><div class="plate-heading"><span>KEHILLOT / LOCATIONS</span><span>1840–1870</span></div>${homeMap()}<figcaption><span>Recorded cities</span><a href="atlas/">View congregations over time</a></figcaption></figure>
   </div></section>
-  <div class="wrap discovery"><p class="kicker">Explore the collection</p><div class="discovery-grid">
-    <a href="cities/"><span class="discovery-number">01 / GEOGRAPHY</span><strong>Maps &amp; city guides <span>↗</span></strong><span>Explore maps, streets, and the spaces of communal life.</span></a>
-    <a href="visualizations/"><span class="discovery-number">02 / CONNECTIONS</span><strong>People &amp; networks <span>↗</span></strong><span>Trace the people, journeys, and ideas connecting communities.</span></a>
-    <a href="contribute/"><span class="discovery-number">03 / COLLECTIVE HISTORY</span><strong>Contribute research <span>↗</span></strong><span>Help fill in the picture with a source or a correction.</span></a>
-  </div></div>
+  <section class="wrap home-tools" aria-labelledby="explore-heading">
+    <p class="kicker">Start your research</p><h2 id="explore-heading">What would you like to explore?</h2>
+    <p>Start with a place, find a record, or follow the newspapers and connections between communities.</p>
+    <div class="research-grid">
+      <article class="research-card"><h3><a href="cities/">Explore a place</a></h3><p>Find local people, institutions, streets, and historical images together in a city guide.</p><ul><li><a href="cities/">City guides</a></li><li><a href="maps/all/">All records map</a></li><li><a href="maps/">Maps by subject</a></li><li><a href="atlas/">Congregations over time</a></li></ul></article>
+      <article class="research-card"><h3><a href="database/">Find a record</a></h3><p>Search people, congregations, institutions, events, and businesses, with their sources.</p><ul><li><a href="database/">Search all records</a></li><li><a href="browse/">Browse by record type</a></li><li><a href="database/#type=advertisements">Advertised places and institutions</a></li></ul></article>
+      <article class="research-card"><h3><a href="newspapers/">Explore the Jewish press</a></h3><p>Look for article titles, trace newspaper readership, and learn about the publications.</p><ul><li><a href="sources/occident/">Occident article index</a></li><li><a href="subscribers/">Newspaper subscribers</a></li><li><a href="database/#type=periodicals">Periodical records</a></li></ul></article>
+      <article class="research-card"><h3><a href="visualizations/">Trace connections &amp; change</a></h3><p>Follow relationships between records and compare patterns across the collection.</p><ul><li><a href="network/">Knowledge network</a></li><li><a href="visualizations/">Charts and timelines</a></li><li><a href="visualizations/#tenures">Clergy tenures</a></li></ul></article>
+      <article class="research-card"><h3><a href="collections/">Look at pictures &amp; archives</a></h3><p>Explore photographs, family papers, synagogue records, and business documents.</p><ul><li><a href="collections/">Browse archival collections</a></li><li><a href="database/#type=media">Search pictures and documents</a></li></ul></article>
+      <article class="research-card"><h3><a href="datasets/">Use &amp; contribute research</a></h3><p>Download data for your own work, check the sources, or share a sourced addition.</p><ul><li><a href="datasets/">Download research data</a></li><li><a href="sources/occident/review/">Review Occident source coverage</a></li><li><a href="contribute/">Contribute or correct a record</a></li></ul></article>
+    </div>
+  </section>
   <div class="wrap">
     <details class="collection-totals"><summary>${counts.congregation} congregations · ${counts.person} people · ${READ_TOTAL.toLocaleString('en-US')} subscriptions. View collection totals</summary><ul class="stats" aria-label="Dataset contents">
       <li><a href="browse/#congregation"><strong>${counts.congregation}</strong> congregations</a></li>
@@ -1328,7 +1357,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
       <figure class="chart-fig">${growthChart()}<figcaption>Congregations active in each year, by region. Counts reflect the records in this dataset, not a complete census. Newport's Touro Synagogue, without a resident congregation for most of the period, is excluded while dormant.</figcaption>${chartTable}</figure>
       <div class="prose">
         <p class="kicker">A growing, connected collection</p><h2>The collection in numbers</h2>
-        <p>Every record has a stable URI, a human-readable page and a machine-readable JSON-LD description using <a href="https://schema.org/">schema.org</a> and a small <a href="vocab/">project vocabulary</a>. People, places and organizations are reconciled to <a href="https://www.wikidata.org/">Wikidata</a> where a match has been checked.</p>
+        <p>Explore how the communities represented in the collection changed over time. These counts describe the records gathered so far; they are not a complete census of Jewish America.</p><p>For your own analysis, <a href="datasets/">download the data</a> and read about its coverage and structure.</p>
         <p>Each claim is cited. Dates whose sources disagree are flagged as <em>medium</em> certainty so you know what to verify before citing.</p>
         <h3>National population estimates</h3>
         <table class="mini"><caption class="visually-hidden">Estimated U.S. Jewish population</caption><thead><tr><th scope="col">Year</th><th scope="col">Estimate</th></tr></thead><tbody>${population.series.map((p) => `<tr><th scope="row">${p.year}</th><td>c. ${p.estimate.toLocaleString('en-US')}</td></tr>`).join('')}</tbody></table>
@@ -1340,6 +1369,15 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
       ${['general-orders-11', 'cleveland-conference-1855'].map((id) => { const e = index.event.get(id); return `<a class="card" href="${docPath('event', id)}"><span class="kicker">${formatDate(e.date)}</span><strong>${esc(e.name)}</strong><span>${esc(e.description)}</span></a>`; }).join('')}
     </div></section>
   </div>` }));
+
+await out('newspapers/index.html', layout({ rel: '../', title: 'Newspapers', canonical: `${BASE}newspapers/`, current: 'newspapers/',
+  description: 'Explore the nineteenth-century Jewish press through the Occident article index, newspaper subscribers, and periodical records.',
+  body: `<div class="wrap"><header class="page-head"><p class="kicker">The Jewish press</p><h1>Newspapers &amp; their readers</h1><p class="lede">Find an article, follow a newspaper’s readership, or learn about a publication. Each tool covers a different part of the evidence.</p></header>
+  <div class="research-grid newspaper-tools">
+    <article class="research-card"><h2><a href="../sources/occident/">Find an Occident article</a></h2><p>Search article titles from ten volume indexes, April 1843–March 1853, and follow links to the transcriptions.</p><p class="small">This is an index of titles, not a full-text search or the complete newspaper run.</p><a class="btn" href="../sources/occident/">Search article titles</a></article>
+    <article class="research-card"><h2><a href="../subscribers/">Trace newspaper readership</a></h2><p>Compare subscriber locations by newspaper and year. Open a city to find the subscriber names recorded there.</p><p class="small">The lists document recorded subscriptions; they are not a census of readers.</p><a class="btn" href="../subscribers/">Explore subscribers</a></article>
+    <article class="research-card"><h2><a href="../database/#type=periodicals">Learn about a publication</a></h2><p>Browse the periodicals in the collection and follow links to their editors, places, and sources.</p><a class="btn" href="../database/#type=periodicals">Browse periodical records</a></article>
+  </div><section class="research-next"><h2>Follow the evidence further</h2><ul><li><a href="../database/#type=advertisements">Advertised places and institutions</a> — businesses, schools, and communal life documented in notices.</li><li><a href="../sources/occident/review/">Occident source coverage</a> — what has been reviewed and which research leads remain.</li><li><a href="../visualizations/#subs">Subscriptions over time</a> — compare the recorded subscriptions by year.</li><li><a href="../contribute/">Contribute a source or correction</a> — help expand and improve the collection.</li></ul></section></div>` }));
 
 // Shared city finder: built from curated places and address-level records, never geocoded guesses.
 function isSeparateLocality(p) { return !p.own && !data.place.some(c=>c.subscriberLocality === p.k); }
@@ -1618,7 +1656,7 @@ function modelDiagram() {
   </svg>`;
 }
 
-await out('vocab/index.html', layout({ rel: '../', title: 'Vocabulary', canonical: `${BASE}vocab/`, current: '',
+await out('vocab/index.html', layout({ rel: '../', title: 'Vocabulary', canonical: `${BASE}vocab/`, current: 'datasets/',
   description: 'Classes, properties and SKOS concept schemes used in the Kehillot dataset.', alternate: 'index.jsonld',
   body: `<div class="wrap prose-wide"><h1>Vocabulary</h1>
   <p class="lede">Namespace <code>${esc(BASE)}vocab/#</code> (prefix <code>kh:</code>). Machine-readable: <a href="index.jsonld">index.jsonld</a>.</p>
@@ -1661,7 +1699,7 @@ for (const c of collections) {
 }
 const collectionListLD={'@context':'https://schema.org','@type':'CollectionPage','@id':`${BASE}collections/`,name:'Pictures & archives',hasPart:collections.map(c=>({'@id':collectionUri(c.id)}))};
 await out('collections/index.jsonld',JSON.stringify(collectionListLD,null,2));
-await out('collections/index.html',layout({rel:'../',title:'Pictures & archives',description:'Browse photographs, family papers, synagogue records and business documents, with original captions and rights information.',canonical:`${BASE}collections/`,alternate:'index.jsonld',jsonld:collectionListLD,current:'database/',scripts:['assets/js/collections.js'],body:`<div class="wrap"><header class="page-head"><p class="kicker">Source collections</p><h1>Pictures &amp; archives</h1><p class="lede">Photographs, synagogue records, family papers and business documents from the Magnes Collection.</p><p>Some objects date from 1840–1870; others are later records or photographs that help document these communities. Check the date and rights on each item.</p></header><label for="collection-search">Find a collection, city or subject</label><input id="collection-search" type="search" placeholder="Try Nevada City, invoices, or synagogue"><p id="collection-count" class="small" role="status">${collections.length} collections</p><ul class="collection-grid">${collections.map(c=>`<li class="collection-card" data-collection-search="${esc([c.metadata.title,c.summary,c.contextLabel,...(c.cityGuides||[]).map(id=>ALL_GUIDES.get(id))].join(' ').toLowerCase())}">${c.items[0] ? `<a href="${c.id}/" tabindex="-1" aria-hidden="true"><img src="${esc(c.items[0].image.thumb)}" alt="" loading="lazy" width="110" height="100"></a>` : ''}<div><h2><a href="${c.id}/">${esc(c.metadata.title)}</a></h2><p class="small">${esc(c.contextLabel || 'Source photographs and documents')} · ${c.items.length} ${c.items.length === 1 ? 'item' : 'items'}</p></div></li>`).join('')}</ul><p class="small"><a href="../database/?type=media">Search individual pictures and documents →</a></p></div>`}));
+await out('collections/index.html',layout({rel:'../',title:'Pictures & archives',description:'Browse photographs, family papers, synagogue records and business documents, with original captions and rights information.',canonical:`${BASE}collections/`,alternate:'index.jsonld',jsonld:collectionListLD,current:'database/',scripts:['assets/js/collections.js'],body:`<div class="wrap"><header class="page-head"><p class="kicker">Source collections</p><h1>Pictures &amp; archives</h1><p class="lede">Photographs, synagogue records, family papers and business documents from the Magnes Collection.</p><p>Some objects date from 1840–1870; others are later records or photographs that help document these communities. Check the date and rights on each item.</p></header><label for="collection-search">Find a collection, city or subject</label><input id="collection-search" type="search" placeholder="Try Nevada City, invoices, or synagogue"><p id="collection-count" class="small" role="status">${collections.length} collections</p><ul class="collection-grid">${collections.map(c=>`<li class="collection-card" data-collection-search="${esc([c.metadata.title,c.summary,c.contextLabel,...(c.cityGuides||[]).map(id=>ALL_GUIDES.get(id))].join(' ').toLowerCase())}">${c.items[0] ? `<a href="${c.id}/" tabindex="-1" aria-hidden="true"><img src="${esc(c.items[0].image.thumb)}" alt="" loading="lazy" width="110" height="100"></a>` : ''}<div><h2><a href="${c.id}/">${esc(c.metadata.title)}</a></h2><p class="small">${esc(c.contextLabel || 'Source photographs and documents')} · ${c.items.length} ${c.items.length === 1 ? 'item' : 'items'}</p></div></li>`).join('')}</ul><p class="small"><a href="../database/#type=media">Search individual pictures and documents →</a></p></div>`}));
 
 for (const m of MEDIA) {
   const rel = '../../';
@@ -1945,7 +1983,7 @@ for (const place of READ_PLACES.filter(p => !p.own)) {
 const institutionReview = await readJSON('data/occident-review.json');
 await out('data/occident-review.json',JSON.stringify(institutionReview,null,2));
 const reviewRel='../../../';
-await out('sources/occident/review/index.html',layout({rel:reviewRel,title:'Occident institution review',description:institutionReview.scope,canonical:`${BASE}sources/occident/review/`,body:`<article class="wrap archive-page"><nav class="crumbs"><a href="../">Occident article index</a> / Review coverage</nav><header><p class="kicker">Research notebook · Volumes I–X</p><h1>Institutions in the Occident</h1><p class="lede">Ten indexes screened. 57 institutions added.</p><p>${esc(institutionReview.scope)}</p></header><h2>What this pass covers</h2><ul>${institutionReview.method.map(m=>`<li>${esc(m)}</li>`).join('')}</ul><p><strong>${institutionReview.counts.pagesScreened} source pages screened</strong> · ${institutionReview.counts.pagesWithLinkedPassages} with passages linked to records · ${institutionReview.counts.institutionsTotal} institutions now in the dataset.</p><p><a href="${reviewRel}maps/education/">Explore schools on the map →</a> · <a href="${reviewRel}maps/societies/">Explore societies →</a></p><h2>By volume</h2><p>Open a volume to see its source pages and the records supported by selected passages. A page without a linked record may still contain useful research leads.</p>${Array.from({length:10},(_,i)=>i+1).map(v=>{const rows=institutionReview.pages.filter(p=>p.volume===v);return `<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v} · ${rows.length} pages screened</summary><ul>${rows.map(p=>`<li><a href="${esc(p.url)}">${esc(p.titles.join(' / ') || p.url.split('/').pop())}</a><br><span class="small muted">${p.institutions.length ? 'Selected passages linked to: ' : 'Screened; no record linked in this pass.'}</span>${p.institutions.map(id=>link(reviewRel,'institution',id,index.institution.get(id).name)).join('; ')}</li>`).join('')}</ul></details>`;}).join('')}<h2>Still to resolve</h2><ul>${institutionReview.followUp.map(f=>`<li><strong>${esc(f.issue)}.</strong> ${esc(f.detail)}</li>`).join('')}</ul><details class="archive-volume"><summary>Index entries without a linked transcription · ${institutionReview.unlinkedIndexEntries.length}</summary><ul>${institutionReview.unlinkedIndexEntries.map(a=>`<li>Volume ${a.volume}: <a href="${esc(a.url)}">${esc(a.title)}</a></li>`).join('')}</ul></details><p class="small">Reviewed ${esc(institutionReview.reviewed)}. Transcriptions remain on TheOccident.com. <a href="${reviewRel}data/occident-review.json">Download the review ledger (JSON)</a>.</p></article>`}));
+await out('sources/occident/review/index.html',layout({rel:reviewRel,title:'Occident institution review',description:institutionReview.scope,canonical:`${BASE}sources/occident/review/`,current:'newspapers/',body:`<article class="wrap archive-page"><nav class="crumbs"><a href="../">Occident article index</a> / Review coverage</nav><header><p class="kicker">Research notebook · Volumes I–X</p><h1>Institutions in the Occident</h1><p class="lede">Ten indexes screened. 57 institutions added.</p><p>${esc(institutionReview.scope)}</p></header><h2>What this pass covers</h2><ul>${institutionReview.method.map(m=>`<li>${esc(m)}</li>`).join('')}</ul><p><strong>${institutionReview.counts.pagesScreened} source pages screened</strong> · ${institutionReview.counts.pagesWithLinkedPassages} with passages linked to records · ${institutionReview.counts.institutionsTotal} institutions now in the dataset.</p><p><a href="${reviewRel}maps/education/">Explore schools on the map →</a> · <a href="${reviewRel}maps/societies/">Explore societies →</a></p><h2>By volume</h2><p>Open a volume to see its source pages and the records supported by selected passages. A page without a linked record may still contain useful research leads.</p>${Array.from({length:10},(_,i)=>i+1).map(v=>{const rows=institutionReview.pages.filter(p=>p.volume===v);return `<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v} · ${rows.length} pages screened</summary><ul>${rows.map(p=>`<li><a href="${esc(p.url)}">${esc(p.titles.join(' / ') || p.url.split('/').pop())}</a><br><span class="small muted">${p.institutions.length ? 'Selected passages linked to: ' : 'Screened; no record linked in this pass.'}</span>${p.institutions.map(id=>link(reviewRel,'institution',id,index.institution.get(id).name)).join('; ')}</li>`).join('')}</ul></details>`;}).join('')}<h2>Still to resolve</h2><ul>${institutionReview.followUp.map(f=>`<li><strong>${esc(f.issue)}.</strong> ${esc(f.detail)}</li>`).join('')}</ul><details class="archive-volume"><summary>Index entries without a linked transcription · ${institutionReview.unlinkedIndexEntries.length}</summary><ul>${institutionReview.unlinkedIndexEntries.map(a=>`<li>Volume ${a.volume}: <a href="${esc(a.url)}">${esc(a.title)}</a></li>`).join('')}</ul></details><p class="small">Reviewed ${esc(institutionReview.reviewed)}. Transcriptions remain on TheOccident.com. <a href="${reviewRel}data/occident-review.json">Download the review ledger (JSON)</a>.</p></article>`}));
 
 const archivePage=`${BASE}sources/occident/`;
 const archiveLD={'@context':'https://schema.org','@graph':[
@@ -1960,7 +1998,7 @@ const evidenceLD={'@context':'https://schema.org','@graph':Object.entries(claimE
   return Object.entries(fields).map(([field,entries])=>({'@id':`${docUri(type,id)}#claim-${field}`,'@type':'Claim',text:`${record.name}: ${field} = ${field==='location' ? `${record.lat}, ${record.lon}` : record[field]}`,about:{'@id':uri(type,id)},citation:entries.map(e=>({'@type':'CreativeWork',name:e.locator,isPartOf:{'@id':uri('source',e.source)},url:index.source.get(e.source).url,description:e.note}))}));
 })};
 await out('data/evidence.jsonld',JSON.stringify(evidenceLD,null,2));
-await out('sources/occident/index.html',layout({rel:'../../',title:'Read the Occident',description:'Search article titles from ten Occident volume indexes, 1843–1853, with links to original reports.',canonical:archivePage,alternate:'index.jsonld',jsonld:archiveLD,scripts:['assets/js/occident-archive.js'],body:`<div class="wrap archive-page"><nav class="crumbs"><a href="../../database/">Find a record</a> / Source archive</nav><header><p class="kicker">Primary sources · article index</p><h1>Read the Occident</h1><p class="lede">Explore ${occidentArchive.articles.length.toLocaleString('en-US')} article links from the ten volume indexes linked by <a href="${esc(occidentArchive.source)}">TheOccident.com</a>.</p><p>Coverage: April 1843–March 1853. This catalogue imports article links and their labels, not full text or the complete 1843–1868 run. See the <a href="review/">institution review and remaining research leads →</a></p><p>Issue months come from archive paths; publication dates may differ from the events described.</p></header><label for="archive-search">Find a city, person, institution or subject in article titles</label><input type="search" id="archive-search" placeholder="Try Philadelphia, school, or Buffalo"><p id="archive-status" class="small" role="status" aria-live="polite"></p>${Array.from({length:10},(_,i)=>i+1).map(v=>`<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v}</summary><ul>${occidentArchive.articles.filter(a=>a.volume===v).map(a=>`<li id="article-${a.id}" data-article-title="${esc(a.title.toLowerCase())}"><a href="${esc(a.url)}">${esc(a.title)}</a> <span class="small muted">${a.date}</span></li>`).join('')}</ul></details>`).join('')}<p class="small">Titles follow the archive’s link labels, including abbreviated headings. Imported ${esc(occidentArchive.imported)}. Transcriptions remain with the Jewish-American History Documentation Foundation. Some archive links use HTTP because its HTTPS certificate could not be verified during import.</p><p><a href="../../data/occident-articles.json">Download article metadata (JSON)</a> · <a href="index.jsonld">Linked data (JSON-LD)</a></p></div>`}));
+await out('sources/occident/index.html',layout({rel:'../../',title:'Read the Occident',description:'Search article titles from ten Occident volume indexes, 1843–1853, with links to original reports.',canonical:archivePage,current:'newspapers/',alternate:'index.jsonld',jsonld:archiveLD,scripts:['assets/js/occident-archive.js'],body:`<div class="wrap archive-page"><nav class="crumbs"><a href="../../newspapers/">Newspapers</a> / Occident article index</nav><header><p class="kicker">Primary sources · article index</p><h1>Read the Occident</h1><p class="lede">Explore ${occidentArchive.articles.length.toLocaleString('en-US')} article links from the ten volume indexes linked by <a href="${esc(occidentArchive.source)}">TheOccident.com</a>.</p><p>Coverage: April 1843–March 1853. This catalogue imports article links and their labels, not full text or the complete 1843–1868 run. See the <a href="review/">institution review and remaining research leads →</a></p><p>Issue months come from archive paths; publication dates may differ from the events described.</p></header><label for="archive-search">Find a city, person, institution or subject in article titles</label><input type="search" id="archive-search" placeholder="Try Philadelphia, school, or Buffalo"><p id="archive-status" class="small" role="status" aria-live="polite"></p>${Array.from({length:10},(_,i)=>i+1).map(v=>`<details class="archive-volume"><summary>Volume ${v} · ${1842+v}–${1843+v}</summary><ul>${occidentArchive.articles.filter(a=>a.volume===v).map(a=>`<li id="article-${a.id}" data-article-title="${esc(a.title.toLowerCase())}"><a href="${esc(a.url)}">${esc(a.title)}</a> <span class="small muted">${a.date}</span></li>`).join('')}</ul></details>`).join('')}<p class="small">Titles follow the archive’s link labels, including abbreviated headings. Imported ${esc(occidentArchive.imported)}. Transcriptions remain with the Jewish-American History Documentation Foundation. Some archive links use HTTP because its HTTPS certificate could not be verified during import.</p><p><a href="../../data/occident-articles.json">Download article metadata (JSON)</a> · <a href="index.jsonld">Linked data (JSON-LD)</a></p></div>`}));
 
 // Cities index
 const cityCards = CITY_IDS.map((id) => {
@@ -2099,12 +2137,12 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     description: 'Maps of Jewish America, 1840–1870: a comprehensive map, one map for each kind of feature, the congregations atlas and the map of newspaper subscribers.',
     body: `<div class="wrap"><h1>Maps</h1>
   <p class="lede">Start with the comprehensive map, or open a map for a single kind of feature. Use City guides to explore one place; use the map controls to compare locations and dates.</p>
-  <h2>Choose a starting point</h2>
+  <h2>Choose a starting point</h2><p><a class="btn btn-ghost" href="../cities/">Explore city guides</a> for street maps, local records, and historical images.</p>
   <ul class="map-cards">${card('all/', 'city', 'All features', 'Every mapped record, with each kind of feature as a layer you can switch on and off.', items.length)}
   ${card('../atlas/', 'congregation', 'Congregations over time', 'See congregations year by year and compare their founding rites.', null)}
   ${card('../subscribers/', 'periodical', 'Subscribers', 'Where subscribers to the Jewish press lived, from the papers\' own lists.', READ_TOTAL)}</ul>
-  <details class="map-directory-more"><summary>Browse maps by record type</summary>
-  <ul class="map-cards">${FEATURES.map((F) => card(`${F.id}/`, F.symbol, F.label, F.blurb, counts[F.id])).join('')}</ul></details>
+  <section class="map-directory-more" aria-labelledby="map-subjects"><h2 id="map-subjects">Maps by subject</h2>
+  <ul class="map-cards">${FEATURES.map((F) => card(`${F.id}/`, F.symbol, F.label, F.blurb, counts[F.id])).join('')}</ul></section>
   <p class="small"><a href="../cities/">City guides</a> show the same features street by street for a single city.</p></div>` }));
 }
 
@@ -2219,7 +2257,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
   const subSvg = `<svg viewBox="0 0 ${LW} ${LH}" class="viz-svg" role="img" aria-labelledby="sub-t"><title id="sub-t">Subscriptions recorded per year, by paper, ${SY0}–${SY1}</title>${sGrid}${sTicks}${lines}</svg>`;
 
   const body = `<div class="wrap viz-page">
-  <h1>Connections &amp; charts</h1><p><a class="btn" href="../network/">Explore the full knowledge network →</a></p>
+  <h1>Networks &amp; charts</h1><p><a class="btn" href="../network/">Explore the full knowledge network →</a></p>
   <p class="lede">Choose a view of the collection. Each chart includes a table of its underlying data.</p>
   <nav class="toc viz-view-tabs" aria-label="Chart view"><ul><li><a href="#network">Network</a></li><li><a href="#rites">Rites and reform</a></li><li><a href="#decades">Foundings by decade</a></li><li><a href="#tenures">Clergy tenures</a></li><li><a href="#subs">Subscriptions</a></li></ul></nav>
 
@@ -2265,7 +2303,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
   </section>
   <div id="viz-tip" class="viz-tip" role="tooltip" hidden></div>
 </div>`;
-  await out('visualizations/index.html', layout({ rel: '../', title: 'Visualizations', canonical: `${BASE}visualizations/`, current: 'visualizations/',
+  await out('visualizations/index.html', layout({ rel: '../', title: 'Networks & charts', canonical: `${BASE}visualizations/`, current: 'visualizations/',
     description: 'Network diagram of people and institutions, and charts of congregational change, clergy tenures and newspaper subscriptions in Jewish America, 1840–1870.',
     body, scripts: ['assets/vendor/d3/d3.min.js', 'assets/js/viz.js'] }));
 }
@@ -2283,7 +2321,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     p.records.push({ type, r });
   }
   const list = [...people.values()].sort((a, b) => b.records.length - a.records.length || String(a.name || a.github).localeCompare(String(b.name || b.github)));
-  await out('contributors/index.html', layout({ rel: '../', title: 'Contributors', canonical: `${BASE}contributors/`, current: '',
+  await out('contributors/index.html', layout({ rel: '../', title: 'Contributors', canonical: `${BASE}contributors/`, current: 'about/',
     description: 'People who have contributed records to Kehillot.',
     jsonld: list.length ? { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Kehillot contributors', itemListElement: list.map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: strip({ '@type': 'Person', name: c.name || `@${c.github}`, sameAs: c.orcid ? `https://orcid.org/${c.orcid}` : undefined, url: c.github ? `https://github.com/${c.github}` : undefined }) })) } : undefined,
     body: `<div class="wrap prose-wide"><h1>Contributors</h1>
