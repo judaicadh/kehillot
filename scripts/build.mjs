@@ -48,6 +48,7 @@ const wikidata = existsSync(path.join(ROOT, 'data/wikidata.json')) ? await readJ
 const mediaConfig = existsSync(path.join(ROOT, 'data/media.json')) ? await readJSON('data/media.json') : { collections: [], items: [] };
 const mediaCache = existsSync(path.join(ROOT, 'data/media-cache.json')) ? await readJSON('data/media-cache.json') : { items: {}, collections: {} };
 const claimEvidence = await readJSON('data/evidence.json');
+const surveys = existsSync(path.join(ROOT, 'data/congregation-surveys.json')) ? await readJSON('data/congregation-surveys.json') : [];
 const occidentArchive = await readJSON('data/occident-articles.json');
 const cityConfig = existsSync(path.join(ROOT, 'data/cities.json')) ? await readJSON('data/cities.json') : {};
 const readership = {};
@@ -64,6 +65,7 @@ const VOCAB = {
       sephardic: ['Sephardic', 'Western Sephardic ("Portuguese") rite of the colonial-era congregations.'],
       ashkenazic: ['Ashkenazic', 'Central and Eastern European rites (German, Polish, Dutch, English).'],
       reform: ['Reform', 'Founded explicitly as a Reform society or congregation.'],
+      unrecorded: ['Not yet established', 'The rite at founding is not stated in the sources entered so far.'],
     },
   },
   orientation: {
@@ -72,6 +74,7 @@ const VOCAB = {
       traditional: ['Traditional', 'Retained the traditional liturgy and practice.'],
       moderate: ['Moderate reform', 'Adopted selected reforms (e.g. sermons, choir, decorum) while keeping much of the traditional liturgy.'],
       reform: ['Reform', 'Adopted a Reform prayer book, mixed seating, organ or similar changes.'],
+      unrecorded: ['Not yet established', 'The orientation by c. 1870 is not stated in the sources entered so far.'],
     },
   },
   certainty: {
@@ -226,6 +229,20 @@ for (const [key, fields] of Object.entries(claimEvidence)) {
     if (!['founded','dissolved','established','built','opened','closed','ceased','date','documented','documentedYears','location'].includes(field) || (field !== 'location' && record[field] == null)) errors.push(`Evidence: invalid field ${key}/${field}`);
     if (!Array.isArray(entries) || !entries.length) { errors.push(`Evidence: no passages for ${key}/${field}`); continue; }
     for (const e of entries) if (!record.sources?.includes(e.source) || !index.source.has(e.source) || !e.locator?.trim()) errors.push(`Evidence: source and precise locator required for ${key}/${field}`);
+  }
+}
+const SURVEY_FORMS = new Set(['schedule-1872', 'schedule-1860', 'return-1860', 'letter']);
+{ const seen = new Set();
+  for (const sv of surveys) {
+    const at = `congregation-surveys/${sv.id}`;
+    if (!sv.id || !ID_RE.test(sv.id) || seen.has(sv.id)) errors.push(`${at}: id must be unique kebab-case`);
+    seen.add(sv.id);
+    if (sv.congregation && !index.congregation.has(sv.congregation)) errors.push(`${at}: unknown congregation "${sv.congregation}"`);
+    if (!index.place.has(sv.place)) errors.push(`${at}: unknown place "${sv.place}"`);
+    if (!index.source.has(sv.source) || !sv.locator) errors.push(`${at}: source and locator required`);
+    if (!SURVEY_FORMS.has(sv.form)) errors.push(`${at}: unknown form "${sv.form}"`);
+    if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(sv.date || '')) errors.push(`${at}: date must be YYYY, YYYY-MM or YYYY-MM-DD`);
+    if (!(sv.answers || []).length) errors.push(`${at}: no answers`);
   }
 }
 const archiveIds = new Set();
@@ -690,7 +707,7 @@ const NAV = [
     ['maps/', 'Map directory'], ['maps/all/', 'All records map'], ['cities/', 'City guides'], ['atlas/', 'Congregations over time'],
   ] },
   { href: 'database/', label: 'Records', sections: ['database/', 'browse/'], links: [
-    ['database/', 'Search records'], ['browse/', 'Browse by type'], ['collections/', 'Pictures & archives'], ['database/#type=advertisements', 'Advertised places'],
+    ['database/', 'Search records'], ['browse/', 'Browse by type'], ['surveys/', 'Board of Delegates surveys'], ['collections/', 'Pictures & archives'], ['database/#type=advertisements', 'Advertised places'],
   ] },
   { href: 'newspapers/', label: 'Newspapers', sections: ['newspapers/', 'subscribers/'], links: [
     ['newspapers/', 'Overview'], ['sources/occident/', 'Occident article index'], ['subscribers/', 'Newspaper subscribers'], ['database/#type=periodicals', 'Periodical records'], ['sources/occident/review/', 'Source coverage'],
@@ -766,6 +783,30 @@ const formatDate = (d) => {
   return day ? `${Number(day)} ${months[m - 1]} ${y}` : m ? `${months[m - 1]} ${y}` : y;
 };
 const citationText = (s) => `${s.author ? `${esc(s.author)}, ` : ''}<cite>${esc(s.title)}</cite>${s.place || s.publisher ? ` (${[s.place, s.publisher].filter(Boolean).map(esc).join(': ')}${s.year ? `, ${s.year}` : ''})` : ''}`;
+
+// ───────────────────────── Board of Delegates survey returns ─────────────────────────
+const SURVEY_FIGS = [['members', 'Members'], ['males', 'Males'], ['females', 'Females'], ['propertyValue', 'Property ($)'], ['income', 'Income ($)'], ['pupils', 'Pupils'],
+  ['instructors', 'Instructors'], ['sessionsPerWeek', 'Sessions/week'], ['attendance', 'Attendance'], ['jewishFamilies', 'Jewish families'], ['births', 'Births'], ['marriages', 'Marriages'], ['deaths', 'Deaths']];
+const surveysByCong = new Map(), surveysByPlace = new Map();
+for (const sv of surveys) {
+  if (sv.congregation) (surveysByCong.get(sv.congregation) || surveysByCong.set(sv.congregation, []).get(sv.congregation)).push(sv);
+  (surveysByPlace.get(sv.place) || surveysByPlace.set(sv.place, []).get(sv.place)).push(sv);
+}
+for (const m of [surveysByCong, surveysByPlace]) for (const l of m.values()) l.sort((a, b) => a.date.localeCompare(b.date));
+function surveyBlock(rel, sv, withCong) {
+  const src = index.source.get(sv.source);
+  const head = `${esc(sv.formLabel)} · ${formatDate(sv.date)}${withCong ? ` · ${sv.congregation ? link(rel, 'congregation', sv.congregation, nameOf('congregation', sv.congregation)) : esc(sv.nameAsWritten)}` : ''}`;
+  const figs = SURVEY_FIGS.filter(([k]) => sv.figures?.[k] != null).map(([k, l]) => `${l}: ${esc(sv.figures[k])}`).join(' · ');
+  return `<details class="survey" id="survey-${esc(sv.id)}"><summary>${head}</summary>
+    <p class="small muted">Name as written: ${esc(sv.nameAsWritten)}. ${figs ? `Figures: ${figs}.` : ''}</p>
+    <dl class="facts survey-answers">${sv.answers.map((a) => `<div><dt>${esc(a.question)}</dt><dd>${a.answer ? esc(a.answer) : '<span class="muted">(blank)</span>'}</dd></div>`).join('')}</dl>
+    ${sv.officers?.length ? `<p><strong>Officers named:</strong> ${sv.officers.map((o) => `${esc(o.name)} <span class="muted">(${esc(o.office)}${o.certainty !== 'certain' ? `, ${esc(o.certainty)} reading` : ''})</span>`).join('; ')}</p>` : ''}
+    ${sv.signed ? `<p class="small">Signed: ${esc(sv.signed)}</p>` : ''}${sv.note ? `<p class="small">${esc(sv.note)}</p>` : ''}
+    <p class="small">Source: <a href="${rel}${docPath('source', sv.source)}">${esc(src?.title || sv.source)}</a>, ${esc(sv.locator)}${sv.image ? ` · <a href="${esc(sv.image)}">page image ↗</a>` : ''}. Answers transcribed as written; [?] marks an uncertain reading.</p></details>`;
+}
+const surveySection = (rel, list, withCong = false) => list?.length ? `<section aria-labelledby="h-surveys"><h2 id="h-surveys">Board of Delegates survey returns</h2>
+  <p class="small muted">Statistical returns sent to the Board of Delegates of American Israelites. Members, property, income and pupils are the congregation's own figures.</p>${list.map((sv) => surveyBlock(rel, sv, withCong)).join('')}</section>` : '';
+
 function sourcesSection(rel, ids) {
   return `<section aria-labelledby="h-sources"><h2 id="h-sources">Sources</h2><ol class="sources">${ids
     .map((id) => `<li>${citationText(index.source.get(id))} — <a href="${rel}${docPath('source', id)}">record</a></li>`).join('')}</ol></section>`;
@@ -852,6 +893,7 @@ function entityBody(type, r, rel) {
       ['Active congregations', `${Y0}: ${count(Y0)} · 1850: ${count(1850)} · 1860: ${count(1860)} · ${Y1}: ${count(Y1)}`]])}
     <section><h2>Congregations</h2>${ul(cs.map((c) => `${link(rel, 'congregation', c.id, c.name)} <span class="muted">est. ${c.founded}</span> ${badge('rite', c.rite)}`), none)}</section>
     ${readersSection(rel, r.id)}
+    ${surveySection(rel, surveysByPlace.get(r.id), true)}
     <section><h2>Synagogues and other sites</h2>${ul(sites.map((s) => `${link(rel, 'site', s.id, s.name)} <span class="muted">${esc(s.address)}${s.built ? `, ${s.built}` : ''}</span>${precisionNote(s)}`), none)}</section>
     <section><h2>Cemeteries</h2>${cemList(rel, cems) || none}</section>
     <section><h2>Institutions</h2>${ul(is.map((o) => `${link(rel, 'institution', o.id, o.name)} <span class="muted">${institutionDateLabel(o)}</span>`), none)}</section>
@@ -876,6 +918,7 @@ function entityBody(type, r, rel) {
     ${sites.length ? `<section><h2>Buildings</h2>${buildingsList(rel, sites)}</section>` : ''}
     ${cems.length ? `<section><h2>Cemeteries</h2>${cemList(rel, cems)}</section>` : ''}
     <section><h2>Clergy and members</h2>${peopleList(rel, roles)}</section>
+    ${surveySection(rel, surveysByCong.get(r.id))}
     ${eventList(rel, evs)}
     ${sourcesSection(rel, r.sources)}`;
     const inner = [...sites.map((x) => locPt('site', x.site, rel)), ...cems.map((c) => locPt('cemetery', c, rel))];
@@ -1074,6 +1117,12 @@ const TABLES = {
     cols: [['site', 'string'], ['organization', 'string'], ['organizationType', 'string'], ['from', 'gYear'], ['to', 'gYear']], get: (r, c) => r[c] },
   events: { rows: data.event, cols: [['id', 'string'], ['name', 'string'], ['date', 'string'], ['place', 'string'], ['site', 'string'], ['alsoAt', 'string'], ['category', 'string'], ['certainty', 'string'], ['people', 'string'], ['orgs', 'string'], ['description', 'string'], ['sources', 'string']],
     get: (r, c) => r[c], about: 'event' },
+  'congregation-surveys': { rows: surveys.map((sv) => ({ ...sv, ...(sv.figures || {}) })), cols: [['id', 'string'], ['congregation', 'string'], ['nameAsWritten', 'string'], ['place', 'string'], ['form', 'string'], ['date', 'string'],
+    ...SURVEY_FIGS.map(([k]) => [k, 'decimal']), ['signed', 'string'], ['note', 'string'], ['source', 'string'], ['locator', 'string'], ['image', 'anyURI']], get: (r, c) => r[c] },
+  'congregation-survey-answers': { rows: surveys.flatMap((sv) => sv.answers.map((a) => ({ survey: sv.id, congregation: sv.congregation, form: sv.form, date: sv.date, ...a }))),
+    cols: [['survey', 'string'], ['congregation', 'string'], ['form', 'string'], ['date', 'string'], ['q', 'string'], ['question', 'string'], ['answer', 'string']], get: (r, c) => r[c] },
+  'congregation-survey-officers': { rows: surveys.flatMap((sv) => (sv.officers || []).map((o) => ({ survey: sv.id, congregation: sv.congregation, date: sv.date, ...o }))),
+    cols: [['survey', 'string'], ['congregation', 'string'], ['date', 'string'], ['name', 'string'], ['office', 'string'], ['certainty', 'string']], get: (r, c) => r[c] },
   sources: { rows: data.source, cols: [['id', 'string'], ['type', 'string'], ['author', 'string'], ['title', 'string'], ['publisher', 'string'], ['place', 'string'], ['year', 'gYear'], ['url', 'anyURI'], ['note', 'string']],
     get: (r, c) => r[c], about: 'source' },
 };
@@ -1459,6 +1508,17 @@ await out('database/index.html', layout({ rel: '../', title: 'Find a record', ca
   </div>
   <noscript><p>The search interface needs JavaScript. All records are listed on <a href="../browse/">Browse</a> and downloadable from <a href="../datasets/">Datasets</a>.</p></noscript>
 </div>` }));
+
+// Board of Delegates survey returns: one table of figures, then every return in full
+await out('surveys/index.html', layout({ rel: '../', title: 'Board of Delegates surveys', canonical: `${BASE}surveys/`, current: 'surveys/',
+  description: 'Statistical returns sent by congregations to the Board of Delegates of American Israelites, 1860–1872, transcribed as written.',
+  body: `<div class="wrap"><h1>Board of Delegates survey returns</h1>
+  <p class="lede">${surveys.length} returns sent by congregations to the Board of Delegates of American Israelites, from the annual statistical returns of 1860 to the schedules of September 1872. Every answer is transcribed as written; figures are given only where the answer is an unambiguous number. Download: <a href="../data/congregation-surveys.csv">returns and figures</a>, <a href="../data/congregation-survey-answers.csv">every answer</a>, <a href="../data/congregation-survey-officers.csv">officers named</a> (CSV).</p>
+  <div class="table-wrap"><table class="data-table"><caption>Figures reported in each return</caption><thead><tr><th scope="col">Congregation</th><th scope="col">Place</th><th scope="col">Date</th>${SURVEY_FIGS.map(([, l]) => `<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>
+  ${[...surveys].sort((a, b) => placeLabel(a.place).localeCompare(placeLabel(b.place)) || a.date.localeCompare(b.date)).map((sv) => `<tr><th scope="row"><a href="#survey-${esc(sv.id)}">${esc(sv.congregation ? nameOf('congregation', sv.congregation) : sv.nameAsWritten)}</a></th><td>${esc(placeLabel(sv.place))}</td><td>${esc(sv.date)}</td>${SURVEY_FIGS.map(([k]) => `<td>${sv.figures?.[k] ?? ''}</td>`).join('')}</tr>`).join('')}
+  </tbody></table></div>
+  <section><h2>The returns in full</h2>${[...surveys].sort((a, b) => placeLabel(a.place).localeCompare(placeLabel(b.place)) || a.date.localeCompare(b.date)).map((sv) => `<h3>${link('../', 'place', sv.place, placeLabel(sv.place))}</h3>${surveyBlock('../', sv, true)}`).join('')}</section></div>`,
+}));
 
 // Browse (no-JS, crawlable list of everything)
 const browseSection = (type, rows, fmt) => `<section id="${type}" aria-labelledby="h-${type}"><h2 id="h-${type}">${TYPE_INFO[type].plural} <span class="muted">(${rows.length})</span></h2><ul class="browse-list">${rows.map((r) => `<li>${link('../', type, r.id, type === 'source' ? r.title : r.name)} <span class="muted">${fmt(r)}</span></li>`).join('')}</ul></section>`;

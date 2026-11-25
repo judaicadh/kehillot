@@ -747,11 +747,13 @@
     "description": "Charleston charitable society. The September 1847 report explicitly dates its organization to 1791 and its reorganization and incorporation to 1830.",
     "sources": [
       "occident-review-78d77ed94571",
-      "occident-review-51c3ca6d9d2c"
+      "occident-review-51c3ca6d9d2c",
+      "bdai-box3-folder05"
     ],
     "documentedYears": [
       1847,
-      1848
+      1848,
+      1872
     ]
   },
   {
@@ -1419,6 +1421,186 @@
     ],
     "documentedYears": [
       1846
+    ]
+  },
+  {
+    "id": "chebra-gemiloth-chased-bos",
+    "name": "Chebra Gemiloth Chased (Ohabei Shalom)",
+    "category": "philanthropy",
+    "place": "boston",
+    "documented": 1860,
+    "certainty": "medium",
+    "description": "Burial society connected with Ohabei Shalom; in 1860 its objects were to bury the dead and provide a minyan and support to mourners during shiva.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1860
+    ]
+  },
+  {
+    "id": "ladies-hebrew-benevolent-atl",
+    "name": "Ladies Hebrew Benevolent Society of Atlanta",
+    "category": "philanthropy",
+    "place": "atlanta",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "Named in the 1872 return of the Hebrew Benevolent Congregation as established for charitable purposes.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "gate-city-lodge-atl",
+    "name": "Gate City Lodge, B'nai B'rith",
+    "category": "fraternal",
+    "place": "atlanta",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "B'nai B'rith lodge named in the 1872 Atlanta return; officers (in pencil) William Dittelbaum [?], Aaron Haas and S. Weil.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "ladies-hebrew-association-btr",
+    "name": "Ladies' Hebrew Association of Baton Rouge",
+    "category": "philanthropy",
+    "place": "baton-rouge",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "Named in the 1872 return of Shaari Chased; object to assist in raising means to build a synagogue.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "hebrew-orphan-society-chs",
+    "name": "Hebrew Orphan Society of Charleston",
+    "category": "philanthropy",
+    "place": "charleston",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "Named in the 1872 return of Beth Elohim; president H. H. DeLeon, secretary and treasurer N. H. Valentine.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "dan-lodge-chs",
+    "name": "Dan Lodge, I.O.B.B.",
+    "category": "fraternal",
+    "place": "charleston",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "B'nai B'rith lodge named in the 1872 return of Beth Elohim.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "ladies-benevolent-donaldsonville",
+    "name": "Ladies Benevolent Association of Donaldsonville",
+    "category": "philanthropy",
+    "place": "donaldsonville",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "Named in the 1872 Donaldsonville return.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "sons-of-truth-lea",
+    "name": "Sons of Truth",
+    "category": "fraternal",
+    "place": "leavenworth",
+    "documented": 1872,
+    "certainty": "medium",
+    "description": "Society named in the 1872 return of Bnai Jeshurun, Leavenworth; president Geo. Cohen.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1872
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-la",
+    "name": "Hebrew Benevolent Society of Los Angeles",
+    "category": "philanthropy",
+    "place": "los-angeles",
+    "documented": 1861,
+    "certainty": "medium",
+    "description": "Named in the 1861 return of the Hebrew Congregation of Los Angeles as connected with it, 'only to charity'.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1861
+    ]
+  },
+  {
+    "id": "gemiluth-hesed-beth-israel-lou",
+    "name": "Hebrah Gemiluth Hesed (Beth Israel)",
+    "category": "philanthropy",
+    "place": "louisville",
+    "documented": 1860,
+    "certainty": "medium",
+    "description": "Partially connected with Beth Israel, Louisville, in 1860; mutual aid in sickness and death.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1860
+    ]
+  },
+  {
+    "id": "mobile-hebrew-relief",
+    "name": "Mobile Hebrew Relief Association",
+    "category": "philanthropy",
+    "place": "mobile",
+    "documented": 1860,
+    "certainty": "medium",
+    "description": "About 120 male members in July 1860, according to Shaarai Shamayim's letter to the Board.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1860
+    ]
+  },
+  {
+    "id": "ladies-hebrew-benevolent-mob",
+    "name": "Ladies Hebrew Benevolent Society of Mobile",
+    "category": "philanthropy",
+    "place": "mobile",
+    "documented": 1860,
+    "certainty": "medium",
+    "description": "About 60 female members in July 1860, according to Shaarai Shamayim's letter to the Board.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "documentedYears": [
+      1860
     ]
   }
 ]

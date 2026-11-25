@@ -305,5 +305,117 @@
     "lat": 37.9575,
     "lon": -121.2925,
     "subscriberLocality": "Q49240"
+  },
+  {
+    "id": "atlanta",
+    "name": "Atlanta",
+    "state": "Georgia",
+    "region": "South",
+    "lat": 33.749,
+    "lon": -84.388
+  },
+  {
+    "id": "baton-rouge",
+    "name": "Baton Rouge",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 30.4515,
+    "lon": -91.1871
+  },
+  {
+    "id": "chattanooga",
+    "name": "Chattanooga",
+    "state": "Tennessee",
+    "region": "South",
+    "lat": 35.0456,
+    "lon": -85.3097
+  },
+  {
+    "id": "dayton",
+    "name": "Dayton",
+    "state": "Ohio",
+    "region": "Midwest",
+    "lat": 39.7589,
+    "lon": -84.1916
+  },
+  {
+    "id": "fort-wayne",
+    "name": "Fort Wayne",
+    "state": "Indiana",
+    "region": "Midwest",
+    "lat": 41.0793,
+    "lon": -85.1394
+  },
+  {
+    "id": "lafayette-in",
+    "name": "Lafayette",
+    "state": "Indiana",
+    "region": "Midwest",
+    "lat": 40.4167,
+    "lon": -86.8753
+  },
+  {
+    "id": "danville-pa",
+    "name": "Danville",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 40.9634,
+    "lon": -76.6127
+  },
+  {
+    "id": "donaldsonville",
+    "name": "Donaldsonville",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 30.101,
+    "lon": -90.994
+  },
+  {
+    "id": "harrisburg",
+    "name": "Harrisburg",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 40.2732,
+    "lon": -76.8867
+  },
+  {
+    "id": "jackson-ms",
+    "name": "Jackson",
+    "state": "Mississippi",
+    "region": "South",
+    "lat": 32.2988,
+    "lon": -90.1848
+  },
+  {
+    "id": "laporte",
+    "name": "La Porte",
+    "state": "Indiana",
+    "region": "Midwest",
+    "lat": 41.6106,
+    "lon": -86.7225
+  },
+  {
+    "id": "leavenworth",
+    "name": "Leavenworth",
+    "state": "Kansas",
+    "region": "Midwest",
+    "lat": 39.3111,
+    "lon": -94.9225
+  },
+  {
+    "id": "los-angeles",
+    "name": "Los Angeles",
+    "state": "California",
+    "region": "West",
+    "lat": 34.0522,
+    "lon": -118.2437
+  },
+  {
+    "id": "madison-wi",
+    "name": "Madison",
+    "state": "Wisconsin",
+    "region": "Midwest",
+    "lat": 43.0731,
+    "lon": -89.4012
   }
 ]
