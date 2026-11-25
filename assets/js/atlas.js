@@ -81,7 +81,7 @@
     var h = '<h3><a href="' + href('place', p.id) + '">' + esc(p.name) + '</a> <span class="pop-state">' + esc(p.state) + '</span></h3>';
     if (cs.length || ds.length) {
       h += '<p class="pop-sub">Congregations, ' + y + '</p><ul>';
-      cs.forEach(function (c) { h += '<li><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="3.5" class="sym sym-' + c.rite + '"/></svg> <a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, est. ' + c.founded + '</li>'; });
+      cs.forEach(function (c) { h += '<li><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="3.5" class="sym sym-' + c.rite + '"/></svg> <a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, est. ' + c.founded + ((c.surveyIds || []).length ? ' · <a href="' + href('congregation', c.id) + '#survey-observations">Survey reports (' + c.surveyIds.length + ')</a>' : '') + '</li>'; });
       ds.forEach(function (c) { h += '<li class="dormant"><a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, without a resident congregation</li>'; });
       h += '</ul>';
     }

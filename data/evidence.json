@@ -1827,5 +1827,171 @@
         "note": "The approximate pin is the midpoint of the two matched street intersections. Query URLs and returned coordinates are retained in the advertised-location review download."
       }
     ]
+  },
+  "institution/bonnheim-school-atl": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "English, German, and Hebrew instruction reported in 1872; 19 pupils. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/ohabei-shalom-school-surveys": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "Free Hebrew and English school maintained by Ohabei Shalom. Identification with the separately recorded Boston school of 1851 remains unconfirmed. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "Free Hebrew and English school maintained by Ohabei Shalom. Identification with the separately recorded Boston school of 1851 remains unconfirmed. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "Free Hebrew and English school maintained by Ohabei Shalom. Identification with the separately recorded Boston school of 1851 remains unconfirmed. Return dated 1860-12."
+      }
+    ]
+  },
+  "institution/beth-elohim-school-surveys": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 24; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "School reported by Beth Elohim in 1860 and 1872. These reports do not establish continuity with the separately recorded Society for the Instruction of Jewish Youth. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "School reported by Beth Elohim in 1860 and 1872. These reports do not establish continuity with the separately recorded Society for the Instruction of Jewish Youth. Return dated 1860-12."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "School reported by Beth Elohim in 1860 and 1872. These reports do not establish continuity with the separately recorded Society for the Instruction of Jewish Youth. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/shearit-israel-school-surveys": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "The 1860 return names Mrs. E. Minis as president and Rev. H. S. Jacobs as superintendent of the Sunday school. In 1861 the congregation describes religious instruction conducted by its ladies. Identification with the earlier Society for the Instruction of Jewish Doctrine remains unconfirmed. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "The 1860 return names Mrs. E. Minis as president and Rev. H. S. Jacobs as superintendent of the Sunday school. In 1861 the congregation describes religious instruction conducted by its ladies. Identification with the earlier Society for the Instruction of Jewish Doctrine remains unconfirmed. Return dated 1861-04."
+      }
+    ]
+  },
+  "institution/chattanooga-sunday-school-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 40; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "Sunday school providing religious instruction, with 24 pupils and two instructors reported in 1872. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/alexander-school-chicago": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "Private Hebrew, English and German educational institution reported in 1861. The congregation explicitly reports no congregational Hebrew school; this private institution is kept distinct. Return dated 1861-04."
+      }
+    ]
+  },
+  "institution/sherith-israel-school-cincinnati-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 51; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "Religious school reporting 30 pupils and one instructor in 1872. The parent congregation has not yet been reconciled to a core congregation record. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/bnai-yeshurun-school-dayton": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "School reported with 18 pupils in the annual return for 1860. The schedule is catalogued as 1861, but its note allows 1860 or 1861; no continuous lifespan is inferred. Return dated 1861-05."
+      },
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 12; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "School reported with 18 pupils in the annual return for 1860. The schedule is catalogued as 1861, but its note allows 1860 or 1861; no continuous lifespan is inferred. Return dated 1860-09-01."
+      }
+    ]
+  },
+  "institution/bnai-zion-school-danville": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "Hebrew and German instruction, with 36 pupils and one instructor reported in 1872. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/achduth-veshalom-school": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "School reported with 34 pupils in 1860 and 1861. The 1861 schedule reports one teacher and fifteen hours per week, not fifteen sessions. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "School reported with 34 pupils in 1860 and 1861. The 1861 schedule reports one teacher and fifteen hours per week, not fifteen sessions. Return dated 1861-03."
+      }
+    ]
+  },
+  "institution/donaldsonville-school-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 16; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "English and Hebrew instruction with ten pupils and one instructor reported in 1872. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/ohev-sholom-sabbath-school": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 18; school answers in Schedule of Statistics, September 5632–1872",
+        "note": "The 1872 return explicitly reports a Sabbath school providing religious instruction; pupil and instructor counts are blank. Return dated 1872-09."
+      }
+    ]
+  },
+  "institution/beth-israel-private-school-louisville": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36; school answers in Annual Statistical Return for the year ending 1 September 1860",
+        "note": "Private school held in the congregation’s building, reported with eighteen pupils in 1860. Identification with other recorded Louisville schools remains unconfirmed. Return dated 1860-09-01."
+      },
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39; school answers in Schedule of Statistics (1860–1861 form)",
+        "note": "Private school held in the congregation’s building, reported with eighteen pupils in 1860. Identification with other recorded Louisville schools remains unconfirmed. Return dated 1860-11."
+      }
+    ]
+  },
+  "institution/shaarai-shomayim-school-mobile": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63; school answers in Letter supplying the schedule information",
+        "note": "The 1860 letter describes Hebrew and religious instruction under the minister. An English and Hebrew day school was planned for October; the letter does not establish that it opened. About ninety school-age children is not an enrolment count. Return dated 1860-07-18."
+      }
+    ]
   }
 }

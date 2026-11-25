@@ -1602,5 +1602,295 @@
     "documentedYears": [
       1860
     ]
+  },
+  {
+    "id": "bonnheim-school-atl",
+    "name": "B. A. Bonnheim’s School",
+    "category": "education",
+    "place": "atlanta",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "English, German, and Hebrew instruction reported in 1872; 19 pupils. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "schoolType": "school",
+    "congregation": "hebrew-benevolent-congregation-atl"
+  },
+  {
+    "id": "ohabei-shalom-school-surveys",
+    "name": "Ohabei Shalom Free School (survey reports)",
+    "category": "education",
+    "place": "boston",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "description": "Free Hebrew and English school maintained by Ohabei Shalom. Identification with the separately recorded Boston school of 1851 remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860",
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "schoolType": "school",
+    "congregation": "ohabei-shalom-bos"
+  },
+  {
+    "id": "beth-elohim-school-surveys",
+    "name": "Beth Elohim School (survey reports)",
+    "category": "education",
+    "place": "charleston",
+    "documented": 1860,
+    "documentedYears": [
+      1860,
+      1872
+    ],
+    "certainty": "medium",
+    "description": "School reported by Beth Elohim in 1860 and 1872. These reports do not establish continuity with the separately recorded Society for the Instruction of Jewish Youth. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-return-1860",
+      "charleston-beth-elohim-schedule-1860",
+      "charleston-beth-elohim-1872"
+    ],
+    "schoolType": "school",
+    "congregation": "beth-elohim-chs"
+  },
+  {
+    "id": "shearit-israel-school-surveys",
+    "name": "Shearit Israel Sunday School (survey reports)",
+    "category": "education",
+    "place": "charleston",
+    "documented": 1860,
+    "documentedYears": [
+      1860,
+      1861
+    ],
+    "certainty": "medium",
+    "description": "The 1860 return names Mrs. E. Minis as president and Rev. H. S. Jacobs as superintendent of the Sunday school. In 1861 the congregation describes religious instruction conducted by its ladies. Identification with the earlier Society for the Instruction of Jewish Doctrine remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "schoolType": "Sunday school",
+    "congregation": "shearit-israel-chs"
+  },
+  {
+    "id": "chattanooga-sunday-school-survey",
+    "name": "Hebrew Benevolent Association Sunday School",
+    "category": "education",
+    "place": "chattanooga",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Sunday school providing religious instruction, with 24 pupils and two instructors reported in 1872. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chattanooga-hebrew-benevolent-1872"
+    ],
+    "schoolType": "Sunday school",
+    "congregation": "hebrew-benevolent-association-cha"
+  },
+  {
+    "id": "alexander-school-chicago",
+    "name": "Rev. A. Alexander’s Educational Institution",
+    "category": "education",
+    "place": "chicago",
+    "documented": 1861,
+    "documentedYears": [
+      1861
+    ],
+    "certainty": "medium",
+    "description": "Private Hebrew, English and German educational institution reported in 1861. The congregation explicitly reports no congregational Hebrew school; this private institution is kept distinct. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "schoolType": "private school"
+  },
+  {
+    "id": "sherith-israel-school-cincinnati-survey",
+    "name": "Sherith Israel Religious School (survey report)",
+    "category": "education",
+    "place": "cincinnati",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Religious school reporting 30 pupils and one instructor in 1872. The parent congregation has not yet been reconciled to a core congregation record. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "cincinnati-sherith-israel-1872"
+    ],
+    "schoolType": "religious school"
+  },
+  {
+    "id": "bnai-yeshurun-school-dayton",
+    "name": "B’nai Yeshurun Hebrew School (Dayton)",
+    "category": "education",
+    "place": "dayton",
+    "documented": 1860,
+    "documentedYears": [
+      1860,
+      1861
+    ],
+    "certainty": "medium",
+    "description": "School reported with 18 pupils in the annual return for 1860. The schedule is catalogued as 1861, but its note allows 1860 or 1861; no continuous lifespan is inferred. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861",
+      "dayton-bnai-yeshurun-return-1860"
+    ],
+    "schoolType": "Hebrew school",
+    "congregation": "bnai-yeshurun-day"
+  },
+  {
+    "id": "bnai-zion-school-danville",
+    "name": "B’nai Zion Hebrew and German School",
+    "category": "education",
+    "place": "danville-pa",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Hebrew and German instruction, with 36 pupils and one instructor reported in 1872. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "schoolType": "school",
+    "congregation": "bnai-zion-dan"
+  },
+  {
+    "id": "achduth-veshalom-school",
+    "name": "Achduth Veshalom Hebrew School",
+    "category": "education",
+    "place": "fort-wayne",
+    "documented": 1860,
+    "documentedYears": [
+      1860,
+      1861
+    ],
+    "certainty": "medium",
+    "description": "School reported with 34 pupils in 1860 and 1861. The 1861 schedule reports one teacher and fifteen hours per week, not fifteen sessions. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "schoolType": "Hebrew school",
+    "congregation": "achduth-veshalom-fw"
+  },
+  {
+    "id": "donaldsonville-school-survey",
+    "name": "Donaldsonville Congregational School",
+    "category": "education",
+    "place": "donaldsonville",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "English and Hebrew instruction with ten pupils and one instructor reported in 1872. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "donaldsonville-1872"
+    ],
+    "schoolType": "school",
+    "congregation": "donaldsonville-hebrew"
+  },
+  {
+    "id": "ohev-sholom-sabbath-school",
+    "name": "Ohev Sholom Sabbath School",
+    "category": "education",
+    "place": "harrisburg",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "The 1872 return explicitly reports a Sabbath school providing religious instruction; pupil and instructor counts are blank. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "harrisburg-ohef-scholem-1872"
+    ],
+    "schoolType": "Sabbath school",
+    "congregation": "ohev-sholom-har"
+  },
+  {
+    "id": "beth-israel-private-school-louisville",
+    "name": "Private School at Beth Israel (Louisville)",
+    "category": "education",
+    "place": "louisville",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "description": "Private school held in the congregation’s building, reported with eighteen pupils in 1860. Identification with other recorded Louisville schools remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "schoolType": "private school",
+    "congregation": "beth-israel-lou"
+  },
+  {
+    "id": "shaarai-shomayim-school-mobile",
+    "name": "Shaarai Shomayim Hebrew and Religious School",
+    "category": "education",
+    "place": "mobile",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "description": "The 1860 letter describes Hebrew and religious instruction under the minister. An English and Hebrew day school was planned for October; the letter does not establish that it opened. About ninety school-age children is not an enrolment count. Dates are documentary observations, not founding or closing dates.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "schoolType": "religious school",
+    "congregation": "shaarai-shomayim-mob"
   }
 ]
