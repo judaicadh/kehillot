@@ -1225,3 +1225,19 @@ input[type=search],textarea { font-family:var(--sans); border:1px solid var(--ru
   .research-card { padding:1.25rem; }
 }
 @media print { .section-nav { display:none; } }
+
+/* Board of Delegates: source reading and comparison. */
+.survey-filters { display:flex; flex-wrap:wrap; align-items:end; gap:1rem; margin:1.5rem 0; }
+.survey-filters label { display:grid; gap:.4rem; flex:1 1 12rem; font-size:1rem; }
+.survey-filters input,.survey-filters select { width:100%; min-height:2.8rem; font-size:1rem; }
+.survey-directory>section { margin:2rem 0; scroll-margin-top:1rem; }
+.survey-reader { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:2rem; align-items:start; }
+.survey-scan { width:100%; height:auto; border:1px solid var(--rule); }
+.survey { padding:1rem; border:1px solid var(--rule); margin:1rem 0; background:var(--card); }
+.survey summary { cursor:pointer; font-weight:600; }
+.survey-answers.facts { display:block; }
+.survey-answers.facts>div { display:block; padding:1rem 0; border-bottom:1px solid var(--rule); }
+.survey-answers dt { font-weight:600; }
+.survey-answers dd { margin:.5rem 0 0; white-space:pre-wrap; font-size:1rem; }
+[data-survey][hidden],[data-survey-row][hidden] { display:none; }
+@media(max-width:800px) { .survey-reader { grid-template-columns:1fr; } }

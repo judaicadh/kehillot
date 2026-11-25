@@ -455,7 +455,7 @@ function periodicalReadership(rel, paper) {
   ${d ? `<p class="small">Source: ${dsCitation(d)}. ${R.unlocated ? `${R.unlocated.toLocaleString('en-US')} subscriptions have no recorded place and are not mapped.` : ''}</p>` : ''}</section>`;
 }
 
-const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || data.advertisedLocation.some(l=>l.place===p.id) || (instByPlace.get(p.id) || []).length || readersFor(p.id).length).map((p) => p.id);
+const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || data.advertisedLocation.some(l=>l.place===p.id) || (instByPlace.get(p.id) || []).length || readersFor(p.id).length || surveys.some(sv => sv.place === p.id)).map((p) => p.id);
 
 const ALL_GUIDES = new Map([...data.place.map(p=>[p.id,p.name]),...READ_PLACES.filter(p=>!p.own).map(p=>[p.cityId,p.name])]);
 for (const col of mediaConfig.collections || []) for(const id of col.cityGuides || []) if(!ALL_GUIDES.has(id)) throw new Error(`Unknown collection city guide: ${col.id}/${id}`);
@@ -706,7 +706,7 @@ const NAV = [
   { href: 'maps/', label: 'Maps & places', sections: ['maps/', 'cities/'], links: [
     ['maps/', 'Map directory'], ['maps/all/', 'All records map'], ['cities/', 'City guides'], ['atlas/', 'Congregations over time'],
   ] },
-  { href: 'database/', label: 'Records', sections: ['database/', 'browse/'], links: [
+  { href: 'database/', label: 'Records', sections: ['database/', 'browse/', 'surveys/'], links: [
     ['database/', 'Search records'], ['browse/', 'Browse by type'], ['surveys/', 'Board of Delegates surveys'], ['collections/', 'Pictures & archives'], ['database/#type=advertisements', 'Advertised places'],
   ] },
   { href: 'newspapers/', label: 'Newspapers', sections: ['newspapers/', 'subscribers/'], links: [
@@ -716,7 +716,7 @@ const NAV = [
     ['visualizations/', 'Charts'], ['network/', 'Knowledge network'],
   ] },
   { href: 'datasets/', label: 'Research data', sections: ['datasets/'], links: [
-    ['datasets/', 'Downloads'], ['database/#type=sources', 'Source bibliography'], ['vocab/', 'Vocabulary'], ['about/#cite', 'How to cite'],
+    ['datasets/', 'Downloads'], ['surveys/#survey-downloads', 'Survey data'], ['database/#type=sources', 'Source bibliography'], ['vocab/', 'Vocabulary'], ['about/#cite', 'How to cite'],
   ] },
   { href: 'about/', label: 'About', sections: ['about/'], links: [
     ['about/', 'About the project'], ['contributors/', 'Contributors'], ['about/#cite', 'How to cite'],
@@ -798,7 +798,7 @@ function surveyBlock(rel, sv, withCong) {
   const head = `${esc(sv.formLabel)} · ${formatDate(sv.date)}${withCong ? ` · ${sv.congregation ? link(rel, 'congregation', sv.congregation, nameOf('congregation', sv.congregation)) : esc(sv.nameAsWritten)}` : ''}`;
   const figs = SURVEY_FIGS.filter(([k]) => sv.figures?.[k] != null).map(([k, l]) => `${l}: ${esc(sv.figures[k])}`).join(' · ');
   return `<details class="survey" id="survey-${esc(sv.id)}"><summary>${head}</summary>
-    <p class="small muted">Name as written: ${esc(sv.nameAsWritten)}. ${figs ? `Figures: ${figs}.` : ''}</p>
+    <p><a href="${rel}surveys/${esc(sv.id)}/">Read this return with its source image</a></p><p class="small muted">Name as written: ${esc(sv.nameAsWritten)}. ${figs ? `Figures: ${figs}.` : ''}</p>
     <dl class="facts survey-answers">${sv.answers.map((a) => `<div><dt>${esc(a.question)}</dt><dd>${a.answer ? esc(a.answer) : '<span class="muted">(blank)</span>'}</dd></div>`).join('')}</dl>
     ${sv.officers?.length ? `<p><strong>Officers named:</strong> ${sv.officers.map((o) => `${esc(o.name)} <span class="muted">(${esc(o.office)}${o.certainty !== 'certain' ? `, ${esc(o.certainty)} reading` : ''})</span>`).join('; ')}</p>` : ''}
     ${sv.signed ? `<p class="small">Signed: ${esc(sv.signed)}</p>` : ''}${sv.note ? `<p class="small">${esc(sv.note)}</p>` : ''}
@@ -1382,7 +1382,7 @@ await out('index.html', layout({ rel: '', title: '', canonical: BASE, current: '
     <p>Start with a place, find a record, or follow the newspapers and connections between communities.</p>
     <div class="research-grid">
       <article class="research-card"><h3><a href="cities/">Explore a place</a></h3><p>Find local people, institutions, streets, and historical images together in a city guide.</p><ul><li><a href="cities/">City guides</a></li><li><a href="maps/all/">All records map</a></li><li><a href="maps/">Maps by subject</a></li><li><a href="atlas/">Congregations over time</a></li></ul></article>
-      <article class="research-card"><h3><a href="database/">Find a record</a></h3><p>Search people, congregations, institutions, events, and businesses, with their sources.</p><ul><li><a href="database/">Search all records</a></li><li><a href="browse/">Browse by record type</a></li><li><a href="database/#type=advertisements">Advertised places and institutions</a></li></ul></article>
+      <article class="research-card"><h3><a href="database/">Find a record</a></h3><p>Search people, congregations, institutions, events, and businesses, with their sources.</p><ul><li><a href="database/">Search all records</a></li><li><a href="browse/">Browse by record type</a></li><li><a href="surveys/">Board of Delegates surveys</a></li><li><a href="database/#type=advertisements">Advertised places and institutions</a></li></ul></article>
       <article class="research-card"><h3><a href="newspapers/">Explore the Jewish press</a></h3><p>Look for article titles, trace recorded subscriptions, and learn about the publications.</p><ul><li><a href="sources/occident/">Occident article index</a></li><li><a href="subscribers/">Newspaper subscribers</a></li><li><a href="database/#type=periodicals">Periodical records</a></li></ul></article>
       <article class="research-card"><h3><a href="visualizations/">Trace connections &amp; change</a></h3><p>Follow relationships between records and compare patterns across the collection.</p><ul><li><a href="network/">Knowledge network</a></li><li><a href="visualizations/">Charts and timelines</a></li><li><a href="visualizations/#tenures">Clergy tenures</a></li></ul></article>
       <article class="research-card"><h3><a href="collections/">Look at pictures &amp; archives</a></h3><p>Explore photographs, family papers, synagogue records, and business documents.</p><ul><li><a href="collections/">Browse archival collections</a></li><li><a href="database/#type=media">Search pictures and documents</a></li></ul></article>
@@ -1509,16 +1509,23 @@ await out('database/index.html', layout({ rel: '../', title: 'Find a record', ca
   <noscript><p>The search interface needs JavaScript. All records are listed on <a href="../browse/">Browse</a> and downloadable from <a href="../datasets/">Datasets</a>.</p></noscript>
 </div>` }));
 
-// Board of Delegates survey returns: one table of figures, then every return in full
-await out('surveys/index.html', layout({ rel: '../', title: 'Board of Delegates surveys', canonical: `${BASE}surveys/`, current: 'surveys/',
-  description: 'Statistical returns sent by congregations to the Board of Delegates of American Israelites, 1860–1872, transcribed as written.',
-  body: `<div class="wrap"><h1>Board of Delegates survey returns</h1>
-  <p class="lede">${surveys.length} returns sent by congregations to the Board of Delegates of American Israelites, from the annual statistical returns of 1860 to the schedules of September 1872. Every answer is transcribed as written; figures are given only where the answer is an unambiguous number. Download: <a href="../data/congregation-surveys.csv">returns and figures</a>, <a href="../data/congregation-survey-answers.csv">every answer</a>, <a href="../data/congregation-survey-officers.csv">officers named</a> (CSV).</p>
-  <div class="table-wrap"><table class="data-table"><caption>Figures reported in each return</caption><thead><tr><th scope="col">Congregation</th><th scope="col">Place</th><th scope="col">Date</th>${SURVEY_FIGS.map(([, l]) => `<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>
-  ${[...surveys].sort((a, b) => placeLabel(a.place).localeCompare(placeLabel(b.place)) || a.date.localeCompare(b.date)).map((sv) => `<tr><th scope="row"><a href="#survey-${esc(sv.id)}">${esc(sv.congregation ? nameOf('congregation', sv.congregation) : sv.nameAsWritten)}</a></th><td>${esc(placeLabel(sv.place))}</td><td>${esc(sv.date)}</td>${SURVEY_FIGS.map(([k]) => `<td>${sv.figures?.[k] ?? ''}</td>`).join('')}</tr>`).join('')}
-  </tbody></table></div>
-  <section><h2>The returns in full</h2>${[...surveys].sort((a, b) => placeLabel(a.place).localeCompare(placeLabel(b.place)) || a.date.localeCompare(b.date)).map((sv) => `<h3>${link('../', 'place', sv.place, placeLabel(sv.place))}</h3>${surveyBlock('../', sv, true)}`).join('')}</section></div>`,
-}));
+// Survey directory and permanent reading pages retain the original fragment links.
+const orderedSurveys = [...surveys].sort((a,b) => placeLabel(a.place).localeCompare(placeLabel(b.place)) || a.date.localeCompare(b.date));
+const surveyName = sv => sv.congregation ? nameOf('congregation', sv.congregation) : sv.nameAsWritten;
+await out('surveys/index.html', layout({ rel:'../', title:'Board of Delegates surveys', canonical:`${BASE}surveys/`, current:'surveys/', scripts:['assets/js/surveys.js'],
+  description:'Find, read and compare congregation survey returns sent to the Board of Delegates of American Israelites.',
+  body:`<div class="wrap survey-directory"><header class="page-head"><p class="kicker">Primary sources · Congregational life</p><h1>Board of Delegates surveys</h1><p class="lede">Read ${surveys.length} returns and letters sent to the Board of Delegates of American Israelites, dated 1860, 1861, and 1872. Explore congregations’ reports of their membership, finances, schools, and officers.</p><p>These are self-reported figures from the returns in this collection, not a complete census. The 1872 returns extend beyond the atlas’s main 1840–1870 period.</p></header>
+  <nav class="section-nav" aria-label="Survey tools"><a href="#survey-results">Find and read a return</a><a href="#survey-compare">Compare figures</a><a href="#survey-downloads">Download data</a></nav>
+  <form id="survey-filters" class="survey-filters" role="search"><label>Search transcriptions<input id="survey-query" type="search" placeholder="Congregation, place, person, or answer"></label><label>Year<select id="survey-year"><option value="">All years</option>${[...new Set(surveys.map(x=>x.date.slice(0,4)))].sort().map(y=>`<option>${y}</option>`).join('')}</select></label><label>Form<select id="survey-form"><option value="">All forms</option>${[...new Set(surveys.map(x=>x.form))].map(f=>`<option value="${esc(f)}">${esc(surveys.find(x=>x.form===f).formLabel)}</option>`).join('')}</select></label><button type="reset" class="btn btn-ghost">Clear filters</button></form>
+  <p id="survey-count" role="status" aria-live="polite">${surveys.length} returns</p><p id="survey-empty" hidden>No returns match. Try another word or clear the filters.</p>
+  <section id="survey-results" aria-label="Survey returns" class="research-grid">${orderedSurveys.map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}" data-survey="${esc(sv.id)}" data-year="${sv.date.slice(0,4)}" data-form="${esc(sv.form)}" data-search="${esc([surveyName(sv),placeLabel(sv.place),sv.nameAsWritten,sv.signed,sv.note,...sv.answers.map(a=>a.question+' '+a.answer),...(sv.officers||[]).map(o=>o.name+' '+o.office)].join(' ').toLowerCase())}"><p class="kicker">${esc(placeLabel(sv.place))} · ${esc(sv.date)}</p><h2><a href="${sv.id}/">${esc(surveyName(sv))}</a></h2><p>${esc(sv.formLabel)}</p><a class="btn btn-ghost" href="${sv.id}/">Read return &amp; view scan</a></article>`).join('')}</section>
+  <section id="survey-compare"><h2>Compare reported figures</h2><p>Filters above also apply to this table. “—” means no unambiguous numeric value was extracted; it does not mean zero. Different forms ask different questions: read the original answer before comparing figures.</p><div class="table-wrap" tabindex="0" role="region" aria-label="Survey comparison table, scroll horizontally"><table><caption>Figures reported in the selected returns</caption><thead><tr><th scope="col">Congregation</th><th scope="col">Place</th><th scope="col">Date</th>${SURVEY_FIGS.map(([,l])=>`<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>${orderedSurveys.map(sv=>`<tr data-survey-row="${sv.id}"><th scope="row"><a href="${sv.id}/">${esc(surveyName(sv))}</a></th><td>${esc(placeLabel(sv.place))}</td><td>${esc(sv.date)}</td>${SURVEY_FIGS.map(([k])=>`<td>${sv.figures?.[k] ?? '—'}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>
+  <section id="survey-downloads"><h2>Use the survey data</h2><p>These downloads include all ${surveys.length} returns, regardless of the filters above. Answers preserve the transcription; [?] marks uncertain readings and blank answers remain blank.</p><ul><li><a href="../data/congregation-surveys.csv" download>Returns and numeric figures (CSV)</a> — dates, places, source references, and extracted figures.</li><li><a href="../data/congregation-survey-answers.csv" download>Every question and answer (CSV)</a> — for searching and comparing the transcribed responses.</li><li><a href="../data/congregation-survey-officers.csv" download>Officers named (CSV)</a> — names, offices, and reading certainty.</li></ul></section></div>` }));
+for (const sv of orderedSurveys) {
+  const rel='../../';
+  await out(`surveys/${sv.id}/index.html`, layout({rel,title:`${surveyName(sv)} · ${sv.date}`,canonical:`${BASE}surveys/${sv.id}/`,current:'surveys/',description:`${sv.formLabel}: ${surveyName(sv)}, ${placeLabel(sv.place)}. Transcription and source image.`,
+    body:`<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Board of Delegates surveys</a> / ${esc(sv.date)}</nav><header class="page-head"><p class="kicker">${esc(sv.formLabel)}</p><h1>${esc(surveyName(sv))}</h1><p>${link(rel,'place',sv.place,placeLabel(sv.place))} · ${formatDate(sv.date)}</p>${sv.congregation ? `<p>${link(rel,'congregation',sv.congregation,'View congregation record')}</p>` : ''}</header><div class="survey-reader"><section><h2>Source image</h2>${sv.image ? `<a href="${esc(sv.image)}"><img class="survey-scan" src="${esc(sv.image)}" alt="Scanned return for ${esc(surveyName(sv))}, ${esc(sv.date)}" loading="lazy"></a><p><a href="${esc(sv.image)}">Open full-size scan</a></p>` : '<p>No scan is linked to this return.</p>'}</section><section><h2>Transcription</h2>${surveyBlock(rel,sv,false).replace('<details class="survey"','<details open class="survey"')}</section></div><p><a href="../#survey-downloads">Download survey data</a> · <a href="../">Browse all returns</a></p></div>`}));
+}
 
 // Browse (no-JS, crawlable list of everything)
 const browseSection = (type, rows, fmt) => `<section id="${type}" aria-labelledby="h-${type}"><h2 id="h-${type}">${TYPE_INFO[type].plural} <span class="muted">(${rows.length})</span></h2><ul class="browse-list">${rows.map((r) => `<li>${link('../', type, r.id, type === 'source' ? r.title : r.name)} <span class="muted">${fmt(r)}</span></li>`).join('')}</ul></section>`;
@@ -1933,6 +1940,7 @@ for (const placeId of CITY_IDS) {
   <header class="city-head">
     <p class="kicker">City guide · ${esc(p.state)}</p>
     <h1>${esc(p.name)}</h1>
+    ${surveysByPlace.get(placeId)?.length ? `<p><a class="btn btn-ghost" href="#h-surveys">Board of Delegates surveys (${surveysByPlace.get(placeId).length})</a></p>` : ''}
     <p class="city-counts">${[...groups.filter((g) => counts[g]).map((g) => `${counts[g]} ${counts[g] === 1 ? g===AD_GROUP ? 'advertised address' : SYM.label(SYM.GROUPS.find((x) => x[0] === g)[1][0]).toLowerCase() : g.toLowerCase()}`), pics.length && `${pics.length} picture${pics.length === 1 ? '' : 's'} and documents`].filter(Boolean).join(' · ')}</p>
     <details class="city-background"><summary>About this city &amp; sources</summary>
     ${(C.intro || []).map((t) => `<p class="city-intro">${esc(t)}</p>`).join('')}
@@ -1976,6 +1984,7 @@ for (const placeId of CITY_IDS) {
   </div>
   <p class="map-context">Modern streets · historical locations. Hover over a marker for its name.</p>
   <script type="application/json" id="city-data">${JSON.stringify(cityData).replace(/</g, '\\u003c')}</script>
+  ${(surveysByPlace.get(placeId) || []).length ? `<section class="city-surveys" aria-labelledby="h-surveys"><p class="kicker">Primary sources</p><h2 id="h-surveys">Board of Delegates surveys</h2><p>${surveysByPlace.get(placeId).length} returns and letters from ${esc(p.name)}. Read each transcription alongside its source image, and follow the congregation’s own reports of membership, finances, and schools. Dates are shown on each return; 1872 returns extend beyond the atlas’s main period.</p><div class="research-grid">${surveysByPlace.get(placeId).map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}"><p class="kicker">${formatDate(sv.date)}</p><h3><a href="${rel}surveys/${sv.id}/">${esc(surveyName(sv))}</a></h3><p>${esc(sv.formLabel)}</p><a class="btn btn-ghost" href="${rel}surveys/${sv.id}/">Read return &amp; view scan</a></article>`).join('')}</div><p><a href="${rel}surveys/">Find and compare all survey returns</a> · <a href="${rel}surveys/#survey-downloads">Download survey data</a></p></section>` : ''}
   <details class="city-research-sections"><summary>People, subscribers, pictures &amp; city history</summary>
   ${congregationMoves(placeId, rel)}
   ${clergySection(placeId, rel)}
