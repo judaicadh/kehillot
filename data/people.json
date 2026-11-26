@@ -842,7 +842,10 @@
       "new-york"
     ],
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box2-folder13",
+      "bdai-box2-folder14",
+      "bdai-box2-folder15"
     ]
   },
   {
@@ -866,7 +869,9 @@
       "washington"
     ],
     "sources": [
-      "korn-1951"
+      "korn-1951",
+      "bdai-box2-folder13",
+      "bdai-box2-folder14"
     ]
   },
   {
@@ -917,7 +922,8 @@
     ],
     "certainty": "medium",
     "sources": [
-      "isjl-encyclopedia"
+      "isjl-encyclopedia",
+      "bdai-box2-folder15"
     ]
   },
   {

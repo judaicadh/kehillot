@@ -431,5 +431,43 @@
     "sources": [
       "occident-review-64ff145debc0"
     ]
+  },
+  {
+    "id": "morocco-relief-collection-1860",
+    "name": "Board of Delegates collects for the Morocco refugees",
+    "date": "1860-01-17",
+    "place": "new-york",
+    "category": "philanthropyEvent",
+    "certainty": "high",
+    "description": "Henry I. Hart, president of the Board of Delegates, reported that a circular to every American congregation had raised $3,719.88 for Jewish refugees from Morocco, of which $3,000 had been remitted to Sir Moses Montefiore.",
+    "sources": [
+      "bdai-box2-folder15"
+    ]
+  },
+  {
+    "id": "board-chaplaincy-memorial-1861",
+    "name": "Board of Delegates memorial on Jewish military chaplains",
+    "date": "1861-12-05",
+    "place": "washington",
+    "category": "civic",
+    "certainty": "high",
+    "description": "The Board of Delegates sent Senators Ira Harris and F. J. Conkling a memorial against the 1861 acts of Congress that limited army chaplaincies to Christian ministers, and commissioned Rev. Dr. Arnold Fischel to attend the Army of the Potomac.",
+    "sources": [
+      "bdai-box2-folder15",
+      "bdai-box2-folder13"
+    ]
+  },
+  {
+    "id": "board-swiss-treaty-1860",
+    "name": "Board of Delegates takes up the Swiss treaty",
+    "date": "1860-04-20",
+    "place": "new-york",
+    "category": "civic",
+    "certainty": "high",
+    "description": "The Board of Delegates corresponded with the Consistoire Central des Israélites de France and the Alliance Israélite Universelle and petitioned the State Department over the treaty with Switzerland that allowed cantons to exclude American Jews.",
+    "sources": [
+      "bdai-box2-folder14",
+      "bdai-box2-folder15"
+    ]
   }
 ]
