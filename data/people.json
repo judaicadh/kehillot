@@ -5449,5 +5449,544 @@
       "montgomery-kahl-montgomery-1872"
     ],
     "clergyTitles": []
+  },
+  {
+    "id": "rev-isaac-hechinger-new-orleans-survey",
+    "name": "Rev. Isaac Hechinger",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Religious officer",
+        "documented": "1860-09-01",
+        "survey": "new-orleans-gates-of-prayer-return-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "Rev. Isaac Hechinger",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Minister",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Rev. Isaac Hechinger",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-gates-of-prayer-return-1860",
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "m-heidenheim-new-orleans-survey",
+    "name": "M. Heidenheim",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "President",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "M. Heidenheim",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "m-g-welsch-new-orleans-survey",
+    "name": "M. G. Welsch",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Vice president",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "M. G. Welsch",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "h-ascher-new-orleans-survey",
+    "name": "H. Ascher",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Treasurer",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "H. Ascher",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "isr-levy-new-orleans-survey",
+    "name": "Isr. Levy",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Isr. Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "b-goldenberg-new-orleans-survey",
+    "name": "B. Goldenberg",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "B. Goldenberg",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "s-wolf-new-orleans-survey",
+    "name": "S. Wolf",
+    "occupation": [],
+    "places": [
+      "new-orleans"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarei-tefillah-nol",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "new-orleans-shaary-tefiloh-schedule-1861",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "S. Wolf",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "new-orleans-shaary-tefiloh-schedule-1861"
+    ]
+  },
+  {
+    "id": "a-h-sinai-newburgh-survey",
+    "name": "A. H. Sinai",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "newburgh"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-jacob-nbg",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "newburgh-beth-jacob-1872",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "A. H. Sinai",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "s-a-sharps-newburgh-survey",
+    "name": "S. A. Sharps",
+    "occupation": [],
+    "places": [
+      "newburgh"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-jacob-nbg",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "newburgh-beth-jacob-1872",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "S. A. Sharps",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1872"
+    ]
+  },
+  {
+    "id": "isaac-newcity-newburgh-survey",
+    "name": "Isaac Newcity",
+    "occupation": [],
+    "places": [
+      "newburgh"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-jacob-nbg",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "newburgh-beth-jacob-1872",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Isaac Newcity",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1872"
+    ]
+  },
+  {
+    "id": "marcus-sharps-newburgh-survey",
+    "name": "Marcus Sharps",
+    "occupation": [],
+    "places": [
+      "newburgh"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-jacob-nbg",
+        "role": "President, Bnai Berith and K",
+        "documented": "1872-09",
+        "survey": "newburgh-beth-jacob-1872",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Marcus Sharps",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1872"
+    ]
+  },
+  {
+    "id": "rev-i-oppenheim-norfolk-survey",
+    "name": "Rev. I. Oppenheim",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Minister",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "Rev. I. Oppenheim",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "m-d-levy-norfolk-survey",
+    "name": "M. D. Levy",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "President",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "M. D. Levy",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "l-a-levyno-norfolk-survey",
+    "name": "L. A. Levyno",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "L. A. Levyno",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "g-m-levy-norfolk-survey",
+    "name": "G. M. Levy",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "G. M. Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "e-camp-norfolk-survey",
+    "name": "E. Camp",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "E. Camp",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "i-myers-norfolk-survey",
+    "name": "I. Myers",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "I. Myers",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "a-l-goldsmith-norfolk-survey",
+    "name": "A. L. Goldsmith",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "A. L. Goldsmith",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
+  },
+  {
+    "id": "s-wiel-norfolk-survey",
+    "name": "S. Wiel",
+    "occupation": [],
+    "places": [
+      "norfolk"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "norfolk-hebrew-english-literary",
+        "role": "Secretary",
+        "documented": "1860-12",
+        "survey": "norfolk-hebrew-english-literary-schedule-1860",
+        "source": "bdai-box3-folder07",
+        "locator": "PDF scan 21",
+        "nameAsWritten": "S. Wiel",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder07"
+    ],
+    "surveyIds": [
+      "norfolk-hebrew-english-literary-schedule-1860"
+    ]
   }
 ]

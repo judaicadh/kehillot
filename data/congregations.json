@@ -1,143 +1,930 @@
 [
-  { "id": "shearith-israel-ny", "name": "Shearith Israel", "translation": "Remnant of Israel", "place": "new-york", "founded": 1654, "certainty": "high", "rite": "sephardic", "orientation": "traditional",
-    "note": "The oldest Jewish congregation in North America; the only synagogue in New York until 1825.", "sources": ["sarna-2004"] },
-  { "id": "bnai-jeshurun-ny", "name": "B'nai Jeshurun", "translation": "Children of Jeshurun", "place": "new-york", "founded": 1825, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional", "splitFrom": "shearith-israel-ny",
-    "note": "First Ashkenazic congregation in New York, formed by members leaving Shearith Israel. Host of the 1840 Damascus protest meeting.", "sources": ["sarna-2004", "jick-1976"] },
-  { "id": "anshe-chesed-ny", "name": "Anshe Chesed", "translation": "People of Kindness", "place": "new-york", "founded": 1828, "certainty": "high", "rite": "ashkenazic", "orientation": "reform", "splitFrom": "bnai-jeshurun-ny",
-    "note": "Formed largely by German, Dutch and Polish members of B'nai Jeshurun.", "sources": ["jick-1976"] },
-  { "id": "rodeph-sholom-ny", "name": "Rodeph Sholom", "translation": "Pursuer of Peace", "place": "new-york", "founded": 1842, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["jick-1976"] },
-  { "id": "emanu-el-ny", "name": "Emanu-El", "translation": "God is with us", "place": "new-york", "founded": 1845, "certainty": "high", "rite": "reform", "orientation": "reform",
-    "note": "Founded as a Cultus-Verein by German immigrants; became the flagship of Reform in New York.", "sources": ["sarna-2004", "jick-1976"] },
-  { "id": "shaaray-tefila-ny", "name": "Shaaray Tefila", "translation": "Gates of Prayer", "place": "new-york", "founded": 1845, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional", "splitFrom": "bnai-jeshurun-ny",
-    "note": "Organized around Samuel Myer Isaacs, who led it for three decades.", "sources": ["sarna-2004"] },
-
-  { "id": "mikveh-israel-phl", "name": "Mikveh Israel", "translation": "Hope of Israel", "place": "philadelphia", "founded": 1740, "certainty": "high", "rite": "sephardic", "orientation": "traditional",
-    "note": "Pulpit of Isaac Leeser (1829–1850) and Sabato Morais (1851–1897).", "sources": ["sussman-1995", "sarna-2004"] },
-  { "id": "rodeph-shalom-phl", "name": "Rodeph Shalom", "translation": "Pursuer of Peace", "place": "philadelphia", "founded": 1795, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "Generally regarded as the oldest Ashkenazic congregation in the Western Hemisphere.", "sources": ["sarna-2004"] },
-  { "id": "beth-israel-phl", "name": "Beth Israel", "translation": "House of Israel", "place": "philadelphia", "founded": 1840, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "sources": ["jick-1976"] },
-  { "id": "keneseth-israel-phl", "name": "Keneseth Israel", "translation": "Assembly of Israel", "place": "philadelphia", "founded": 1847, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "Adopted Reform in the 1850s; David Einhorn served here 1861–1866.", "sources": ["jick-1976"] },
-
-  { "id": "beth-elohim-chs", "name": "Kahal Kadosh Beth Elohim", "translation": "House of God", "place": "charleston", "founded": 1749, "certainty": "high", "rite": "sephardic", "orientation": "reform",
-    "note": "Site of the Reformed Society of Israelites (1824) and of the 1841 installation of an organ, which split the congregation.", "sources": ["sarna-2004", "jick-1976", "bdai-box3-folder05"] },
-  { "id": "shearit-israel-chs", "name": "Shearit Israel", "translation": "Remnant of Israel", "place": "charleston", "founded": 1841, "certainty": "medium", "rite": "sephardic", "orientation": "traditional", "splitFrom": "beth-elohim-chs", "dissolved": 1866,
-    "note": "Traditionalists who left Beth Elohim over the organ; reunited with the parent congregation after the Civil War.", "sources": ["isjl-encyclopedia", "bdai-box3-folder05"] },
-  { "id": "mickve-israel-sav", "name": "Mickve Israel", "translation": "Hope of Israel", "place": "savannah", "founded": 1733, "certainty": "high", "rite": "sephardic", "orientation": "traditional",
-    "note": "Founded by Jews who arrived in Georgia in July 1733; reorganized in 1790.", "sources": ["isjl-encyclopedia", "sarna-2004"] },
-  { "id": "beth-shalome-ric", "name": "Kahal Kadosh Beth Shalome", "translation": "House of Peace", "place": "richmond", "founded": 1789, "certainty": "high", "rite": "sephardic", "orientation": "traditional",
-    "note": "Isaac Leeser's first community in America (from 1824).", "sources": ["isjl-encyclopedia", "sussman-1995"] },
-  { "id": "beth-ahabah-ric", "name": "Beth Ahabah", "translation": "House of Love", "place": "richmond", "founded": 1841, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia"] },
-  { "id": "jeshuat-israel-npt", "name": "Jeshuat Israel (Touro Synagogue)", "translation": "Salvation of Israel", "place": "newport", "founded": 1763, "certainty": "high", "rite": "sephardic", "orientation": "traditional", "dormant": [1822, 1881],
-    "note": "Building dedicated 1763. Without a resident congregation for most of the mid-century; maintained through bequests from Abraham and Judah Touro.", "sources": ["sarna-2004"] },
-
-  { "id": "baltimore-hebrew", "name": "Baltimore Hebrew Congregation (Nidchei Israel)", "translation": "Dispersed of Israel", "place": "baltimore", "founded": 1830, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "Brought Abraham Rice, the first ordained rabbi to serve in the United States, in 1840.", "sources": ["sarna-2004"] },
-  { "id": "har-sinai-bal", "name": "Har Sinai", "translation": "Mount Sinai", "place": "baltimore", "founded": 1842, "certainty": "high", "rite": "reform", "orientation": "reform", "splitFrom": "baltimore-hebrew",
-    "note": "Often cited as the oldest continuously Reform congregation in the United States. David Einhorn's pulpit 1855–1861.", "sources": ["sarna-2004"] },
-  { "id": "oheb-shalom-bal", "name": "Oheb Shalom", "translation": "Lover of Peace", "place": "baltimore", "founded": 1853, "certainty": "high", "rite": "ashkenazic", "orientation": "moderate",
-    "note": "Benjamin Szold served from 1859.", "sources": ["sarna-2004"] },
-  { "id": "washington-hebrew", "name": "Washington Hebrew Congregation", "place": "washington", "founded": 1852, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "Incorporated by an Act of Congress in 1856.", "sources": ["korn-1951"] },
-
-  { "id": "bene-israel-cin", "name": "Bene Israel", "translation": "Children of Israel", "place": "cincinnati", "founded": 1824, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "First congregation west of the Alleghenies, founded largely by English Jews. Max Lilienthal served from 1855.", "sources": ["sarna-2004", "marcus-1991"] },
-  { "id": "bnai-yeshurun-cin", "name": "B'nai Yeshurun", "translation": "Children of Jeshurun", "place": "cincinnati", "founded": 1842, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "German congregation; Isaac Mayer Wise's pulpit from 1854 until his death in 1900.", "sources": ["sarna-2004"] },
-  { "id": "anshe-chesed-cle", "name": "Anshe Chesed", "translation": "People of Kindness", "place": "cleveland", "founded": 1841, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991"] },
-  { "id": "tifereth-israel-cle", "name": "Tifereth Israel", "translation": "Glory of Israel", "place": "cleveland", "founded": 1850, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991"] },
-  { "id": "beth-el-det", "name": "Beth El", "translation": "House of God", "place": "detroit", "founded": 1850, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "First Jewish congregation in Michigan.", "sources": ["marcus-1991"] },
-  { "id": "kam-chi", "name": "Kehilath Anshe Maariv", "translation": "Congregation of the People of the West", "place": "chicago", "founded": 1847, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "First congregation in Chicago.", "sources": ["sarna-2004"] },
-  { "id": "sinai-chi", "name": "Sinai Congregation", "place": "chicago", "founded": 1861, "certainty": "high", "rite": "reform", "orientation": "reform",
-    "note": "Grew out of the Jüdischer Reformverein (1858) led by Bernhard Felsenthal.", "sources": ["sarna-2004"] },
-  { "id": "uhc-stl", "name": "United Hebrew Congregation", "place": "st-louis", "founded": 1837, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "First congregation west of the Mississippi.", "sources": ["marcus-1991"] },
-  { "id": "indianapolis-hebrew", "name": "Indianapolis Hebrew Congregation", "place": "indianapolis", "founded": 1856, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991"] },
-
-  { "id": "rodef-shalom-pgh", "name": "Rodef Shalom", "translation": "Pursuer of Peace", "place": "pittsburgh", "founded": 1856, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "note": "Successor to Shaaray Shamayim (c. 1847).", "sources": ["marcus-1991"] },
-  { "id": "brith-sholom-eas", "name": "Brith Sholom", "translation": "Covenant of Peace", "place": "easton", "founded": 1839, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "sources": ["marcus-1991"] },
-  { "id": "ohabei-shalom-bos", "name": "Ohabei Shalom", "translation": "Lovers of Peace", "place": "boston", "founded": 1842, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "First congregation in Boston.", "sources": ["sarna-2004", "bdai-box3-folder05"] },
-  { "id": "mishkan-israel-nhv", "name": "Mishkan Israel", "translation": "Tabernacle of Israel", "place": "new-haven", "founded": 1840, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "First congregation in Connecticut.", "sources": ["marcus-1991"] },
-  { "id": "beth-israel-hfd", "name": "Beth Israel", "translation": "House of Israel", "place": "hartford", "founded": 1843, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991", "bdai-box3-folder06"] },
-  { "id": "beth-el-alb", "name": "Beth El", "translation": "House of God", "place": "albany", "founded": 1838, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "Isaac Mayer Wise's first American pulpit (1846–1850).", "sources": ["sarna-2004"] },
-  { "id": "anshe-emeth-alb", "name": "Anshe Emeth", "translation": "People of Truth", "place": "albany", "founded": 1850, "certainty": "high", "rite": "reform", "orientation": "reform", "splitFrom": "beth-el-alb",
-    "note": "Formed by Wise's supporters after his dismissal from Beth El in 1850.", "sources": ["sarna-2004"] },
-  { "id": "society-concord-syr", "name": "Society of Concord (Keneseth Shalom)", "place": "syracuse", "founded": 1839, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991"] },
-  { "id": "brith-kodesh-roc", "name": "B'rith Kodesh", "translation": "Holy Covenant", "place": "rochester", "founded": 1848, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["marcus-1991"] },
-  { "id": "beth-el-buf", "name": "Beth El", "translation": "House of God", "place": "buffalo", "founded": 1847, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "sources": ["marcus-1991"] },
-
-  { "id": "shangarai-chasset-nol", "name": "Shangarai Chasset", "translation": "Gates of Mercy", "place": "new-orleans", "founded": 1828, "certainty": "high", "rite": "ashkenazic", "orientation": "moderate",
-    "note": "First congregation in New Orleans; later merged with Nefutzot Yehudah to form Touro Synagogue (1881).", "sources": ["isjl-encyclopedia"] },
-  { "id": "nefutzot-yehudah-nol", "name": "Nefutzot Yehudah", "translation": "Dispersed of Judah", "place": "new-orleans", "founded": 1846, "certainty": "high", "rite": "sephardic", "orientation": "traditional",
-    "note": "Portuguese-rite congregation; Judah Touro bought and refitted a church for its use.", "sources": ["isjl-encyclopedia"] },
-  { "id": "shaarai-shomayim-mob", "name": "Shaarai Shomayim", "translation": "Gates of Heaven", "place": "mobile", "founded": 1844, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia", "bdai-box3-folder06"] },
-  { "id": "kahl-montgomery", "name": "Kahl Montgomery (Temple Beth Or)", "place": "montgomery", "founded": 1852, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia", "bdai-box3-folder06"] },
-  { "id": "bnai-israel-ntz", "name": "B'nai Israel", "translation": "Children of Israel", "place": "natchez", "founded": 1843, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia"] },
-  { "id": "children-of-israel-mem", "name": "B'nai Israel (Children of Israel)", "place": "memphis", "founded": 1853, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia"] },
-  { "id": "adath-israel-lou", "name": "Adath Israel", "translation": "Community of Israel", "place": "louisville", "founded": 1842, "certainty": "medium", "rite": "ashkenazic", "orientation": "reform",
-    "sources": ["isjl-encyclopedia", "bdai-box3-folder06"] },
-  { "id": "beth-israel-hou", "name": "Beth Israel", "translation": "House of Israel", "place": "houston", "founded": 1859, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "Grew out of the Hebrew Benevolent Association (1855); first congregation in Texas.", "sources": ["isjl-encyclopedia"] },
-
-  { "id": "emanu-el-sf", "name": "Emanu-El", "translation": "God is with us", "place": "san-francisco", "founded": 1850, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "Largely Bavarian and German membership; Levi Strauss was an early member.", "sources": ["kahn-2002"] },
-  { "id": "sherith-israel-sf", "name": "Sherith Israel", "translation": "Remnant of Israel", "place": "san-francisco", "founded": 1851, "certainty": "high", "rite": "ashkenazic", "orientation": "traditional",
-    "note": "Largely Polish and English membership.", "sources": ["kahn-2002"] },
-  { "id": "bnai-israel-sac", "name": "B'nai Israel", "translation": "Children of Israel", "place": "sacramento", "founded": 1852, "certainty": "medium", "rite": "ashkenazic", "orientation": "traditional",
-    "sources": ["kahn-2002"] },
-  { "id": "beth-israel-pdx", "name": "Beth Israel", "translation": "House of Israel", "place": "portland-or", "founded": 1858, "certainty": "high", "rite": "ashkenazic", "orientation": "reform",
-    "note": "First congregation in Oregon.", "sources": ["marcus-1991"] },
-  { "id": "hebrew-benevolent-congregation-atl", "name": "Hebrew Benevolent Congregation", "place": "atlanta", "founded": 1866, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return gives the founding year, a rented hall, and minister B. A. Bonnheim. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder05"] },
-  { "id": "shaari-chased-btr", "name": "Shaari Chased", "translation": "Gates of Kindness", "place": "baton-rouge", "founded": 1857, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "In 1872 the congregation had a building lot but no synagogue or minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder05"] },
-  { "id": "hebrew-benevolent-association-cha", "name": "Hebrew Benevolent Association", "place": "chattanooga", "founded": 1870, "certainty": "low", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return says it was organized 'two years ago'; the founding year is derived from that statement. It had a burial ground and a Sunday school but no synagogue. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder05"] },
-  { "id": "bnai-sholom-chi", "name": "Kehilath Bnai Sholom Ubikur Cholim", "translation": "Children of Peace and Visiting the Sick", "place": "chicago", "founded": 1855, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return dates the organization to 5 April 1855. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder05"] },
-  { "id": "bnai-yeshurun-day", "name": "Bnai Yeshurun", "translation": "Children of Jeshurun", "place": "dayton", "founded": 1851, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return gives 1851 as the year of organization. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "achduth-veshalom-fw", "name": "Achduth Veshalom", "translation": "Union and Peace", "place": "fort-wayne", "founded": 1848, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return dates the organization to October 1848. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "ahavas-achim-laf", "name": "Ahavas Achim", "translation": "Brotherly Love", "place": "lafayette-in", "founded": 1847, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return dates the organization to 1847. The congregation withdrew from the Board in May 1874. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "bnai-zion-dan", "name": "Bnai Zion", "translation": "Children of Zion", "place": "danville-pa", "founded": 1853, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return dates the organization to 18 September 1853. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "donaldsonville-hebrew", "name": "Hebrew congregation of Donaldsonville", "place": "donaldsonville", "founded": 1869, "certainty": "low", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return says the congregation was reorganized in 1869; an earlier founding is implied but not dated. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "ohev-sholom-har", "name": "Ohev Sholom", "translation": "Lovers of Peace", "place": "harrisburg", "founded": 1852, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return gives 1852 as the year of organization. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "beth-israel-jac", "name": "Beth Israel", "translation": "House of Israel", "place": "jackson-ms", "founded": 1860, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1860 return dates the organization to 10 March 1860. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "bnai-zion-lap", "name": "Bnai Zion", "translation": "Children of Zion", "place": "laporte", "founded": 1854, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1872 return dates the organization to May 1854; the president acted as minister without salary. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "beth-el-la", "name": "Beth El (Hebrew Congregation of Los Angeles)", "translation": "House of God", "place": "los-angeles", "founded": 1860, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return dates the organization to 2 September 1860. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "beth-israel-lou", "name": "Beth Israel", "translation": "House of Israel", "place": "louisville", "founded": 1856, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1860 return dates the organization to Tishri 5617 (autumn 1856). Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
-  { "id": "shaare-shomaim-mad", "name": "Shaare Shomaim", "translation": "Gates of Heaven", "place": "madison-wi", "founded": 1856, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return dates the organization to October 1856; the congregation could not support a minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
+  {
+    "id": "shearith-israel-ny",
+    "name": "Shearith Israel",
+    "translation": "Remnant of Israel",
+    "place": "new-york",
+    "founded": 1654,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "note": "The oldest Jewish congregation in North America; the only synagogue in New York until 1825.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-ny",
+    "name": "B'nai Jeshurun",
+    "translation": "Children of Jeshurun",
+    "place": "new-york",
+    "founded": 1825,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "splitFrom": "shearith-israel-ny",
+    "note": "First Ashkenazic congregation in New York, formed by members leaving Shearith Israel. Host of the 1840 Damascus protest meeting.",
+    "sources": [
+      "sarna-2004",
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "anshe-chesed-ny",
+    "name": "Anshe Chesed",
+    "translation": "People of Kindness",
+    "place": "new-york",
+    "founded": 1828,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "splitFrom": "bnai-jeshurun-ny",
+    "note": "Formed largely by German, Dutch and Polish members of B'nai Jeshurun.",
+    "sources": [
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "rodeph-sholom-ny",
+    "name": "Rodeph Sholom",
+    "translation": "Pursuer of Peace",
+    "place": "new-york",
+    "founded": 1842,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "emanu-el-ny",
+    "name": "Emanu-El",
+    "translation": "God is with us",
+    "place": "new-york",
+    "founded": 1845,
+    "certainty": "high",
+    "rite": "reform",
+    "orientation": "reform",
+    "note": "Founded as a Cultus-Verein by German immigrants; became the flagship of Reform in New York.",
+    "sources": [
+      "sarna-2004",
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "shaaray-tefila-ny",
+    "name": "Shaaray Tefila",
+    "translation": "Gates of Prayer",
+    "place": "new-york",
+    "founded": 1845,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "splitFrom": "bnai-jeshurun-ny",
+    "note": "Organized around Samuel Myer Isaacs, who led it for three decades.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "mikveh-israel-phl",
+    "name": "Mikveh Israel",
+    "translation": "Hope of Israel",
+    "place": "philadelphia",
+    "founded": 1740,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "note": "Pulpit of Isaac Leeser (1829–1850) and Sabato Morais (1851–1897).",
+    "sources": [
+      "sussman-1995",
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "rodeph-shalom-phl",
+    "name": "Rodeph Shalom",
+    "translation": "Pursuer of Peace",
+    "place": "philadelphia",
+    "founded": 1795,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "Generally regarded as the oldest Ashkenazic congregation in the Western Hemisphere.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "beth-israel-phl",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "philadelphia",
+    "founded": 1840,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "sources": [
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "keneseth-israel-phl",
+    "name": "Keneseth Israel",
+    "translation": "Assembly of Israel",
+    "place": "philadelphia",
+    "founded": 1847,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "Adopted Reform in the 1850s; David Einhorn served here 1861–1866.",
+    "sources": [
+      "jick-1976"
+    ]
+  },
+  {
+    "id": "beth-elohim-chs",
+    "name": "Kahal Kadosh Beth Elohim",
+    "translation": "House of God",
+    "place": "charleston",
+    "founded": 1749,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "reform",
+    "note": "Site of the Reformed Society of Israelites (1824) and of the 1841 installation of an organ, which split the congregation.",
+    "sources": [
+      "sarna-2004",
+      "jick-1976",
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "shearit-israel-chs",
+    "name": "Shearit Israel",
+    "translation": "Remnant of Israel",
+    "place": "charleston",
+    "founded": 1841,
+    "certainty": "medium",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "splitFrom": "beth-elohim-chs",
+    "dissolved": 1866,
+    "note": "Traditionalists who left Beth Elohim over the organ; reunited with the parent congregation after the Civil War.",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "mickve-israel-sav",
+    "name": "Mickve Israel",
+    "translation": "Hope of Israel",
+    "place": "savannah",
+    "founded": 1733,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "note": "Founded by Jews who arrived in Georgia in July 1733; reorganized in 1790.",
+    "sources": [
+      "isjl-encyclopedia",
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "beth-shalome-ric",
+    "name": "Kahal Kadosh Beth Shalome",
+    "translation": "House of Peace",
+    "place": "richmond",
+    "founded": 1789,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "note": "Isaac Leeser's first community in America (from 1824).",
+    "sources": [
+      "isjl-encyclopedia",
+      "sussman-1995"
+    ]
+  },
+  {
+    "id": "beth-ahabah-ric",
+    "name": "Beth Ahabah",
+    "translation": "House of Love",
+    "place": "richmond",
+    "founded": 1841,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "jeshuat-israel-npt",
+    "name": "Jeshuat Israel (Touro Synagogue)",
+    "translation": "Salvation of Israel",
+    "place": "newport",
+    "founded": 1763,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "dormant": [
+      1822,
+      1881
+    ],
+    "note": "Building dedicated 1763. Without a resident congregation for most of the mid-century; maintained through bequests from Abraham and Judah Touro.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "baltimore-hebrew",
+    "name": "Baltimore Hebrew Congregation (Nidchei Israel)",
+    "translation": "Dispersed of Israel",
+    "place": "baltimore",
+    "founded": 1830,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "Brought Abraham Rice, the first ordained rabbi to serve in the United States, in 1840.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "har-sinai-bal",
+    "name": "Har Sinai",
+    "translation": "Mount Sinai",
+    "place": "baltimore",
+    "founded": 1842,
+    "certainty": "high",
+    "rite": "reform",
+    "orientation": "reform",
+    "splitFrom": "baltimore-hebrew",
+    "note": "Often cited as the oldest continuously Reform congregation in the United States. David Einhorn's pulpit 1855–1861.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "oheb-shalom-bal",
+    "name": "Oheb Shalom",
+    "translation": "Lover of Peace",
+    "place": "baltimore",
+    "founded": 1853,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "moderate",
+    "note": "Benjamin Szold served from 1859.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "washington-hebrew",
+    "name": "Washington Hebrew Congregation",
+    "place": "washington",
+    "founded": 1852,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "Incorporated by an Act of Congress in 1856.",
+    "sources": [
+      "korn-1951"
+    ]
+  },
+  {
+    "id": "bene-israel-cin",
+    "name": "Bene Israel",
+    "translation": "Children of Israel",
+    "place": "cincinnati",
+    "founded": 1824,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "First congregation west of the Alleghenies, founded largely by English Jews. Max Lilienthal served from 1855.",
+    "sources": [
+      "sarna-2004",
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "bnai-yeshurun-cin",
+    "name": "B'nai Yeshurun",
+    "translation": "Children of Jeshurun",
+    "place": "cincinnati",
+    "founded": 1842,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "German congregation; Isaac Mayer Wise's pulpit from 1854 until his death in 1900.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "anshe-chesed-cle",
+    "name": "Anshe Chesed",
+    "translation": "People of Kindness",
+    "place": "cleveland",
+    "founded": 1841,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "tifereth-israel-cle",
+    "name": "Tifereth Israel",
+    "translation": "Glory of Israel",
+    "place": "cleveland",
+    "founded": 1850,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "beth-el-det",
+    "name": "Beth El",
+    "translation": "House of God",
+    "place": "detroit",
+    "founded": 1850,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "First Jewish congregation in Michigan.",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "kam-chi",
+    "name": "Kehilath Anshe Maariv",
+    "translation": "Congregation of the People of the West",
+    "place": "chicago",
+    "founded": 1847,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "First congregation in Chicago.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "sinai-chi",
+    "name": "Sinai Congregation",
+    "place": "chicago",
+    "founded": 1861,
+    "certainty": "high",
+    "rite": "reform",
+    "orientation": "reform",
+    "note": "Grew out of the Jüdischer Reformverein (1858) led by Bernhard Felsenthal.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "uhc-stl",
+    "name": "United Hebrew Congregation",
+    "place": "st-louis",
+    "founded": 1837,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "First congregation west of the Mississippi.",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "indianapolis-hebrew",
+    "name": "Indianapolis Hebrew Congregation",
+    "place": "indianapolis",
+    "founded": 1856,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "rodef-shalom-pgh",
+    "name": "Rodef Shalom",
+    "translation": "Pursuer of Peace",
+    "place": "pittsburgh",
+    "founded": 1856,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "Successor to Shaaray Shamayim (c. 1847).",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "brith-sholom-eas",
+    "name": "Brith Sholom",
+    "translation": "Covenant of Peace",
+    "place": "easton",
+    "founded": 1839,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "ohabei-shalom-bos",
+    "name": "Ohabei Shalom",
+    "translation": "Lovers of Peace",
+    "place": "boston",
+    "founded": 1842,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "First congregation in Boston.",
+    "sources": [
+      "sarna-2004",
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "mishkan-israel-nhv",
+    "name": "Mishkan Israel",
+    "translation": "Tabernacle of Israel",
+    "place": "new-haven",
+    "founded": 1840,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "First congregation in Connecticut.",
+    "sources": [
+      "marcus-1991",
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "beth-israel-hfd",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "hartford",
+    "founded": 1843,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991",
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "beth-el-alb",
+    "name": "Beth El",
+    "translation": "House of God",
+    "place": "albany",
+    "founded": 1838,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "Isaac Mayer Wise's first American pulpit (1846–1850).",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "anshe-emeth-alb",
+    "name": "Anshe Emeth",
+    "translation": "People of Truth",
+    "place": "albany",
+    "founded": 1850,
+    "certainty": "high",
+    "rite": "reform",
+    "orientation": "reform",
+    "splitFrom": "beth-el-alb",
+    "note": "Formed by Wise's supporters after his dismissal from Beth El in 1850.",
+    "sources": [
+      "sarna-2004"
+    ]
+  },
+  {
+    "id": "society-concord-syr",
+    "name": "Society of Concord (Keneseth Shalom)",
+    "place": "syracuse",
+    "founded": 1839,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "brith-kodesh-roc",
+    "name": "B'rith Kodesh",
+    "translation": "Holy Covenant",
+    "place": "rochester",
+    "founded": 1848,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "beth-el-buf",
+    "name": "Beth El",
+    "translation": "House of God",
+    "place": "buffalo",
+    "founded": 1847,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "shangarai-chasset-nol",
+    "name": "Shangarai Chasset",
+    "translation": "Gates of Mercy",
+    "place": "new-orleans",
+    "founded": 1828,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "moderate",
+    "note": "First congregation in New Orleans; later merged with Nefutzot Yehudah to form Touro Synagogue (1881).",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "nefutzot-yehudah-nol",
+    "name": "Nefutzot Yehudah",
+    "translation": "Dispersed of Judah",
+    "place": "new-orleans",
+    "founded": 1846,
+    "certainty": "high",
+    "rite": "sephardic",
+    "orientation": "traditional",
+    "note": "Portuguese-rite congregation; Judah Touro bought and refitted a church for its use.",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "shaarai-shomayim-mob",
+    "name": "Shaarai Shomayim",
+    "translation": "Gates of Heaven",
+    "place": "mobile",
+    "founded": 1844,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "kahl-montgomery",
+    "name": "Kahl Montgomery (Temple Beth Or)",
+    "place": "montgomery",
+    "founded": 1852,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "bnai-israel-ntz",
+    "name": "B'nai Israel",
+    "translation": "Children of Israel",
+    "place": "natchez",
+    "founded": 1843,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "children-of-israel-mem",
+    "name": "B'nai Israel (Children of Israel)",
+    "place": "memphis",
+    "founded": 1853,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "adath-israel-lou",
+    "name": "Adath Israel",
+    "translation": "Community of Israel",
+    "place": "louisville",
+    "founded": 1842,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "sources": [
+      "isjl-encyclopedia",
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "beth-israel-hou",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "houston",
+    "founded": 1859,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "Grew out of the Hebrew Benevolent Association (1855); first congregation in Texas.",
+    "sources": [
+      "isjl-encyclopedia"
+    ]
+  },
+  {
+    "id": "emanu-el-sf",
+    "name": "Emanu-El",
+    "translation": "God is with us",
+    "place": "san-francisco",
+    "founded": 1850,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "Largely Bavarian and German membership; Levi Strauss was an early member.",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "sherith-israel-sf",
+    "name": "Sherith Israel",
+    "translation": "Remnant of Israel",
+    "place": "san-francisco",
+    "founded": 1851,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "note": "Largely Polish and English membership.",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "bnai-israel-sac",
+    "name": "B'nai Israel",
+    "translation": "Children of Israel",
+    "place": "sacramento",
+    "founded": 1852,
+    "certainty": "medium",
+    "rite": "ashkenazic",
+    "orientation": "traditional",
+    "sources": [
+      "kahn-2002"
+    ]
+  },
+  {
+    "id": "beth-israel-pdx",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "portland-or",
+    "founded": 1858,
+    "certainty": "high",
+    "rite": "ashkenazic",
+    "orientation": "reform",
+    "note": "First congregation in Oregon.",
+    "sources": [
+      "marcus-1991"
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-congregation-atl",
+    "name": "Hebrew Benevolent Congregation",
+    "place": "atlanta",
+    "founded": 1866,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return gives the founding year, a rented hall, and minister B. A. Bonnheim. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "shaari-chased-btr",
+    "name": "Shaari Chased",
+    "translation": "Gates of Kindness",
+    "place": "baton-rouge",
+    "founded": 1857,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "In 1872 the congregation had a building lot but no synagogue or minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "hebrew-benevolent-association-cha",
+    "name": "Hebrew Benevolent Association",
+    "place": "chattanooga",
+    "founded": 1870,
+    "certainty": "low",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return says it was organized 'two years ago'; the founding year is derived from that statement. It had a burial ground and a Sunday school but no synagogue. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "bnai-sholom-chi",
+    "name": "Kehilath Bnai Sholom Ubikur Cholim",
+    "translation": "Children of Peace and Visiting the Sick",
+    "place": "chicago",
+    "founded": 1855,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 return dates the organization to 5 April 1855. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "bnai-yeshurun-day",
+    "name": "Bnai Yeshurun",
+    "translation": "Children of Jeshurun",
+    "place": "dayton",
+    "founded": 1851,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 return gives 1851 as the year of organization. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "achduth-veshalom-fw",
+    "name": "Achduth Veshalom",
+    "translation": "Union and Peace",
+    "place": "fort-wayne",
+    "founded": 1848,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 return dates the organization to October 1848. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "ahavas-achim-laf",
+    "name": "Ahavas Achim",
+    "translation": "Brotherly Love",
+    "place": "lafayette-in",
+    "founded": 1847,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return dates the organization to 1847. The congregation withdrew from the Board in May 1874. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "bnai-zion-dan",
+    "name": "Bnai Zion",
+    "translation": "Children of Zion",
+    "place": "danville-pa",
+    "founded": 1853,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return dates the organization to 18 September 1853. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "donaldsonville-hebrew",
+    "name": "Hebrew congregation of Donaldsonville",
+    "place": "donaldsonville",
+    "founded": 1869,
+    "certainty": "low",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return says the congregation was reorganized in 1869; an earlier founding is implied but not dated. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "ohev-sholom-har",
+    "name": "Ohev Sholom",
+    "translation": "Lovers of Peace",
+    "place": "harrisburg",
+    "founded": 1852,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return gives 1852 as the year of organization. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "beth-israel-jac",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "jackson-ms",
+    "founded": 1860,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 return dates the organization to 10 March 1860. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "bnai-zion-lap",
+    "name": "Bnai Zion",
+    "translation": "Children of Zion",
+    "place": "laporte",
+    "founded": 1854,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return dates the organization to May 1854; the president acted as minister without salary. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "beth-el-la",
+    "name": "Beth El (Hebrew Congregation of Los Angeles)",
+    "translation": "House of God",
+    "place": "los-angeles",
+    "founded": 1860,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 return dates the organization to 2 September 1860. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "beth-israel-lou",
+    "name": "Beth Israel",
+    "translation": "House of Israel",
+    "place": "louisville",
+    "founded": 1856,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 return dates the organization to Tishri 5617 (autumn 1856). Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "shaare-shomaim-mad",
+    "name": "Shaare Shomaim",
+    "translation": "Gates of Heaven",
+    "place": "madison-wi",
+    "founded": 1856,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 return dates the organization to October 1856; the congregation could not support a minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
   {
     "id": "sherith-israel-cin-survey",
     "name": "Sherith Israel",
@@ -233,6 +1020,47 @@
     "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. The name is descriptive, not an established formal title.",
     "sources": [
       "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "shaarei-tefillah-nol",
+    "name": "Shaarei Tefillah",
+    "translation": "Gates of Prayer",
+    "place": "new-orleans",
+    "founded": 1849,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule dates the organization to 1 May 1849; minister Rev. Isaac Hechinger. In 1877 the congregation told the Board it had never been a member. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "beth-jacob-nbg",
+    "name": "Beth Jacob",
+    "translation": "House of Jacob",
+    "place": "newburgh",
+    "founded": 1863,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return dates the organization to November 1863; it had no synagogue building and a private Hebrew school. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "norfolk-hebrew-english-literary",
+    "name": "Norfolk Hebrew and English Literary Institute",
+    "place": "norfolk",
+    "founded": 1847,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Reported to the Board as a congregation in 1860 under this name; organized 1847; minister Rev. I. Oppenheim. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder07"
     ]
   }
 ]

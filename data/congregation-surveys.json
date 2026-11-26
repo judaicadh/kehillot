@@ -3893,5 +3893,505 @@
       "income": 3000,
       "jewishFamilies": 105
     }
+  },
+  {
+    "id": "new-orleans-gates-of-prayer-return-1860",
+    "name": "The Gates of Prayers — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "shaarei-tefillah-nol",
+    "nameAsWritten": "The Gates of Prayers",
+    "place": "new-orleans",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder07",
+    "locator": "PDF scan 10",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder07/p010.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "4 / 1 / 5"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "— / — / 5"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "12 / 8 / 20"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": "Rev. Isaac Hechinger"
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "Rev. Isaac Hechinger",
+        "office": "Religious officer",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "deaths": 5,
+      "marriages": 5,
+      "pupils": 20
+    }
+  },
+  {
+    "id": "new-orleans-shaary-tefiloh-schedule-1861",
+    "name": "Shaary Tefiloh — Schedule of Statistics (1860–1861 form), 1861",
+    "congregation": "shaarei-tefillah-nol",
+    "nameAsWritten": "Shaary Tefiloh",
+    "place": "new-orleans",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1861-05",
+    "source": "bdai-box3-folder07",
+    "locator": "PDF scan 16",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder07/p016.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Hebrew Congregation Shaary Tefiloh"
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "May 1st 1849"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Rev. Isaac Hechinger"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "President M. Heidenheim; Vicepr. M. G. Welsch [?]; Rev. I. Hechinger Secretary; H. Ascher Tresurer; Isr. Levy, B. Goldenberg & S. Wolf Trustees"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "54"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": ""
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "Yes"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "20 [pupils], one Instructor, 5 times a week"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "Non"
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "Rev. Isaac Hechinger",
+        "office": "Minister",
+        "certainty": "probable"
+      },
+      {
+        "name": "M. Heidenheim",
+        "office": "President",
+        "certainty": "probable"
+      },
+      {
+        "name": "M. G. Welsch",
+        "office": "Vice president",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "H. Ascher",
+        "office": "Treasurer",
+        "certainty": "probable"
+      },
+      {
+        "name": "Isr. Levy",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "B. Goldenberg",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "S. Wolf",
+        "office": "Trustee",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 54
+    },
+    "note": "Docket (scan 17): 'Shaary Tefila New Orleans May '61'."
+  },
+  {
+    "id": "newburgh-beth-jacob-1872",
+    "name": "Beth Jacob — Schedule of Statistics, 1872",
+    "congregation": "beth-jacob-nbg",
+    "nameAsWritten": "Beth Jacob",
+    "place": "newburgh",
+    "form": "schedule-1872",
+    "formLabel": "Schedule of Statistics, September 5632–1872",
+    "date": "1872-09",
+    "source": "bdai-box3-folder07",
+    "locator": "PDF scan 18",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder07/p018.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "When was the Congregation organized, what is its full name and Post Office Address?",
+        "answer": "November 1863. Beth Jacob, Newburgh N.Y."
+      },
+      {
+        "q": "2",
+        "question": "Has it a Synagogue Building?",
+        "answer": "— — none"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers?",
+        "answer": "A. H. Sinai [?]"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President and Secretary?",
+        "answer": "S. A. Sharps Presd.; Isaac Newcity [?] Secty"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "14"
+      },
+      {
+        "q": "5m",
+        "question": "Males?",
+        "answer": "—"
+      },
+      {
+        "q": "5f",
+        "question": "Females?",
+        "answer": "14"
+      },
+      {
+        "q": "6",
+        "question": "What is the value of the Synagogue property?",
+        "answer": "$2000."
+      },
+      {
+        "q": "7",
+        "question": "What was the income of the Congregation for the last fiscal year?",
+        "answer": "$882.10 [?]"
+      },
+      {
+        "q": "8",
+        "question": "Is there a School connected with the Congregation?",
+        "answer": "Private"
+      },
+      {
+        "q": "9",
+        "question": "In what is instruction given?",
+        "answer": "Hebrew"
+      },
+      {
+        "q": "10p",
+        "question": "Pupils",
+        "answer": "10"
+      },
+      {
+        "q": "10i",
+        "question": "Instructors",
+        "answer": "1"
+      },
+      {
+        "q": "10s",
+        "question": "School Sessions per week",
+        "answer": "daily"
+      },
+      {
+        "q": "11",
+        "question": "What is the average attendance?",
+        "answer": "— —"
+      },
+      {
+        "q": "11s",
+        "question": "Sundays?",
+        "answer": ""
+      },
+      {
+        "q": "11w",
+        "question": "Week days?",
+        "answer": "10"
+      },
+      {
+        "q": "12",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": ""
+      },
+      {
+        "q": "13",
+        "question": "Are there any other Congregations or Societies in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "Bnai Berith & K. S. Barsel: Marcus Sharps Presd. & A. Boll [?] Sec."
+      },
+      {
+        "q": "14",
+        "question": "What is the estimated number of Jewish families in your city?",
+        "answer": "28 [?]"
+      },
+      {
+        "q": "15b",
+        "question": "Births (year ending 1 September 1872)",
+        "answer": ""
+      },
+      {
+        "q": "15m",
+        "question": "Marriages",
+        "answer": ""
+      },
+      {
+        "q": "15d",
+        "question": "Deaths",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "A. H. Sinai",
+        "office": "Minister",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "S. A. Sharps",
+        "office": "President",
+        "certainty": "probable"
+      },
+      {
+        "name": "Isaac Newcity",
+        "office": "Secretary",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "Marcus Sharps",
+        "office": "President, Bnai Berith and K",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. Boll",
+        "office": "Secretary of the same lodges",
+        "certainty": "uncertain"
+      }
+    ],
+    "figures": {
+      "members": 14,
+      "females": 14,
+      "propertyValue": 2000,
+      "pupils": 10,
+      "instructors": 1
+    }
+  },
+  {
+    "id": "norfolk-hebrew-english-literary-return-1860",
+    "name": "N. H. & E. L. I. — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "norfolk-hebrew-english-literary",
+    "nameAsWritten": "N. H. & E. L. I.",
+    "place": "norfolk",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder07",
+    "locator": "PDF scan 20",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder07/p020.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "10 / 4 / 14"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "2 / — / 2"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "2 / — / 2"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "20 / 8 / 28"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": "12 / 5 / 17"
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": ""
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": ""
+      }
+    ],
+    "figures": {
+      "births": 14,
+      "deaths": 2,
+      "marriages": 2,
+      "pupils": 28,
+      "attendance": 17
+    }
+  },
+  {
+    "id": "norfolk-hebrew-english-literary-schedule-1860",
+    "name": "N. H. & E. L. I. — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "norfolk-hebrew-english-literary",
+    "nameAsWritten": "N. H. & E. L. I.",
+    "place": "norfolk",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-12",
+    "source": "bdai-box3-folder07",
+    "locator": "PDF scan 21",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder07/p021.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Norfolk Hebrew & English Litery Institute, Norfolk Va."
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "1847"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Rev. I. Oppenheim"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "M. D. Levy Pres.; L. A. Levyno [?], G. M. Levy, E. Camp [?], I. Myers, A. L. Goldsmith; S. Wiel [?] Sec."
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "40"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "35 [males], 5 [females]"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "yes"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "28 – 1 – 4 [?]"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": ""
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "Rev. I. Oppenheim",
+        "office": "Minister",
+        "certainty": "certain"
+      },
+      {
+        "name": "M. D. Levy",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "L. A. Levyno",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "G. M. Levy",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "E. Camp",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "I. Myers",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. L. Goldsmith",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "S. Wiel",
+        "office": "Secretary",
+        "certainty": "uncertain"
+      }
+    ],
+    "figures": {
+      "members": 40
+    },
+    "note": "Docket (scan 22): 'H. & E. L. Institute Norfolk Va. Dec 1 1860'."
   }
 ]

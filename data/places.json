@@ -417,5 +417,21 @@
     "region": "Midwest",
     "lat": 43.0731,
     "lon": -89.4012
+  },
+  {
+    "id": "norfolk",
+    "name": "Norfolk",
+    "state": "Virginia",
+    "region": "South",
+    "lat": 36.8508,
+    "lon": -76.2859
+  },
+  {
+    "id": "newburgh",
+    "name": "Newburgh",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 41.5034,
+    "lon": -74.0104
   }
 ]
