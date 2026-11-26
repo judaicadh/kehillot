@@ -473,5 +473,325 @@
     "region": "South",
     "lat": 30.2891,
     "lon": -91.2343
+  },
+  {
+    "id": "milwaukee",
+    "name": "Milwaukee",
+    "state": "Wisconsin",
+    "region": "Midwest",
+    "lat": 43.0389,
+    "lon": -87.9065
+  },
+  {
+    "id": "st-paul",
+    "name": "St. Paul",
+    "state": "Minnesota",
+    "region": "Midwest",
+    "lat": 44.9537,
+    "lon": -93.09
+  },
+  {
+    "id": "galveston",
+    "name": "Galveston",
+    "state": "Texas",
+    "region": "South",
+    "lat": 29.3013,
+    "lon": -94.7977
+  },
+  {
+    "id": "denver",
+    "name": "Denver",
+    "state": "Colorado",
+    "region": "West",
+    "lat": 39.7392,
+    "lon": -104.9903
+  },
+  {
+    "id": "omaha",
+    "name": "Omaha",
+    "state": "Nebraska",
+    "region": "Midwest",
+    "lat": 41.2565,
+    "lon": -95.9345
+  },
+  {
+    "id": "kansas-city",
+    "name": "Kansas City",
+    "state": "Missouri",
+    "region": "Midwest",
+    "lat": 39.0997,
+    "lon": -94.5786
+  },
+  {
+    "id": "little-rock",
+    "name": "Little Rock",
+    "state": "Arkansas",
+    "region": "South",
+    "lat": 34.7465,
+    "lon": -92.2896
+  },
+  {
+    "id": "shreveport",
+    "name": "Shreveport",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 32.5252,
+    "lon": -93.7502
+  },
+  {
+    "id": "vicksburg",
+    "name": "Vicksburg",
+    "state": "Mississippi",
+    "region": "South",
+    "lat": 32.3526,
+    "lon": -90.8779
+  },
+  {
+    "id": "wilmington-nc",
+    "name": "Wilmington",
+    "state": "North Carolina",
+    "region": "South",
+    "lat": 34.2257,
+    "lon": -77.9447
+  },
+  {
+    "id": "petersburg-va",
+    "name": "Petersburg",
+    "state": "Virginia",
+    "region": "South",
+    "lat": 37.2279,
+    "lon": -77.4019
+  },
+  {
+    "id": "wheeling",
+    "name": "Wheeling",
+    "state": "West Virginia",
+    "region": "South",
+    "lat": 40.064,
+    "lon": -80.7209
+  },
+  {
+    "id": "evansville",
+    "name": "Evansville",
+    "state": "Indiana",
+    "region": "Midwest",
+    "lat": 37.9716,
+    "lon": -87.5711
+  },
+  {
+    "id": "toledo",
+    "name": "Toledo",
+    "state": "Ohio",
+    "region": "Midwest",
+    "lat": 41.6528,
+    "lon": -83.5379
+  },
+  {
+    "id": "columbus-oh",
+    "name": "Columbus",
+    "state": "Ohio",
+    "region": "Midwest",
+    "lat": 39.9612,
+    "lon": -82.9988
+  },
+  {
+    "id": "peoria",
+    "name": "Peoria",
+    "state": "Illinois",
+    "region": "Midwest",
+    "lat": 40.6936,
+    "lon": -89.589
+  },
+  {
+    "id": "davenport",
+    "name": "Davenport",
+    "state": "Iowa",
+    "region": "Midwest",
+    "lat": 41.5236,
+    "lon": -90.5776
+  },
+  {
+    "id": "keokuk",
+    "name": "Keokuk",
+    "state": "Iowa",
+    "region": "Midwest",
+    "lat": 40.3973,
+    "lon": -91.3849
+  },
+  {
+    "id": "des-moines",
+    "name": "Des Moines",
+    "state": "Iowa",
+    "region": "Midwest",
+    "lat": 41.5868,
+    "lon": -93.625
+  },
+  {
+    "id": "wilkes-barre",
+    "name": "Wilkes-Barre",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 41.2459,
+    "lon": -75.8813
+  },
+  {
+    "id": "scranton",
+    "name": "Scranton",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 41.409,
+    "lon": -75.6624
+  },
+  {
+    "id": "titusville",
+    "name": "Titusville",
+    "state": "Pennsylvania",
+    "region": "Northeast",
+    "lat": 41.627,
+    "lon": -79.6739
+  },
+  {
+    "id": "elmira",
+    "name": "Elmira",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 42.0898,
+    "lon": -76.8077
+  },
+  {
+    "id": "troy",
+    "name": "Troy",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 42.7284,
+    "lon": -73.6918
+  },
+  {
+    "id": "newark-nj",
+    "name": "Newark",
+    "state": "New Jersey",
+    "region": "Northeast",
+    "lat": 40.7357,
+    "lon": -74.1724
+  },
+  {
+    "id": "hoboken",
+    "name": "Hoboken",
+    "state": "New Jersey",
+    "region": "Northeast",
+    "lat": 40.744,
+    "lon": -74.0324
+  },
+  {
+    "id": "macon",
+    "name": "Macon",
+    "state": "Georgia",
+    "region": "South",
+    "lat": 32.8407,
+    "lon": -83.6324
+  },
+  {
+    "id": "columbus-ga",
+    "name": "Columbus",
+    "state": "Georgia",
+    "region": "South",
+    "lat": 32.461,
+    "lon": -84.9877
+  },
+  {
+    "id": "selma",
+    "name": "Selma",
+    "state": "Alabama",
+    "region": "South",
+    "lat": 32.4074,
+    "lon": -87.0211
+  },
+  {
+    "id": "nashville",
+    "name": "Nashville",
+    "state": "Tennessee",
+    "region": "South",
+    "lat": 36.1627,
+    "lon": -86.7816
+  },
+  {
+    "id": "knoxville",
+    "name": "Knoxville",
+    "state": "Tennessee",
+    "region": "South",
+    "lat": 35.9606,
+    "lon": -83.9207
+  },
+  {
+    "id": "kalamazoo",
+    "name": "Kalamazoo",
+    "state": "Michigan",
+    "region": "Midwest",
+    "lat": 42.2917,
+    "lon": -85.5872
+  },
+  {
+    "id": "grand-rapids",
+    "name": "Grand Rapids",
+    "state": "Michigan",
+    "region": "Midwest",
+    "lat": 42.9634,
+    "lon": -85.6681
+  },
+  {
+    "id": "san-jose",
+    "name": "San Jose",
+    "state": "California",
+    "region": "West",
+    "lat": 37.3382,
+    "lon": -121.8863
+  },
+  {
+    "id": "oakland",
+    "name": "Oakland",
+    "state": "California",
+    "region": "West",
+    "lat": 37.8044,
+    "lon": -122.2712
+  },
+  {
+    "id": "salt-lake-city",
+    "name": "Salt Lake City",
+    "state": "Utah",
+    "region": "West",
+    "lat": 40.7608,
+    "lon": -111.891
+  },
+  {
+    "id": "st-joseph-mo",
+    "name": "St. Joseph",
+    "state": "Missouri",
+    "region": "Midwest",
+    "lat": 39.7675,
+    "lon": -94.8467
+  },
+  {
+    "id": "springfield-il",
+    "name": "Springfield",
+    "state": "Illinois",
+    "region": "Midwest",
+    "lat": 39.7817,
+    "lon": -89.6501
+  },
+  {
+    "id": "alexandria-la",
+    "name": "Alexandria",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 31.3113,
+    "lon": -92.4451
+  },
+  {
+    "id": "meridian",
+    "name": "Meridian",
+    "state": "Mississippi",
+    "region": "South",
+    "lat": 32.3643,
+    "lon": -88.7037
   }
 ]

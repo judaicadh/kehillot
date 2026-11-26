@@ -250,7 +250,7 @@ for (const [key, fields] of Object.entries(claimEvidence)) {
     for (const e of entries) if (!record.sources?.includes(e.source) || !index.source.has(e.source) || !e.locator?.trim()) errors.push(`Evidence: source and precise locator required for ${key}/${field}`);
   }
 }
-const SURVEY_FORMS = new Set(['schedule-1872', 'schedule-1860', 'return-1860', 'letter']);
+const SURVEY_FORMS = new Set(['schedule-1872', 'schedule-1860', 'return-1860', 'letter', 'statistics-1880']);
 { const seen = new Set();
   for (const sv of surveys) {
     const at = `congregation-surveys/${sv.id}`;
@@ -813,7 +813,7 @@ const citationText = (s) => `${s.author ? `${esc(s.author)}, ` : ''}<cite>${esc(
 
 // ───────────────────────── Board of Delegates survey returns ─────────────────────────
 const SURVEY_FIGS = [['members', 'Members'], ['males', 'Males'], ['females', 'Females'], ['propertyValue', 'Property ($)'], ['income', 'Income ($)'], ['pupils', 'Pupils'],
-  ['instructors', 'Instructors'], ['sessionsPerWeek', 'Sessions/week'], ['attendance', 'Attendance'], ['jewishFamilies', 'Jewish families'], ['births', 'Births'], ['marriages', 'Marriages'], ['deaths', 'Deaths']];
+  ['instructors', 'Instructors'], ['sessionsPerWeek', 'Sessions/week'], ['attendance', 'Attendance'], ['jewishFamilies', 'Jewish families'], ['births', 'Births'], ['marriages', 'Marriages'], ['deaths', 'Deaths'], ['otherPropertyValue', 'Other property ($)'], ['jewishPopulation', 'Est. Jewish population']];
 const surveysByCong = new Map(), surveysByPlace = new Map();
 for (const sv of surveys) {
   if (sv.congregation) (surveysByCong.get(sv.congregation) || surveysByCong.set(sv.congregation, []).get(sv.congregation)).push(sv);
