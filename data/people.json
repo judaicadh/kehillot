@@ -42,7 +42,8 @@
     ],
     "sources": [
       "sussman-1995",
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box2-folder05"
     ]
   },
   {
@@ -352,7 +353,8 @@
       "new-york"
     ],
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box3-folder04"
     ]
   },
   {
@@ -411,7 +413,9 @@
     ],
     "sources": [
       "sarna-2004",
-      "korn-1951"
+      "korn-1951",
+      "bdai-box2-folder17",
+      "bdai-box3-folder04"
     ]
   },
   {
@@ -845,7 +849,13 @@
       "sarna-2004",
       "bdai-box2-folder13",
       "bdai-box2-folder14",
-      "bdai-box2-folder15"
+      "bdai-box2-folder15",
+      "bdai-box3-folder02",
+      "bdai-box3-folder03",
+      "bdai-box3-folder04",
+      "bdai-box2-folder04",
+      "bdai-box2-folder05",
+      "bdai-box2-folder17"
     ]
   },
   {
@@ -871,7 +881,9 @@
     "sources": [
       "korn-1951",
       "bdai-box2-folder13",
-      "bdai-box2-folder14"
+      "bdai-box2-folder14",
+      "bdai-box3-folder03",
+      "bdai-box2-folder04"
     ]
   },
   {

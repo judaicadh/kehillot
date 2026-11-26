@@ -469,5 +469,43 @@
       "bdai-box2-folder14",
       "bdai-box2-folder15"
     ]
+  },
+  {
+    "id": "grant-order-11-revoked-1863",
+    "name": "Revocation of General Grant's Order No. 11 reported to the Board of Delegates",
+    "date": "1863-01-06",
+    "place": "washington",
+    "category": "civil-war",
+    "certainty": "high",
+    "description": "Adolphus S. Solomons telegraphed Henry I. Hart, president of the Board of Delegates, that General-in-Chief Halleck had revoked Grant's General Order No. 11 expelling Jews from the Department of the Tennessee. On 16 January the Assistant Secretary of War acknowledged the Executive Committee's protest, and John Hay acknowledged its resolutions for the President.",
+    "sources": [
+      "bdai-box3-folder02",
+      "bdai-box3-folder03",
+      "bdai-box2-folder15"
+    ]
+  },
+  {
+    "id": "fischel-meets-lincoln-1861",
+    "name": "Arnold Fischel meets President Lincoln on Jewish chaplains",
+    "date": "1861-12-11",
+    "place": "washington",
+    "category": "civil-war",
+    "certainty": "high",
+    "description": "Rev. Dr. Arnold Fischel, sent by the Board of Delegates, met President Lincoln to ask for repeal of the law limiting army chaplaincies to Christian ministers. Lincoln wrote on 14 December that he would propose a new law; Congress changed the requirement in 1862.",
+    "sources": [
+      "bdai-box2-folder05"
+    ]
+  },
+  {
+    "id": "wilkomir-fire-appeal-1877",
+    "name": "Kovno appeal for the Jews of Wilkomir reaches the Board",
+    "date": "1877-11-17",
+    "place": "new-york",
+    "category": "philanthropyEvent",
+    "certainty": "medium",
+    "description": "A printed appeal from Kovno signed by Rabbi Isaac Elhanan Spektor and others asked American Jews to help the community of Wilkomir after a fire destroyed hundreds of houses and twelve synagogues.",
+    "sources": [
+      "bdai-box3-folder02"
+    ]
   }
 ]
