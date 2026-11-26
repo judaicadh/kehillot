@@ -433,5 +433,13 @@
     "region": "Northeast",
     "lat": 41.5034,
     "lon": -74.0104
+  },
+  {
+    "id": "brooklyn",
+    "name": "Brooklyn",
+    "state": "New York",
+    "region": "Northeast",
+    "lat": 40.6782,
+    "lon": -73.9442
   }
 ]

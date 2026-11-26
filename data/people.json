@@ -5988,5 +5988,2611 @@
     "surveyIds": [
       "norfolk-hebrew-english-literary-schedule-1860"
     ]
+  },
+  {
+    "id": "rev-max-moll-new-york-survey",
+    "name": "Rev. Max Moll",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "adereth-el-ny",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "new-york-adereth-el-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "Rev. Max Moll",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-adereth-el-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "m-leon-new-york-survey",
+    "name": "M. Leon",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "adereth-el-ny",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "new-york-adereth-el-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "M. Leon",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-adereth-el-1872"
+    ]
+  },
+  {
+    "id": "julius-cohn-new-york-survey",
+    "name": "Julius Cohn",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "adereth-el-ny",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "new-york-adereth-el-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "Julius Cohn",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-adereth-el-1872"
+    ]
+  },
+  {
+    "id": "jacob-tebrich-new-york-survey",
+    "name": "Jacob Tebrich",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Minister",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Jacob Tebrich",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "jg-hirn-new-york-survey",
+    "name": "Jg. Hirn",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Jg. Hirn",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "abr-sunsheimer-new-york-survey",
+    "name": "Abr. Sunsheimer",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Abr. Sunsheimer",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "abr-simon-new-york-survey",
+    "name": "Abr. Simon",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Abr. Simon",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "av-schwarzkopf-new-york-survey",
+    "name": "Av. Schwarzkopf",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Av. Schwarzkopf",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "js-block-new-york-survey",
+    "name": "Js. Block",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Cashier",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Js. Block",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "laz-loebl-new-york-survey",
+    "name": "Laz. Loebl",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "First secretary",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Laz. Loebl",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "sol-klapper-new-york-survey",
+    "name": "Sol. Klapper",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavath-chesed-ny",
+        "role": "Second secretary",
+        "documented": "1860-09-01",
+        "survey": "new-york-ahavath-chesed-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Sol. Klapper",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-schedule-1860"
+    ]
+  },
+  {
+    "id": "israel-warinitz-new-york-survey",
+    "name": "Israel Warinitz",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Chazan",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Israel Warinitz",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "jacob-lenir-new-york-survey",
+    "name": "Jacob Lenir",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Jacob Lenir",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860"
+    ]
+  },
+  {
+    "id": "michael-wolfe-new-york-survey",
+    "name": "Michael Wolfe",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Michael Wolfe",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-el-ny",
+        "role": "Vice president",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Michael Wolfe",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860",
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "joseph-wolf-new-york-survey",
+    "name": "Joseph Wolf",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Joseph Wolf",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Joseph Wolf",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860",
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "david-kempner-new-york-survey",
+    "name": "David Kempner",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "David Kempner",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860"
+    ]
+  },
+  {
+    "id": "fabian-harris-new-york-survey",
+    "name": "Fabian Harris",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Fabian Harris",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Fabian Harris",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860",
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "wolf-schenck-new-york-survey",
+    "name": "Wolf Schenck",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Wolf Schenck",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860"
+    ]
+  },
+  {
+    "id": "jacob-harris-new-york-survey",
+    "name": "Jacob Harris",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Jacob Harris",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Jacob Harris",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860",
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "b-r-levy-new-york-survey",
+    "name": "B. R. Levy",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "new-york-beth-el-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "B. R. Levy",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-el-ny",
+        "role": "Secretary",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "B. R. Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-return-1860",
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "chazan-abraham-lasker-new-york-survey",
+    "name": "Chazan Abraham Lasker",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Minister",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Chazan Abraham Lasker",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-schedule-1861"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "jacob-lewis-new-york-survey",
+    "name": "Jacob Lewis",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "President",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Jacob Lewis",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "rakeman-new-york-survey",
+    "name": "Rakeman",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Rakeman",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "joseph-levy-new-york-survey",
+    "name": "Joseph Levy",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-el-ny",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "new-york-beth-el-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 23",
+        "nameAsWritten": "Joseph Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-el-schedule-1861"
+    ]
+  },
+  {
+    "id": "n-gotthold-brooklyn-survey",
+    "name": "N. Gotthold",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Reader",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "N. Gotthold",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Reader and teacher",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "N. Gotthold",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "adolph-baker-brooklyn-survey",
+    "name": "Adolph Baker",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "Adolph Baker",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "President",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Adolph Baker",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "g-weinberg-brooklyn-survey",
+    "name": "G. Weinberg",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "G. Weinberg",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860"
+    ]
+  },
+  {
+    "id": "s-kaufmann-brooklyn-survey",
+    "name": "S. Kaufmann",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "S. Kaufmann",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Secretary",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "S. Kaufmann",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "h-bernheim-brooklyn-survey",
+    "name": "H. Bernheim",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "H. Bernheim",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "H. Bernheim",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "j-eisemann-brooklyn-survey",
+    "name": "J. Eisemann",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "J. Eisemann",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "J. Eisemann",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "moses-may-brooklyn-survey",
+    "name": "Moses May",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "Moses May",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Moses May",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "lippman-lill-brooklyn-survey",
+    "name": "Lippman Lill",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "Lippman Lill",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860"
+    ]
+  },
+  {
+    "id": "maurice-adler-brooklyn-survey",
+    "name": "Maurice Adler",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "brooklyn-beth-elohim-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "Maurice Adler",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Maurice Adler",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-return-1860",
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "gabriel-weinberg-brooklyn-survey",
+    "name": "Gabriel Weinberg",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Vice president",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Gabriel Weinberg",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "cornelius-rose-brooklyn-survey",
+    "name": "Cornelius Rose",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Treasurer",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Cornelius Rose",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "lippmann-lill-brooklyn-survey",
+    "name": "Lippmann Lill",
+    "occupation": [],
+    "places": [
+      "brooklyn"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-bkn",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "brooklyn-beth-elohim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 26",
+        "nameAsWritten": "Lippmann Lill",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-schedule-1861"
+    ]
+  },
+  {
+    "id": "jacob-kantrowitz-new-york-survey",
+    "name": "Jacob Kantrowitz",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Reverend",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "Jacob Kantrowitz",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "ellis-joseph-new-york-survey",
+    "name": "Ellis Joseph",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "President",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "Ellis Joseph",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "h-harris-new-york-survey",
+    "name": "H. Harris",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Vice president",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "H. Harris",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "meyer-cohen-new-york-survey",
+    "name": "Meyer Cohen",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "Meyer Cohen",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "s-kreuter-new-york-survey",
+    "name": "S. Kreuter",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "S. Kreuter",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "isaac-levy-new-york-survey",
+    "name": "Isaac Levy",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "Isaac Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "m-brooks-new-york-survey",
+    "name": "M. Brooks",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "M. Brooks",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "isaac-salomon-new-york-survey",
+    "name": "Isaac Salomon",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "Isaac Salomon",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "m-hertz-new-york-survey",
+    "name": "M. Hertz",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "M. Hertz",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "h-israel-new-york-survey",
+    "name": "H. Israel",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "H. Israel",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "s-warsaver-new-york-survey",
+    "name": "S. Warsaver",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-bikur-cholim-ny",
+        "role": "Secretary",
+        "documented": "1861-01",
+        "survey": "new-york-beth-israel-bikur-cholim-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 31",
+        "nameAsWritten": "S. Warsaver",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-beth-israel-bikur-cholim-schedule-1861"
+    ]
+  },
+  {
+    "id": "g-schwarzbaum-new-york-survey",
+    "name": "G. Schwarzbaum",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "G. Schwarzbaum",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "h-berlin-new-york-survey",
+    "name": "H. Berlin",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "H. Berlin",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "j-stiebel-new-york-survey",
+    "name": "J. Stiebel",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "Cashier",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "J. Stiebel",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "g-bernhard-new-york-survey",
+    "name": "G. Bernhard",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "G. Bernhard",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "a-mendelsohn-new-york-survey",
+    "name": "A. Mendelsohn",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "A. Mendelsohn",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "h-goodman-new-york-survey",
+    "name": "H. Goodman",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bikur-cholim-ukadisha-ny",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "new-york-bikur-cholim-ukadisha-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 43",
+        "nameAsWritten": "H. Goodman",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bikur-cholim-ukadisha-schedule-1860"
+    ]
+  },
+  {
+    "id": "revd-m-r-de-leeuw-new-york-survey",
+    "name": "Revd M. R. de Leeuw",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Minister",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "Revd M. R. de Leeuw",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "l-berhard-new-york-survey",
+    "name": "L. Berhard",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "President",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "L. Berhard",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "j-lansberg-new-york-survey",
+    "name": "J. Lansberg",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "J. Lansberg",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "m-s-cohen-new-york-survey",
+    "name": "M. S. Cohen",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "M. S. Cohen",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "morris-j-leon-new-york-survey",
+    "name": "Morris J. Leon",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "Morris J. Leon",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "isaac-wertheim-new-york-survey",
+    "name": "Isaac Wertheim",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Trustee",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "Isaac Wertheim",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "m-j-friedlander-new-york-survey",
+    "name": "M. J. Friedlander",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-israel-ny",
+        "role": "Secretary",
+        "documented": "1861-01",
+        "survey": "new-york-bnai-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 45",
+        "nameAsWritten": "M. J. Friedlander",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-bnai-israel-schedule-1861"
+    ]
+  },
+  {
+    "id": "revd-samuel-m-isaacs-new-york-survey",
+    "name": "Revd Samuel M. Isaacs",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Minister",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "Revd Samuel M. Isaacs",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "george-godfrey-new-york-survey",
+    "name": "George Godfrey",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "President",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "George Godfrey",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ]
+  },
+  {
+    "id": "samuel-wolff-new-york-survey",
+    "name": "Samuel Wolff",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Treasurer",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "Samuel Wolff",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ]
+  },
+  {
+    "id": "edward-joseph-new-york-survey",
+    "name": "Edward Joseph",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "Edward Joseph",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ]
+  },
+  {
+    "id": "louis-levy-new-york-survey",
+    "name": "Louis Levy",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "Louis Levy",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ]
+  },
+  {
+    "id": "maurice-werner-new-york-survey",
+    "name": "Maurice Werner",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaaray-tefila-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaaray-tefila-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 110",
+        "nameAsWritten": "Maurice Werner",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefila-schedule-1860"
+    ]
+  },
+  {
+    "id": "revd-simon-seelig-new-york-survey",
+    "name": "Revd Simon Seelig",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Minister",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "Revd Simon Seelig",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "s-samelson-new-york-survey",
+    "name": "S. Samelson",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Named with the minister",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "S. Samelson",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "s-d-mola-new-york-survey",
+    "name": "S. D. Mola",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "President",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "S. D. Mola",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "l-densler-new-york-survey",
+    "name": "L. Densler",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Vice president",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "L. Densler",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "e-japha-new-york-survey",
+    "name": "E. Japha",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Treasurer",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "E. Japha",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "chas-cohen-new-york-survey",
+    "name": "Chas. Cohen",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "Chas. Cohen",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "l-lithauer-new-york-survey",
+    "name": "L. Lithauer",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "L. Lithauer",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "d-woolf-new-york-survey",
+    "name": "D. Woolf",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "D. Woolf",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "g-lutz-new-york-survey",
+    "name": "G. Lutz",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Secretary",
+        "documented": "1860-12",
+        "survey": "new-york-shaari-zedek-schedule-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 119",
+        "nameAsWritten": "G. Lutz",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-schedule-1860"
+    ]
+  },
+  {
+    "id": "rev-h-janowsky-new-york-survey",
+    "name": "Rev. H. Janowsky",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "new-york-shaari-zedek-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 123",
+        "nameAsWritten": "Rev. H. Janowsky",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "s-hatski-new-york-survey",
+    "name": "S. Hatski",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "new-york-shaari-zedek-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 123",
+        "nameAsWritten": "S. Hatski",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-1872"
+    ]
+  },
+  {
+    "id": "soln-laty-new-york-survey",
+    "name": "Soln. Laty",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-zedek-ny",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "new-york-shaari-zedek-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 123",
+        "nameAsWritten": "Soln. Laty",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shaari-zedek-1872"
+    ]
+  },
+  {
+    "id": "revd-j-j-lyons-new-york-survey",
+    "name": "Revd J. J. Lyons",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Hazan",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Revd J. J. Lyons",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "revd-dr-a-fischell-new-york-survey",
+    "name": "Revd Dr. A. Fischell",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Lecturer",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Revd Dr. A. Fischell",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "i-l-seixas-new-york-survey",
+    "name": "I. L. Seixas",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "President (parnas)",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "I. L. Seixas",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "asher-kursheedt-new-york-survey",
+    "name": "Asher Kursheedt",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Gabbai and treasurer",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Asher Kursheedt",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "mortimer-hendricks-new-york-survey",
+    "name": "Mortimer Hendricks",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Mortimer Hendricks",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "joseph-seixas-new-york-survey",
+    "name": "Joseph Seixas",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Joseph Seixas",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "solomon-i-joseph-new-york-survey",
+    "name": "Solomon I. Joseph",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Solomon I. Joseph",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "jonas-n-phillips-new-york-survey",
+    "name": "Jonas N. Phillips",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "new-york-shearith-israel-return-1860",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 125",
+        "nameAsWritten": "Jonas N. Phillips",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-return-1860"
+    ]
+  },
+  {
+    "id": "rev-j-j-lyons-new-york-survey",
+    "name": "Rev. J. J. Lyons",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "new-york-shearith-israel-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 130",
+        "nameAsWritten": "Rev. J. J. Lyons",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "i-s-abecasis-new-york-survey",
+    "name": "I. S. Abecasis",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "new-york-shearith-israel-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 130",
+        "nameAsWritten": "I. S. Abecasis",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-1872"
+    ]
+  },
+  {
+    "id": "isaac-phillips-new-york-survey",
+    "name": "Isaac Phillips",
+    "occupation": [],
+    "places": [
+      "new-york"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearith-israel-ny",
+        "role": "Clerk",
+        "documented": "1872-09",
+        "survey": "new-york-shearith-israel-1872",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 130",
+        "nameAsWritten": "Isaac Phillips",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearith-israel-ny",
+        "role": "Clerk",
+        "documented": "1861-01",
+        "survey": "new-york-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder08",
+        "locator": "PDF scan 126",
+        "nameAsWritten": "Isaac Phillips",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder08"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-1872",
+      "new-york-shearith-israel-schedule-1861"
+    ]
   }
 ]

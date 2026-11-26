@@ -10,7 +10,8 @@
     "orientation": "traditional",
     "note": "The oldest Jewish congregation in North America; the only synagogue in New York until 1825.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -26,7 +27,8 @@
     "note": "First Ashkenazic congregation in New York, formed by members leaving Shearith Israel. Host of the 1840 Damascus protest meeting.",
     "sources": [
       "sarna-2004",
-      "jick-1976"
+      "jick-1976",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -41,7 +43,8 @@
     "splitFrom": "bnai-jeshurun-ny",
     "note": "Formed largely by German, Dutch and Polish members of B'nai Jeshurun.",
     "sources": [
-      "jick-1976"
+      "jick-1976",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -54,7 +57,8 @@
     "rite": "ashkenazic",
     "orientation": "reform",
     "sources": [
-      "jick-1976"
+      "jick-1976",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -69,7 +73,8 @@
     "note": "Founded as a Cultus-Verein by German immigrants; became the flagship of Reform in New York.",
     "sources": [
       "sarna-2004",
-      "jick-1976"
+      "jick-1976",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -84,7 +89,8 @@
     "splitFrom": "bnai-jeshurun-ny",
     "note": "Organized around Samuel Myer Isaacs, who led it for three decades.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box3-folder08"
     ]
   },
   {
@@ -1061,6 +1067,118 @@
     "note": "Reported to the Board as a congregation in 1860 under this name; organized 1847; minister Rev. I. Oppenheim. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
     "sources": [
       "bdai-box3-folder07"
+    ]
+  },
+  {
+    "id": "adereth-el-ny",
+    "name": "Adereth El",
+    "translation": "Glory of God",
+    "place": "new-york",
+    "founded": 1853,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return gives 1853 as the year of organization; East 29th Street between 3rd and Lexington Avenues; minister Rev. Max Moll. The congregation resigned from the Board in April 1876. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "ahavath-chesed-ny",
+    "name": "Ahavath Chesed",
+    "translation": "Love of Kindness",
+    "place": "new-york",
+    "founded": 1848,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule dates the organization to 17 September 1848; 127 Columbia Street; 110 members. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "beth-el-ny",
+    "name": "Beth El",
+    "translation": "House of God",
+    "place": "new-york",
+    "founded": 1852,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule dates the organization to 8 August 1852; 33rd Street and 8th Avenue; 70 members. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "beth-elohim-bkn",
+    "name": "Beth Elohim",
+    "translation": "House of God",
+    "place": "brooklyn",
+    "founded": 1859,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule gives 1859 as the year of organization, in Brooklyn's Eastern District; reader and teacher N. Gotthold. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "beth-israel-bikur-cholim-ny",
+    "name": "Beth Israel Bikur Cholim",
+    "translation": "House of Israel, Visiting the Sick",
+    "place": "new-york",
+    "founded": 1855,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule dates the organization to March 1855; 56 Chrystie Street; 150 members. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "bikur-cholim-ukadisha-ny",
+    "name": "Bikur Cholim U'Kadisha",
+    "translation": "Visiting the Sick and Burial",
+    "place": "new-york",
+    "founded": 1840,
+    "certainty": "low",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule gives 15 July 1840 as the date of organization; Chrystie Street; 36 members. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "bnai-israel-ny",
+    "name": "B'nai Israel",
+    "translation": "Children of Israel",
+    "place": "new-york",
+    "founded": 1847,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule dates the organization to 5607–1847; corner of Stanton and Forsyth Streets; minister Rev. M. R. de Leeuw. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "shaari-zedek-ny",
+    "name": "Shaari Zedek",
+    "translation": "Gates of Righteousness",
+    "place": "new-york",
+    "founded": 1840,
+    "certainty": "low",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule gives 1840, the 1872 return 1842 / 5603; 38–40 Henry Street. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder08"
     ]
   }
 ]
