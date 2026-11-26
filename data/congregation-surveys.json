@@ -6305,5 +6305,1568 @@
       }
     ],
     "note": "Sent with J. J. Lyons's letter of 29 January 1861 (scan 128)."
+  },
+  {
+    "id": "paterson-bnai-jeshurun-1872",
+    "name": "B'nai Jeshurun — Schedule of Statistics, 1872",
+    "congregation": "bnai-jeshurun-pat",
+    "nameAsWritten": "B'nai Jeshurun",
+    "place": "paterson",
+    "form": "schedule-1872",
+    "formLabel": "Schedule of Statistics, September 5632–1872",
+    "date": "1872-09",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 1",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p001.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "When was the Congregation organized, what is its full name and Post Office Address?",
+        "answer": "April 24. 1853. No. 9 Mulberry St."
+      },
+      {
+        "q": "2",
+        "question": "Has it a Synagogue Building?",
+        "answer": "yes"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers?",
+        "answer": "H. Bergman"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President and Secretary?",
+        "answer": "Nathan Barnert Pres.; Philipp Burgauer Sec."
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "37"
+      },
+      {
+        "q": "5m",
+        "question": "Males?",
+        "answer": "36"
+      },
+      {
+        "q": "5f",
+        "question": "Females?",
+        "answer": ""
+      },
+      {
+        "q": "6",
+        "question": "What is the value of the Synagogue property?",
+        "answer": "$4000"
+      },
+      {
+        "q": "7",
+        "question": "What was the income of the Congregation for the last fiscal year?",
+        "answer": "$400 over expences"
+      },
+      {
+        "q": "8",
+        "question": "Is there a School connected with the Congregation?",
+        "answer": "yes"
+      },
+      {
+        "q": "9",
+        "question": "In what is instruction given?",
+        "answer": "Hebrew & German Literature"
+      },
+      {
+        "q": "10p",
+        "question": "Pupils",
+        "answer": "26"
+      },
+      {
+        "q": "10i",
+        "question": "Instructors",
+        "answer": "1"
+      },
+      {
+        "q": "10s",
+        "question": "School Sessions per week",
+        "answer": "5"
+      },
+      {
+        "q": "11",
+        "question": "What is the average attendance?",
+        "answer": "20"
+      },
+      {
+        "q": "11s",
+        "question": "Sundays?",
+        "answer": ""
+      },
+      {
+        "q": "11w",
+        "question": "Week days?",
+        "answer": "20"
+      },
+      {
+        "q": "12",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "none"
+      },
+      {
+        "q": "13",
+        "question": "Are there any other Congregations or Societies in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "Jephta Lodge No. 143 I.O.B.B.: Philipp Rosenbaum Pres., Alex. Simon Vice Pr., P. Burgauer Pres. [?], E. Levi Sec."
+      },
+      {
+        "q": "14",
+        "question": "What is the estimated number of Jewish families in your city?",
+        "answer": "75"
+      },
+      {
+        "q": "15b",
+        "question": "Births (year ending 1 September 1872)",
+        "answer": "8"
+      },
+      {
+        "q": "15m",
+        "question": "Marriages",
+        "answer": "4"
+      },
+      {
+        "q": "15d",
+        "question": "Deaths",
+        "answer": "5"
+      }
+    ],
+    "officers": [
+      {
+        "name": "H. Bergman",
+        "office": "Minister",
+        "certainty": "probable"
+      },
+      {
+        "name": "Nathan Barnert",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "Philipp Burgauer",
+        "office": "Secretary",
+        "certainty": "probable"
+      },
+      {
+        "name": "Philipp Rosenbaum",
+        "office": "President, Jephta Lodge No",
+        "certainty": "probable"
+      },
+      {
+        "name": "Alex. Simon",
+        "office": "Vice president, Jephta Lodge",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "E. Levi",
+        "office": "Secretary, Jephta Lodge",
+        "certainty": "uncertain"
+      }
+    ],
+    "figures": {
+      "members": 37,
+      "males": 36,
+      "propertyValue": 4000,
+      "pupils": 26,
+      "instructors": 1,
+      "sessionsPerWeek": 5,
+      "attendance": 20,
+      "jewishFamilies": 75,
+      "births": 8,
+      "marriages": 4,
+      "deaths": 5
+    }
+  },
+  {
+    "id": "philadelphia-beth-el-emeth-1872",
+    "name": "Beth El Emeth — Schedule of Statistics, 1872",
+    "congregation": "beth-el-emeth-phl",
+    "nameAsWritten": "Beth El Emeth",
+    "place": "philadelphia",
+    "form": "schedule-1872",
+    "formLabel": "Schedule of Statistics, September 5632–1872",
+    "date": "1872-09",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 9",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p009.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "When was the Congregation organized, what is its full name and Post Office Address?",
+        "answer": "March 22nd 1857, Beth El Emeth, Philadelphia Pa."
+      },
+      {
+        "q": "2",
+        "question": "Has it a Synagogue Building?",
+        "answer": "It has"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers?",
+        "answer": "Revd George Jacobs"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President and Secretary?",
+        "answer": "Morris Rosenbach, President; Isaac Hamberg [?], Secretary"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "120"
+      },
+      {
+        "q": "5m",
+        "question": "Males?",
+        "answer": "80 abt"
+      },
+      {
+        "q": "5f",
+        "question": "Females?",
+        "answer": "40 about"
+      },
+      {
+        "q": "6",
+        "question": "What is the value of the Synagogue property?",
+        "answer": "$20,000"
+      },
+      {
+        "q": "7",
+        "question": "What was the income of the Congregation for the last fiscal year?",
+        "answer": "Five Thousand Dollars"
+      },
+      {
+        "q": "8",
+        "question": "Is there a School connected with the Congregation?",
+        "answer": "It has one in common with other Congregations"
+      },
+      {
+        "q": "9",
+        "question": "In what is instruction given?",
+        "answer": "Hebrew, English & German"
+      },
+      {
+        "q": "10p",
+        "question": "Pupils",
+        "answer": "125"
+      },
+      {
+        "q": "10i",
+        "question": "Instructors",
+        "answer": "6"
+      },
+      {
+        "q": "10s",
+        "question": "School Sessions per week",
+        "answer": "5"
+      },
+      {
+        "q": "11",
+        "question": "What is the average attendance?",
+        "answer": "100"
+      },
+      {
+        "q": "11s",
+        "question": "Sundays?",
+        "answer": "—"
+      },
+      {
+        "q": "11w",
+        "question": "Week days?",
+        "answer": "—"
+      },
+      {
+        "q": "12",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "There are none. All the Charities, Foster Home, Hospital, School &c, are held conjointly with other Congregations"
+      },
+      {
+        "q": "13",
+        "question": "Are there any other Congregations or Societies in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "There are 8 other Congregations of Israelites in Philadelphia"
+      },
+      {
+        "q": "14",
+        "question": "What is the estimated number of Jewish families in your city?",
+        "answer": ""
+      },
+      {
+        "q": "15b",
+        "question": "Births (year ending 1 September 1872)",
+        "answer": "12"
+      },
+      {
+        "q": "15m",
+        "question": "Marriages",
+        "answer": "8"
+      },
+      {
+        "q": "15d",
+        "question": "Deaths",
+        "answer": "14"
+      }
+    ],
+    "officers": [
+      {
+        "name": "Revd George Jacobs",
+        "office": "Minister",
+        "certainty": "certain"
+      },
+      {
+        "name": "Morris Rosenbach",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "Isaac Hamberg",
+        "office": "Secretary",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 120,
+      "females": 40,
+      "propertyValue": 20000,
+      "income": 5000,
+      "pupils": 125,
+      "instructors": 6,
+      "sessionsPerWeek": 5,
+      "attendance": 100,
+      "births": 12,
+      "marriages": 8,
+      "deaths": 14
+    }
+  },
+  {
+    "id": "philadelphia-beth-el-emeth-return-1860",
+    "name": "Beth El Emeth — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "beth-el-emeth-phl",
+    "nameAsWritten": "Beth El Emeth",
+    "place": "philadelphia",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 13",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p013.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "10 / 15 / 25"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "5 / 3 / 8 (but one male & one female adult)"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "8 / — / 8"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "— / — / —"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": "Isaac Leeser"
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": "Alfred T. Jones pres't till Pesach; B. Spatz since Pesach. The latter was Vice President in the first half year, since then H. Van Beil; Treasurer in the first period David Eger, in the second A. Kahn"
+      }
+    ],
+    "officers": [
+      {
+        "name": "Isaac Leeser",
+        "office": "Religious officer",
+        "certainty": "certain"
+      },
+      {
+        "name": "Alfred T. Jones",
+        "office": "President until Pesach 1860",
+        "certainty": "certain"
+      },
+      {
+        "name": "B. Spatz",
+        "office": "President since Pesach 1860",
+        "certainty": "probable"
+      },
+      {
+        "name": "H. Van Beil",
+        "office": "Vice president in the second half year",
+        "certainty": "probable"
+      },
+      {
+        "name": "David Eger",
+        "office": "Treasurer, first period",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. Kahn",
+        "office": "Treasurer, second period",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "births": 25,
+      "marriages": 8
+    }
+  },
+  {
+    "id": "philadelphia-beth-el-emeth-schedule-1860",
+    "name": "Beth El Emeth — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "beth-el-emeth-phl",
+    "nameAsWritten": "Beth El Emeth",
+    "place": "philadelphia",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-12",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 14",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p014.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Beth El Emeth, Franklin St., Philadelphia, Pennsylvania"
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "March 1857, Adar 5617"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Isaac Leeser, his title is Hazan & Preacher"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "Bernard Spatz Prest.; Herman Van Beil, Vice President; Abraham Kahn Treasurer; Theodore J. Hirsch [?] Sec'y; Jacob Aub [?], David Eger, Philip Goldsmith, Henry Neuhaus [?], Mayer Sternberger, Trustees; Philip Homburg [?], Shamas"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "178"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "Males 104, Females 74"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "No"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "None"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "There are no especial societies connected with the congregation, but the members contribute to the various charities existing in the city."
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "The Mikveh Israel (Port.) Pt. A. Hart; the German Rodef Sholem, Pt. S. Adler; the Polish Beth Israel, Pt. B. Abeles [?]; the Bnai Israel (Netherland) late H. De Boer Pt.; Keneseth Israel (Reform) A. Klopfer Pt.; Adath Jeshurun (Ger.) M. Blumenthal, President"
+      }
+    ],
+    "officers": [
+      {
+        "name": "Isaac Leeser",
+        "office": "Hazan and preacher",
+        "certainty": "certain"
+      },
+      {
+        "name": "Bernard Spatz",
+        "office": "President",
+        "certainty": "probable"
+      },
+      {
+        "name": "Herman Van Beil",
+        "office": "Vice president",
+        "certainty": "probable"
+      },
+      {
+        "name": "Abraham Kahn",
+        "office": "Treasurer",
+        "certainty": "probable"
+      },
+      {
+        "name": "Theodore J. Hirsch",
+        "office": "Secretary",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "Jacob Aub",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "David Eger",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Philip Goldsmith",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Henry Neuhaus",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "Mayer Sternberger",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Philip Homburg",
+        "office": "Shamas",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "A. Hart",
+        "office": "President, Mikveh Israel (neighbouring congregation)",
+        "certainty": "probable"
+      },
+      {
+        "name": "S. Adler",
+        "office": "President, Rodef Sholem (neighbouring congregation)",
+        "certainty": "probable"
+      },
+      {
+        "name": "B. Abeles",
+        "office": "President, Beth Israel (neighbouring congregation)",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "H. De Boer",
+        "office": "Late president, Bnai Israel (Netherland) (neighbouring congregation)",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "A. Klopfer",
+        "office": "President, Keneseth Israel (neighbouring congregation)",
+        "certainty": "probable"
+      },
+      {
+        "name": "M. Blumenthal",
+        "office": "President, Adath Jeshurun (neighbouring congregation)",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 178
+    },
+    "note": "Docket (scan 15): 'Beth El Emeth Philadelphia Dec 12'."
+  },
+  {
+    "id": "plaquemine-hebrew-society-return-1860",
+    "name": "of Plaquemine — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "hebrew-society-plaquemine",
+    "nameAsWritten": "of Plaquemine",
+    "place": "plaquemine",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 45",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p045.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "none"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "none"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "none"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "4 / 7 / 11"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": "—"
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": "—"
+      }
+    ],
+    "figures": {
+      "pupils": 11
+    }
+  },
+  {
+    "id": "plaquemine-hebrew-society-schedule-1860",
+    "name": "of Plaquemine, parish Iberville — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "hebrew-society-plaquemine",
+    "nameAsWritten": "of Plaquemine, parish Iberville",
+    "place": "plaquemine",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-12",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 46",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p046.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "To the president of the Hebrew Society of Plaquemine"
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "in 1857"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "—"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "Samuel Kohn president and David Levy Secretaire"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "ten"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "male 15, female 11"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "no"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": ""
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": ""
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "Samuel Kohn",
+        "office": "President",
+        "certainty": "probable"
+      },
+      {
+        "name": "David Levy",
+        "office": "Secretary",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 10
+    },
+    "note": "Docket (scan 47): 'Plaquemine La. Dec 10th 1860'; covering letter of 26 November 1860 (scan 48)."
+  },
+  {
+    "id": "providence-sons-of-israel-return-1860",
+    "name": "Sons of Israel — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "sons-of-israel-pvd",
+    "nameAsWritten": "Sons of Israel",
+    "place": "providence",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 56",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p056.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "Three"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": ""
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": ""
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": ""
+      }
+    ],
+    "figures": {
+      "births": 3
+    }
+  },
+  {
+    "id": "providence-sons-of-israel-schedule-1860",
+    "name": "Sons of Israel — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "sons-of-israel-pvd",
+    "nameAsWritten": "Sons of Israel",
+    "place": "providence",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-11",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 59",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p059.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Congregation Sons of Israel, Providence R.I."
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "May 22nd 1855"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Lazarus Kantorowitz, Hazan & Shochet"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "Joseph Stern President; E. Meyer Vice Pres.; H. Solomon, H. Green & Isaac Fish trustees; A. Stern Secretary"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "Eighteen"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "18 males, no females"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "no"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "none"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": ""
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": ""
+      }
+    ],
+    "officers": [
+      {
+        "name": "Lazarus Kantorowitz",
+        "office": "Hazan and shochet",
+        "certainty": "probable"
+      },
+      {
+        "name": "Joseph Stern",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "E. Meyer",
+        "office": "Vice president",
+        "certainty": "probable"
+      },
+      {
+        "name": "H. Solomon",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "H. Green",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Isaac Fish",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. Stern",
+        "office": "Secretary",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 18,
+      "males": 18
+    },
+    "note": "Docket (scan 60): 'Cong Bnai Israel Providence R.I. Nov 25 1860'. Pencil note: appointed delegates Messrs Jos. Stern, E. Myers."
+  },
+  {
+    "id": "quincy-bnai-avrohom-return-1860",
+    "name": "K.K. Bnai Avrohum — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "bnai-avraham-qcy",
+    "nameAsWritten": "K.K. Bnai Avrohum",
+    "place": "quincy",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-09-01",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 61",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p061.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": ""
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": ""
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": ""
+      }
+    ],
+    "signed": "We cannot answer, no record having been kept, but will endeavor to do so another year. Edwd Jonas, Presdt 'K.K. Bnai Avrohum'"
+  },
+  {
+    "id": "quincy-bnai-avrohom-schedule-1861",
+    "name": "K.K. Bnai Avrohum — Schedule of Statistics (1860–1861 form), 1861",
+    "congregation": "bnai-avraham-qcy",
+    "nameAsWritten": "K.K. Bnai Avrohum",
+    "place": "quincy",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1861-04",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 62",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p062.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Hebrew Congregation 'K.K. Bnai Avrohum', Quincy, Ills."
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "1856"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Revd Solomon Albu, Chazan, Lecturer & Teacher; Mr. Isaac Stein, Shochet, Shamas & Mohel"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "In September last: Mr. S. Marks Presdt; Mr. J. Elson [?] Treasurer; Mr. I. Schwimmer, Warden; Mr. J. Benjamin Secty; Mr. D. Hellman, Mr. Z. Hersh, Mr. M. Jacobs, Trustees, the whole forming the Board of Trustees"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "26"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "All males, all married but 3"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "Yes, but poorly attended"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "It is too irregular to be able to answer"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "There is a Ladies Benevolent Society for Charitable purposes"
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "None nearer than Chicago, or St. Louis"
+      }
+    ],
+    "officers": [
+      {
+        "name": "Revd Solomon Albu",
+        "office": "Chazan, lecturer and teacher",
+        "certainty": "probable"
+      },
+      {
+        "name": "Isaac Stein",
+        "office": "Shochet, shamas and mohel",
+        "certainty": "probable"
+      },
+      {
+        "name": "S. Marks",
+        "office": "President (elected September 1860)",
+        "certainty": "probable"
+      },
+      {
+        "name": "J. Elson",
+        "office": "Treasurer",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "I. Schwimmer",
+        "office": "Warden",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "J. Benjamin",
+        "office": "Secretary",
+        "certainty": "probable"
+      },
+      {
+        "name": "D. Hellman",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Z. Hersh",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "M. Jacobs",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "Edward Jonas",
+        "office": "President",
+        "certainty": "certain"
+      }
+    ],
+    "figures": {
+      "members": 26
+    },
+    "signed": "Edward Jonas, Presdt 'K.K. Bnai Avrohum'",
+    "note": "Docket (scan 63): 'Bnai Avrohum Quincy Ill. April 20 '61'. Footnote: 'We have no Delegate at present elected.'"
+  },
+  {
+    "id": "richmond-beth-ahaba-1872",
+    "name": "Beth Ahaba (House of Love) — Schedule of Statistics, 1872",
+    "congregation": "beth-ahabah-ric",
+    "nameAsWritten": "Beth Ahaba (House of Love)",
+    "place": "richmond",
+    "form": "schedule-1872",
+    "formLabel": "Schedule of Statistics, September 5632–1872",
+    "date": "1872-09",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 66",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p066.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "When was the Congregation organized, what is its full name and Post Office Address?",
+        "answer": "organized in 1843 (name &c: above)"
+      },
+      {
+        "q": "2",
+        "question": "Has it a Synagogue Building?",
+        "answer": "It has"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers?",
+        "answer": "Rev. Dr. A. S. Bettelheim"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President and Secretary?",
+        "answer": "Moses Millhiser, President; Isaac Hutzler, Secretary"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "288"
+      },
+      {
+        "q": "5m",
+        "question": "Males?",
+        "answer": "146"
+      },
+      {
+        "q": "5f",
+        "question": "Females?",
+        "answer": "142"
+      },
+      {
+        "q": "6",
+        "question": "What is the value of the Synagogue property?",
+        "answer": "$15,000"
+      },
+      {
+        "q": "7",
+        "question": "What was the income of the Congregation for the last fiscal year?",
+        "answer": "$4,000"
+      },
+      {
+        "q": "8",
+        "question": "Is there a School connected with the Congregation?",
+        "answer": "There is."
+      },
+      {
+        "q": "9",
+        "question": "In what is instruction given?",
+        "answer": "Religion"
+      },
+      {
+        "q": "10p",
+        "question": "Pupils",
+        "answer": "225"
+      },
+      {
+        "q": "10i",
+        "question": "Instructors",
+        "answer": "25"
+      },
+      {
+        "q": "10s",
+        "question": "School Sessions per week",
+        "answer": "1"
+      },
+      {
+        "q": "11",
+        "question": "What is the average attendance?",
+        "answer": ""
+      },
+      {
+        "q": "11s",
+        "question": "Sundays?",
+        "answer": "200"
+      },
+      {
+        "q": "11w",
+        "question": "Week days?",
+        "answer": "—"
+      },
+      {
+        "q": "12",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "None"
+      },
+      {
+        "q": "13",
+        "question": "Are there any other Congregations or Societies in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "There are (2) two other Congregations in the City, who no doubt have furnished their report"
+      },
+      {
+        "q": "14",
+        "question": "What is the estimated number of Jewish families in your city?",
+        "answer": "Don't know"
+      },
+      {
+        "q": "15b",
+        "question": "Births (year ending 1 September 1872)",
+        "answer": "12"
+      },
+      {
+        "q": "15m",
+        "question": "Marriages",
+        "answer": "5"
+      },
+      {
+        "q": "15d",
+        "question": "Deaths",
+        "answer": "5"
+      }
+    ],
+    "officers": [
+      {
+        "name": "Rev. Dr. A. S. Bettelheim",
+        "office": "Minister",
+        "certainty": "certain"
+      },
+      {
+        "name": "Moses Millhiser",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "Isaac Hutzler",
+        "office": "Secretary",
+        "certainty": "certain"
+      }
+    ],
+    "figures": {
+      "members": 288,
+      "males": 146,
+      "females": 142,
+      "propertyValue": 15000,
+      "income": 4000,
+      "pupils": 225,
+      "instructors": 25,
+      "sessionsPerWeek": 1,
+      "births": 12,
+      "marriages": 5,
+      "deaths": 5
+    },
+    "note": "Sent with Isaac Hutzler's letter of 8 November 1872 (scan 64) asking whether females are counted as members."
+  },
+  {
+    "id": "richmond-beth-shalome-return-1860",
+    "name": "K.K. Beth Shalom — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "beth-shalome-ric",
+    "nameAsWritten": "K.K. Beth Shalom",
+    "place": "richmond",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-08-06",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 74",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p074.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "3 / 6 / 9"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "— / — / none"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "One"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "There being no congregational school, these items cannot be specified otherwise than in 7 & 8 of the schedule on page 2"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": ""
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": "Mr. George Jacobs"
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": "Jacob A. Levy President; Wm. Thalhimer Vice Pt.; Lewis Hyman Treast.; E. J. Levy Sec.; Isaac Schriver, H. J. Calisher, E. Goldsmit, M. Harris & N. Ezekiel, Board of Managers"
+      }
+    ],
+    "figures": {
+      "births": 9,
+      "marriages": 1
+    },
+    "note": "Handwritten return for the year ending 6 August 1860 (5620)."
+  },
+  {
+    "id": "richmond-beth-shalome-schedule-1860",
+    "name": "K.K. Beth Shalom — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "beth-shalome-ric",
+    "nameAsWritten": "K.K. Beth Shalom",
+    "place": "richmond",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-08",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 71",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p071.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "K.K. Beth Shalom, Congregation 'House of Peace', P.O. address Richmond Va."
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "In the year 5551 A.M., 1791 C.E."
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Office of Minister vacant. Mr. George Jacobs officiating pro tem."
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "Jacob A. Levy President; Wm. Thalhimer Vice Presdt.; Lewis Hyman Treasr.; E. J. Levy Secretary; Isaac Schriver, H. J. Calisher, E. Goldsmit, M. Harris & N. Ezekiel, Board of Managers"
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "One Hundred and twenty Eight, of which Fifty two are contributing"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "Members: 67 males, 61 females, 128 total; contributing: 41 males, 11 females, 52 total"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "There is a class formed every Sunday for Hebrew and religious instruction, free of charge and under the supervision of Mr. George Jacobs who organized the same."
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "The number of pupils whose names are enrolled is 12."
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "There is no regular charitable association, but the President is empowered to draw on the Treasurer at any time to relieve distress."
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "The K.K. Beth Ahabah 'House of Love', Wm. Fleishman, President, & the K.K. Keneseth Israel, A. Henry, President"
+      }
+    ],
+    "officers": [
+      {
+        "name": "George Jacobs",
+        "office": "Officiating minister pro tem",
+        "certainty": "certain"
+      },
+      {
+        "name": "Jacob A. Levy",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "Wm. Thalhimer",
+        "office": "Vice president",
+        "certainty": "certain"
+      },
+      {
+        "name": "Lewis Hyman",
+        "office": "Treasurer",
+        "certainty": "certain"
+      },
+      {
+        "name": "E. J. Levy",
+        "office": "Secretary",
+        "certainty": "probable"
+      },
+      {
+        "name": "Isaac Schriver",
+        "office": "Board of managers",
+        "certainty": "probable"
+      },
+      {
+        "name": "H. J. Calisher",
+        "office": "Board of managers",
+        "certainty": "probable"
+      },
+      {
+        "name": "E. Goldsmit",
+        "office": "Board of managers",
+        "certainty": "probable"
+      },
+      {
+        "name": "M. Harris",
+        "office": "Board of managers",
+        "certainty": "probable"
+      },
+      {
+        "name": "N. Ezekiel",
+        "office": "Board of managers",
+        "certainty": "probable"
+      },
+      {
+        "name": "Wm. Fleishman",
+        "office": "President, Beth Ahabah (neighbouring congregation)",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. Henry",
+        "office": "President, Keneseth Israel (neighbouring congregation)",
+        "certainty": "certain"
+      }
+    ],
+    "figures": {
+      "males": 67,
+      "females": 61
+    },
+    "note": "Handwritten schedule on two pages (scans 71–72); docket (scan 73) 'Cong Beth Shalom Richmond Va Aug 1860'. Members 67 males and 61 females (128); contributing 41 males and 11 females (52)."
+  },
+  {
+    "id": "richmond-keneseth-israel-schedule-1860",
+    "name": "Keneseth Israel — Schedule of Statistics (1860–1861 form), 1860",
+    "congregation": "keneseth-israel-ric",
+    "nameAsWritten": "Keneseth Israel",
+    "place": "richmond",
+    "form": "schedule-1860",
+    "formLabel": "Schedule of Statistics (1860–1861 form)",
+    "date": "1860-08",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 85",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p085.jpg",
+    "answers": [
+      {
+        "q": "1",
+        "question": "What is the full name of the Congregation and its Post Office Address?",
+        "answer": "Keneseth Israel, Richmond Va."
+      },
+      {
+        "q": "2",
+        "question": "When was the Congregation Organized?",
+        "answer": "October 5th 5617"
+      },
+      {
+        "q": "3",
+        "question": "What are the names of its Ministers and their titles?",
+        "answer": "Revd M. L. Rosenberg, Chazan, Chochet [shochet]"
+      },
+      {
+        "q": "4",
+        "question": "Who are the President, Trustees and Secretary?",
+        "answer": "A. Henry President; W. Jacobs Vice P.; E. Ellis Tr.; B. Becher, N. A. Cohn, P. Becher Trustees; J. Peyser Secrt."
+      },
+      {
+        "q": "5",
+        "question": "What is the whole number of members?",
+        "answer": "39, thirty nine"
+      },
+      {
+        "q": "6",
+        "question": "How many thereof are males; how many females?",
+        "answer": "38 males, 1 female"
+      },
+      {
+        "q": "7",
+        "question": "Is there a Hebrew school connected with the Congregation?",
+        "answer": "is one"
+      },
+      {
+        "q": "8",
+        "question": "How many Pupils, Instructors, and School Sessions per week?",
+        "answer": "12 [pupils], one [instructor], 12 [?] sessions per week"
+      },
+      {
+        "q": "9",
+        "question": "Are there any other Institutions connected with the Congregation: if so, what are their names and objects?",
+        "answer": "none"
+      },
+      {
+        "q": "10",
+        "question": "Are there any other Congregations in the vicinity, and what are the names of the Presiding Officers?",
+        "answer": "Two: German Beth Ahaba, Wm. Fleishman Pr.; Portugese Beth Shalome, J. Levy Pres."
+      }
+    ],
+    "officers": [
+      {
+        "name": "Revd M. L. Rosenberg",
+        "office": "Chazan and shochet",
+        "certainty": "probable"
+      },
+      {
+        "name": "A. Henry",
+        "office": "President",
+        "certainty": "certain"
+      },
+      {
+        "name": "W. Jacobs",
+        "office": "Vice president",
+        "certainty": "probable"
+      },
+      {
+        "name": "E. Ellis",
+        "office": "Treasurer",
+        "certainty": "probable"
+      },
+      {
+        "name": "B. Becher",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "N. A. Cohn",
+        "office": "Trustee",
+        "certainty": "probable"
+      },
+      {
+        "name": "P. Becher",
+        "office": "Trustee",
+        "certainty": "uncertain"
+      },
+      {
+        "name": "J. Peyser",
+        "office": "Secretary",
+        "certainty": "probable"
+      }
+    ],
+    "figures": {
+      "members": 39,
+      "males": 38,
+      "females": 1
+    },
+    "note": "Handwritten schedule; docket (scan 87) 'Keneseth Israel Richmond Va. Aug 1860'."
+  },
+  {
+    "id": "richmond-keneseth-israel-return-1860",
+    "name": "Keneseth Israel — Annual Statistical Return for the year ending 1 September 1860, 1860",
+    "congregation": "keneseth-israel-ric",
+    "nameAsWritten": "Keneseth Israel",
+    "place": "richmond",
+    "form": "return-1860",
+    "formLabel": "Annual Statistical Return for the year ending 1 September 1860",
+    "date": "1860-08",
+    "source": "bdai-box3-folder09",
+    "locator": "PDF scan 86",
+    "image": "https://judaicadh.github.io/listsexplorer/images/bdai-box3-folder09/p086.jpg",
+    "answers": [
+      {
+        "q": "births",
+        "question": "Births (males / females / total)",
+        "answer": "3 / 7 / 10"
+      },
+      {
+        "q": "deaths",
+        "question": "Deaths (males / females / total)",
+        "answer": "1 / 4 / 5"
+      },
+      {
+        "q": "marriages",
+        "question": "Number of Marriages",
+        "answer": "1"
+      },
+      {
+        "q": "pupils",
+        "question": "Number of Pupils at School (males / females / total)",
+        "answer": "10 / 2 / 12"
+      },
+      {
+        "q": "attendance",
+        "question": "Average Attendance at School (males / females / total)",
+        "answer": "10 / 2 / 12"
+      },
+      {
+        "q": "religious",
+        "question": "Religious officers during the past year?",
+        "answer": "one"
+      },
+      {
+        "q": "temporal",
+        "question": "Temporal officers during the past year?",
+        "answer": "none"
+      }
+    ],
+    "figures": {
+      "births": 10,
+      "deaths": 5,
+      "marriages": 1,
+      "pupils": 12,
+      "attendance": 12
+    },
+    "signed": "All of which we respectfully submit. A. Henry, President; Jacob Peyser, Secretary"
   }
 ]

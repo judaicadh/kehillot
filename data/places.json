@@ -441,5 +441,37 @@
     "region": "Northeast",
     "lat": 40.6782,
     "lon": -73.9442
+  },
+  {
+    "id": "paterson",
+    "name": "Paterson",
+    "state": "New Jersey",
+    "region": "Northeast",
+    "lat": 40.9168,
+    "lon": -74.1718
+  },
+  {
+    "id": "providence",
+    "name": "Providence",
+    "state": "Rhode Island",
+    "region": "Northeast",
+    "lat": 41.824,
+    "lon": -71.4128
+  },
+  {
+    "id": "quincy",
+    "name": "Quincy",
+    "state": "Illinois",
+    "region": "Midwest",
+    "lat": 39.9356,
+    "lon": -91.4099
+  },
+  {
+    "id": "plaquemine",
+    "name": "Plaquemine",
+    "state": "Louisiana",
+    "region": "South",
+    "lat": 30.2891,
+    "lon": -91.2343
   }
 ]

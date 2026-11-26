@@ -105,7 +105,8 @@
     "note": "Pulpit of Isaac Leeser (1829–1850) and Sabato Morais (1851–1897).",
     "sources": [
       "sussman-1995",
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box3-folder09"
     ]
   },
   {
@@ -119,7 +120,8 @@
     "orientation": "reform",
     "note": "Generally regarded as the oldest Ashkenazic congregation in the Western Hemisphere.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "bdai-box3-folder09"
     ]
   },
   {
@@ -209,7 +211,8 @@
     "note": "Isaac Leeser's first community in America (from 1824).",
     "sources": [
       "isjl-encyclopedia",
-      "sussman-1995"
+      "sussman-1995",
+      "bdai-box3-folder09"
     ]
   },
   {
@@ -222,7 +225,8 @@
     "rite": "ashkenazic",
     "orientation": "reform",
     "sources": [
-      "isjl-encyclopedia"
+      "isjl-encyclopedia",
+      "bdai-box3-folder09"
     ]
   },
   {
@@ -721,7 +725,8 @@
     "orientation": "reform",
     "note": "First congregation in Oregon.",
     "sources": [
-      "marcus-1991"
+      "marcus-1991",
+      "bdai-box3-folder09"
     ]
   },
   {
@@ -1179,6 +1184,89 @@
     "note": "The 1860 schedule gives 1840, the 1872 return 1842 / 5603; 38–40 Henry Street. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
     "sources": [
       "bdai-box3-folder08"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-pat",
+    "name": "B'nai Jeshurun",
+    "translation": "Children of Jeshurun",
+    "place": "paterson",
+    "founded": 1853,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1872 return dates the organization to 24 April 1853; No. 9 Mulberry Street; president Nathan Barnert. The congregation withdrew from the Board in April 1878. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
+    ]
+  },
+  {
+    "id": "beth-el-emeth-phl",
+    "name": "Beth El Emeth",
+    "translation": "House of the God of Truth",
+    "place": "philadelphia",
+    "founded": 1857,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule and 1872 return date the organization to March (22 March) 1857, Adar 5617; Franklin Street. Isaac Leeser was its hazan and preacher in 1860; Rev. George Jacobs its minister in 1872. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
+    ]
+  },
+  {
+    "id": "hebrew-society-plaquemine",
+    "name": "Hebrew Society of Plaquemine",
+    "place": "plaquemine",
+    "founded": 1857,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule gives 1857 as the year of organization; ten members; no minister or school. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
+    ]
+  },
+  {
+    "id": "sons-of-israel-pvd",
+    "name": "Sons of Israel (Bnai Israel)",
+    "translation": "Children of Israel",
+    "place": "providence",
+    "founded": 1855,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule dates the organization to 22 May 1855; eighteen members; hazan and shochet Lazarus Kantorowitz. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
+    ]
+  },
+  {
+    "id": "bnai-avraham-qcy",
+    "name": "K.K. Bnai Avrohum",
+    "translation": "Children of Abraham",
+    "place": "quincy",
+    "founded": 1856,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1861 schedule gives 1856 as the year of organization; 26 members; Rev. Solomon Albu, chazan, lecturer and teacher. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
+    ]
+  },
+  {
+    "id": "keneseth-israel-ric",
+    "name": "Keneseth Israel",
+    "translation": "Assembly of Israel",
+    "place": "richmond",
+    "founded": 1856,
+    "certainty": "medium",
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "The 1860 schedule dates the organization to 5 October 5617 (1856); 39 members; Rev. M. L. Rosenberg, chazan and shochet. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.",
+    "sources": [
+      "bdai-box3-folder09"
     ]
   }
 ]
