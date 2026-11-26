@@ -1649,7 +1649,8 @@
       "instructors": 1,
       "attendance": 25,
       "jewishFamilies": 1600
-    }
+    },
+    "congregation": "sherith-israel-cin-survey"
   },
   {
     "id": "dayton-bnai-yeshurun-schedule-1861",
@@ -3124,7 +3125,8 @@
       "propertyValue": 8000,
       "income": 2000,
       "jewishFamilies": 60
-    }
+    },
+    "congregation": "bnai-jeshurun-lea-survey"
   },
   {
     "id": "louisville-beth-israel-return-1860",

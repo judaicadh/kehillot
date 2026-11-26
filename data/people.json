@@ -998,5 +998,4456 @@
     "sources": [
       "magnes-pioneer-album"
     ]
+  },
+  {
+    "id": "b-a-bonnheim-atlanta-survey",
+    "name": "B. A. Bonnheim",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-congregation-atl",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "B. A. Bonnheim",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "bonnheim-school-atl",
+        "role": "Conducts the school",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "B. A. Bonnheim",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "david-mayer-atlanta-survey",
+    "name": "David Mayer",
+    "occupation": [],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-congregation-atl",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "David Mayer",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "david-steinheimer-atlanta-survey",
+    "name": "David Steinheimer",
+    "occupation": [],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-congregation-atl",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "David Steinheimer",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "william-dittelbaum-atlanta-survey",
+    "name": "William Dittelbaum",
+    "occupation": [],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "gate-city-lodge-atl",
+        "role": "President, Gate City Lodge",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "William Dittelbaum",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "aaron-haas-atlanta-survey",
+    "name": "Aaron Haas",
+    "occupation": [],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "gate-city-lodge-atl",
+        "role": "Vice president, Gate City Lodge",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "Aaron Haas",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-weil-atlanta-survey",
+    "name": "S. Weil",
+    "occupation": [],
+    "places": [
+      "atlanta"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "gate-city-lodge-atl",
+        "role": "Treasurer, Gate City Lodge",
+        "documented": "1872-09",
+        "survey": "atlanta-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "S. Weil",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-kowalski-baton-rouge-survey",
+    "name": "A. Kowalski",
+    "occupation": [],
+    "places": [
+      "baton-rouge"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-chased-btr",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "baton-rouge-shaari-chased-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 7",
+        "nameAsWritten": "A. Kowalski",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "baton-rouge-shaari-chased-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "theodore-d-schloss-baton-rouge-survey",
+    "name": "Theodore D. Schloss",
+    "occupation": [],
+    "places": [
+      "baton-rouge"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaari-chased-btr",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "baton-rouge-shaari-chased-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 7",
+        "nameAsWritten": "Theodore D. Schloss",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "baton-rouge-shaari-chased-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "benj-e-jacobs-boston-survey",
+    "name": "Benj. E. Jacobs",
+    "occupation": [
+      "hazan",
+      "minister",
+      "religious-functionary",
+      "teacher"
+    ],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Religious officer",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "Revd Benj. E. Jacobs",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Lecturer, chason and teacher",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Rev. Benj. E. Jacobs",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Minister",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Revd B. Jacobs",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860",
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": [
+      "hazan",
+      "minister",
+      "religious-functionary"
+    ]
+  },
+  {
+    "id": "i-l-tagter-boston-survey",
+    "name": "I. L. Tagter",
+    "occupation": [
+      "religious-functionary"
+    ],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Religious officer",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "I. L. Tagter",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860"
+    ],
+    "clergyTitles": [
+      "religious-functionary"
+    ]
+  },
+  {
+    "id": "b-nelson-boston-survey",
+    "name": "B. Nelson",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "B. Nelson",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "B. Nelson",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "President",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "B. Nelson",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860",
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-reinstein-boston-survey",
+    "name": "S. Reinstein",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Vice president and treasurer",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "S. Reinstein",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "S. Reinstein",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Vice president",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "S. Reinstein",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860",
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "alexander-louis-boston-survey",
+    "name": "Alexander Louis",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 11",
+        "nameAsWritten": "A. Louis",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "A. Louis",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Secretary",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Alexander Louis",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-return-1860",
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-anthony-boston-survey",
+    "name": "H. Anthony",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "H. Anthony",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "H. Anthony",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "isaac-adams-boston-survey",
+    "name": "Isaac Adams",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Isaac Adams",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Isaac Adams",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "gustav-philipps-boston-survey",
+    "name": "Gustav Philipps",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "G. Philips",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Gustav Philipps",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-sternberg-boston-survey",
+    "name": "S. Sternberg",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "S. Sternberg",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "S. Sternberg",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-hart-boston-survey",
+    "name": "B. Hart",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "B. Hart",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "ohabei-shalom-bos",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "boston-ohabei-shalom-schedule-1860-12",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "B. Hart",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09",
+      "boston-ohabei-shalom-schedule-1860-12"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-heinemann-boston-survey",
+    "name": "B. Heinemann",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "adath-israel-bos-survey",
+        "role": "President, Congregation Adath Israel (neighbouring congregation)",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "B. Heinemann",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-bear-boston-survey",
+    "name": "M. Bear",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "mishkan-israel-bos-survey",
+        "role": "President, Congregation Mishkan Israel (neighbouring congregation)",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "M. Bear",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-milzmann-boston-survey",
+    "name": "B. Milzmann",
+    "occupation": [],
+    "places": [
+      "boston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-eil-bos-survey",
+        "role": "President, Congregation Beth Eil (neighbouring congregation)",
+        "documented": "1860-09-01",
+        "survey": "boston-ohabei-shalom-schedule-1860-09",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "B. Milzmann",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "boston-ohabei-shalom-schedule-1860-09"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "abraham-harris-charleston-survey",
+    "name": "Abraham Harris",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Minister",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Rev. Abraham Harris",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "joshua-lazarus-charleston-survey",
+    "name": "Joshua Lazarus",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "President",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Maj. Joshua Lazarus",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "phillip-cohen-charleston-survey",
+    "name": "Phillip Cohen",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Vice president",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Phillip Cohen",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "myer-jacobs-charleston-survey",
+    "name": "Myer Jacobs",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Col. Myer Jacobs",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-c-mordecai-charleston-survey",
+    "name": "M. C. Mordecai",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Hon. M. C. Mordecai",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-d-lazarus-charleston-survey",
+    "name": "B. D. Lazarus",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "B. D. Lazarus",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "philip-wineman-charleston-survey",
+    "name": "Philip Wineman",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Philip Wineman",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-elohim-chs",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "Philip Wineman",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860",
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "aaron-j-moses-charleston-survey",
+    "name": "Aaron J. Moses",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Trustee",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Aaron J. Moses",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "joseph-eugene-esdra-charleston-survey",
+    "name": "Joseph Eugene Esdra",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Secretary and treasurer",
+        "documented": "1860-12",
+        "survey": "charleston-beth-elohim-schedule-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 27",
+        "nameAsWritten": "Joseph Eugene Esdra",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "i-h-m-chumaceiro-charleston-survey",
+    "name": "I. H. M. Chumaceiro",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "Rev. I. H. M. Chumaceiro",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "nathl-levin-charleston-survey",
+    "name": "Nathl Levin",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-elohim-chs",
+        "role": "Secretary and treasurer",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "Nathl. Levin",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Nathl Levin",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "Nathl Levin",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872",
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "i-isear-charleston-survey",
+    "name": "I. Isear",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "polish-congregation-chs-survey",
+        "role": "President, Polish Congregation",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "I. Isear",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "j-brill-charleston-survey",
+    "name": "J. Brill",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "polish-congregation-chs-survey",
+        "role": "Secretary, Polish Congregation",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "J. Brill",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-h-deleon-charleston-survey",
+    "name": "H. H. DeLeon",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "hebrew-orphan-society-chs",
+        "role": "President, Hebrew Orphan Society",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "H. H. DeLeon",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "n-h-valentine-charleston-survey",
+    "name": "N. H. Valentine",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "hebrew-orphan-society-chs",
+        "role": "Secretary and treasurer, Hebrew Orphan Society",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "N. H. Valentine",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-falk-charleston-survey",
+    "name": "A. Falk",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-charleston",
+        "role": "President, Hebrew Benevolent Society",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "A. Falk",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "j-h-loeb-charleston-survey",
+    "name": "J. H. Loeb",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-charleston",
+        "role": "Secretary, Hebrew Benevolent Society",
+        "documented": "1872-09",
+        "survey": "charleston-beth-elohim-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "nameAsWritten": "J. H. Loeb",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "henry-s-jacobs-charleston-survey",
+    "name": "Henry S. Jacobs",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Minister",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Reverend Henry S. Jacobs",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Minister and lecturer",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "Revd H. S. Jacobs",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-school-surveys",
+        "role": "Sunday school superintendent",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Henry S. Jacobs",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "saml-hart-sr-charleston-survey",
+    "name": "Saml Hart Sr",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Saml Hart Sr",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "President",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "Saml Hart Senr",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "jacob-cohen-charleston-survey",
+    "name": "Jacob Cohen",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Jacob Cohen",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Vice president",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "Jacob Cohen",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "d-cohen-charleston-survey",
+    "name": "D. Cohen",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "D. Cohen",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "e-sommers-charleston-survey",
+    "name": "E. Sommers",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "E. Sommers",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "E. Sommers",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-valentine-charleston-survey",
+    "name": "S. Valentine",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Secretary and treasurer",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "S. Valentine",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "shearit-israel-chs",
+        "role": "Secretary and treasurer",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "S. Valentine",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860",
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "mrs-e-minis-charleston-survey",
+    "name": "Mrs. E. Minis",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-school-surveys",
+        "role": "President of the Sunday school",
+        "documented": "1860-09-01",
+        "survey": "charleston-shearith-israel-return-1860",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Mrs. E. Minis",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-return-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "charles-h-moise-charleston-survey",
+    "name": "Charles H. Moise",
+    "occupation": [],
+    "places": [
+      "charleston"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shearit-israel-chs",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "charleston-shearith-israel-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35",
+        "nameAsWritten": "Charles H. Moise",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "charleston-shearith-israel-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-block-chattanooga-survey",
+    "name": "M. Block",
+    "occupation": [],
+    "places": [
+      "chattanooga"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-association-cha",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "chattanooga-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 40",
+        "nameAsWritten": "Dr. M. Block",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chattanooga-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "p-wassman-chattanooga-survey",
+    "name": "P. Wassman",
+    "occupation": [],
+    "places": [
+      "chattanooga"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "hebrew-benevolent-association-cha",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "chattanooga-hebrew-benevolent-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 40",
+        "nameAsWritten": "P. Wassman",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chattanooga-hebrew-benevolent-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "w-weinstein-chicago-survey",
+    "name": "W. Weinstein",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Reader",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "Rev. W. Weinstein",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "i-h-henoch-chicago-survey",
+    "name": "I. H. Henoch",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "President for the ensuing year",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "I. H. Henoch",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-herzog-chicago-survey",
+    "name": "A. Herzog",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Vice president",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "A. Herzog",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "j-moore-chicago-survey",
+    "name": "J. Moore",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "J. Moore",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-l-marks-chicago-survey",
+    "name": "H. L. Marks",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "H. L. Marks",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "j-plotke-chicago-survey",
+    "name": "J. Plotke",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "J. Plotke",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-d-witkowsky-chicago-survey",
+    "name": "S. D. Witkowsky",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "S. D. Witkowsky",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-nelson-chicago-survey",
+    "name": "M. Nelson",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Trustee",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "M. Nelson",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-alexander-chicago-survey",
+    "name": "A. Alexander",
+    "occupation": [],
+    "places": [
+      "chicago"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-sholom-chi",
+        "role": "Secretary",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "Rev. A. Alexander",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "alexander-school-chicago",
+        "role": "Founder (reported; founding date unknown)",
+        "documented": "1861-04",
+        "survey": "chicago-bnai-sholom-schedule-1861",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 42",
+        "nameAsWritten": "A. Alexander",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "chicago-bnai-sholom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "samuel-epstein-cincinnati-survey",
+    "name": "Samuel Epstein",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "cincinnati"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "sherith-israel-cin-survey",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "cincinnati-sherith-israel-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 51",
+        "nameAsWritten": "Samuel Epstein",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "cincinnati-sherith-israel-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "b-benjamin-cincinnati-survey",
+    "name": "B. Benjamin",
+    "occupation": [],
+    "places": [
+      "cincinnati"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "sherith-israel-cin-survey",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "cincinnati-sherith-israel-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 51",
+        "nameAsWritten": "B. Benjamin",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "cincinnati-sherith-israel-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "moses-bing-jr-cincinnati-survey",
+    "name": "Moses Bing Jr",
+    "occupation": [],
+    "places": [
+      "cincinnati"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "sherith-israel-cin-survey",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "cincinnati-sherith-israel-1872",
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 51",
+        "nameAsWritten": "Moses Bing Jr",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder05"
+    ],
+    "surveyIds": [
+      "cincinnati-sherith-israel-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-wetterhahn-dayton-survey",
+    "name": "M. Wetterhahn",
+    "occupation": [
+      "hazan",
+      "shochet",
+      "teacher"
+    ],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Shochet, teacher and chazan",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "M. Wetterhahn",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": [
+      "hazan",
+      "shochet"
+    ]
+  },
+  {
+    "id": "abraham-ach-dayton-survey",
+    "name": "Abraham Ach",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "President",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "Abraham Ach",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "i-lom-dayton-survey",
+    "name": "I. Lom",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Vice president",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "I. Lom",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-wertheimer-dayton-survey",
+    "name": "M. Wertheimer",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "M. Wertheimer",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "isaac-bollman-dayton-survey",
+    "name": "Isaac Bollman",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "Isaac Bollman",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-wilkowsky-dayton-survey",
+    "name": "B. Wilkowsky",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Trustee",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "B. Wilkowsky",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "philip-klopfer-dayton-survey",
+    "name": "Philip Klopfer",
+    "occupation": [],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Secretary",
+        "documented": "1861-05",
+        "survey": "dayton-bnai-yeshurun-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 1",
+        "nameAsWritten": "Philip Klopfer",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-rauer-dayton-survey",
+    "name": "M. Rauer",
+    "occupation": [
+      "religious-functionary"
+    ],
+    "places": [
+      "dayton"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-yeshurun-day",
+        "role": "Religious officer",
+        "documented": "1860-09-01",
+        "survey": "dayton-bnai-yeshurun-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 12",
+        "nameAsWritten": "M. Rauer",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "dayton-bnai-yeshurun-return-1860"
+    ],
+    "clergyTitles": [
+      "religious-functionary"
+    ]
+  },
+  {
+    "id": "simon-loeb-lafayette-in-survey",
+    "name": "Simon Loeb",
+    "occupation": [],
+    "places": [
+      "lafayette-in"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "ahavas-achim-laf",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "lafayette-ahvas-achim-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "Simon Loeb",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "lafayette-ahvas-achim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "albert-wiler-lafayette-in-survey",
+    "name": "Albert Wiler",
+    "occupation": [],
+    "places": [
+      "lafayette-in"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ahavas-achim-laf",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "lafayette-ahvas-achim-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 3",
+        "nameAsWritten": "Albert Wiler",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "lafayette-ahvas-achim-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "l-nussbaum-danville-pa-survey",
+    "name": "L. Nussbaum",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "danville-pa"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-zion-dan",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "L. Nussbaum",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "bnai-brith-dan-survey",
+        "role": "Vice president, B'nai B'rith lodge",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "L. Nussbaum",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "is-of-i-dan-survey",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "L. Nussbaum",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "jacob-loeb-danville-pa-survey",
+    "name": "Jacob Loeb",
+    "occupation": [],
+    "places": [
+      "danville-pa"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-zion-dan",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "Jacob Loeb",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "simon-wiener-danville-pa-survey",
+    "name": "Simon Wiener",
+    "occupation": [],
+    "places": [
+      "danville-pa"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-zion-dan",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "Simon Wiener",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "alex-wormser-danville-pa-survey",
+    "name": "Alex. Wormser",
+    "occupation": [],
+    "places": [
+      "danville-pa"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-brith-dan-survey",
+        "role": "President, B'nai B'rith lodge",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "Alex. Wormser",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-dreifuss-danville-pa-survey",
+    "name": "S. Dreifuss",
+    "occupation": [],
+    "places": [
+      "danville-pa"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "is-of-i-dan-survey",
+        "role": "Vice president, I.S",
+        "documented": "1872-09",
+        "survey": "danville-bneh-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "nameAsWritten": "S. Dreifuss",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "i-rosenthal-fort-wayne-survey",
+    "name": "I. Rosenthal",
+    "occupation": [
+      "hazan",
+      "teacher"
+    ],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Chasan",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "I. Rosenthal",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Chasan and teacher",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Rev. I. Rosenthal",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "fredrik-nirdlinger-fort-wayne-survey",
+    "name": "Fredrik Nirdlinger",
+    "occupation": [],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "F. Nirdlinger",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "President",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Fredrik Nirdlinger",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "henry-redelsheimer-fort-wayne-survey",
+    "name": "Henry Redelsheimer",
+    "occupation": [],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "H. Redelsheimer",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Vice president",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Henry Redelsheimer",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "victor-jacobson-fort-wayne-survey",
+    "name": "Victor Jacobson",
+    "occupation": [],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "V. Jacobson",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Treasurer",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "Victor Jacobson",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-eppstein-fort-wayne-survey",
+    "name": "M. Eppstein",
+    "occupation": [],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "M. Eppstein",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Secretary",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "M. Eppstein",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-freiberger-fort-wayne-survey",
+    "name": "S. Freiberger",
+    "occupation": [],
+    "places": [
+      "fort-wayne"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Temporal officer",
+        "documented": "1860-09-01",
+        "survey": "fort-wayne-achduth-veschalom-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 13",
+        "nameAsWritten": "S. Freiberger",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "achduth-veshalom-fw",
+        "role": "Trustee",
+        "documented": "1861-03",
+        "survey": "fort-wayne-achduth-veschalom-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 14",
+        "nameAsWritten": "S. Freiberger",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "fort-wayne-achduth-veschalom-return-1860",
+      "fort-wayne-achduth-veschalom-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "sophaar-donaldsonville-survey",
+    "name": "Sophaar",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "donaldsonville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "donaldsonville-hebrew",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "donaldsonville-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "Dr. Rev. Sophaar",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "donaldsonville-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "s-weinschenck-donaldsonville-survey",
+    "name": "S. Weinschenck",
+    "occupation": [],
+    "places": [
+      "donaldsonville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "donaldsonville-hebrew",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "donaldsonville-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "S. Weinschenck",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "donaldsonville-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "w-klopman-donaldsonville-survey",
+    "name": "W. Klopman",
+    "occupation": [],
+    "places": [
+      "donaldsonville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "donaldsonville-hebrew",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "donaldsonville-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 16",
+        "nameAsWritten": "W. Klopman",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "donaldsonville-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-ullman-harrisburg-survey",
+    "name": "S. Ullman",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "harrisburg"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohev-sholom-har",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "harrisburg-ohef-scholem-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Revd S. Ullman",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "harrisburg-ohef-scholem-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "joseph-strouse-harrisburg-survey",
+    "name": "Joseph Strouse",
+    "occupation": [],
+    "places": [
+      "harrisburg"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohev-sholom-har",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "harrisburg-ohef-scholem-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "Joseph Strouse",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "harrisburg-ohef-scholem-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "william-wolf-harrisburg-survey",
+    "name": "William Wolf",
+    "occupation": [],
+    "places": [
+      "harrisburg"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "ohev-sholom-har",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "harrisburg-ohef-scholem-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 18",
+        "nameAsWritten": "William Wolf",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "harrisburg-ohef-scholem-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-goodman-jackson-ms-survey",
+    "name": "H. Goodman",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "jackson-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 24",
+        "nameAsWritten": "H. Goodman",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-jac",
+        "role": "President",
+        "documented": "1860-05",
+        "survey": "jackson-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "H. Goodman",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-return-1860",
+      "jackson-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-adler-jackson-ms-survey",
+    "name": "M. Adler",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "jackson-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 24",
+        "nameAsWritten": "M. Adler",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-return-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "e-bloom-jackson-ms-survey",
+    "name": "E. Bloom",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "Treasurer",
+        "documented": "1860-09-01",
+        "survey": "jackson-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 24",
+        "nameAsWritten": "E. Bloom",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-jac",
+        "role": "Treasurer",
+        "documented": "1860-05",
+        "survey": "jackson-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "E. Bloom",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-return-1860",
+      "jackson-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-ulman-jackson-ms-survey",
+    "name": "M. Ulman",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "jackson-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 24",
+        "nameAsWritten": "M. Ulman",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-return-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-adler-jackson-ms-survey",
+    "name": "A. Adler",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "Secretary of the congregation",
+        "documented": "1860-09-01",
+        "survey": "jackson-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 24",
+        "nameAsWritten": "A. Adler",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-jac",
+        "role": "Secretary",
+        "documented": "1860-05",
+        "survey": "jackson-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "A. Adler",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-return-1860",
+      "jackson-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "d-mayer-jackson-ms-survey",
+    "name": "D. Mayer",
+    "occupation": [],
+    "places": [
+      "jackson-ms"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-jac",
+        "role": "Vice president",
+        "documented": "1860-05",
+        "survey": "jackson-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 25",
+        "nameAsWritten": "D. Mayer",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "jackson-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "jacob-wile-laporte-survey",
+    "name": "Jacob Wile",
+    "occupation": [],
+    "places": [
+      "laporte"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-zion-lap",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "laporte-bne-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 32",
+        "nameAsWritten": "Jacob Wile",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "bnai-zion-lap",
+        "role": "President acting as minister, without salary; teaches religious instruction each Sabbath",
+        "documented": "1872-09",
+        "survey": "laporte-bne-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 32",
+        "nameAsWritten": "Jacob Wile",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "laporte-bne-zion-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "august-davidson-laporte-survey",
+    "name": "August Davidson",
+    "occupation": [],
+    "places": [
+      "laporte"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-zion-lap",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "laporte-bne-zion-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 32",
+        "nameAsWritten": "August Davidson",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "laporte-bne-zion-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-shafner-leavenworth-survey",
+    "name": "M. Shafner",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "leavenworth"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-jeshurun-lea-survey",
+        "role": "Minister",
+        "documented": "1872-09",
+        "survey": "leavenworth-bnai-jeshurun-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Rev. M. Shafner",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "leavenworth-bnai-jeshurun-1872"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "n-mitchell-leavenworth-survey",
+    "name": "N. Mitchell",
+    "occupation": [],
+    "places": [
+      "leavenworth"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "bnai-jeshurun-lea-survey",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "leavenworth-bnai-jeshurun-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "N. Mitchell",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "leavenworth-bnai-jeshurun-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "chs-salenger-leavenworth-survey",
+    "name": "Chs. Salenger",
+    "occupation": [],
+    "places": [
+      "leavenworth"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "bnai-jeshurun-lea-survey",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "leavenworth-bnai-jeshurun-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Chs. Salenger",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "leavenworth-bnai-jeshurun-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "geo-cohen-leavenworth-survey",
+    "name": "Geo. Cohen",
+    "occupation": [],
+    "places": [
+      "leavenworth"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "sons-of-truth-lea",
+        "role": "President, Sons of Truth",
+        "documented": "1872-09",
+        "survey": "leavenworth-bnai-jeshurun-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 34",
+        "nameAsWritten": "Geo. Cohen",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "leavenworth-bnai-jeshurun-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "ephraim-wohlgemuth-louisville-survey",
+    "name": "Ephraim Wohlgemuth",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Hazan",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "Ephraim Wohlgemuth",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Hazan",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "Ephraim Wohlgemuth",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "louis-rosenfeld-louisville-survey",
+    "name": "Louis Rosenfeld",
+    "occupation": [
+      "shammash"
+    ],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Shamas",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "Louis Rosenfeld",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860"
+    ],
+    "clergyTitles": [
+      "shammash"
+    ]
+  },
+  {
+    "id": "morris-d-levy-louisville-survey",
+    "name": "Morris D. Levy",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "President",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "Morris D. Levy",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "President",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "Morris D. Levy",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "marks-levy-louisville-survey",
+    "name": "Marks Levy",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Vice president",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "Marks Levy",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "Marks Levy",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-l-h-bernal-louisville-survey",
+    "name": "A. L. H. Bernal",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Office abbreviated G.B.H",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "A. L. H. Bernal",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "A. L. H. Bernal",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-woolf-louisville-survey",
+    "name": "H. Woolf",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Secretary",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "H. Woolf",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Secretary",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "H. Woolf",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "l-levenson-louisville-survey",
+    "name": "L. Levenson",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Treasurer",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "L. Levenson",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "L. Levenson",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "j-loewenheim-louisville-survey",
+    "name": "J. Loewenheim",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "J. Loewenheim",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "J. Loewenheim",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "i-grauman-louisville-survey",
+    "name": "I. Grauman",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "I. Grauman",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "I. Grauman",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "r-h-hernstadt-louisville-survey",
+    "name": "R. H. Hernstadt",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "R. H. Hernstadt",
+        "readingCertainty": "probable"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "R. H. Hernstadt",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-r-biesenthal-louisville-survey",
+    "name": "S. R. Biesenthal",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-09-01",
+        "survey": "louisville-beth-israel-return-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 36",
+        "nameAsWritten": "S. R. Biesenthal",
+        "readingCertainty": "certain"
+      },
+      {
+        "org": "beth-israel-lou",
+        "role": "Trustee",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "S. R. Biesenthal",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-return-1860",
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-cohn-los-angeles-survey",
+    "name": "B. Cohn",
+    "occupation": [],
+    "places": [
+      "los-angeles"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-el-la",
+        "role": "President",
+        "documented": "1861-02",
+        "survey": "los-angeles-beth-el-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 37",
+        "nameAsWritten": "B. Cohn",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "los-angeles-beth-el-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-norton-los-angeles-survey",
+    "name": "M. Norton",
+    "occupation": [],
+    "places": [
+      "los-angeles"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-el-la",
+        "role": "Trustee",
+        "documented": "1861-02",
+        "survey": "los-angeles-beth-el-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 37",
+        "nameAsWritten": "M. Norton",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "los-angeles-beth-el-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-cohn-los-angeles-survey",
+    "name": "H. Cohn",
+    "occupation": [],
+    "places": [
+      "los-angeles"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-el-la",
+        "role": "Trustee",
+        "documented": "1861-02",
+        "survey": "los-angeles-beth-el-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 37",
+        "nameAsWritten": "H. Cohn",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "los-angeles-beth-el-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "h-behrendt-los-angeles-survey",
+    "name": "H. Behrendt",
+    "occupation": [],
+    "places": [
+      "los-angeles"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "beth-el-la",
+        "role": "Secretary",
+        "documented": "1861-02",
+        "survey": "los-angeles-beth-el-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 37",
+        "nameAsWritten": "H. Behrendt",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "los-angeles-beth-el-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "simon-maas-louisville-survey",
+    "name": "Simon Maas",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "adath-israel-lou",
+        "role": "President, Adath Israel (neighbouring congregation)",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "Simon Maas",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-h-gotthelf-louisville-survey",
+    "name": "B. H. Gotthelf",
+    "occupation": [
+      "hazan"
+    ],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "adath-israel-lou",
+        "role": "Hazan and lecturer, Adath Israel",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "Revd B. H. Gotthelf",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": [
+      "hazan"
+    ]
+  },
+  {
+    "id": "s-heilbron-louisville-survey",
+    "name": "S. Heilbron",
+    "occupation": [],
+    "places": [
+      "louisville"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "adath-israel-lou",
+        "role": "Secretary, Adath Israel",
+        "documented": "1860-11",
+        "survey": "louisville-beth-israel-schedule-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 39",
+        "nameAsWritten": "S. Heilbron",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-schedule-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "saml-klauber-madison-wi-survey",
+    "name": "Saml Klauber",
+    "occupation": [],
+    "places": [
+      "madison-wi"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaare-shomaim-mad",
+        "role": "President",
+        "documented": "1861-03-28",
+        "survey": "madison-shaare-shomaim-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 59",
+        "nameAsWritten": "Saml Klauber",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "madison-shaare-shomaim-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "l-roeder-madison-wi-survey",
+    "name": "L. Roeder",
+    "occupation": [],
+    "places": [
+      "madison-wi"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaare-shomaim-mad",
+        "role": "Secretary",
+        "documented": "1861-03-28",
+        "survey": "madison-shaare-shomaim-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 59",
+        "nameAsWritten": "L. Roeder",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "madison-shaare-shomaim-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-kohner-madison-wi-survey",
+    "name": "M. Kohner",
+    "occupation": [],
+    "places": [
+      "madison-wi"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaare-shomaim-mad",
+        "role": "Treasurer",
+        "documented": "1861-03-28",
+        "survey": "madison-shaare-shomaim-schedule-1861",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 59",
+        "nameAsWritten": "M. Kohner",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "madison-shaare-shomaim-schedule-1861"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "isaac-epstein-mobile-survey",
+    "name": "Isaac Epstein",
+    "occupation": [
+      "minister"
+    ],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Minister",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "Revd Isaac Epstein",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": [
+      "minister"
+    ]
+  },
+  {
+    "id": "i-i-jones-mobile-survey",
+    "name": "I. I. Jones",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "President",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "I. I. Jones",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "is-goldsmith-mobile-survey",
+    "name": "Is. Goldsmith",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Vice president",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "Is. Goldsmith",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "moses-marx-mobile-survey",
+    "name": "Moses Marx",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Treasurer",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "Moses Marx",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-ellmann-mobile-survey",
+    "name": "S. Ellmann",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Secretary",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "S. Ellmann",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "f-weiss-mobile-survey",
+    "name": "F. Weiss",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "F. Weiss",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "s-richard-mobile-survey",
+    "name": "S. Richard",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "S. Richard",
+        "readingCertainty": "probable"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-lippman-mobile-survey",
+    "name": "M. Lippman",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "M. Lippman",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-goldsticker-mobile-survey",
+    "name": "A. Goldsticker",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "A. Goldsticker",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "l-hafter-mobile-survey",
+    "name": "L. Hafter",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "L. Hafter",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "m-levy-mobile-survey",
+    "name": "M. Levy",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "M. Levy",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "e-weil-mobile-survey",
+    "name": "E. Weil",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-mob",
+        "role": "Trustee",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "E. Weil",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "f-r-gans-mobile-survey",
+    "name": "F. R. Gans",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-school-mobile",
+        "role": "School commissioner",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "F. R. Gans",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "a-j-weiss-mobile-survey",
+    "name": "A. J. Weiss",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-school-mobile",
+        "role": "School commissioner",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "A. J. Weiss",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "w-h-leinkauf-mobile-survey",
+    "name": "W. H. Leinkauf",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-school-mobile",
+        "role": "School commissioner",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "W. H. Leinkauf",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "b-m-emanuel-mobile-survey",
+    "name": "B. M. Emanuel",
+    "occupation": [],
+    "places": [
+      "mobile"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "shaarai-shomayim-school-mobile",
+        "role": "School commissioner",
+        "documented": "1860-07-18",
+        "survey": "mobile-shaarai-shamayim-letter-1860",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 61, 62, 63",
+        "nameAsWritten": "B. M. Emanuel",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "mobile-shaarai-shamayim-letter-1860"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "d-weil-montgomery-survey",
+    "name": "D. Weil",
+    "occupation": [],
+    "places": [
+      "montgomery"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries.",
+    "roles": [
+      {
+        "org": "kahl-montgomery",
+        "role": "President",
+        "documented": "1872-09",
+        "survey": "montgomery-kahl-montgomery-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 69",
+        "nameAsWritten": "D. Weil",
+        "readingCertainty": "certain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "montgomery-kahl-montgomery-1872"
+    ],
+    "clergyTitles": []
+  },
+  {
+    "id": "e-kielman-montgomery-survey",
+    "name": "E. Kielman",
+    "occupation": [],
+    "places": [
+      "montgomery"
+    ],
+    "description": "Recorded in Board of Delegates returns. Names and roles follow the transcriptions; initial-only names are not expanded. Role dates are documentary observations, not tenure boundaries. Some readings are probable or uncertain; see each cited role.",
+    "roles": [
+      {
+        "org": "kahl-montgomery",
+        "role": "Secretary",
+        "documented": "1872-09",
+        "survey": "montgomery-kahl-montgomery-1872",
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 69",
+        "nameAsWritten": "E. Kielman",
+        "readingCertainty": "uncertain"
+      }
+    ],
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "montgomery-kahl-montgomery-1872"
+    ],
+    "clergyTitles": []
   }
 ]

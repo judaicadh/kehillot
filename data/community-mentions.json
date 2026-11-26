@@ -1,0 +1,20 @@
+[
+  {
+    "placeAsWritten": "Piqua, Ohio",
+    "survey": "dayton-bnai-yeshurun-schedule-1861",
+    "date": "1861-05",
+    "source": "bdai-box3-folder06",
+    "locator": "PDF scan 1",
+    "answer": "one at Piqua, O., 25 miles from Dayton, don't know their Officers, non nearer than said Place",
+    "status": "Congregation identity and geographic record not reconciled"
+  },
+  {
+    "placeAsWritten": "Vicksburg, Mississippi",
+    "survey": "jackson-beth-israel-schedule-1860",
+    "date": "1860-05",
+    "source": "bdai-box3-folder06",
+    "locator": "PDF scan 25",
+    "answer": "The nearest congregation is in Vicksburg, about forty miles from here, Mr. ____ is the president",
+    "status": "Congregation identity and geographic record not reconciled"
+  }
+]

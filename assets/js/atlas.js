@@ -46,7 +46,7 @@
       rites: Array.from(document.querySelectorAll('input[name=rite]:checked')).map(function (i) { return i.value; })
     };
   }
-  var active = function (c, y) { return c.founded <= y && !(c.dissolved && c.dissolved <= y); };
+  var active = function (c, y) { return (c.founded != null ? c.founded <= y : (c.documentedYears || [c.documented]).indexOf(y) !== -1) && !(c.dissolved && c.dissolved <= y); };
   var dormant = function (c, y) { return c.dormant && y >= c.dormant[0] && y < c.dormant[1]; };
   var runs = function (o, y) { return (o.founded == null ? (o.documentedYears || [o.documented]).indexOf(y) !== -1 : o.founded <= y) && !((o.dissolved || o.ceased) && (o.dissolved || o.ceased) <= y); };
   var href = function (type, id) { return root + type + '/' + id + '/'; };

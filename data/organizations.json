@@ -1466,6 +1466,9 @@
     ],
     "documentedYears": [
       1872
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1872"
     ]
   },
   {
@@ -1481,6 +1484,9 @@
     ],
     "documentedYears": [
       1872
+    ],
+    "surveyIds": [
+      "baton-rouge-shaari-chased-1872"
     ]
   },
   {
@@ -1511,6 +1517,9 @@
     ],
     "documentedYears": [
       1872
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1872"
     ]
   },
   {
@@ -1739,14 +1748,15 @@
       1872
     ],
     "certainty": "medium",
-    "description": "Religious school reporting 30 pupils and one instructor in 1872. The parent congregation has not yet been reconciled to a core congregation record. Dates are documentary observations, not founding or closing dates.",
+    "description": "Religious school reporting 30 pupils and one instructor in 1872. Linked to the congregation documented in the same return; earlier institutional identity remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
     "sources": [
       "bdai-box3-folder05"
     ],
     "surveyIds": [
       "cincinnati-sherith-israel-1872"
     ],
-    "schoolType": "religious school"
+    "schoolType": "religious school",
+    "congregation": "sherith-israel-cin-survey"
   },
   {
     "id": "bnai-yeshurun-school-dayton",
@@ -1892,5 +1902,77 @@
     ],
     "schoolType": "religious school",
     "congregation": "shaarai-shomayim-mob"
+  },
+  {
+    "id": "bnai-brith-laf-survey",
+    "name": "B’nai B’rith Lodge (Lafayette)",
+    "category": "fraternal",
+    "place": "lafayette-in",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Named in the Board of Delegates return dated 1872-09. No founding date or separate building is established by this evidence.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "lafayette-ahvas-achim-1872"
+    ]
+  },
+  {
+    "id": "bnai-brith-dan-survey",
+    "name": "B’nai B’rith Lodge (Danville)",
+    "category": "fraternal",
+    "place": "danville-pa",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Named in the Board of Delegates return dated 1872-09. No founding date or separate building is established by this evidence.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ]
+  },
+  {
+    "id": "is-of-i-dan-survey",
+    "name": "I.S. of I. (Danville, as written)",
+    "category": "fraternal",
+    "place": "danville-pa",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Named in the Board of Delegates return dated 1872-09. No founding date or separate building is established by this evidence.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "danville-bneh-zion-1872"
+    ]
+  },
+  {
+    "id": "bnai-brith-har-survey",
+    "name": "B’nai B’rith Lodge (Harrisburg)",
+    "category": "fraternal",
+    "place": "harrisburg",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "description": "Named in the Board of Delegates return dated 1872-09. No founding date or separate building is established by this evidence.",
+    "sources": [
+      "bdai-box3-folder06"
+    ],
+    "surveyIds": [
+      "harrisburg-ohef-scholem-1872"
+    ]
   }
 ]

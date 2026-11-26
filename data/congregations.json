@@ -137,5 +137,102 @@
   { "id": "beth-israel-lou", "name": "Beth Israel", "translation": "House of Israel", "place": "louisville", "founded": 1856, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
     "note": "The 1860 return dates the organization to Tishri 5617 (autumn 1856). Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
   { "id": "shaare-shomaim-mad", "name": "Shaare Shomaim", "translation": "Gates of Heaven", "place": "madison-wi", "founded": 1856, "certainty": "medium", "rite": "unrecorded", "orientation": "unrecorded",
-    "note": "The 1861 return dates the organization to October 1856; the congregation could not support a minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] }
+    "note": "The 1861 return dates the organization to October 1856; the congregation could not support a minister. Rite and orientation are not stated in the Board of Delegates return and have not yet been established from other sources.", "sources": ["bdai-box3-folder06"] },
+  {
+    "id": "sherith-israel-cin-survey",
+    "name": "Sherith Israel",
+    "place": "cincinnati",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-lea-survey",
+    "name": "B’nai Jeshurun",
+    "place": "leavenworth",
+    "documented": 1872,
+    "documentedYears": [
+      1872
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
+    "sources": [
+      "bdai-box3-folder06"
+    ]
+  },
+  {
+    "id": "adath-israel-bos-survey",
+    "name": "Adath Israel",
+    "place": "boston",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "mishkan-israel-bos-survey",
+    "name": "Mishkan Israel",
+    "place": "boston",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "beth-eil-bos-survey",
+    "name": "Beth Eil",
+    "place": "boston",
+    "documented": 1860,
+    "documentedYears": [
+      1860
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  },
+  {
+    "id": "polish-congregation-chs-survey",
+    "name": "Polish Congregation (survey description)",
+    "place": "charleston",
+    "documented": 1861,
+    "documentedYears": [
+      1861,
+      1872
+    ],
+    "certainty": "medium",
+    "rite": "unknown",
+    "orientation": "unknown",
+    "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. The name is descriptive, not an established formal title.",
+    "sources": [
+      "bdai-box3-folder05"
+    ]
+  }
 ]

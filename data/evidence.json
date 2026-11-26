@@ -1993,5 +1993,127 @@
         "note": "The 1860 letter describes Hebrew and religious instruction under the minister. An English and Hebrew day school was planned for October; the letter does not establish that it opened. About ninety school-age children is not an enrolment count. Return dated 1860-07-18."
       }
     ]
+  },
+  "congregation/sherith-israel-cin-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 51",
+        "note": "Named in the return dated 1872-09; this is not a founding date."
+      }
+    ]
+  },
+  "congregation/bnai-jeshurun-lea-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 34",
+        "note": "Named in the return dated 1872-09; this is not a founding date."
+      }
+    ]
+  },
+  "congregation/adath-israel-bos-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "note": "Named in the return dated 1860-09-01; this is not a founding date."
+      }
+    ]
+  },
+  "congregation/mishkan-israel-bos-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "note": "Named in the return dated 1860-09-01; this is not a founding date."
+      }
+    ]
+  },
+  "congregation/beth-eil-bos-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 14",
+        "note": "Named in the return dated 1860-09-01; this is not a founding date."
+      }
+    ]
+  },
+  "congregation/polish-congregation-chs-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "note": "Named in the return dated 1872-09; this is not a founding date."
+      },
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 35; question 10",
+        "note": "The 1861 return describes a neighboring Polish congregation. Formal name and founding date are not established."
+      }
+    ]
+  },
+  "institution/gate-city-lodge-atl": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 3",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/ladies-hebrew-association-btr": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 7",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/dan-lodge-chs": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder05",
+        "locator": "PDF scan 29",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/bnai-brith-laf-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 3",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/bnai-brith-dan-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/is-of-i-dan-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 10",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
+  },
+  "institution/bnai-brith-har-survey": {
+    "documentedYears": [
+      {
+        "source": "bdai-box3-folder06",
+        "locator": "PDF scan 18",
+        "note": "Named in the return, not an organization date."
+      }
+    ]
   }
 }

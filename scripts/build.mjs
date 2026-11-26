@@ -48,6 +48,7 @@ const wikidata = existsSync(path.join(ROOT, 'data/wikidata.json')) ? await readJ
 const mediaConfig = existsSync(path.join(ROOT, 'data/media.json')) ? await readJSON('data/media.json') : { collections: [], items: [] };
 const mediaCache = existsSync(path.join(ROOT, 'data/media-cache.json')) ? await readJSON('data/media-cache.json') : { items: {}, collections: {} };
 const claimEvidence = await readJSON('data/evidence.json');
+const communityMentions = await readJSON('data/community-mentions.json');
 const surveys = existsSync(path.join(ROOT, 'data/congregation-surveys.json')) ? await readJSON('data/congregation-surveys.json') : [];
 // Survey observations remain dated evidence, separate from the atlas's adopted chronology.
 for (const c of data.congregation) {
@@ -71,6 +72,7 @@ const VOCAB = {
   rite: {
     label: 'Rite (minhag) at founding',
     concepts: {
+      unknown: ['Not established', 'The source does not establish a founding rite.'],
       sephardic: ['Sephardic', 'Western Sephardic ("Portuguese") rite of the colonial-era congregations.'],
       ashkenazic: ['Ashkenazic', 'Central and Eastern European rites (German, Polish, Dutch, English).'],
       reform: ['Reform', 'Founded explicitly as a Reform society or congregation.'],
@@ -80,6 +82,7 @@ const VOCAB = {
   orientation: {
     label: 'Religious orientation by c. 1870',
     concepts: {
+      unknown: ['Not established', 'Religious orientation by 1870 is not established.'],
       traditional: ['Traditional', 'Retained the traditional liturgy and practice.'],
       moderate: ['Moderate reform', 'Adopted selected reforms (e.g. sermons, choir, decorum) while keeping much of the traditional liturgy.'],
       reform: ['Reform', 'Adopted a Reform prayer book, mixed seating, organ or similar changes.'],
@@ -139,6 +142,7 @@ const VOCAB = {
   clergyTitle: {
     label: 'Clergy and religious functionaries',
     concepts: {
+      'religious-functionary': ['Religious officer (title unspecified)', 'Listed as a religious officer without a specific title.'],
       rabbi: ['Rabbi', 'Ordained or so-styled rabbi.'],
       hazan: ['Hazan', 'Cantor and reader; often the congregation\'s chief religious officer in this period.'],
       minister: ['Minister', 'Title used by many American congregations for their hazan or preacher (often "Reverend").'],
@@ -175,7 +179,7 @@ for (const [type, rows] of Object.entries(data)) {
     if (type !== 'source' && r.place && !index.place.has(r.place)) errors.push(`${at}: unknown place "${r.place}"`);
     for (const p of r.places || []) if (!index.place.has(p)) errors.push(`${at}: unknown place "${p}"`);
     for (const p of r.alsoAt || []) if (!index.place.has(p)) errors.push(`${at}: unknown place "${p}"`);
-    if(type === 'institution') {
+    if(type === 'institution' || type === 'congregation') {
       if(!Number.isInteger(r.founded) && !Number.isInteger(r.documented)) errors.push(`${at}: needs a founding year or a documented year`);
       for(const field of ['founded','documented']) if(r[field]!=null && !Number.isInteger(r[field])) errors.push(`${at}: ${field} must be a year`);
       if(r.documentedYears && (!Array.isArray(r.documentedYears) || r.documentedYears.some(y=>!Number.isInteger(y)))) errors.push(`${at}: documentary years must be integers`);
@@ -195,6 +199,12 @@ for (const [type, rows] of Object.entries(data)) {
     for (const p of r.people || []) if (!index.person.has(p)) errors.push(`${at}: unknown person "${p}"`);
     for (const o of r.orgs || []) if (!orgLike(o)) errors.push(`${at}: unknown organization "${o}"`);
     for (const role of r.roles || []) if (!orgLike(role.org)) errors.push(`${at}: role points to unknown organization "${role.org}"`);
+    for (const role of r.roles || []) if (role.survey) {
+      const sv = surveys.find(sv => sv.id === role.survey);
+      if (!sv || role.source !== sv.source || !role.locator || !role.documented || !r.sources.includes(role.source)) errors.push(`${at}: invalid survey role evidence`);
+      if (role.start != null || role.end != null) errors.push(`${at}: survey observations must not imply tenure boundaries`);
+    }
+
     if (r.splitFrom && !index.congregation.has(r.splitFrom)) errors.push(`${at}: unknown splitFrom "${r.splitFrom}"`);
     if (r.rite && !VOCAB.rite.concepts[r.rite]) errors.push(`${at}: rite "${r.rite}" not in vocabulary`);
     if (type === 'congregation' && (!r.rite || !r.orientation)) errors.push(`${at}: congregations need a rite and an orientation`);
@@ -300,7 +310,7 @@ const clergyTitles = (p) => [...new Set([...(p.clergyTitles || []), ...(p.occupa
 const institutionReports = r => r.documentedYears || (r.documented != null ? [r.documented] : []);
 const institutionYear = r => r.founded ?? r.documented;
 const institutionDateLabel = r => r.founded != null ? `Founded ${r.founded}` : `Documented ${institutionReports(r).join(", ")}`;
-const activeIn = (c, y) => c.founded <= y && !(c.dissolved && c.dissolved <= y);
+const activeIn = (c, y) => (c.founded != null ? c.founded <= y : institutionReports(c).includes(y)) && !(c.dissolved && c.dissolved <= y);
 const dormantIn = (c, y) => !!c.dormant && y >= c.dormant[0] && y < c.dormant[1];
 
 // ───────────────────────── URIs ─────────────────────────
@@ -608,7 +618,7 @@ function nodeBase(type, r) {
         additionalType: undefined, disambiguatingDescription: `${r.region} region` });
     case 'congregation':
       return strip({ ...base, '@type': ['schema:Organization', 'kh:Congregation'], name: r.name, translation: r.translation,
-        description: r.note, location: uri('place', r.place), foundingDate: String(r.founded),
+        description: r.note, location: uri('place', r.place), foundingDate: r.founded != null ? String(r.founded) : undefined, documented: institutionReports(r).map(String),
         subjectOf: (r.surveyIds || []).map(id => `${BASE}surveys/${id}/`),
         dissolutionDate: r.dissolved ? String(r.dissolved) : undefined,
         dormantFrom: r.dormant ? String(r.dormant[0]) : undefined, dormantUntil: r.dormant ? String(r.dormant[1]) : undefined,
@@ -653,6 +663,7 @@ function nodeBase(type, r) {
         birthDate: r.born ? String(r.born) : undefined, deathDate: r.died ? String(r.died) : undefined, clergyTitle: clergyTitles(r).map((t) => conceptUri('clergyTitle', t)), birthPlaceLabel: r.birthPlace, occupation: r.occupation,
         homeLocation: r.places.map((p) => uri('place', p)),
         memberOf: r.roles.map((role) => strip({ '@type': 'schema:Role', roleName: role.role,
+          subjectOf: role.survey ? [`${BASE}surveys/${role.survey}/`] : undefined, description: role.survey ? `Reported ${role.documented}; ${role.locator}; reading ${role.readingCertainty}; not tenure boundaries.` : undefined,
           startDate: role.start ? dateValue(role.start) : undefined, endDate: role.end ? dateValue(role.end) : undefined,
           memberOf: { '@id': uri(typeOfOrg(role.org), role.org) } })),
         citation: r.sources.map((s) => uri('source', s)) });
@@ -886,7 +897,8 @@ const lifespan = (r) => (r.born || r.died ? `${r.born || '?'}–${r.died || '?'}
 const span = (a, b) => (a ? `${a}${b ? `–${b}` : '–'}` : '');
 const precisionNote = (s) => (s.precision === 'approximate' ? ' <span class="muted">(approximate location)</span>' : '');
 const coords = (s) => `${s.lat.toFixed(4)}, ${s.lon.toFixed(4)} ${badge('precision', s.precision)}`;
-const peopleList = (rel, roles, empty = 'None recorded yet.') => ul(roles.map((x) => `${link(rel, 'person', x.person.id, x.person.name)} — ${esc(x.role)}${x.start ? ` <span class="muted">${span(x.start, x.end)}</span>` : ''}`), `<p class="muted">${empty}</p>`);
+const roleEvidence = (rel, role) => role.survey ? ` <span class="small muted">· <a href="${rel}surveys/${esc(role.survey)}/">Documented ${esc(role.documented)}</a>; ${esc(role.locator)}; name reading: ${esc(role.readingCertainty)}. Date records the report, not the tenure.</span>` : '';
+const peopleList = (rel, roles, empty = 'None recorded yet.') => ul(roles.map((x) => `${link(rel, 'person', x.person.id, x.person.name)} — ${esc(x.role)}${roleEvidence(rel,x)}${x.start ? ` <span class="muted">${span(x.start, x.end)}</span>` : ''}`), `<p class="muted">${empty}</p>`);
 const eventList = (rel, evs) => (evs.length ? `<section><h2>Events</h2>${ul(evs.map((e) => `${link(rel, 'event', e.id, e.name)} <span class="muted">${formatDate(e.date)}</span>`))}</section>` : '');
 const buildingsList = (rel, rows) => ul(rows.map((x) => `${link(rel, 'site', x.site.id, x.site.name)} <span class="muted">${esc(x.site.address)}${x.from ? `, ${span(x.from, x.to)}` : ''}</span>${precisionNote(x.site)}`));
 const cemList = (rel, rows) => ul(rows.map((c) => `${link(rel, 'cemetery', c.id, c.name)} <span class="muted">est. ${c.established}${c.closed ? `, closed ${c.closed}` : ''}</span>${precisionNote(c)}`));
@@ -917,7 +929,7 @@ function entityBody(type, r, rel) {
     main = `<p class="lede">${cs.length} congregation${cs.length === 1 ? '' : 's'}, ${sites.length} site${sites.length === 1 ? '' : 's'} and ${cems.length} cemeter${cems.length === 1 ? 'y' : 'ies'} recorded in ${esc(r.name)}.</p>
     ${facts([['State', esc(r.state)], ['Region', esc(r.region)], ['Coordinates', `${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}`],
       ['Active congregations', `${Y0}: ${count(Y0)} · 1850: ${count(1850)} · 1860: ${count(1860)} · ${Y1}: ${count(Y1)}`]])}
-    <section><h2>Congregations</h2>${ul(cs.map((c) => `${link(rel, 'congregation', c.id, c.name)} <span class="muted">est. ${c.founded}</span> ${badge('rite', c.rite)}`), none)}</section>
+    <section><h2>Congregations</h2>${ul(cs.map((c) => `${link(rel, 'congregation', c.id, c.name)} <span class="muted">${institutionDateLabel(c)}</span> ${badge('rite', c.rite)}`), none)}</section>
     ${readersSection(rel, r.id)}
     ${surveySection(rel, surveysByPlace.get(r.id), true)}
     <section><h2>Synagogues and other sites</h2>${ul(sites.map((s) => `${link(rel, 'site', s.id, s.name)} <span class="muted">${esc(s.address)}${s.built ? `, ${s.built}` : ''}</span>${precisionNote(s)}`), none)}</section>
@@ -936,7 +948,7 @@ function entityBody(type, r, rel) {
     const sites = (sitesByOrg.get(r.id) || []).sort((a, b) => (a.from || 0) - (b.from || 0));
     const cems = cemByOwner.get(r.id) || [];
     main = `${r.translation ? `<p class="translation">“${esc(r.translation)}”</p>` : ''}${r.note ? `<p class="lede">${esc(r.note)}</p>` : ''}
-    ${facts([['Place', link(rel, 'place', r.place, placeLabel(r.place))], ['Founded', `${r.founded} ${badge('certainty', r.certainty)}`],
+    ${facts([['Place', link(rel, 'place', r.place, placeLabel(r.place))], ['Founded', r.founded != null ? `${r.founded} ${badge('certainty', r.certainty)}` : 'Not established'], ['Documented years', r.documentedYears?.join(', ')],
       ['Dissolved / merged', r.dissolved], ['Without resident congregation', r.dormant ? `${r.dormant[0]}–${r.dormant[1]}` : ''],
       ['Rite at founding', badge('rite', r.rite)], ['Orientation by c. 1870', badge('orientation', r.orientation)],
       ['Formed from', r.splitFrom ? link(rel, 'congregation', r.splitFrom, nameOf('congregation', r.splitFrom)) : ''],
@@ -959,7 +971,7 @@ function entityBody(type, r, rel) {
     ${facts([['Type', badge('category', r.category)], ['Place', link(rel, 'place', r.place, placeLabel(r.place))], ['Founded', r.founded != null ? `${r.founded} ${badge('certainty', r.certainty)}` : 'Not yet established from the sources'], ['Documented in sources', r.documented ? `${r.documented} ${badge('certainty', r.certainty)} <span class="small muted">This is a documentary date, not a founding date.</span>` : ''], ['Documented years', r.documentedYears?.join(', ')], ['Ceased', r.dissolved]])}
     ${sites.length ? `<section><h2>Buildings and meeting places</h2>${buildingsList(rel, sites)}</section>` : ''}
     ${r.congregation ? `<p>Congregation: ${link(rel,'congregation',r.congregation,nameOf('congregation',r.congregation))}</p>` : ''}
-    ${surveyObservations(rel, surveys.filter(sv=>(r.surveyIds || []).includes(sv.id)), {school:r.category==='education'})}
+    ${r.category==='education' ? surveyObservations(rel, surveys.filter(sv=>(r.surveyIds || []).includes(sv.id)), {school:true}) : ''}
     ${surveySection(rel, surveys.filter(sv=>(r.surveyIds || []).includes(sv.id)))}
     <section><h2>People</h2>${peopleList(rel, roles)}</section>
     ${eventList(rel, eventsByOrg.get(r.id) || [])}
@@ -1001,7 +1013,7 @@ function entityBody(type, r, rel) {
     main = `<p class="lede">${esc(r.description)}</p>
     ${facts([['Lived', lifespan(r)], ['Clergy', clergyTitles(r).map((t) => badge('clergyTitle', t)).join(' ')], ['Born', esc(r.birthPlace)], ['Occupation', esc(r.occupation.join(', '))],
       ['Places', r.places.map((p) => link(rel, 'place', p, placeLabel(p))).join(' · ')], ['Certainty', r.certainty ? badge('certainty', r.certainty) : '']])}
-    <section><h2>Affiliations</h2>${ul(r.roles.map((x) => `${esc(x.role)}, ${link(rel, typeOfOrg(x.org), x.org, nameOf(typeOfOrg(x.org), x.org))}${x.start ? ` <span class="muted">${span(x.start, x.end)}</span>` : ''}`), '<p class="muted">None recorded.</p>')}</section>
+    <section><h2>Affiliations</h2>${ul(r.roles.map((x) => `${esc(x.role)}, ${link(rel, typeOfOrg(x.org), x.org, nameOf(typeOfOrg(x.org), x.org))}${roleEvidence(rel,x)}${x.start ? ` <span class="muted">${span(x.start, x.end)}</span>` : ''}`), '<p class="muted">None recorded.</p>')}</section>
     ${eventList(rel, evs)}
     ${sourcesSection(rel, r.sources)}`;
     aside = minimap(r.places.map(ptFor));
@@ -1090,7 +1102,7 @@ const SUMMARY = {
   advertisedLocation:r=>`${r.name}, ${r.address}. ${r.note}`,
   advertisement: r => `${r.name}. ${r.verificationStatus}. ${r.description}`,
   place: (r) => `${r.name}, ${r.state}: Jewish congregations, institutions, people and events, ${Y0}–${Y1}.`,
-  congregation: (r) => `${r.name} (${index.place.get(r.place).name}, founded ${r.founded}). ${r.note || ''}`.trim(),
+  congregation: (r) => `${r.name} (${index.place.get(r.place).name}, ${institutionDateLabel(r)}). ${r.note || ''}`.trim(),
   person: (r) => `${r.name} (${lifespan(r)}). ${r.description}`,
   periodical: (r) => `${r.name}, ${r.language.map((l) => LANGS[l]).join('/')} ${r.frequency} published in ${index.place.get(r.place).name}, ${span(r.founded, r.ceased)}. ${r.description}`,
   cemetery: (r) => `${r.name}, ${r.address}, ${index.place.get(r.place).name} (est. ${r.established}). ${r.note || ''}`.trim(),
@@ -1126,6 +1138,7 @@ await buildNetwork({triples,graph,BASE,out,layout});
 // CSV + CSVW
 const csvCell = (v) => { const s = Array.isArray(v) ? v.join('|') : v == null ? '' : String(v); return /[",\n|]/.test(s) && !Array.isArray(v) ? `"${s.replace(/"/g, '""')}"` : /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 const TABLES = {
+  'community-mentions': {rows:communityMentions,cols:[['placeAsWritten','string'],['survey','string'],['date','string'],['source','string'],['locator','string'],['answer','string'],['status','string']],get:(r,c)=>r[c]},
   'congregation-organization-reports': {rows:data.congregation.flatMap(c=>(c.reportedOrganization || []).map(a=>({congregation:c.id,adoptedFoundingYear:c.founded,...a}))),cols:[['congregation','string'],['adoptedFoundingYear','gYear'],['survey','string'],['date','string'],['answer','string'],['source','string'],['locator','string']],get:(r,c)=>r[c]},
   'survey-institution-links': {rows:data.institution.flatMap(o=>(o.surveyIds || []).map(id=>({institution:o.id,congregation:o.congregation,survey:id,documented:surveys.find(sv=>sv.id===id).date}))),cols:[['institution','string'],['congregation','string'],['survey','string'],['documented','string']],get:(r,c)=>r[c]},
   'advertised-locations':{rows:data.advertisedLocation,cols:[['id','string'],['advertisement','string'],['advertisements','string'],['name','string'],['place','string'],['address','string'],['lat','decimal'],['lon','decimal'],['precision','string'],['extent','string'],['note','string'],['sources','string']],get:(r,c)=>r[c],about:'advertisedLocation'},
@@ -1133,12 +1146,12 @@ const TABLES = {
   advertisements: {rows:data.advertisement,cols:[['id','string'],['name','string'],['adKind','string'],['date','string'],['dateBasis','string'],['place','string'],['placeAsRead','string'],['addressAsRead','string'],['contactAsRead','string'],['nameStatus','string'],['evidenceCategory','string'],['verificationStatus','string'],['description','string'],['sources','string']],get:(r,c)=>r[c],about:'advertisement'},
   places: { rows: data.place, cols: [['id', 'string'], ['name', 'string'], ['state', 'string'], ['region', 'string'], ['lat', 'decimal'], ['lon', 'decimal'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.place?.[r.id] : r[c]), about: 'place', titles: { lat: 'latitude', lon: 'longitude' } },
-  congregations: { rows: data.congregation, cols: [['id', 'string'], ['name', 'string'], ['translation', 'string'], ['place', 'string'], ['founded', 'gYear'], ['dissolved', 'gYear'], ['rite', 'string'], ['orientation', 'string'], ['certainty', 'string'], ['splitFrom', 'string'], ['surveyIds', 'string'], ['surveyDates', 'string'], ['note', 'string'], ['sources', 'string'], ['wikidata', 'string']],
+  congregations: { rows: data.congregation, cols: [['id', 'string'], ['name', 'string'], ['translation', 'string'], ['place', 'string'], ['founded', 'gYear'], ['documented','gYear'], ['documentedYears','gYear'], ['dissolved', 'gYear'], ['rite', 'string'], ['orientation', 'string'], ['certainty', 'string'], ['splitFrom', 'string'], ['surveyIds', 'string'], ['surveyDates', 'string'], ['note', 'string'], ['sources', 'string'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.congregation?.[r.id] : r[c]), about: 'congregation' },
   people: { rows: data.person, cols: [['id', 'string'], ['name', 'string'], ['born', 'gYear'], ['died', 'gYear'], ['birthPlace', 'string'], ['occupation', 'string'], ['places', 'string'], ['description', 'string'], ['sources', 'string'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.person?.[r.id] : r[c]), about: 'person' },
-  roles: { rows: data.person.flatMap((p) => p.roles.map((x) => ({ person: p.id, organization: x.org, organizationType: typeOfOrg(x.org), role: x.role, start: x.start, end: x.end }))),
-    cols: [['person', 'string'], ['organization', 'string'], ['organizationType', 'string'], ['role', 'string'], ['start', 'gYear'], ['end', 'gYear']], get: (r, c) => r[c] },
+  roles: { rows: data.person.flatMap((p) => p.roles.map((x) => ({ person: p.id, organization: x.org, organizationType: typeOfOrg(x.org), role: x.role, start: x.start, end: x.end, documented:x.documented,survey:x.survey,source:x.source,locator:x.locator,nameAsWritten:x.nameAsWritten,readingCertainty:x.readingCertainty }))),
+    cols: [['person', 'string'], ['organization', 'string'], ['organizationType', 'string'], ['role', 'string'], ['start', 'gYear'], ['end', 'gYear'], ['documented','string'], ['survey','string'], ['source','string'], ['locator','string'], ['nameAsWritten','string'], ['readingCertainty','string']], get: (r, c) => r[c] },
   institutions: { rows: data.institution, cols: [['id', 'string'], ['name', 'string'], ['category', 'string'], ['place', 'string'], ['founded', 'gYear'], ['documented', 'gYear'], ['documentedYears', 'gYear'], ['dissolved', 'gYear'], ['certainty', 'string'], ['description', 'string'], ['schoolType', 'string'], ['congregation', 'string'], ['surveyIds', 'string'], ['sources', 'string'], ['wikidata', 'string']],
     get: (r, c) => (c === 'wikidata' ? wikidata.institution?.[r.id] : r[c]), about: 'institution' },
   periodicals: { rows: data.periodical, cols: [['id', 'string'], ['name', 'string'], ['place', 'string'], ['founded', 'gYear'], ['ceased', 'gYear'], ['language', 'string'], ['frequency', 'string'], ['orientation', 'string'], ['certainty', 'string'], ['description', 'string'], ['sources', 'string'], ['wikidata', 'string']],
@@ -1554,11 +1567,11 @@ await out('surveys/index.html', layout({ rel:'../', title:'Board of Delegates su
   <p id="survey-count" role="status" aria-live="polite">${surveys.length} returns</p><p id="survey-empty" hidden>No returns match. Try another word or clear the filters.</p>
   <section id="survey-results" aria-label="Survey returns" class="research-grid">${orderedSurveys.map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}" data-survey="${esc(sv.id)}" data-year="${sv.date.slice(0,4)}" data-form="${esc(sv.form)}" data-search="${esc([surveyName(sv),placeLabel(sv.place),sv.nameAsWritten,sv.signed,sv.note,...sv.answers.map(a=>a.question+' '+a.answer),...(sv.officers||[]).map(o=>o.name+' '+o.office)].join(' ').toLowerCase())}"><p class="kicker">${esc(placeLabel(sv.place))} · ${esc(sv.date)}</p><h2><a href="${sv.id}/">${esc(surveyName(sv))}</a></h2><p>${esc(sv.formLabel)}</p><a class="btn btn-ghost" href="${sv.id}/">Read return &amp; view scan</a></article>`).join('')}</section>
   <section id="survey-compare"><h2>Compare reported figures</h2><p>Filters above also apply to this table. “—” means no unambiguous numeric value was extracted; it does not mean zero. Different forms ask different questions: read the original answer before comparing figures.</p><div class="table-wrap" tabindex="0" role="region" aria-label="Survey comparison table, scroll horizontally"><table><caption>Figures reported in the selected returns</caption><thead><tr><th scope="col">Congregation</th><th scope="col">Place</th><th scope="col">Date</th>${SURVEY_FIGS.map(([,l])=>`<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>${orderedSurveys.map(sv=>`<tr data-survey-row="${sv.id}"><th scope="row"><a href="${sv.id}/">${esc(surveyName(sv))}</a></th><td>${esc(placeLabel(sv.place))}</td><td>${esc(sv.date)}</td>${SURVEY_FIGS.map(([k])=>`<td>${sv.figures?.[k] ?? '—'}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>
-  <section id="survey-downloads"><h2>Use the survey data</h2><p><a href="../data/congregation-organization-reports.csv">Reported organization dates (CSV)</a> · <a href="../data/survey-institution-links.csv">Survey-to-institution links (CSV)</a> · <a href="../database/#type=institutions&amp;category=education">Educational institutions</a></p><p>These downloads include all ${surveys.length} returns, regardless of the filters above. Answers preserve the transcription; [?] marks uncertain readings and blank answers remain blank.</p><ul><li><a href="../data/congregation-surveys.csv" download>Returns and numeric figures (CSV)</a> — dates, places, source references, and extracted figures.</li><li><a href="../data/congregation-survey-answers.csv" download>Every question and answer (CSV)</a> — for searching and comparing the transcribed responses.</li><li><a href="../data/congregation-survey-officers.csv" download>Officers named (CSV)</a> — names, offices, and reading certainty.</li></ul></section></div>` }));
+  <section id="survey-downloads"><h2>Use the survey data</h2><p><a href="../data/roles.csv">People and role evidence (CSV)</a> · <a href="../data/community-mentions.csv">Unreconciled community mentions (CSV)</a></p><p><a href="../data/congregation-organization-reports.csv">Reported organization dates (CSV)</a> · <a href="../data/survey-institution-links.csv">Survey-to-institution links (CSV)</a> · <a href="../database/#type=institutions&amp;category=education">Educational institutions</a></p><p>These downloads include all ${surveys.length} returns, regardless of the filters above. Answers preserve the transcription; [?] marks uncertain readings and blank answers remain blank.</p><ul><li><a href="../data/congregation-surveys.csv" download>Returns and numeric figures (CSV)</a> — dates, places, source references, and extracted figures.</li><li><a href="../data/congregation-survey-answers.csv" download>Every question and answer (CSV)</a> — for searching and comparing the transcribed responses.</li><li><a href="../data/congregation-survey-officers.csv" download>Officers named (CSV)</a> — names, offices, and reading certainty.</li></ul></section></div>` }));
 for (const sv of orderedSurveys) {
   const rel='../../';
   await out(`surveys/${sv.id}/index.html`, layout({rel,title:`${surveyName(sv)} · ${sv.date}`,canonical:`${BASE}surveys/${sv.id}/`,current:'surveys/',description:`${sv.formLabel}: ${surveyName(sv)}, ${placeLabel(sv.place)}. Transcription and source image.`,
-    body:`<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Board of Delegates surveys</a> / ${esc(sv.date)}</nav><header class="page-head"><p class="kicker">${esc(sv.formLabel)}</p><h1>${esc(surveyName(sv))}</h1><p>${link(rel,'place',sv.place,placeLabel(sv.place))} · ${formatDate(sv.date)}</p>${sv.congregation ? `<p>${link(rel,'congregation',sv.congregation,'View congregation record')}</p>` : ''}</header><div class="survey-reader"><section><h2>Source image</h2>${sv.image ? `<a href="${esc(sv.image)}"><img class="survey-scan" src="${esc(sv.image)}" alt="Scanned return for ${esc(surveyName(sv))}, ${esc(sv.date)}" loading="lazy"></a><p><a href="${esc(sv.image)}">Open full-size scan</a></p>` : '<p>No scan is linked to this return.</p>'}</section><section><h2>Transcription</h2>${data.institution.some(o=>(o.surveyIds || []).includes(sv.id)) ? `<p>Related educational records: ${data.institution.filter(o=>(o.surveyIds || []).includes(sv.id)).map(o=>link(rel,'institution',o.id,o.name)).join('; ')}</p>` : ''}${surveyBlock(rel,sv,false).replace('<details class="survey"','<details open class="survey"')}</section></div><p><a href="../#survey-downloads">Download survey data</a> · <a href="../">Browse all returns</a></p></div>`}));
+    body:`<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Board of Delegates surveys</a> / ${esc(sv.date)}</nav><header class="page-head"><p class="kicker">${esc(sv.formLabel)}</p><h1>${esc(surveyName(sv))}</h1><p>${link(rel,'place',sv.place,placeLabel(sv.place))} · ${formatDate(sv.date)}</p>${sv.congregation ? `<p>${link(rel,'congregation',sv.congregation,'View congregation record')}</p>` : ''}</header><div class="survey-reader"><section><h2>Source image</h2>${sv.image ? `<a href="${esc(sv.image)}"><img class="survey-scan" src="${esc(sv.image)}" alt="Scanned return for ${esc(surveyName(sv))}, ${esc(sv.date)}" loading="lazy"></a><p><a href="${esc(sv.image)}">Open full-size scan</a></p>` : '<p>No scan is linked to this return.</p>'}</section><section><h2>Transcription</h2>${communityMentions.filter(m=>m.survey===sv.id).map(m=>`<aside><h3>Community mentioned: ${esc(m.placeAsWritten)}</h3><p>${esc(m.answer)}</p><p class="small">${esc(m.status)}. No map location or institutional identity has been inferred.</p></aside>`).join('')}${data.person.some(p=>(p.surveyIds || []).includes(sv.id)) ? `<p>People recorded: ${data.person.filter(p=>(p.surveyIds || []).includes(sv.id)).map(p=>link(rel,'person',p.id,p.name)).join('; \n')}</p>` : ''}${data.institution.some(o=>(o.surveyIds || []).includes(sv.id)) ? `<p>Related institution records: ${data.institution.filter(o=>(o.surveyIds || []).includes(sv.id)).map(o=>link(rel,'institution',o.id,o.name)).join('; ')}</p>` : ''}${surveyBlock(rel,sv,false).replace('<details class="survey"','<details open class="survey"')}</section></div><p><a href="../#survey-downloads">Download survey data</a> · <a href="../">Browse all returns</a></p></div>`}));
 }
 
 // Browse (no-JS, crawlable list of everything)
@@ -1567,7 +1580,7 @@ const sortName = (a, b) => (a.name || a.title).localeCompare(b.name || b.title);
 await out('browse/index.html', layout({ rel: '../', title: 'Browse', canonical: `${BASE}browse/`, current: 'browse/',
   description: 'Every record in the Kehillot dataset, listed by type.',
   body: `<div class="wrap"><h1>Browse</h1><nav class="toc" aria-label="Record types"><ul>${['congregation', 'person', 'cemetery', 'site', 'periodical', 'event', 'institution', 'place', 'advertisement', 'advertisedLocation', 'media', 'source'].map((t) => `<li><a href="#${t}">${TYPE_INFO[t].plural}</a></li>`).join('')}</ul></nav>
-  ${browseSection('congregation', [...data.congregation].sort(sortName), (r) => `${index.place.get(r.place).name} · ${r.founded}`)}
+  ${browseSection('congregation', [...data.congregation].sort(sortName), (r) => `${index.place.get(r.place).name} · ${institutionDateLabel(r)}`)}
   ${browseSection('place', [...data.place].sort(sortName), (r) => r.state)}
   ${browseSection('person', [...data.person].sort((a, b) => a.name.split(' ').at(-1).localeCompare(b.name.split(' ').at(-1))), (r) => lifespan(r))}
   ${browseSection('institution', [...data.institution].sort(sortName), (r) => `${index.place.get(r.place).name} · ${institutionDateLabel(r)}`)}
@@ -1889,7 +1902,7 @@ function clergySection(placeId, rel) {
   const rows = data.person.filter((x) => clergyTitles(x).length && (x.roles.some((r) => local.has(r.org)) || x.places.includes(placeId)));
   return `<section class="clergy" aria-labelledby="h-clergy"><h2 id="h-clergy">Clergy</h2>
   ${rows.length ? `<ul class="related">${rows.sort((a, b) => (a.roles.find((r) => local.has(r.org))?.start || 9999) - (b.roles.find((r) => local.has(r.org))?.start || 9999)).map((x) => `<li>${link(rel, 'person', x.id, x.name)} ${clergyTitles(x).map((t) => badge('clergyTitle', t)).join(' ')}
-    ${x.roles.filter((r) => local.has(r.org)).map((r) => `<br><span class="muted small">${esc(r.role)}, ${nameOf('congregation', r.org)}${r.start ? ` ${span(r.start, r.end)}` : ''}</span>`).join('')}</li>`).join('')}</ul>` : ''}
+    ${x.roles.filter((r) => local.has(r.org)).map((r) => `<br><span class="muted small">${esc(r.role)}, ${nameOf('congregation', r.org)}${roleEvidence(rel,r)}${r.start ? ` ${span(r.start, r.end)}` : ''}</span>`).join('')}</li>`).join('')}</ul>` : ''}
   <p class="section-note">${rows.length ? 'Recorded so far. ' : `No clergy recorded yet for ${esc(p.name)}. `}Rabbis, hazanim, ministers, shochtim, mohalim and shamashim can be added; see <a href="${rel}about/#collecting">what we're collecting</a>.</p></section>`;
 }
 function educationSection(placeId, rel) {
@@ -1908,7 +1921,7 @@ function congregationMoves(placeId, rel) {
   <ol class="moves-list">${cs.map((c) => {
     const sites = (sitesByOrg.get(c.id) || []).sort((a, b) => (a.from || 0) - (b.from || 0));
     const cems = cemByOwner.get(c.id) || [];
-    return `<li><div class="moves-head">${link(rel, 'congregation', c.id, c.name)} <span class="muted">est. ${c.founded}</span> ${badge('rite', c.rite)}</div>
+    return `<li><div class="moves-head">${link(rel, 'congregation', c.id, c.name)} <span class="muted">${institutionDateLabel(c)}</span> ${badge('rite', c.rite)}</div>
       ${sites.length ? `<ol class="moves-path">${sites.map((x) => `<li><a href="#e-${x.site.id}" data-goto="${x.site.id}">${esc(x.site.name.replace(/^.*?,\s*/, '') || x.site.name)}</a> <span class="muted">${span(x.from, x.to)}</span></li>`).join('')}</ol>` : '<p class="muted small">No building mapped yet.</p>'}
       ${cems.length ? `<p class="moves-cem small">Burials: ${cems.map((x) => `<a href="#e-${x.id}" data-goto="${x.id}">${esc(x.name.replace(/\s*\(.*\)/, ''))}</a>`).join(', ')}</p>` : ''}</li>`;
   }).join('')}</ol></section>`;
@@ -1920,7 +1933,7 @@ function cityAdvertisementSection(placeId,rel) {
 }
 function cityTimeline(placeId, rel) {
   const rows = [];
-  for (const c of congByPlace.get(placeId) || []) rows.push([c.founded, `${link(rel, 'congregation', c.id, c.name)} founded`]);
+  for (const c of congByPlace.get(placeId) || []) rows.push([c.founded ?? c.documented, `${link(rel, 'congregation', c.id, c.name)} ${c.founded != null ? 'founded' : 'documented (founding unknown)'}`]);
   for (const s of siteByPlace.get(placeId) || []) if (s.built) rows.push([s.built, `${link(rel, 'site', s.id, s.name)} built or acquired`]);
   for (const c of cemByPlace.get(placeId) || []) rows.push([c.established, `${link(rel, 'cemetery', c.id, c.name)} established`]);
   for (const o of instByPlace.get(placeId) || []) rows.push([institutionYear(o), `${link(rel, 'institution', o.id, o.name)} ${o.founded != null ? 'founded' : 'documented in sources (founding date unknown)'}`]);
@@ -2151,7 +2164,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     sub: (s.occupants || []).map((o) => nameOf(typeOfOrg(o.org), o.org)).concat((s.proprietors || s.people || []).map((p) => nameOf('person', p))).join(', ') }));
   const FEATURES = [
     { id: 'congregations', symbol: 'congregation', label: 'Congregations', blurb: 'Congregations at their cities, with separate dated advertisement notices where identity remains unresolved.',
-      items: () => [...adItems(['congregation']), ...data.congregation.map((c) => ({ ...cityPt(c.place), id: c.id, name: c.name, href: docPath('congregation', c.id), from: c.founded, to: c.dissolved || null, sub: `${conceptLabel('rite', c.rite)} rite` }))] },
+      items: () => [...adItems(['congregation']), ...data.congregation.map((c) => ({ ...cityPt(c.place), id: c.id, name: c.name, href: docPath('congregation', c.id), from: c.founded ?? c.documented, to: c.founded != null ? c.dissolved || null : Math.max(...institutionReports(c)), documentedYears:c.founded == null ? institutionReports(c) : undefined, dateLabel:institutionDateLabel(c), sub: `${conceptLabel('rite', c.rite)} rite` }))] },
     { id: 'synagogues', symbol: 'synagogue', label: 'Synagogue buildings', blurb: 'Buildings congregations worshipped in, at their addresses.', items: () => siteItems(['synagogue']) },
     { id: 'cemeteries', symbol: 'cemetery', label: 'Cemeteries', blurb: 'Jewish burial grounds and the congregations that kept them.',
       items: () => data.cemetery.map((c) => ({ ...sitePt(c), id: c.id, name: c.name, href: docPath('cemetery', c.id), from: c.established, to: null, sub: (c.owners || []).map((o) => nameOf('congregation', o)).join(', ') })) },
@@ -2160,7 +2173,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
         const served = p.roles.filter((r) => index.congregation.has(r.org));
         const title = clergyTitles(p).map((t) => conceptLabel('clergyTitle', t)).join(', ');
         return served.length
-          ? served.map((r, i) => ({ ...cityPt(index.congregation.get(r.org).place), id: `${p.id}-${i}`, name: p.name, href: docPath('person', p.id), from: r.start || null, to: r.end || null, sub: `${r.role}, ${nameOf('congregation', r.org)}` }))
+          ? served.map((r, i) => ({ ...cityPt(index.congregation.get(r.org).place), id: `${p.id}-${i}`, name: p.name, href: docPath('person', p.id), from: r.start || (r.documented ? yearOf(r.documented) : null), to: r.end || (r.documented ? yearOf(r.documented) : null), dateLabel:r.documented ? `Documented ${r.documented}; tenure unknown` : undefined, sub: `${r.role}, ${nameOf('congregation', r.org)}` }))
           : p.places.slice(0, 1).map((pl) => ({ ...cityPt(pl), id: p.id, name: p.name, href: docPath('person', p.id), from: null, to: null, sub: title }));
       }) },
     { id: 'education', symbol: 'school', label: 'Educational institutions', blurb: 'Schools, Sunday schools, seminaries and educational societies.',
@@ -2283,7 +2296,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
   const flow = rites.flatMap((r) => ors.map((o) => ({ r, o, n: data.congregation.filter((c) => c.rite === r && c.orientation === o).length }))).filter((x) => x.n);
   const total = data.congregation.length;
   const FW = 640, FH = 300, FT = 26, colW = 14, gap = 10, x0 = 150, x1 = FW - 170;
-  const scale = (FH - gap * 2) / total;
+  const scale = (FH - gap * (Math.max(rites.length, ors.length) - 1)) / total;
   const leftY = {}, rightY = {};
   let y = 0; for (const r of rites) { const n = data.congregation.filter((c) => c.rite === r).length; leftY[r] = { y, n }; y += n * scale + gap; }
   y = 0; for (const o of ors) { const n = data.congregation.filter((c) => c.orientation === o).length; rightY[o] = { y, n }; y += n * scale + gap; }
@@ -2394,6 +2407,8 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     <h2 id="ten-h">Clergy tenures</h2>
     <p class="section-note">Each bar is one clergyman's service at one congregation, grouped by congregation. Pale dashed bars have no recorded end date and run to the person's death or to 1900. The shaded band marks ${Y0}–${Y1}. <a href="../maps/clergy/">Map their journeys between pulpits →</a></p>
     <figure class="viz-fig">${tenSvg}</figure>
+    <h3>Clergy documented in survey returns</h3><p>These are dated role reports, not established tenure ranges. Uncertain name readings remain flagged on the linked person records.</p>
+    ${tableView('Clergy role observations', ['Person','Role','Organization','Reported date','Source return'], data.person.filter(p=>clergyTitles(p).length).flatMap(p=>p.roles.filter(r=>r.survey).map(r=>[link('../','person',p.id,p.name),esc(r.role),link('../',typeOfOrg(r.org),r.org,nameOf(typeOfOrg(r.org),r.org)),esc(r.documented),`<a href="../surveys/${r.survey}/">${esc(r.locator)}</a>`])))}
     ${tableView('Clergy tenures', ['Person', 'Role', 'Congregation', 'Years'], tenures.map((t) => [esc(t.p.name), esc(t.r.role), esc(`${t.c.name}, ${index.place.get(t.c.place).name}`), `${t.r.start}–${t.r.end || ''}`]))}
   </section>
 
