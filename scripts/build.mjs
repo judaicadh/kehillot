@@ -482,7 +482,8 @@ function periodicalReadership(rel, paper) {
   ${d ? `<p class="small">Source: ${dsCitation(d)}. ${R.unlocated ? `${R.unlocated.toLocaleString('en-US')} subscriptions have no recorded place and are not mapped.` : ''}</p>` : ''}</section>`;
 }
 
-const CITY_IDS = data.place.filter((p) => (siteByPlace.get(p.id) || []).length || (cemByPlace.get(p.id) || []).length || (mediaByPlace.get(p.id) || []).length || data.advertisedLocation.some(l=>l.place===p.id) || (instByPlace.get(p.id) || []).length || readersFor(p.id).length || surveys.some(sv => sv.place === p.id)).map((p) => p.id);
+// Every curated place has a guide, even before street locations or images are added.
+const CITY_IDS = data.place.map(p => p.id);
 
 const ALL_GUIDES = new Map([...data.place.map(p=>[p.id,p.name]),...READ_PLACES.filter(p=>!p.own).map(p=>[p.cityId,p.name])]);
 for (const col of mediaConfig.collections || []) for(const id of col.cityGuides || []) if(!ALL_GUIDES.has(id)) throw new Error(`Unknown collection city guide: ${col.id}/${id}`);
@@ -2025,7 +2026,7 @@ for (const placeId of CITY_IDS) {
   // On the street map, only pictures geotagged inside the city itself (≈12 km); others stay in the gallery.
   const geoPics = pics.filter((m) => m.geo && nearestPlace(m.geo.lat, m.geo.lon) === placeId && Math.hypot(m.geo.lat - p.lat, m.geo.lon - p.lon) < 0.12);
   const years = entries.map((e) => e.from).filter(Boolean);
-  const yMin = Math.min(Y0, ...years), yMax = Math.max(Y1, ...years);
+  const yMin = Math.min(Y0, ...years), yMax = Math.max(ATLAS_END, ...years);
   const groups = GROUP_NAMES;
   const counts = Object.fromEntries(groups.map((g) => [g, entries.filter(e=>entryGroup(e)===g || g===AD_GROUP && e.type==='site' && data.advertisement.some(a=>a.knownSites?.includes(e.r.id))).length]));
   const groupIcon = (g) => SYM.svg(g===AD_GROUP ? 'business' : SYM.GROUPS.find((x) => x[0] === g)[1][0], { size: 16 });
@@ -2085,7 +2086,7 @@ for (const placeId of CITY_IDS) {
       </section>
       <details class="city-records" id="city-records"><summary>Browse all ${entries.length} mapped places</summary>
       <ol class="entries" id="city-list">${entries.map((e) => e.html).join('')}</ol>
-      ${!entries.length ? '<p class="muted">No buildings or cemeteries mapped yet; the pictures below are placed where their holders geotagged them.</p>' : ''}
+      ${!entries.length ? '<p class="muted">No address-level sites are mapped yet. This does not mean there was no Jewish community here; explore the linked records and sources below.</p>' : ''}
       </details>
     </section>
   </div>
@@ -2190,20 +2191,20 @@ const cityCards = CITY_IDS.map((id) => {
   const pics = mediaByPlace.get(id) || [];
   const cover = pics.find((m) => m.feature) || pics[0];
   return { id, p, n, pics, cover, score: n * 3 + pics.length };
-}).filter(c => c.n || c.pics.length).sort((a, b) => b.score - a.score);
+}).sort((a, b) => b.score - a.score || a.p.name.localeCompare(b.p.name));
 await out('cities/index.html', layout({ rel: '../', title: 'City guides', canonical: `${BASE}cities/`, current: 'cities/',
   description: 'Explore Jewish sites city by city: synagogues, cemeteries and other places on street maps, with pictures and documents from libraries and museums.',
   scripts: ['assets/js/city-directory.js'],
   body: `<div class="wrap"><h1>City guides</h1>
-  <p class="lede">Search for a city to open its guide, or choose a mapped city below.</p>
+  <p class="lede">Every recorded place has a guide. Search for a city or town, or browse below. Some guides have street locations and pictures; others bring together the source evidence recorded so far.</p>
   <form id="guide-open-form" class="guide-open-form"><label for="guide-city">Which city?</label><div><input id="guide-city" type="search" list="guide-city-choices" placeholder="New York, Cincinnati, San Francisco…" required autocomplete="off" disabled><datalist id="guide-city-choices"></datalist><button class="btn" type="submit" disabled>Open city guide ↗</button></div><p id="guide-open-status" class="small" role="status" aria-live="polite">Choose from all recorded cities and subscriber localities.</p><ul id="guide-matches" class="guide-matches" hidden></ul></form>
 
 
   <h2>Explore the city guides</h2>
   <ul class="city-cards">${cityCards.map((c) => `<li><a class="city-card" href="../city/${c.id}/">
-    ${c.cover ? `<img src="${esc(c.cover.image.thumb)}" alt="" loading="lazy">` : '<span class="city-card-blank" aria-hidden="true">'+c.n+'<small>mapped places</small></span>'}
+    ${c.cover ? `<img src="${esc(c.cover.image.thumb)}" alt="" loading="lazy">` : '<span class="city-card-blank" aria-hidden="true">'+(c.n || 'Guide')+'<small>'+(c.n?'mapped places':'community records')+'</small></span>'}
     <span class="city-card-body"><strong>${esc(c.p.name)}</strong><span class="muted">${esc(c.p.state)}</span>
-    <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ') || `${readersFor(c.id).reduce((n,x)=>n+x.n,0)} subscriptions recorded`}</span><span class="guide-open-label">Open city guide ↗</span></span></a></li>`).join('')}</ul>
+    <span class="small">${[c.n && `${c.n} mapped site${c.n === 1 ? '' : 's'}`, c.pics.length && `${c.pics.length} picture${c.pics.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ') || (readersFor(c.id).length ? `${readersFor(c.id).reduce((n,x)=>n+x.n,0)} subscriptions recorded` : 'Community records · street locations not yet mapped')}</span><span class="guide-open-label">Open city guide ↗</span></span></a></li>`).join('')}</ul>
   <details class="locality-directory"><summary>Browse all recorded cities and subscriber localities</summary><h2>All recorded places</h2><label for="locality-search">Find a city, town, state, or country</label><input id="locality-search" type="search" placeholder="Search all recorded places…" autocomplete="off"><p id="locality-count" role="status">${data.place.length + READ_PLACES.filter(isSeparateLocality).length} places</p>
   <div class="table-wrap"><table id="locality-table"><thead><tr><th scope="col">Place</th><th scope="col">State or country</th><th scope="col">Evidence recorded</th></tr></thead><tbody>
   ${[...data.place.map(p=>({id:p.id,name:p.name,region:p.state,sites:(siteByPlace.get(p.id)||[]).length+(cemByPlace.get(p.id)||[]).length, subscriptions:readersFor(p.id).reduce((n,x)=>n+x.n,0),guide:CITY_IDS.includes(p.id)})),...READ_PLACES.filter(isSeparateLocality).map(p=>({id:p.cityId,name:p.name,region:[p.state,p.country].filter(Boolean).join(' · '),sites:0,subscriptions:subscriptionCount(p),guide:true}))].sort((a,b)=>a.name.localeCompare(b.name)||a.region.localeCompare(b.region)).map(p=>`<tr><th scope="row"><a href="../${p.guide?'city':'place'}/${p.id}/">${esc(p.name)}</a></th><td>${esc(p.region)}</td><td>${[p.sites ? `${p.sites} mapped sites` : '',p.subscriptions ? `${p.subscriptions.toLocaleString('en-US')} subscriptions` : ''].filter(Boolean).join(' · ') || 'Curated place record'}</td></tr>`).join('')}

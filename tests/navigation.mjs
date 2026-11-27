@@ -30,3 +30,12 @@ for(const id of await readdir(path.join(root,'surveys/collections'))){
  const page=`surveys/collections/${id}/index.html`;await checkLinks(page,await read(page));
 }
 console.log('Verified record navigation routes, collection hubs, map directory and default evidence separation.');
+const places=JSON.parse(await readFile('data/places.json','utf8'));
+const guides=await read('cities/index.html');
+const site=JSON.parse(await read('data/site.json'));
+for(const place of places){
+ assert(site.cityGuides.includes(place.id),`No guide registered for ${place.id}`);
+ await stat(path.join(root,'city',place.id,'index.html'));
+ assert(guides.includes(`class="city-card" href="../city/${place.id}/"`),`No directory card for ${place.id}`);
+}
+console.log(`Verified guide pages and visible directory cards for all ${places.length} curated places.`);
