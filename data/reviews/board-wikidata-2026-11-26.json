@@ -1,0 +1,637 @@
+{
+  "source_file": "board-records-review-(1)-csv (1).csv",
+  "import_date": "2026-11-26",
+  "note": "User-supplied matches entered in current_wikidata. Imported by stable record ID; no prior links replaced, no records merged. QID syntax and record references checked; not an independent identity review.",
+  "changes": [
+    {
+      "record_type": "person",
+      "record_id": "gershom-kursheedt",
+      "name": "Gershom Kursheedt",
+      "wikidata": "Q119220443"
+    },
+    {
+      "record_type": "person",
+      "record_id": "henry-s-jacobs-charleston-survey",
+      "name": "Henry S. Jacobs",
+      "wikidata": "Q125463751"
+    },
+    {
+      "record_type": "person",
+      "record_id": "b-h-gotthelf-louisville-survey",
+      "name": "Bernard Henry Gotthelf",
+      "wikidata": "Q119220131"
+    },
+    {
+      "record_type": "person",
+      "record_id": "moses-may-brooklyn-survey",
+      "name": "Moses May",
+      "wikidata": "Q139129523"
+    },
+    {
+      "record_type": "person",
+      "record_id": "revd-samuel-m-isaacs-new-york-survey",
+      "name": "Samuel Meyer Isaacs",
+      "wikidata": "Q13137739"
+    },
+    {
+      "record_type": "person",
+      "record_id": "revd-j-j-lyons-new-york-survey",
+      "name": "Jacques Judah Lyons",
+      "wikidata": "Q6120672"
+    },
+    {
+      "record_type": "person",
+      "record_id": "revd-dr-a-fischell-new-york-survey",
+      "name": "Arnold Fischel",
+      "wikidata": "Q20988610"
+    },
+    {
+      "record_type": "person",
+      "record_id": "nathan-barnert-paterson-survey",
+      "name": "Nathan Barnert",
+      "wikidata": "Q6968891"
+    },
+    {
+      "record_type": "person",
+      "record_id": "isaac-leeser-philadelphia-survey",
+      "name": "Isaac Leeser",
+      "wikidata": "Q1673417"
+    },
+    {
+      "record_type": "person",
+      "record_id": "alfred-t-jones-philadelphia-survey",
+      "name": "Alfred T. Jones",
+      "wikidata": "Q134710199"
+    },
+    {
+      "record_type": "person",
+      "record_id": "jacob-aub-philadelphia-survey",
+      "name": "Jacob Aub",
+      "wikidata": "Q134709461"
+    },
+    {
+      "record_type": "person",
+      "record_id": "moses-millhiser-richmond-survey",
+      "name": "Moses Millhiser",
+      "wikidata": "Q141108426"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "hebrew-benevolent-charleston",
+      "name": "Hebrew Benevolent Society of Charleston",
+      "wikidata": "Q142307766"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "chebra-gemiloth-chased-bos",
+      "name": "Chebra Gemiloth Chased (Ohabei Shalom)",
+      "wikidata": "Q142307771"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ladies-hebrew-benevolent-atl",
+      "name": "Ladies Hebrew Benevolent Society of Atlanta",
+      "wikidata": "Q142307776"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "gate-city-lodge-atl",
+      "name": "Gate City Lodge, B'nai B'rith",
+      "wikidata": "Q142307780"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ladies-hebrew-association-btr",
+      "name": "Ladies' Hebrew Association of Baton Rouge",
+      "wikidata": "Q142307784"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "hebrew-orphan-society-chs",
+      "name": "Hebrew Orphan Society of Charleston",
+      "wikidata": "Q142307789"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "dan-lodge-chs",
+      "name": "Dan Lodge, I.O.B.B.",
+      "wikidata": "Q142307794"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ladies-benevolent-donaldsonville",
+      "name": "Ladies Benevolent Association of Donaldsonville",
+      "wikidata": "Q142307798"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "sons-of-truth-lea",
+      "name": "Sons of Truth",
+      "wikidata": "Q142307803"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "hebrew-benevolent-la",
+      "name": "Hebrew Benevolent Society of Los Angeles",
+      "wikidata": "Q142307805"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "gemiluth-hesed-beth-israel-lou",
+      "name": "Hebrah Gemiluth Hesed (Beth Israel)",
+      "wikidata": "Q142307806"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "mobile-hebrew-relief",
+      "name": "Mobile Hebrew Relief Association",
+      "wikidata": "Q142307807"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ladies-hebrew-benevolent-mob",
+      "name": "Ladies Hebrew Benevolent Society of Mobile",
+      "wikidata": "Q142307809"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bonnheim-school-atl",
+      "name": "B. A. Bonnheim’s School",
+      "wikidata": "Q142307811"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ohabei-shalom-school-surveys",
+      "name": "Ohabei Shalom Free School (survey reports)",
+      "wikidata": "Q142307812"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "beth-elohim-school-surveys",
+      "name": "Beth Elohim School (survey reports)",
+      "wikidata": "Q142307814"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "shearit-israel-school-surveys",
+      "name": "Shearit Israel Sunday School (survey reports)",
+      "wikidata": "Q142307815"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "chattanooga-sunday-school-survey",
+      "name": "Hebrew Benevolent Association Sunday School",
+      "wikidata": "Q142307816"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "alexander-school-chicago",
+      "name": "Rev. A. Alexander’s Educational Institution",
+      "wikidata": "Q142307817"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "sherith-israel-school-cincinnati-survey",
+      "name": "Sherith Israel Religious School (survey report)",
+      "wikidata": "Q142307819"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bnai-yeshurun-school-dayton",
+      "name": "B’nai Yeshurun Hebrew School (Dayton)",
+      "wikidata": "Q142307820"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bnai-zion-school-danville",
+      "name": "B’nai Zion Hebrew and German School",
+      "wikidata": "Q142307821"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "achduth-veshalom-school",
+      "name": "Achduth Veshalom Hebrew School",
+      "wikidata": "Q142307822"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "donaldsonville-school-survey",
+      "name": "Donaldsonville Congregational School",
+      "wikidata": "Q142307823"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "ohev-sholom-sabbath-school",
+      "name": "Ohev Sholom Sabbath School",
+      "wikidata": "Q142307824"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "beth-israel-private-school-louisville",
+      "name": "Private School at Beth Israel (Louisville)",
+      "wikidata": "Q142307825"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "shaarai-shomayim-school-mobile",
+      "name": "Shaarai Shomayim Hebrew and Religious School",
+      "wikidata": "Q142307827"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bnai-brith-laf-survey",
+      "name": "B’nai B’rith Lodge (Lafayette)",
+      "wikidata": "Q142307829"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bnai-brith-dan-survey",
+      "name": "B’nai B’rith Lodge (Danville)",
+      "wikidata": "Q142307830"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "is-of-i-dan-survey",
+      "name": "I.S. of I. (Danville, as written)",
+      "wikidata": "Q142307831"
+    },
+    {
+      "record_type": "institution",
+      "record_id": "bnai-brith-har-survey",
+      "name": "B’nai B’rith Lodge (Harrisburg)",
+      "wikidata": "Q142307832"
+    },
+    {
+      "record_type": "place",
+      "record_id": "columbia-sc",
+      "name": "Columbia",
+      "wikidata": "Q38453"
+    },
+    {
+      "record_type": "place",
+      "record_id": "augusta-ga",
+      "name": "Augusta",
+      "wikidata": "Q181962"
+    },
+    {
+      "record_type": "place",
+      "record_id": "stockton-ca",
+      "name": "Stockton",
+      "wikidata": "Q49240"
+    },
+    {
+      "record_type": "place",
+      "record_id": "atlanta",
+      "name": "Atlanta",
+      "wikidata": "Q23556"
+    },
+    {
+      "record_type": "place",
+      "record_id": "baton-rouge",
+      "name": "Baton Rouge",
+      "wikidata": "Q28218"
+    },
+    {
+      "record_type": "place",
+      "record_id": "chattanooga",
+      "name": "Chattanooga",
+      "wikidata": "Q186702"
+    },
+    {
+      "record_type": "place",
+      "record_id": "dayton",
+      "name": "Dayton",
+      "wikidata": "Q34739"
+    },
+    {
+      "record_type": "place",
+      "record_id": "fort-wayne",
+      "name": "Fort Wayne",
+      "wikidata": "Q49268"
+    },
+    {
+      "record_type": "place",
+      "record_id": "lafayette-in",
+      "name": "Lafayette",
+      "wikidata": "Q638187"
+    },
+    {
+      "record_type": "place",
+      "record_id": "danville-pa",
+      "name": "Danville",
+      "wikidata": "Q1135472"
+    },
+    {
+      "record_type": "place",
+      "record_id": "donaldsonville",
+      "name": "Donaldsonville",
+      "wikidata": "Q2355094"
+    },
+    {
+      "record_type": "place",
+      "record_id": "harrisburg",
+      "name": "Harrisburg",
+      "wikidata": "Q25280"
+    },
+    {
+      "record_type": "place",
+      "record_id": "jackson-ms",
+      "name": "Jackson",
+      "wikidata": "Q28198"
+    },
+    {
+      "record_type": "place",
+      "record_id": "laporte",
+      "name": "La Porte",
+      "wikidata": "Q2018808"
+    },
+    {
+      "record_type": "place",
+      "record_id": "leavenworth",
+      "name": "Leavenworth",
+      "wikidata": "Q1762867"
+    },
+    {
+      "record_type": "place",
+      "record_id": "los-angeles",
+      "name": "Los Angeles",
+      "wikidata": "Q65"
+    },
+    {
+      "record_type": "place",
+      "record_id": "madison-wi",
+      "name": "Madison",
+      "wikidata": "Q43788"
+    },
+    {
+      "record_type": "place",
+      "record_id": "norfolk",
+      "name": "Norfolk",
+      "wikidata": "Q49231"
+    },
+    {
+      "record_type": "place",
+      "record_id": "brooklyn",
+      "name": "Brooklyn",
+      "wikidata": "Q18419"
+    },
+    {
+      "record_type": "place",
+      "record_id": "paterson",
+      "name": "Paterson",
+      "wikidata": "Q138391"
+    },
+    {
+      "record_type": "place",
+      "record_id": "providence",
+      "name": "Providence",
+      "wikidata": "Q18383"
+    },
+    {
+      "record_type": "place",
+      "record_id": "quincy",
+      "name": "Quincy",
+      "wikidata": "Q575750"
+    },
+    {
+      "record_type": "place",
+      "record_id": "plaquemine",
+      "name": "Plaquemine",
+      "wikidata": "Q1990254"
+    },
+    {
+      "record_type": "place",
+      "record_id": "milwaukee",
+      "name": "Milwaukee",
+      "wikidata": "Q37836"
+    },
+    {
+      "record_type": "place",
+      "record_id": "st-paul",
+      "name": "Saint Paul",
+      "wikidata": "Q28848"
+    },
+    {
+      "record_type": "place",
+      "record_id": "galveston",
+      "name": "Galveston",
+      "wikidata": "Q135744"
+    },
+    {
+      "record_type": "place",
+      "record_id": "denver",
+      "name": "Denver",
+      "wikidata": "Q16554"
+    },
+    {
+      "record_type": "place",
+      "record_id": "omaha",
+      "name": "Omaha",
+      "wikidata": "Q43199"
+    },
+    {
+      "record_type": "place",
+      "record_id": "kansas-city",
+      "name": "Kansas City",
+      "wikidata": "Q41819"
+    },
+    {
+      "record_type": "place",
+      "record_id": "little-rock",
+      "name": "Little Rock",
+      "wikidata": "Q33405"
+    },
+    {
+      "record_type": "place",
+      "record_id": "shreveport",
+      "name": "Shreveport",
+      "wikidata": "Q80517"
+    },
+    {
+      "record_type": "place",
+      "record_id": "vicksburg",
+      "name": "Vicksburg",
+      "wikidata": "Q493787"
+    },
+    {
+      "record_type": "place",
+      "record_id": "wilmington-nc",
+      "name": "Wilmington",
+      "wikidata": "Q659400"
+    },
+    {
+      "record_type": "place",
+      "record_id": "petersburg-va",
+      "name": "Petersburg",
+      "wikidata": "Q511964"
+    },
+    {
+      "record_type": "place",
+      "record_id": "wheeling",
+      "name": "Wheeling",
+      "wikidata": "Q838112"
+    },
+    {
+      "record_type": "place",
+      "record_id": "evansville",
+      "name": "Evansville",
+      "wikidata": "Q486459"
+    },
+    {
+      "record_type": "place",
+      "record_id": "toledo",
+      "name": "Toledo",
+      "wikidata": "Q49239"
+    },
+    {
+      "record_type": "place",
+      "record_id": "columbus-oh",
+      "name": "Columbus",
+      "wikidata": "Q16567"
+    },
+    {
+      "record_type": "place",
+      "record_id": "peoria",
+      "name": "Peoria",
+      "wikidata": "Q233129"
+    },
+    {
+      "record_type": "place",
+      "record_id": "davenport",
+      "name": "Davenport",
+      "wikidata": "Q26887"
+    },
+    {
+      "record_type": "place",
+      "record_id": "keokuk",
+      "name": "Keokuk",
+      "wikidata": "Q732549"
+    },
+    {
+      "record_type": "place",
+      "record_id": "des-moines",
+      "name": "Des Moines",
+      "wikidata": "Q39709"
+    },
+    {
+      "record_type": "place",
+      "record_id": "wilkes-barre",
+      "name": "Wilkes-Barre",
+      "wikidata": "Q745594"
+    },
+    {
+      "record_type": "place",
+      "record_id": "scranton",
+      "name": "Scranton",
+      "wikidata": "Q271395"
+    },
+    {
+      "record_type": "place",
+      "record_id": "elmira",
+      "name": "Elmira",
+      "wikidata": "Q934135"
+    },
+    {
+      "record_type": "place",
+      "record_id": "troy",
+      "name": "Troy",
+      "wikidata": "Q600301"
+    },
+    {
+      "record_type": "place",
+      "record_id": "newark-nj",
+      "name": "Newark",
+      "wikidata": "Q25395"
+    },
+    {
+      "record_type": "place",
+      "record_id": "hoboken",
+      "name": "Hoboken",
+      "wikidata": "Q138578"
+    },
+    {
+      "record_type": "place",
+      "record_id": "macon",
+      "name": "Macon",
+      "wikidata": "Q219656"
+    },
+    {
+      "record_type": "place",
+      "record_id": "columbus-ga",
+      "name": "Columbus",
+      "wikidata": "Q239870"
+    },
+    {
+      "record_type": "place",
+      "record_id": "selma",
+      "name": "Selma",
+      "wikidata": "Q79941"
+    },
+    {
+      "record_type": "place",
+      "record_id": "nashville",
+      "name": "Nashville",
+      "wikidata": "Q23197"
+    },
+    {
+      "record_type": "place",
+      "record_id": "knoxville",
+      "name": "Knoxville",
+      "wikidata": "Q185582"
+    },
+    {
+      "record_type": "place",
+      "record_id": "kalamazoo",
+      "name": "Kalamazoo",
+      "wikidata": "Q167155"
+    },
+    {
+      "record_type": "place",
+      "record_id": "grand-rapids",
+      "name": "Grand Rapids",
+      "wikidata": "Q184587"
+    },
+    {
+      "record_type": "place",
+      "record_id": "san-jose",
+      "name": "San Jose",
+      "wikidata": "Q16553"
+    },
+    {
+      "record_type": "place",
+      "record_id": "oakland",
+      "name": "Oakland",
+      "wikidata": "Q17042"
+    },
+    {
+      "record_type": "place",
+      "record_id": "salt-lake-city",
+      "name": "Salt Lake",
+      "wikidata": "Q116059033"
+    },
+    {
+      "record_type": "place",
+      "record_id": "st-joseph-mo",
+      "name": "St. Joseph",
+      "wikidata": "Q745120"
+    },
+    {
+      "record_type": "place",
+      "record_id": "springfield-il",
+      "name": "Springfield",
+      "wikidata": "Q28515"
+    },
+    {
+      "record_type": "place",
+      "record_id": "alexandria-la",
+      "name": "Alexandria",
+      "wikidata": "Q985351"
+    },
+    {
+      "record_type": "place",
+      "record_id": "meridian",
+      "name": "Meridian",
+      "wikidata": "Q118152"
+    }
+  ]
+}
