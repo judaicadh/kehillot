@@ -1244,3 +1244,28 @@ input[type=search],textarea { font-family:var(--sans); border:1px solid var(--ru
 
 /* Survey evidence may not establish a rite. */
 .sym-unknown { fill:var(--muted); stroke:var(--ink); stroke-dasharray:2 2; }
+
+/* Board collection workspace. */
+.board-overview { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:2rem 0; }
+.board-overview>a { display:flex; flex-direction:column; gap:.5rem; padding:1.4rem; border:1px solid var(--rule); background:var(--card); text-decoration:none; border-radius:var(--radius); }
+.board-overview strong { font:600 1.6rem/1.2 var(--serif); color:var(--ink); }
+.board-overview small { font-size:.875rem; color:var(--muted); }
+.board-source-type { display:inline-block; padding:.2rem .5rem; background:var(--paper-2); color:var(--ink); font-size:.875rem; margin-bottom:.4rem; border-radius:4px; }
+.survey-directory .survey-filters { padding:1.2rem; border:1px solid var(--rule); background:var(--card); }
+.survey-directory .research-card h2 { font-size:1.1rem; }
+.board-pagination { display:flex; align-items:center; justify-content:center; gap:1rem; margin:1.5rem 0; }
+.board-pagination[hidden] { display:none; }
+.board-measure-control { display:flex; align-items:center; flex-wrap:wrap; gap:1rem; }
+.board-measure-control[hidden] { display:none; }
+#survey-compare [hidden] { display:none; }
+.board-record>section { margin:2.5rem 0; scroll-margin-top:1rem; }
+.board-record .survey-reader { grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); padding-top:1.5rem; }
+.board-image { position:sticky; top:1rem; }
+.board-image .survey-scan { max-height:75vh; object-fit:contain; background:var(--paper-2); }
+.board-context { padding:1.5rem; background:var(--paper-2); border-left:3px solid var(--accent); }
+.board-source-placeholder { padding:2rem; border:1px solid var(--rule); background:var(--card); }
+.board-linked-list { list-style:none; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.board-linked-list li { border-bottom:1px solid var(--rule); padding:.7rem 0; }
+.board-linked-list p { margin:.3rem 0; }
+@media(max-width:800px) { .board-overview,.board-record .survey-reader,.board-linked-list { grid-template-columns:1fr; } .board-image { position:static; } }
+@media print { .board-image { position:static; } .board-record .survey-reader { display:block; } }
