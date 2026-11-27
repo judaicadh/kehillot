@@ -6,7 +6,8 @@
     "source": "bdai-box3-folder06",
     "locator": "PDF scan 1",
     "answer": "one at Piqua, O., 25 miles from Dayton, don't know their Officers, non nearer than said Place",
-    "status": "Congregation identity and geographic record not reconciled"
+    "status": "Place linked to the Piqua, Ohio subscriber locality; congregation identity remains unresolved",
+    "guide": "subscriber-q998596"
   },
   {
     "placeAsWritten": "Vicksburg, Mississippi",
@@ -15,6 +16,7 @@
     "source": "bdai-box3-folder06",
     "locator": "PDF scan 25",
     "answer": "The nearest congregation is in Vicksburg, about forty miles from here, Mr. ____ is the president",
-    "status": "Congregation identity and geographic record not reconciled"
+    "status": "Place linked to Vicksburg; identity of the congregation in this answer remains unconfirmed",
+    "guide": "vicksburg"
   }
 ]

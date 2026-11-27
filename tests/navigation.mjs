@@ -39,3 +39,17 @@ for(const place of places){
  assert(guides.includes(`class="city-card" href="../city/${place.id}/"`),`No directory card for ${place.id}`);
 }
 console.log(`Verified guide pages and visible directory cards for all ${places.length} curated places.`);
+const subscriberPlaces=JSON.parse(await read('data/readership-places.json')).places;
+for(const place of subscriberPlaces.filter(p=>!p.own && !places.some(c=>c.subscriberLocality===p.k))){
+ assert(guides.includes(`../city/${place.cityId}/`),`Missing subscriber locality ${place.cityId}`);
+ await stat(path.join(root,'city',place.cityId,'index.html'));
+}
+const ads=JSON.parse(await readFile('data/advertisements.json','utf8'));
+for(const ad of ads.filter(a=>!a.place && !a.locality)){
+ assert(guides.includes(`../place-references/${ad.id}/`));
+ await checkLinks(`place-references/${ad.id}/index.html`,await read(`place-references/${ad.id}/index.html`));
+}
+const mentions=JSON.parse(await readFile('data/community-mentions.json','utf8'));
+for(const mention of mentions.filter(m=>m.guide))assert((await read(`city/${mention.guide}/index.html`)).includes(`surveys/${mention.survey}/`));
+assert(guides.indexOf('id="all-places"')<guides.indexOf('class="city-cards"'));
+console.log('Verified subscriber localities, unresolved references, and survey-to-guide links.');

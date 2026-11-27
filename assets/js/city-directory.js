@@ -27,6 +27,7 @@
   let limit = 50;
   function render() {
     const query = input.value.trim().toLocaleLowerCase();
+    const url=new URL(location.href);if(query)url.searchParams.set('q',input.value.trim());else url.searchParams.delete('q');history.replaceState(null,'',url);
     let matches = 0;
     let shown = 0;
     rows.forEach(row => {
@@ -35,10 +36,11 @@
       row.hidden = !match || matches > limit;
       if (!row.hidden) shown++;
     });
-    document.querySelector('#locality-count').textContent = `${shown.toLocaleString('en-US')} of ${matches.toLocaleString('en-US')} matching places (${rows.length.toLocaleString('en-US')} total)`;
+    document.querySelector('#locality-count').textContent = `${shown.toLocaleString('en-US')} of ${matches.toLocaleString('en-US')} matching places and references (${rows.length.toLocaleString('en-US')} total)`;
     more.hidden = shown >= matches;
   }
   input.addEventListener('input', () => {limit = 50; render();});
   more.addEventListener('click', () => {limit += 50; render();});
+  input.value=new URLSearchParams(location.search).get('q') || '';
   render();
 })();
