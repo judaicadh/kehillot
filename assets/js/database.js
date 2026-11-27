@@ -5,7 +5,7 @@
   var $ = function (s) { return document.querySelector(s); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var D, P = {}, V;
-  var a = function (type, id, label) { return '<a href="' + root + type + '/' + id + '/">' + esc(label) + '</a>'; };
+  var a = function (type, id, label) { return '<a href="' + root + (type==='place' && D && (D.cityGuides||[]).indexOf(id)>-1 ? 'city' : type) + '/' + id + '/">' + esc(label) + '</a>'; };
   var placeName = function (id) { var p = P[id]; return p ? p.name + ', ' + p.state : id; };
   var O = {};
   var orgLabel = function (id) { return O[id] ? O[id].name : id; };

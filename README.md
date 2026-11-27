@@ -270,3 +270,18 @@ project's main historical framing remains 1840–1870.
 
 Validate the built integration with `npm run build` followed by
 `node tests/board-integration.mjs`.
+
+### Navigation and evidence layers
+
+Human-facing place links lead to available city guides; `/place/` remains the
+stable underlying record and linked-data URI. Entity navigation links preserve
+record context for corrections and city/year context for maps. Congregation,
+institution, and Board observation map links use `record=` IDs to avoid matching
+unrelated records with the same display name; “Show other records” clears this
+selection. Board evidence is optional and off by default on the combined map,
+with separate observation counts and a source-collection filter. Collection hubs
+at `/surveys/collections/{source-id}/` join transcriptions, scans, entity records,
+source-filtered maps, and the review/download workflow.
+
+Run `node tests/navigation.mjs` after building to validate navigation destinations,
+collection links, and default evidence-layer separation.

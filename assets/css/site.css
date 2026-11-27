@@ -1269,3 +1269,10 @@ input[type=search],textarea { font-family:var(--sans); border:1px solid var(--ru
 .board-linked-list p { margin:.3rem 0; }
 @media(max-width:800px) { .board-overview,.board-record .survey-reader,.board-linked-list { grid-template-columns:1fr; } .board-image { position:static; } }
 @media print { .board-image { position:static; } .board-record .survey-reader { display:block; } }
+
+/* Shared routes and evidence labels on entity records. */
+.record-actions { display:flex; flex-wrap:wrap; gap:.65rem 1.25rem; padding:1rem 0; border-block:1px solid var(--line, #d8cdbd); }
+.record-status { display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; padding:0; margin:.75rem 0; }
+.record-status li { padding:.3rem .65rem; border:1px solid var(--line, #d8cdbd); border-radius:.25rem; font-size:.85rem; background:var(--paper, #faf7f0); }
+.board-collections { margin:2rem 0; }
+.board-collections li { margin:.5rem 0; }

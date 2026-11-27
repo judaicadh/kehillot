@@ -49,7 +49,7 @@
   var active = function (c, y) { return (c.founded != null ? c.founded <= y : (c.documentedYears || [c.documented]).indexOf(y) !== -1) && !(c.dissolved && c.dissolved <= y); };
   var dormant = function (c, y) { return c.dormant && y >= c.dormant[0] && y < c.dormant[1]; };
   var runs = function (o, y) { return (o.founded == null ? (o.documentedYears || [o.documented]).indexOf(y) !== -1 : o.founded <= y) && !((o.dissolved || o.ceased) && (o.dissolved || o.ceased) <= y); };
-  var href = function (type, id) { return root + type + '/' + id + '/'; };
+  var href = function (type, id) { return root + (type==='place' && D && (D.cityGuides||[]).indexOf(id)>-1 ? 'city' : type) + '/' + id + '/' + (type==='place'?'?year='+yearInput.value:''); };
   var plural = function (n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); };
   var WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
   var word = function (n) { return WORDS[n] || String(n); };
@@ -81,7 +81,7 @@
     var h = '<h3><a href="' + href('place', p.id) + '">' + esc(p.name) + '</a> <span class="pop-state">' + esc(p.state) + '</span></h3>';
     if (cs.length || ds.length) {
       h += '<p class="pop-sub">Congregations, ' + y + '</p><ul>';
-      cs.forEach(function (c) { h += '<li><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="3.5" class="sym sym-' + c.rite + '"/></svg> <a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, est. ' + c.founded + ((c.surveyIds || []).length ? ' · <a href="' + href('congregation', c.id) + '#survey-observations">Survey reports (' + c.surveyIds.length + ')</a>' : '') + '</li>'; });
+      cs.forEach(function (c) { h += '<li><svg width="10" height="10" aria-hidden="true"><circle cx="5" cy="5" r="3.5" class="sym sym-' + c.rite + '"/></svg> <a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, ' + (c.founded==null?'documented '+(c.documentedYears || [c.documented]).join(', '):'founded '+c.founded) + ((c.surveyIds || []).length ? ' · <a href="' + href('congregation', c.id) + '#survey-observations">Survey reports (' + c.surveyIds.length + ')</a>' : '') + '</li>'; });
       ds.forEach(function (c) { h += '<li class="dormant"><a href="' + href('congregation', c.id) + '">' + esc(c.name) + '</a>, without a resident congregation</li>'; });
       h += '</ul>';
     }

@@ -11,6 +11,7 @@
   var mapEl = $('#fmap'), fromIn = $('#fm-from'), toIn = $('#fm-to'), qIn = $('#fm-q');
   var STREET_Z = (CFG.tiles.street && CFG.tiles.street.minZoom) || 11;
   var cityNav;
+  var selectedRecord=new URLSearchParams(location.hash.slice(1)).get('record');
   var D, FEAT = {}, markers = {};
 
   var map = L.map(mapEl, { center: [38.5, -92], zoom: 4, minZoom: 3, maxZoom: CFG.tiles.street.maxZoom || 18, zoomSnap: 0.25, scrollWheelZoom: false });
@@ -44,9 +45,11 @@
   function state() {
     var a = +fromIn.value, b = +toIn.value;
     var feats = CFG.features.length > 1 ? $$('input[name=feature]:checked').map(function (i) { return i.value; }) : CFG.features;
-    return { feats: feats, from: Math.min(a, b), to: Math.max(a, b), q: (qIn.value || '').toLowerCase().trim() };
+    return { source: $('#fm-source') ? $('#fm-source').value : '', feats: feats, from: Math.min(a, b), to: Math.max(a, b), q: (qIn.value || '').toLowerCase().trim() };
   }
   function visible(it, s) {
+    if (selectedRecord && it.id!==selectedRecord) return false;
+    if (it.f==='board-sources' && s.source && it.source!==s.source) return false;
     if (s.feats.indexOf(it.f) < 0) return false;
     if (it.documentedYears && !it.documentedYears.some(function(y) { return y >= s.from && y <= s.to; })) return false;
     if (it.from && it.from > s.to) return false;
@@ -66,6 +69,7 @@
 
   function render() {
     var s = state();
+    $('#fm-record-context').hidden=!selectedRecord;
     $('#fm-from-out').textContent = s.from; $('#fm-to-out').textContent = s.to;
     $('#fm-start-year').value=s.from; $('#fm-end-year').value=s.to;
     $('#fm-period').textContent=s.from===s.to ? String(s.from) : s.from+'–'+s.to;
@@ -80,7 +84,8 @@
     cluster.addLayers(shown.map(function (it) { return markers[it.f + '/' + it.id]; }));
     var perF = {};
     shown.forEach(function (it) { perF[it.f] = (perF[it.f] || 0) + 1; });
-    $('#fm-summary').textContent = shown.length ? shown.length.toLocaleString('en-US') + ' matching record' + (shown.length===1?'':'s') + ' · ' + (s.from===s.to ? String(s.from) : s.from+'–'+s.to) : 'No records match. Widen the time period or clear the name search.';
+    var evidenceCount=shown.filter(function(it){return it.f==='board-sources';}).length;
+    $('#fm-summary').textContent = shown.length ? ((shown.length-evidenceCount) ? (shown.length-evidenceCount).toLocaleString('en-US') + ' mapped record' + (shown.length-evidenceCount===1?'':'s') : '') + (evidenceCount ? ((shown.length-evidenceCount)?' · ':'') + evidenceCount + ' Board source observation' + (evidenceCount===1?'':'s') : '') + ' · ' + (s.from===s.to ? String(s.from) : s.from+'–'+s.to) : 'No records match. Widen the time period or clear the name search.';
     $('.map-refinements>summary').textContent=CFG.features.length>1 ? 'Combine categories ('+s.feats.length+' selected) or search by name' : 'Search by name';
     // list, grouped by place
     var byPlace = {};
@@ -94,6 +99,8 @@
     }).join('') : '<li class="muted">Nothing to show for these choices.</li>';
     try {
       var params = new URLSearchParams(location.hash.slice(1));
+      if(selectedRecord)params.set('record',selectedRecord);else params.delete('record');
+      if(s.source)params.set('source',s.source);else params.delete('source');
       params.set('from', s.from); params.set('to', s.to);
       if(qIn.value.trim())params.set('q',qIn.value.trim());else params.delete('q');
       if (CFG.features.length > 1) params.set('f', s.feats.join(',')); else params.delete('f');
@@ -184,7 +191,9 @@
     }
     input.addEventListener('input',applyYear);input.addEventListener('change',applyYear);
   });
-  $('#fm-reset').addEventListener('click',function(){fromIn.value=fromIn.defaultValue;toIn.value=toIn.defaultValue;qIn.value='';$$('input[name=feature]').forEach(function(i){i.checked=i.defaultChecked;});render();});
+  $('#fm-clear-record').addEventListener('click',function(){selectedRecord=null;render();});
+  if($('#fm-source'))$('#fm-source').addEventListener('change',render);
+  $('#fm-reset').addEventListener('click',function(){selectedRecord=null;fromIn.value=fromIn.defaultValue;toIn.value=toIn.defaultValue;qIn.value='';if($('#fm-source'))$('#fm-source').value='';$$('input[name=feature]').forEach(function(i){i.checked=i.defaultChecked;});render();});
   var t; qIn.addEventListener('input', function () { clearTimeout(t); t = setTimeout(render, 150); });
   $$('input[name=feature]').forEach(function (i) { i.addEventListener('change', render); });
 
@@ -200,6 +209,7 @@
       }).bindPopup(function () { return popup(it); }, { maxWidth: 300, className: 'kh-popup' });
     });
     var h = new URLSearchParams(location.hash.slice(1));
+    if($('#fm-source') && h.get('source'))$('#fm-source').value=h.get('source');
     if(h.get('q'))qIn.value=h.get('q');
     if (h.get('from')) fromIn.value = h.get('from');
     if (h.get('to')) toIn.value = h.get('to');
