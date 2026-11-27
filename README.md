@@ -245,3 +245,28 @@ The surveys page offers `data/board-records-review.csv` for corrected display na
 Reviewers edit only the correction, status, notes, and correction-source columns. Record identities are `(record_type, record_id)`; answer identities are `(survey_id, question_id)`. Blank correction cells mean no change, not deletion. Requests to clear values or merge records belong in `review_notes`. Sorting and returning a subset of rows are supported.
 
 When incorporating a returned file, match these IDs rather than names or row positions; reject duplicate or unknown keys, validate the review schema and Wikidata QIDs/item URLs, and compare `snapshot_sha256` with a fresh export before applying edits. Changed snapshots require reconciliation rather than overwriting newer work. Review name corrections separately from transcriptions, retain cited evidence and original name variants, and check affected relationships when resolving duplicates. This is a reviewed file-return workflow, not an automatic upload or Wikidata write operation.
+
+### Board report integration
+
+The September 1880 report's 313 table entries retain 1878 as their evidence year.
+`data/reviews/board-1880-integration.json` records each entry's disposition and
+possible same-city identity matches for review. New identities are provisional:
+source spellings are retained, Wikidata identifiers are not inferred, and rite
+and orientation remain unrecorded. Exact organization years are adopted only
+with a source-column citation in `data/evidence.json`; earlier adopted dates are
+not overwritten. Entries with uncertain institutional types use `unclassified`.
+
+Grouped or unnamed entries remain source observations rather than fictitious
+individual institutions. All 383 Board source observations have JSON-LD nodes,
+source/place links, and points on `/maps/board-sources/`. Named entities feed the
+normal entity exports, maps, city pages, and correction CSVs. Religious-school
+records derived from pupil counts use editorial labels and documented years;
+they do not assert a Sunday schedule, a separate building, or a founding date.
+
+The congregation timeline extends through 1880 (`/atlas/#year=1878` opens the
+reporting year). Feature maps default through 1880. Unknown founding dates show
+only documented years; city-center locations are not street geocoding. The
+project's main historical framing remains 1840–1870.
+
+Validate the built integration with `npm run build` followed by
+`node tests/board-integration.mjs`.

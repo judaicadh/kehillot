@@ -1,0 +1,1954 @@
+[
+  {
+    "survey": "providence-sons-of-israel-and-david-1880",
+    "type": "institution",
+    "record": "providence-sons-of-israel-and-david-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "sons-of-israel-pvd"
+    ]
+  },
+  {
+    "survey": "providence-sons-of-israel-1880",
+    "type": "congregation",
+    "record": "sons-of-israel-pvd",
+    "status": "existing link"
+  },
+  {
+    "survey": "boston-ohabei-sholom-1880",
+    "type": "congregation",
+    "record": "ohabei-shalom-bos",
+    "status": "existing link"
+  },
+  {
+    "survey": "boston-adath-israel-1880",
+    "type": "congregation",
+    "record": "adath-israel-bos-survey",
+    "status": "existing link"
+  },
+  {
+    "survey": "boston-shaaray-tefilla-1880",
+    "type": "congregation",
+    "record": "boston-shaaray-tefilla-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-beth-abraham-1880",
+    "type": "congregation",
+    "record": "boston-beth-abraham-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-mishkan-israel-1880",
+    "type": "congregation",
+    "record": "mishkan-israel-bos-survey",
+    "status": "existing link"
+  },
+  {
+    "survey": "boston-keneseth-israel-1880",
+    "type": "congregation",
+    "record": "boston-keneseth-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "adath-israel-bos-survey",
+      "mishkan-israel-bos-survey"
+    ]
+  },
+  {
+    "survey": "boston-shomrei-shabas-1880",
+    "type": "congregation",
+    "record": "boston-shomrei-shabas-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-har-moriah-1880",
+    "type": "congregation",
+    "record": "boston-har-moriah-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-beth-el-1880",
+    "type": "congregation",
+    "record": "beth-eil-bos-survey",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "boston-beth-israel-1880",
+    "type": "congregation",
+    "record": "boston-beth-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "adath-israel-bos-survey",
+      "mishkan-israel-bos-survey",
+      "beth-eil-bos-survey"
+    ]
+  },
+  {
+    "survey": "boston-y-m-h-association-1880",
+    "type": "institution",
+    "record": "boston-y-m-h-association-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-bay-state-lit-society-1880",
+    "type": "institution",
+    "record": "boston-bay-state-lit-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-olio-mus-lit-soc-y-1880",
+    "type": "institution",
+    "record": "boston-olio-mus-lit-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-elisium-1880",
+    "type": "institution",
+    "record": "boston-elisium-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "boston-united-heb-benev-as-1880",
+    "type": "institution",
+    "record": "boston-united-heb-benev-as-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-haven-mishkan-israel-1880",
+    "type": "congregation",
+    "record": "mishkan-israel-nhv",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-haven-b-nai-sholom-1880",
+    "type": "congregation",
+    "record": "new-haven-b-nai-sholom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-haven-hebrew-ben-society-1880",
+    "type": "institution",
+    "record": "new-haven-hebrew-ben-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "hartford-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-hfd",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-temple-emanu-el-1880",
+    "type": "congregation",
+    "record": "emanu-el-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-temple-beth-el-1880",
+    "type": "congregation",
+    "record": "beth-el-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-shearith-israel-1880",
+    "type": "congregation",
+    "record": "shearith-israel-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-b-nai-jeshurun-1880",
+    "type": "congregation",
+    "record": "bnai-jeshurun-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-ahavath-chesed-1880",
+    "type": "congregation",
+    "record": "ahavath-chesed-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-shaaray-tefilla-1880",
+    "type": "congregation",
+    "record": "shaaray-tefila-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-rodef-sholom-1880",
+    "type": "congregation",
+    "record": "rodeph-sholom-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-darech-amuno-1880",
+    "type": "congregation",
+    "record": "new-york-darech-amuno-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "bnai-israel-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-shaar-hashomayin-1880",
+    "type": "congregation",
+    "record": "new-york-shaar-hashomayin-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "shaaray-tefila-ny"
+    ]
+  },
+  {
+    "survey": "new-york-beth-isr-l-bikur-cholim-1880",
+    "type": "congregation",
+    "record": "beth-israel-bikur-cholim-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-hand-in-hand-harlem-1880",
+    "type": "institution",
+    "record": "new-york-hand-in-hand-harlem-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-beth-hamedrash-1880",
+    "type": "congregation",
+    "record": "new-york-beth-hamedrash-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-poel-zedek-1880",
+    "type": "congregation",
+    "record": "new-york-poel-zedek-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-adereth-el-1880",
+    "type": "congregation",
+    "record": "adereth-el-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-adas-israel-1880",
+    "type": "congregation",
+    "record": "new-york-adas-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "shearith-israel-ny",
+      "bnai-israel-ny"
+    ]
+  },
+  {
+    "survey": "new-york-shaaray-zedek-1880",
+    "type": "congregation",
+    "record": "shaari-zedek-ny",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-york-shaaray-rachmim-1880",
+    "type": "congregation",
+    "record": "new-york-shaaray-rachmim-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "shaaray-tefila-ny"
+    ]
+  },
+  {
+    "survey": "new-york-shaaray-tickvah-yorkville-1880",
+    "type": "congregation",
+    "record": "new-york-shaaray-tickvah-yorkville-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-children-s-synagogue-1880",
+    "type": "congregation",
+    "record": "new-york-children-s-synagogue-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "gemilut-hesed-elm-ny"
+    ]
+  },
+  {
+    "survey": "new-york-heb-free-burial-soc-y-1880",
+    "type": "institution",
+    "record": "new-york-heb-free-burial-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-hebrew-fuel-association-1880",
+    "type": "institution",
+    "record": "new-york-hebrew-fuel-association-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "bachelors-hebrew-loan-ny",
+      "young-mens-benevolent-ny"
+    ]
+  },
+  {
+    "survey": "new-york-mt-sinai-hospital-1880",
+    "type": "institution",
+    "record": "jews-hospital",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "new-york-heb-orphan-asylum-1880",
+    "type": "institution",
+    "record": "new-york-heb-orphan-asylum-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-home-for-ag-inf-m-heb-1880",
+    "type": "institution",
+    "record": "new-york-home-for-ag-inf-m-heb-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-united-heb-charities-1880",
+    "type": "institution",
+    "record": "new-york-united-heb-charities-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-heb-free-school-asso-1880",
+    "type": "institution",
+    "record": "new-york-heb-free-school-asso-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "noot-school-ny"
+    ]
+  },
+  {
+    "survey": "new-york-young-men-s-hebrew-association-1880",
+    "type": "institution",
+    "record": "new-york-young-men-s-hebrew-association-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "bachelors-hebrew-loan-ny",
+      "young-mens-benevolent-ny"
+    ]
+  },
+  {
+    "survey": "new-york-y-m-associat-n-of-congregation-ahavath-c-1880",
+    "type": "institution",
+    "record": "new-york-y-m-associat-n-of-congregation-ahavath-c-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "ladies-sewing-shearith-ny"
+    ]
+  },
+  {
+    "survey": "new-york-maimonides-lib-ass-n-1880",
+    "type": "institution",
+    "record": "new-york-maimonides-lib-ass-n-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-amer-jewish-pub-soc-y-1880",
+    "type": "institution",
+    "record": "new-york-amer-jewish-pub-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-mut-benefit-burial-s-y-1880",
+    "type": "institution",
+    "record": "new-york-mut-benefit-burial-s-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-hebrew-relief-society-1880",
+    "type": "institution",
+    "record": "new-york-hebrew-relief-society-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "hebrew-assistance-ny",
+      "hebrew-benevolent-ny",
+      "hebrew-mutual-benefit-ny"
+    ]
+  },
+  {
+    "survey": "new-york-chebra-chesed-ve-emeth-1880",
+    "type": "institution",
+    "record": "new-york-chebra-chesed-ve-emeth-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-down-town-heb-ladies-benevolent-society-1880",
+    "type": "institution",
+    "record": "new-york-down-town-heb-ladies-benevolent-society-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "hebrew-benevolent-ny",
+      "ladies-benevolent-elm-ny",
+      "german-hebrew-benevolent-ny",
+      "young-mens-benevolent-ny",
+      "bnai-jeshurun-ladies-ny"
+    ]
+  },
+  {
+    "survey": "new-york-ladies-bikur-cholim-s-y-1880",
+    "type": "institution",
+    "record": "new-york-ladies-bikur-cholim-s-y-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "beth-israel-bikur-cholim-ny",
+      "bikur-cholim-ukadisha-ny"
+    ]
+  },
+  {
+    "survey": "new-york-deborah-nurs-ry-child-s-protectory-1880",
+    "type": "congregation",
+    "record": "new-york-deborah-nurs-ry-child-s-protectory-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-york-heb-sheltering-guardian-society-1880",
+    "type": "institution",
+    "record": "new-york-heb-sheltering-guardian-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-beth-elohim-1880",
+    "type": "congregation",
+    "record": "beth-elohim-bkn",
+    "status": "existing link"
+  },
+  {
+    "survey": "brooklyn-beth-israel-1880",
+    "type": "congregation",
+    "record": "brooklyn-beth-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "beth-elohim-bkn"
+    ]
+  },
+  {
+    "survey": "brooklyn-temple-israel-1880",
+    "type": "congregation",
+    "record": "brooklyn-temple-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-beth-elohim-1880-2",
+    "type": "congregation",
+    "record": "beth-elohim-bkn",
+    "status": "existing link"
+  },
+  {
+    "survey": "brooklyn-ahavath-achim-1880",
+    "type": "congregation",
+    "record": "brooklyn-ahavath-achim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-beth-jacob-1880",
+    "type": "congregation",
+    "record": "brooklyn-beth-jacob-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-b-nai-shalom-1880",
+    "type": "congregation",
+    "record": "brooklyn-b-nai-shalom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-y-m-hebrew-associat-n-1880",
+    "type": "institution",
+    "record": "brooklyn-y-m-hebrew-associat-n-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-two-ladies-societies-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "brooklyn-heb-benevolent-society-1880",
+    "type": "institution",
+    "record": "brooklyn-heb-benevolent-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "brooklyn-heb-benevolent-society-1880-2",
+    "type": "institution",
+    "record": "brooklyn-heb-benevolent-society-1880-2-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "albany-beth-jacob-1880",
+    "type": "congregation",
+    "record": "albany-beth-jacob-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "albany-anshe-emeth-1880",
+    "type": "congregation",
+    "record": "anshe-emeth-alb",
+    "status": "existing link"
+  },
+  {
+    "survey": "albany-beth-el-1880",
+    "type": "congregation",
+    "record": "beth-el-alb",
+    "status": "existing link"
+  },
+  {
+    "survey": "albany-two-literary-associat-ns-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "albany-hebrew-benev-society-1880",
+    "type": "institution",
+    "record": "albany-hebrew-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "rochester-etz-raanon-1880",
+    "type": "congregation",
+    "record": "rochester-etz-raanon-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "rochester-berith-kodesh-1880",
+    "type": "congregation",
+    "record": "brith-kodesh-roc",
+    "status": "existing link"
+  },
+  {
+    "survey": "elmira-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "elmira-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "buffalo-beth-el-1880",
+    "type": "congregation",
+    "record": "beth-el-buf",
+    "status": "existing link"
+  },
+  {
+    "survey": "buffalo-temple-beth-zion-1880",
+    "type": "congregation",
+    "record": "buffalo-temple-beth-zion-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "buffalo-4-benev-beneficial-soc-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "troy-anshe-chesed-1880",
+    "type": "congregation",
+    "record": "troy-anshe-chesed-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "troy-berith-sholom-1880",
+    "type": "congregation",
+    "record": "troy-berith-sholom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "syracuse-beth-israel-1880",
+    "type": "congregation",
+    "record": "syracuse-beth-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "syracuse-adas-yeshurun-1880",
+    "type": "congregation",
+    "record": "syracuse-adas-yeshurun-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "syracuse-society-of-concord-1880",
+    "type": "congregation",
+    "record": "society-concord-syr",
+    "status": "existing link"
+  },
+  {
+    "survey": "newburgh-beth-jacob-1880",
+    "type": "congregation",
+    "record": "beth-jacob-nbg",
+    "status": "existing link"
+  },
+  {
+    "survey": "newark-nj-b-nai-jeshuron-1880",
+    "type": "congregation",
+    "record": "newark-nj-b-nai-jeshuron-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "newark-nj-oheb-shalom-1880",
+    "type": "congregation",
+    "record": "newark-nj-oheb-shalom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "newark-nj-b-nai-abraham-1880",
+    "type": "congregation",
+    "record": "newark-nj-b-nai-abraham-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "newark-nj-heb-benev-orph-s-y-1880",
+    "type": "institution",
+    "record": "newark-nj-heb-benev-orph-s-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "newark-nj-y-ladies-sew-g-circle-1880",
+    "type": "institution",
+    "record": "newark-nj-y-ladies-sew-g-circle-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "paterson-b-nai-jeshuron-1880",
+    "type": "congregation",
+    "record": "bnai-jeshurun-pat",
+    "status": "existing link"
+  },
+  {
+    "survey": "hoboken-adas-emuno-1880",
+    "type": "congregation",
+    "record": "hoboken-adas-emuno-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "hoboken-hebrew-ladies-society-1880",
+    "type": "institution",
+    "record": "hoboken-hebrew-ladies-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-rodef-shalom-1880",
+    "type": "congregation",
+    "record": "rodeph-shalom-phl",
+    "status": "existing link"
+  },
+  {
+    "survey": "philadelphia-mikve-israel-1880",
+    "type": "congregation",
+    "record": "mikveh-israel-phl",
+    "status": "existing link"
+  },
+  {
+    "survey": "philadelphia-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-phl",
+    "status": "existing link"
+  },
+  {
+    "survey": "philadelphia-keneseth-israel-1880",
+    "type": "congregation",
+    "record": "keneseth-israel-phl",
+    "status": "existing link"
+  },
+  {
+    "survey": "philadelphia-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "philadelphia-b-nai-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "mikveh-israel-phl",
+      "beth-israel-phl",
+      "keneseth-israel-phl"
+    ]
+  },
+  {
+    "survey": "philadelphia-beth-el-emeth-1880",
+    "type": "congregation",
+    "record": "beth-el-emeth-phl",
+    "status": "existing link"
+  },
+  {
+    "survey": "philadelphia-adas-jeshurun-1880",
+    "type": "congregation",
+    "record": "philadelphia-adas-jeshurun-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-anshe-emeth-1880",
+    "type": "congregation",
+    "record": "philadelphia-anshe-emeth-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "beth-el-emeth-phl"
+    ]
+  },
+  {
+    "survey": "philadelphia-jewish-hospital-1880",
+    "type": "institution",
+    "record": "philadelphia-jewish-hospital-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "jewish-foster-home"
+    ]
+  },
+  {
+    "survey": "philadelphia-home-for-the-aged-and-infirm-1880",
+    "type": "institution",
+    "record": "philadelphia-home-for-the-aged-and-infirm-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-jewish-foster-home-and-orphan-asylum-1880",
+    "type": "institution",
+    "record": "jewish-foster-home",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880",
+    "type": "institution",
+    "record": "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-united-hebr-charities-1880",
+    "type": "institution",
+    "record": "philadelphia-united-hebr-charities-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "united-hebrew-beneficent-phl"
+    ]
+  },
+  {
+    "survey": "philadelphia-hebr-education-soc-y-1880",
+    "type": "institution",
+    "record": "hebrew-education-society",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "philadelphia-female-benev-society-1880",
+    "type": "institution",
+    "record": "female-hebrew-benevolent",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "philadelphia-hebrew-sund-school-s-y-1880",
+    "type": "institution",
+    "record": "hebrew-sunday-school",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "philadelphia-ezrath-nashim-1880",
+    "type": "institution",
+    "record": "philadelphia-ezrath-nashim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-young-men-s-hebrew-association-1880",
+    "type": "institution",
+    "record": "philadelphia-young-men-s-hebrew-association-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "philadelphia-branch-of-the-alliance-israelite-univers-1880",
+    "type": "institution",
+    "record": "philadelphia-branch-of-the-alliance-israelite-univers-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "harrisburg-oheb-shalom-1880",
+    "type": "congregation",
+    "record": "ohev-sholom-har",
+    "status": "existing link"
+  },
+  {
+    "survey": "wilkes-barre-b-nai-jacob-1880",
+    "type": "congregation",
+    "record": "wilkes-barre-b-nai-jacob-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wilkes-barre-b-nai-berith-1880",
+    "type": "congregation",
+    "record": "wilkes-barre-b-nai-berith-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "easton-berith-shalom-1880",
+    "type": "congregation",
+    "record": "brith-sholom-eas",
+    "status": "existing link"
+  },
+  {
+    "survey": "easton-wache-s-y-kranken-leichen-1880",
+    "type": "institution",
+    "record": "easton-wache-s-y-kranken-leichen-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "easton-esrath-nashim-1880",
+    "type": "institution",
+    "record": "easton-esrath-nashim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "titusville-b-nai-zion-1880",
+    "type": "congregation",
+    "record": "titusville-b-nai-zion-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "danville-pa-b-nai-zion-1880",
+    "type": "congregation",
+    "record": "bnai-zion-dan",
+    "status": "existing link"
+  },
+  {
+    "survey": "pittsburgh-rodef-shalom-1880",
+    "type": "congregation",
+    "record": "rodef-shalom-pgh",
+    "status": "existing link"
+  },
+  {
+    "survey": "pittsburgh-ez-chaim-1880",
+    "type": "congregation",
+    "record": "pittsburgh-ez-chaim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "pittsburgh-hebr-benev-society-1880",
+    "type": "institution",
+    "record": "pittsburgh-hebr-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "pittsburgh-ladies-hebr-benev-society-1880",
+    "type": "institution",
+    "record": "pittsburgh-ladies-hebr-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "scranton-anshe-chesed-1880",
+    "type": "congregation",
+    "record": "scranton-anshe-chesed-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "washington-washington-hebrew-1880",
+    "type": "congregation",
+    "record": "washington-hebrew",
+    "status": "existing link"
+  },
+  {
+    "survey": "washington-adas-israel-1880",
+    "type": "congregation",
+    "record": "washington-adas-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "washington-two-ladies-benev-soc-y-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "washington-ladies-sew-fuel-aid-soc-y-1880",
+    "type": "institution",
+    "record": "washington-ladies-sew-fuel-aid-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-1st-balto-hebrew-1880",
+    "type": "congregation",
+    "record": "baltimore-hebrew",
+    "status": "existing link"
+  },
+  {
+    "survey": "baltimore-oheb-sholom-1880",
+    "type": "congregation",
+    "record": "oheb-shalom-bal",
+    "status": "existing link"
+  },
+  {
+    "survey": "baltimore-balto-hebr-friendship-1880",
+    "type": "congregation",
+    "record": "baltimore-balto-hebr-friendship-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-har-sinai-1880",
+    "type": "congregation",
+    "record": "har-sinai-bal",
+    "status": "existing link"
+  },
+  {
+    "survey": "baltimore-chisuk-emunah-1880",
+    "type": "congregation",
+    "record": "baltimore-chisuk-emunah-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-shebet-zedek-1880",
+    "type": "congregation",
+    "record": "baltimore-shebet-zedek-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-howard-st-1880",
+    "type": "congregation",
+    "record": "baltimore-howard-st-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-shebeth-achim-1880",
+    "type": "congregation",
+    "record": "baltimore-shebeth-achim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-eutaw-st-1880",
+    "type": "congregation",
+    "record": "baltimore-eutaw-st-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-rodef-sholom-1880",
+    "type": "congregation",
+    "record": "baltimore-rodef-sholom-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "oheb-shalom-bal"
+    ]
+  },
+  {
+    "survey": "baltimore-harrison-st-1880",
+    "type": "congregation",
+    "record": "baltimore-harrison-st-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-n-gay-st-1880",
+    "type": "congregation",
+    "record": "baltimore-n-gay-st-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-bikur-cholim-1880",
+    "type": "congregation",
+    "record": "baltimore-bikur-cholim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-hebrew-hospital-1880",
+    "type": "institution",
+    "record": "baltimore-hebrew-hospital-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-hebrew-orphan-asylum-1880",
+    "type": "institution",
+    "record": "baltimore-hebrew-orphan-asylum-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-hebrew-benev-society-1880",
+    "type": "institution",
+    "record": "baltimore-hebrew-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-hebr-ladies-sew-soc-y-1880",
+    "type": "institution",
+    "record": "baltimore-hebr-ladies-sew-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-soc-y-for-educating-poor-heb-children-1880",
+    "type": "institution",
+    "record": "baltimore-soc-y-for-educating-poor-heb-children-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-hebrew-ladies-beneficial-society-1880",
+    "type": "institution",
+    "record": "baltimore-hebrew-ladies-beneficial-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "baltimore-united-hebrew-beneficial-society-1880",
+    "type": "institution",
+    "record": "baltimore-united-hebrew-beneficial-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "richmond-beth-shalom-1880",
+    "type": "congregation",
+    "record": "beth-shalome-ric",
+    "status": "existing link"
+  },
+  {
+    "survey": "richmond-beth-ahaba-1880",
+    "type": "congregation",
+    "record": "beth-ahabah-ric",
+    "status": "existing link"
+  },
+  {
+    "survey": "richmond-keneseth-israel-1880",
+    "type": "congregation",
+    "record": "keneseth-israel-ric",
+    "status": "existing link"
+  },
+  {
+    "survey": "richmond-jeff-lit-y-soc-l-cir-1880",
+    "type": "institution",
+    "record": "richmond-jeff-lit-y-soc-l-cir-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "richmond-mendelssohn-lit-y-soc-l-cir-1880",
+    "type": "institution",
+    "record": "richmond-mendelssohn-lit-y-soc-l-cir-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "norfolk-oheb-sholom-1880",
+    "type": "congregation",
+    "record": "norfolk-hebrew-english-literary",
+    "status": "existing link"
+  },
+  {
+    "survey": "norfolk-beth-el-1880",
+    "type": "congregation",
+    "record": "norfolk-beth-el-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "petersburg-va-rodef-sholom-1880",
+    "type": "congregation",
+    "record": "petersburg-va-rodef-sholom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wheeling-leshem-shomayim-1880",
+    "type": "congregation",
+    "record": "wheeling-leshem-shomayim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wheeling-heb-ladies-ben-soc-y-1880",
+    "type": "institution",
+    "record": "wheeling-heb-ladies-ben-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wheeling-montefiore-literary-so-y-1880",
+    "type": "institution",
+    "record": "wheeling-montefiore-literary-so-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wilmington-nc-temple-of-israel-1880",
+    "type": "congregation",
+    "record": "wilmington-nc-temple-of-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "wilmington-nc-true-brothers-society-1880",
+    "type": "institution",
+    "record": "wilmington-nc-true-brothers-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "charleston-beth-elohim-1880",
+    "type": "congregation",
+    "record": "beth-elohim-chs",
+    "status": "existing link"
+  },
+  {
+    "survey": "charleston-berith-sholom-1880",
+    "type": "congregation",
+    "record": "charleston-berith-sholom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "charleston-hebrew-orphan-society-1880",
+    "type": "institution",
+    "record": "hebrew-orphan-society-chs",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "charleston-hebrew-benev-society-1880",
+    "type": "institution",
+    "record": "hebrew-benevolent-charleston",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "charleston-israel-s-hope-1880",
+    "type": "institution",
+    "record": "charleston-israel-s-hope-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "columbia-sc-columbia-heb-cong-1880",
+    "type": "congregation",
+    "record": "columbia-sc-columbia-heb-cong-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "savannah-mikve-israel-1880",
+    "type": "congregation",
+    "record": "mickve-israel-sav",
+    "status": "existing link"
+  },
+  {
+    "survey": "savannah-benai-jacob-1880",
+    "type": "congregation",
+    "record": "savannah-benai-jacob-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "savannah-youth-s-historical-soc-y-1880",
+    "type": "institution",
+    "record": "savannah-youth-s-historical-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "savannah-heb-benev-society-1880",
+    "type": "institution",
+    "record": "savannah-heb-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "savannah-ladies-benev-society-1880",
+    "type": "institution",
+    "record": "savannah-ladies-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "atlanta-hebrew-benevolent-1880",
+    "type": "congregation",
+    "record": "hebrew-benevolent-congregation-atl",
+    "status": "existing link"
+  },
+  {
+    "survey": "columbus-ga-benai-israel-1880",
+    "type": "congregation",
+    "record": "columbus-ga-benai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "columbus-ga-daughter-of-israel-1880",
+    "type": "institution",
+    "record": "columbus-ga-daughter-of-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "augusta-ga-benai-israel-1880",
+    "type": "congregation",
+    "record": "augusta-ga-benai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "macon-beth-israel-1880",
+    "type": "congregation",
+    "record": "macon-beth-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "montgomery-kahl-montgomery-1880",
+    "type": "congregation",
+    "record": "kahl-montgomery",
+    "status": "existing link"
+  },
+  {
+    "survey": "montgomery-heb-lad-benev-society-1880",
+    "type": "institution",
+    "record": "montgomery-heb-lad-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "selma-mishkan-israel-1880",
+    "type": "congregation",
+    "record": "selma-mishkan-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "mobile-shaaray-shomayim-1880",
+    "type": "congregation",
+    "record": "shaarai-shomayim-mob",
+    "status": "existing link"
+  },
+  {
+    "survey": "mobile-another-congregation-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "mobile-charity-fund-1880",
+    "type": "institution",
+    "record": "mobile-charity-fund-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "mobile-ladies-heb-benev-soc-y-1880",
+    "type": "institution",
+    "record": "ladies-hebrew-benevolent-mob",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "vicksburg-anshe-chesed-1880",
+    "type": "congregation",
+    "record": "vicksburg-anshe-chesed-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "vicksburg-ladies-heb-benev-sc-y-1880",
+    "type": "institution",
+    "record": "vicksburg-ladies-heb-benev-sc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "meridian-beth-israel-1880",
+    "type": "congregation",
+    "record": "meridian-beth-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "natchez-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "bnai-israel-ntz",
+    "status": "existing link"
+  },
+  {
+    "survey": "jackson-ms-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-jac",
+    "status": "existing link"
+  },
+  {
+    "survey": "baton-rouge-shaaray-chesed-1880",
+    "type": "congregation",
+    "record": "shaari-chased-btr",
+    "status": "existing link"
+  },
+  {
+    "survey": "shreveport-hebra-zion-1880",
+    "type": "congregation",
+    "record": "shreveport-hebra-zion-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "shreveport-hebrew-benev-assoc-n-1880",
+    "type": "institution",
+    "record": "shreveport-hebrew-benev-assoc-n-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "donaldsonville-bikur-cholim-1880",
+    "type": "congregation",
+    "record": "donaldsonville-hebrew",
+    "status": "existing link"
+  },
+  {
+    "survey": "donaldsonville-donaldson-college-1880",
+    "type": "institution",
+    "record": "donaldsonville-donaldson-college-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "alexandria-la-gemiluth-chasodim-1880",
+    "type": "congregation",
+    "record": "alexandria-la-gemiluth-chasodim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-orleans-gates-of-prayer-1880",
+    "type": "congregation",
+    "record": "shaarei-tefillah-nol",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-orleans-shaaray-chesed-1880",
+    "type": "congregation",
+    "record": "shangarai-chasset-nol",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-orleans-dispersed-of-judah-1880",
+    "type": "congregation",
+    "record": "nefutzot-yehudah-nol",
+    "status": "existing link"
+  },
+  {
+    "survey": "new-orleans-temime-derech-1880",
+    "type": "congregation",
+    "record": "new-orleans-temime-derech-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-orleans-temple-sinai-1880",
+    "type": "congregation",
+    "record": "new-orleans-temple-sinai-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-orleans-home-for-wid-and-orph-1880",
+    "type": "institution",
+    "record": "new-orleans-home-for-wid-and-orph-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "new-orleans-touro-infirmary-1880",
+    "type": "institution",
+    "record": "touro-infirmary",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "new-orleans-hebr-education-society-1880",
+    "type": "institution",
+    "record": "new-orleans-hebr-education-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "galveston-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "galveston-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "galveston-two-benevolent-societies-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "houston-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-hou",
+    "status": "existing link"
+  },
+  {
+    "survey": "cincinnati-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "bene-israel-cin",
+    "status": "existing link"
+  },
+  {
+    "survey": "cincinnati-b-nai-jeshurun-1880",
+    "type": "congregation",
+    "record": "bnai-yeshurun-cin",
+    "status": "existing link"
+  },
+  {
+    "survey": "cincinnati-adath-israel-1880",
+    "type": "congregation",
+    "record": "cincinnati-adath-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "bene-israel-cin",
+      "sherith-israel-cin-survey"
+    ]
+  },
+  {
+    "survey": "cincinnati-shearith-israel-1880",
+    "type": "congregation",
+    "record": "sherith-israel-cin-survey",
+    "status": "existing link"
+  },
+  {
+    "survey": "cincinnati-acheveth-achim-1880",
+    "type": "congregation",
+    "record": "cincinnati-acheveth-achim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "cincinnati-hebrew-union-college-1880",
+    "type": "institution",
+    "record": "cincinnati-hebrew-union-college-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "cincinnati-jewish-hospital-1880",
+    "type": "institution",
+    "record": "cincinnati-jewish-hospital-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "cincinnati-heb-gen-l-relief-1880",
+    "type": "institution",
+    "record": "cincinnati-heb-gen-l-relief-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880",
+    "type": "institution",
+    "record": "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "cleveland-tiferith-israel-1880",
+    "type": "congregation",
+    "record": "tifereth-israel-cle",
+    "status": "existing link"
+  },
+  {
+    "survey": "cleveland-three-literary-asso-ns-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "cleveland-anshe-chesed-1880",
+    "type": "congregation",
+    "record": "anshe-chesed-cle",
+    "status": "existing link"
+  },
+  {
+    "survey": "cleveland-cleveland-orphan-asyl-1880",
+    "type": "institution",
+    "record": "jewish-orphan-asylum-cle",
+    "status": "editorial name reconciliation"
+  },
+  {
+    "survey": "toledo-shomer-emunim-1880",
+    "type": "institution",
+    "record": "toledo-shomer-emunim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "toledo-ladies-hebrew-charity-1880",
+    "type": "institution",
+    "record": "toledo-ladies-hebrew-charity-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "toledo-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "toledo-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "toledo-b-nai-jacob-1880",
+    "type": "congregation",
+    "record": "toledo-b-nai-jacob-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "dayton-b-nai-jeshurun-1880",
+    "type": "congregation",
+    "record": "bnai-yeshurun-day",
+    "status": "existing link"
+  },
+  {
+    "survey": "columbus-oh-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "columbus-oh-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "evansville-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "evansville-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "evansville-two-ladies-societies-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "lafayette-in-shebeth-achim-1880",
+    "type": "congregation",
+    "record": "ahavas-achim-laf",
+    "status": "existing link"
+  },
+  {
+    "survey": "fort-wayne-achdut-ve-sholom-1880",
+    "type": "congregation",
+    "record": "achduth-veshalom-fw",
+    "status": "existing link"
+  },
+  {
+    "survey": "laporte-b-nai-zion-1880",
+    "type": "congregation",
+    "record": "bnai-zion-lap",
+    "status": "existing link"
+  },
+  {
+    "survey": "indianapolis-hebrew-cong-1880",
+    "type": "congregation",
+    "record": "indianapolis-hebrew",
+    "status": "existing link"
+  },
+  {
+    "survey": "chicago-b-nai-sholom-1880",
+    "type": "congregation",
+    "record": "bnai-sholom-chi",
+    "status": "existing link"
+  },
+  {
+    "survey": "chicago-sinai-1880",
+    "type": "congregation",
+    "record": "sinai-chi",
+    "status": "existing link"
+  },
+  {
+    "survey": "chicago-zion-1880",
+    "type": "congregation",
+    "record": "chicago-zion-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-north-chicago-heb-1880",
+    "type": "congregation",
+    "record": "chicago-north-chicago-heb-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-anshe-m-arev-1880",
+    "type": "congregation",
+    "record": "kam-chi",
+    "status": "existing link"
+  },
+  {
+    "survey": "chicago-jewish-educ-soc-y-1880",
+    "type": "institution",
+    "record": "chicago-jewish-educ-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-hebrew-relief-soc-y-1880",
+    "type": "institution",
+    "record": "chicago-hebrew-relief-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-j-disher-frauenverein-1880",
+    "type": "institution",
+    "record": "chicago-j-disher-frauenverein-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-sewing-society-1880",
+    "type": "institution",
+    "record": "chicago-sewing-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "chicago-n-chicago-ladies-heb-assoc-n-1880",
+    "type": "institution",
+    "record": "chicago-n-chicago-ladies-heb-assoc-n-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "peoria-beth-israel-1880",
+    "type": "congregation",
+    "record": "peoria-beth-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "peoria-anshe-emeth-1880",
+    "type": "congregation",
+    "record": "peoria-anshe-emeth-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "peoria-ladies-benev-soc-y-1880",
+    "type": "institution",
+    "record": "peoria-ladies-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "peoria-ladies-sewing-soc-y-1880",
+    "type": "institution",
+    "record": "peoria-ladies-sewing-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "quincy-b-nai-sholom-1880",
+    "type": "congregation",
+    "record": "bnai-avraham-qcy",
+    "status": "existing link"
+  },
+  {
+    "survey": "springfield-il-berith-sholom-1880",
+    "type": "congregation",
+    "record": "springfield-il-berith-sholom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "louisville-adath-israel-1880",
+    "type": "congregation",
+    "record": "adath-israel-lou",
+    "status": "existing link"
+  },
+  {
+    "survey": "louisville-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-lou",
+    "status": "existing link"
+  },
+  {
+    "survey": "louisville-united-heb-relief-1880",
+    "type": "institution",
+    "record": "louisville-united-heb-relief-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "paducah-jeshurun-1880",
+    "type": "congregation",
+    "record": "paducah-jeshurun-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "knoxville-hebr-benev-society-1880",
+    "type": "institution",
+    "record": "knoxville-hebr-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "knoxville-ladies-heb-ben-soc-y-1880",
+    "type": "institution",
+    "record": "knoxville-ladies-heb-ben-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "nashville-ohabay-shalom-1880",
+    "type": "congregation",
+    "record": "nashville-ohabay-shalom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "nashville-concordia-club-1880",
+    "type": "institution",
+    "record": "nashville-concordia-club-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "nashville-mogen-david-1880",
+    "type": "congregation",
+    "record": "nashville-mogen-david-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "memphis-children-of-israel-1880",
+    "type": "congregation",
+    "record": "children-of-israel-mem",
+    "status": "existing link"
+  },
+  {
+    "survey": "memphis-beth-el-emeth-1880",
+    "type": "congregation",
+    "record": "memphis-beth-el-emeth-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "memphis-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "children-of-israel-mem",
+    "status": "existing link"
+  },
+  {
+    "survey": "chattanooga-hebrew-benev-soc-y-1880",
+    "type": "congregation",
+    "record": "hebrew-benevolent-association-cha",
+    "status": "existing link"
+  },
+  {
+    "survey": "detroit-beth-el-1880",
+    "type": "congregation",
+    "record": "beth-el-det",
+    "status": "existing link"
+  },
+  {
+    "survey": "detroit-another-congregation-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "detroit-two-charitable-socities-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "kalamazoo-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "kalamazoo-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "kalamazoo-ladies-benev-soc-y-1880",
+    "type": "institution",
+    "record": "kalamazoo-ladies-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "grand-rapids-emanu-el-1880",
+    "type": "congregation",
+    "record": "grand-rapids-emanu-el-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "grand-rapids-heb-benev-society-1880",
+    "type": "institution",
+    "record": "grand-rapids-heb-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "milwaukee-emanu-el-1880",
+    "type": "congregation",
+    "record": "milwaukee-emanu-el-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "milwaukee-two-ben-societies-1880",
+    "status": "grouped-or-unnamed",
+    "note": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
+  },
+  {
+    "survey": "madison-wi-shaaray-shamaim-1880",
+    "type": "congregation",
+    "record": "shaare-shomaim-mad",
+    "status": "existing link"
+  },
+  {
+    "survey": "st-paul-mt-zion-1880",
+    "type": "congregation",
+    "record": "st-paul-mt-zion-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "davenport-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "davenport-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "davenport-ladies-benev-society-1880",
+    "type": "institution",
+    "record": "davenport-ladies-benev-society-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "keokuk-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "keokuk-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "keokuk-heb-ladies-ben-soc-y-1880",
+    "type": "institution",
+    "record": "keokuk-heb-ladies-ben-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "des-moines-b-nai-jeshurun-1880",
+    "type": "congregation",
+    "record": "des-moines-b-nai-jeshurun-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-b-nai-el-1880",
+    "type": "congregation",
+    "record": "st-louis-b-nai-el-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-shaaray-emeth-1880",
+    "type": "congregation",
+    "record": "st-louis-shaaray-emeth-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-united-hebrew-1880",
+    "type": "congregation",
+    "record": "uhc-stl",
+    "status": "existing link"
+  },
+  {
+    "survey": "st-louis-ladies-zion-soc-y-1880",
+    "type": "institution",
+    "record": "st-louis-ladies-zion-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-ladies-benev-soc-y-1880",
+    "type": "institution",
+    "record": "st-louis-ladies-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-ladies-wid-s-and-orphs-1880",
+    "type": "institution",
+    "record": "st-louis-ladies-wid-s-and-orphs-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-ladies-sewing-soc-y-1880",
+    "type": "institution",
+    "record": "st-louis-ladies-sewing-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-louis-united-heb-relief-1880",
+    "type": "institution",
+    "record": "st-louis-united-heb-relief-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "uhc-stl"
+    ]
+  },
+  {
+    "survey": "st-joseph-mo-adath-joseph-1880",
+    "type": "congregation",
+    "record": "st-joseph-mo-adath-joseph-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "st-joseph-mo-ladies-benev-soc-y-1880",
+    "type": "institution",
+    "record": "st-joseph-mo-ladies-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "kansas-city-b-nai-jehuda-1880",
+    "type": "congregation",
+    "record": "kansas-city-b-nai-jehuda-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "little-rock-b-nai-israel-1880",
+    "type": "congregation",
+    "record": "little-rock-b-nai-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "little-rock-heb-ladies-ben-ass-n-1880",
+    "type": "institution",
+    "record": "little-rock-heb-ladies-ben-ass-n-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "leavenworth-b-nai-jeshurun-1880",
+    "type": "congregation",
+    "record": "bnai-jeshurun-lea-survey",
+    "status": "existing link"
+  },
+  {
+    "survey": "leavenworth-ladies-benev-soc-y-1880",
+    "type": "institution",
+    "record": "leavenworth-ladies-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "san-francisco-emanu-el-1880",
+    "type": "congregation",
+    "record": "emanu-el-sf",
+    "status": "existing link"
+  },
+  {
+    "survey": "san-francisco-shearith-israel-1880",
+    "type": "congregation",
+    "record": "sherith-israel-sf",
+    "status": "existing link"
+  },
+  {
+    "survey": "san-francisco-sharay-zedek-1880",
+    "type": "congregation",
+    "record": "san-francisco-sharay-zedek-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "san-francisco-ohebai-shalom-1880",
+    "type": "congregation",
+    "record": "san-francisco-ohebai-shalom-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "san-francisco-beth-israel-1880",
+    "type": "congregation",
+    "record": "san-francisco-beth-israel-1880-record",
+    "status": "new provisional record",
+    "possibleMatches": [
+      "sherith-israel-sf"
+    ]
+  },
+  {
+    "survey": "san-francisco-pacific-heb-orph-asyl-m-1880",
+    "type": "institution",
+    "record": "san-francisco-pacific-heb-orph-asyl-m-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "san-francisco-san-francisco-b-nai-ber-library-1880",
+    "type": "institution",
+    "record": "san-francisco-san-francisco-b-nai-ber-library-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "san-jose-bikur-cholim-1880",
+    "type": "congregation",
+    "record": "san-jose-bikur-cholim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "stockton-ca-reim-ahuvim-1880",
+    "type": "congregation",
+    "record": "stockton-ca-reim-ahuvim-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "stockton-ca-ladies-heb-benev-soc-y-1880",
+    "type": "institution",
+    "record": "stockton-ca-ladies-heb-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "oakland-first-hebrew-cong-1880",
+    "type": "congregation",
+    "record": "oakland-first-hebrew-cong-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "oakland-hebrew-benev-soc-y-1880",
+    "type": "institution",
+    "record": "oakland-hebrew-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "portland-or-beth-israel-1880",
+    "type": "congregation",
+    "record": "beth-israel-pdx",
+    "status": "existing link"
+  },
+  {
+    "survey": "portland-or-first-heb-benev-soc-y-1880",
+    "type": "institution",
+    "record": "portland-or-first-heb-benev-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "portland-or-jewish-ladies-soc-y-1880",
+    "type": "institution",
+    "record": "portland-or-jewish-ladies-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "portland-or-ahavath-chesed-1880",
+    "type": "congregation",
+    "record": "portland-or-ahavath-chesed-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "omaha-israel-1880",
+    "type": "congregation",
+    "record": "omaha-israel-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "salt-lake-city-ladies-ben-soc-y-1880",
+    "type": "institution",
+    "record": "salt-lake-city-ladies-ben-soc-y-1880-record",
+    "status": "new provisional record"
+  },
+  {
+    "survey": "denver-emanu-el-1880",
+    "type": "congregation",
+    "record": "denver-emanu-el-1880-record",
+    "status": "new provisional record"
+  }
+]

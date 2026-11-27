@@ -20,7 +20,8 @@
       "occident-review-1f7eb9d3ef6c",
       "occident-review-14050292184c",
       "occident-review-6b045567f965",
-      "occident-review-b9a384c22b95"
+      "occident-review-b9a384c22b95",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
       1843,
@@ -30,7 +31,11 @@
       1847,
       1848,
       1849,
-      1850
+      1850,
+      1878
+    ],
+    "surveyIds": [
+      "philadelphia-female-benev-society-1880"
     ]
   },
   {
@@ -47,13 +52,18 @@
       "occident-review-b7d0ad63690f",
       "occident-review-1fb527488860",
       "occident-review-64ff145debc0",
-      "occident-review-923fc4d71fab"
+      "occident-review-923fc4d71fab",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
       1844,
       1845,
       1851,
-      1852
+      1852,
+      1878
+    ],
+    "surveyIds": [
+      "philadelphia-hebrew-sund-school-s-y-1880"
     ]
   },
   {
@@ -85,13 +95,18 @@
       "occident-review-ec9ab06e7765",
       "occident-review-745bbcb6ee2f",
       "occident-review-d8dffe8864b9",
-      "occident-review-0a902e6a9e97"
+      "occident-review-0a902e6a9e97",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
       1848,
       1850,
       1851,
-      1852
+      1852,
+      1878
+    ],
+    "surveyIds": [
+      "philadelphia-hebr-education-soc-y-1880"
     ]
   },
   {
@@ -127,7 +142,14 @@
     "certainty": "high",
     "description": "Opened its doors in 1855; renamed Mount Sinai Hospital in 1866.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-mt-sinai-hospital-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -139,7 +161,14 @@
     "certainty": "medium",
     "description": "Hospital established with funds from Judah Touro.",
     "sources": [
-      "isjl-encyclopedia"
+      "isjl-encyclopedia",
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-touro-infirmary-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -151,7 +180,14 @@
     "certainty": "high",
     "description": "Orphanage founded on Rebecca Gratz's initiative.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-jewish-foster-home-and-orphan-asylum-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -189,7 +225,14 @@
     "certainty": "high",
     "description": "Regional orphanage established by B'nai B'rith after the Civil War.",
     "sources": [
-      "sarna-2004"
+      "sarna-2004",
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cleveland-cleveland-orphan-asyl-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -748,12 +791,17 @@
     "sources": [
       "occident-review-78d77ed94571",
       "occident-review-51c3ca6d9d2c",
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
       1847,
       1848,
-      1872
+      1872,
+      1878
+    ],
+    "surveyIds": [
+      "charleston-hebrew-benev-society-1880"
     ]
   },
   {
@@ -1498,10 +1546,15 @@
     "certainty": "medium",
     "description": "Named in the 1872 return of Beth Elohim; president H. H. DeLeon, secretary and treasurer N. H. Valentine.",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
-      1872
+      1872,
+      1878
+    ],
+    "surveyIds": [
+      "charleston-hebrew-orphan-society-1880"
     ]
   },
   {
@@ -1606,10 +1659,15 @@
     "certainty": "medium",
     "description": "About 60 female members in July 1860, according to Shaarai Shamayim's letter to the Board.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "documentedYears": [
-      1860
+      1860,
+      1878
+    ],
+    "surveyIds": [
+      "mobile-ladies-heb-benev-soc-y-1880"
     ]
   },
   {
@@ -1619,15 +1677,18 @@
     "place": "atlanta",
     "documented": 1872,
     "documentedYears": [
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "description": "English, German, and Hebrew instruction reported in 1872; 19 pupils. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
-      "atlanta-hebrew-benevolent-1872"
+      "atlanta-hebrew-benevolent-1872",
+      "atlanta-hebrew-benevolent-1880"
     ],
     "schoolType": "school",
     "congregation": "hebrew-benevolent-congregation-atl"
@@ -1639,17 +1700,20 @@
     "place": "boston",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "description": "Free Hebrew and English school maintained by Ohabei Shalom. Identification with the separately recorded Boston school of 1851 remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
       "boston-ohabei-shalom-return-1860",
       "boston-ohabei-shalom-schedule-1860-09",
-      "boston-ohabei-shalom-schedule-1860-12"
+      "boston-ohabei-shalom-schedule-1860-12",
+      "boston-ohabei-sholom-1880"
     ],
     "schoolType": "school",
     "congregation": "ohabei-shalom-bos"
@@ -1662,17 +1726,20 @@
     "documented": 1860,
     "documentedYears": [
       1860,
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "description": "School reported by Beth Elohim in 1860 and 1872. These reports do not establish continuity with the separately recorded Society for the Instruction of Jewish Youth. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
       "charleston-beth-elohim-return-1860",
       "charleston-beth-elohim-schedule-1860",
-      "charleston-beth-elohim-1872"
+      "charleston-beth-elohim-1872",
+      "charleston-beth-elohim-1880"
     ],
     "schoolType": "school",
     "congregation": "beth-elohim-chs"
@@ -1745,15 +1812,18 @@
     "place": "cincinnati",
     "documented": 1872,
     "documentedYears": [
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "description": "Religious school reporting 30 pupils and one instructor in 1872. Linked to the congregation documented in the same return; earlier institutional identity remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
-      "cincinnati-sherith-israel-1872"
+      "cincinnati-sherith-israel-1872",
+      "cincinnati-shearith-israel-1880"
     ],
     "schoolType": "religious school",
     "congregation": "sherith-israel-cin-survey"
@@ -1766,16 +1836,19 @@
     "documented": 1860,
     "documentedYears": [
       1860,
-      1861
+      1861,
+      1878
     ],
     "certainty": "medium",
     "description": "School reported with 18 pupils in the annual return for 1860. The schedule is catalogued as 1861, but its note allows 1860 or 1861; no continuous lifespan is inferred. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
       "dayton-bnai-yeshurun-schedule-1861",
-      "dayton-bnai-yeshurun-return-1860"
+      "dayton-bnai-yeshurun-return-1860",
+      "dayton-b-nai-jeshurun-1880"
     ],
     "schoolType": "Hebrew school",
     "congregation": "bnai-yeshurun-day"
@@ -1808,16 +1881,19 @@
     "documented": 1860,
     "documentedYears": [
       1860,
-      1861
+      1861,
+      1878
     ],
     "certainty": "medium",
     "description": "School reported with 34 pupils in 1860 and 1861. The 1861 schedule reports one teacher and fifteen hours per week, not fifteen sessions. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
       "fort-wayne-achduth-veschalom-return-1860",
-      "fort-wayne-achduth-veschalom-schedule-1861"
+      "fort-wayne-achduth-veschalom-schedule-1861",
+      "fort-wayne-achdut-ve-sholom-1880"
     ],
     "schoolType": "Hebrew school",
     "congregation": "achduth-veshalom-fw"
@@ -1829,15 +1905,18 @@
     "place": "donaldsonville",
     "documented": 1872,
     "documentedYears": [
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "description": "English and Hebrew instruction with ten pupils and one instructor reported in 1872. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
-      "donaldsonville-1872"
+      "donaldsonville-1872",
+      "donaldsonville-bikur-cholim-1880"
     ],
     "schoolType": "school",
     "congregation": "donaldsonville-hebrew"
@@ -1869,16 +1948,19 @@
     "place": "louisville",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "description": "Private school held in the congregation’s building, reported with eighteen pupils in 1860. Identification with other recorded Louisville schools remains unconfirmed. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
       "louisville-beth-israel-return-1860",
-      "louisville-beth-israel-schedule-1860"
+      "louisville-beth-israel-schedule-1860",
+      "louisville-beth-israel-1880"
     ],
     "schoolType": "private school",
     "congregation": "beth-israel-lou"
@@ -1890,15 +1972,18 @@
     "place": "mobile",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "description": "The 1860 letter describes Hebrew and religious instruction under the minister. An English and Hebrew day school was planned for October; the letter does not establish that it opened. About ninety school-age children is not an enrolment count. Dates are documentary observations, not founding or closing dates.",
     "sources": [
-      "bdai-box3-folder06"
+      "bdai-box3-folder06",
+      "statistics-jews-us-1880"
     ],
     "surveyIds": [
-      "mobile-shaarai-shamayim-letter-1860"
+      "mobile-shaarai-shamayim-letter-1860",
+      "mobile-shaaray-shomayim-1880"
     ],
     "schoolType": "religious school",
     "congregation": "shaarai-shomayim-mob"
@@ -1973,6 +2058,4035 @@
     ],
     "surveyIds": [
       "harrisburg-ohef-scholem-1872"
+    ]
+  },
+  {
+    "id": "providence-sons-of-israel-and-david-1880-record",
+    "name": "Sons of Israel and David",
+    "place": "providence",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "unclassified",
+    "description": "Named as “Sons of Israel and David” in the 1880 report, printed p. 7 (Rhode Island), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "providence-sons-of-israel-and-david-1880"
+    ]
+  },
+  {
+    "id": "sons-of-israel-pvd-religious-school-1878",
+    "name": "Sons of Israel (Bnai Israel) religious school (1878 report)",
+    "category": "education",
+    "place": "providence",
+    "congregation": "sons-of-israel-pvd",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "providence-sons-of-israel-1880"
+    ]
+  },
+  {
+    "id": "adath-israel-bos-survey-religious-school-1878",
+    "name": "Adath Israel religious school (1878 report)",
+    "category": "education",
+    "place": "boston",
+    "congregation": "adath-israel-bos-survey",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-adath-israel-1880"
+    ]
+  },
+  {
+    "id": "boston-shomrei-shabas-1880-record-religious-school-1878",
+    "name": "Shomrei Shabas religious school (1878 report)",
+    "category": "education",
+    "place": "boston",
+    "congregation": "boston-shomrei-shabas-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-shomrei-shabas-1880"
+    ]
+  },
+  {
+    "id": "boston-har-moriah-1880-record-religious-school-1878",
+    "name": "Har Moriah religious school (1878 report)",
+    "category": "education",
+    "place": "boston",
+    "congregation": "boston-har-moriah-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-har-moriah-1880"
+    ]
+  },
+  {
+    "id": "boston-y-m-h-association-1880-record",
+    "name": "Y. M. H. Association",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Y. M. H. Association” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1875,
+    "surveyIds": [
+      "boston-y-m-h-association-1880"
+    ]
+  },
+  {
+    "id": "boston-bay-state-lit-society-1880-record",
+    "name": "Bay State Lit. Society",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Bay State Lit. Society” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-bay-state-lit-society-1880"
+    ]
+  },
+  {
+    "id": "boston-olio-mus-lit-soc-y-1880-record",
+    "name": "Olio Mus. & Lit. Soc'y",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Olio Mus. & Lit. Soc'y” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-olio-mus-lit-soc-y-1880"
+    ]
+  },
+  {
+    "id": "boston-elisium-1880-record",
+    "name": "Elisium",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "unclassified",
+    "description": "Named as “Elisium” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-elisium-1880"
+    ]
+  },
+  {
+    "id": "boston-united-heb-benev-as-1880-record",
+    "name": "United Heb. Benev. As.",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Heb. Benev. As.” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "boston-united-heb-benev-as-1880"
+    ]
+  },
+  {
+    "id": "mishkan-israel-nhv-religious-school-1878",
+    "name": "Mishkan Israel religious school (1878 report)",
+    "category": "education",
+    "place": "new-haven",
+    "congregation": "mishkan-israel-nhv",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-haven-mishkan-israel-1880"
+    ]
+  },
+  {
+    "id": "new-haven-hebrew-ben-society-1880-record",
+    "name": "Hebrew Ben. Society",
+    "place": "new-haven",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Ben. Society” in the 1880 report, printed p. 8 (Connecticut), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "new-haven-hebrew-ben-society-1880"
+    ]
+  },
+  {
+    "id": "beth-israel-hfd-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "hartford",
+    "congregation": "beth-israel-hfd",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "hartford-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "emanu-el-ny-religious-school-1878",
+    "name": "Emanu-El religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "emanu-el-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-temple-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "beth-el-ny-religious-school-1878",
+    "name": "Beth El religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "beth-el-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-temple-beth-el-1880"
+    ]
+  },
+  {
+    "id": "shearith-israel-ny-religious-school-1878",
+    "name": "Shearith Israel religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "shearith-israel-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-1880"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-ny-religious-school-1878",
+    "name": "B'nai Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "bnai-jeshurun-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-b-nai-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "ahavath-chesed-ny-religious-school-1878",
+    "name": "Ahavath Chesed religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "ahavath-chesed-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-1880"
+    ]
+  },
+  {
+    "id": "shaaray-tefila-ny-religious-school-1878",
+    "name": "Shaaray Tefila religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "shaaray-tefila-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefilla-1880"
+    ]
+  },
+  {
+    "id": "rodeph-sholom-ny-religious-school-1878",
+    "name": "Rodeph Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "rodeph-sholom-ny",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-rodef-sholom-1880"
+    ]
+  },
+  {
+    "id": "new-york-shaar-hashomayin-1880-record-religious-school-1878",
+    "name": "Shaar Hashomayin religious school (1878 report)",
+    "category": "education",
+    "place": "new-york",
+    "congregation": "new-york-shaar-hashomayin-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shaar-hashomayin-1880"
+    ]
+  },
+  {
+    "id": "new-york-hand-in-hand-harlem-1880-record",
+    "name": "Hand in Hand (Harlem)",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "unclassified",
+    "description": "Named as “Hand in Hand (Harlem)” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-hand-in-hand-harlem-1880"
+    ]
+  },
+  {
+    "id": "new-york-heb-free-burial-soc-y-1880-record",
+    "name": "Heb. Free Burial Soc'y",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Free Burial Soc'y” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "new-york-heb-free-burial-soc-y-1880"
+    ]
+  },
+  {
+    "id": "new-york-hebrew-fuel-association-1880-record",
+    "name": "Hebrew Fuel Association",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Fuel Association” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-hebrew-fuel-association-1880"
+    ]
+  },
+  {
+    "id": "new-york-heb-orphan-asylum-1880-record",
+    "name": "Heb. Orphan Asylum",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Orphan Asylum” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1822,
+    "surveyIds": [
+      "new-york-heb-orphan-asylum-1880"
+    ]
+  },
+  {
+    "id": "new-york-home-for-ag-inf-m-heb-1880-record",
+    "name": "Home for Ag. & Inf'm Heb.",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Home for Ag. & Inf'm Heb.” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "new-york-home-for-ag-inf-m-heb-1880"
+    ]
+  },
+  {
+    "id": "new-york-united-heb-charities-1880-record",
+    "name": "United Heb. Charities",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Heb. Charities” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1874,
+    "surveyIds": [
+      "new-york-united-heb-charities-1880"
+    ]
+  },
+  {
+    "id": "new-york-heb-free-school-asso-1880-record",
+    "name": "Heb. Free School Asso.",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "education",
+    "description": "Named as “Heb. Free School Asso.” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "new-york-heb-free-school-asso-1880"
+    ]
+  },
+  {
+    "id": "new-york-young-men-s-hebrew-association-1880-record",
+    "name": "Young Men's Hebrew Association",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Young Men's Hebrew Association” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1874,
+    "surveyIds": [
+      "new-york-young-men-s-hebrew-association-1880"
+    ]
+  },
+  {
+    "id": "new-york-y-m-associat-n-of-congregation-ahavath-c-1880-record",
+    "name": "Y. M. Associat'n of congregation Ahavath Chesed",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Y. M. Associat'n of congregation Ahavath Chesed” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "new-york-y-m-associat-n-of-congregation-ahavath-c-1880"
+    ]
+  },
+  {
+    "id": "new-york-maimonides-lib-ass-n-1880-record",
+    "name": "Maimonides' Lib. Ass'n",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Maimonides' Lib. Ass'n” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-maimonides-lib-ass-n-1880"
+    ]
+  },
+  {
+    "id": "new-york-amer-jewish-pub-soc-y-1880-record",
+    "name": "Amer. Jewish Pub. Soc'y",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Amer. Jewish Pub. Soc'y” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "new-york-amer-jewish-pub-soc-y-1880"
+    ]
+  },
+  {
+    "id": "new-york-mut-benefit-burial-s-y-1880-record",
+    "name": "Mut. Benefit & Burial S'y",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Mut. Benefit & Burial S'y” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1849,
+    "surveyIds": [
+      "new-york-mut-benefit-burial-s-y-1880"
+    ]
+  },
+  {
+    "id": "new-york-hebrew-relief-society-1880-record",
+    "name": "Hebrew Relief Society",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Relief Society” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1831,
+    "surveyIds": [
+      "new-york-hebrew-relief-society-1880"
+    ]
+  },
+  {
+    "id": "new-york-chebra-chesed-ve-emeth-1880-record",
+    "name": "Chebra Chesed Ve. Emeth",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Chebra Chesed Ve. Emeth” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1802,
+    "surveyIds": [
+      "new-york-chebra-chesed-ve-emeth-1880"
+    ]
+  },
+  {
+    "id": "new-york-down-town-heb-ladies-benevolent-society-1880-record",
+    "name": "Down Town Heb. Ladies' Benevolent Society",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Down Town Heb. Ladies' Benevolent Society” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1874,
+    "surveyIds": [
+      "new-york-down-town-heb-ladies-benevolent-society-1880"
+    ]
+  },
+  {
+    "id": "new-york-ladies-bikur-cholim-s-y-1880-record",
+    "name": "Ladies' Bikur Cholim S'y",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Bikur Cholim S'y” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-ladies-bikur-cholim-s-y-1880"
+    ]
+  },
+  {
+    "id": "new-york-heb-sheltering-guardian-society-1880-record",
+    "name": "Heb. Sheltering Guardian Society",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Sheltering Guardian Society” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-heb-sheltering-guardian-society-1880"
+    ]
+  },
+  {
+    "id": "beth-elohim-bkn-religious-school-1878",
+    "name": "Beth Elohim religious school (1878 report)",
+    "category": "education",
+    "place": "brooklyn",
+    "congregation": "beth-elohim-bkn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-1880",
+      "brooklyn-beth-elohim-1880-2"
+    ]
+  },
+  {
+    "id": "brooklyn-beth-israel-1880-record-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "brooklyn",
+    "congregation": "brooklyn-beth-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-temple-israel-1880-record-religious-school-1878",
+    "name": "Temple Israel religious school (1878 report)",
+    "category": "education",
+    "place": "brooklyn",
+    "congregation": "brooklyn-temple-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "brooklyn-temple-israel-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-ahavath-achim-1880-record-religious-school-1878",
+    "name": "Ahavath Achim religious school (1878 report)",
+    "category": "education",
+    "place": "brooklyn",
+    "congregation": "brooklyn-ahavath-achim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "brooklyn-ahavath-achim-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-y-m-hebrew-associat-n-1880-record",
+    "name": "Y. M. Hebrew Associat'n",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Y. M. Hebrew Associat'n” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1876,
+    "surveyIds": [
+      "brooklyn-y-m-hebrew-associat-n-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-heb-benevolent-society-1880-record",
+    "name": "Heb. Benevolent Society",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Benevolent Society” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "brooklyn-heb-benevolent-society-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-heb-benevolent-society-1880-2-record",
+    "name": "Heb. Benevolent Society",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Benevolent Society” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "brooklyn-heb-benevolent-society-1880-2"
+    ]
+  },
+  {
+    "id": "anshe-emeth-alb-religious-school-1878",
+    "name": "Anshe Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "albany",
+    "congregation": "anshe-emeth-alb",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "albany-anshe-emeth-1880"
+    ]
+  },
+  {
+    "id": "beth-el-alb-religious-school-1878",
+    "name": "Beth El religious school (1878 report)",
+    "category": "education",
+    "place": "albany",
+    "congregation": "beth-el-alb",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "albany-beth-el-1880"
+    ]
+  },
+  {
+    "id": "albany-hebrew-benev-society-1880-record",
+    "name": "Hebrew Benev. Society",
+    "place": "albany",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Benev. Society” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "albany-hebrew-benev-society-1880"
+    ]
+  },
+  {
+    "id": "rochester-etz-raanon-1880-record-religious-school-1878",
+    "name": "Etz Raanon religious school (1878 report)",
+    "category": "education",
+    "place": "rochester",
+    "congregation": "rochester-etz-raanon-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "rochester-etz-raanon-1880"
+    ]
+  },
+  {
+    "id": "brith-kodesh-roc-religious-school-1878",
+    "name": "B'rith Kodesh religious school (1878 report)",
+    "category": "education",
+    "place": "rochester",
+    "congregation": "brith-kodesh-roc",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "rochester-berith-kodesh-1880"
+    ]
+  },
+  {
+    "id": "elmira-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "elmira",
+    "congregation": "elmira-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "elmira-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "buffalo-temple-beth-zion-1880-record-religious-school-1878",
+    "name": "Temple Beth Zion religious school (1878 report)",
+    "category": "education",
+    "place": "buffalo",
+    "congregation": "buffalo-temple-beth-zion-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "buffalo-temple-beth-zion-1880"
+    ]
+  },
+  {
+    "id": "troy-berith-sholom-1880-record-religious-school-1878",
+    "name": "Berith Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "troy",
+    "congregation": "troy-berith-sholom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "troy-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "society-concord-syr-religious-school-1878",
+    "name": "Society of Concord (Keneseth Shalom) religious school (1878 report)",
+    "category": "education",
+    "place": "syracuse",
+    "congregation": "society-concord-syr",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "syracuse-society-of-concord-1880"
+    ]
+  },
+  {
+    "id": "beth-jacob-nbg-religious-school-1878",
+    "name": "Beth Jacob religious school (1878 report)",
+    "category": "education",
+    "place": "newburgh",
+    "congregation": "beth-jacob-nbg",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-b-nai-jeshuron-1880-record-religious-school-1878",
+    "name": "B'nai Jeshuron religious school (1878 report)",
+    "category": "education",
+    "place": "newark-nj",
+    "congregation": "newark-nj-b-nai-jeshuron-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "newark-nj-b-nai-jeshuron-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-heb-benev-orph-s-y-1880-record",
+    "name": "Heb. Benev. & Orph. S'y",
+    "place": "newark-nj",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Benev. & Orph. S'y” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1860,
+    "surveyIds": [
+      "newark-nj-heb-benev-orph-s-y-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-y-ladies-sew-g-circle-1880-record",
+    "name": "Y. Ladies' Sew'g Circle",
+    "place": "newark-nj",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Y. Ladies' Sew'g Circle” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "newark-nj-y-ladies-sew-g-circle-1880"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-pat-religious-school-1878",
+    "name": "B'nai Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "paterson",
+    "congregation": "bnai-jeshurun-pat",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "paterson-b-nai-jeshuron-1880"
+    ]
+  },
+  {
+    "id": "hoboken-adas-emuno-1880-record-religious-school-1878",
+    "name": "Adas Emuno religious school (1878 report)",
+    "category": "education",
+    "place": "hoboken",
+    "congregation": "hoboken-adas-emuno-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "hoboken-adas-emuno-1880"
+    ]
+  },
+  {
+    "id": "hoboken-hebrew-ladies-society-1880-record",
+    "name": "Hebrew Ladies' Society",
+    "place": "hoboken",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Ladies' Society” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "hoboken-hebrew-ladies-society-1880"
+    ]
+  },
+  {
+    "id": "rodeph-shalom-phl-religious-school-1878",
+    "name": "Rodeph Shalom religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "rodeph-shalom-phl",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-rodef-shalom-1880"
+    ]
+  },
+  {
+    "id": "beth-israel-phl-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "beth-israel-phl",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "keneseth-israel-phl-religious-school-1878",
+    "name": "Keneseth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "keneseth-israel-phl",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-keneseth-israel-1880"
+    ]
+  },
+  {
+    "id": "beth-el-emeth-phl-religious-school-1878",
+    "name": "Beth El Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "beth-el-emeth-phl",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-beth-el-emeth-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-adas-jeshurun-1880-record-religious-school-1878",
+    "name": "Adas Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "philadelphia-adas-jeshurun-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-adas-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-anshe-emeth-1880-record-religious-school-1878",
+    "name": "Anshe Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "philadelphia",
+    "congregation": "philadelphia-anshe-emeth-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-anshe-emeth-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-jewish-hospital-1880-record",
+    "name": "Jewish Hospital",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "hospital",
+    "description": "Named as “Jewish Hospital” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "philadelphia-jewish-hospital-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-home-for-the-aged-and-infirm-1880-record",
+    "name": "Home for the aged and infirm",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Home for the aged and infirm” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "philadelphia-home-for-the-aged-and-infirm-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880-record",
+    "name": "Fam. Waisen Erziehungs-Verein, Keneseth Isr. Cong.",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Fam. Waisen Erziehungs-Verein, Keneseth Isr. Cong.” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-united-hebr-charities-1880-record",
+    "name": "United Hebr. Charities",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Hebr. Charities” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "philadelphia-united-hebr-charities-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-ezrath-nashim-1880-record",
+    "name": "Ezrath Nashim",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ezrath Nashim” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "philadelphia-ezrath-nashim-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-young-men-s-hebrew-association-1880-record",
+    "name": "Young Men's Hebrew Association",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Young Men's Hebrew Association” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1875,
+    "surveyIds": [
+      "philadelphia-young-men-s-hebrew-association-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-branch-of-the-alliance-israelite-univers-1880-record",
+    "name": "Branch of the Alliance Israelite Universelle",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Branch of the Alliance Israelite Universelle” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "philadelphia-branch-of-the-alliance-israelite-univers-1880"
+    ]
+  },
+  {
+    "id": "wilkes-barre-b-nai-jacob-1880-record-religious-school-1878",
+    "name": "B'nai Jacob religious school (1878 report)",
+    "category": "education",
+    "place": "wilkes-barre",
+    "congregation": "wilkes-barre-b-nai-jacob-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "wilkes-barre-b-nai-jacob-1880"
+    ]
+  },
+  {
+    "id": "wilkes-barre-b-nai-berith-1880-record-religious-school-1878",
+    "name": "B'nai Berith religious school (1878 report)",
+    "category": "education",
+    "place": "wilkes-barre",
+    "congregation": "wilkes-barre-b-nai-berith-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "wilkes-barre-b-nai-berith-1880"
+    ]
+  },
+  {
+    "id": "brith-sholom-eas-religious-school-1878",
+    "name": "Brith Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "easton",
+    "congregation": "brith-sholom-eas",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "easton-berith-shalom-1880"
+    ]
+  },
+  {
+    "id": "easton-wache-s-y-kranken-leichen-1880-record",
+    "name": "Wache S'y, Kranken & Leichen",
+    "place": "easton",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Wache S'y, Kranken & Leichen” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1857,
+    "surveyIds": [
+      "easton-wache-s-y-kranken-leichen-1880"
+    ]
+  },
+  {
+    "id": "easton-esrath-nashim-1880-record",
+    "name": "Esrath Nashim",
+    "place": "easton",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Esrath Nashim” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "easton-esrath-nashim-1880"
+    ]
+  },
+  {
+    "id": "titusville-b-nai-zion-1880-record-religious-school-1878",
+    "name": "B'nai Zion religious school (1878 report)",
+    "category": "education",
+    "place": "titusville",
+    "congregation": "titusville-b-nai-zion-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "titusville-b-nai-zion-1880"
+    ]
+  },
+  {
+    "id": "rodef-shalom-pgh-religious-school-1878",
+    "name": "Rodef Shalom religious school (1878 report)",
+    "category": "education",
+    "place": "pittsburgh",
+    "congregation": "rodef-shalom-pgh",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "pittsburgh-rodef-shalom-1880"
+    ]
+  },
+  {
+    "id": "pittsburgh-ez-chaim-1880-record-religious-school-1878",
+    "name": "Ez Chaim religious school (1878 report)",
+    "category": "education",
+    "place": "pittsburgh",
+    "congregation": "pittsburgh-ez-chaim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "pittsburgh-ez-chaim-1880"
+    ]
+  },
+  {
+    "id": "pittsburgh-hebr-benev-society-1880-record",
+    "name": "Hebr. Benev. Society",
+    "place": "pittsburgh",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebr. Benev. Society” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "pittsburgh-hebr-benev-society-1880"
+    ]
+  },
+  {
+    "id": "pittsburgh-ladies-hebr-benev-society-1880-record",
+    "name": "Ladies' Hebr. Benev. Society",
+    "place": "pittsburgh",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Hebr. Benev. Society” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "pittsburgh-ladies-hebr-benev-society-1880"
+    ]
+  },
+  {
+    "id": "scranton-anshe-chesed-1880-record-religious-school-1878",
+    "name": "Anshe Chesed religious school (1878 report)",
+    "category": "education",
+    "place": "scranton",
+    "congregation": "scranton-anshe-chesed-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "scranton-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "washington-hebrew-religious-school-1878",
+    "name": "Washington Hebrew Congregation religious school (1878 report)",
+    "category": "education",
+    "place": "washington",
+    "congregation": "washington-hebrew",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "washington-washington-hebrew-1880"
+    ]
+  },
+  {
+    "id": "washington-adas-israel-1880-record-religious-school-1878",
+    "name": "Adas Israel religious school (1878 report)",
+    "category": "education",
+    "place": "washington",
+    "congregation": "washington-adas-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "washington-adas-israel-1880"
+    ]
+  },
+  {
+    "id": "washington-ladies-sew-fuel-aid-soc-y-1880-record",
+    "name": "Ladies' Sew., Fuel & Aid Soc'y",
+    "place": "washington",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Sew., Fuel & Aid Soc'y” in the 1880 report, printed p. 18 (District of Columbia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "washington-ladies-sew-fuel-aid-soc-y-1880"
+    ]
+  },
+  {
+    "id": "baltimore-eutaw-st-1880-record-religious-school-1878",
+    "name": "Eutaw St. religious school (1878 report)",
+    "category": "education",
+    "place": "baltimore",
+    "congregation": "baltimore-eutaw-st-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "baltimore-eutaw-st-1880"
+    ]
+  },
+  {
+    "id": "baltimore-hebrew-hospital-1880-record",
+    "name": "Hebrew Hospital",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "hospital",
+    "description": "Named as “Hebrew Hospital” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-hebrew-hospital-1880"
+    ]
+  },
+  {
+    "id": "baltimore-hebrew-orphan-asylum-1880-record",
+    "name": "Hebrew Orphan Asylum",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Orphan Asylum” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "baltimore-hebrew-orphan-asylum-1880"
+    ]
+  },
+  {
+    "id": "baltimore-hebrew-benev-society-1880-record",
+    "name": "Hebrew Benev. Society",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Benev. Society” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-hebrew-benev-society-1880"
+    ]
+  },
+  {
+    "id": "baltimore-hebr-ladies-sew-soc-y-1880-record",
+    "name": "Hebr. Ladies' Sew. Soc'y",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebr. Ladies' Sew. Soc'y” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-hebr-ladies-sew-soc-y-1880"
+    ]
+  },
+  {
+    "id": "baltimore-soc-y-for-educating-poor-heb-children-1880-record",
+    "name": "Soc'y for Educating Poor Heb. Children",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Soc'y for Educating Poor Heb. Children” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1852,
+    "surveyIds": [
+      "baltimore-soc-y-for-educating-poor-heb-children-1880"
+    ]
+  },
+  {
+    "id": "baltimore-hebrew-ladies-beneficial-society-1880-record",
+    "name": "Hebrew Ladies' Beneficial Society",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Ladies' Beneficial Society” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1847,
+    "surveyIds": [
+      "baltimore-hebrew-ladies-beneficial-society-1880"
+    ]
+  },
+  {
+    "id": "baltimore-united-hebrew-beneficial-society-1880-record",
+    "name": "United Hebrew Beneficial Society",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Hebrew Beneficial Society” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1833,
+    "surveyIds": [
+      "baltimore-united-hebrew-beneficial-society-1880"
+    ]
+  },
+  {
+    "id": "beth-ahabah-ric-religious-school-1878",
+    "name": "Beth Ahabah religious school (1878 report)",
+    "category": "education",
+    "place": "richmond",
+    "congregation": "beth-ahabah-ric",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "richmond-beth-ahaba-1880"
+    ]
+  },
+  {
+    "id": "keneseth-israel-ric-religious-school-1878",
+    "name": "Keneseth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "richmond",
+    "congregation": "keneseth-israel-ric",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "richmond-keneseth-israel-1880"
+    ]
+  },
+  {
+    "id": "richmond-jeff-lit-y-soc-l-cir-1880-record",
+    "name": "Jeff. Lit'y & Soc'l Cir.",
+    "place": "richmond",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Jeff. Lit'y & Soc'l Cir.” in the 1880 report, printed p. 20 (Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1867,
+    "surveyIds": [
+      "richmond-jeff-lit-y-soc-l-cir-1880"
+    ]
+  },
+  {
+    "id": "richmond-mendelssohn-lit-y-soc-l-cir-1880-record",
+    "name": "Mendelssohn Lit'y & Soc'l Cir.",
+    "place": "richmond",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Mendelssohn Lit'y & Soc'l Cir.” in the 1880 report, printed p. 20 (Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "richmond-mendelssohn-lit-y-soc-l-cir-1880"
+    ]
+  },
+  {
+    "id": "norfolk-beth-el-1880-record-religious-school-1878",
+    "name": "Beth El religious school (1878 report)",
+    "category": "education",
+    "place": "norfolk",
+    "congregation": "norfolk-beth-el-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "norfolk-beth-el-1880"
+    ]
+  },
+  {
+    "id": "petersburg-va-rodef-sholom-1880-record-religious-school-1878",
+    "name": "Rodef Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "petersburg-va",
+    "congregation": "petersburg-va-rodef-sholom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "petersburg-va-rodef-sholom-1880"
+    ]
+  },
+  {
+    "id": "wheeling-leshem-shomayim-1880-record-religious-school-1878",
+    "name": "Leshem Shomayim religious school (1878 report)",
+    "category": "education",
+    "place": "wheeling",
+    "congregation": "wheeling-leshem-shomayim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "wheeling-leshem-shomayim-1880"
+    ]
+  },
+  {
+    "id": "wheeling-heb-ladies-ben-soc-y-1880-record",
+    "name": "Heb. Ladies' Ben. Soc'y",
+    "place": "wheeling",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Ladies' Ben. Soc'y” in the 1880 report, printed p. 21 (West Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "wheeling-heb-ladies-ben-soc-y-1880"
+    ]
+  },
+  {
+    "id": "wheeling-montefiore-literary-so-y-1880-record",
+    "name": "Montefiore Literary So'y",
+    "place": "wheeling",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Montefiore Literary So'y” in the 1880 report, printed p. 21 (West Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1875,
+    "surveyIds": [
+      "wheeling-montefiore-literary-so-y-1880"
+    ]
+  },
+  {
+    "id": "wilmington-nc-temple-of-israel-1880-record-religious-school-1878",
+    "name": "Temple of Israel religious school (1878 report)",
+    "category": "education",
+    "place": "wilmington-nc",
+    "congregation": "wilmington-nc-temple-of-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "wilmington-nc-temple-of-israel-1880"
+    ]
+  },
+  {
+    "id": "wilmington-nc-true-brothers-society-1880-record",
+    "name": "True Brothers' Society",
+    "place": "wilmington-nc",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “True Brothers' Society” in the 1880 report, printed p. 21 (North Carolina), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1852,
+    "surveyIds": [
+      "wilmington-nc-true-brothers-society-1880"
+    ]
+  },
+  {
+    "id": "charleston-berith-sholom-1880-record-religious-school-1878",
+    "name": "Berith Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "charleston",
+    "congregation": "charleston-berith-sholom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "charleston-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "charleston-israel-s-hope-1880-record",
+    "name": "Israel's Hope",
+    "place": "charleston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Israel's Hope” in the 1880 report, printed p. 22 (South Carolina), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "charleston-israel-s-hope-1880"
+    ]
+  },
+  {
+    "id": "savannah-youth-s-historical-soc-y-1880-record",
+    "name": "Youth's Historical Soc'y",
+    "place": "savannah",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Youth's Historical Soc'y” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "savannah-youth-s-historical-soc-y-1880"
+    ]
+  },
+  {
+    "id": "savannah-heb-benev-society-1880-record",
+    "name": "Heb. Benev. Society",
+    "place": "savannah",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Benev. Society” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1851,
+    "surveyIds": [
+      "savannah-heb-benev-society-1880"
+    ]
+  },
+  {
+    "id": "savannah-ladies-benev-society-1880-record",
+    "name": "Ladies' Benev. Society",
+    "place": "savannah",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Society” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1853,
+    "surveyIds": [
+      "savannah-ladies-benev-society-1880"
+    ]
+  },
+  {
+    "id": "columbus-ga-benai-israel-1880-record-religious-school-1878",
+    "name": "Benai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "columbus-ga",
+    "congregation": "columbus-ga-benai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "columbus-ga-benai-israel-1880"
+    ]
+  },
+  {
+    "id": "columbus-ga-daughter-of-israel-1880-record",
+    "name": "Daughter of Israel",
+    "place": "columbus-ga",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Daughter of Israel” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "columbus-ga-daughter-of-israel-1880"
+    ]
+  },
+  {
+    "id": "augusta-ga-benai-israel-1880-record-religious-school-1878",
+    "name": "Benai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "augusta-ga",
+    "congregation": "augusta-ga-benai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "augusta-ga-benai-israel-1880"
+    ]
+  },
+  {
+    "id": "macon-beth-israel-1880-record-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "macon",
+    "congregation": "macon-beth-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "macon-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "kahl-montgomery-religious-school-1878",
+    "name": "Kahl Montgomery (Temple Beth Or) religious school (1878 report)",
+    "category": "education",
+    "place": "montgomery",
+    "congregation": "kahl-montgomery",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "montgomery-kahl-montgomery-1880"
+    ]
+  },
+  {
+    "id": "montgomery-heb-lad-benev-society-1880-record",
+    "name": "Heb. Lad. Benev. Society",
+    "place": "montgomery",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Lad. Benev. Society” in the 1880 report, printed p. 25 (Alabama), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1861,
+    "surveyIds": [
+      "montgomery-heb-lad-benev-society-1880"
+    ]
+  },
+  {
+    "id": "selma-mishkan-israel-1880-record-religious-school-1878",
+    "name": "Mishkan Israel religious school (1878 report)",
+    "category": "education",
+    "place": "selma",
+    "congregation": "selma-mishkan-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "selma-mishkan-israel-1880"
+    ]
+  },
+  {
+    "id": "mobile-charity-fund-1880-record",
+    "name": "Charity Fund",
+    "place": "mobile",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Charity Fund” in the 1880 report, printed p. 25 (Alabama), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "mobile-charity-fund-1880"
+    ]
+  },
+  {
+    "id": "vicksburg-anshe-chesed-1880-record-religious-school-1878",
+    "name": "Anshe Chesed religious school (1878 report)",
+    "category": "education",
+    "place": "vicksburg",
+    "congregation": "vicksburg-anshe-chesed-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "vicksburg-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "vicksburg-ladies-heb-benev-sc-y-1880-record",
+    "name": "Ladies' Heb. Benev. Sc'y",
+    "place": "vicksburg",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Heb. Benev. Sc'y” in the 1880 report, printed p. 26 (Mississippi), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "vicksburg-ladies-heb-benev-sc-y-1880"
+    ]
+  },
+  {
+    "id": "meridian-beth-israel-1880-record-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "meridian",
+    "congregation": "meridian-beth-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "meridian-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "bnai-israel-ntz-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "natchez",
+    "congregation": "bnai-israel-ntz",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "natchez-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "shreveport-hebra-zion-1880-record-religious-school-1878",
+    "name": "Hebra Zion religious school (1878 report)",
+    "category": "education",
+    "place": "shreveport",
+    "congregation": "shreveport-hebra-zion-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "shreveport-hebra-zion-1880"
+    ]
+  },
+  {
+    "id": "shreveport-hebrew-benev-assoc-n-1880-record",
+    "name": "Hebrew Benev. Assoc'n",
+    "place": "shreveport",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Benev. Assoc'n” in the 1880 report, printed p. 27 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1856,
+    "surveyIds": [
+      "shreveport-hebrew-benev-assoc-n-1880"
+    ]
+  },
+  {
+    "id": "donaldsonville-donaldson-college-1880-record",
+    "name": "Donaldson College",
+    "place": "donaldsonville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "education",
+    "description": "Named as “Donaldson College” in the 1880 report, printed p. 27 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "donaldsonville-donaldson-college-1880"
+    ]
+  },
+  {
+    "id": "alexandria-la-gemiluth-chasodim-1880-record-religious-school-1878",
+    "name": "Gemiluth Chasodim religious school (1878 report)",
+    "category": "education",
+    "place": "alexandria-la",
+    "congregation": "alexandria-la-gemiluth-chasodim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "alexandria-la-gemiluth-chasodim-1880"
+    ]
+  },
+  {
+    "id": "shaarei-tefillah-nol-religious-school-1878",
+    "name": "Shaarei Tefillah religious school (1878 report)",
+    "category": "education",
+    "place": "new-orleans",
+    "congregation": "shaarei-tefillah-nol",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-gates-of-prayer-1880"
+    ]
+  },
+  {
+    "id": "new-orleans-temple-sinai-1880-record-religious-school-1878",
+    "name": "Temple Sinai religious school (1878 report)",
+    "category": "education",
+    "place": "new-orleans",
+    "congregation": "new-orleans-temple-sinai-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-temple-sinai-1880"
+    ]
+  },
+  {
+    "id": "new-orleans-home-for-wid-and-orph-1880-record",
+    "name": "Home for Wid. and Orph.",
+    "place": "new-orleans",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Home for Wid. and Orph.” in the 1880 report, printed p. 28 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1855,
+    "surveyIds": [
+      "new-orleans-home-for-wid-and-orph-1880"
+    ]
+  },
+  {
+    "id": "new-orleans-hebr-education-society-1880-record",
+    "name": "Hebr. Education Society",
+    "place": "new-orleans",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "education",
+    "description": "Named as “Hebr. Education Society” in the 1880 report, printed p. 28 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-orleans-hebr-education-society-1880"
+    ]
+  },
+  {
+    "id": "galveston-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "galveston",
+    "congregation": "galveston-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "galveston-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "beth-israel-hou-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "houston",
+    "congregation": "beth-israel-hou",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "houston-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "bene-israel-cin-religious-school-1878",
+    "name": "Bene Israel religious school (1878 report)",
+    "category": "education",
+    "place": "cincinnati",
+    "congregation": "bene-israel-cin",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "bnai-yeshurun-cin-religious-school-1878",
+    "name": "B'nai Yeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "cincinnati",
+    "congregation": "bnai-yeshurun-cin",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-b-nai-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-acheveth-achim-1880-record-religious-school-1878",
+    "name": "Acheveth Achim religious school (1878 report)",
+    "category": "education",
+    "place": "cincinnati",
+    "congregation": "cincinnati-acheveth-achim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-acheveth-achim-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-hebrew-union-college-1880-record",
+    "name": "Hebrew Union College",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "education",
+    "description": "Named as “Hebrew Union College” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1876,
+    "surveyIds": [
+      "cincinnati-hebrew-union-college-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-jewish-hospital-1880-record",
+    "name": "Jewish Hospital",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "hospital",
+    "description": "Named as “Jewish Hospital” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1850,
+    "surveyIds": [
+      "cincinnati-jewish-hospital-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-heb-gen-l-relief-1880-record",
+    "name": "Heb. Gen'l Relief",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Gen'l Relief” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1856,
+    "surveyIds": [
+      "cincinnati-heb-gen-l-relief-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880-record",
+    "name": "Mutual Endowment Ass'n, I. O. B. B.",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Mutual Endowment Ass'n, I. O. B. B.” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1867,
+    "surveyIds": [
+      "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880"
+    ]
+  },
+  {
+    "id": "tifereth-israel-cle-religious-school-1878",
+    "name": "Tifereth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "cleveland",
+    "congregation": "tifereth-israel-cle",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cleveland-tiferith-israel-1880"
+    ]
+  },
+  {
+    "id": "anshe-chesed-cle-religious-school-1878",
+    "name": "Anshe Chesed religious school (1878 report)",
+    "category": "education",
+    "place": "cleveland",
+    "congregation": "anshe-chesed-cle",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cleveland-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "toledo-shomer-emunim-1880-record",
+    "name": "Shomer Emunim",
+    "place": "toledo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "unclassified",
+    "description": "Named as “Shomer Emunim” in the 1880 report, printed p. 31 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "toledo-shomer-emunim-1880"
+    ]
+  },
+  {
+    "id": "toledo-ladies-hebrew-charity-1880-record",
+    "name": "Ladies' Hebrew Charity",
+    "place": "toledo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Hebrew Charity” in the 1880 report, printed p. 31 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "toledo-ladies-hebrew-charity-1880"
+    ]
+  },
+  {
+    "id": "columbus-oh-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "columbus-oh",
+    "congregation": "columbus-oh-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "columbus-oh-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "evansville-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "evansville",
+    "congregation": "evansville-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "evansville-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "ahavas-achim-laf-religious-school-1878",
+    "name": "Ahavas Achim religious school (1878 report)",
+    "category": "education",
+    "place": "lafayette-in",
+    "congregation": "ahavas-achim-laf",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "lafayette-in-shebeth-achim-1880"
+    ]
+  },
+  {
+    "id": "sinai-chi-religious-school-1878",
+    "name": "Sinai Congregation religious school (1878 report)",
+    "category": "education",
+    "place": "chicago",
+    "congregation": "sinai-chi",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-sinai-1880"
+    ]
+  },
+  {
+    "id": "chicago-zion-1880-record-religious-school-1878",
+    "name": "Zion religious school (1878 report)",
+    "category": "education",
+    "place": "chicago",
+    "congregation": "chicago-zion-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-zion-1880"
+    ]
+  },
+  {
+    "id": "chicago-north-chicago-heb-1880-record-religious-school-1878",
+    "name": "North Chicago Heb. religious school (1878 report)",
+    "category": "education",
+    "place": "chicago",
+    "congregation": "chicago-north-chicago-heb-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-north-chicago-heb-1880"
+    ]
+  },
+  {
+    "id": "kam-chi-religious-school-1878",
+    "name": "Kehilath Anshe Maariv religious school (1878 report)",
+    "category": "education",
+    "place": "chicago",
+    "congregation": "kam-chi",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-anshe-m-arev-1880"
+    ]
+  },
+  {
+    "id": "chicago-jewish-educ-soc-y-1880-record",
+    "name": "Jewish Educ. Soc'y",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "education",
+    "description": "Named as “Jewish Educ. Soc'y” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "chicago-jewish-educ-soc-y-1880"
+    ]
+  },
+  {
+    "id": "chicago-hebrew-relief-soc-y-1880-record",
+    "name": "Hebrew Relief Soc'y",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Relief Soc'y” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "chicago-hebrew-relief-soc-y-1880"
+    ]
+  },
+  {
+    "id": "chicago-j-disher-frauenverein-1880-record",
+    "name": "Jüdisher Frauenverein",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Jüdisher Frauenverein” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "chicago-j-disher-frauenverein-1880"
+    ]
+  },
+  {
+    "id": "chicago-sewing-society-1880-record",
+    "name": "Sewing Society",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Sewing Society” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "chicago-sewing-society-1880"
+    ]
+  },
+  {
+    "id": "chicago-n-chicago-ladies-heb-assoc-n-1880-record",
+    "name": "N. Chicago Ladies' Heb. Assoc'n",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “N. Chicago Ladies' Heb. Assoc'n” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1876,
+    "surveyIds": [
+      "chicago-n-chicago-ladies-heb-assoc-n-1880"
+    ]
+  },
+  {
+    "id": "peoria-beth-israel-1880-record-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "peoria",
+    "congregation": "peoria-beth-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "peoria-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "peoria-anshe-emeth-1880-record-religious-school-1878",
+    "name": "Anshe Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "peoria",
+    "congregation": "peoria-anshe-emeth-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "peoria-anshe-emeth-1880"
+    ]
+  },
+  {
+    "id": "peoria-ladies-benev-soc-y-1880-record",
+    "name": "Ladies' Benev. Soc'y",
+    "place": "peoria",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Soc'y” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "peoria-ladies-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "peoria-ladies-sewing-soc-y-1880-record",
+    "name": "Ladies' Sewing Soc'y",
+    "place": "peoria",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Sewing Soc'y” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "peoria-ladies-sewing-soc-y-1880"
+    ]
+  },
+  {
+    "id": "bnai-avraham-qcy-religious-school-1878",
+    "name": "K.K. Bnai Avrohum religious school (1878 report)",
+    "category": "education",
+    "place": "quincy",
+    "congregation": "bnai-avraham-qcy",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "quincy-b-nai-sholom-1880"
+    ]
+  },
+  {
+    "id": "springfield-il-berith-sholom-1880-record-religious-school-1878",
+    "name": "Berith Sholom religious school (1878 report)",
+    "category": "education",
+    "place": "springfield-il",
+    "congregation": "springfield-il-berith-sholom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "springfield-il-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "adath-israel-lou-religious-school-1878",
+    "name": "Adath Israel religious school (1878 report)",
+    "category": "education",
+    "place": "louisville",
+    "congregation": "adath-israel-lou",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "louisville-adath-israel-1880"
+    ]
+  },
+  {
+    "id": "louisville-united-heb-relief-1880-record",
+    "name": "United Heb. Relief",
+    "place": "louisville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Heb. Relief” in the 1880 report, printed p. 38 (Kentucky), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1851,
+    "surveyIds": [
+      "louisville-united-heb-relief-1880"
+    ]
+  },
+  {
+    "id": "paducah-jeshurun-1880-record-religious-school-1878",
+    "name": "Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "paducah",
+    "congregation": "paducah-jeshurun-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "paducah-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "knoxville-hebr-benev-society-1880-record",
+    "name": "Hebr. Benev. Society",
+    "place": "knoxville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebr. Benev. Society” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1861,
+    "surveyIds": [
+      "knoxville-hebr-benev-society-1880"
+    ]
+  },
+  {
+    "id": "knoxville-ladies-heb-ben-soc-y-1880-record",
+    "name": "Ladies' Heb. Ben. Soc'y",
+    "place": "knoxville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Heb. Ben. Soc'y” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "knoxville-ladies-heb-ben-soc-y-1880"
+    ]
+  },
+  {
+    "id": "nashville-ohabay-shalom-1880-record-religious-school-1878",
+    "name": "Ohabay Shalom religious school (1878 report)",
+    "category": "education",
+    "place": "nashville",
+    "congregation": "nashville-ohabay-shalom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "nashville-ohabay-shalom-1880"
+    ]
+  },
+  {
+    "id": "nashville-concordia-club-1880-record",
+    "name": "Concordia Club",
+    "place": "nashville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “Concordia Club” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "nashville-concordia-club-1880"
+    ]
+  },
+  {
+    "id": "children-of-israel-mem-religious-school-1878",
+    "name": "B'nai Israel (Children of Israel) religious school (1878 report)",
+    "category": "education",
+    "place": "memphis",
+    "congregation": "children-of-israel-mem",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "memphis-children-of-israel-1880"
+    ]
+  },
+  {
+    "id": "memphis-beth-el-emeth-1880-record-religious-school-1878",
+    "name": "Beth El Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "memphis",
+    "congregation": "memphis-beth-el-emeth-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "memphis-beth-el-emeth-1880"
+    ]
+  },
+  {
+    "id": "beth-el-det-religious-school-1878",
+    "name": "Beth El religious school (1878 report)",
+    "category": "education",
+    "place": "detroit",
+    "congregation": "beth-el-det",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "detroit-beth-el-1880"
+    ]
+  },
+  {
+    "id": "kalamazoo-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "kalamazoo",
+    "congregation": "kalamazoo-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "kalamazoo-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "kalamazoo-ladies-benev-soc-y-1880-record",
+    "name": "Ladies' Benev. Soc'y",
+    "place": "kalamazoo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Soc'y” in the 1880 report, printed p. 40 (Michigan), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "kalamazoo-ladies-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "grand-rapids-emanu-el-1880-record-religious-school-1878",
+    "name": "Emanu El religious school (1878 report)",
+    "category": "education",
+    "place": "grand-rapids",
+    "congregation": "grand-rapids-emanu-el-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "grand-rapids-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "grand-rapids-heb-benev-society-1880-record",
+    "name": "Heb. Benev. Society",
+    "place": "grand-rapids",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Benev. Society” in the 1880 report, printed p. 40 (Michigan), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "grand-rapids-heb-benev-society-1880"
+    ]
+  },
+  {
+    "id": "milwaukee-emanu-el-1880-record-religious-school-1878",
+    "name": "Emanu El religious school (1878 report)",
+    "category": "education",
+    "place": "milwaukee",
+    "congregation": "milwaukee-emanu-el-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "milwaukee-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "shaare-shomaim-mad-religious-school-1878",
+    "name": "Shaare Shomaim religious school (1878 report)",
+    "category": "education",
+    "place": "madison-wi",
+    "congregation": "shaare-shomaim-mad",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "madison-wi-shaaray-shamaim-1880"
+    ]
+  },
+  {
+    "id": "st-paul-mt-zion-1880-record-religious-school-1878",
+    "name": "Mt. Zion religious school (1878 report)",
+    "category": "education",
+    "place": "st-paul",
+    "congregation": "st-paul-mt-zion-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "st-paul-mt-zion-1880"
+    ]
+  },
+  {
+    "id": "davenport-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "davenport",
+    "congregation": "davenport-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "davenport-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "davenport-ladies-benev-society-1880-record",
+    "name": "Ladies' Benev. Society",
+    "place": "davenport",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Society” in the 1880 report, printed p. 42 (Iowa), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "davenport-ladies-benev-society-1880"
+    ]
+  },
+  {
+    "id": "keokuk-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "keokuk",
+    "congregation": "keokuk-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "keokuk-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "keokuk-heb-ladies-ben-soc-y-1880-record",
+    "name": "Heb. Ladies' Ben. Soc'y",
+    "place": "keokuk",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Ladies' Ben. Soc'y” in the 1880 report, printed p. 42 (Iowa), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "keokuk-heb-ladies-ben-soc-y-1880"
+    ]
+  },
+  {
+    "id": "des-moines-b-nai-jeshurun-1880-record-religious-school-1878",
+    "name": "B'nai Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "des-moines",
+    "congregation": "des-moines-b-nai-jeshurun-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "des-moines-b-nai-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "st-louis-b-nai-el-1880-record-religious-school-1878",
+    "name": "B'nai El religious school (1878 report)",
+    "category": "education",
+    "place": "st-louis",
+    "congregation": "st-louis-b-nai-el-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "st-louis-b-nai-el-1880"
+    ]
+  },
+  {
+    "id": "st-louis-shaaray-emeth-1880-record-religious-school-1878",
+    "name": "Shaaray Emeth religious school (1878 report)",
+    "category": "education",
+    "place": "st-louis",
+    "congregation": "st-louis-shaaray-emeth-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "st-louis-shaaray-emeth-1880"
+    ]
+  },
+  {
+    "id": "st-louis-ladies-zion-soc-y-1880-record",
+    "name": "Ladies' Zion Soc'y",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Zion Soc'y” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1853,
+    "surveyIds": [
+      "st-louis-ladies-zion-soc-y-1880"
+    ]
+  },
+  {
+    "id": "st-louis-ladies-benev-soc-y-1880-record",
+    "name": "Ladies' Benev. Soc'y",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Soc'y” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1851,
+    "surveyIds": [
+      "st-louis-ladies-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "st-louis-ladies-wid-s-and-orphs-1880-record",
+    "name": "Ladies' Wid's and Orphs.",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Wid's and Orphs.” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1859,
+    "surveyIds": [
+      "st-louis-ladies-wid-s-and-orphs-1880"
+    ]
+  },
+  {
+    "id": "st-louis-ladies-sewing-soc-y-1880-record",
+    "name": "Ladies' Sewing Soc'y",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Sewing Soc'y” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "st-louis-ladies-sewing-soc-y-1880"
+    ]
+  },
+  {
+    "id": "st-louis-united-heb-relief-1880-record",
+    "name": "United Heb. Relief",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “United Heb. Relief” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "st-louis-united-heb-relief-1880"
+    ]
+  },
+  {
+    "id": "st-joseph-mo-adath-joseph-1880-record-religious-school-1878",
+    "name": "Adath Joseph religious school (1878 report)",
+    "category": "education",
+    "place": "st-joseph-mo",
+    "congregation": "st-joseph-mo-adath-joseph-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "st-joseph-mo-adath-joseph-1880"
+    ]
+  },
+  {
+    "id": "st-joseph-mo-ladies-benev-soc-y-1880-record",
+    "name": "Ladies' Benev. Soc'y",
+    "place": "st-joseph-mo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Soc'y” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1865,
+    "surveyIds": [
+      "st-joseph-mo-ladies-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "kansas-city-b-nai-jehuda-1880-record-religious-school-1878",
+    "name": "B'nai Jehuda religious school (1878 report)",
+    "category": "education",
+    "place": "kansas-city",
+    "congregation": "kansas-city-b-nai-jehuda-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "kansas-city-b-nai-jehuda-1880"
+    ]
+  },
+  {
+    "id": "little-rock-b-nai-israel-1880-record-religious-school-1878",
+    "name": "B'nai Israel religious school (1878 report)",
+    "category": "education",
+    "place": "little-rock",
+    "congregation": "little-rock-b-nai-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "little-rock-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "little-rock-heb-ladies-ben-ass-n-1880-record",
+    "name": "Heb. Ladies' Ben. Ass'n",
+    "place": "little-rock",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Heb. Ladies' Ben. Ass'n” in the 1880 report, printed p. 45 (Arkansas), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "little-rock-heb-ladies-ben-ass-n-1880"
+    ]
+  },
+  {
+    "id": "bnai-jeshurun-lea-survey-religious-school-1878",
+    "name": "B’nai Jeshurun religious school (1878 report)",
+    "category": "education",
+    "place": "leavenworth",
+    "congregation": "bnai-jeshurun-lea-survey",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "leavenworth-b-nai-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "leavenworth-ladies-benev-soc-y-1880-record",
+    "name": "Ladies' Benev. Soc'y",
+    "place": "leavenworth",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Benev. Soc'y” in the 1880 report, printed p. 47 (Kansas), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1863,
+    "surveyIds": [
+      "leavenworth-ladies-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "emanu-el-sf-religious-school-1878",
+    "name": "Emanu-El religious school (1878 report)",
+    "category": "education",
+    "place": "san-francisco",
+    "congregation": "emanu-el-sf",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-francisco-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-sharay-zedek-1880-record-religious-school-1878",
+    "name": "Sharay Zedek religious school (1878 report)",
+    "category": "education",
+    "place": "san-francisco",
+    "congregation": "san-francisco-sharay-zedek-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-francisco-sharay-zedek-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-ohebai-shalom-1880-record-religious-school-1878",
+    "name": "Ohebai Shalom religious school (1878 report)",
+    "category": "education",
+    "place": "san-francisco",
+    "congregation": "san-francisco-ohebai-shalom-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-francisco-ohebai-shalom-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-pacific-heb-orph-asyl-m-1880-record",
+    "name": "Pacific Heb. Orph. Asyl'm",
+    "place": "san-francisco",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Pacific Heb. Orph. Asyl'm” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "san-francisco-pacific-heb-orph-asyl-m-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-san-francisco-b-nai-ber-library-1880-record",
+    "name": "San Francisco B'nai Ber. Library",
+    "place": "san-francisco",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "cultural",
+    "description": "Named as “San Francisco B'nai Ber. Library” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "san-francisco-san-francisco-b-nai-ber-library-1880"
+    ]
+  },
+  {
+    "id": "san-jose-bikur-cholim-1880-record-religious-school-1878",
+    "name": "Bikur Cholim religious school (1878 report)",
+    "category": "education",
+    "place": "san-jose",
+    "congregation": "san-jose-bikur-cholim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-jose-bikur-cholim-1880"
+    ]
+  },
+  {
+    "id": "stockton-ca-reim-ahuvim-1880-record-religious-school-1878",
+    "name": "Reim Ahuvim religious school (1878 report)",
+    "category": "education",
+    "place": "stockton-ca",
+    "congregation": "stockton-ca-reim-ahuvim-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "stockton-ca-reim-ahuvim-1880"
+    ]
+  },
+  {
+    "id": "stockton-ca-ladies-heb-benev-soc-y-1880-record",
+    "name": "Ladies' Heb. Benev. Soc'y",
+    "place": "stockton-ca",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Heb. Benev. Soc'y” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "stockton-ca-ladies-heb-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "oakland-hebrew-benev-soc-y-1880-record",
+    "name": "Hebrew Benev. Soc'y",
+    "place": "oakland",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Hebrew Benev. Soc'y” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1852,
+    "surveyIds": [
+      "oakland-hebrew-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "beth-israel-pdx-religious-school-1878",
+    "name": "Beth Israel religious school (1878 report)",
+    "category": "education",
+    "place": "portland-or",
+    "congregation": "beth-israel-pdx",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "portland-or-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "portland-or-first-heb-benev-soc-y-1880-record",
+    "name": "First Heb. Benev. Soc'y",
+    "place": "portland-or",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “First Heb. Benev. Soc'y” in the 1880 report, printed p. 51 (Oregon), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "portland-or-first-heb-benev-soc-y-1880"
+    ]
+  },
+  {
+    "id": "portland-or-jewish-ladies-soc-y-1880-record",
+    "name": "Jewish Ladies' Soc'y",
+    "place": "portland-or",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Jewish Ladies' Soc'y” in the 1880 report, printed p. 51 (Oregon), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "portland-or-jewish-ladies-soc-y-1880"
+    ]
+  },
+  {
+    "id": "omaha-israel-1880-record-religious-school-1878",
+    "name": "Israel religious school (1878 report)",
+    "category": "education",
+    "place": "omaha",
+    "congregation": "omaha-israel-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "omaha-israel-1880"
+    ]
+  },
+  {
+    "id": "salt-lake-city-ladies-ben-soc-y-1880-record",
+    "name": "Ladies' Ben. Soc'y",
+    "place": "salt-lake-city",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "category": "philanthropy",
+    "description": "Named as “Ladies' Ben. Soc'y” in the 1880 report, printed p. 52 (Utah), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "salt-lake-city-ladies-ben-soc-y-1880"
+    ]
+  },
+  {
+    "id": "denver-emanu-el-1880-record-religious-school-1878",
+    "name": "Emanu El religious school (1878 report)",
+    "category": "education",
+    "place": "denver",
+    "congregation": "denver-emanu-el-1880-record",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "description": "Religious instruction documented by the pupil count in the 1880 statistical report. This is an editorial label, not a transcribed school name. Teaching schedule, founding date, separate premises, and continuity with other schools are not established.",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "denver-emanu-el-1880"
     ]
   }
 ]

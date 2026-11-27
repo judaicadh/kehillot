@@ -27,6 +27,7 @@ const cfg = await readJSON('site.config.json');
 const BASE = (process.env.BASE_URL || cfg.baseUrl).replace(/\/?$/, '/');
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 const [Y0, Y1] = cfg.yearRange;
+const ATLAS_END = 1880; // Includes 1878 observations published in 1880; core period remains unchanged.
 
 const data = {
   place: await readJSON('data/places.json'),
@@ -100,6 +101,8 @@ const VOCAB = {
   category: {
     label: 'Institution or event category',
     concepts: {
+      unclassified: ['Type under review', 'Named institution whose type has not been established.'],
+      cultural: ['Cultural association', 'Literary, musical, library and social associations.'],
       periodical: ['Periodical', 'Newspapers and journals.'],
       fraternal: ['Fraternal order', 'Lodges and mutual-aid orders.'],
       philanthropy: ['Philanthropy', 'Benevolent societies, orphanages, relief.'],
@@ -256,6 +259,7 @@ const SURVEY_FORMS = new Set(['schedule-1872', 'schedule-1860', 'return-1860', '
     const at = `congregation-surveys/${sv.id}`;
     if (!sv.id || !ID_RE.test(sv.id) || seen.has(sv.id)) errors.push(`${at}: id must be unique kebab-case`);
     seen.add(sv.id);
+    if (sv.institution && !index.institution.has(sv.institution)) errors.push(`${at}: unknown institution`);
     if (sv.congregation && !index.congregation.has(sv.congregation)) errors.push(`${at}: unknown congregation "${sv.congregation}"`);
     if (!index.place.has(sv.place)) errors.push(`${at}: unknown place "${sv.place}"`);
     if (!index.source.has(sv.source) || !sv.locator) errors.push(`${at}: source and locator required`);
@@ -514,6 +518,7 @@ const CONTEXT = {
   void: 'http://rdfs.org/ns/void#',
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
   recordedDate: { '@id':'kh:recordedDate' },
+  temporalCoverage: 'schema:temporalCoverage',
   spatialCoverage: { '@id':'schema:spatialCoverage', '@type':'@id' },
   name: 'schema:name',
   alternateName: 'schema:alternateName',
@@ -683,7 +688,8 @@ function nodeBase(type, r) {
         url: r.url, description: r.note });
   }
 }
-const graph = [...Object.entries(data).flatMap(([t, rows]) => rows.map((r) => node(t, r))), ...MEDIA.map(mediaNode), ...DATASETS.map(datasetNode)];
+const surveyNode = sv => ({'@id':`${BASE}surveys/${sv.id}/`, '@type':'schema:CreativeWork', name:sv.name, datePublished:sv.form==='statistics-1880'?'1880':sv.date.slice(0,4), temporalCoverage:sv.date, spatialCoverage:{'@id':uri('place',sv.place)}, about:[{ '@id':uri('place',sv.place)}, ...(sv.congregation?[{'@id':uri('congregation',sv.congregation)}]:[]), ...data.institution.filter(o=>(o.surveyIds||[]).includes(sv.id)).map(o=>({'@id':uri('institution',o.id)}))], citation:[{'@id':uri('source',sv.source)}], description:[sv.locator,sv.integrationNote,sv.note].filter(Boolean).join(' ')});
+const graph = [...surveys.map(surveyNode), ...Object.entries(data).flatMap(([t, rows]) => rows.map((r) => node(t, r))), ...MEDIA.map(mediaNode), ...DATASETS.map(datasetNode)];
 
 // ───────────── N-Triples (minimal JSON-LD → RDF for our own context) ─────────────
 function expandTerm(t) {
@@ -827,7 +833,7 @@ function surveyBlock(rel, sv, withCong) {
   const head = `${esc(sv.formLabel)} · ${formatDate(sv.date)}${withCong ? ` · ${sv.congregation ? link(rel, 'congregation', sv.congregation, nameOf('congregation', sv.congregation)) : esc(sv.nameAsWritten)}` : ''}`;
   const figs = SURVEY_FIGS.filter(([k]) => sv.figures?.[k] != null).map(([k, l]) => `${l}: ${esc(sv.figures[k])}`).join(' · ');
   return `<details class="survey" id="survey-${esc(sv.id)}"><summary>${head}</summary>
-    <p><a href="${rel}surveys/${esc(sv.id)}/">Read this return with its source image</a></p><p class="small muted">Name as written: ${esc(sv.nameAsWritten)}. ${figs ? `Figures: ${figs}.` : ''}</p>
+    <p><a href="${rel}surveys/${esc(sv.id)}/">Read this source record</a></p><p class="small muted">Name as written: ${esc(sv.nameAsWritten)}. ${figs ? `Figures: ${figs}.` : ''}</p>
     <dl class="facts survey-answers">${sv.answers.map((a) => `<div><dt>${esc(a.question)}</dt><dd>${a.answer ? esc(a.answer) : '<span class="muted">(blank)</span>'}</dd></div>`).join('')}</dl>
     ${sv.officers?.length ? `<p><strong>Officers named:</strong> ${sv.officers.map((o) => `${esc(o.name)} <span class="muted">(${esc(o.office)}${o.certainty !== 'certain' ? `, ${esc(o.certainty)} reading` : ''})</span>`).join('; ')}</p>` : ''}
     ${sv.signed ? `<p class="small">Signed: ${esc(sv.signed)}</p>` : ''}${sv.note ? `<p class="small">${esc(sv.note)}</p>` : ''}
@@ -1150,7 +1156,7 @@ for (const type of ['person','congregation','institution','place']) for (const r
   const returns = surveys.filter(sv=>ids.has(sv.id));
   const refs = [...new Set([...returns.map(sv=>`${sv.source}: ${sv.locator}`), ...Object.values(claimEvidence[`${type}/${r.id}`] || {}).flat().filter(e=>e.source.startsWith('bdai-')).map(e=>`${e.source}: ${e.locator}`), ...boardSources])];
   const currentWikidata = wikidata[type]?.[r.id] || '';
-  boardReviewRows.push({review_schema:'board-records-v1',record_type:type,record_id:r.id,current_name:r.name,corrected_name:'',current_wikidata:currentWikidata,proposed_wikidata:'',review_status:'',review_notes:'',correction_source:'',place:type==='place' ? placeLabel(r.id) : (r.places || [r.place]).filter(Boolean).map(placeLabel).join(' | '),roles_as_recorded:type==='person' ? personRoles.map(role=>`${role.role}; ${orgLike(role.org)?.name || role.org}; reported ${role.documented}; reading ${role.readingCertainty}; ${role.survey}`).join(' | ') : '',name_variants_as_recorded:type==='person' ? [...new Set(personRoles.map(role=>role.nameAsWritten).filter(Boolean))].join(' | ') : returns.filter(sv=>sv.congregation===r.id).map(sv=>sv.nameAsWritten).join(' | '),survey_ids:returns.map(sv=>sv.id).join(' | '),survey_dates:returns.map(sv=>sv.date).join(' | '),source_references:refs.join(' | '),scan_urls:[...new Set(returns.map(sv=>sv.image).filter(Boolean))].join(' | '),record_url:docUri(type,r.id),snapshot_sha256:createHash('sha256').update(JSON.stringify({record:r,wikidata:currentWikidata})).digest('hex')});
+  boardReviewRows.push({review_schema:'board-records-v1',record_type:type,record_id:r.id,current_name:r.name,corrected_name:'',current_wikidata:currentWikidata,proposed_wikidata:'',review_status:'',review_notes:'',correction_source:'',place:type==='place' ? placeLabel(r.id) : (r.places || [r.place]).filter(Boolean).map(placeLabel).join(' | '),roles_as_recorded:type==='person' ? personRoles.map(role=>`${role.role}; ${orgLike(role.org)?.name || role.org}; reported ${role.documented}; reading ${role.readingCertainty}; ${role.survey}`).join(' | ') : '',name_variants_as_recorded:type==='person' ? [...new Set(personRoles.map(role=>role.nameAsWritten).filter(Boolean))].join(' | ') : returns.filter(sv=>sv.congregation===r.id || sv.institution===r.id).map(sv=>sv.nameAsWritten).join(' | '),survey_ids:returns.map(sv=>sv.id).join(' | '),survey_dates:returns.map(sv=>sv.date).join(' | '),source_references:refs.join(' | '),scan_urls:[...new Set(returns.map(sv=>sv.image).filter(Boolean))].join(' | '),record_url:docUri(type,r.id),snapshot_sha256:createHash('sha256').update(JSON.stringify({record:r,wikidata:currentWikidata})).digest('hex')});
 }
 const answerReviewColumns = ['review_schema','survey_id','question_id','survey_date','congregation_as_written','place','question','current_answer','corrected_answer','review_status','review_notes','correction_source','source','locator','scan_url','snapshot_sha256'];
 const answerReviewRows = surveys.flatMap(sv=>sv.answers.map(a=>({review_schema:'board-answers-v1',survey_id:sv.id,question_id:a.q,survey_date:sv.date,congregation_as_written:sv.nameAsWritten,place:placeLabel(sv.place),question:a.question,current_answer:a.answer,corrected_answer:'',review_status:'',review_notes:'',correction_source:'',source:sv.source,locator:sv.locator,scan_url:sv.image || '',snapshot_sha256:createHash('sha256').update(JSON.stringify({survey:sv.id,date:sv.date,source:sv.source,locator:sv.locator,answer:a})).digest('hex')})));
@@ -1183,7 +1189,7 @@ const TABLES = {
     cols: [['site', 'string'], ['organization', 'string'], ['organizationType', 'string'], ['from', 'gYear'], ['to', 'gYear']], get: (r, c) => r[c] },
   events: { rows: data.event, cols: [['id', 'string'], ['name', 'string'], ['date', 'string'], ['place', 'string'], ['site', 'string'], ['alsoAt', 'string'], ['category', 'string'], ['certainty', 'string'], ['people', 'string'], ['orgs', 'string'], ['description', 'string'], ['sources', 'string']],
     get: (r, c) => r[c], about: 'event' },
-  'congregation-surveys': { rows: surveys.map((sv) => ({ ...sv, ...(sv.figures || {}) })), cols: [['id', 'string'], ['congregation', 'string'], ['nameAsWritten', 'string'], ['place', 'string'], ['form', 'string'], ['date', 'string'],
+  'congregation-surveys': { rows: surveys.map((sv) => ({ ...sv, ...(sv.figures || {}) })), cols: [['id', 'string'], ['congregation', 'string'], ['institution', 'string'], ['integrationStatus', 'string'], ['integrationNote', 'string'], ['nameAsWritten', 'string'], ['place', 'string'], ['form', 'string'], ['date', 'string'],
     ...SURVEY_FIGS.map(([k]) => [k, 'decimal']), ['signed', 'string'], ['note', 'string'], ['source', 'string'], ['locator', 'string'], ['image', 'anyURI']], get: (r, c) => r[c] },
   'congregation-survey-answers': { rows: surveys.flatMap((sv) => sv.answers.map((a) => ({ survey: sv.id, congregation: sv.congregation, form: sv.form, date: sv.date, ...a }))),
     cols: [['survey', 'string'], ['congregation', 'string'], ['form', 'string'], ['date', 'string'], ['q', 'string'], ['question', 'string'], ['answer', 'string']], get: (r, c) => r[c] },
@@ -1305,7 +1311,7 @@ const compact = {
   advertisements: data.advertisement,
   baseUrl: BASE,
   media: MEDIA.map(m=>({id:m.id,name:m.title,title:m.title,holder:m.holder,description:m.description,date:m.date,places:m.places})),
-  yearRange: cfg.yearRange,
+  yearRange: [Y0, ATLAS_END],
   places: data.place.map((p) => ({ ...p, wikidata: wikidata.place?.[p.id] })),
   congregations: data.congregation.map((c) => ({ ...c, wikidata: wikidata.congregation?.[c.id] })),
   people: data.person.map((p) => ({ ...p, wikidata: wikidata.person?.[p.id] })),
@@ -1367,7 +1373,7 @@ const catalog = {
   'dcterms:modified': { '@value': BUILD_DATE, '@type': 'xsd:date' },
   'dcterms:temporal': cfg.temporalCoverage,
   'schema:temporalCoverage': cfg.temporalCoverage,
-  'schema:spatialCoverage': cfg.spatialCoverage,
+  spatialCoverage: cfg.spatialCoverage,
   'schema:keywords': ['American Jewish history', 'synagogues', 'congregations', 'nineteenth century', 'immigration', 'linked open data', 'digital atlas'],
   'schema:isAccessibleForFree': true,
   'void:triples': triples.length,
@@ -1401,7 +1407,7 @@ function growthChart() {
     lower = upper; return res;
   });
   const grid = Array.from({ length: yMax / 10 + 1 }, (_, i) => i * 10).map((v) => `<line x1="${m.l}" x2="${W - m.r}" y1="${yy(v)}" y2="${yy(v)}" class="grid"/><text x="${m.l - 8}" y="${yy(v) + 4}" class="tick" text-anchor="end">${v}</text>`).join('');
-  const xt = [1840, 1845, 1850, 1855, 1860, 1865, 1870].map((y) => `<text x="${x(y)}" y="${H - m.b + 20}" class="tick" text-anchor="middle">${y}</text>`).join('');
+  const xt = [1840, 1845, 1850, 1855, 1860, 1865, 1870, 1875, 1880].map((y) => `<text x="${x(y)}" y="${H - m.b + 20}" class="tick" text-anchor="middle">${y}</text>`).join('');
   return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-labelledby="chart-title chart-desc">
   <title id="chart-title">Active congregations recorded in Kehillot, by region, ${Y0}–${Y1}</title>
   <desc id="chart-desc">Stacked area chart. In ${Y0}, ${REGIONS.reduce((a, rg) => a + series[0][rg], 0)} congregations were active; by ${Y1}, ${REGIONS.reduce((a, rg) => a + series.at(-1)[rg], 0)}.</desc>
@@ -1518,15 +1524,16 @@ await out('atlas/index.html', layout({ rel: '../', title: 'Atlas', canonical: `$
   description: `Interactive map of Jewish congregations, institutions and events in the United States, ${Y0}–${Y1}, with a year slider.`,
   styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/city-navigation.js', 'assets/js/atlas.js'],
   body: `<div class="atlas wrap">
-<header class="page-head"><h1>Congregations over time</h1><p>Choose a year to compare congregations, or enter a city to explore its streets.</p></header>
+<header class="page-head"><h1>Congregations over time</h1><p>Choose a year to compare congregations, or enter a city to explore its streets. The timeline extends to 1880 to include the Board’s 1878 statistics. Records with unknown founding dates appear only in their documented years.</p></header>
   ${cityNavigator('../')}
+  <p><a href="#year=1878">View the 1878 reporting year</a> · <a href="../maps/board-sources/">Map Board source records, including unresolved entries</a></p>
   <p class="map-summary"><output id="year-out" for="year" aria-live="polite">1850</output> · <span id="atlas-summary" aria-live="polite"></span></p>
   <div class="timeline">
     <button type="button" id="play" aria-pressed="false">Play</button>
     <div class="timeline-track">
       <label for="year" class="visually-hidden">Year</label>
-      <input type="range" id="year" min="${Y0}" max="${Y1}" step="1" value="1850">
-      <ol class="ticks" aria-hidden="true">${[1840, 1845, 1850, 1855, 1860, 1865, 1870].map((y) => `<li class="${y % 10 ? 'minor' : 'major'}" style="left:${((y - Y0) / (Y1 - Y0)) * 100}%"><span>${y % 10 ? '' : y}</span></li>`).join('')}</ol>
+      <input type="range" id="year" min="${Y0}" max="${ATLAS_END}" step="1" value="1850">
+      <ol class="ticks" aria-hidden="true">${[1840, 1845, 1850, 1855, 1860, 1865, 1870, 1875, 1880].map((y) => `<li class="${y % 10 ? 'minor' : 'major'}" style="left:${((y - Y0) / (ATLAS_END - Y0)) * 100}%"><span>${y % 10 ? '' : y}</span></li>`).join('')}</ol>
     </div>
   </div>
   <div class="plate">
@@ -1582,7 +1589,7 @@ await out('surveys/index.html', layout({ rel:'../', title:'Board of Delegates su
   description:'Find, read and compare Board of Delegates manuscript returns, correspondence and published statistics.',
   body:`<div class="wrap survey-directory"><header class="page-head"><p class="kicker">Primary sources · Congregational life</p><h1>Board of Delegates collections</h1><p class="lede">Explore ${surveys.length} source records: manuscript returns and correspondence from 1860–1872, alongside 1878 figures published in <cite>Statistics of the Jews of the United States</cite> in 1880.</p><p>Start with a community or a source collection. These records document congregations and societies; they are not a complete census. Later records extend beyond the atlas’s main 1840–1870 period.</p></header>
   <div class="board-overview"><a href="?collection=manuscript#survey-results"><strong>${surveys.filter(sv=>sv.form!=='statistics-1880').length}</strong><span>Manuscript returns &amp; letters</span><small>1860–1872 · original responses</small></a><a href="?collection=published#survey-results"><strong>${surveys.filter(sv=>sv.form==='statistics-1880').length}</strong><span>Published statistical entries</span><small>1878 figures · 1880 publication</small></a><a href="#survey-review"><strong>Review &amp; reuse</strong><span>Correct names, add Wikidata, or download data</span><small>Keep original wording alongside corrections</small></a></div>
-  <p><a href="https://babel.hathitrust.org/cgi/pt?id=hvd.hnrqec&amp;seq=5">Read the original September 1880 report at HathiTrust</a> · <a href="../source/statistics-jews-us-1880/">Report citation &amp; source notes</a></p><nav class="section-nav" aria-label="Survey tools"><a href="#survey-results">Find a source record</a><a href="#survey-compare">Compare figures</a><a href="#survey-review">Correct names &amp; add Wikidata</a><a href="#survey-downloads">Download data</a></nav>
+  <p><a href="https://babel.hathitrust.org/cgi/pt?id=hvd.hnrqec&amp;seq=5">Read the original September 1880 report at HathiTrust</a> · <a href="../source/statistics-jews-us-1880/">Report citation &amp; source notes</a> · <a href="../maps/board-sources/">Map all Board source records</a> · <a href="../atlas/#year=1878">Congregations in 1878</a></p><nav class="section-nav" aria-label="Survey tools"><a href="#survey-results">Find a source record</a><a href="#survey-compare">Compare figures</a><a href="#survey-review">Correct names &amp; add Wikidata</a><a href="#survey-downloads">Download data</a></nav>
   <form id="survey-filters" class="survey-filters" role="search"><label>Search transcriptions<input id="survey-query" type="search" placeholder="Congregation, place, person, or answer"></label><label>Collection<select id="survey-collection"><option value="">All collections</option><option value="manuscript">Manuscript returns &amp; letters</option><option value="published">Published statistics (1880)</option></select></label><label>Place<select id="survey-place"><option value="">All places</option>${[...new Set(surveys.map(sv=>sv.place))].sort((a,b)=>placeLabel(a).localeCompare(placeLabel(b))).map(id=>`<option value="${id}">${esc(placeLabel(id))}</option>`).join('')}</select></label><label>Evidence year<select id="survey-year"><option value="">All years</option>${[...new Set(surveys.map(x=>x.date.slice(0,4)))].sort().map(y=>`<option>${y}</option>`).join('')}</select></label><label>Form<select id="survey-form"><option value="">All forms</option>${[...new Set(surveys.map(x=>x.form))].map(f=>`<option value="${esc(f)}">${esc(surveys.find(x=>x.form===f).formLabel)}</option>`).join('')}</select></label><button type="reset" class="btn btn-ghost">Clear filters</button></form>
   <p id="survey-count" role="status" aria-live="polite">${surveys.length} source records</p><p id="survey-empty" hidden>No records match. Try another word or clear the filters.</p>
   <section id="survey-results" aria-label="Board source records" class="research-grid">${orderedSurveys.map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}" data-survey="${esc(sv.id)}" data-place="${sv.place}" data-collection="${sv.form==='statistics-1880' ? 'published' : 'manuscript'}" data-year="${sv.date.slice(0,4)}" data-form="${esc(sv.form)}" data-search="${esc([surveyName(sv),placeLabel(sv.place),sv.nameAsWritten,sv.signed,sv.note,...sv.answers.map(a=>a.question+' '+a.answer),...(sv.officers||[]).map(o=>o.name+' '+o.office)].join(' ').toLowerCase())}"><p class="kicker">${esc(placeLabel(sv.place))}</p><h2><a href="${sv.id}/">${esc(surveyName(sv))}</a></h2><p><span class="board-source-type">${surveyKind(sv)}</span><br>${surveyDateLabel(sv)}</p><p class="small">${esc(sv.locator)}</p><a class="btn btn-ghost" href="${sv.id}/">${sv.form==='statistics-1880' ? 'Read published entry' : 'Read source record'}</a></article>`).join('')}</section>
@@ -1592,15 +1599,16 @@ await out('surveys/index.html', layout({ rel:'../', title:'Board of Delegates su
   <section id="survey-downloads"><h2>Use the survey data</h2><p><a href="../data/roles.csv">People and role evidence (CSV)</a> · <a href="../data/community-mentions.csv">Unreconciled community mentions (CSV)</a></p><p><a href="../data/congregation-organization-reports.csv">Reported organization dates (CSV)</a> · <a href="../data/survey-institution-links.csv">Survey-to-institution links (CSV)</a> · <a href="../database/#type=institutions&amp;category=education">Educational institutions</a></p><p>These downloads include all ${surveys.length} source records, regardless of the filters above. Answers preserve the transcription; [?] marks uncertain readings and blank answers remain blank.</p><ul><li><a href="../data/congregation-surveys.csv" download>Source records and numeric figures (CSV)</a> — dates, places, source references, and extracted figures.</li><li><a href="../data/congregation-survey-answers.csv" download>Every question and answer (CSV)</a> — for searching and comparing the transcribed responses.</li><li><a href="../data/congregation-survey-officers.csv" download>Officers named (CSV)</a> — names, offices, and reading certainty.</li></ul></section></div>` }));
 for (const sv of orderedSurveys) {
   const rel='../../', src=index.source.get(sv.source);
+  await out(`surveys/${sv.id}/index.jsonld`, JSON.stringify({'@context':CONTEXT,...surveyNode(sv)},null,2));
   const related=orderedSurveys.filter(other=>other.id!==sv.id && (sv.congregation ? other.congregation===sv.congregation : other.place===sv.place));
   const people=data.person.filter(p=>(p.surveyIds || []).includes(sv.id));
   const institutions=data.institution.filter(o=>(o.surveyIds || []).includes(sv.id));
-  await out(`surveys/${sv.id}/index.html`, layout({rel,title:`${surveyName(sv)} · ${sv.date}`,canonical:`${BASE}surveys/${sv.id}/`,current:'surveys/',description:`${sv.formLabel}: ${surveyName(sv)}, ${placeLabel(sv.place)}. Transcription and source context.`,
-    body:`<div class="wrap board-record"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Board of Delegates collections</a> / ${surveyKind(sv)}</nav><header class="page-head"><p class="kicker">${surveyKind(sv)} · ${surveyDateLabel(sv)}</p><h1>${esc(surveyName(sv))}</h1><p>${link(rel,'place',sv.place,placeLabel(sv.place))}${sv.congregation ? ` · ${link(rel,'congregation',sv.congregation,'Congregation record')}` : ' · Institutional identification not linked to a congregation record'}</p></header>
+  await out(`surveys/${sv.id}/index.html`, layout({rel,title:`${surveyName(sv)} · ${sv.date}`,canonical:`${BASE}surveys/${sv.id}/`,alternate:'index.jsonld',jsonld:{'@context':CONTEXT,...surveyNode(sv)},current:'surveys/',description:`${sv.formLabel}: ${surveyName(sv)}, ${placeLabel(sv.place)}. Transcription and source context.`,
+    body:`<div class="wrap board-record"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Board of Delegates collections</a> / ${surveyKind(sv)}</nav><header class="page-head"><p class="kicker">${surveyKind(sv)} · ${surveyDateLabel(sv)}</p><h1>${esc(surveyName(sv))}</h1><p>${link(rel,'place',sv.place,placeLabel(sv.place))}${sv.congregation ? ` · ${link(rel,'congregation',sv.congregation,'Congregation record')}` : sv.institution ? ` · ${link(rel,'institution',sv.institution,'Institution record')}` : ' · Grouped or unnamed source evidence'}</p></header>
     <nav class="section-nav" aria-label="Record sections"><a href="#source-reading">Read the source</a><a href="#source-context">Source &amp; interpretation</a><a href="#linked-records">People &amp; institutions</a><a href="#related-returns">Related records</a><a href="../#survey-review">Suggest corrections</a></nav>
     <div id="source-reading" class="survey-reader"><section class="board-image"><h2>${sv.image ? 'Source image' : 'Published source'}</h2>${sv.image ? `<a href="${esc(sv.image)}"><img class="survey-scan" src="${esc(sv.image)}" alt="Source page for ${esc(sv.nameAsWritten)}, ${esc(sv.date)}" loading="lazy"></a><p><a href="${esc(sv.image)}">Open full-size image</a></p>` : `<div class="board-source-placeholder"><p>No separate image is linked to this entry.</p><p><strong>${esc(src?.title || sv.source)}</strong><br>${esc(sv.locator)}</p>${src?.url ? `<a class="btn btn-ghost" href="${esc(src.url)}">Open digitized source</a>` : ''}</div>`}</section>
     <section><h2>${sv.form==='statistics-1880' ? 'Transcribed table entry' : 'Transcription'}</h2><p class="small">Name as written: <strong>${esc(sv.nameAsWritten)}</strong>. Blank responses remain blank; [?] marks an uncertain reading.</p><dl class="facts survey-answers">${sv.answers.map(a=>`<div id="answer-${esc(a.q)}"><dt>${esc(a.question)}</dt><dd>${a.answer ? esc(a.answer) : '<span class="muted">No answer recorded</span>'}</dd></div>`).join('')}</dl>${sv.signed ? `<p><strong>Signed:</strong> ${esc(sv.signed)}</p>` : ''}</section></div>
-    <section id="source-context" class="board-context"><h2>Source &amp; interpretation</h2><p>${link(rel,'source',sv.source,src?.title || sv.source)} · ${esc(sv.locator)}</p><p>${sv.form==='statistics-1880' ? 'These are figures for 1878 printed in the 1880 compilation, not a dated manuscript return. Members or seat holders follow the printed column definition. Population estimates concern the place and must not be summed across its entries.' : 'This record preserves a dated return or letter. Report dates do not establish founding dates or the beginning and end of a person’s tenure.'}</p>${sv.note ? `<p>${esc(sv.note)}</p>` : ''}<p class="small">Display names and linked identities are editorial identifications; the transcription above retains the source wording.</p></section>
+    <section id="source-context" class="board-context"><h2>Source &amp; interpretation</h2><p>${link(rel,'source',sv.source,src?.title || sv.source)} · ${esc(sv.locator)}</p><p>${sv.form==='statistics-1880' ? 'These are figures for 1878 printed in the 1880 compilation, not a dated manuscript return. Members or seat holders follow the printed column definition. Population estimates concern the place and must not be summed across its entries.' : 'This record preserves a dated return or letter. Report dates do not establish founding dates or the beginning and end of a person’s tenure.'}</p>${sv.note ? `<p>${esc(sv.note)}</p>` : ''}${sv.integrationNote ? `<p><strong>Identification:</strong> ${esc(sv.integrationNote)}</p>` : ''}<p class="small">Display names and linked identities are editorial identifications; the transcription above retains the source wording.</p></section>
     <section id="linked-records"><h2>People &amp; institutions</h2>${people.length ? `<ul class="board-linked-list">${people.map(p=>`<li>${link(rel,'person',p.id,p.name)}${p.roles.filter(r=>r.survey===sv.id).map(r=>`<p class="small">${esc(r.role)} · ${esc(orgLike(r.org)?.name || r.org)}${r.readingCertainty ? ` · name reading: ${esc(r.readingCertainty)}` : ''}</p>`).join('')}</li>`).join('')}</ul>` : '<p>No person records have been linked to this source yet.</p>'}${sv.officers?.length ? `<details><summary>Names and offices transcribed from this source</summary><ul>${sv.officers.map(o=>`<li>${esc(o.name)} — ${esc(o.office)} (${esc(o.certainty)} reading)</li>`).join('')}</ul></details>` : ''}${institutions.length ? `<h3>Institution records</h3><ul>${institutions.map(o=>`<li>${link(rel,'institution',o.id,o.name)}</li>`).join('')}</ul>` : ''}${communityMentions.filter(m=>m.survey===sv.id).map(m=>`<p><strong>${esc(m.placeAsWritten)}</strong>: ${esc(m.answer)} <span class="muted">${esc(m.status)}.</span></p>`).join('')}</section>
     <section id="related-returns"><h2>${sv.congregation ? 'Other records linked to this congregation' : 'Other records from this place'}</h2>${related.length ? `<ul>${related.map(other=>`<li><a href="../${other.id}/">${esc(surveyName(other))} · ${surveyDateLabel(other)} · ${surveyKind(other)}</a></li>`).join('')}</ul>` : '<p>No other records are linked here yet.</p>'}<p><a href="../?place=${sv.place}#survey-results">Browse this place in the collection</a> · <a href="../#survey-downloads">Download source data</a> · <a href="../#survey-review">Correct a name or transcription</a></p></section></div>`}));
 }
@@ -2062,7 +2070,7 @@ for (const placeId of CITY_IDS) {
   </div>
   <p class="map-context">Modern streets · historical locations. Hover over a marker for its name.</p>
   <script type="application/json" id="city-data">${JSON.stringify(cityData).replace(/</g, '\\u003c')}</script>
-  ${(surveysByPlace.get(placeId) || []).length ? `<section class="city-surveys" aria-labelledby="h-surveys"><p class="kicker">Primary sources</p><h2 id="h-surveys">Board of Delegates surveys</h2><p>${surveysByPlace.get(placeId).length} returns and letters from ${esc(p.name)}. Read each transcription alongside its source image, and follow the congregation’s own reports of membership, finances, and schools. Dates are shown on each return; 1872 returns extend beyond the atlas’s main period.</p><div class="research-grid">${surveysByPlace.get(placeId).map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}"><p class="kicker">${formatDate(sv.date)}</p><h3><a href="${rel}surveys/${sv.id}/">${esc(surveyName(sv))}</a></h3><p>${esc(sv.formLabel)}</p><a class="btn btn-ghost" href="${rel}surveys/${sv.id}/">Read return &amp; view scan</a></article>`).join('')}</div><p><a href="${rel}surveys/">Find and compare all survey returns</a> · <a href="${rel}surveys/#survey-downloads">Download survey data</a></p></section>` : ''}
+  ${(surveysByPlace.get(placeId) || []).length ? `<section class="city-surveys" aria-labelledby="h-surveys"><p class="kicker">Primary sources</p><h2 id="h-surveys">Board of Delegates surveys</h2><p>${surveysByPlace.get(placeId).length} source records from ${esc(p.name)}, including manuscript returns and published statistics. Follow reports of membership, finances, and schools. Evidence dates and publication dates are shown separately; later sources extend beyond the atlas’s main period.</p><div class="research-grid">${surveysByPlace.get(placeId).map(sv=>`<article class="research-card" id="survey-${esc(sv.id)}"><p class="kicker">${surveyDateLabel(sv)}</p><h3><a href="${rel}surveys/${sv.id}/">${esc(surveyName(sv))}</a></h3><p>${esc(sv.formLabel)}</p><a class="btn btn-ghost" href="${rel}surveys/${sv.id}/">Read source record</a></article>`).join('')}</div><p><a href="${rel}surveys/">Find and compare all survey returns</a> · <a href="${rel}surveys/#survey-downloads">Download survey data</a></p></section>` : ''}
   <details class="city-research-sections"><summary>People, subscribers, pictures &amp; city history</summary>
   ${congregationMoves(placeId, rel)}
   ${clergySection(placeId, rel)}
@@ -2201,6 +2209,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
     from: s.built || s.opened || null, to: s.closed || (s.occupants || []).map((o) => o.to).filter(Boolean).sort().at(-1) || null,
     sub: (s.occupants || []).map((o) => nameOf(typeOfOrg(o.org), o.org)).concat((s.proprietors || s.people || []).map((p) => nameOf('person', p))).join(', ') }));
   const FEATURES = [
+    { id:'board-sources', symbol:'institution', label:'Board source records', blurb:'Dated source observations at city centers, including grouped and unnamed entries. These are source rows, not counts of distinct institutions.', items:()=>surveys.map(sv=>({...cityPt(sv.place),id:sv.id,name:sv.nameAsWritten,href:`surveys/${sv.id}/`,from:Number(sv.date.slice(0,4)),to:Number(sv.date.slice(0,4)),documentedYears:[Number(sv.date.slice(0,4))],dateLabel:surveyDateLabel(sv),sub:sv.integrationNote || surveyKind(sv)})) },
     { id: 'congregations', symbol: 'congregation', label: 'Congregations', blurb: 'Congregations at their cities, with separate dated advertisement notices where identity remains unresolved.',
       items: () => [...adItems(['congregation']), ...data.congregation.map((c) => ({ ...cityPt(c.place), id: c.id, name: c.name, href: docPath('congregation', c.id), from: c.founded ?? c.documented, to: c.founded != null ? c.dissolved || null : Math.max(...institutionReports(c)), documentedYears:c.founded == null ? institutionReports(c) : undefined, dateLabel:institutionDateLabel(c), sub: `${conceptLabel('rite', c.rite)} rite` }))] },
     { id: 'synagogues', symbol: 'synagogue', label: 'Synagogue buildings', blurb: 'Buildings congregations worshipped in, at their addresses.', items: () => siteItems(['synagogue']) },
@@ -2249,6 +2258,7 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
 
   const mapPage = async (slug, title, featureIds, intro, opts = {}) => {
     const rel = slug === 'all' ? '../../' : '../../';
+    const defaultEnd = ATLAS_END;
     const multi = featureIds.length > 1;
     const F0 = FEATURES.find((f) => f.id === featureIds[0]);
     const n = featureIds.reduce((a, id) => a + counts[id], 0);
@@ -2257,9 +2267,9 @@ await out('cities/index.html', layout({ rel: '../', title: 'City guides', canoni
   ${cityNavigator(rel)}
   <section class="map-choices" aria-label="Map choices">
     <div class="map-question"><p class="map-control-label">Explore</p><details class="map-type-picker"><summary><span>${multi ? 'All record types' : esc(F0.label)}</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><nav class="map-type-menu" aria-label="Record type"><a href="${rel}maps/all/" data-map-type-link${multi?' aria-current="page"':''}>All record types<span>All</span></a>${FEATURES.map(F=>`<a href="${rel}maps/${F.id}/" data-map-type-link${!multi&&F.id===F0.id?' aria-current="page"':''}><span>${esc(F.label)}</span><span class="type-count">${counts[F.id] || 'No records yet'}</span></a>`).join('')}</nav></details></div>
-    <fieldset class="map-period"><legend><span class="map-control-label">When</span><output id="fm-period">${Y0}–${Y1}</output></legend>
-      <div class="map-year-fields"><label>Start year <input type="number" id="fm-start-year" min="${range[0]}" max="${range[1]}" value="${Y0}" inputmode="numeric"></label><span aria-hidden="true">to</span><label>End year <input type="number" id="fm-end-year" min="${range[0]}" max="${range[1]}" value="${Y1}" inputmode="numeric"></label></div>
-      <div class="map-year-range"><input type="range" id="fm-from" aria-label="Start year slider" min="${range[0]}" max="${range[1]}" value="${Y0}"><input type="range" id="fm-to" aria-label="End year slider" min="${range[0]}" max="${range[1]}" value="${Y1}"></div><output id="fm-from-out" hidden>${Y0}</output><output id="fm-to-out" hidden>${Y1}</output>
+    <fieldset class="map-period"><legend><span class="map-control-label">When</span><output id="fm-period">${Y0}–${defaultEnd}</output></legend>
+      <div class="map-year-fields"><label>Start year <input type="number" id="fm-start-year" min="${range[0]}" max="${range[1]}" value="${Y0}" inputmode="numeric"></label><span aria-hidden="true">to</span><label>End year <input type="number" id="fm-end-year" min="${range[0]}" max="${range[1]}" value="${defaultEnd}" inputmode="numeric"></label></div>
+      <div class="map-year-range"><input type="range" id="fm-from" aria-label="Start year slider" min="${range[0]}" max="${range[1]}" value="${Y0}"><input type="range" id="fm-to" aria-label="End year slider" min="${range[0]}" max="${range[1]}" value="${defaultEnd}"></div><output id="fm-from-out" hidden>${Y0}</output><output id="fm-to-out" hidden>${defaultEnd}</output>
 
       <p class="small muted">Drag either handle, or edit the years above. Shows records active or documented during these years.</p>
       <p class="small muted" id="fm-picture-note"${featureIds.includes('pictures') ? '' : ' hidden'}>Pictures remain visible as supporting material, including later photographs.</p>

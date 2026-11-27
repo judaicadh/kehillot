@@ -7928,7 +7928,10 @@
       "instructors": 1,
       "jewishPopulation": 375
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "providence-sons-of-israel-and-david-1880-record",
+    "integrationStatus": "new provisional record",
+    "integrationNote": "Institution type and relationship to similarly named records need review; no identity merge or congregation classification has been asserted."
   },
   {
     "id": "providence-sons-of-israel-1880",
@@ -7967,7 +7970,8 @@
       "members": 60,
       "pupils": 30
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "boston-ohabei-sholom-1880",
@@ -8029,7 +8033,8 @@
       "instructors": 6,
       "jewishPopulation": 7000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "boston-adath-israel-1880",
@@ -8074,7 +8079,8 @@
       "pupils": 50,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "boston-shaaray-tefilla-1880",
@@ -8093,7 +8099,9 @@
         "question": "Congregation or society",
         "answer": "Shaaray Tefilla"
       }
-    ]
+    ],
+    "congregation": "boston-shaaray-tefilla-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-beth-abraham-1880",
@@ -8137,7 +8145,9 @@
       "propertyValue": 1200,
       "otherPropertyValue": 400
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "boston-beth-abraham-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-mishkan-israel-1880",
@@ -8157,7 +8167,8 @@
         "question": "Congregation or society",
         "answer": "Mishkan Israel"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "boston-keneseth-israel-1880",
@@ -8176,7 +8187,9 @@
         "question": "Congregation or society",
         "answer": "Keneseth Israel"
       }
-    ]
+    ],
+    "congregation": "boston-keneseth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-shomrei-shabas-1880",
@@ -8231,7 +8244,9 @@
       "pupils": 10,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "boston-shomrei-shabas-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-har-moriah-1880",
@@ -8281,7 +8296,9 @@
       "pupils": 15,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "boston-har-moriah-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-beth-el-1880",
@@ -8300,7 +8317,9 @@
         "question": "Congregation or society",
         "answer": "Beth El"
       }
-    ]
+    ],
+    "congregation": "beth-eil-bos-survey",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "boston-beth-israel-1880",
@@ -8319,7 +8338,9 @@
         "question": "Congregation or society",
         "answer": "Beth Israel"
       }
-    ]
+    ],
+    "congregation": "boston-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-y-m-h-association-1880",
@@ -8357,7 +8378,9 @@
       "members": 150,
       "otherPropertyValue": 500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "boston-y-m-h-association-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-bay-state-lit-society-1880",
@@ -8384,7 +8407,9 @@
     "figures": {
       "members": 60
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "boston-bay-state-lit-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-olio-mus-lit-soc-y-1880",
@@ -8411,7 +8436,9 @@
     "figures": {
       "members": 25
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "boston-olio-mus-lit-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "boston-elisium-1880",
@@ -8438,7 +8465,10 @@
     "figures": {
       "members": 100
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "boston-elisium-1880-record",
+    "integrationStatus": "new provisional record",
+    "integrationNote": "Institution type and relationship to similarly named records need review; no identity merge or congregation classification has been asserted."
   },
   {
     "id": "boston-united-heb-benev-as-1880",
@@ -8476,7 +8506,9 @@
       "members": 140,
       "otherPropertyValue": 3000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "boston-united-heb-benev-as-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-haven-mishkan-israel-1880",
@@ -8528,7 +8560,8 @@
       "instructors": 1,
       "jewishPopulation": 1000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-haven-b-nai-sholom-1880",
@@ -8547,7 +8580,9 @@
         "question": "Congregation or society",
         "answer": "B'nai Sholom"
       }
-    ]
+    ],
+    "congregation": "new-haven-b-nai-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-haven-hebrew-ben-society-1880",
@@ -8579,7 +8614,9 @@
     "figures": {
       "otherPropertyValue": 600
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-haven-hebrew-ben-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "hartford-beth-israel-1880",
@@ -8624,7 +8661,8 @@
       "propertyValue": 40000,
       "pupils": 70
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-temple-emanu-el-1880",
@@ -8691,7 +8729,8 @@
       "pupils": 383,
       "instructors": 16
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-temple-beth-el-1880",
@@ -8748,7 +8787,8 @@
       "pupils": 300,
       "instructors": 8
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-shearith-israel-1880",
@@ -8805,7 +8845,8 @@
       "pupils": 160,
       "instructors": 27
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-b-nai-jeshurun-1880",
@@ -8862,7 +8903,8 @@
       "pupils": 250,
       "instructors": 20
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-ahavath-chesed-1880",
@@ -8918,7 +8960,8 @@
       "pupils": 400,
       "instructors": 9
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-shaaray-tefilla-1880",
@@ -8980,7 +9023,8 @@
       "pupils": 220,
       "instructors": 15
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-rodef-sholom-1880",
@@ -9036,7 +9080,8 @@
       "pupils": 85,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-darech-amuno-1880",
@@ -9079,7 +9124,9 @@
       "members": 80,
       "otherPropertyValue": 5000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "new-york-darech-amuno-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-b-nai-israel-1880",
@@ -9124,7 +9171,8 @@
       "propertyValue": 25000,
       "otherPropertyValue": 5000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-shaar-hashomayin-1880",
@@ -9180,7 +9228,9 @@
       "pupils": 50,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "new-york-shaar-hashomayin-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-beth-isr-l-bikur-cholim-1880",
@@ -9230,7 +9280,8 @@
       "propertyValue": 16000,
       "otherPropertyValue": 1500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-hand-in-hand-harlem-1880",
@@ -9280,7 +9331,10 @@
       "pupils": 150,
       "instructors": 10
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-hand-in-hand-harlem-1880-record",
+    "integrationStatus": "new provisional record",
+    "integrationNote": "Institution type and relationship to similarly named records need review; no identity merge or congregation classification has been asserted."
   },
   {
     "id": "new-york-beth-hamedrash-1880",
@@ -9324,7 +9378,9 @@
       "propertyValue": 15000,
       "otherPropertyValue": 5000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "new-york-beth-hamedrash-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-poel-zedek-1880",
@@ -9343,7 +9399,9 @@
         "question": "Congregation or society",
         "answer": "Poel Zedek"
       }
-    ]
+    ],
+    "congregation": "new-york-poel-zedek-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-adereth-el-1880",
@@ -9363,7 +9421,8 @@
         "question": "Congregation or society",
         "answer": "Adereth El"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-adas-israel-1880",
@@ -9382,7 +9441,9 @@
         "question": "Congregation or society",
         "answer": "Adas Israel"
       }
-    ]
+    ],
+    "congregation": "new-york-adas-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-shaaray-zedek-1880",
@@ -9407,7 +9468,8 @@
         "answer": "1839"
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-york-shaaray-rachmim-1880",
@@ -9426,7 +9488,9 @@
         "question": "Congregation or society",
         "answer": "Shaaray Rachmim"
       }
-    ]
+    ],
+    "congregation": "new-york-shaaray-rachmim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-shaaray-tickvah-yorkville-1880",
@@ -9445,7 +9509,9 @@
         "question": "Congregation or society",
         "answer": "Shaaray Tickvah (Yorkville)"
       }
-    ]
+    ],
+    "congregation": "new-york-shaaray-tickvah-yorkville-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-children-s-synagogue-1880",
@@ -9464,7 +9530,9 @@
         "question": "Congregation or society",
         "answer": "Children's Synagogue"
       }
-    ]
+    ],
+    "congregation": "new-york-children-s-synagogue-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-heb-free-burial-soc-y-1880",
@@ -9493,7 +9561,9 @@
         "answer": "For free burial of poor Jews."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-heb-free-burial-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-hebrew-fuel-association-1880",
@@ -9517,7 +9587,9 @@
         "answer": "For distributing fuel to indigent Israelites, through the U. H. Char."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-hebrew-fuel-association-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-mt-sinai-hospital-1880",
@@ -9566,7 +9638,9 @@
       "propertyValue": 378000,
       "otherPropertyValue": 90000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "jews-hospital",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "new-york-heb-orphan-asylum-1880",
@@ -9615,7 +9689,9 @@
       "propertyValue": 250000,
       "otherPropertyValue": 94000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-heb-orphan-asylum-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-home-for-ag-inf-m-heb-1880",
@@ -9652,7 +9728,9 @@
     "figures": {
       "members": 1338
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-home-for-ag-inf-m-heb-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-united-heb-charities-1880",
@@ -9681,7 +9759,9 @@
         "answer": "For grant'g aid and relief to Ind. Isr."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-united-heb-charities-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-heb-free-school-asso-1880",
@@ -9730,7 +9810,9 @@
       "propertyValue": 7000,
       "otherPropertyValue": 9000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-heb-free-school-asso-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-young-men-s-hebrew-association-1880",
@@ -9767,7 +9849,9 @@
     "figures": {
       "members": 659
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-young-men-s-hebrew-association-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-y-m-associat-n-of-congregation-ahavath-c-1880",
@@ -9804,7 +9888,9 @@
     "figures": {
       "members": 87
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-y-m-associat-n-of-congregation-ahavath-c-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-maimonides-lib-ass-n-1880",
@@ -9836,7 +9922,9 @@
     "figures": {
       "members": 684
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-maimonides-lib-ass-n-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-amer-jewish-pub-soc-y-1880",
@@ -9873,7 +9961,9 @@
     "figures": {
       "members": 1600
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-amer-jewish-pub-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-mut-benefit-burial-s-y-1880",
@@ -9916,7 +10006,9 @@
       "members": 140,
       "otherPropertyValue": 10000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-mut-benefit-burial-s-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-hebrew-relief-society-1880",
@@ -9959,7 +10051,9 @@
       "members": 130,
       "propertyValue": 23000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-hebrew-relief-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-chebra-chesed-ve-emeth-1880",
@@ -10002,7 +10096,9 @@
       "members": 120,
       "otherPropertyValue": 5000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-chebra-chesed-ve-emeth-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-down-town-heb-ladies-benevolent-society-1880",
@@ -10039,7 +10135,9 @@
     "figures": {
       "members": 170
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-down-town-heb-ladies-benevolent-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-ladies-bikur-cholim-s-y-1880",
@@ -10063,7 +10161,9 @@
         "answer": "For relief of indigent Israelites."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-ladies-bikur-cholim-s-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-deborah-nurs-ry-child-s-protectory-1880",
@@ -10087,7 +10187,9 @@
         "answer": "For the care of children of indigent Israelites."
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "new-york-deborah-nurs-ry-child-s-protectory-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-york-heb-sheltering-guardian-society-1880",
@@ -10124,7 +10226,9 @@
     "figures": {
       "otherPropertyValue": 4000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-york-heb-sheltering-guardian-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-beth-elohim-1880",
@@ -10186,7 +10290,8 @@
       "pupils": 110,
       "instructors": 8
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "brooklyn-beth-israel-1880",
@@ -10236,7 +10341,9 @@
       "pupils": 90,
       "instructors": 6
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "brooklyn-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-temple-israel-1880",
@@ -10286,7 +10393,9 @@
       "pupils": 75,
       "instructors": 5
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "brooklyn-temple-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-beth-elohim-1880-2",
@@ -10343,7 +10452,8 @@
       "pupils": 80,
       "instructors": 4
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "brooklyn-ahavath-achim-1880",
@@ -10399,7 +10509,9 @@
       "pupils": 40,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "brooklyn-ahavath-achim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-beth-jacob-1880",
@@ -10418,7 +10530,9 @@
         "question": "Congregation or society",
         "answer": "Beth Jacob"
       }
-    ]
+    ],
+    "congregation": "brooklyn-beth-jacob-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-b-nai-shalom-1880",
@@ -10456,7 +10570,9 @@
       "members": 15,
       "otherPropertyValue": 2000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "brooklyn-b-nai-shalom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-y-m-hebrew-associat-n-1880",
@@ -10493,7 +10609,9 @@
     "figures": {
       "members": 25
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "brooklyn-y-m-hebrew-associat-n-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-two-ladies-societies-1880",
@@ -10520,7 +10638,9 @@
     "figures": {
       "members": 250
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "brooklyn-heb-benevolent-society-1880",
@@ -10547,7 +10667,9 @@
     "figures": {
       "members": 175
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "brooklyn-heb-benevolent-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "brooklyn-heb-benevolent-society-1880-2",
@@ -10579,7 +10701,9 @@
     "figures": {
       "otherPropertyValue": 3000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "brooklyn-heb-benevolent-society-1880-2-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "albany-beth-jacob-1880",
@@ -10622,7 +10746,9 @@
       "members": 28,
       "propertyValue": 6000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "albany-beth-jacob-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "albany-anshe-emeth-1880",
@@ -10673,7 +10799,8 @@
       "pupils": 250,
       "instructors": 20
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "albany-beth-el-1880",
@@ -10724,7 +10851,8 @@
       "pupils": 25,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "albany-two-literary-associat-ns-1880",
@@ -10743,7 +10871,9 @@
         "question": "Congregation or society",
         "answer": "Two Literary Associat'ns"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "albany-hebrew-benev-society-1880",
@@ -10762,7 +10892,9 @@
         "question": "Congregation or society",
         "answer": "Hebrew Benev. Society"
       }
-    ]
+    ],
+    "institution": "albany-hebrew-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "rochester-etz-raanon-1880",
@@ -10818,7 +10950,9 @@
       "instructors": 1,
       "jewishPopulation": 1175
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "rochester-etz-raanon-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "rochester-berith-kodesh-1880",
@@ -10863,7 +10997,8 @@
       "propertyValue": 20000,
       "pupils": 100
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "elmira-b-nai-israel-1880",
@@ -10925,7 +11060,9 @@
       "instructors": 1,
       "jewishPopulation": 300
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "elmira-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "buffalo-beth-el-1880",
@@ -10945,7 +11082,8 @@
         "question": "Congregation or society",
         "answer": "Beth El"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "buffalo-temple-beth-zion-1880",
@@ -11007,7 +11145,9 @@
       "instructors": 3,
       "jewishPopulation": 775
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "buffalo-temple-beth-zion-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "buffalo-4-benev-beneficial-soc-1880",
@@ -11026,7 +11166,9 @@
         "question": "Congregation or society",
         "answer": "4 Benev. & Beneficial Soc."
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "troy-anshe-chesed-1880",
@@ -11045,7 +11187,9 @@
         "question": "Congregation or society",
         "answer": "Anshe Chesed"
       }
-    ]
+    ],
+    "congregation": "troy-anshe-chesed-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "troy-berith-sholom-1880",
@@ -11101,7 +11245,9 @@
       "instructors": 10,
       "jewishPopulation": 500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "troy-berith-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "syracuse-beth-israel-1880",
@@ -11125,7 +11271,9 @@
         "answer": "No returns."
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "syracuse-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "syracuse-adas-yeshurun-1880",
@@ -11144,7 +11292,9 @@
         "question": "Congregation or society",
         "answer": "Adas Yeshurun"
       }
-    ]
+    ],
+    "congregation": "syracuse-adas-yeshurun-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "syracuse-society-of-concord-1880",
@@ -11195,7 +11345,8 @@
       "pupils": 34,
       "instructors": 1
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "newburgh-beth-jacob-1880",
@@ -11252,7 +11403,8 @@
       "instructors": 1,
       "jewishPopulation": 158
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "newark-nj-b-nai-jeshuron-1880",
@@ -11308,7 +11460,9 @@
       "instructors": 2,
       "jewishPopulation": 3500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "newark-nj-b-nai-jeshuron-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "newark-nj-oheb-shalom-1880",
@@ -11327,7 +11481,9 @@
         "question": "Congregation or society",
         "answer": "Oheb Shalom"
       }
-    ]
+    ],
+    "congregation": "newark-nj-oheb-shalom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "newark-nj-b-nai-abraham-1880",
@@ -11346,7 +11502,9 @@
         "question": "Congregation or society",
         "answer": "B'nai Abraham"
       }
-    ]
+    ],
+    "congregation": "newark-nj-b-nai-abraham-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "newark-nj-heb-benev-orph-s-y-1880",
@@ -11389,7 +11547,9 @@
       "members": 250,
       "otherPropertyValue": 3500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "newark-nj-heb-benev-orph-s-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "newark-nj-y-ladies-sew-g-circle-1880",
@@ -11418,7 +11578,9 @@
         "answer": "Furnishing Jewish women and children with apparel."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "newark-nj-y-ladies-sew-g-circle-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "paterson-b-nai-jeshuron-1880",
@@ -11481,7 +11643,8 @@
       "instructors": 1,
       "jewishPopulation": 427
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "hoboken-adas-emuno-1880",
@@ -11537,7 +11700,9 @@
       "instructors": 1,
       "jewishPopulation": 600
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "hoboken-adas-emuno-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "hoboken-hebrew-ladies-society-1880",
@@ -11575,7 +11740,9 @@
       "members": 28,
       "otherPropertyValue": 350
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "hoboken-hebrew-ladies-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-rodef-shalom-1880",
@@ -11631,7 +11798,8 @@
       "pupils": 135,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "philadelphia-mikve-israel-1880",
@@ -11670,7 +11838,8 @@
       "members": 298,
       "propertyValue": 65000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "philadelphia-beth-israel-1880",
@@ -11727,7 +11896,8 @@
       "pupils": 50,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "philadelphia-keneseth-israel-1880",
@@ -11778,7 +11948,8 @@
       "pupils": 269,
       "instructors": 5
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "philadelphia-b-nai-israel-1880",
@@ -11822,7 +11993,9 @@
       "propertyValue": 4000,
       "otherPropertyValue": 200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "philadelphia-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-beth-el-emeth-1880",
@@ -11873,7 +12046,8 @@
       "pupils": 60,
       "instructors": 8
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "philadelphia-adas-jeshurun-1880",
@@ -11929,7 +12103,9 @@
       "pupils": 74,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "philadelphia-adas-jeshurun-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-anshe-emeth-1880",
@@ -11979,7 +12155,9 @@
       "pupils": 42,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "philadelphia-anshe-emeth-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-jewish-hospital-1880",
@@ -12028,7 +12206,9 @@
       "propertyValue": 100000,
       "otherPropertyValue": 25000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-jewish-hospital-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-home-for-the-aged-and-infirm-1880",
@@ -12052,7 +12232,9 @@
         "answer": "For the care and support of aged and infirm Hebrews."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-home-for-the-aged-and-infirm-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-jewish-foster-home-and-orphan-asylum-1880",
@@ -12101,7 +12283,9 @@
       "propertyValue": 15000,
       "otherPropertyValue": 15900
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "jewish-foster-home",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880",
@@ -12144,7 +12328,9 @@
       "members": 200,
       "otherPropertyValue": 3500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-fam-waisen-erziehungs-verein-keneseth-is-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-united-hebr-charities-1880",
@@ -12187,7 +12373,9 @@
       "members": 500,
       "otherPropertyValue": 11000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-united-hebr-charities-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-hebr-education-soc-y-1880",
@@ -12242,7 +12430,9 @@
       "pupils": 165,
       "instructors": 6
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "hebrew-education-society",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "philadelphia-female-benev-society-1880",
@@ -12285,7 +12475,9 @@
       "members": 100,
       "otherPropertyValue": 7000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "female-hebrew-benevolent",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "philadelphia-hebrew-sund-school-s-y-1880",
@@ -12328,7 +12520,9 @@
       "pupils": 600,
       "instructors": 56
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "hebrew-sunday-school",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "philadelphia-ezrath-nashim-1880",
@@ -12365,7 +12559,9 @@
     "figures": {
       "members": 650
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-ezrath-nashim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-young-men-s-hebrew-association-1880",
@@ -12408,7 +12604,9 @@
       "members": 600,
       "otherPropertyValue": 2000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-young-men-s-hebrew-association-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "philadelphia-branch-of-the-alliance-israelite-univers-1880",
@@ -12445,7 +12643,9 @@
     "figures": {
       "members": 181
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "philadelphia-branch-of-the-alliance-israelite-univers-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "harrisburg-oheb-shalom-1880",
@@ -12496,7 +12696,8 @@
       "otherPropertyValue": 500,
       "jewishPopulation": 100
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "wilkes-barre-b-nai-jacob-1880",
@@ -12546,7 +12747,9 @@
       "instructors": 1,
       "jewishPopulation": 250
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "wilkes-barre-b-nai-jacob-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wilkes-barre-b-nai-berith-1880",
@@ -12602,7 +12805,9 @@
       "instructors": 1,
       "jewishPopulation": 250
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "wilkes-barre-b-nai-berith-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "easton-berith-shalom-1880",
@@ -12659,7 +12864,8 @@
       "instructors": 7,
       "jewishPopulation": 255
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "easton-wache-s-y-kranken-leichen-1880",
@@ -12697,7 +12903,9 @@
       "members": 38,
       "otherPropertyValue": 700
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "easton-wache-s-y-kranken-leichen-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "easton-esrath-nashim-1880",
@@ -12735,7 +12943,9 @@
       "members": 34,
       "otherPropertyValue": 500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "easton-esrath-nashim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "titusville-b-nai-zion-1880",
@@ -12791,7 +13001,9 @@
       "instructors": 1,
       "jewishPopulation": 500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "titusville-b-nai-zion-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "danville-pa-b-nai-zion-1880",
@@ -12842,7 +13054,8 @@
       "otherPropertyValue": 1500,
       "jewishPopulation": 132
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "pittsburgh-rodef-shalom-1880",
@@ -12899,7 +13112,8 @@
       "instructors": 3,
       "jewishPopulation": 2000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "pittsburgh-ez-chaim-1880",
@@ -12949,7 +13163,9 @@
       "pupils": 41,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "pittsburgh-ez-chaim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "pittsburgh-hebr-benev-society-1880",
@@ -12976,7 +13192,9 @@
     "figures": {
       "otherPropertyValue": 3500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "pittsburgh-hebr-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "pittsburgh-ladies-hebr-benev-society-1880",
@@ -13003,7 +13221,9 @@
     "figures": {
       "otherPropertyValue": 2000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "pittsburgh-ladies-hebr-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "scranton-anshe-chesed-1880",
@@ -13065,7 +13285,9 @@
       "instructors": 1,
       "jewishPopulation": 245
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "scranton-anshe-chesed-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "washington-washington-hebrew-1880",
@@ -13122,7 +13344,8 @@
       "instructors": 5,
       "jewishPopulation": 1375
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "washington-adas-israel-1880",
@@ -13172,7 +13395,9 @@
       "pupils": 40,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "washington-adas-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "washington-two-ladies-benev-soc-y-1880",
@@ -13191,7 +13416,9 @@
         "question": "Congregation or society",
         "answer": "Two Ladies Benev. Soc'y"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "washington-ladies-sew-fuel-aid-soc-y-1880",
@@ -13210,7 +13437,9 @@
         "question": "Congregation or society",
         "answer": "Ladies' Sew., Fuel & Aid Soc'y"
       }
-    ]
+    ],
+    "institution": "washington-ladies-sew-fuel-aid-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-1st-balto-hebrew-1880",
@@ -13240,7 +13469,8 @@
         "answer": "About 10,000"
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "baltimore-oheb-sholom-1880",
@@ -13260,7 +13490,8 @@
         "question": "Congregation or society",
         "answer": "Oheb Sholom"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "baltimore-balto-hebr-friendship-1880",
@@ -13279,7 +13510,9 @@
         "question": "Congregation or society",
         "answer": "Balto. Hebr. Friendship"
       }
-    ]
+    ],
+    "congregation": "baltimore-balto-hebr-friendship-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-har-sinai-1880",
@@ -13299,7 +13532,8 @@
         "question": "Congregation or society",
         "answer": "Har Sinai"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "baltimore-chisuk-emunah-1880",
@@ -13318,7 +13552,9 @@
         "question": "Congregation or society",
         "answer": "Chisuk Emunah"
       }
-    ]
+    ],
+    "congregation": "baltimore-chisuk-emunah-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-shebet-zedek-1880",
@@ -13337,7 +13573,9 @@
         "question": "Congregation or society",
         "answer": "Shebet Zedek"
       }
-    ]
+    ],
+    "congregation": "baltimore-shebet-zedek-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-howard-st-1880",
@@ -13356,7 +13594,9 @@
         "question": "Congregation or society",
         "answer": "Howard St."
       }
-    ]
+    ],
+    "congregation": "baltimore-howard-st-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-shebeth-achim-1880",
@@ -13375,7 +13615,9 @@
         "question": "Congregation or society",
         "answer": "Shebeth Achim"
       }
-    ]
+    ],
+    "congregation": "baltimore-shebeth-achim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-eutaw-st-1880",
@@ -13419,7 +13661,9 @@
       "pupils": 30,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "baltimore-eutaw-st-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-rodef-sholom-1880",
@@ -13457,7 +13701,9 @@
       "members": 12,
       "otherPropertyValue": 1000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "baltimore-rodef-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-harrison-st-1880",
@@ -13476,7 +13722,9 @@
         "question": "Congregation or society",
         "answer": "Harrison St."
       }
-    ]
+    ],
+    "congregation": "baltimore-harrison-st-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-n-gay-st-1880",
@@ -13495,7 +13743,9 @@
         "question": "Congregation or society",
         "answer": "N. Gay St."
       }
-    ]
+    ],
+    "congregation": "baltimore-n-gay-st-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-bikur-cholim-1880",
@@ -13514,7 +13764,9 @@
         "question": "Congregation or society",
         "answer": "Bikur Cholim"
       }
-    ]
+    ],
+    "congregation": "baltimore-bikur-cholim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-hebrew-hospital-1880",
@@ -13538,7 +13790,9 @@
         "answer": "Care sick and wounded all denomin's."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-hebrew-hospital-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-hebrew-orphan-asylum-1880",
@@ -13587,7 +13841,9 @@
       "propertyValue": 52000,
       "otherPropertyValue": 17225
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-hebrew-orphan-asylum-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-hebrew-benev-society-1880",
@@ -13611,7 +13867,9 @@
         "answer": "For granting aid and relief to indigent Israelites."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-hebrew-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-hebr-ladies-sew-soc-y-1880",
@@ -13635,7 +13893,9 @@
         "answer": "For supplying garments to indigent Israelites."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-hebr-ladies-sew-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-soc-y-for-educating-poor-heb-children-1880",
@@ -13672,7 +13932,9 @@
     "figures": {
       "members": 184
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-soc-y-for-educating-poor-heb-children-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-hebrew-ladies-beneficial-society-1880",
@@ -13715,7 +13977,9 @@
       "members": 133,
       "otherPropertyValue": 3300
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-hebrew-ladies-beneficial-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "baltimore-united-hebrew-beneficial-society-1880",
@@ -13752,7 +14016,9 @@
     "figures": {
       "members": 135
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "baltimore-united-hebrew-beneficial-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "richmond-beth-shalom-1880",
@@ -13803,7 +14069,8 @@
       "otherPropertyValue": 1200,
       "jewishPopulation": 1200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "richmond-beth-ahaba-1880",
@@ -13854,7 +14121,8 @@
       "pupils": 225,
       "instructors": 20
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "richmond-keneseth-israel-1880",
@@ -13905,7 +14173,8 @@
       "pupils": 25,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "richmond-jeff-lit-y-soc-l-cir-1880",
@@ -13948,7 +14217,9 @@
       "members": 100,
       "otherPropertyValue": 400
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "richmond-jeff-lit-y-soc-l-cir-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "richmond-mendelssohn-lit-y-soc-l-cir-1880",
@@ -13991,7 +14262,9 @@
       "members": 30,
       "otherPropertyValue": 85
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "richmond-mendelssohn-lit-y-soc-l-cir-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "norfolk-oheb-sholom-1880",
@@ -14042,7 +14315,8 @@
       "otherPropertyValue": 150,
       "jewishPopulation": 500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "norfolk-beth-el-1880",
@@ -14092,7 +14366,9 @@
       "pupils": 25,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "norfolk-beth-el-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "petersburg-va-rodef-sholom-1880",
@@ -14148,7 +14424,9 @@
       "instructors": 5,
       "jewishPopulation": 163
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "petersburg-va-rodef-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wheeling-leshem-shomayim-1880",
@@ -14204,7 +14482,9 @@
       "instructors": 1,
       "jewishPopulation": 300
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "wheeling-leshem-shomayim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wheeling-heb-ladies-ben-soc-y-1880",
@@ -14247,7 +14527,9 @@
       "members": 41,
       "otherPropertyValue": 700
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "wheeling-heb-ladies-ben-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wheeling-montefiore-literary-so-y-1880",
@@ -14284,7 +14566,9 @@
     "figures": {
       "members": 20
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "wheeling-montefiore-literary-so-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wilmington-nc-temple-of-israel-1880",
@@ -14340,7 +14624,9 @@
       "instructors": 4,
       "jewishPopulation": 200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "wilmington-nc-temple-of-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "wilmington-nc-true-brothers-society-1880",
@@ -14377,7 +14663,9 @@
     "figures": {
       "otherPropertyValue": 200
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "wilmington-nc-true-brothers-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "charleston-beth-elohim-1880",
@@ -14440,7 +14728,8 @@
       "instructors": 10,
       "jewishPopulation": 700
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "charleston-berith-sholom-1880",
@@ -14484,7 +14773,9 @@
       "pupils": 20,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "charleston-berith-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "charleston-hebrew-orphan-society-1880",
@@ -14527,7 +14818,9 @@
       "propertyValue": 12000,
       "otherPropertyValue": 21668
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "hebrew-orphan-society-chs",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "charleston-hebrew-benev-society-1880",
@@ -14556,7 +14849,9 @@
         "answer": "For relief of sick and destitute Israel."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "hebrew-benevolent-charleston",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "charleston-israel-s-hope-1880",
@@ -14585,7 +14880,9 @@
         "answer": "Ladies' Benevolent Society, for sick and destitute females."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "charleston-israel-s-hope-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "columbia-sc-columbia-heb-cong-1880",
@@ -14609,7 +14906,9 @@
         "answer": "1846"
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "columbia-sc-columbia-heb-cong-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "savannah-mikve-israel-1880",
@@ -14660,7 +14959,8 @@
       "otherPropertyValue": 5700,
       "jewishPopulation": 603
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "savannah-benai-jacob-1880",
@@ -14679,7 +14979,9 @@
         "question": "Congregation or society",
         "answer": "Benai Jacob"
       }
-    ]
+    ],
+    "congregation": "savannah-benai-jacob-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "savannah-youth-s-historical-soc-y-1880",
@@ -14711,7 +15013,9 @@
     "figures": {
       "members": 31
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "savannah-youth-s-historical-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "savannah-heb-benev-society-1880",
@@ -14743,7 +15047,9 @@
     "figures": {
       "otherPropertyValue": 2000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "savannah-heb-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "savannah-ladies-benev-society-1880",
@@ -14775,7 +15081,9 @@
     "figures": {
       "otherPropertyValue": 1000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "savannah-ladies-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "atlanta-hebrew-benevolent-1880",
@@ -14832,7 +15140,8 @@
       "instructors": 6,
       "jewishPopulation": 525
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "columbus-ga-benai-israel-1880",
@@ -14894,7 +15203,9 @@
       "instructors": 1,
       "jewishPopulation": 275
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "columbus-ga-benai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "columbus-ga-daughter-of-israel-1880",
@@ -14923,7 +15234,9 @@
         "answer": "Aiding the poor, etc."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "columbus-ga-daughter-of-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "augusta-ga-benai-israel-1880",
@@ -14973,7 +15286,9 @@
       "instructors": 2,
       "jewishPopulation": 240
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "augusta-ga-benai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "macon-beth-israel-1880",
@@ -15029,7 +15344,9 @@
       "instructors": 4,
       "jewishPopulation": 350
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "macon-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "montgomery-kahl-montgomery-1880",
@@ -15092,7 +15409,8 @@
       "instructors": 6,
       "jewishPopulation": 600
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "montgomery-heb-lad-benev-society-1880",
@@ -15135,7 +15453,9 @@
       "members": 30,
       "otherPropertyValue": 3500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "montgomery-heb-lad-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "selma-mishkan-israel-1880",
@@ -15191,7 +15511,9 @@
       "instructors": 3,
       "jewishPopulation": 200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "selma-mishkan-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "mobile-shaaray-shomayim-1880",
@@ -15253,7 +15575,8 @@
       "instructors": 2,
       "jewishPopulation": 530
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "mobile-another-congregation-1880",
@@ -15272,7 +15595,9 @@
         "question": "Congregation or society",
         "answer": "Another Congregation"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "mobile-charity-fund-1880",
@@ -15291,7 +15616,9 @@
         "question": "Congregation or society",
         "answer": "Charity Fund"
       }
-    ]
+    ],
+    "institution": "mobile-charity-fund-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "mobile-ladies-heb-benev-soc-y-1880",
@@ -15323,7 +15650,9 @@
     "figures": {
       "otherPropertyValue": 3500
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "ladies-hebrew-benevolent-mob",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "vicksburg-anshe-chesed-1880",
@@ -15379,7 +15708,9 @@
       "instructors": 1,
       "jewishPopulation": 520
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "vicksburg-anshe-chesed-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "vicksburg-ladies-heb-benev-sc-y-1880",
@@ -15408,7 +15739,9 @@
         "answer": "Charitable purposes."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "vicksburg-ladies-heb-benev-sc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "meridian-beth-israel-1880",
@@ -15470,7 +15803,9 @@
       "instructors": 4,
       "jewishPopulation": 160
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "meridian-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "natchez-b-nai-israel-1880",
@@ -15527,7 +15862,8 @@
       "instructors": 6,
       "jewishPopulation": 220
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "jackson-ms-beth-israel-1880",
@@ -15566,7 +15902,8 @@
       "members": 11,
       "jewishPopulation": 88
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "baton-rouge-shaaray-chesed-1880",
@@ -15611,7 +15948,8 @@
       "propertyValue": 6000,
       "jewishPopulation": 94
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "shreveport-hebra-zion-1880",
@@ -15667,7 +16005,9 @@
       "instructors": 4,
       "jewishPopulation": 900
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "shreveport-hebra-zion-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "shreveport-hebrew-benev-assoc-n-1880",
@@ -15704,7 +16044,9 @@
     "figures": {
       "members": 21
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "shreveport-hebrew-benev-assoc-n-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "donaldsonville-bikur-cholim-1880",
@@ -15767,7 +16109,8 @@
       "instructors": 3,
       "jewishPopulation": 179
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "donaldsonville-donaldson-college-1880",
@@ -15794,7 +16137,9 @@
     "figures": {
       "instructors": 4
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "donaldsonville-donaldson-college-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "alexandria-la-gemiluth-chasodim-1880",
@@ -15856,7 +16201,9 @@
       "instructors": 3,
       "jewishPopulation": 206
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "alexandria-la-gemiluth-chasodim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-orleans-gates-of-prayer-1880",
@@ -15913,7 +16260,8 @@
       "instructors": 1,
       "jewishPopulation": 5000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-orleans-shaaray-chesed-1880",
@@ -15952,7 +16300,8 @@
       "members": 103,
       "propertyValue": 25000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-orleans-dispersed-of-judah-1880",
@@ -15977,7 +16326,8 @@
         "answer": "1845"
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "new-orleans-temime-derech-1880",
@@ -15996,7 +16346,9 @@
         "question": "Congregation or society",
         "answer": "Temime Derech"
       }
-    ]
+    ],
+    "congregation": "new-orleans-temime-derech-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-orleans-temple-sinai-1880",
@@ -16046,7 +16398,9 @@
       "pupils": 175,
       "instructors": 10
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "new-orleans-temple-sinai-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-orleans-home-for-wid-and-orph-1880",
@@ -16089,7 +16443,9 @@
       "members": 374,
       "propertyValue": 65400
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-orleans-home-for-wid-and-orph-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "new-orleans-touro-infirmary-1880",
@@ -16132,7 +16488,9 @@
       "members": 343,
       "propertyValue": 25000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "touro-infirmary",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "new-orleans-hebr-education-society-1880",
@@ -16156,7 +16514,9 @@
         "answer": "To furnish religious education."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "new-orleans-hebr-education-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "galveston-b-nai-israel-1880",
@@ -16212,7 +16572,9 @@
       "instructors": 8,
       "jewishPopulation": 1000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "galveston-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "galveston-two-benevolent-societies-1880",
@@ -16236,7 +16598,9 @@
         "answer": "Relieving distress."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "houston-beth-israel-1880",
@@ -16293,7 +16657,8 @@
       "instructors": 6,
       "jewishPopulation": 461
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cincinnati-b-nai-israel-1880",
@@ -16349,7 +16714,8 @@
       "otherPropertyValue": 12000,
       "pupils": 160
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cincinnati-b-nai-jeshurun-1880",
@@ -16400,7 +16766,8 @@
       "otherPropertyValue": 19000,
       "pupils": 225
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cincinnati-adath-israel-1880",
@@ -16432,7 +16799,9 @@
     "figures": {
       "members": 45
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "cincinnati-adath-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cincinnati-shearith-israel-1880",
@@ -16489,7 +16858,8 @@
       "pupils": 120,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cincinnati-acheveth-achim-1880",
@@ -16534,7 +16904,9 @@
       "otherPropertyValue": 2000,
       "pupils": 30
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "cincinnati-acheveth-achim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cincinnati-hebrew-union-college-1880",
@@ -16577,7 +16949,9 @@
       "pupils": 22,
       "instructors": 3
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "cincinnati-hebrew-union-college-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cincinnati-jewish-hospital-1880",
@@ -16626,7 +17000,9 @@
       "propertyValue": 30000,
       "otherPropertyValue": 17000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "cincinnati-jewish-hospital-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cincinnati-heb-gen-l-relief-1880",
@@ -16663,7 +17039,9 @@
     "figures": {
       "members": 345
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "cincinnati-heb-gen-l-relief-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880",
@@ -16700,7 +17078,9 @@
     "figures": {
       "members": 1246
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "cincinnati-mutual-endowment-ass-n-i-o-b-b-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "cleveland-tiferith-israel-1880",
@@ -16757,7 +17137,8 @@
       "instructors": 2,
       "jewishPopulation": 3500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cleveland-three-literary-asso-ns-1880",
@@ -16776,7 +17157,9 @@
         "question": "Congregation or society",
         "answer": "Three Literary Asso'ns"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "cleveland-anshe-chesed-1880",
@@ -16827,7 +17210,8 @@
       "pupils": 122,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "cleveland-cleveland-orphan-asyl-1880",
@@ -16881,7 +17265,9 @@
       "propertyValue": 200000,
       "pupils": 215
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "jewish-orphan-asylum-cle",
+    "integrationStatus": "editorial name reconciliation"
   },
   {
     "id": "toledo-shomer-emunim-1880",
@@ -16937,7 +17323,10 @@
       "instructors": 4,
       "jewishPopulation": 350
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "toledo-shomer-emunim-1880-record",
+    "integrationStatus": "new provisional record",
+    "integrationNote": "Institution type and relationship to similarly named records need review; no identity merge or congregation classification has been asserted."
   },
   {
     "id": "toledo-ladies-hebrew-charity-1880",
@@ -16956,7 +17345,9 @@
         "question": "Congregation or society",
         "answer": "Ladies' Hebrew Charity"
       }
-    ]
+    ],
+    "institution": "toledo-ladies-hebrew-charity-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "toledo-b-nai-israel-1880",
@@ -16975,7 +17366,9 @@
         "question": "Congregation or society",
         "answer": "B'nai Israel"
       }
-    ]
+    ],
+    "congregation": "toledo-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "toledo-b-nai-jacob-1880",
@@ -16994,7 +17387,9 @@
         "question": "Congregation or society",
         "answer": "B'nai Jacob"
       }
-    ]
+    ],
+    "congregation": "toledo-b-nai-jacob-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "dayton-b-nai-jeshurun-1880",
@@ -17051,7 +17446,8 @@
       "instructors": 12,
       "jewishPopulation": 500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "columbus-oh-b-nai-israel-1880",
@@ -17107,7 +17503,9 @@
       "instructors": 4,
       "jewishPopulation": 420
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "columbus-oh-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "evansville-b-nai-israel-1880",
@@ -17163,7 +17561,9 @@
       "instructors": 4,
       "jewishPopulation": 375
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "evansville-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "evansville-two-ladies-societies-1880",
@@ -17182,7 +17582,9 @@
         "question": "Congregation or society",
         "answer": "Two Ladies' Societies"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "lafayette-in-shebeth-achim-1880",
@@ -17239,7 +17641,8 @@
       "instructors": 1,
       "jewishPopulation": 225
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "fort-wayne-achdut-ve-sholom-1880",
@@ -17296,7 +17699,8 @@
       "instructors": 1,
       "jewishPopulation": 275
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "laporte-b-nai-zion-1880",
@@ -17341,7 +17745,8 @@
       "propertyValue": 6500,
       "jewishPopulation": 142
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "indianapolis-hebrew-cong-1880",
@@ -17391,7 +17796,8 @@
       "propertyValue": 25000,
       "jewishPopulation": 400
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "chicago-b-nai-sholom-1880",
@@ -17442,7 +17848,8 @@
       "otherPropertyValue": 1000,
       "jewishPopulation": 10000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "chicago-sinai-1880",
@@ -17499,7 +17906,8 @@
       "pupils": 140,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "chicago-zion-1880",
@@ -17549,7 +17957,9 @@
       "pupils": 150,
       "instructors": 5
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "chicago-zion-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-north-chicago-heb-1880",
@@ -17599,7 +18009,9 @@
       "pupils": 52,
       "instructors": 2
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "chicago-north-chicago-heb-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-anshe-m-arev-1880",
@@ -17656,7 +18068,8 @@
       "pupils": 100,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "chicago-jewish-educ-soc-y-1880",
@@ -17675,7 +18088,9 @@
         "question": "Congregation or society",
         "answer": "Jewish Educ. Soc'y"
       }
-    ]
+    ],
+    "institution": "chicago-jewish-educ-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-hebrew-relief-soc-y-1880",
@@ -17694,7 +18109,9 @@
         "question": "Congregation or society",
         "answer": "Hebrew Relief Soc'y"
       }
-    ]
+    ],
+    "institution": "chicago-hebrew-relief-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-j-disher-frauenverein-1880",
@@ -17718,7 +18135,9 @@
         "answer": "General charity."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "chicago-j-disher-frauenverein-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-sewing-society-1880",
@@ -17742,7 +18161,9 @@
         "answer": "Garments for the Poor."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "chicago-sewing-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "chicago-n-chicago-ladies-heb-assoc-n-1880",
@@ -17771,7 +18192,9 @@
         "answer": "Mutual benefit."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "chicago-n-chicago-ladies-heb-assoc-n-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "peoria-beth-israel-1880",
@@ -17827,7 +18250,9 @@
       "instructors": 2,
       "jewishPopulation": 400
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "peoria-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "peoria-anshe-emeth-1880",
@@ -17877,7 +18302,9 @@
       "pupils": 40,
       "instructors": 3
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "peoria-anshe-emeth-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "peoria-ladies-benev-soc-y-1880",
@@ -17896,7 +18323,9 @@
         "question": "Congregation or society",
         "answer": "Ladies' Benev. Soc'y"
       }
-    ]
+    ],
+    "institution": "peoria-ladies-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "peoria-ladies-sewing-soc-y-1880",
@@ -17915,7 +18344,9 @@
         "question": "Congregation or society",
         "answer": "Ladies' Sewing Soc'y"
       }
-    ]
+    ],
+    "institution": "peoria-ladies-sewing-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "quincy-b-nai-sholom-1880",
@@ -17978,7 +18409,8 @@
       "instructors": 5,
       "jewishPopulation": 500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "springfield-il-berith-sholom-1880",
@@ -18028,7 +18460,9 @@
       "pupils": 30,
       "jewishPopulation": 150
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "springfield-il-berith-sholom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "louisville-adath-israel-1880",
@@ -18085,7 +18519,8 @@
       "instructors": 7,
       "jewishPopulation": 2500
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "louisville-beth-israel-1880",
@@ -18130,7 +18565,8 @@
       "propertyValue": 8000,
       "pupils": 55
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "louisville-united-heb-relief-1880",
@@ -18154,7 +18590,9 @@
         "answer": "1851"
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "louisville-united-heb-relief-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "paducah-jeshurun-1880",
@@ -18210,7 +18648,9 @@
       "instructors": 1,
       "jewishPopulation": 203
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "paducah-jeshurun-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "knoxville-hebr-benev-society-1880",
@@ -18248,7 +18688,9 @@
       "members": 11,
       "jewishPopulation": 67
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "knoxville-hebr-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "knoxville-ladies-heb-ben-soc-y-1880",
@@ -18272,7 +18714,9 @@
         "answer": "1873"
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "knoxville-ladies-heb-ben-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "nashville-ohabay-shalom-1880",
@@ -18328,7 +18772,9 @@
       "instructors": 10,
       "jewishPopulation": 1085
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "nashville-ohabay-shalom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "nashville-concordia-club-1880",
@@ -18355,7 +18801,9 @@
     "figures": {
       "members": 60
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "nashville-concordia-club-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "nashville-mogen-david-1880",
@@ -18374,7 +18822,9 @@
         "question": "Congregation or society",
         "answer": "Mogen David"
       }
-    ]
+    ],
+    "congregation": "nashville-mogen-david-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "memphis-children-of-israel-1880",
@@ -18431,7 +18881,8 @@
       "instructors": 6,
       "jewishPopulation": 2100
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "memphis-beth-el-emeth-1880",
@@ -18487,7 +18938,9 @@
       "pupils": 60,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "memphis-beth-el-emeth-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "memphis-b-nai-israel-1880",
@@ -18507,7 +18960,8 @@
         "question": "Congregation or society",
         "answer": "B'nai Israel"
       }
-    ]
+    ],
+    "integrationStatus": "existing link"
   },
   {
     "id": "chattanooga-hebrew-benev-soc-y-1880",
@@ -18540,7 +18994,8 @@
     "figures": {
       "jewishPopulation": 178
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "detroit-beth-el-1880",
@@ -18603,7 +19058,8 @@
       "instructors": 4,
       "jewishPopulation": 2000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "detroit-another-congregation-1880",
@@ -18622,7 +19078,9 @@
         "question": "Congregation or society",
         "answer": "Another Congregation"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "detroit-two-charitable-socities-1880",
@@ -18641,7 +19099,9 @@
         "question": "Congregation or society",
         "answer": "Two Charitable Socities"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "kalamazoo-b-nai-israel-1880",
@@ -18697,7 +19157,9 @@
       "instructors": 1,
       "jewishPopulation": 217
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "kalamazoo-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "kalamazoo-ladies-benev-soc-y-1880",
@@ -18734,7 +19196,9 @@
     "figures": {
       "members": 37
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "kalamazoo-ladies-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "grand-rapids-emanu-el-1880",
@@ -18790,7 +19254,9 @@
       "instructors": 5,
       "jewishPopulation": 201
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "grand-rapids-emanu-el-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "grand-rapids-heb-benev-society-1880",
@@ -18822,7 +19288,9 @@
     "figures": {
       "otherPropertyValue": 700
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "grand-rapids-heb-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "milwaukee-emanu-el-1880",
@@ -18873,7 +19341,9 @@
       "instructors": 2,
       "jewishPopulation": 2075
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "milwaukee-emanu-el-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "milwaukee-two-ben-societies-1880",
@@ -18892,7 +19362,9 @@
         "question": "Congregation or society",
         "answer": "Two Ben. Societies"
       }
-    ]
+    ],
+    "integrationStatus": "grouped-or-unnamed",
+    "integrationNote": "Grouped or unnamed source entry; retained as dated place evidence, not counted as a single identified institution."
   },
   {
     "id": "madison-wi-shaaray-shamaim-1880",
@@ -18949,7 +19421,8 @@
       "instructors": 1,
       "jewishPopulation": 67
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "st-paul-mt-zion-1880",
@@ -19005,7 +19478,9 @@
       "instructors": 2,
       "jewishPopulation": 225
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "st-paul-mt-zion-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "davenport-b-nai-israel-1880",
@@ -19061,7 +19536,9 @@
       "instructors": 1,
       "jewishPopulation": 204
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "davenport-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "davenport-ladies-benev-society-1880",
@@ -19088,7 +19565,9 @@
     "figures": {
       "members": 22
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "davenport-ladies-benev-society-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "keokuk-b-nai-israel-1880",
@@ -19144,7 +19623,9 @@
       "instructors": 1,
       "jewishPopulation": 152
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "keokuk-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "keokuk-heb-ladies-ben-soc-y-1880",
@@ -19176,7 +19657,9 @@
     "figures": {
       "otherPropertyValue": 600
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "keokuk-heb-ladies-ben-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "des-moines-b-nai-jeshurun-1880",
@@ -19238,7 +19721,9 @@
       "instructors": 1,
       "jewishPopulation": 260
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "des-moines-b-nai-jeshurun-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-b-nai-el-1880",
@@ -19294,7 +19779,9 @@
       "instructors": 2,
       "jewishPopulation": 6200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "st-louis-b-nai-el-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-shaaray-emeth-1880",
@@ -19344,7 +19831,9 @@
       "pupils": 150,
       "instructors": 4
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "st-louis-shaaray-emeth-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-united-hebrew-1880",
@@ -19389,7 +19878,8 @@
       "propertyValue": 35000,
       "otherPropertyValue": 2000
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "st-louis-ladies-zion-soc-y-1880",
@@ -19426,7 +19916,9 @@
     "figures": {
       "members": 200
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-louis-ladies-zion-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-ladies-benev-soc-y-1880",
@@ -19463,7 +19955,9 @@
     "figures": {
       "members": 75
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-louis-ladies-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-ladies-wid-s-and-orphs-1880",
@@ -19501,7 +19995,9 @@
       "members": 200,
       "otherPropertyValue": 10000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-louis-ladies-wid-s-and-orphs-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-ladies-sewing-soc-y-1880",
@@ -19525,7 +20021,9 @@
         "answer": "Garments for the Poor."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-louis-ladies-sewing-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-louis-united-heb-relief-1880",
@@ -19557,7 +20055,9 @@
     "figures": {
       "members": 200
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-louis-united-heb-relief-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-joseph-mo-adath-joseph-1880",
@@ -19613,7 +20113,9 @@
       "instructors": 2,
       "jewishPopulation": 325
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "st-joseph-mo-adath-joseph-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "st-joseph-mo-ladies-benev-soc-y-1880",
@@ -19637,7 +20139,9 @@
         "answer": "1865"
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "st-joseph-mo-ladies-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "kansas-city-b-nai-jehuda-1880",
@@ -19693,7 +20197,9 @@
       "instructors": 2,
       "jewishPopulation": 240
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "kansas-city-b-nai-jehuda-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "little-rock-b-nai-israel-1880",
@@ -19754,7 +20260,9 @@
       "instructors": 6,
       "jewishPopulation": 655
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "little-rock-b-nai-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "little-rock-heb-ladies-ben-ass-n-1880",
@@ -19781,7 +20289,9 @@
     "figures": {
       "members": 42
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "little-rock-heb-ladies-ben-ass-n-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "leavenworth-b-nai-jeshurun-1880",
@@ -19838,7 +20348,8 @@
       "instructors": 6,
       "jewishPopulation": 455
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "leavenworth-ladies-benev-soc-y-1880",
@@ -19876,7 +20387,9 @@
       "members": 45,
       "otherPropertyValue": 250
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "leavenworth-ladies-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-francisco-emanu-el-1880",
@@ -19932,7 +20445,8 @@
       "pupils": 341,
       "instructors": 9
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "san-francisco-shearith-israel-1880",
@@ -19957,7 +20471,8 @@
         "answer": "1851"
       }
     ],
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "san-francisco-sharay-zedek-1880",
@@ -20007,7 +20522,9 @@
       "pupils": 50,
       "instructors": 1
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "san-francisco-sharay-zedek-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-francisco-ohebai-shalom-1880",
@@ -20057,7 +20574,9 @@
       "pupils": 160,
       "instructors": 4
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "san-francisco-ohebai-shalom-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-francisco-beth-israel-1880",
@@ -20076,7 +20595,9 @@
         "question": "Congregation or society",
         "answer": "Beth Israel"
       }
-    ]
+    ],
+    "congregation": "san-francisco-beth-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-francisco-pacific-heb-orph-asyl-m-1880",
@@ -20125,7 +20646,9 @@
       "propertyValue": 82000,
       "otherPropertyValue": 52152
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "san-francisco-pacific-heb-orph-asyl-m-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-francisco-san-francisco-b-nai-ber-library-1880",
@@ -20149,7 +20672,9 @@
         "answer": "Has 2500 volumes."
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "san-francisco-san-francisco-b-nai-ber-library-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "san-jose-bikur-cholim-1880",
@@ -20205,7 +20730,9 @@
       "instructors": 1,
       "jewishPopulation": 265
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "san-jose-bikur-cholim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "stockton-ca-reim-ahuvim-1880",
@@ -20272,7 +20799,9 @@
       "instructors": 1,
       "jewishPopulation": 200
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "stockton-ca-reim-ahuvim-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "stockton-ca-ladies-heb-benev-soc-y-1880",
@@ -20310,7 +20839,9 @@
       "members": 20,
       "otherPropertyValue": 2000
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "stockton-ca-ladies-heb-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "oakland-first-hebrew-cong-1880",
@@ -20343,7 +20874,9 @@
       "members": 35,
       "jewishPopulation": 227
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "oakland-first-hebrew-cong-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "oakland-hebrew-benev-soc-y-1880",
@@ -20367,7 +20900,9 @@
         "answer": "1852"
       }
     ],
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "oakland-hebrew-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "portland-or-beth-israel-1880",
@@ -20430,7 +20965,8 @@
       "instructors": 1,
       "jewishPopulation": 625
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "integrationStatus": "existing link"
   },
   {
     "id": "portland-or-first-heb-benev-soc-y-1880",
@@ -20449,7 +20985,9 @@
         "question": "Congregation or society",
         "answer": "First Heb. Benev. Soc'y"
       }
-    ]
+    ],
+    "institution": "portland-or-first-heb-benev-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "portland-or-jewish-ladies-soc-y-1880",
@@ -20468,7 +21006,9 @@
         "question": "Congregation or society",
         "answer": "Jewish Ladies' Soc'y"
       }
-    ]
+    ],
+    "institution": "portland-or-jewish-ladies-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "portland-or-ahavath-chesed-1880",
@@ -20487,7 +21027,9 @@
         "question": "Congregation or society",
         "answer": "Ahavath Chesed"
       }
-    ]
+    ],
+    "congregation": "portland-or-ahavath-chesed-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "omaha-israel-1880",
@@ -20537,7 +21079,9 @@
       "pupils": 35,
       "jewishPopulation": 66
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "omaha-israel-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "salt-lake-city-ladies-ben-soc-y-1880",
@@ -20575,7 +21119,9 @@
       "members": 25,
       "jewishPopulation": 180
     },
-    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Society or institution, not a congregation. Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "institution": "salt-lake-city-ladies-ben-soc-y-1880-record",
+    "integrationStatus": "new provisional record"
   },
   {
     "id": "denver-emanu-el-1880",
@@ -20637,6 +21183,8 @@
       "instructors": 1,
       "jewishPopulation": 260
     },
-    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation."
+    "note": "Figures as printed for 1878 in the 1880 compilation; the population estimate belongs to the place, not to the congregation.",
+    "congregation": "denver-emanu-el-1880-record",
+    "integrationStatus": "new provisional record"
   }
 ]

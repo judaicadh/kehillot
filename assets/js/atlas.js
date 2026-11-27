@@ -209,6 +209,7 @@
     D.institutions.forEach(function (c) { orgName[c.id] = { name: c.name, type: 'institution' }; });
     D.periodicals.forEach(function (c) { orgName[c.id] = { name: c.name, type: 'periodical' }; });
     var m = /year=(\d{4})/.exec(location.hash);
+    window.addEventListener('hashchange',function(){var match=/year=(\d{4})/.exec(location.hash);if(match){yearInput.value=Math.min(Math.max(Number(match[1]),Number(yearInput.min)),Number(yearInput.max));render();}});
     if (m) yearInput.value = Math.min(Math.max(Number(m[1]), Number(yearInput.min)), Number(yearInput.max));
     map.fitBounds(L.latLngBounds(D.places.map(function (p) { return [p.lat, p.lon]; })), { animate: false, paddingTopLeft: [30, 30], paddingBottomRight: [110, 30] });
     syncBase();

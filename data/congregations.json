@@ -13,6 +13,12 @@
       "sarna-2004",
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shearith-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -31,6 +37,12 @@
       "jick-1976",
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-b-nai-jeshurun-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -62,6 +74,12 @@
       "jick-1976",
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-rodef-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -79,6 +97,12 @@
       "jick-1976",
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-temple-emanu-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -96,6 +120,12 @@
       "sarna-2004",
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-tefilla-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -113,6 +143,12 @@
       "sarna-2004",
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-mikve-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -129,6 +165,12 @@
       "sarna-2004",
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-rodef-shalom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -143,6 +185,12 @@
     "sources": [
       "jick-1976",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -158,6 +206,12 @@
     "sources": [
       "jick-1976",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-keneseth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -175,6 +229,12 @@
       "jick-1976",
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "charleston-beth-elohim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -208,6 +268,12 @@
       "isjl-encyclopedia",
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "savannah-mikve-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -225,6 +291,12 @@
       "sussman-1995",
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "richmond-beth-shalom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -240,6 +312,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "richmond-beth-ahaba-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -273,6 +351,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "baltimore-1st-balto-hebrew-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -289,6 +373,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "baltimore-har-sinai-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -304,6 +394,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "baltimore-oheb-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -318,6 +414,12 @@
     "sources": [
       "korn-1951",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "washington-washington-hebrew-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -334,6 +436,12 @@
       "sarna-2004",
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-b-nai-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -349,6 +457,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-b-nai-jeshurun-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -363,6 +477,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cleveland-anshe-chesed-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -377,6 +497,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cleveland-tiferith-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -392,6 +518,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "detroit-beth-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -407,6 +539,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-anshe-m-arev-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -421,6 +559,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-sinai-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -435,6 +579,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "st-louis-united-hebrew-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -448,6 +598,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "indianapolis-hebrew-cong-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -463,6 +619,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "pittsburgh-rodef-shalom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -477,6 +639,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "easton-berith-shalom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -493,6 +661,12 @@
       "sarna-2004",
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-ohabei-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -509,6 +683,12 @@
       "marcus-1991",
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-haven-mishkan-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -524,6 +704,12 @@
       "marcus-1991",
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "hartford-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -539,6 +725,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "albany-beth-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -555,6 +747,12 @@
     "sources": [
       "sarna-2004",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "albany-anshe-emeth-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -568,6 +766,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "syracuse-society-of-concord-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -582,6 +786,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "rochester-berith-kodesh-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -596,6 +806,12 @@
     "sources": [
       "marcus-1991",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "buffalo-beth-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -612,6 +828,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-shaaray-chesed-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -628,6 +850,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-dispersed-of-judah-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -643,6 +871,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "mobile-shaaray-shomayim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -657,6 +891,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "montgomery-kahl-montgomery-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -672,6 +912,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "natchez-b-nai-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -685,6 +931,13 @@
     "sources": [
       "isjl-encyclopedia",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "memphis-children-of-israel-1880",
+      "memphis-b-nai-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -700,6 +953,12 @@
       "isjl-encyclopedia",
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "louisville-adath-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -715,6 +974,12 @@
     "sources": [
       "isjl-encyclopedia",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "houston-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -730,6 +995,12 @@
     "sources": [
       "kahn-2002",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-francisco-emanu-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -745,6 +1016,12 @@
     "sources": [
       "kahn-2002",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "san-francisco-shearith-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -774,6 +1051,12 @@
       "marcus-1991",
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "portland-or-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -788,6 +1071,12 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "atlanta-hebrew-benevolent-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -803,6 +1092,12 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "baton-rouge-shaaray-chesed-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -817,6 +1112,12 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chattanooga-hebrew-benev-soc-y-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -832,6 +1133,12 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "chicago-b-nai-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -847,6 +1154,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "dayton-b-nai-jeshurun-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -862,6 +1175,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "fort-wayne-achdut-ve-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -877,6 +1196,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "lafayette-in-shebeth-achim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -892,6 +1217,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "danville-pa-b-nai-zion-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -906,6 +1237,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "donaldsonville-bikur-cholim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -921,6 +1258,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "harrisburg-oheb-shalom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -936,6 +1279,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "jackson-ms-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -951,6 +1300,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "laporte-b-nai-zion-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -980,6 +1335,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "louisville-beth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -995,6 +1356,12 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "madison-wi-shaaray-shamaim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1003,7 +1370,8 @@
     "place": "cincinnati",
     "documented": 1872,
     "documentedYears": [
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "rite": "unknown",
@@ -1012,6 +1380,9 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "cincinnati-shearith-israel-1880"
     ]
   },
   {
@@ -1020,7 +1391,8 @@
     "place": "leavenworth",
     "documented": 1872,
     "documentedYears": [
-      1872
+      1872,
+      1878
     ],
     "certainty": "medium",
     "rite": "unknown",
@@ -1029,6 +1401,9 @@
     "sources": [
       "bdai-box3-folder06",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "leavenworth-b-nai-jeshurun-1880"
     ]
   },
   {
@@ -1037,7 +1412,8 @@
     "place": "boston",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "rite": "unknown",
@@ -1046,6 +1422,9 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-adath-israel-1880"
     ]
   },
   {
@@ -1054,7 +1433,8 @@
     "place": "boston",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "rite": "unknown",
@@ -1063,6 +1443,9 @@
     "sources": [
       "bdai-box3-folder05",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-mishkan-israel-1880"
     ]
   },
   {
@@ -1071,14 +1454,19 @@
     "place": "boston",
     "documented": 1860,
     "documentedYears": [
-      1860
+      1860,
+      1878
     ],
     "certainty": "medium",
     "rite": "unknown",
     "orientation": "unknown",
     "note": "Named in Board of Delegates survey evidence. Founding date and religious classification are not established by these returns. ",
     "sources": [
-      "bdai-box3-folder05"
+      "bdai-box3-folder05",
+      "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "boston-beth-el-1880"
     ]
   },
   {
@@ -1111,6 +1499,12 @@
     "sources": [
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-orleans-gates-of-prayer-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1126,6 +1520,12 @@
     "sources": [
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "newburgh-beth-jacob-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1140,6 +1540,12 @@
     "sources": [
       "bdai-box3-folder07",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "norfolk-oheb-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1155,6 +1561,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-adereth-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1170,6 +1582,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-ahavath-chesed-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1185,6 +1603,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-temple-beth-el-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1200,6 +1624,13 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "brooklyn-beth-elohim-1880",
+      "brooklyn-beth-elohim-1880-2"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1215,6 +1646,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-beth-isr-l-bikur-cholim-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1244,6 +1681,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-b-nai-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1259,6 +1702,12 @@
     "sources": [
       "bdai-box3-folder08",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "new-york-shaaray-zedek-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1274,6 +1723,12 @@
     "sources": [
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "paterson-b-nai-jeshuron-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1289,6 +1744,12 @@
     "sources": [
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "philadelphia-beth-el-emeth-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1317,6 +1778,12 @@
     "sources": [
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "providence-sons-of-israel-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1332,6 +1799,12 @@
     "sources": [
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "quincy-b-nai-sholom-1880"
+    ],
+    "documentedYears": [
+      1878
     ]
   },
   {
@@ -1347,6 +1820,2098 @@
     "sources": [
       "bdai-box3-folder09",
       "statistics-jews-us-1880"
+    ],
+    "surveyIds": [
+      "richmond-keneseth-israel-1880"
+    ],
+    "documentedYears": [
+      1878
+    ]
+  },
+  {
+    "id": "boston-shaaray-tefilla-1880-record",
+    "name": "Shaaray Tefilla",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shaaray Tefilla” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-shaaray-tefilla-1880"
+    ]
+  },
+  {
+    "id": "boston-beth-abraham-1880-record",
+    "name": "Beth Abraham",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Abraham” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "boston-beth-abraham-1880"
+    ]
+  },
+  {
+    "id": "boston-keneseth-israel-1880-record",
+    "name": "Keneseth Israel",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Keneseth Israel” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-keneseth-israel-1880"
+    ]
+  },
+  {
+    "id": "boston-shomrei-shabas-1880-record",
+    "name": "Shomrei Shabas",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shomrei Shabas” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "boston-shomrei-shabas-1880"
+    ]
+  },
+  {
+    "id": "boston-har-moriah-1880-record",
+    "name": "Har Moriah",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Har Moriah” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1875,
+    "surveyIds": [
+      "boston-har-moriah-1880"
+    ]
+  },
+  {
+    "id": "boston-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "boston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 7 (Massachusetts), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "boston-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "new-haven-b-nai-sholom-1880-record",
+    "name": "B'nai Sholom",
+    "place": "new-haven",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Sholom” in the 1880 report, printed p. 8 (Connecticut), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-haven-b-nai-sholom-1880"
+    ]
+  },
+  {
+    "id": "new-york-darech-amuno-1880-record",
+    "name": "Darech Amuno",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Darech Amuno” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "new-york-darech-amuno-1880"
+    ]
+  },
+  {
+    "id": "new-york-shaar-hashomayin-1880-record",
+    "name": "Shaar Hashomayin",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shaar Hashomayin” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1840,
+    "surveyIds": [
+      "new-york-shaar-hashomayin-1880"
+    ]
+  },
+  {
+    "id": "new-york-beth-hamedrash-1880-record",
+    "name": "Beth Hamedrash",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Hamedrash” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1851,
+    "surveyIds": [
+      "new-york-beth-hamedrash-1880"
+    ]
+  },
+  {
+    "id": "new-york-poel-zedek-1880-record",
+    "name": "Poel Zedek",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Poel Zedek” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-poel-zedek-1880"
+    ]
+  },
+  {
+    "id": "new-york-adas-israel-1880-record",
+    "name": "Adas Israel",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adas Israel” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-adas-israel-1880"
+    ]
+  },
+  {
+    "id": "new-york-shaaray-rachmim-1880-record",
+    "name": "Shaaray Rachmim",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shaaray Rachmim” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-shaaray-rachmim-1880"
+    ]
+  },
+  {
+    "id": "new-york-shaaray-tickvah-yorkville-1880-record",
+    "name": "Shaaray Tickvah (Yorkville)",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shaaray Tickvah (Yorkville)” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-shaaray-tickvah-yorkville-1880"
+    ]
+  },
+  {
+    "id": "new-york-children-s-synagogue-1880-record",
+    "name": "Children's Synagogue",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Children's Synagogue” in the 1880 report, printed p. 9 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-children-s-synagogue-1880"
+    ]
+  },
+  {
+    "id": "new-york-deborah-nurs-ry-child-s-protectory-1880-record",
+    "name": "Deborah Nurs'ry & Child's Protectory",
+    "place": "new-york",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Deborah Nurs'ry & Child's Protectory” in the 1880 report, printed p. 10 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-york-deborah-nurs-ry-child-s-protectory-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1854,
+    "surveyIds": [
+      "brooklyn-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-temple-israel-1880-record",
+    "name": "Temple Israel",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Temple Israel” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "brooklyn-temple-israel-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-ahavath-achim-1880-record",
+    "name": "Ahavath Achim",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Ahavath Achim” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "brooklyn-ahavath-achim-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-beth-jacob-1880-record",
+    "name": "Beth Jacob",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Jacob” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "brooklyn-beth-jacob-1880"
+    ]
+  },
+  {
+    "id": "brooklyn-b-nai-shalom-1880-record",
+    "name": "B'nai Shalom",
+    "place": "brooklyn",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Shalom” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1867,
+    "surveyIds": [
+      "brooklyn-b-nai-shalom-1880"
+    ]
+  },
+  {
+    "id": "albany-beth-jacob-1880-record",
+    "name": "Beth Jacob",
+    "place": "albany",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Jacob” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1845,
+    "surveyIds": [
+      "albany-beth-jacob-1880"
+    ]
+  },
+  {
+    "id": "rochester-etz-raanon-1880-record",
+    "name": "Etz Raanon",
+    "place": "rochester",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Etz Raanon” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "rochester-etz-raanon-1880"
+    ]
+  },
+  {
+    "id": "elmira-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "elmira",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1857,
+    "surveyIds": [
+      "elmira-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "buffalo-temple-beth-zion-1880-record",
+    "name": "Temple Beth Zion",
+    "place": "buffalo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Temple Beth Zion” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "buffalo-temple-beth-zion-1880"
+    ]
+  },
+  {
+    "id": "troy-anshe-chesed-1880-record",
+    "name": "Anshe Chesed",
+    "place": "troy",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Anshe Chesed” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "troy-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "troy-berith-sholom-1880-record",
+    "name": "Berith Sholom",
+    "place": "troy",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Berith Sholom” in the 1880 report, printed p. 11 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1866,
+    "surveyIds": [
+      "troy-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "syracuse-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "syracuse",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 12 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "syracuse-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "syracuse-adas-yeshurun-1880-record",
+    "name": "Adas Yeshurun",
+    "place": "syracuse",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adas Yeshurun” in the 1880 report, printed p. 12 (New York), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "syracuse-adas-yeshurun-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-b-nai-jeshuron-1880-record",
+    "name": "B'nai Jeshuron",
+    "place": "newark-nj",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Jeshuron” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1848,
+    "surveyIds": [
+      "newark-nj-b-nai-jeshuron-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-oheb-shalom-1880-record",
+    "name": "Oheb Shalom",
+    "place": "newark-nj",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Oheb Shalom” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "newark-nj-oheb-shalom-1880"
+    ]
+  },
+  {
+    "id": "newark-nj-b-nai-abraham-1880-record",
+    "name": "B'nai Abraham",
+    "place": "newark-nj",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Abraham” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "newark-nj-b-nai-abraham-1880"
+    ]
+  },
+  {
+    "id": "hoboken-adas-emuno-1880-record",
+    "name": "Adas Emuno",
+    "place": "hoboken",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adas Emuno” in the 1880 report, printed p. 14 (New Jersey), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "hoboken-adas-emuno-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1847,
+    "surveyIds": [
+      "philadelphia-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-adas-jeshurun-1880-record",
+    "name": "Adas Jeshurun",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adas Jeshurun” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1859,
+    "surveyIds": [
+      "philadelphia-adas-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "philadelphia-anshe-emeth-1880-record",
+    "name": "Anshe Emeth",
+    "place": "philadelphia",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Anshe Emeth” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "philadelphia-anshe-emeth-1880"
+    ]
+  },
+  {
+    "id": "wilkes-barre-b-nai-jacob-1880-record",
+    "name": "B'nai Jacob",
+    "place": "wilkes-barre",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Jacob” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "wilkes-barre-b-nai-jacob-1880"
+    ]
+  },
+  {
+    "id": "wilkes-barre-b-nai-berith-1880-record",
+    "name": "B'nai Berith",
+    "place": "wilkes-barre",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Berith” in the 1880 report, printed p. 15 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1848,
+    "surveyIds": [
+      "wilkes-barre-b-nai-berith-1880"
+    ]
+  },
+  {
+    "id": "titusville-b-nai-zion-1880-record",
+    "name": "B'nai Zion",
+    "place": "titusville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Zion” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1865,
+    "surveyIds": [
+      "titusville-b-nai-zion-1880"
+    ]
+  },
+  {
+    "id": "pittsburgh-ez-chaim-1880-record",
+    "name": "Ez Chaim",
+    "place": "pittsburgh",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Ez Chaim” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "pittsburgh-ez-chaim-1880"
+    ]
+  },
+  {
+    "id": "scranton-anshe-chesed-1880-record",
+    "name": "Anshe Chesed",
+    "place": "scranton",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Anshe Chesed” in the 1880 report, printed p. 16 (Pennsylvania), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1860,
+    "surveyIds": [
+      "scranton-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "washington-adas-israel-1880-record",
+    "name": "Adas Israel",
+    "place": "washington",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adas Israel” in the 1880 report, printed p. 18 (District of Columbia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "washington-adas-israel-1880"
+    ]
+  },
+  {
+    "id": "baltimore-balto-hebr-friendship-1880-record",
+    "name": "Balto. Hebr. Friendship",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Balto. Hebr. Friendship” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-balto-hebr-friendship-1880"
+    ]
+  },
+  {
+    "id": "baltimore-chisuk-emunah-1880-record",
+    "name": "Chisuk Emunah",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Chisuk Emunah” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-chisuk-emunah-1880"
+    ]
+  },
+  {
+    "id": "baltimore-shebet-zedek-1880-record",
+    "name": "Shebet Zedek",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shebet Zedek” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-shebet-zedek-1880"
+    ]
+  },
+  {
+    "id": "baltimore-howard-st-1880-record",
+    "name": "Howard St.",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Howard St.” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-howard-st-1880"
+    ]
+  },
+  {
+    "id": "baltimore-shebeth-achim-1880-record",
+    "name": "Shebeth Achim",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shebeth Achim” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-shebeth-achim-1880"
+    ]
+  },
+  {
+    "id": "baltimore-eutaw-st-1880-record",
+    "name": "Eutaw St.",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Eutaw St.” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1867,
+    "surveyIds": [
+      "baltimore-eutaw-st-1880"
+    ]
+  },
+  {
+    "id": "baltimore-rodef-sholom-1880-record",
+    "name": "Rodef Sholom",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Rodef Sholom” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1856,
+    "surveyIds": [
+      "baltimore-rodef-sholom-1880"
+    ]
+  },
+  {
+    "id": "baltimore-harrison-st-1880-record",
+    "name": "Harrison St.",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Harrison St.” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-harrison-st-1880"
+    ]
+  },
+  {
+    "id": "baltimore-n-gay-st-1880-record",
+    "name": "N. Gay St.",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “N. Gay St.” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-n-gay-st-1880"
+    ]
+  },
+  {
+    "id": "baltimore-bikur-cholim-1880-record",
+    "name": "Bikur Cholim",
+    "place": "baltimore",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Bikur Cholim” in the 1880 report, printed p. 19 (Maryland), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "baltimore-bikur-cholim-1880"
+    ]
+  },
+  {
+    "id": "norfolk-beth-el-1880-record",
+    "name": "Beth El",
+    "place": "norfolk",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth El” in the 1880 report, printed p. 20 (Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "norfolk-beth-el-1880"
+    ]
+  },
+  {
+    "id": "petersburg-va-rodef-sholom-1880-record",
+    "name": "Rodef Sholom",
+    "place": "petersburg-va",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Rodef Sholom” in the 1880 report, printed p. 20 (Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1858,
+    "surveyIds": [
+      "petersburg-va-rodef-sholom-1880"
+    ]
+  },
+  {
+    "id": "wheeling-leshem-shomayim-1880-record",
+    "name": "Leshem Shomayim",
+    "place": "wheeling",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Leshem Shomayim” in the 1880 report, printed p. 21 (West Virginia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "wheeling-leshem-shomayim-1880"
+    ]
+  },
+  {
+    "id": "wilmington-nc-temple-of-israel-1880-record",
+    "name": "Temple of Israel",
+    "place": "wilmington-nc",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Temple of Israel” in the 1880 report, printed p. 21 (North Carolina), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1872,
+    "surveyIds": [
+      "wilmington-nc-temple-of-israel-1880"
+    ]
+  },
+  {
+    "id": "charleston-berith-sholom-1880-record",
+    "name": "Berith Sholom",
+    "place": "charleston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Berith Sholom” in the 1880 report, printed p. 22 (South Carolina), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1857,
+    "surveyIds": [
+      "charleston-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "columbia-sc-columbia-heb-cong-1880-record",
+    "name": "Columbia Heb. Cong.",
+    "place": "columbia-sc",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Columbia Heb. Cong.” in the 1880 report, printed p. 22 (South Carolina), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1846,
+    "surveyIds": [
+      "columbia-sc-columbia-heb-cong-1880"
+    ]
+  },
+  {
+    "id": "savannah-benai-jacob-1880-record",
+    "name": "Benai Jacob",
+    "place": "savannah",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Benai Jacob” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "savannah-benai-jacob-1880"
+    ]
+  },
+  {
+    "id": "columbus-ga-benai-israel-1880-record",
+    "name": "Benai Israel",
+    "place": "columbus-ga",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Benai Israel” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1859,
+    "surveyIds": [
+      "columbus-ga-benai-israel-1880"
+    ]
+  },
+  {
+    "id": "augusta-ga-benai-israel-1880-record",
+    "name": "Benai Israel",
+    "place": "augusta-ga",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Benai Israel” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1846,
+    "surveyIds": [
+      "augusta-ga-benai-israel-1880"
+    ]
+  },
+  {
+    "id": "macon-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "macon",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 24 (Georgia), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1857,
+    "surveyIds": [
+      "macon-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "selma-mishkan-israel-1880-record",
+    "name": "Mishkan Israel",
+    "place": "selma",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Mishkan Israel” in the 1880 report, printed p. 25 (Alabama), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "selma-mishkan-israel-1880"
+    ]
+  },
+  {
+    "id": "vicksburg-anshe-chesed-1880-record",
+    "name": "Anshe Chesed",
+    "place": "vicksburg",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Anshe Chesed” in the 1880 report, printed p. 26 (Mississippi), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1841,
+    "surveyIds": [
+      "vicksburg-anshe-chesed-1880"
+    ]
+  },
+  {
+    "id": "meridian-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "meridian",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 26 (Mississippi), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1869,
+    "surveyIds": [
+      "meridian-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "shreveport-hebra-zion-1880-record",
+    "name": "Hebra Zion",
+    "place": "shreveport",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Hebra Zion” in the 1880 report, printed p. 27 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1866,
+    "surveyIds": [
+      "shreveport-hebra-zion-1880"
+    ]
+  },
+  {
+    "id": "alexandria-la-gemiluth-chasodim-1880-record",
+    "name": "Gemiluth Chasodim",
+    "place": "alexandria-la",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Gemiluth Chasodim” in the 1880 report, printed p. 27 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1853,
+    "surveyIds": [
+      "alexandria-la-gemiluth-chasodim-1880"
+    ]
+  },
+  {
+    "id": "new-orleans-temime-derech-1880-record",
+    "name": "Temime Derech",
+    "place": "new-orleans",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Temime Derech” in the 1880 report, printed p. 28 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "new-orleans-temime-derech-1880"
+    ]
+  },
+  {
+    "id": "new-orleans-temple-sinai-1880-record",
+    "name": "Temple Sinai",
+    "place": "new-orleans",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Temple Sinai” in the 1880 report, printed p. 28 (Louisiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "new-orleans-temple-sinai-1880"
+    ]
+  },
+  {
+    "id": "galveston-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "galveston",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 29 (Texas), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "galveston-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-adath-israel-1880-record",
+    "name": "Adath Israel",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adath Israel” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1850,
+    "surveyIds": [
+      "cincinnati-adath-israel-1880"
+    ]
+  },
+  {
+    "id": "cincinnati-acheveth-achim-1880-record",
+    "name": "Acheveth Achim",
+    "place": "cincinnati",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Acheveth Achim” in the 1880 report, printed p. 30 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "cincinnati-acheveth-achim-1880"
+    ]
+  },
+  {
+    "id": "toledo-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "toledo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 31 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "toledo-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "toledo-b-nai-jacob-1880-record",
+    "name": "B'nai Jacob",
+    "place": "toledo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Jacob” in the 1880 report, printed p. 31 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "toledo-b-nai-jacob-1880"
+    ]
+  },
+  {
+    "id": "columbus-oh-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "columbus-oh",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 31 (Ohio), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "columbus-oh-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "evansville-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "evansville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 33 (Indiana), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1857,
+    "surveyIds": [
+      "evansville-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "chicago-zion-1880-record",
+    "name": "Zion",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Zion” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "chicago-zion-1880"
+    ]
+  },
+  {
+    "id": "chicago-north-chicago-heb-1880-record",
+    "name": "North Chicago Heb.",
+    "place": "chicago",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “North Chicago Heb.” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "chicago-north-chicago-heb-1880"
+    ]
+  },
+  {
+    "id": "peoria-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "peoria",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "peoria-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "peoria-anshe-emeth-1880-record",
+    "name": "Anshe Emeth",
+    "place": "peoria",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Anshe Emeth” in the 1880 report, printed p. 35 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1863,
+    "surveyIds": [
+      "peoria-anshe-emeth-1880"
+    ]
+  },
+  {
+    "id": "springfield-il-berith-sholom-1880-record",
+    "name": "Berith Sholom",
+    "place": "springfield-il",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Berith Sholom” in the 1880 report, printed p. 36 (Illinois), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1865,
+    "surveyIds": [
+      "springfield-il-berith-sholom-1880"
+    ]
+  },
+  {
+    "id": "paducah-jeshurun-1880-record",
+    "name": "Jeshurun",
+    "place": "paducah",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Jeshurun” in the 1880 report, printed p. 38 (Kentucky), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1863,
+    "surveyIds": [
+      "paducah-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "nashville-ohabay-shalom-1880-record",
+    "name": "Ohabay Shalom",
+    "place": "nashville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Ohabay Shalom” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "nashville-ohabay-shalom-1880"
+    ]
+  },
+  {
+    "id": "nashville-mogen-david-1880-record",
+    "name": "Mogen David",
+    "place": "nashville",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Mogen David” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "nashville-mogen-david-1880"
+    ]
+  },
+  {
+    "id": "memphis-beth-el-emeth-1880-record",
+    "name": "Beth El Emeth",
+    "place": "memphis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth El Emeth” in the 1880 report, printed p. 39 (Tennessee), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1861,
+    "surveyIds": [
+      "memphis-beth-el-emeth-1880"
+    ]
+  },
+  {
+    "id": "kalamazoo-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "kalamazoo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 40 (Michigan), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1865,
+    "surveyIds": [
+      "kalamazoo-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "grand-rapids-emanu-el-1880-record",
+    "name": "Emanu El",
+    "place": "grand-rapids",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Emanu El” in the 1880 report, printed p. 40 (Michigan), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "grand-rapids-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "milwaukee-emanu-el-1880-record",
+    "name": "Emanu El",
+    "place": "milwaukee",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Emanu El” in the 1880 report, printed p. 41 (Wisconsin), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "milwaukee-emanu-el-1880"
+    ]
+  },
+  {
+    "id": "st-paul-mt-zion-1880-record",
+    "name": "Mt. Zion",
+    "place": "st-paul",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Mt. Zion” in the 1880 report, printed p. 42 (Minnesota), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1856,
+    "surveyIds": [
+      "st-paul-mt-zion-1880"
+    ]
+  },
+  {
+    "id": "davenport-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "davenport",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 42 (Iowa), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1858,
+    "surveyIds": [
+      "davenport-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "keokuk-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "keokuk",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 42 (Iowa), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1864,
+    "surveyIds": [
+      "keokuk-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "des-moines-b-nai-jeshurun-1880-record",
+    "name": "B'nai Jeshurun",
+    "place": "des-moines",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Jeshurun” in the 1880 report, printed p. 42 (Iowa), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1873,
+    "surveyIds": [
+      "des-moines-b-nai-jeshurun-1880"
+    ]
+  },
+  {
+    "id": "st-louis-b-nai-el-1880-record",
+    "name": "B'nai El",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai El” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1853,
+    "surveyIds": [
+      "st-louis-b-nai-el-1880"
+    ]
+  },
+  {
+    "id": "st-louis-shaaray-emeth-1880-record",
+    "name": "Shaaray Emeth",
+    "place": "st-louis",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Shaaray Emeth” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1868,
+    "surveyIds": [
+      "st-louis-shaaray-emeth-1880"
+    ]
+  },
+  {
+    "id": "st-joseph-mo-adath-joseph-1880-record",
+    "name": "Adath Joseph",
+    "place": "st-joseph-mo",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Adath Joseph” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1860,
+    "surveyIds": [
+      "st-joseph-mo-adath-joseph-1880"
+    ]
+  },
+  {
+    "id": "kansas-city-b-nai-jehuda-1880-record",
+    "name": "B'nai Jehuda",
+    "place": "kansas-city",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Jehuda” in the 1880 report, printed p. 44 (Missouri), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "kansas-city-b-nai-jehuda-1880"
+    ]
+  },
+  {
+    "id": "little-rock-b-nai-israel-1880-record",
+    "name": "B'nai Israel",
+    "place": "little-rock",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “B'nai Israel” in the 1880 report, printed p. 45 (Arkansas), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1866,
+    "surveyIds": [
+      "little-rock-b-nai-israel-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-sharay-zedek-1880-record",
+    "name": "Sharay Zedek",
+    "place": "san-francisco",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Sharay Zedek” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1870,
+    "surveyIds": [
+      "san-francisco-sharay-zedek-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-ohebai-shalom-1880-record",
+    "name": "Ohebai Shalom",
+    "place": "san-francisco",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Ohebai Shalom” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1865,
+    "surveyIds": [
+      "san-francisco-ohebai-shalom-1880"
+    ]
+  },
+  {
+    "id": "san-francisco-beth-israel-1880-record",
+    "name": "Beth Israel",
+    "place": "san-francisco",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Beth Israel” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "san-francisco-beth-israel-1880"
+    ]
+  },
+  {
+    "id": "san-jose-bikur-cholim-1880-record",
+    "name": "Bikur Cholim",
+    "place": "san-jose",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Bikur Cholim” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1861,
+    "surveyIds": [
+      "san-jose-bikur-cholim-1880"
+    ]
+  },
+  {
+    "id": "stockton-ca-reim-ahuvim-1880-record",
+    "name": "Reim Ahuvim",
+    "place": "stockton-ca",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Reim Ahuvim” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1855,
+    "surveyIds": [
+      "stockton-ca-reim-ahuvim-1880"
+    ]
+  },
+  {
+    "id": "oakland-first-hebrew-cong-1880-record",
+    "name": "First Hebrew Cong.",
+    "place": "oakland",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “First Hebrew Cong.” in the 1880 report, printed p. 48 (California), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "oakland-first-hebrew-cong-1880"
+    ]
+  },
+  {
+    "id": "portland-or-ahavath-chesed-1880-record",
+    "name": "Ahavath Chesed",
+    "place": "portland-or",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Ahavath Chesed” in the 1880 report, printed p. 51 (Oregon), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "surveyIds": [
+      "portland-or-ahavath-chesed-1880"
+    ]
+  },
+  {
+    "id": "omaha-israel-1880-record",
+    "name": "Israel",
+    "place": "omaha",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Israel” in the 1880 report, printed p. 52 (Nebraska), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1871,
+    "surveyIds": [
+      "omaha-israel-1880"
+    ]
+  },
+  {
+    "id": "denver-emanu-el-1880-record",
+    "name": "Emanu El",
+    "place": "denver",
+    "documented": 1878,
+    "documentedYears": [
+      1878
+    ],
+    "certainty": "medium",
+    "sources": [
+      "statistics-jews-us-1880"
+    ],
+    "rite": "unrecorded",
+    "orientation": "unrecorded",
+    "note": "Named as “Emanu El” in the 1880 report, printed p. 53 (Colorado), reporting 1878 figures. Identity and transcription are provisional; the location is the reported city, not a verified building.",
+    "founded": 1874,
+    "surveyIds": [
+      "denver-emanu-el-1880"
     ]
   }
 ]
