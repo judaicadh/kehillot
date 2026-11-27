@@ -2085,6 +2085,13 @@ for (const placeId of CITY_IDS) {
     styles: ['assets/vendor/leaflet/leaflet.css'], scripts: ['assets/vendor/leaflet/leaflet.js', 'assets/js/symbols.js', 'assets/js/city.js'] }));
 }
 
+// Keep subscriber guide bookmarks working when authority links join a locality
+// to an existing city record. The canonical city now includes its subscribers.
+for (const place of READ_PLACES.filter(p => p.own && p.qid)) {
+  const target = `${BASE}city/${place.own}/`;
+  await out(`city/subscriber-${place.qid.toLowerCase()}/index.html`, `<!doctype html><html lang="en"><meta charset="utf-8"><title>City guide moved</title><link rel="canonical" href="${esc(target)}"><meta http-equiv="refresh" content="0;url=${esc(target)}"><p><a href="${esc(target)}">Open ${esc(place.name)} city guide</a></p></html>`);
+}
+
 for (const place of READ_PLACES.filter(p => !p.own)) {
   const rel = '../../';
   const papers = Object.keys(place.keys);
